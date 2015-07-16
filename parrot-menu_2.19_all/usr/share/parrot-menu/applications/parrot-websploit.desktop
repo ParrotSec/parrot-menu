@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=websploit
+Encoding=UTF-8
+Exec=menuexec websploit 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-05-web-vulnerability-scanners;03-07-web-application-fuzzers;
+X-Parrot-Package=websploit

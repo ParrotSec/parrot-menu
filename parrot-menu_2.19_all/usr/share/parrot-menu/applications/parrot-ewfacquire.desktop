@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ewfacquire
+Encoding=UTF-8
+Exec=menuexec ewfacquire -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=12-07-forensic-imaging-tools;
+X-Parrot-Package=ewf-tools

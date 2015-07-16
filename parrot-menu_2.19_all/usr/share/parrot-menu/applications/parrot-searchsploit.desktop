@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=searchsploit
+Encoding=UTF-8
+Exec=menuexec searchsploit 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-07-exploit-db;
+X-Parrot-Package=exploitdb

@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=hash-identifier
+Encoding=UTF-8
+Exec=menuexec hash-identifier 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=04-02-offline-attacks;
+X-Parrot-Package=hash-identifier

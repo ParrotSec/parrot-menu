@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=fcrackzip
+Encoding=UTF-8
+Exec=menuexec fcrackzip --help 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=04-02-offline-attacks;11-10-password-forensics-tools;
+X-Parrot-Package=fcrackzip

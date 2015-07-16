@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=wifi-honey
+Encoding=UTF-8
+Exec=menuexec wifi-honey -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-01-wireless-tools;07-04-network-spoofing;
+X-Parrot-Package=wifi-honey

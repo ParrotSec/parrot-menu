@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=pyrit
+Encoding=UTF-8
+Exec=menuexec pyrit -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=04-03-gpu-tools;04-02-offline-attacks;
+X-Parrot-Package=pyrit

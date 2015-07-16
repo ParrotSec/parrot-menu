@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=passive_discovery6
+Encoding=UTF-8
+Exec=menuexec passive_discovery6 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-02-identify-live-hosts;07-03-network-sniffers;
+X-Parrot-Package=thc-ipv6

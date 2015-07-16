@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=iodine
+Encoding=UTF-8
+Exec=menuexec iodine-client-start -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=08-02-tunneling;
+X-Parrot-Package=iodine

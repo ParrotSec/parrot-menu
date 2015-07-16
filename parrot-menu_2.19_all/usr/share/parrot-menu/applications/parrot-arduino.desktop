@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=arduino
+Encoding=UTF-8
+Exec=sh -c "arduino"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=11-02-arduino-tools;
+X-Parrot-Package=arduino

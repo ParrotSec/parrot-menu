@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=stunnel4
+Encoding=UTF-8
+Exec=menuexec stunnel4 -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-13-ssl-analysis;08-02-tunneling;
+X-Parrot-Package=stunnel4

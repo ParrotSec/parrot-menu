@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=rifiuti2
+Encoding=UTF-8
+Exec=menuexec rifiuti2 -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=12-05-forensic-carving-tools;
+X-Parrot-Package=rifiuti2

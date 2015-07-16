@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=metasploit diagnostic logs 
+Encoding=UTF-8
+Exec=menuexec /opt/metasploit/diagnostic_logs.sh 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-02-metasploit-framework;
+X-Parrot-Package=metasploit

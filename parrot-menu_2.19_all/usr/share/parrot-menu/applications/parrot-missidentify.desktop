@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=missidentify
+Encoding=UTF-8
+Exec=menuexec missidentify -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=12-04-forensic-analysis-tools;
+X-Parrot-Package=missidentify

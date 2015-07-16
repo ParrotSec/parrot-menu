@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ptunnel
+Encoding=UTF-8
+Exec=menuexec ptunnel -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=08-02-tunneling;
+X-Parrot-Package=ptunnel

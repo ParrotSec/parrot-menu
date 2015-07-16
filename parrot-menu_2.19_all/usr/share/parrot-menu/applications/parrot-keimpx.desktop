@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=keimpx
+Encoding=UTF-8
+Exec=menuexec keimpx -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=04-01-online-attacks;
+X-Parrot-Package=keimpx

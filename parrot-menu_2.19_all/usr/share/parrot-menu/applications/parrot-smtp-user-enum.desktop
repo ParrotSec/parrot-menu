@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=smtp-user-enum
+Encoding=UTF-8
+Exec=menuexec smtp-user-enum -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-11-smtp-analysis;
+X-Parrot-Package=smtp-user-enum

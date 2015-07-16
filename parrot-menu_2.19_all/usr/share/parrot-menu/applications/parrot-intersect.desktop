@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=intersect
+Encoding=UTF-8
+Exec=menuexec intersect 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=08-01-os-backdoors;
+X-Parrot-Package=intersect

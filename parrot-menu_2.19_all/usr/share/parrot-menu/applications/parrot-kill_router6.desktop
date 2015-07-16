@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=kill_router6
+Encoding=UTF-8
+Exec=menuexec kill_router6 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-01-network-stress-testing;
+X-Parrot-Package=thc-ipv6

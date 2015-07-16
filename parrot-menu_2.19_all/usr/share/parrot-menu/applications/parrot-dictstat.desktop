@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=dictstat
+Encoding=UTF-8
+Exec=menuexec dictstat -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=04-02-offline-attacks;
+X-Parrot-Package=pack

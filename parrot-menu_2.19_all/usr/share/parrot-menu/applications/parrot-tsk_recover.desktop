@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=tsk_recover
+Encoding=UTF-8
+Exec=menuexec tsk_recover 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=12-04-forensic-analysis-tools;
+X-Parrot-Package=sleuthkit

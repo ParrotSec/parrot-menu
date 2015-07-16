@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=zbassocflood
+Encoding=UTF-8
+Exec=menuexec zbassocflood -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-04-other-wireless;
+X-Parrot-Package=killerbee

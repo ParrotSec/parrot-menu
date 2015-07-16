@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=jsql
+Encoding=UTF-8
+Exec=sh -c "menuexecg jsql"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=02-05-database-assessment;03-05-web-vulnerability-scanners;
+X-Parrot-Package=jsql

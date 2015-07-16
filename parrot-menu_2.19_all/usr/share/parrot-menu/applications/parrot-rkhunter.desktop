@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=rkhunter
+Encoding=UTF-8
+Exec=menuexec rkhunter -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=12-01-anti-virus-forensics-tools;
+X-Parrot-Package=rkhunter

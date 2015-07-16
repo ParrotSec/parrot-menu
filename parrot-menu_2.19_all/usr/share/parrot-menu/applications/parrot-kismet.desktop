@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=kismet
+Encoding=UTF-8
+Exec=menuexec kismet -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-01-wireless-tools;
+X-Parrot-Package=kismet

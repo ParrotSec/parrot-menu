@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=rahash2
+Encoding=UTF-8
+Exec=menuexec rahash2 -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-03-misc-tools;12-06-forensic-hashing-tools;
+X-Parrot-Package=radare2

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=iaxflood
+Encoding=UTF-8
+Exec=menuexec iaxflood 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-02-voip-tools;10-03-voip-stress-testing;
+X-Parrot-Package=iaxflood

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=siege
+Encoding=UTF-8
+Exec=menuexec siege -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-01-network-stress-testing;
+X-Parrot-Package=siege

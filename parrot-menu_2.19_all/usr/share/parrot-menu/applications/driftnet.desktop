@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=driftnet
+Encoding=UTF-8
+Exec=menuexec driftnet -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-05-web-sniffers;
+X-Parrot-Package=driftnet

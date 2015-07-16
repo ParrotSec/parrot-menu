@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=dnswalk
+Encoding=UTF-8
+Exec=menuexec dnswalk --help 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-01-dns-analysis;
+X-Parrot-Package=dnswalk

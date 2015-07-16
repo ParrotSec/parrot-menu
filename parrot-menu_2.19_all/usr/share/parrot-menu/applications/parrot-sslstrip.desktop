@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=sslstrip
+Encoding=UTF-8
+Exec=menuexec sslstrip -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-13-ssl-analysis;07-04-network-spoofing;
+X-Parrot-Package=sslstrip

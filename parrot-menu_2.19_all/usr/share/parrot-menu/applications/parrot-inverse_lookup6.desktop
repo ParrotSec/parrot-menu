@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=inverse_lookup6
+Encoding=UTF-8
+Exec=menuexec inverse_lookup6 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-02-identify-live-hosts;
+X-Parrot-Package=thc-ipv6

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=socat
+Encoding=UTF-8
+Exec=menuexec socat -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=08-02-tunneling;
+X-Parrot-Package=socat

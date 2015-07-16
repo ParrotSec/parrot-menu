@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=pipal
+Encoding=UTF-8
+Exec=menuexec pipal -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=13-01-evidence-management;
+X-Parrot-Package=pipal

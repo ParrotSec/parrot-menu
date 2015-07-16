@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=webslayer
+Encoding=UTF-8
+Exec=menuexecg webslayer
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=03-07-web-application-fuzzers;03-04-web-crawlers;
+X-Parrot-Package=webslayer

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=nmap
+Encoding=UTF-8
+Exec=menuexec nmap 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-01-dns-analysis;01-02-identify-live-hosts;01-04-network-scanners;01-06-os-fingerprinting;01-09-service-fingerprinting;01-10-smb-analysis;01-11-smtp-analysis;01-12-snmp-analysis;02-03-misc-scanners;top10;
+X-Parrot-Package=nmap

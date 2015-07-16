@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=identify hf tag type
+Encoding=UTF-8
+Exec=menuexec isotype.py -R RFIDIOt.rfidiot.READER_ACG -s 9600 -l /dev/ttyUSB0
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-03-03-rfidiot-acg;
+X-Parrot-Package=python-rfidiot

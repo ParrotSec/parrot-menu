@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=sqldict
+Encoding=UTF-8
+Exec=sh -c "menuexecg sqldict"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=02-05-database-assessment;
+X-Parrot-Package=sqldict

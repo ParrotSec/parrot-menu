@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=w3af
+Encoding=UTF-8
+Exec=sh -c "menuexecg w3af"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=03-05-web-vulnerability-scanners;
+X-Parrot-Package=w3af

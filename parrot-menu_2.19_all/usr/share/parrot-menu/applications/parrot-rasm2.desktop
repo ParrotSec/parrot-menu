@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=rasm2
+Encoding=UTF-8
+Exec=menuexec rasm2 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-02-disassembly;
+X-Parrot-Package=radare2

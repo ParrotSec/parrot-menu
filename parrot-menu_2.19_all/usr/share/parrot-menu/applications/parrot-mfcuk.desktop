@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=mfcuk
+Encoding=UTF-8
+Exec=menuexec mfcuk -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-03-01-nfc-tools;
+X-Parrot-Package=mfcuk

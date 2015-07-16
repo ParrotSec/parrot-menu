@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=rtl_sdr
+Encoding=UTF-8
+Exec=menuexec rtl_sdr 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-05-sdr-tools;
+X-Parrot-Package=librtlsdr-bin

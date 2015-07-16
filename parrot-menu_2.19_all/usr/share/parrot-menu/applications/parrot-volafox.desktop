@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=volafox
+Encoding=UTF-8
+Exec=menuexec volafox 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=12-12-ram-forensics-tools;
+X-Parrot-Package=volafox

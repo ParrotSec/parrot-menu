@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=sidguesser
+Encoding=UTF-8
+Exec=menuexec sidguess 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-05-database-assessment;
+X-Parrot-Package=sidguesser

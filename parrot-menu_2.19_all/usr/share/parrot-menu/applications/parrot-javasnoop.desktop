@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=javasnoop
+Encoding=UTF-8
+Exec=sh -c "menuexecg javasnoop"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=09-03-misc-tools;
+X-Parrot-Package=javasnoop

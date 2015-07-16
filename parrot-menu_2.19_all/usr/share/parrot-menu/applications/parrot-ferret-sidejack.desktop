@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ferret
+Encoding=UTF-8
+Exec=menuexec ferret 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-05-web-sniffers;
+X-Parrot-Package=ferret-sidejack

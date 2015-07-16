@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=cisco-auditing-tool
+Encoding=UTF-8
+Exec=menuexec CAT 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-01-cisco-attacks;02-01-cisco-tools;04-01-online-attacks;01-12-snmp-analysis;
+X-Parrot-Package=cisco-auditing-tool

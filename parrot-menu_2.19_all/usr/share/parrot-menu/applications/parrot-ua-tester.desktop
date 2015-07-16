@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ua-tester
+Encoding=UTF-8
+Exec=menuexec ua-tester 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-02-ids-ips-identification;
+X-Parrot-Package=ua-tester

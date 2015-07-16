@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=fake_mipv6
+Encoding=UTF-8
+Exec=menuexec fake_mipv6 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-04-network-spoofing;
+X-Parrot-Package=thc-ipv6

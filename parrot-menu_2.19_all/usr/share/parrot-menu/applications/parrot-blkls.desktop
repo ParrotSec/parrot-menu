@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=blkls
+Encoding=UTF-8
+Exec=menuexec blkls 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=12-07-forensic-imaging-tools;
+X-Parrot-Package=sleuthkit

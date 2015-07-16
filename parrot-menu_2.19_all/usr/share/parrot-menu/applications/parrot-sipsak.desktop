@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=sipsak
+Encoding=UTF-8
+Exec=menuexec sipsak -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-02-voip-tools;
+X-Parrot-Package=sipcrack

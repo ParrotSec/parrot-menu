@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=dnstracer
+Encoding=UTF-8
+Exec=menuexec dnstracer 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-01-dns-analysis;
+X-Parrot-Package=dnstracer

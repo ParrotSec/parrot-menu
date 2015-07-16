@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=metasploit framework
+Encoding=UTF-8
+Exec=menuexec msfconsole 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-02-metasploit-framework;top10;
+X-Parrot-Package=metasploit-framework

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=unicornscan
+Encoding=UTF-8
+Exec=menuexec us -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-02-identify-live-hosts;01-04-network-scanners;01-06-os-fingerprinting;01-09-service-fingerprinting;
+X-Parrot-Package=unicornscan

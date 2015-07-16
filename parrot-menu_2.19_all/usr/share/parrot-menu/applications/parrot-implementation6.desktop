@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=implementation6
+Encoding=UTF-8
+Exec=menuexec implementation6 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-09-service-fingerprinting;
+X-Parrot-Package=thc-ipv6

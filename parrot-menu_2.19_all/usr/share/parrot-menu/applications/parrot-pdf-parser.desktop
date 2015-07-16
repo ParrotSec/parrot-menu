@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=pdf-parser
+Encoding=UTF-8
+Exec=menuexec pdf-parser -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=12-11-pdf-forensics-tools;
+X-Parrot-Package=pdf-parser

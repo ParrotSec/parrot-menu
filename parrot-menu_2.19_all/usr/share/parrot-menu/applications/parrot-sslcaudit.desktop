@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=sslcaudit
+Encoding=UTF-8
+Exec=menuexec sslcaudit -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-13-ssl-analysis;
+X-Parrot-Package=sslcaudit

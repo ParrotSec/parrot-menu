@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ragg2
+Encoding=UTF-8
+Exec=menuexec ragg2 -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-03-misc-tools;
+X-Parrot-Package=radare2

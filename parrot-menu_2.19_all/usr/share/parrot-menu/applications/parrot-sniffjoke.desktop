@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=sniffjoke
+Encoding=UTF-8
+Exec=menuexec sniffjoke --help 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-04-network-spoofing;
+X-Parrot-Package=sniffjoke

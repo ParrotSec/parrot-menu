@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ginguma
+Encoding=UTF-8
+Exec=sh -c "menuexecg ginguma"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=06-09-inguma;
+X-Parrot-Package=inguma

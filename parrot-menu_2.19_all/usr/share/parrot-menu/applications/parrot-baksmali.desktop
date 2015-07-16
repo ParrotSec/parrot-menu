@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=baksmali
+Encoding=UTF-8
+Exec=menuexec baksmali --help 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-01-android-tools;
+X-Parrot-Package=smali

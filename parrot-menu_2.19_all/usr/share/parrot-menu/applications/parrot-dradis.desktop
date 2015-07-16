@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=dradis
+Encoding=UTF-8
+Exec=menuexecg "service dradis start";sh -c "xdg-open https://127.0.0.1:3004"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=13-03-documentation;
+X-Parrot-Package=dradis

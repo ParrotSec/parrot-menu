@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=sslscan
+Encoding=UTF-8
+Exec=menuexec sslscan 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-13-ssl-analysis;01-09-service-fingerprinting;
+X-Parrot-Package=sslscan

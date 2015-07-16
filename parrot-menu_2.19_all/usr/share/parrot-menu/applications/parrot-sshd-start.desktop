@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=sshd start
+Encoding=UTF-8
+Exec=menuexec service ssh start 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=14-06-sshd;
+X-Parrot-Package=openssh-server

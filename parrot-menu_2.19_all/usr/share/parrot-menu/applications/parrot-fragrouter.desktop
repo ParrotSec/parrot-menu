@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=fragrouter
+Encoding=UTF-8
+Exec=menuexec fragrouter -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-03-ids-ips-identification;
+X-Parrot-Package=fragrouter

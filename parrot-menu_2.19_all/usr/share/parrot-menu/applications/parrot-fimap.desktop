@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=fimap
+Encoding=UTF-8
+Exec=menuexec fimap -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-05-web-vulnerability-scanners;
+X-Parrot-Package=fimap
