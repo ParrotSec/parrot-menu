@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ragg2-cc
+Encoding=UTF-8
+Exec=menuexec ragg2-cc 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-reverseengineer;
+X-Parrot-Package=radare2

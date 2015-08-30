@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ophcrack
+Encoding=UTF-8
+Exec=menuexecg "ophcrack"
+Icon=parrot-ophcrack.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=05-password-attacks;top10
+X-Parrot-Package=ophcrack

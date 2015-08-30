@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=webscarab
+Encoding=UTF-8
+Exec=menuexecg "webscarab"
+Icon=parrot-webscarab.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=03-webapp-analysis;top10
+X-Parrot-Package=webscarab

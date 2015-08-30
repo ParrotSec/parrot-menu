@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ettercap-graphical
+Encoding=UTF-8
+Exec=menuexecg "ettercap -G"
+Icon=parrot-ettercap.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=09-sniffing-spoofing;top10
+X-Parrot-Package=ettercap-graphical

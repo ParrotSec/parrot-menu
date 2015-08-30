@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ewfverify
+Encoding=UTF-8
+Exec=menuexec ewfverify -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-07-forensic-imaging-tools;
+X-Parrot-Package=ewf-tools

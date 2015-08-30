@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=genpmk
+Encoding=UTF-8
+Exec=menuexec genpmk 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-04-other-wireless;
+X-Parrot-Package=cowpatty

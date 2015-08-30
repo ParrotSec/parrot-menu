@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=rahash2
+Encoding=UTF-8
+Exec=menuexec rahash2 -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-reverseengineer;11-07-forensic-imaging-tools;
+X-Parrot-Package=radare2

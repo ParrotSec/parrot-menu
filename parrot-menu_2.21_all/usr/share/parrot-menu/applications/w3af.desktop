@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=w3af
+Encoding=UTF-8
+Exec=menuexecg "w3af"
+Icon=parrot-w3af.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=03-webapp-analysis;top10
+X-Parrot-Package=w3af

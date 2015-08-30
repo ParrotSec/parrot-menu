@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=bruteforce mifare
+Encoding=UTF-8
+Exec=menuexec loginall.py -R RFIDIOt.rfidiot.READER_PCSC 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-03-rfid-nfc-tools;
+X-Parrot-Package=python-rfidiot

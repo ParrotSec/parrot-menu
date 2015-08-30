@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=dnsdict6
+Encoding=UTF-8
+Exec=menuexec dnsdict6 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-01-dns-analysis;03-09-ipv6
+X-Parrot-Package=thc-ipv6

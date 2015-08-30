@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=msgsnarf
+Encoding=UTF-8
+Exec=menuexec msgsnarf -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-03-voip-tools;09-01-network-sniffers;
+X-Parrot-Package=dsniff

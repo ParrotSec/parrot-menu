@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=jcop set atr historical bytes
+Encoding=UTF-8
+Exec=menuexec jcopsetatrhist.py -R RFIDIOt.rfidiot.READER_ACG -l /dev/ttyUSB0 -s 9600 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-03-rfid-nfc-tools;
+X-Parrot-Package=python-rfidiot

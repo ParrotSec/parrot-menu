@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=jcop info
+Encoding=UTF-8
+Exec=menuexec jcoptool.py -R RFIDIOt.rfidiot.READER_PCSC INFO 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-03-rfid-nfc-tools;
+X-Parrot-Package=python-rfidiot

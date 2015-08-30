@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=affinfo
+Encoding=UTF-8
+Exec=menuexec affinfo -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-07-forensic-imaging-tools;
+X-Parrot-Package=afflib-tools

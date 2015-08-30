@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=cryptcat
+Encoding=UTF-8
+Exec=menuexec cryptcat -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-02-tunneling;
+X-Parrot-Package=cryptcat

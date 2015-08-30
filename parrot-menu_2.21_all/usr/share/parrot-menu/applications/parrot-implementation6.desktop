@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=implementation6
+Encoding=UTF-8
+Exec=menuexec implementation6 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-09-ipv6
+X-Parrot-Package=thc-ipv6

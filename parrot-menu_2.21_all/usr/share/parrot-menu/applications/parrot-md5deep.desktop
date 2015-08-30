@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=md5deep
+Encoding=UTF-8
+Exec=menuexec md5deep -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-07-forensic-imaging-tools;
+X-Parrot-Package=md5deep

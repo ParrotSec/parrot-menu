@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=owasp-zap
+Encoding=UTF-8
+Exec=menuexecg "zaproxy"
+Icon=parrot-zaproxy.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=03-webapp-analysis;top10
+X-Parrot-Package=zaproxy

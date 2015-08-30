@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ikat
+Encoding=UTF-8
+Exec=menuexec ikat 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=08-exploitation-tools;
+X-Parrot-Package=ikat

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=epassport read/write/clone
+Encoding=UTF-8
+Exec=menuexec mrpkey.py -R RFIDIOt.rfidiot.READER_PCSC 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-03-rfid-nfc-tools;
+X-Parrot-Package=python-rfidiot

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+    <atom:author>
+        <atom:name>Xplico Internet traffic decoder</atom:name>
+    </atom:author>
+    <atom:link href="http://www.xplico.org" />
+    <name>xplico_geomap.kml</name>
+    <open>1</open>
+    <LookAt>
+        <longitude>12.334300</longitude>
+        <latitude>45.433899</latitude>
+        <altitude></altitude>
+        <range>2500000</range>
+        <tilt>0</tilt>
+        <heading>0</heading>
+    </LookAt>
+    <Style id="linestyleFtp">
+        <LineStyle>
+        <color>7F00FFFF</color>
+        <width>4</width>
+        </LineStyle>
+    </Style>
+    <Style id="linestyleHttp">
+        <LineStyle>
+        <color>7F00F000</color>
+        <width>4</width>
+        </LineStyle>
+    </Style>
+    <Style id="linestyleEmail">
+        <LineStyle>
+        <color>7FF00000</color>
+        <width>4</width>
+        </LineStyle>
+    </Style>
+    <Style id="linestyleIpp">
+        <LineStyle>
+        <color>7FF00000</color>
+        <width>4</width>
+        </LineStyle>
+    </Style>
+    <Style id="linestyleIrc">
+        <LineStyle>
+        <color>7FF00000</color>
+        <width>4</width>
+        </LineStyle>
+    </Style>
+    <Style id="linestyleMms">
+        <LineStyle>
+        <color>7F0000F0</color>
+        <width>4</width>
+        </LineStyle>
+    </Style>
+    <Style id="linestyleNntp">
+        <LineStyle>
+        <color>7FF00000</color>
+        <width>4</width>
+        </LineStyle>
+    </Style>
+    <Style id="linestylePjl">
+        <LineStyle>
+        <color>7F00FFFF</color>
+        <width>4</width>
+        </LineStyle>
+    </Style>
+    <Style id="linestyleRtp">
+        <LineStyle>
+        <color>7F0000F0</color>
+        <width>4</width>
+        </LineStyle>
+    </Style>
+    <Style id="linestyleSip">
+        <LineStyle>
+        <color>7F0000F0</color>
+        <width>4</width>
+        </LineStyle>
+    </Style>
+    <Style id="linestyleDns">
+        <LineStyle>
+        <color>7F40AFF0</color>
+        <width>4</width>
+        </LineStyle>
+    </Style>
+    <Style id="linestyleTcp">
+        <LineStyle>
+        <color>7F000000</color>
+        <width>4</width>
+        </LineStyle>
+    </Style>
+    <Style id="linestyleUdp">
+        <LineStyle>
+        <color>7FFFFFFF</color>
+        <width>4</width>
+        </LineStyle>
+    </Style>
+    <Style id="linestyleUdp">
+        <LineStyle>
+        <color>7FFFFFFF</color>
+        <width>4</width>
+        </LineStyle>
+    </Style>
+    <Style id="linestyleTftp">
+        <LineStyle>
+        <color>b0e77b</color>
+        <width>4</width>
+        </LineStyle>
+    </Style>
+    <Style id="linestyleFBchat">
+        <LineStyle>
+        <color>f0e77b</color>
+        <width>4</width>
+        </LineStyle>
+    </Style>
+    <Style id="linestyleTelnet">
+        <LineStyle>
+        <color>f4ef7b</color>
+        <width>4</width>
+        </LineStyle>
+    </Style>

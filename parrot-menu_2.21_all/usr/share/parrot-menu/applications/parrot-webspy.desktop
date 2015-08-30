@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=webspy
+Encoding=UTF-8
+Exec=menuexec webspy -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-01-network-sniffers
+X-Parrot-Package=dsniff

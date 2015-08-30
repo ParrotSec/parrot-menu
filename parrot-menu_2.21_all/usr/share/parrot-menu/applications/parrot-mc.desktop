@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=mc
+Encoding=UTF-8
+Exec=menuexec mc --help 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-03-digital-forensics;11-04-forensic-analysis-tools;
+X-Parrot-Package=mc
