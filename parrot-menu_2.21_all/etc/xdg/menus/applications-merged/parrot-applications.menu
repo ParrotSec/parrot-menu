@@ -259,8 +259,7 @@
         </And>
       </Include>
     </Menu>
-  </Menu>
-  <Menu>
+    <Menu>
       <Name>IPv6 tools</Name>
       <Directory>03-09-ipv6.directory</Directory>
       <Include>

@@ -1,11 +1,11 @@
-5351c40f534b4ba62f90d7dc590482c6  ./etc/xdg/menus/applications-merged/parrot-applications.menu
+d15ee17b294189d915f32468767bf305  ./etc/xdg/menus/applications-merged/parrot-applications.menu
 04e08da17a71471612a4601631129694  ./etc/xdg/menus/applications-merged/anon-surf.menu
 73c25dd58bca52731bf48f86a43e0da6  ./etc/xdg/menus/mate-applications.menu
 6f3724e4d7f64f36756a6b805806ce61  ./etc/apt/apt.conf.d/99parrot-menu
 50539a7edec8f0bae306c8ced505c98e  ./etc/dconf/db/local.d/parrot-menu
 d1d202034c12a192abe05bb32b7fab78  ./DEBIAN/control
 27a564eff8bbad6a477fae560a065bb9  ./DEBIAN/postinst
-13d11650556d54c56761ab28c10823d5  ./DEBIAN/md5sums
+92d9d8833b4a3858da201aaba23e3535  ./DEBIAN/md5sums
 7c06fefff22ce6c85a0f6974ebdddad3  ./usr/share/parrot-menu/applications-old/parrot-pwdump.desktop
 d8b961df36eac425242672d3251f6e57  ./usr/share/parrot-menu/applications-old/parrot-binwalk.desktop
 bf707f150223ac908ed0896a6c604169  ./usr/share/parrot-menu/applications-old/parrot-nbtscan.desktop
@@ -562,7 +562,6 @@ be9cdf65b298f50e8c85476a4943fb71  ./usr/share/parrot-menu/applications/parrot-fa
 23820c8fa6d56cf9790bd80c4fafc2fc  ./usr/share/parrot-menu/applications/parrot-rtpinsertsound.desktop
 f53bdb4e84c1089460db5d942eb7c32e  ./usr/share/parrot-menu/applications/parrot-extundelete.desktop
 eb88d759236664f9c65124d51d280b6f  ./usr/share/parrot-menu/applications/parrot-wifiarp.desktop
-427b8a8faa9ddb162ec198207f8dcfe6  ./usr/share/parrot-menu/applications/parrot-airmode.desktop
 9343c14e7ccaf304c3f3ad737a528876  ./usr/share/parrot-menu/applications/parrot-android-sdk.desktop
 941470e9ed8e2828829dd5a8aca76a0f  ./usr/share/parrot-menu/applications/parrot-rfidiot-18.desktop
 3eeffacbc1f432c7ddd7e613f643fc22  ./usr/share/parrot-menu/applications/parrot-dbd.desktop
