@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=metasploit community / pro
+Encoding=UTF-8
+Exec=sh -c "menuexecg /opt/metasploit/scripts/launchui.sh"
+Icon=parrot-metasploit.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=06-02-metasploit-framework;
+X-Parrot-Package=metasploit

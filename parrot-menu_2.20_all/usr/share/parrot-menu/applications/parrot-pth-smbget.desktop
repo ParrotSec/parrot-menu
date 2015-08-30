@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=pth-smbget
+Encoding=UTF-8
+Exec=menuexec "pth-smbget --help"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-04-pass-hash;
+X-Parrot-Package=passing-the-hash
+
+

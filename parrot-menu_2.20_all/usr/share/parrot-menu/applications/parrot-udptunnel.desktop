@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=udptunnel
+Encoding=UTF-8
+Exec=menuexec "udptunnel -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-02-tunneling;
+X-Parrot-Package=udptunnel

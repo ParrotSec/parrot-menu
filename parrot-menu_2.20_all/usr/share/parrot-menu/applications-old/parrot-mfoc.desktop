@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=mfoc
+Encoding=UTF-8
+Exec=menuexec mfoc -h 
+Icon=parrot-mfoc.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-03-01-nfc-tools;
+X-Parrot-Package=mfoc

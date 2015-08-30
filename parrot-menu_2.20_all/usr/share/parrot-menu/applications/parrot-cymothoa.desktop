@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=cymothoa
+Encoding=UTF-8
+Exec=menuexec "cymothoa -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-01-os-backdoors;
+X-Parrot-Package=cymothoa

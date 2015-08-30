@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=radare2
+Encoding=UTF-8
+Exec=menuexec "radare2 -h"
+Icon=parrot-radare2.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-reverseengineer;
+X-Parrot-Package=radare2

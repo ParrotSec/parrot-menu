@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=pixiewps
+Encoding=UTF-8
+Exec=menuexec "pixiewps -h"
+Icon=parrot-pixiewps.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-wireless-attacks;
+X-Parrot-Package=pixiewps

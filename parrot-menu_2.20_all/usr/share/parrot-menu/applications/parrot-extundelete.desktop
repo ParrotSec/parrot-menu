@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=extundelete
+Encoding=UTF-8
+Exec=menuexec "extundelete --help"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-03-digital-forensics;
+X-Parrot-Package=extundelete

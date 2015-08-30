@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ohrwurm
+Encoding=UTF-8
+Exec=menuexec "ohrwurm"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-03-voip-tools;02-02-fuzzers;
+X-Parrot-Package=ohrwurm

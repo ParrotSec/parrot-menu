@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=hydra
+Encoding=UTF-8
+Exec=menuexec "hydra -h"
+Icon=parrot-hydra.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-01-online-attacks;
+X-Parrot-Package=hydra
+
+

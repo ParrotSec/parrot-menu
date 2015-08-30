@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=openvas start
+Encoding=UTF-8
+Exec=menuexec "openvas-start"
+Icon=parrot-OpenVas.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-vulnerability-analysis;14-11-openvas-service;02-06-openvas;14-services;
+X-Parrot-Package=openvas

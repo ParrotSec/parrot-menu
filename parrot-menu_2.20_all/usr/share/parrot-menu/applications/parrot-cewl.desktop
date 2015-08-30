@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=cewl
+Encoding=UTF-8
+Exec=menuexec "cewl --help"
+Icon=parrot-cewl.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-05-profile;05-password-attacks;
+X-Parrot-Package=cewl

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ssldump
+Encoding=UTF-8
+Exec=menuexec "ssldump -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-13-ssl-analysis;
+X-Parrot-Package=ssldump

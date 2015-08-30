@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=masscan
+Encoding=UTF-8
+Exec=menuexec "masscan --help"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-02-identify-live-hosts;01-04-network-scanners;
+X-Parrot-Package=masscan

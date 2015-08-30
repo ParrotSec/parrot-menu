@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=NASM shell
+Encoding=UTF-8
+Exec=menuexec "cd /usr/share/metasploit-framework/tools && ./nasm_shell.rb"
+Icon=parrot-metasploit.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-reverseengineer;
+X-Parrot-Package=metasploit-framework

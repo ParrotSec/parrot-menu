@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=netsniff-ng
+Encoding=UTF-8
+Exec=menuexec "netsniff-ng -h"
+Icon=parrot-netsniff-ng.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-01-network-sniffers;09-sniffing-spoofing;
+X-Parrot-Package=netsniff-ng

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=metagoofil
+Encoding=UTF-8
+Exec=menuexec "metagoofil"
+Icon=parrot-metagoofil.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-07-osint-analysis;12-reporting;
+X-Parrot-Package=metagoofil

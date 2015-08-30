@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=redfang
+Encoding=UTF-8
+Exec=menuexec "fang -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-02-bluetooth-tools;
+X-Parrot-Package=redfang

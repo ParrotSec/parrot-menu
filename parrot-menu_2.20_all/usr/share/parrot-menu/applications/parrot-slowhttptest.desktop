@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=slowhttptest
+Encoding=UTF-8
+Exec=menuexec "slowhttptest -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-07-stress-testing;
+X-Parrot-Package=slowhttptest

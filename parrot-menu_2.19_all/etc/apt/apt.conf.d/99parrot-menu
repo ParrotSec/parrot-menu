@@ -1,1 +1,0 @@
-DPkg::Post-Invoke { "/usr/share/parrot-menu/update-parrot-menu wait_dpkg"; }

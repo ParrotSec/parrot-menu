@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=rtpflood
+Encoding=UTF-8
+Exec=menuexec "rtpflood"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-03-voip-tools;
+X-Parrot-Package=rtpflood

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=maltego
+Encoding=UTF-8
+Exec=menuexecg "maltego"
+Icon=parrot-maltego.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=01-info-gathering;01-07-osint-analysis;
+X-Parrot-Package=maltego

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=dcfldd
+Encoding=UTF-8
+Exec=menuexec "dcfldd --help"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-03-digital-forensics;11-07-forensic-imaging-tools;
+X-Parrot-Package=dcfldd

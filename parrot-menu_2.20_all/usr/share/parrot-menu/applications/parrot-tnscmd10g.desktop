@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=tnscmd10g
+Encoding=UTF-8
+Exec=menuexec "tnscmd10g"
+Icon=parrot-tnscmd10g.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=04-database-assessment;
+X-Parrot-Package=tnscmd10g

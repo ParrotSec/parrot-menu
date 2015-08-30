@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=truecrypt
+Encoding=UTF-8
+Exec=menuexec truecrypt -h 
+Icon=parrot-truecrypt.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=13-01-evidence-management;
+X-Parrot-Package=truecrypt

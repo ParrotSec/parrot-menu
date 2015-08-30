@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=reglookup
+Encoding=UTF-8
+Exec=menuexec "reglookup"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-04-forensic-analysis-tools;
+X-Parrot-Package=reglookup

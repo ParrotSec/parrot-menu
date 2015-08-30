@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=apktool
+Encoding=UTF-8
+Exec=menuexec "apktool"
+Icon=parrot-apktool.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-reverseengineer;11-01-android-tools;
+X-Parrot-Package=apktool

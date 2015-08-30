@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=ncrack
+Encoding=UTF-8
+Exec=menuexec ncrack -h 
+Icon=parrot-ncrack.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=04-01-online-attacks;
+X-Parrot-Package=ncrack
+
+

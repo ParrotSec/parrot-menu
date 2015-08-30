@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ike-scan
+Encoding=UTF-8
+Exec=menuexec "ike-scan -h"
+Icon=parrot-ike-skan.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-info-gathering;
+X-Parrot-Package=ike-scan

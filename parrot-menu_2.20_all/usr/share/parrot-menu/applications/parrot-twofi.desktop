@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=twofi
+Encoding=UTF-8
+Exec=menuexec "twofi -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-07-osint-analysis;
+X-Parrot-Package=twofi

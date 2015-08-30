@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=bed
+Encoding=UTF-8
+Exec=menuexec "bed"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-02-fuzzers;
+X-Parrot-Package=bed

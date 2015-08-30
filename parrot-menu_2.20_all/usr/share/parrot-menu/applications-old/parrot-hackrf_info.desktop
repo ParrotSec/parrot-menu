@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=hackrf_info
+Encoding=UTF-8
+Exec=menuexec hackrf_info -h
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-04-other-wireless;
+X-Parrot-Package=hackrf

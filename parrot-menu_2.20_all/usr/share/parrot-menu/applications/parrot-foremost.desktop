@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=foremost
+Encoding=UTF-8
+Exec=menuexec "foremost -h"
+Icon=parrot-foremost.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-forensics;11-05-forensic-carving-tools;
+X-Parrot-Package=foremost

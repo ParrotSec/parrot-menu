@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=mfterm
+Encoding=UTF-8
+Exec=menuexec mfterm -h 
+Icon=parrot-mfterm.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-03-01-nfc-tools;
+X-Parrot-Package=mfterm

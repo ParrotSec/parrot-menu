@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=evilgrade
+Encoding=UTF-8
+Exec=menuexec "evilgrade"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-02-network-spoofing;
+X-Parrot-Package=isr-evilgrade

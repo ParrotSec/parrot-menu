@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ophcrack-cli
+Encoding=UTF-8
+Exec=menuexec "ophcrack-cli"
+Icon=parrot-ophcrack.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-02-offline-attacks;
+X-Parrot-Package=ophcrack-cli

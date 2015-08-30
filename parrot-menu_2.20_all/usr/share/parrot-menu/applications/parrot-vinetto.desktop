@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=vinetto
+Encoding=UTF-8
+Exec=menuexec "vinetto -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-04-forensic-analysis-tools;
+X-Parrot-Package=vinetto

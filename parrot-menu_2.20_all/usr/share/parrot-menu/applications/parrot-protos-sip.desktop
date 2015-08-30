@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=protos-sip
+Encoding=UTF-8
+Exec=menuexec "protos-sip -help"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-03-voip-tools;
+X-Parrot-Package=protos-sip

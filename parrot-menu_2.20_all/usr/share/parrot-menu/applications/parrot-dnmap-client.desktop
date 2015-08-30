@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=dnmap-client
+Encoding=UTF-8
+Exec=menuexec "dnmap_client"
+Icon=parrot-dnmap.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-info-gathering;
+X-Parrot-Package=dnmap

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=recstudio
+Encoding=UTF-8
+Exec=menuexecg "recstudio"
+Icon=parrot-recstudio.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=07-reverseengineer;
+X-Parrot-Package=recstudio

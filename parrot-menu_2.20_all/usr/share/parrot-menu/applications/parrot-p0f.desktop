@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=p0f
+Encoding=UTF-8
+Exec=menuexec "p0f -h"
+Icon=parrot-p0f.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-info-gathering;
+X-Parrot-Package=p0f

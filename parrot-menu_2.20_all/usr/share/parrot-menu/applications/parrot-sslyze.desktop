@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=sslyze
+Encoding=UTF-8
+Exec=menuexec "sslyze -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-13-ssl-analysis;
+X-Parrot-Package=sslyze

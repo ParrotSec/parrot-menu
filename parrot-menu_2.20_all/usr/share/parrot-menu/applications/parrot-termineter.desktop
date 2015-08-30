@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=termineter
+Encoding=UTF-8
+Exec=menuexec "termineter -h"
+Icon=parrot-termineter.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=08-exploitation-tools;
+X-Parrot-Package=termineter

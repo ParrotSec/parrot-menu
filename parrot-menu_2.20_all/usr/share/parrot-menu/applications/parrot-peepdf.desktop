@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=peepdf
+Encoding=UTF-8
+Exec=menuexec "peepdf -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-11-pdf-forensics-tools;
+X-Parrot-Package=peepdf

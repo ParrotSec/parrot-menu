@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=pyrit
+Encoding=UTF-8
+Exec=menuexec "pyrit -h"
+Icon=parrot-pyrit.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-password-attacks;
+X-Parrot-Package=pyrit

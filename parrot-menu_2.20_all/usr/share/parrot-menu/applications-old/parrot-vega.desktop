@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=vega
+Encoding=UTF-8
+Exec=menuexecg vega
+Icon=parrot-vega.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=03-04-web-crawlers;03-05-web-vulnerability-scanners;03-06-web-application-proxies;
+X-Parrot-Package=vega

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=gnuradio-companion
+Encoding=UTF-8
+Exec=menuexecg "gnuradio-companion"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=06-05-radio-tools;
+X-Parrot-Package=gnuradio

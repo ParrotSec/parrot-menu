@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=u3-pwn
+Encoding=UTF-8
+Exec=menuexec "u3-pwn"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-01-os-backdoors;
+X-Parrot-Package=u3-pwn

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN" "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
+<Menu>
+<Name>parrot Applications</Name>
+<!-- parrot submenu -->
+<Menu>
+	<Name>Anon Surf</Name>
+	<Directory>anon-surf.directory</Directory>
+
+	<Include><And>
+		<Category>anonsurf</Category>
+	</And></Include>
+</Menu>
+</Menu>
+
+
+
+

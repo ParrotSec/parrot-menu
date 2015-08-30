@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=automater
+Encoding=UTF-8
+Exec=menuexec automater -h
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-07-osint-analysis;
+X-Parrot-Package=automater

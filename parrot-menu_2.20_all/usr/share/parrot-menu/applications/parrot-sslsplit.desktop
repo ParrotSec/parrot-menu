@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=sslsplit
+Encoding=UTF-8
+Exec=menuexec "sslsplit -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-02-network-spoofing;
+X-Parrot-Package=sslsplit

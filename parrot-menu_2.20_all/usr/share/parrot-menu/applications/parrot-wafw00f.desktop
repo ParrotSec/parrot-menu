@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=wafw00f
+Encoding=UTF-8
+Exec=menuexec "wafw00f -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-03-ids-ips-identification;
+X-Parrot-Package=waffit

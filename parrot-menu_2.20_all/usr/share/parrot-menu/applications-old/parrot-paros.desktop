@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=paros
+Encoding=UTF-8
+Exec=sh -c "menuexecg paros"
+Icon=parrot-paros.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=03-06-web-application-proxies;
+X-Parrot-Package=paros

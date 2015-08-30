@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=dmitry
+Encoding=UTF-8
+Exec=menuexec "dmitry"
+Icon=parrot-dmitry.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-info-gathering;
+X-Parrot-Package=dmitry

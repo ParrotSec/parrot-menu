@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=sucrack
+Encoding=UTF-8
+Exec=menuexec "man sucrack"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-02-offline-attacks;
+X-Parrot-Package=sucrack

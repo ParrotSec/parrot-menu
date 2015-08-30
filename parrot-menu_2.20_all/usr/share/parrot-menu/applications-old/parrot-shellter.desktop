@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=shellter
+Encoding=UTF-8
+Exec=menuexec shellter
+Icon=parrot-shelter.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-maintaining-access;
+X-Parrot-Package=shellter

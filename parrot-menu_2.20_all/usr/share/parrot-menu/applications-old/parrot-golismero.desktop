@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=golismero
+Encoding=UTF-8
+Exec=menuexec golismero -h 
+Icon=parrot-golismero.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-03-misc-scanners;03-05-web-vulnerability-scanners;
+X-Parrot-Package=golismero

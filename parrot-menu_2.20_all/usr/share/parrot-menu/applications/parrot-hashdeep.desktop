@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=hashdeep
+Encoding=UTF-8
+Exec=menuexec "hashdeep -h"
+Icon=parrot-hashdeep.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-forensics;
+X-Parrot-Package=hashdeep

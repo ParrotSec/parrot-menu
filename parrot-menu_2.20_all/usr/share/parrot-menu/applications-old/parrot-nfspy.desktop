@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=nfspy
+Encoding=UTF-8
+Exec=menuexec nfspy -h
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-01-network-sniffers;09-02-network-spoofing;
+X-Parrot-Package=nfspy

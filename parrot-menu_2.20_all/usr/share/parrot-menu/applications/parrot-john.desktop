@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=john
+Encoding=UTF-8
+Exec=menuexec "john"
+Icon=parrot-john.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-password-attacks;
+X-Parrot-Package=john

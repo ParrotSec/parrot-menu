@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=hamster
+Encoding=UTF-8
+Exec=menuexec hamster 
+Icon=parrot-hamster.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-05-web-sniffers;
+X-Parrot-Package=hamster-sidejack

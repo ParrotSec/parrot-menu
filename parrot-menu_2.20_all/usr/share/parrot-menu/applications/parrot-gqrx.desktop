@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=gqrx
+Encoding=UTF-8
+Exec=menuexecg "gqrx"
+Icon=parrot-gqrx.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=06-05-radio-tools;06-wireless-attacks;
+X-Parrot-Package=gqrx

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=irpass-cdp
+Encoding=UTF-8
+Exec=menuexec "cdp"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-08-route-analysis;
+X-Parrot-Package=irpas

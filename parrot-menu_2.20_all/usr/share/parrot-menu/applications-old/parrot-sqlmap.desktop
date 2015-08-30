@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=sqlmap
+Encoding=UTF-8
+Exec=menuexec sqlmap -h 
+Icon=parrot-sqlmap.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-05-database-assessment;03-05-web-vulnerability-scanners;top10;
+X-Parrot-Package=sqlmap

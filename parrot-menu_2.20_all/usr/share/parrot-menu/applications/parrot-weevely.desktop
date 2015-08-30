@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=weevely
+Encoding=UTF-8
+Exec=menuexec "weevely"
+Icon=parrot-weevely.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-03-web-backdoors;10-maintaining-access;
+X-Parrot-Package=weevely

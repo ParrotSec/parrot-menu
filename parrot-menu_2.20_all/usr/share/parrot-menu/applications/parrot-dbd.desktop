@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=dbd
+Encoding=UTF-8
+Exec=menuexec "dbd -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-02-tunneling;10-01-os-backdoors;
+X-Parrot-Package=dbd

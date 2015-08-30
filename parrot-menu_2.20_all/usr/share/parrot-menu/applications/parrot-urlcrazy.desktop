@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=urlcrazy
+Encoding=UTF-8
+Exec=menuexec "urlcrazy -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-01-dns-analysis;01-07-osint-analysis;
+X-Parrot-Package=urlcrazy

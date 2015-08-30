@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=hashcat
+Encoding=UTF-8
+Exec=menuexec "hashcat --help"
+Icon=parrot-hashcat.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-02-offline-attacks;05-password-attacks;
+X-Parrot-Package=hashcat

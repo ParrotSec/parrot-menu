@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=recon-ng
+Encoding=UTF-8
+Exec=menuexec "recon-ng"
+Icon=parrot-Recon-NG.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-info-gathering;
+X-Parrot-Package=recon-ng

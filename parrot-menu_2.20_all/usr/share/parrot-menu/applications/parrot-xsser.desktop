@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=xsser
+Encoding=UTF-8
+Exec=menuexec "xsser -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-05-web-vulnerability-scanners;
+X-Parrot-Package=xsser

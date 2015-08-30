@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=mfoc
+Encoding=UTF-8
+Exec=menuexec "mfoc -h"
+Icon=parrot-mfoc.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-03-rfid-nfc-tools;06-wireless-attacks;
+X-Parrot-Package=mfoc

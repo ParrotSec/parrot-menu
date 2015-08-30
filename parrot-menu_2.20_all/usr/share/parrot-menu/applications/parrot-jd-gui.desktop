@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=jd-gui
+Encoding=UTF-8
+Exec=menuexecg "jd-gui"
+Icon=parrot-jd-gui.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=07-reverseengineer;
+X-Parrot-Package=jd-gui

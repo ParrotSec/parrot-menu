@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=autopsy
+Encoding=UTF-8
+Exec=menuexec autopsy 
+Icon=parrot-autopsy.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=12-03-digital-forensics;12-08-forensic-suites;12-04-forensic-analysis-tools;
+X-Parrot-Package=autopsy

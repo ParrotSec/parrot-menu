@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=mdk3
+Encoding=UTF-8
+Exec=menuexec "mdk3 --help"
+Icon=parrot-mdk3.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-wireless-attacks;
+X-Parrot-Package=mdk3

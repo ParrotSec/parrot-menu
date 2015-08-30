@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ollydbg
+Encoding=UTF-8
+Exec=menuexecg "ollydbg"
+Icon=parrot-ollydbg.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=07-reverseengineer;
+X-Parrot-Package=ollydbg

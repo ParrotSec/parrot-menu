@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=cutycapt
+Encoding=UTF-8
+Exec=menuexec "cutycapt --help"
+Icon=parrot-cutycapt.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-04-web-crawlers;12-reporting;
+X-Parrot-Package=cutycapt

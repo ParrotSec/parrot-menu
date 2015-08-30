@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=sslh
+Encoding=UTF-8
+Exec=menuexec "sslh -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-13-ssl-analysis;10-02-tunneling;
+X-Parrot-Package=sslh

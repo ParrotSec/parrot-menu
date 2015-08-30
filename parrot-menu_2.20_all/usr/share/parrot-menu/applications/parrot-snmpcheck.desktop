@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=snmp-check
+Encoding=UTF-8
+Exec=menuexec "snmp-check -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-12-snmp-analysis;
+X-Parrot-Package=snmpcheck

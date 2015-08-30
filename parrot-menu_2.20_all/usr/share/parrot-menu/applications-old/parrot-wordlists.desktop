@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=wordlists
+Encoding=UTF-8
+Exec=menuexec cd /usr/share/wordlists && ls -l
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-05-profile;05-password-attacks;
+X-Parrot-Package=wordlists

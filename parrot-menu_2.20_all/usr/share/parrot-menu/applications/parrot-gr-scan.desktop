@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=gr-scan
+Encoding=UTF-8
+Exec=menuexec "gr-scan --help"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-05-radio-tools;
+X-Parrot-Package=gr-scan

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=flasm
+Encoding=UTF-8
+Exec=menuexec flasm 
+Icon=parrot-flasm.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-03-misc-tools;
+X-Parrot-Package=flasm

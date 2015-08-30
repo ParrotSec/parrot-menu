@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=jboss-autopwn-win
+Encoding=UTF-8
+Exec=menuexec "jboss-win"
+Icon=parrot-jboss-autopwn.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-01-cms-identification;03-05-web-vulnerability-scanners;
+X-Parrot-Package=jboss-autopwn

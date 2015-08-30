@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=phrasendrescher
+Encoding=UTF-8
+Exec=menuexec "pd -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-01-online-attacks;
+X-Parrot-Package=phrasendrescher
+
+

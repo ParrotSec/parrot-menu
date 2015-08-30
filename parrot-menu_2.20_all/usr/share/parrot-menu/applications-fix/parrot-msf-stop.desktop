@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=community / pro stop
+Encoding=UTF-8
+Exec=menuexec service metasploit stop
+Icon=parrot-metasploit.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=14-09-metasploit-service;
+X-Parrot-Package=metasploit

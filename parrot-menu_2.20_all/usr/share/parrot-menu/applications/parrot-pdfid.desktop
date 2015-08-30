@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=pdfid
+Encoding=UTF-8
+Exec=menuexec "pdfid -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-11-pdf-forensics-tools;
+X-Parrot-Package=pdfid

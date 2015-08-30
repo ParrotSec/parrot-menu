@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=reaver
+Encoding=UTF-8
+Exec=menuexec reaver -h 
+Icon=parrot-reaver.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-02-wlan-stress-testing;
+X-Parrot-Package=reaver

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=enum4linux
+Encoding=UTF-8
+Exec=menuexec "enum4linux"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-10-smb-analysis;
+X-Parrot-Package=enum4linux
+
+

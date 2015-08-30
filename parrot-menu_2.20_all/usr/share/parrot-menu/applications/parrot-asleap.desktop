@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=asleap
+Encoding=UTF-8
+Exec=menuexec "asleap -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-01-wireless-tools;
+X-Parrot-Package=asleap

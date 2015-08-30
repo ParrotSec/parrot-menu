@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=beef start
+Encoding=UTF-8
+Exec=menuexec service beef-xss start 
+Icon=parrot-beef.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=14-08-beef-service;
+X-Parrot-Package=beef-xss

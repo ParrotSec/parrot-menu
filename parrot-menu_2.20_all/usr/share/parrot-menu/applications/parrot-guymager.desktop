@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=guymager
+Encoding=UTF-8
+Exec=menuexecg "guymager"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=11-07-forensic-imaging-tools;
+X-Parrot-Package=guymager

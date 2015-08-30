@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=bluesnarfer
+Encoding=UTF-8
+Exec=menuexec "bluesnarfer"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-02-bluetooth-tools;
+X-Parrot-Package=bluesnarfer

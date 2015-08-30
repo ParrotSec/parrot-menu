@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=johnny
+Encoding=UTF-8
+Exec=menuexecg johnny 
+Icon=parrot-johnny.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=04-02-offline-attacks;
+X-Parrot-Package=johnny

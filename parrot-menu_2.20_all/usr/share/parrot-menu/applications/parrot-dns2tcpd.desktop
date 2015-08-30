@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=dns2tcpd
+Encoding=UTF-8
+Exec=menuexec "dns2tcpd"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-02-tunneling;
+X-Parrot-Package=dns2tcp

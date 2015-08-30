@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=ncrack
+Encoding=UTF-8
+Exec=menuexec "ncrack -h"
+Icon=parrot-ncrack.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-password-attacks;
+X-Parrot-Package=ncrack
+
+

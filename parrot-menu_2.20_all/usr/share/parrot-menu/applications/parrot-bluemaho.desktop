@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=bluemaho
+Encoding=UTF-8
+Exec=menuexecg "bluemaho.py;${SHELL:-bash}"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=06-02-bluetooth-tools;
+X-Parrot-Package=bluemaho

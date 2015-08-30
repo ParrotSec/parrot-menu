@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=yersinia
+Encoding=UTF-8
+Exec=menuexec "yersinia --help"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-01-cisco-tools;06-01-cisco-attacks;09-02-network-spoofing;
+X-Parrot-Package=yersinia

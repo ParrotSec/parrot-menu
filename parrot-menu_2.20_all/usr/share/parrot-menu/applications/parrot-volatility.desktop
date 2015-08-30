@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=volatility
+Encoding=UTF-8
+Exec=menuexec "vol -h"
+Icon=parrot-volatility.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-forensics;
+X-Parrot-Package=volatility

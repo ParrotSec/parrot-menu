@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=oscanner
+Encoding=UTF-8
+Exec=menuexec oscanner 
+Icon=parrot-oscanner.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-05-database-assessment;
+X-Parrot-Package=oscanner
