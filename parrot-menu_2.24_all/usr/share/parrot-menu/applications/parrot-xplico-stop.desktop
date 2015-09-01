@@ -6,5 +6,5 @@ Icon=parrot-xplico.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=14-12-xplico-service;14-services;
+Categories=14-12-xplico-service
 X-Parrot-Package=xplico
