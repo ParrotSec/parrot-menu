@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=smali
+Encoding=UTF-8
+Exec=menuexec smali --help 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-reverseengineer;
+X-Parrot-Package=smali

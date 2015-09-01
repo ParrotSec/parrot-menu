@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=fake_mld6
+Encoding=UTF-8
+Exec=menuexec fake_mld6 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-02-network-spoofing;03-09-ipv6
+X-Parrot-Package=thc-ipv6

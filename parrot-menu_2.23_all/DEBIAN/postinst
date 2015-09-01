@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e 
+
+if [ "$1" = "configure" ] && dpkg --compare-versions "$2" lt "2.22"; then
+    # Initial installation or first upgrade, the hook is not yet in place,
+    # we call it ourselves and it will wait until dpkg/apt is over
+    /usr/share/parrot-menu/update-parrot-menu </dev/null >/dev/null 2>&1 &
+fi

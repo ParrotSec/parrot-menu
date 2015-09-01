@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=nmap
+Encoding=UTF-8
+Exec=menuexec "nmap"
+Icon=parrot-nmap.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-info-gathering;01-04-network-scanners;02-vulnerability-analysis
+X-Parrot-Package=nmap

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=metasploit framework
+Encoding=UTF-8
+Exec=menuexec "service postgresql start && msfdb init & msfconsole"
+Icon=parrot-metasploit.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=08-01-metasploit-framework;
+X-Parrot-Package=metasploit-framework
