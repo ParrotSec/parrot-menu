@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=armitage
 Encoding=UTF-8
-Exec=menuexecg "armitage"
+Exec=menuexecg msfdb init && armitage
 Icon=parrot-armitage.png
 StartupNotify=false
 Terminal=false
