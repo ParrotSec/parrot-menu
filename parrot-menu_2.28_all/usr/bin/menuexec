@@ -8,5 +8,5 @@ echo -e " ____                      _   ____
 "
 echo "executing \"$*\""
 echo ""
-gksu "$*"
-gksu bash
+sudo $*
+sudo -s
