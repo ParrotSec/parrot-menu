@@ -1,5 +1,5 @@
 #!/bin/bash
-service posrgresql start
+service postgresql start
 msfdb init
 msfdb start
 msfconsole
