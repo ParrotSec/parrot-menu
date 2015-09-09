@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=metasploit framework
 Encoding=UTF-8
-Exec=menuexec systemctl start postgresql && msfdb init && msfdb start && msfconsole"
+Exec=menuexec msfconsole-start
 Icon=parrot-metasploit.png
 StartupNotify=false
 Terminal=true

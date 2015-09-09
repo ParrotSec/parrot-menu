@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=metasploit stop
 Encoding=UTF-8
-Exec=menuexecg systemctl stop postgresql && msfdb stop
+Exec=menuexec msfstop
 Icon=parrot-metasploit.png
 StartupNotify=false
 Terminal=true

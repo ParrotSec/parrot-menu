@@ -1,0 +1,3 @@
+#!/bin/bash
+service posrgresql stop
+msfdb stop

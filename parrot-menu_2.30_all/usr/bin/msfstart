@@ -1,0 +1,4 @@
+#!/bin/bash
+service posrgresql start
+msfdb init
+msfdb start
