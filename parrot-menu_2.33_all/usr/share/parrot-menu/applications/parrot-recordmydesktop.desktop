@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=recordmydesktop
+Encoding=UTF-8
+Exec=recordmydesktop -h
+Icon=parrot-recordmydesktop.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=12-reporting;
+X-Parrot-Package=recordmydesktop

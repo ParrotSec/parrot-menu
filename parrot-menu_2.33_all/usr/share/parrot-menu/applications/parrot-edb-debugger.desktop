@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=edb-debugger
+Encoding=UTF-8
+Exec=menuexecg edb
+Icon=parrot-edb-debugger.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=07-reverseengineer;top10
+X-Parrot-Package=edb-debugger
