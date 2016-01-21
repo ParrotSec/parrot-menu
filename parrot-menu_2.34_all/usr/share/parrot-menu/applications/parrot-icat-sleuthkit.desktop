@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=icat-sleuthkit
 Encoding=UTF-8
-Exec=menuexec "icat-sleuthkit"
+Exec=menuexec "icat"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
