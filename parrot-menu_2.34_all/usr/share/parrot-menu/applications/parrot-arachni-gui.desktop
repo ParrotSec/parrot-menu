@@ -1,7 +1,7 @@
 [Desktop Entry]
-Name=arachni_web
+Name=arachni
 Encoding=UTF-8
-Exec=menuexec "arachni_web"
+Exec=menuexec "arachni"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
