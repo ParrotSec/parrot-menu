@@ -6,5 +6,5 @@ Icon=parrot-crunch.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=05-password-attacks;05-02-offline-attacks;
+Categories=05-password-attacks;05-02-offline-attacks;05-05-profile;
 X-Parrot-Package=crunch
