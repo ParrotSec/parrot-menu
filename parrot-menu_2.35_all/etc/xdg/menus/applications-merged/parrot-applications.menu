@@ -315,6 +315,8 @@
       </Include>
     </Menu>
     <Menu>
+/*                 */
+spero che si commenti cosi.. senno rimane la cartella vuota.. 
       <Name>Password Profiling</Name>
       <Directory>05-05-profile.directory</Directory>
       <Include>
@@ -323,6 +325,7 @@
         </And>
       </Include>
     </Menu>
+/*                 */
   </Menu>
   <Menu>
     <Name>Wireless Attacks</Name>
