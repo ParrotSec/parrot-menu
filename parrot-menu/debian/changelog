@@ -1,3 +1,9 @@
+parrot-menu (2016.7.24.3) testing; urgency=medium
+
+  * Fix parrot menu icon
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 24 Jul 2016 19:06:14 +0200
+
 parrot-menu (2016.7.24.2) testing; urgency=medium
 
   * Add metasploit start binaries
