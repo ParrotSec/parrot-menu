@@ -1,3 +1,15 @@
+parrot-menu (2016.7.24.2) testing; urgency=medium
+
+  * Add metasploit start binaries
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 24 Jul 2016 15:29:30 +0200
+
+parrot-menu (2016.7.24.1) testing; urgency=medium
+
+  * Prevent conflicts with mate-menus
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 24 Jul 2016 09:19:28 +0200
+
 parrot-menu (2016.7.24) testing; urgency=medium
 
   * Debianize source code and update launchers

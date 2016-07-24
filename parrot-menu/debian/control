@@ -9,6 +9,7 @@ Package: parrot-menu
 Architecture: all
 Depends: ${misc:Depends}, ${perl:Depends}, libdpkg-perl, libfile-fcntllock-perl, xdg-utils
 Breaks: dradis (<< 3.1.0~rc2)
+Replaces: mate-menus
 Description: Parrot GNU/Linux custom menu
  This package provides a custom menu for Parrot GNU/Linux.
  .
