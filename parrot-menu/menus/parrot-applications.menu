@@ -1,36 +1,35 @@
 <?xml version="1.0"?>
 <!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN" "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
 <Menu>
-<Name>parrot Applications</Name>
+<Name>Applications</Name>
 <!-- parrot submenu -->
 <Menu>
 	<Name>Parrot</Name>
-	<Layout>
-		<Merge type="all"/>
-		 <Menuname>Most Used Tools</Menuname>
-		 <Menuname>Parrot Controllers</Menuname>
-		 <Menuname>Cryptography</Menuname>
-         	<Separator> </Separator>
-         <Menuname>Information Gathering</Menuname>
-         <Menuname>Vulnerability Analysis</Menuname>
-         <Menuname>Web Application Analysis</Menuname>
-         <Menuname>Database Assessment</Menuname>
-         	<Separator> </Separator>
-         <Menuname>Exploit Frameworks</Menuname>
-         <Menuname>Maintaining Access</Menuname>
-         <Menuname>Password Attacks</Menuname>
-         	<Separator> </Separator>
-         <Menuname>Wireless Attacks</Menuname>
-         <Menuname>Sniffing - Spoofing</Menuname>
-         	<Separator> </Separator>
-         <Menuname>Forensic Tools</Menuname>
-         <Menuname>Reverse Engineering</Menuname>
-         	<Separator> </Separator>
-         <Menuname>Reporting Tools</Menuname>
-         <Menuname>System Services</Menuname>
-	</Layout>
-
 	<Directory>Parrot.directory</Directory>
+	<Layout>
+		<Menuname>Most Used Tools</Menuname>
+		<Menuname>Parrot Controllers</Menuname>
+		<Menuname>Cryptography</Menuname>
+		<Separator> </Separator>
+		<Menuname>Information Gathering</Menuname>
+		<Menuname>Vulnerability Analysis</Menuname>
+        <Menuname>Web Application Analysis</Menuname>
+        <Menuname>Database Assessment</Menuname>
+        <Separator> </Separator>
+        <Menuname>Exploit Frameworks</Menuname>
+        <Menuname>Maintaining Access</Menuname>
+        <Menuname>Password Attacks</Menuname>
+        <Separator> </Separator>
+        <Menuname>Wireless Attacks</Menuname>
+        <Menuname>Sniffing - Spoofing</Menuname>
+        <Separator> </Separator>
+        <Menuname>Forensic Tools</Menuname>
+        <Menuname>Reverse Engineering</Menuname>
+        <Separator> </Separator>
+        <Menuname>Reporting Tools</Menuname>
+        <Menuname>System Services</Menuname>
+		<Merge type="all"/>
+	</Layout>
 
   <Menu>
     <Name>Most Used Tools</Name>
@@ -143,7 +142,7 @@
       </Include>
     </Menu>
     <Menu>
-      <Name>Network /  Port Scanners</Name>
+      <Name>Port Scanners</Name>
       <Directory>01-04-network-scanners.directory</Directory>
       <Include>
         <And>
@@ -587,7 +586,8 @@
           <Category>14-03-mysqld</Category>
         </And>
       </Include>
-    </Menu>
+    
+</Menu>
     <Menu>
       <Name>PCSCD</Name>
       <Directory>14-08-pcscd.directory</Directory>
@@ -661,5 +661,5 @@
       </Include>
     </Menu>
   </Menu>
-</Menu>
+  </Menu>
 </Menu>

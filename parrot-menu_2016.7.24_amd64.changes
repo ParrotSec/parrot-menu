@@ -15,14 +15,14 @@ Changes:
  .
    * Debianize source code and update launchers
 Checksums-Sha1:
- 00a304c287534d46a1934688eeb5c276fb878114 562 parrot-menu_2016.7.24.dsc
- 87f260608d5a770f4eece01353bfa62f3b94cbcc 4306284 parrot-menu_2016.7.24.tar.xz
- 1419f5533cd776e80a6b91af651628cf1632acf6 4342472 parrot-menu_2016.7.24_all.deb
+ 8940831f215d915e98fcec2f1e513536ae3cf2dd 562 parrot-menu_2016.7.24.dsc
+ 4e3c0dcf5fbda2b0bab3c27fca1a3bfb0fa417e0 4306828 parrot-menu_2016.7.24.tar.xz
+ 0b568a63a6727a080cfd11c7e4a6d6e0bc0454f8 4343408 parrot-menu_2016.7.24_all.deb
 Checksums-Sha256:
- 680059d72883ed1fad015aa24ae34195ab8dcfe8c3ebb6266c46bf421422cf2e 562 parrot-menu_2016.7.24.dsc
- 3f9e830d7e49b3f0746800bc89beeccfab35b51da0939be770000ddd537622d1 4306284 parrot-menu_2016.7.24.tar.xz
- c945a6e2b2548d9b493e9c9a7d9dc7cf6ecb6e3e22e71550576ea275648279a2 4342472 parrot-menu_2016.7.24_all.deb
+ 4c843363a6b846fde2f66b980aa05f8dc91007abb6c5fd6a8b308ce84a21f9d8 562 parrot-menu_2016.7.24.dsc
+ 32abf0ed2dad37a507fb0e5adb23b2115a08a7a4aa234de1a834e450f67f407d 4306828 parrot-menu_2016.7.24.tar.xz
+ 0a31bd307ba3efa7f5d81e35acfc573051f8e596c9671a7a169a8150f4e05126 4343408 parrot-menu_2016.7.24_all.deb
 Files:
- 474ef44a12d8043dd28940701cceaa48 562 parrot optional parrot-menu_2016.7.24.dsc
- 28f3e6c161e7ddfa3e3e74b80c28577e 4306284 parrot optional parrot-menu_2016.7.24.tar.xz
- 5511e0751a90810e1fbc7b18974f8c51 4342472 parrot optional parrot-menu_2016.7.24_all.deb
+ fc6430930dbf62b9ed1966d5e07c9c13 562 parrot optional parrot-menu_2016.7.24.dsc
+ 27bcbf4185efe9a95502fcb02f9b4b2a 4306828 parrot optional parrot-menu_2016.7.24.tar.xz
+ 0db331d10eee848b57d4b84b5b9a337c 4343408 parrot optional parrot-menu_2016.7.24_all.deb

@@ -47,7 +47,7 @@ dpkg-genchanges: info: including full source code in upload
  dpkg-source --after-build parrot-menu
 dpkg-buildpackage: info: full upload; Debian-native package (full source is included)
 Now running lintian...
-E: parrot-menu source: source-contains-unsafe-symlink parrot-menu.png
+E: parrot-menu source: source-contains-unsafe-symlink menu-icons/parrot-menu.png
 W: parrot-menu source: ancient-standards-version 3.8.4 (current is 3.9.8)
 W: parrot-menu: unknown-section parrot
 W: parrot-menu: unusual-interpreter usr/share/desktop-directories/anon-surf.directory #!xdg-open

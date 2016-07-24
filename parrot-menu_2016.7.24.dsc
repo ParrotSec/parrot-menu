@@ -9,8 +9,8 @@ Build-Depends: debhelper
 Package-List:
  parrot-menu deb parrot optional arch=all
 Checksums-Sha1:
- 87f260608d5a770f4eece01353bfa62f3b94cbcc 4306284 parrot-menu_2016.7.24.tar.xz
+ 4e3c0dcf5fbda2b0bab3c27fca1a3bfb0fa417e0 4306828 parrot-menu_2016.7.24.tar.xz
 Checksums-Sha256:
- 3f9e830d7e49b3f0746800bc89beeccfab35b51da0939be770000ddd537622d1 4306284 parrot-menu_2016.7.24.tar.xz
+ 32abf0ed2dad37a507fb0e5adb23b2115a08a7a4aa234de1a834e450f67f407d 4306828 parrot-menu_2016.7.24.tar.xz
 Files:
- 28f3e6c161e7ddfa3e3e74b80c28577e 4306284 parrot-menu_2016.7.24.tar.xz
+ 27bcbf4185efe9a95502fcb02f9b4b2a 4306828 parrot-menu_2016.7.24.tar.xz
