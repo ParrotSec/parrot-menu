@@ -1,0 +1,8 @@
+menus/parrot-applications.menu etc/xdg/menus/applications-merged/
+menus/anon-surf.menu etc/xdg/menus/applications-merged/
+desktop-directories/*.directory usr/share/desktop-directories/
+desktop-files/*.desktop usr/share/parrot-menu/applications/
+apt.conf.d/99parrot-menu etc/apt/apt.conf.d/
+update-parrot-menu usr/share/parrot-menu/
+menu-icons/* usr/share/icons/hicolor/
+dconf/parrot-menu etc/dconf/db/local.d/

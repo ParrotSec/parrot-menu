@@ -1,5 +1,0 @@
-#!/bin/bash
-service postgresql start
-msfdb init
-msfdb start
-armitage

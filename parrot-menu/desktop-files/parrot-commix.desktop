@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=commix
+Encoding=UTF-8
+Exec=menuexec "commix
+Icon=parrot-commix.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-webapp-analysis;
+X-Parrot-Package=commix

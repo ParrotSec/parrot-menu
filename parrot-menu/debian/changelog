@@ -1,0 +1,5 @@
+parrot-menu (2016.7.24) testing; urgency=medium
+
+  * Debianize source code and update launchers
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 24 Jul 2016 03:19:53 +0200

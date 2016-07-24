@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=msf payload creator
+Encoding=UTF-8
+Exec=menuexec "msfpc"
+Icon=parrot-mpc.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=08-exploitation-tools;08-01-metasploit-framework;08-02-social-engineering;
+X-Parrot-Package=msfpc

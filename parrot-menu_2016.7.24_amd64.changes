@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Sun, 24 Jul 2016 03:19:53 +0200
+Source: parrot-menu
+Binary: parrot-menu
+Architecture: source all
+Version: 2016.7.24
+Distribution: testing
+Urgency: medium
+Maintainer: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
+Changed-By: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
+Description:
+ parrot-menu - Parrot GNU/Linux custom menu
+Changes:
+ parrot-menu (2016.7.24) testing; urgency=medium
+ .
+   * Debianize source code and update launchers
+Checksums-Sha1:
+ 00a304c287534d46a1934688eeb5c276fb878114 562 parrot-menu_2016.7.24.dsc
+ 87f260608d5a770f4eece01353bfa62f3b94cbcc 4306284 parrot-menu_2016.7.24.tar.xz
+ 1419f5533cd776e80a6b91af651628cf1632acf6 4342472 parrot-menu_2016.7.24_all.deb
+Checksums-Sha256:
+ 680059d72883ed1fad015aa24ae34195ab8dcfe8c3ebb6266c46bf421422cf2e 562 parrot-menu_2016.7.24.dsc
+ 3f9e830d7e49b3f0746800bc89beeccfab35b51da0939be770000ddd537622d1 4306284 parrot-menu_2016.7.24.tar.xz
+ c945a6e2b2548d9b493e9c9a7d9dc7cf6ecb6e3e22e71550576ea275648279a2 4342472 parrot-menu_2016.7.24_all.deb
+Files:
+ 474ef44a12d8043dd28940701cceaa48 562 parrot optional parrot-menu_2016.7.24.dsc
+ 28f3e6c161e7ddfa3e3e74b80c28577e 4306284 parrot optional parrot-menu_2016.7.24.tar.xz
+ 5511e0751a90810e1fbc7b18974f8c51 4342472 parrot optional parrot-menu_2016.7.24_all.deb

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=phishing-frenzy
+Encoding=UTF-8
+Exec=menuexec "phishing-frenzy -h"
+Icon=parrot-phishing-frenzy.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=08-02-social-engineering;
+X-Parrot-Package=phishing-frenzy

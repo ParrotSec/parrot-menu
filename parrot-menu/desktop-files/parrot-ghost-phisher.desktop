@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ghost phisher
+Encoding=UTF-8
+Exec=menuexec "ghost-phisher"
+Icon=parrot-ghost-phisher.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=06-wireless-attacks;08-02-social-engineering;
+X-Parrot-Package=ghost-phisher

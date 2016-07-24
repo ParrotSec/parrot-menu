@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Nessus stop
+Encoding=UTF-8
+Exec=menuexec "/etc/init.d/nessusd stop"
+Icon=parrot-nessus.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-vulnerability-analysis;02-08-nessus;14-services;
+X-Parrot-Package=nessus
