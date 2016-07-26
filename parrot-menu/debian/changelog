@@ -1,3 +1,9 @@
+parrot-menu (2016.7.26) testing; urgency=medium
+
+  * Fix armitage launcher
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 26 Jul 2016 07:31:49 +0200
+
 parrot-menu (2016.7.24.3) testing; urgency=medium
 
   * Fix parrot menu icon

@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Tue, 26 Jul 2016 07:31:49 +0200
+Source: parrot-menu
+Binary: parrot-menu
+Architecture: source all
+Version: 2016.7.26
+Distribution: testing
+Urgency: medium
+Maintainer: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
+Changed-By: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
+Description:
+ parrot-menu - Parrot GNU/Linux custom menu
+Changes:
+ parrot-menu (2016.7.26) testing; urgency=medium
+ .
+   * Fix armitage launcher
+Checksums-Sha1:
+ 181f9ab7c8137174bf2041e2252c4f1d7426e613 562 parrot-menu_2016.7.26.dsc
+ 23ed357338f7869899b4e5c4942f58e03731d7dd 4300904 parrot-menu_2016.7.26.tar.xz
+ 50795cc82791ad02535887b455380140eb1f5c10 4337562 parrot-menu_2016.7.26_all.deb
+Checksums-Sha256:
+ 5ae3ce32a51e81dbd51b86317876b830d36e98fe3e07f8e737034a3cd19e42df 562 parrot-menu_2016.7.26.dsc
+ cfd86cda47a69b1b21c10b749a4c5ab815b5df9f08661e4293fb28189d3a8678 4300904 parrot-menu_2016.7.26.tar.xz
+ 9c9c71b5a73e588eeb5bf571b19cbb8fd0f65c51219e7a4125ae80a9f04c699e 4337562 parrot-menu_2016.7.26_all.deb
+Files:
+ 441e917dcc1d870edb0f9d32abe6223f 562 parrot optional parrot-menu_2016.7.26.dsc
+ 18ee4064e803a25573d1cfc564e4e08a 4300904 parrot optional parrot-menu_2016.7.26.tar.xz
+ bf4cb76ac21c578f522bc2ed54dc5b61 4337562 parrot optional parrot-menu_2016.7.26_all.deb

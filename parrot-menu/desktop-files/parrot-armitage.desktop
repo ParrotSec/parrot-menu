@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=armitage
+Encoding=UTF-8
+Exec=menuexec msfstart-armitage
+Icon=parrot-armitage.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=08-01-metasploit-framework;08-exploitation-tools;top10
+X-Parrot-Package=armitage
