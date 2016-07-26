@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=mysql/mariadb restart
+Encoding=UTF-8
+Exec=menuexec "service mysql restart"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=14-03-mysqld;
+X-Parrot-Package=mariadb-server

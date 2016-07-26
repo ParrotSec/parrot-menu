@@ -15,14 +15,14 @@ Changes:
  .
    * Fix armitage launcher
 Checksums-Sha1:
- 181f9ab7c8137174bf2041e2252c4f1d7426e613 562 parrot-menu_2016.7.26.dsc
- 23ed357338f7869899b4e5c4942f58e03731d7dd 4300904 parrot-menu_2016.7.26.tar.xz
- 50795cc82791ad02535887b455380140eb1f5c10 4337562 parrot-menu_2016.7.26_all.deb
+ f7e901bf087fa09a1c598004ed2b49446e014530 562 parrot-menu_2016.7.26.dsc
+ 999d331e457aa6a12bfde8dc11bc6c92e3d2193b 4301008 parrot-menu_2016.7.26.tar.xz
+ a2a0fdeffbfb48652b8188a138f05bede730a0d2 4337732 parrot-menu_2016.7.26_all.deb
 Checksums-Sha256:
- 5ae3ce32a51e81dbd51b86317876b830d36e98fe3e07f8e737034a3cd19e42df 562 parrot-menu_2016.7.26.dsc
- cfd86cda47a69b1b21c10b749a4c5ab815b5df9f08661e4293fb28189d3a8678 4300904 parrot-menu_2016.7.26.tar.xz
- 9c9c71b5a73e588eeb5bf571b19cbb8fd0f65c51219e7a4125ae80a9f04c699e 4337562 parrot-menu_2016.7.26_all.deb
+ ebd352ea2ab764e687fcb00695e884668dcdaf7018ea8fb29dc05c6180b5a6e8 562 parrot-menu_2016.7.26.dsc
+ 96f9b4a00de8617dfeb861972007cf7f3dd045b8c3da1d692b5b36827839511e 4301008 parrot-menu_2016.7.26.tar.xz
+ 2a22c216c36118d2c2125da93af78d08c76fd35d6fe68d676bc874e30951f14c 4337732 parrot-menu_2016.7.26_all.deb
 Files:
- 441e917dcc1d870edb0f9d32abe6223f 562 parrot optional parrot-menu_2016.7.26.dsc
- 18ee4064e803a25573d1cfc564e4e08a 4300904 parrot optional parrot-menu_2016.7.26.tar.xz
- bf4cb76ac21c578f522bc2ed54dc5b61 4337562 parrot optional parrot-menu_2016.7.26_all.deb
+ 3d42d071a1b7473ecbac25563b60a4bd 562 parrot optional parrot-menu_2016.7.26.dsc
+ 5f2558989fe5907f3bd74dd83179cb65 4301008 parrot optional parrot-menu_2016.7.26.tar.xz
+ 6c1dbf4cb9d8ea8c11ffd544387b516f 4337732 parrot optional parrot-menu_2016.7.26_all.deb
