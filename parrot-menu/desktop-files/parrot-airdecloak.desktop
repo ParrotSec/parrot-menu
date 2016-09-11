@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=airdecloak-ng
+Encoding=UTF-8
+Exec=menuexecg airdecloak-ng --help
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=06-01-wireless-tools;
+X-Parrot-Package=aircrack-ng

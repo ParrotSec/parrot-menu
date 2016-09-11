@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=airdecap-ng
+Encoding=UTF-8
+Exec=menuexecg airdecap-ng --help
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=06-01-wireless-tools;
+X-Parrot-Package=aircrack-ng

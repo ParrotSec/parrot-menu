@@ -1,3 +1,9 @@
+parrot-menu (2016.9.11) testing; urgency=medium
+
+  * Add full aircrack support
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 11 Sep 2016 23:09:55 +0200
+
 parrot-menu (2016.7.26) testing; urgency=medium
 
   * Fix armitage launcher
