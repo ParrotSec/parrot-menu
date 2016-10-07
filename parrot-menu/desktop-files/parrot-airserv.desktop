@@ -1,10 +1,10 @@
 [Desktop Entry]
 Name=airserv-ng
 Encoding=UTF-8
-Exec=menuexecg airserv-ng
-Icon=parrot-menu.png
+Exec=menuexec "airserv-ng"
+Icon=parrot-aircrack.png
 StartupNotify=false
-Terminal=false
+Terminal=true
 Type=Application
 Categories=06-01-wireless-tools;
 X-Parrot-Package=aircrack-ng

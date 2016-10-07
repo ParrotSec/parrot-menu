@@ -1,10 +1,10 @@
 [Desktop Entry]
 Name=aircrack-ng
 Encoding=UTF-8
-Exec=menuexecg aircrack-ng --help
-Icon=parrot-menu.png
+Exec=menuexec "aircrack-ng --help"
+Icon=parrot-aircrack.png
 StartupNotify=false
-Terminal=false
+Terminal=true
 Type=Application
 Categories=06-01-wireless-tools;06-wireless-attacks;top10;
 X-Parrot-Package=aircrack-ng

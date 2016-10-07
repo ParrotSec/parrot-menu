@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Sat, 08 Oct 2016 01:09:16 +0200
+Source: parrot-menu
+Binary: parrot-menu
+Architecture: source all
+Version: 2016.10.08
+Distribution: testing
+Urgency: medium
+Maintainer: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
+Changed-By: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
+Description:
+ parrot-menu - Parrot GNU/Linux custom menu
+Changes:
+ parrot-menu (2016.10.08) testing; urgency=medium
+ .
+   * Fix aircrack launchers
+   * Make menuexec fail-tolerant
+   * Implement notify_send in menuexecg
+Checksums-Sha1:
+ 2375a789c4c724c3c8de2b8fab60a8b9577d2340 566 parrot-menu_2016.10.08.dsc
+ 84f011ac52212c2c5654e8abf9869a64b9b0486d 4301448 parrot-menu_2016.10.08.tar.xz
+ 4c0bbbadaa0cc1bcd54ed684d199b533d973f244 4338732 parrot-menu_2016.10.08_all.deb
+Checksums-Sha256:
+ 957b299479123245ae996f2685666db2a2a3fe1488a5acbb0a039937f118318c 566 parrot-menu_2016.10.08.dsc
+ e8e73554ca811320be1c58169e6fd76b95d62e80e64d10796789bb20b4038a1c 4301448 parrot-menu_2016.10.08.tar.xz
+ b301c22c7d29c7f60abeb85749778bcd9697d1d3a2ec6104a9adfa56848041c0 4338732 parrot-menu_2016.10.08_all.deb
+Files:
+ dd166e6ec9d0ae518f6b5ae05722b4ce 566 parrot optional parrot-menu_2016.10.08.dsc
+ 19864f2de79dfe84b843c2b11fbb2074 4301448 parrot optional parrot-menu_2016.10.08.tar.xz
+ ff7198d28e36576dc6cdf3e0431d3e82 4338732 parrot optional parrot-menu_2016.10.08_all.deb

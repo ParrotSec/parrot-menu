@@ -1,3 +1,11 @@
+parrot-menu (2016.10.08) testing; urgency=medium
+
+  * Fix aircrack launchers
+  * Make menuexec fail-tolerant
+  * Implement notify_send in menuexecg
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 08 Oct 2016 01:09:16 +0200
+
 parrot-menu (2016.9.11) testing; urgency=medium
 
   * Add full aircrack support
