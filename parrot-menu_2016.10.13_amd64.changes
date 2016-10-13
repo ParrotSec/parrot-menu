@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Thu, 13 Oct 2016 17:04:43 +0200
+Source: parrot-menu
+Binary: parrot-menu
+Architecture: source all
+Version: 2016.10.13
+Distribution: testing
+Urgency: medium
+Maintainer: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
+Changed-By: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
+Description:
+ parrot-menu - Parrot GNU/Linux custom menu
+Changes:
+ parrot-menu (2016.10.13) testing; urgency=medium
+ .
+   * Fix menu launchers (thanks to Darix Deros)
+Checksums-Sha1:
+ b162be6c7bb8ae7458e55d615173d56db2fd614c 566 parrot-menu_2016.10.13.dsc
+ 2e21527211c902168d3edf1aaf8236bf6e5923e2 4301632 parrot-menu_2016.10.13.tar.xz
+ 42fade809b2810be64d01ff6e8ba1c040b1e9415 4339014 parrot-menu_2016.10.13_all.deb
+Checksums-Sha256:
+ 6d13ed581f1060a0d70ba7607df21d254e16dbebbe7ce39e7bb722fc2411e710 566 parrot-menu_2016.10.13.dsc
+ 8f3843eee94f802aefa1fad7e9fc428f21fb090cd055d3c34ed0d5cb01e1cd75 4301632 parrot-menu_2016.10.13.tar.xz
+ d9da3477e8eb0f512dafe6569b6dc87a9216c7a8896981ffffcb6ca317de00a9 4339014 parrot-menu_2016.10.13_all.deb
+Files:
+ 419374bcb9744ca724d6255004f5923a 566 parrot optional parrot-menu_2016.10.13.dsc
+ 097e0213d0381f78a766ae9e038c5fa3 4301632 parrot optional parrot-menu_2016.10.13.tar.xz
+ 3c59f0e7a1ce55c98272296efd0b1304 4339014 parrot optional parrot-menu_2016.10.13_all.deb

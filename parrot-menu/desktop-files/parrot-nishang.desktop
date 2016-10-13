@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=nishang
 Encoding=UTF-8
-Exec=menuexec cd /usr/share/nishang && ls -l
+Exec=menuexec nishang
 Icon=parrot-nishang.png
 StartupNotify=false
 Terminal=true

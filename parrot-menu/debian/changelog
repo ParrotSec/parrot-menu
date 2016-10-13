@@ -1,3 +1,9 @@
+parrot-menu (2016.10.13) testing; urgency=medium
+
+  * Fix menu launchers (thanks to Darix Deros)
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 13 Oct 2016 17:04:43 +0200
+
 parrot-menu (2016.10.08) testing; urgency=medium
 
   * Fix aircrack launchers

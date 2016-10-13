@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=mimikatz
 Encoding=UTF-8
-Exec=menuexec "cd /usr/share/mimikatz/ && ls -l"
+Exec=menuexec "mimikatz"
 Icon=parrot-mimikatz.png
 StartupNotify=false
 Terminal=true
