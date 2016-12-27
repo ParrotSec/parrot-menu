@@ -1,3 +1,9 @@
+parrot-menu (2016.12.27) testing; urgency=medium
+
+  * add zulucrypt custom launcher
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 27 Dec 2016 20:33:44 +0100
+
 parrot-menu (2016.10.13) testing; urgency=medium
 
   * Fix menu launchers (thanks to Darix Deros)
