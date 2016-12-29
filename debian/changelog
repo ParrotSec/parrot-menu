@@ -1,3 +1,9 @@
+parrot-menu (2016.12.29) testing; urgency=medium
+
+  * Add quickhash launcher
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 29 Dec 2016 19:02:57 +0100
+
 parrot-menu (2016.12.27) testing; urgency=medium
 
   * add zulucrypt custom launcher
