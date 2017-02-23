@@ -586,14 +586,22 @@
           <Category>14-03-mysqld</Category>
         </And>
       </Include>
-    
-</Menu>
+    </Menu>
     <Menu>
       <Name>PCSCD</Name>
       <Directory>14-08-pcscd.directory</Directory>
       <Include>
         <And>
           <Category>14-04-pcscd</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>PCSCD</Name>
+      <Directory>14-05-postgresql.directory</Directory>
+      <Include>
+        <And>
+          <Category>14-05-postgresql</Category>
         </And>
       </Include>
     </Menu>
