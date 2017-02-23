@@ -1,3 +1,9 @@
+parrot-menu (2017.02.24) testing; urgency=medium
+
+  * Fix volatility launcher
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 23 Feb 2017 22:39:47 +0100
+
 parrot-menu (2017.02.23) testing; urgency=medium
 
   * Add Postgresql menu category and launchers
