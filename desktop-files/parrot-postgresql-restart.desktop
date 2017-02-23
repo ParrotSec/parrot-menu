@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=postgresql restart
+Encoding=UTF-8
+Exec=menuexec "service postgresql restart"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=14-05-postgresql;
+X-Parrot-Package=postgresql

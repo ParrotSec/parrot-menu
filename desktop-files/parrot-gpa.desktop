@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=GPA
+GenericName=Graphical front end for GPG
+Comment=GNU Privacy Assistant
+Icon=gpa
+Exec=gpa %F
+Terminal=false
+StartupNotify=true
+Categories=cryptography
+Keywords=encrypting;encrypt;security;keyring;encryption;security;sign;
+X-Parrot-Package=gpa
