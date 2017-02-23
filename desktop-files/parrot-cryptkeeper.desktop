@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Cryptkeeper
+Exec=cryptkeeper
+Icon=cryptkeeper
+Terminal=false
+Type=Application
+StartupNotify=false
+Version=1.0
+Categories=cryptography
+Keywords=volumes;encrypting;luks;truecrypt;encrypt;security;cryptsetup
+X-Parrot-Package=cryptkeeper
