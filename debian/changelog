@@ -1,3 +1,10 @@
+parrot-menu (2017.02.24+p3) testing; urgency=medium
+
+  * Fix maltego launcher
+  * Do not open terminal for armitage
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 17 Mar 2017 10:09:11 +0100
+
 parrot-menu (2017.02.24+p2) testing; urgency=medium
 
   * Add cryptkeeper launcher
