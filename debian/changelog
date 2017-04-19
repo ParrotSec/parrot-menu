@@ -1,3 +1,9 @@
+parrot-menu (2017.04.19) testing; urgency=medium
+
+  * Add apktool launcher.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 19 Apr 2017 23:29:41 +0200
+
 parrot-menu (2017.02.24+p3) testing; urgency=medium
 
   * Fix maltego launcher
