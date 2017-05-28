@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=airgeddon
+Encoding=UTF-8
+Exec=menuexec "/usr/share/airgeddon/airgeddon.sh"
+Icon=parrot-airgeddon.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-01-wireless-tools;
+X-Parrot-Package=airgeddon
