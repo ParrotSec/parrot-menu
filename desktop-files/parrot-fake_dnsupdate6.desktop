@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=fake_dnsupdate6
 Encoding=UTF-8
-Exec=menuexec fake_dnsupdate6 
+Exec=menuexec atk6-fake_dnsupdate6 
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

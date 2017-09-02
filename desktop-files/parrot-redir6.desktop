@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=redir6
 Encoding=UTF-8
-Exec=menuexec redir6 
+Exec=menuexec atk6-redir6 
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

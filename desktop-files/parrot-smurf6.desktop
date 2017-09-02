@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=smurf6
 Encoding=UTF-8
-Exec=menuexec smurf6 
+Exec=menuexec atk6-smurf6 
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

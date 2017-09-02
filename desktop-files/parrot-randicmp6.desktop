@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=randicmp6
 Encoding=UTF-8
-Exec=menuexec randicmp6 
+Exec=menuexec atk6-randicmp6 
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

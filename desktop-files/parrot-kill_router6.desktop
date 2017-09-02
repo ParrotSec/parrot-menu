@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=kill_router6
 Encoding=UTF-8
-Exec=menuexec kill_router6 
+Exec=menuexec atk6-kill_router6 
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

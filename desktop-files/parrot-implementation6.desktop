@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=implementation6
 Encoding=UTF-8
-Exec=menuexec implementation6 
+Exec=menuexec atk6-implementation6 
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

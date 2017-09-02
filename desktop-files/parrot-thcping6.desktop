@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=thcping6
 Encoding=UTF-8
-Exec=menuexec "thcping6"
+Exec=menuexec atk6-thcping6
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

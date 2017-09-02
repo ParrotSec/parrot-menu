@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=passive_discovery6
 Encoding=UTF-8
-Exec=menuexec passive_discovery6 
+Exec=menuexec atk6-passive_discovery6 
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

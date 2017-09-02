@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=fragmentation6
 Encoding=UTF-8
-Exec=menuexec fragmentation6 
+Exec=menuexec atk6-fragmentation6 
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

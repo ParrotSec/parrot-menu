@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=trace6
 Encoding=UTF-8
-Exec=menuexec trace6 
+Exec=menuexec atk6-trace6 
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

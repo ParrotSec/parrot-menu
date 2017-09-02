@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=detect-new-ip6
 Encoding=UTF-8
-Exec=menuexec detect-new-ip6 
+Exec=menuexec atk6-detect-new-ip6 
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

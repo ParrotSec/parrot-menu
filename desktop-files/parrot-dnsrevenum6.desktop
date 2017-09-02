@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=dnsrevenum6
 Encoding=UTF-8
-Exec=menuexec dnsrevenum6 
+Exec=menuexec atk6-dnsrevenum6 
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=fake_advertise6
 Encoding=UTF-8
-Exec=menuexec fake_advertise6 
+Exec=menuexec atk6-fake_advertise6 
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
