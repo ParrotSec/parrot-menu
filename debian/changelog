@@ -1,3 +1,10 @@
+parrot-menu (2017.10.26) testing; urgency=medium
+
+  * Add new launchers.
+  * use pkexec instead of gksu.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 26 Sep 2017 18:20:05 +0200
+
 parrot-menu (2017.09.02) testing; urgency=medium
 
   * Import pull request from Christopher Ngo.

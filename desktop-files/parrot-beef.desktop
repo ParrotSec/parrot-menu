@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=beef xss framework
+Encoding=UTF-8
+Exec=menuexec beef-xss
+Icon=parrot-beef.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=08-exploitation-tools;13-social-engineering-tools;
+X-Parrot-Package=beef-xss

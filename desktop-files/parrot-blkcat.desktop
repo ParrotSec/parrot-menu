@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=blkcat
+Encoding=UTF-8
+Exec=menuexec blkcat
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-08-forensic-suites;
+X-Parrot-Package=sleuthkit

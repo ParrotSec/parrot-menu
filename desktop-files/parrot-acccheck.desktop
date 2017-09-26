@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=acccheck
+Encoding=UTF-8
+Exec=sh -c "acccheck;${SHELL:-bash}"
+Icon=kali-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-10-smb-analysis;05-01-online-attacks;
+X-Kali-Package=acccheck

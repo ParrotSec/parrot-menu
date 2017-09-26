@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=bettercap
+Encoding=UTF-8
+Exec=menuexec bettercap --help
+Icon=parrot-bettercap.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-sniffing-spoofing;
+X-Parrot-Package=bettercap
