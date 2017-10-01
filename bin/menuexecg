@@ -7,4 +7,4 @@ function notify {
 }
 
 notify "starting $*"
-pkexec --disable-internal-agent $*
+gksu "$*"

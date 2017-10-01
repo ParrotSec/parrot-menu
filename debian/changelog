@@ -1,4 +1,10 @@
-parrot-menu (2017.10.26) testing; urgency=medium
+parrot-menu (2:2017.10.1) testing; urgency=medium
+
+  * Switch back to gksu.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 01 Oct 2017 17:55:34 +0200
+
+parrot-menu (2017.9.26) testing; urgency=medium
 
   * Add new launchers.
   * use pkexec instead of gksu.
