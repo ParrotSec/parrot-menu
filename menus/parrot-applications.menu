@@ -8,8 +8,6 @@
 	<Directory>Parrot.directory</Directory>
 	<Layout>
 		<Menuname>Most Used Tools</Menuname>
-		<Menuname>Parrot Controllers</Menuname>
-		<Menuname>Cryptography</Menuname>
 		<Separator> </Separator>
 		<Menuname>Information Gathering</Menuname>
 		<Menuname>Vulnerability Analysis</Menuname>
@@ -40,17 +38,7 @@
       </And>
     </Include>
   </Menu>
-  
-  <Menu>
-    <Name>Cryptography</Name>
-    <Directory>cryptography.directory</Directory>
-    <Include>
-      <And>
-        <Category>cryptography</Category>
-      </And>
-    </Include>
-  </Menu>
-  
+
   
   <Menu>
     <Name>Information Gathering</Name>

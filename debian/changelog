@@ -1,3 +1,9 @@
+parrot-menu (2:2017.10.2) testing; urgency=medium
+
+  * Remove duplicated cryptography menu.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 19 Oct 2017 12:27:05 +0200
+
 parrot-menu (2:2017.10.1) testing; urgency=medium
 
   * Switch back to gksu.
