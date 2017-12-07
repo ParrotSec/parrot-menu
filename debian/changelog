@@ -1,4 +1,4 @@
-parrot-menu (2:2017.10.3) testing; urgency=medium
+parrot-menu (2:2017.12.08) testing; urgency=medium
 
   * Fix zulucrypt launchers.
   * Add etherape launcher.
