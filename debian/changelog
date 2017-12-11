@@ -1,3 +1,9 @@
+parrot-menu (2:2017.12.11) testing; urgency=medium
+
+  * Update maltego/casefile launchers.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 11 Dec 2017 15:01:25 +0100
+
 parrot-menu (2:2017.12.08) testing; urgency=medium
 
   * Fix zulucrypt launchers.

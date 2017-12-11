@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=casefile
 Encoding=UTF-8
-Exec=menuexecg "casefile"
+Exec=menuexecg "maltego"
 Icon=parrot-casefile.png
 StartupNotify=false
 Terminal=false
