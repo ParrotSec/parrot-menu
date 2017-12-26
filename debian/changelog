@@ -1,3 +1,9 @@
+parrot-menu (2:2017.12.26) testing; urgency=medium
+
+  * Fix wireshark launcher.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 26 Dec 2017 14:02:01 +0100
+
 parrot-menu (2:2017.12.11) testing; urgency=medium
 
   * Update maltego/casefile launchers.

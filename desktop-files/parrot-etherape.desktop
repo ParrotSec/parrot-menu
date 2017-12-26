@@ -1,10 +1,10 @@
 [Desktop Entry]
-Name=wireshark
+Name=etherape
 Encoding=UTF-8
-Exec=menuexecg "wireshark"
-Icon=wireshark
+Exec=menuexecg "etherape"
+Icon=etherape
 StartupNotify=false
 Terminal=false
 Type=Application
 Categories=09-sniffing-spoofing;01-info-gathering;01-04-network-scanners
-X-Parrot-Package=wireshark
+X-Parrot-Package=etherape
