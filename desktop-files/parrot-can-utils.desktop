@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=can-utils
+Encoding=UTF-8
+Exec=sh -c "echo 'SocketCAN tools';echo;echo;cd /usr/share/can-utils/;ls;bash"
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=13-automotive
+X-Parrot-Package=can-utils

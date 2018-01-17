@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=canbus-triple
+Encoding=UTF-8
+Exec=sh -c "echo 'SocketCAN tools';echo;echo;cd /opt/car-hacking/CANBus-Triple/;ls;bash"
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=13-automotive
+X-Parrot-Package=kayak

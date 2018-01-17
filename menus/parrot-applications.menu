@@ -22,6 +22,7 @@
         <Menuname>Sniffing - Spoofing</Menuname>
         <Separator> </Separator>
         <Menuname>Forensic Tools</Menuname>
+        <Menuname>Automotive</Menuname>
         <Menuname>Reverse Engineering</Menuname>
         <Separator> </Separator>
         <Menuname>Reporting Tools</Menuname>
@@ -537,6 +538,15 @@
     <Include>
       <And>
         <Category>12-reporting</Category>
+      </And>
+    </Include>
+  </Menu>
+  <Menu>
+    <Name>Automotive</Name>
+    <Directory>13-automotive.directory</Directory>
+    <Include>
+      <And>
+        <Category>13-automotive</Category>
       </And>
     </Include>
   </Menu>

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=udsim
+Encoding=UTF-8
+Exec=sh -c "echo 'SocketCAN tools';echo;echo;cd /opt/car-hacking/UDSim;ls --color;bash"
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=13-automotive
+X-Parrot-Package=kayak
