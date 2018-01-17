@@ -549,6 +549,15 @@
         <Category>13-automotive</Category>
       </And>
     </Include>
+    <Menu>
+      <Name>Can Tools</Name>
+      <Directory>13-01-can-tools.directory</Directory>
+      <Include>
+        <And>
+          <Category>13-01-can-tools</Category>
+        </And>
+      </Include>
+    </Menu>
   </Menu>
   <Menu>
     <Name>System Services</Name>

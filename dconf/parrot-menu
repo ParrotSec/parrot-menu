@@ -67,7 +67,7 @@ categories=['12-reporting']
 [org/gnome/desktop/app-folders/folders/automotive]
 name='13-Automotive'
 translate=true
-categories=['13-automotive']
+categories=['13-automotive','13-01-can-utils']
 
 [org/gnome/desktop/app-folders/folders/services]
 name='14-Services'

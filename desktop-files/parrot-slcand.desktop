@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=slcand
+Encoding=UTF-8
+Exec=menuexec slcand
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=13-01-can-utils
+X-Parrot-Package=can-utils

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=cansend
+Encoding=UTF-8
+Exec=menuexec cansend
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=13-01-can-utils
+X-Parrot-Package=can-utils

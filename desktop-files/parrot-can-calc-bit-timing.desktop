@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=can-calc-bit-timing
+Encoding=UTF-8
+Exec=menuexec can-calc-bit-timing
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=13-01-can-utils
+X-Parrot-Package=can-utils
