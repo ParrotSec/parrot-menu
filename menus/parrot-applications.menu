@@ -550,8 +550,8 @@
       </And>
     </Include>
     <Menu>
-      <Name>Can Tools</Name>
-      <Directory>13-01-can-tools.directory</Directory>
+      <Name>Can Utils</Name>
+      <Directory>13-01-can-utils.directory</Directory>
       <Include>
         <And>
           <Category>13-01-can-tools</Category>
