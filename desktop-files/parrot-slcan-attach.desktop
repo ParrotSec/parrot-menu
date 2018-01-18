@@ -2,6 +2,7 @@
 Name=slcan_attach
 Encoding=UTF-8
 Exec=menuexec slcan-attach
+Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application

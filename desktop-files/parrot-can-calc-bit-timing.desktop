@@ -2,6 +2,7 @@
 Name=can-calc-bit-timing
 Encoding=UTF-8
 Exec=menuexec can-calc-bit-timing
+Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application

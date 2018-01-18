@@ -2,6 +2,7 @@
 Name=canfdtest
 Encoding=UTF-8
 Exec=menuexec canfdtest
+Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application

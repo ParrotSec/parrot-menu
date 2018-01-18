@@ -2,6 +2,7 @@
 Name=slcanpty
 Encoding=UTF-8
 Exec=menuexec slcanpty
+Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application

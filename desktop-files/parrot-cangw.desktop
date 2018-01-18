@@ -2,6 +2,7 @@
 Name=cangw
 Encoding=UTF-8
 Exec=menuexec cangw
+Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application

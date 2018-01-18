@@ -2,6 +2,7 @@
 Name=asc2log
 Encoding=UTF-8
 Exec=menuexec asc2log -h
+Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application

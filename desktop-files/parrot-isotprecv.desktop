@@ -2,6 +2,7 @@
 Name=isotprecv
 Encoding=UTF-8
 Exec=menuexec isotprecv
+Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application

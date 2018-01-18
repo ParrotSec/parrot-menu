@@ -1,7 +1,7 @@
 [Desktop Entry]
-Name=caringcaribou
+Name=udsim
 Encoding=UTF-8
-Exec=sh -c "echo 'SocketCAN tools';echo;echo;cd /opt/car-hacking/caringcaribou/tool;./cc.py -h;ls --color;bash"
+Exec=sh -c "echo 'SocketCAN tools';echo;echo;cd /opt/car-hacking/UDSim;ls --color;bash"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

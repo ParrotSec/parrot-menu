@@ -2,6 +2,7 @@
 Name=cansniffer
 Encoding=UTF-8
 Exec=menuexec cansniffer
+Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application

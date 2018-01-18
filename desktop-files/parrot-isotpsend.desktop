@@ -2,6 +2,7 @@
 Name=isotpsend
 Encoding=UTF-8
 Exec=menuexec isotpsend
+Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application

@@ -2,6 +2,7 @@
 Name=isotpdump
 Encoding=UTF-8
 Exec=menuexec isotpdump
+Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application

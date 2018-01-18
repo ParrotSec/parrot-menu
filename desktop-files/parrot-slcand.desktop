@@ -2,6 +2,7 @@
 Name=slcand
 Encoding=UTF-8
 Exec=menuexec slcand
+Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application

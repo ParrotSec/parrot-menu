@@ -2,6 +2,7 @@
 Name=isotpsniffer
 Encoding=UTF-8
 Exec=menuexec isotpsniffer
+Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application

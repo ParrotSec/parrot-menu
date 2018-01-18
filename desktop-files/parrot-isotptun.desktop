@@ -2,6 +2,7 @@
 Name=isotptun
 Encoding=UTF-8
 Exec=menuexec isotptun
+Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application

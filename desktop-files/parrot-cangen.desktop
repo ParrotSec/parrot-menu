@@ -2,6 +2,7 @@
 Name=cangen
 Encoding=UTF-8
 Exec=menuexec cangen -h
+Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application

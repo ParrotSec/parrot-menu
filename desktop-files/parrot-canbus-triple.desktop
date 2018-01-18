@@ -2,6 +2,7 @@
 Name=canbus-triple
 Encoding=UTF-8
 Exec=sh -c "echo 'SocketCAN tools';echo;echo;cd /opt/car-hacking/CANBus-Triple/;ls;bash"
+Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
