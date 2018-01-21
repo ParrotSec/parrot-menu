@@ -1,3 +1,9 @@
+parrot-menu (2:2018.01.21) testing; urgency=medium
+
+  * Change anonsurf icon.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 21 Jan 2018 17:58:35 +0100
+
 parrot-menu (2:2018.01.19.2) testing; urgency=medium
 
   * Rebuild package.
