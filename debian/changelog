@@ -1,3 +1,9 @@
+parrot-menu (2:2018.03.30) testing; urgency=medium
+
+  * Use gksudo instead of gksu in menuexecg.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 30 Mar 2018 14:18:59 +0200
+
 parrot-menu (2:2018.01.21) testing; urgency=medium
 
   * Change anonsurf icon.
