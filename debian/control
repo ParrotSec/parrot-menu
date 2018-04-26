@@ -7,7 +7,7 @@ Standards-Version: 3.8.4
 
 Package: parrot-menu
 Architecture: all
-Depends: ${misc:Depends}, ${perl:Depends}, libdpkg-perl, libfile-fcntllock-perl, xdg-utils
+Depends: ${misc:Depends}, ${perl:Depends}, gksu, libdpkg-perl, libfile-fcntllock-perl, xdg-utils
 Breaks: dradis (<< 3.1.0~rc2)
 Replaces: mate-menus
 Description: Parrot GNU/Linux custom menu
