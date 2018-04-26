@@ -6,5 +6,5 @@ Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=09-02-network-spoofing;09-01-network-sniffers;
+Categories=09-02-network-spoofing;
 X-Parrot-Package=dnschef

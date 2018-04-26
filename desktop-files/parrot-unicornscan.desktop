@@ -6,5 +6,5 @@ Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=01-02-identify-live-hosts;01-04-network-scanners;
+Categories=01-04-network-scanners;
 X-Parrot-Package=unicornscan

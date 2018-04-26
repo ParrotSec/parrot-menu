@@ -6,5 +6,5 @@ Icon=parrot-kismet.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=06-01-wireless-tools;06-wireless-attacks;
+Categories=06-01-wireless-tools
 X-Parrot-Package=giskismet

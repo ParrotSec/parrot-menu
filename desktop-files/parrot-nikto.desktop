@@ -6,5 +6,5 @@ Icon=parrot-nikto.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=02-vulnerability-analysis;03-05-web-vulnerability-scanners
+Categories=03-05-web-vulnerability-scanners
 X-Parrot-Package=nikto

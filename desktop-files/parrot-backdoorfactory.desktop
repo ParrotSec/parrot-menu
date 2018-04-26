@@ -6,5 +6,5 @@ Icon=parrot-backdoor-factory.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=10-maintaining-access;13-social-engineering-tools;
+Categories=10-maintaining-access
 X-Parrot-Package=backdoor-factory

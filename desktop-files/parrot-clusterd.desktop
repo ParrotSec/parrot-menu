@@ -6,5 +6,5 @@ Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=03-01-cms-identification;03-05-web-vulnerability-scanners;
+Categories=03-05-web-vulnerability-scanners;
 X-Parrot-Package=clusterd

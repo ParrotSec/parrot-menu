@@ -6,5 +6,5 @@ Icon=parrot-nessus.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=02-vulnerability-analysis;02-08-nessus;14-services;
+Categories=02-08-nessus;14-services;
 X-Parrot-Package=nessus

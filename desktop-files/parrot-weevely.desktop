@@ -6,5 +6,5 @@ Icon=parrot-weevely.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=10-03-web-backdoors;10-maintaining-access;
+Categories=10-03-web-backdoors;top10
 X-Parrot-Package=weevely

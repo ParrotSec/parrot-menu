@@ -6,5 +6,5 @@ Icon=etherape
 StartupNotify=false
 Terminal=false
 Type=Application
-Categories=09-sniffing-spoofing;01-info-gathering;01-04-network-scanners
+Categories=09-sniffing-spoofing;01-04-network-scanners
 X-Parrot-Package=etherape

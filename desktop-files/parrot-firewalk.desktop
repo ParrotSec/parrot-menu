@@ -6,5 +6,5 @@ Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=01-03-ids-ips-identification;01-02-identify-live-hosts;
+Categories=01-03-ids-ips-identification;
 X-Parrot-Package=firewalk

@@ -6,5 +6,5 @@ Icon=parrot-foremost.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=11-forensics;11-05-forensic-carving-tools;
+Categories=11-forensics;
 X-Parrot-Package=foremost

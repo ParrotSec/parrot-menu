@@ -6,5 +6,5 @@ Icon=parrot-netdiscover.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=01-info-gathering;01-08-route-analysis;
+Categories=01-info-gathering;
 X-Parrot-Package=netdiscover

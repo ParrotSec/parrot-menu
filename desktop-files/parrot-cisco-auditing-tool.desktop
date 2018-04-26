@@ -6,5 +6,5 @@ Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=06-01-cisco-attacks;02-01-cisco-tools;05-01-online-attacks;
+Categories=06-01-cisco-attacks;02-01-cisco-tools
 X-Parrot-Package=cisco-auditing-tool

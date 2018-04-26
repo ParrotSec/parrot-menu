@@ -6,5 +6,5 @@ Icon=parrot-webscarab.png
 StartupNotify=false
 Terminal=false
 Type=Application
-Categories=03-webapp-analysis;top10
+Categories=03-webapp-analysis;
 X-Parrot-Package=webscarab

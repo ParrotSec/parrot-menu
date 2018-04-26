@@ -6,5 +6,5 @@ Icon=parrot-fern-wifi-cracker.png
 StartupNotify=false
 Terminal=false
 Type=Application
-Categories=06-01-wireless-tools;06-wireless-attacks
+Categories=06-wireless-attacks
 X-Parrot-Package=fern-wifi-cracker

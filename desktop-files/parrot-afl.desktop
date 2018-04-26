@@ -6,5 +6,5 @@ Icon=parrot-afl.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=02-vulnerability-analysis;02-02-fuzzers;
+Categories=02-02-fuzzers;
 X-Parrot-Package=afl

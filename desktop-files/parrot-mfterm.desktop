@@ -6,5 +6,5 @@ Icon=parrot-mfterm.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=06-03-rfid-nfc-tools;06-wireless-attacks;
+Categories=06-03-rfid-nfc-tools;
 X-Parrot-Package=mfterm

@@ -6,5 +6,5 @@ Icon=parrot-menu.png
 StartupNotify=false
 Terminal=false
 Type=Application
-Categories=02-02-fuzzers;03-05-web-vulnerability-scanners;
+Categories=02-02-fuzzers;
 X-Parrot-Package=powerfuzzer

@@ -6,5 +6,5 @@ Icon=parrot-autopsy.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=11-forensics;11-08-forensic-suites;
+Categories=11-forensics
 X-Parrot-Package=autopsy

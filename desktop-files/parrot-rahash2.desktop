@@ -6,5 +6,5 @@ Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=07-reverseengineer;11-07-forensic-imaging-tools;
+Categories=11-07-forensic-imaging-tools;
 X-Parrot-Package=radare2
