@@ -1,10 +1,10 @@
 [Desktop Entry]
-Name=apache2 start
+Name=nginx start
 Encoding=UTF-8
-Exec=menuexec service apache2 start 
+Exec=menuexec service nginx start 
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
 Categories=14-02-httpd;
-X-Parrot-Package=apache2
+X-Parrot-Package=nginx
