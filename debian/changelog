@@ -1,3 +1,9 @@
+parrot-menu (2:2018.06.03) testing; urgency=medium
+
+  * Fix burpsuite launcher.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 03 Jun 2018 14:04:08 +0200
+
 parrot-menu (2:2018.05.30) testing; urgency=medium
 
   * Add xhydra launcher.
