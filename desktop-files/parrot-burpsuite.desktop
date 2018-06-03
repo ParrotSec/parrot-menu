@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=burpsuite
 Encoding=UTF-8
-Exec=menuexecg "java -jar /usr/bin/burpsuite"
+Exec=menuexecg burpsuite
 Icon=parrot-burpsuite.png
 StartupNotify=false
 Terminal=false
