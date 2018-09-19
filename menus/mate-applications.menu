@@ -17,6 +17,7 @@
 
   <!-- Read in overrides and child menus from applications-merged/ -->
   <DefaultMergeDirs/>
+  <MergeDir>applications-merged</MergeDir>
 
   <!-- Accessories submenu -->
   <Menu>
@@ -58,8 +59,8 @@
       <Filename>emacs.desktop</Filename>
     </Include>
   </Menu> <!-- End Development Tools -->
-  
-  
+
+
   <Menu>
     <Name>Cryptography</Name>
     <Directory>cryptography.directory</Directory>
@@ -113,8 +114,8 @@
       </And>
     </Include>
   </Menu>   <!-- End Internet -->
-  
-  
+
+
   <!-- Parrot security tools -->
   <MergeFile type="path">applications-merged/parrot-applications.menu</MergeFile>
   <MergeFile type="path">applications-merged/anon-surf.menu</MergeFile>
