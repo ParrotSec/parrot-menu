@@ -1,3 +1,9 @@
+parrot-menu (2:2019.01.31) testing; urgency=medium
+
+  * Add snap applications.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 31 Jan 2019 18:00:59 +0100
+
 parrot-menu (2:2018.09.19) testing; urgency=medium
 
   * Add applications-merged support.
