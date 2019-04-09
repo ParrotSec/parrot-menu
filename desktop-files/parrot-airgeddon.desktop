@@ -6,5 +6,5 @@ Icon=parrot-airgeddon.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=06-01-wireless-tools;
+Categories=06-01-wireless-tools;06-wireless-attacks;top10;
 X-Parrot-Package=airgeddon
