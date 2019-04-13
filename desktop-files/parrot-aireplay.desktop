@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=aireplay-ng
+Comment=Inject frames
 Encoding=UTF-8
 Exec=menuexec "aireplay-ng --help"
 Icon=parrot-aircrack.png

@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=airdecloak-ng
+Comment=Remove wep cloaking from a pcap file
 Encoding=UTF-8
 Exec=menuexec "airdecloak-ng --help"
 Icon=parrot-aircrack.png
