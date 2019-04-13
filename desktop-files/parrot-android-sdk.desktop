@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=android-sdk
+Comment=Android software development
 Encoding=UTF-8
 Exec=menuexec android
 Icon=parrot-menu.png

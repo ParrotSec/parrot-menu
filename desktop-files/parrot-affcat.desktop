@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=affcat
+Comment=Get outputs the contents of an image file
 Encoding=UTF-8
 Exec=menuexec affcat -h
 Icon=parrot-menu.png

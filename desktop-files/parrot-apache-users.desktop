@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=apache-users
+Comment=Enumerate the usernames on Apache systems with the UserDir module
 Encoding=UTF-8
 Exec=menuexec apache-users
 Icon=parrot-menu.png

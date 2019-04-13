@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=armitage
+Comment=Java GUI for metasploit-framework
 Encoding=UTF-8
 Exec=menuexecg msfstart-armitage
 Icon=parrot-armitage.png
