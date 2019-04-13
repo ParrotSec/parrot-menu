@@ -1,5 +1,6 @@
 [Desktop Entry]
-Name=airtu-ng
+Name=airtun-ng
+Comment=Virtual tunnel interface creator
 Encoding=UTF-8
 Exec=menuexec "airtun-ng --help"
 Icon=parrot-aircrack.png

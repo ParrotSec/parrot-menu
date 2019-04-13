@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=airmon-ng
+Comment=(Enable | Disable) monitor mode on wireless interfaces
 Encoding=UTF-8
 Exec=menuexec "airmon-ng -h"
 Icon=parrot-aircrack.png

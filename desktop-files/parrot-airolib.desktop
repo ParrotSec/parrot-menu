@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=airolib-ng
+Comment=Store and manage essid and password lists
 Encoding=UTF-8
 Exec=menuexec "airolib-ng --help"
 Icon=parrot-aircrack.png
