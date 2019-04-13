@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=bdfproxy
+Comment=Inject shellcode to binaries via MITM
 Encoding=UTF-8
 Exec=menuexec bdfproxy
 Icon=parrot-bdfproxy.png

@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=beef start
+Comment=Turn Browser Exploitation framework service on
 Encoding=UTF-8
 Exec=menuexec service beef-xss start
 Icon=parrot-beef.png

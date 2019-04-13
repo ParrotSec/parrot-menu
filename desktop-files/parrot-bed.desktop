@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=bed
+Comment=Network Protocol fuzzer
 Encoding=UTF-8
 Exec=menuexec bed
 Icon=parrot-menu.png

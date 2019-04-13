@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=arping
+Comment=Use ARP request method addressed to a host identified by its MAC address
 Encoding=UTF-8
 Exec=menuexec arping
 Icon=parrot-menu.png

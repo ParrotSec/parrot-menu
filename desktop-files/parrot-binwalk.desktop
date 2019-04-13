@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=binwalk
+Comment=Firmware Analysis Tool 
 Encoding=UTF-8
 Exec=menuexec binwalk -h
 Icon=parrot-binwalk.png

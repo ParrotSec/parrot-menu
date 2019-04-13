@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=beef xss framework
+Comment=Browser Exploitation framework
 Encoding=UTF-8
 Exec=menuexec beef-xss
 Icon=parrot-beef.png
