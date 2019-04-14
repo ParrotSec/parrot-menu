@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=blkls
+Comment=Opens the named image(s) and copies file system data units (blocks)
 Encoding=UTF-8
 Exec=menuexec blkls
 Icon=parrot-menu.png

@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=cachedump
+Comment=Windows Password cache entries recover
 Encoding=UTF-8
 Exec=menuexec "cachedump -h"
 Icon=parrot-menu.png

@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=cadaver
+Comment=WebDAV client
 Encoding=UTF-8
 Exec=menuexec "cadaver"
 Icon=parrot-menu.png
