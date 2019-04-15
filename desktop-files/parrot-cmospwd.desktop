@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=cmospwd
+Comment=Decrypts password stored in cmos used to access BIOS SETUP.
 Encoding=UTF-8
 Exec=menuexec "cmospwd"
 Icon=parrot-menu.png

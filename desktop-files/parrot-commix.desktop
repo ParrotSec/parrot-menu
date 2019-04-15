@@ -1,7 +1,8 @@
 [Desktop Entry]
 Name=commix
+Comment=Command injection scanner and exploitation tool
 Encoding=UTF-8
-Exec=menuexec "commix
+Exec=menuexec "commix"
 Icon=parrot-commix.png
 StartupNotify=false
 Terminal=true

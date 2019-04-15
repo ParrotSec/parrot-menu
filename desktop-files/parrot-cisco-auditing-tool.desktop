@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=cisco-auditing-tool
+Comment=Perl script which scans cisco routers for common vulnerabilities
 Encoding=UTF-8
 Exec=menuexec "CAT"
 Icon=parrot-menu.png

@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=cisco-ocs
+Comment=Mass Cisco scanning tool
 Encoding=UTF-8
 Exec=menuexec "cisco-ocs"
 Icon=parrot-menu.png
