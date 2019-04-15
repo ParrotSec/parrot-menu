@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=dmitry
+Comment=Gather information about a host
 Encoding=UTF-8
 Exec=menuexec "dmitry"
 Icon=parrot-dmitry.png

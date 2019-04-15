@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=dnmap-server
+Comment=A framework to distribute nmap scans among several server
 Encoding=UTF-8
 Exec=menuexec "dnmap_server"
 Icon=parrot-dnmap.png

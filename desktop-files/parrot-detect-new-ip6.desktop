@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=detect-new-ip6
+Comment=Detects new ipv6 addresses joining the local network
 Encoding=UTF-8
 Exec=menuexec atk6-detect-new-ip6 
 Icon=parrot-menu.png

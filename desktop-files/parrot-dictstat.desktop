@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=dictstat
+Comment=Password generator
 Encoding=UTF-8
 Exec=menuexec "dictstat -h"
 Icon=parrot-menu.png
