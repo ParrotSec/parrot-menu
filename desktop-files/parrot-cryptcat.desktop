@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=cryptcat
+Comment=Standard netcat enhanced with twofish encryption
 Encoding=UTF-8
 Exec=menuexec cryptcat -h 
 Icon=parrot-menu.png

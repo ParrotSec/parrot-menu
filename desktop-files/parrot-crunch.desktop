@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=crunch
+Comment=Password generator from charset
 Encoding=UTF-8
 Exec=menuexec "crunch"
 Icon=parrot-crunch.png

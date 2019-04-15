@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=darkstat
+Comment=Network traffic analyzer
 Encoding=UTF-8
 Exec=menuexec "darkstat"
 Icon=parrot-menu.png
