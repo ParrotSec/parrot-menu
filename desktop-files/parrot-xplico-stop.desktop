@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=14-12-xplico-service
+Comment=Stop the network forensics analysis tool
 X-Parrot-Package=xplico
