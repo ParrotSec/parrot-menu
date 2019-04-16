@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=06-01-wireless-tools;
+Comment=tool allowing WiFi communications using traffic injection.
 X-Parrot-Package=wifitap

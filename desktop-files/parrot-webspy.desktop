@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=09-01-network-sniffers
+Comment=Display sniffed URLs in Netscape in real-time
 X-Parrot-Package=dsniff

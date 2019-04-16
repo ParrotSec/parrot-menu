@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=03-05-web-vulnerability-scanners;
+Comment=Multi-threaded web server audit tool (GUI)
 X-Parrot-Package=webshag

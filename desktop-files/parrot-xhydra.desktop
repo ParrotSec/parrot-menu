@@ -7,6 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=05-01-online-attacks;
+Comment=Gtk+2 frontend for thc-hydra
 X-Parrot-Package=hydra
-
-

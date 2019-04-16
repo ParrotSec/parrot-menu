@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=09-01-network-sniffers
+Comment= HTTP / HTTPS monkey-in-the-middle
 X-Parrot-Package=dsniff
