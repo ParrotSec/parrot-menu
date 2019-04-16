@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=01-01-dns-analysis;01-07-osint-analysis;
+Comment=Generate and test domain typos 
 X-Parrot-Package=urlcrazy

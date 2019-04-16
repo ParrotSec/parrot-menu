@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=06-04-other-wireless;
+Comment=Wireless development platform for Bluetooth experimentation
 X-Parrot-Package=ubertooth

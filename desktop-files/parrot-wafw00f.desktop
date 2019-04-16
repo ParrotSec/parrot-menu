@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=01-03-ids-ips-identification;
+Comment=Identify and fingerprints Web Application Firewall
 X-Parrot-Package=waffit

@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=false
 Type=Application
 Categories=03-webapp-analysis;top10
+Comment=Web security scanner
 X-Parrot-Package=vega

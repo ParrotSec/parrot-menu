@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=10-01-os-backdoors;
+Comment=Metasploit Payload Injection Tool For SanDisk Devices
 X-Parrot-Package=u3-pwn
