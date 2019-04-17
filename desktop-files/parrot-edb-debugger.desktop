@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=edb-debugger
+Comment=Java GUI cross platform AArch32/x86/x86-64 debugger
 Encoding=UTF-8
 Exec=menuexecg edb
 Icon=parrot-edb-debugger.png
