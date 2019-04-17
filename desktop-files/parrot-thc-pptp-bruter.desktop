@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=05-01-online-attacks;
+Comment=PPTP Brute Force Tool
 X-Parrot-Package=thc-pptp-bruter
