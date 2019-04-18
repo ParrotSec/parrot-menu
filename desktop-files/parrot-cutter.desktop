@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Comment=GUI interface for radare2 dissembler framework
+Name=Cutter
+Exec=Cutter
+Icon=cutter
+Categories=07-reverseengineer;
