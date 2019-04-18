@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=14-06-sshd;
+Comment=Stop ssh server
 X-Parrot-Package=openssh-server

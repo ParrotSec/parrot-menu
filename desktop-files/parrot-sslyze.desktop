@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=01-13-ssl-analysis;
+Comment=A CLI tool that can analyze the SSL configuration of a server
 X-Parrot-Package=sslyze

@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=04-database-assessment;08-exploitation-tools
+Comment=Automatic SQL injection tool
 X-Parrot-Package=sqlmap

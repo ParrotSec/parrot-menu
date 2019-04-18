@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=11-08-forensic-suites;
+Comment=Display printable strings in files
 X-Parrot-Package=sleuthkit
