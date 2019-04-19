@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=13-01-can-utils
+Comment=Userspace tool for serial line CAN interface driver SLCAN
 X-Parrot-Package=can-utils

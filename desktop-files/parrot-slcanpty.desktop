@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=13-01-can-utils
+Comment=Creates a pty for applications using the slcan ASCII protocol and converts the ASCII data to a CAN network interface (and vice versa)
 X-Parrot-Package=can-utils

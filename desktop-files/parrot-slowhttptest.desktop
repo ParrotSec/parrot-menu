@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=02-07-stress-testing;
+Comment=Tool that simulates some Application Layer Denial of Service attacks 
 X-Parrot-Package=slowhttptest

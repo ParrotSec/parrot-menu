@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=07-reverseengineer;
+Comment=An assembler/disassembler for the dex format used by dalvik
 X-Parrot-Package=smali

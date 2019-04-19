@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=02-07-stress-testing;
+Comment=An HTTP/HTTPS stress tester 
 X-Parrot-Package=siege

@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=10-maintaining-access;
+Comment=Dynamic shellcode injection tool and dynamic PE infector
 X-Parrot-Package=shellter

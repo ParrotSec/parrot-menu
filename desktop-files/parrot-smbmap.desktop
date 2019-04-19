@@ -7,6 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=01-10-smb-analysis;05-04-pass-hash;
+Comment=SMB enumeration tool
 X-Parrot-Package=smbmap
-
-

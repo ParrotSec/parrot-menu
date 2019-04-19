@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=04-database-assessment;
+Comment=Guesses sids against an Oracle database
 X-Parrot-Package=sidguesser
