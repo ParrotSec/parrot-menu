@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=02-02-fuzzers;
+Comment=Simple Fuzzer
 X-Parrot-Package=sfuzz

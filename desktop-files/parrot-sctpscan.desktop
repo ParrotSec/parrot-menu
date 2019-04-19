@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=02-03-voip-tools;
+Comment=SCTP network scanner for discovery and security
 X-Parrot-Package=sctpscan

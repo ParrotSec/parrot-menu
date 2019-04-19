@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=08-exploitation-tools;08-02-social-engineering
+Comment=A social engineering toolkit
 X-Parrot-Package=set

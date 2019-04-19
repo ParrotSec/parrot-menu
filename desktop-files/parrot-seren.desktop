@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=Network;InstantMessaging;Chat;FileTransfer;Security
+Comment=A simple VoIP program to create conferences from the terminal  
 X-Parrot-Package=seren
