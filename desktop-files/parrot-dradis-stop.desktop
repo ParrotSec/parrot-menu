@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=dradis stop
+Comment=Stop Dradis reporting tool service
 Encoding=UTF-8
 Exec=menuexec "service dradis stop"
 Icon=parrot-dradis.png

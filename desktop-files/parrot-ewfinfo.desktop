@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=ewfinfo
+Comment=Determine information about Expert Witness Compression Format files
 Encoding=UTF-8
 Exec=menuexec ewfinfo -h 
 Icon=parrot-menu.png

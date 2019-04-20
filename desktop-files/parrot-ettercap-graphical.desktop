@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=ettercap-graphical
+Comment=Network sniffing tool (GUI)
 Encoding=UTF-8
 Exec=menuexecg "ettercap -G"
 Icon=parrot-ettercap.png

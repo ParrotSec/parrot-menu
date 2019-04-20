@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=enumiax
+Comment=Asterisk Exchange Protocol username brute-force enumerator
 Encoding=UTF-8
 Exec=menuexec "enumiax -h"
 Icon=parrot-menu.png

@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=ewfverify
+Comment=Verify media data stored in Expert Witness Compression Format files
 Encoding=UTF-8
 Exec=menuexec ewfverify -h 
 Icon=parrot-menu.png

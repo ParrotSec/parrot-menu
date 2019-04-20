@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=dos-new-ip6
+Comment=Attack weakness of IPv6 and ICMPv6
 Encoding=UTF-8
 Exec=menuexec atk6-dos-new-ip6 
 Icon=parrot-menu.png

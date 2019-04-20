@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=dnswalk
+Comment=Check DNS information using name server lookups
 Encoding=UTF-8
 Exec=menuexec "dnswalk --help"
 Icon=parrot-menu.png
