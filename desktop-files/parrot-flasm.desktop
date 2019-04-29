@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=flasm
+Comment=disassembles entire SWF including all the timelines and events
 Encoding=UTF-8
 Exec=menuexec "flasm"
 Icon=parrot-flasm.png

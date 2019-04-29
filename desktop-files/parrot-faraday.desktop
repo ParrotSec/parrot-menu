@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=faraday IDE
+Comment=Collaborative Penetration Test and Vulnerability Management Platform 
 Encoding=UTF-8
 Exec=menuexec "python-faraday"
 Icon=parrot-faraday.png

@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=ferret
+Comment=Monitors data and extracts interesting data
 Encoding=UTF-8
 Exec=menuexec "ferret"
 Icon=parrot-ferret.png

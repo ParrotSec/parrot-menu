@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=fern wifi cracker
+Comment=Security auditing and attack software written in PyQT GUI
 Encoding=UTF-8
 Exec=menuexecg "fern-wifi-cracker"
 Icon=parrot-fern-wifi-cracker.png

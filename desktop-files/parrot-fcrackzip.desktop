@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=fcrackzip
+Comment=Cracking encrypted ZIP archives
 Encoding=UTF-8
 Exec=menuexec "fcrackzip --help"
 Icon=parrot-menu.png

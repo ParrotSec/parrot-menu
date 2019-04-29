@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=fragroute
+Comment=Intercepts, modifies, and rewrites egress traffic destined for a specified host
 Encoding=UTF-8
 Exec=menuexec "fragroute -h"
 Icon=parrot-menu.png

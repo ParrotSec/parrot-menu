@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=fake_dns6d
+Comment=Serves the same ipv6 address to any lookup request
 Encoding=UTF-8
 Exec=menuexec atk6-fake_dns6d 
 Icon=parrot-menu.png

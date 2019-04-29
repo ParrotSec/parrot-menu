@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=fimap
+Comment=Find, prepare, audit, exploit and even google automatically for local and remote file inclusion bugs in webapps
 Encoding=UTF-8
 Exec=menuexec "fimap -h"
 Icon=parrot-menu.png

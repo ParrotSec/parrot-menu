@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=freeradius-wpe
+Comment=Test EAP Types/Inner Authentication Methods
 Encoding=UTF-8
 Exec=menuexec "freeradius -h"
 Icon=parrot-menu.png

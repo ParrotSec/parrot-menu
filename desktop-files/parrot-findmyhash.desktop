@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=findmyhash
+Comment=Crack hashes with online services
 Encoding=UTF-8
 Exec=menuexec "findmyhash"
 Icon=parrot-menu.png

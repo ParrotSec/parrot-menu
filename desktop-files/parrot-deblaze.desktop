@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=deblaze
+Comment=Brute Force service and method names, flex technology fingerprinting
 Encoding=UTF-8
 Exec=menuexec "deblaze.py -h"
 Icon=parrot-menu.png
