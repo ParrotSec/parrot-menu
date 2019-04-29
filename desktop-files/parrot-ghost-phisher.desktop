@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=ghost phisher
+Comment=Wireless and Ethernet security auditing and attack written in PyQT
 Encoding=UTF-8
 Exec=menuexec "ghost-phisher"
 Icon=parrot-ghost-phisher.png

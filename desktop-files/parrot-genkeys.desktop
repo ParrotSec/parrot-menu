@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=genkeys
+Comment=Generate lookup file for asleap
 Encoding=UTF-8
 Exec=menuexec genkeys 
 Icon=parrot-menu.png

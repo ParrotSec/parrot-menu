@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=golismero
+Comment=Automation tool for recon and vulnerability analysis
 Encoding=UTF-8
 Exec=menuexec "golismero -h"
 Icon=parrot-golismero.png

@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=genpmk
+Comment=WPA-PSK precomputation attack
 Encoding=UTF-8
 Exec=menuexec genpmk 
 Icon=parrot-menu.png
