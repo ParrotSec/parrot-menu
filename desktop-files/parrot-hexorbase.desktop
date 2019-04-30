@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=hexorbase
+Comment=SQL queries and bruteforce attacks against common database servers
 Encoding=UTF-8
 Exec=menuexecg "hexorbase"
 Icon=parrot-hexorbase.png

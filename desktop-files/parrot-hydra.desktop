@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=hydra
+Comment=Parallelized login cracker which supports numerous protocols to attack.
 Encoding=UTF-8
 Exec=menuexec "hydra -h"
 Icon=parrot-hydra.png
