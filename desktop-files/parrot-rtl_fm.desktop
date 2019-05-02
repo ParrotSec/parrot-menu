@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=06-05-radio-tools;
+Comment=A general purpose analog demodulator
 X-Parrot-Package=librtlsdr-bin

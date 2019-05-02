@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=06-03-rfid-nfc-tools;
+Comment=generate / decode FDX-B EM4x05 compliant IDs
 X-Parrot-Package=python-rfidiot

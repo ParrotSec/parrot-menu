@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=11-05-forensic-carving-tools;
+Comment=Parse INFO2 file and dump recycle bin data.
 X-Parrot-Package=rifiuti2

@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=06-05-radio-tools;
+Comment=this will test the dongle and its function. 
 X-Parrot-Package=librtlsdr-bin

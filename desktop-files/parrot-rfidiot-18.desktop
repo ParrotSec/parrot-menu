@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=06-03-rfid-nfc-tools;
+Comment=Read LF TAG datablocks.
 X-Parrot-Package=python-rfidiot

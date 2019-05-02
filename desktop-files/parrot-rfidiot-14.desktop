@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=06-03-rfid-nfc-tools;
+Comment=Attempt to login to each sector of a Mifare TAG with standard transport keys.
 X-Parrot-Package=python-rfidiot
