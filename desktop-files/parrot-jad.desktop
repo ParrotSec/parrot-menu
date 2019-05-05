@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=jad
+Comment=Java decompiler tool (CLI)
 Encoding=UTF-8
 Exec=menuexec "jad"
 Icon=parrot-jad.png

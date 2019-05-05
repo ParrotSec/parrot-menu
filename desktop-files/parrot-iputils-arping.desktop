@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=iputils-arping
+Comment=The arping command acts like the standard ping command except it pings a machine by its ARP address instead of its IP address
 Encoding=UTF-8
 Exec=menuexec arping
 Icon=parrot-menu.png

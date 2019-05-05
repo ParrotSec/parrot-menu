@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=ifind
+Comment=Find the meta-data structure that has allocated a given disk unit or file name
 Encoding=UTF-8
 Exec=menuexec "ifind"
 Icon=parrot-menu.png

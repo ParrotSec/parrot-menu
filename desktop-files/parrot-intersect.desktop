@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=intersect
+Comment=Framework that generates custom scripts for Post-Exploitation
 Encoding=UTF-8
 Exec=menuexec "intersect"
 Icon=parrot-menu.png

@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=john
+Comment=Fast hash cracker that detects hash type automatically (CLI)
 Encoding=UTF-8
 Exec=menuexec "john"
 Icon=parrot-john.png

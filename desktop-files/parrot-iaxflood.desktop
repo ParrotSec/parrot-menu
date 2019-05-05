@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=iaxflood
+Comment=Flood the IAX protocol
 Encoding=UTF-8
 Exec=menuexec "iaxflood"
 Icon=parrot-menu.png
