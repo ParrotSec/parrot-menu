@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=09-sniffing-spoofing;
+Comment=A LLMNR/NBT-NS/mDNS Poisoner
 X-Parrot-Package=responder

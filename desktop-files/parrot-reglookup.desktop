@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=11-04-forensic-analysis-tools;
+Comment=Windows NT+ registry reader/lookup tool
 X-Parrot-Package=reglookup

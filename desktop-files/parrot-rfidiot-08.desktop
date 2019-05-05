@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=06-03-rfid-nfc-tools;
+Comment=format value blocks on a mifare standard tag.
 X-Parrot-Package=python-rfidiot

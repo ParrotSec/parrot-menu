@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=06-03-rfid-nfc-tools;
+Comment=Attempt to copy data blocks of non password or crypto protected TAG to a blank of the same type.
 X-Parrot-Package=python-rfidiot
