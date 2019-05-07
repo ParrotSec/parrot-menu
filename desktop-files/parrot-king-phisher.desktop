@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=king phisher server
+Comment=Simulating real world phishing attacks
 Encoding=UTF-8
 Exec=menuexec "king-phisher-server"
 Icon=parrot-menu.png

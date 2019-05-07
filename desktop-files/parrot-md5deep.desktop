@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=md5deep
+Comment=A set of programs to compute MD5, SHA-1, SHA-256, Tiger, or Whirlpool message digests on an arbitrary number of files
 Encoding=UTF-8
 Exec=menuexec md5deep -h 
 Icon=parrot-menu.png

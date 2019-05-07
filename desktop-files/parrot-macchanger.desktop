@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=macchanger
+Comment=Change MAC address
 Encoding=UTF-8
 Exec=menuexec "macchanger -h"
 Icon=parrot-macchanger.png

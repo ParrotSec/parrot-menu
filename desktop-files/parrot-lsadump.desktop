@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=lsadump
+Comment=Dump LSA secrets
 Encoding=UTF-8
 Exec=menuexec "lsadump -h"
 Icon=parrot-menu.png
