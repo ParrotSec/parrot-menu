@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=mysql start
+Comment=Start MySQL database service
 Encoding=UTF-8
 Exec=menuexec "service mysql start"
 Icon=parrot-menu.png

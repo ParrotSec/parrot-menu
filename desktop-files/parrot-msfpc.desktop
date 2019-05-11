@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=msf payload creator
+Comment=Generate various basic Meterpreter payloads using msfvenom which is part of the Metasploit framework
 Encoding=UTF-8
 Exec=menuexec "msfpc"
 Icon=parrot-mpc.png

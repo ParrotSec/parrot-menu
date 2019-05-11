@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=NASM shell
+Comment=General-purpose x86 assembler
 Encoding=UTF-8
 Exec=menuexec nasm -h
 Icon=parrot-metasploit.png
