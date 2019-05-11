@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=ncat
+Comment=NMAP netcat reimplementation
 Encoding=UTF-8
 Exec=menuexec "ncat -h"
 Icon=parrot-menu.png

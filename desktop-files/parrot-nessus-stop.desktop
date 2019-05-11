@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=Nessus stop
+Comment=Stop Nessus vulnerability scanner service
 Encoding=UTF-8
 Exec=menuexec "/etc/init.d/nessusd stop"
 Icon=parrot-nessus.png

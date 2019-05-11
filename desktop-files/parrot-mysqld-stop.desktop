@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=mysql stop
+Comment=Stop MySQL database service
 Encoding=UTF-8
 Exec=menuexec "service mysql stop"
 Icon=parrot-menu.png

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=missidentify
-Comment=find MS Windows type win32 applications
+Comment=Find MS Windows type win32 applications
 Encoding=UTF-8
 Exec=menuexec "missidentify -h"
 Icon=parrot-menu.png

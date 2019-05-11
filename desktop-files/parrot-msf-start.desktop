@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=metasploit start
+Comment=Start metasploit framework and back-end services
 Encoding=UTF-8
 Exec=menuexec msfstart
 Icon=parrot-metasploit.png

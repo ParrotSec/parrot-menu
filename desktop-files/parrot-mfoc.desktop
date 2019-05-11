@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=mfoc
+Comment=MIFARE Classic offline cracker
 Encoding=UTF-8
 Exec=menuexec "mfoc -h"
 Icon=parrot-mfoc.png
