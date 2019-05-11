@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=09-02-network-spoofing;03-09-ipv6
+Comment=Redirect traffic to you intelligently (man-in-the-middle) with a clever ICMPv6 redirect spoofer
 X-Parrot-Package=thc-ipv6

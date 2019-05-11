@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=07-reverseengineer;
+Comment=Radare base converter
 X-Parrot-Package=radare2

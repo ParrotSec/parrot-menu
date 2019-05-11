@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=false
 Type=Application
 Categories=07-reverseengineer;
+Comment=A gui reverse engineering tool 
 X-Parrot-Package=recstudio

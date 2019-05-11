@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=07-reverseengineer;
+Comment=Unified binary diffing utility
 X-Parrot-Package=radare2

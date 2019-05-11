@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=06-02-bluetooth-tools;
+Comment=The Bluetooth Hunter
 X-Parrot-Package=redfang

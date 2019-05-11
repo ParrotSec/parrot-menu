@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=07-reverseengineer;
+Comment=Advanced commandline hexadecimal editor, disassembler and debugger
 X-Parrot-Package=radare2

@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=05-02-offline-attacks;
+Comment=RainbowCrack (improved, multi-threaded)
 X-Parrot-Package=rcracki-mt

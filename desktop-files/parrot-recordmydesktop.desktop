@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=12-reporting;
+Comment=A desktop session recorder
 X-Parrot-Package=recordmydesktop
