@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=patator
+Comment=Multi-purpose brute-forcer
 Encoding=UTF-8
 Exec=menuexec "patator -h"
 Icon=parrot-menu.png

@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=proxytunnel
+Comment=Create tcp tunnels trough HTTPS proxies, for using with SSH
 Encoding=UTF-8
 Exec=menuexec "proxytunnel -h"
 Icon=parrot-menu.png

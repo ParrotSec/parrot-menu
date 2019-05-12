@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=openvas start
+Comment=Start OpenVas vulnerability scanning and vulnerability management solution service
 Encoding=UTF-8
 Exec=menuexec "openvas-start"
 Icon=parrot-OpenVas.png

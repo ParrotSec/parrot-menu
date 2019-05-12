@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=ophcrack-cli
+Comment=Windows password cracker based on a time-memory trade-off using rainbow tables (CLI)
 Encoding=UTF-8
 Exec=menuexec "ophcrack-cli"
 Icon=parrot-ophcrack.png

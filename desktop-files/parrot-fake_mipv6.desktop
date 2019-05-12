@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=fake_mipv6
+Comment=Redirect all packets for home-address to care-of-address
 Encoding=UTF-8
 Exec=menuexec atk6-fake_mipv6 
 Icon=parrot-menu.png

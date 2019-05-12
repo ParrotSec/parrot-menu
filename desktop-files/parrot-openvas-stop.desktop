@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=openvas stop
+Comment=Stop OpenVas vulnerability scanning and vulnerability management solution service
 Encoding=UTF-8
 Exec=menuexec "openvas-stop"
 Icon=parrot-OpenVas.png

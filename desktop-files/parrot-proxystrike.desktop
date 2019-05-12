@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=proxystrike
+Comment=Find Sql injection and xss vulnerabilities while browsing an application
 Encoding=UTF-8
 Exec=menuexecg "proxystrike"
 Icon=parrot-menu.png

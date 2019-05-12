@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=parasite6
+Comment=ARP spoofer for IPv6
 Encoding=UTF-8
 Exec=menuexec atk6-parasite6 
 Icon=parrot-menu.png

@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=protos-sip
+Comment=evaluate implementation level security and robustness of Session Initiation Protocol (SIP) implementations
 Encoding=UTF-8
 Exec=menuexec "protos-sip -help"
 Icon=parrot-menu.png

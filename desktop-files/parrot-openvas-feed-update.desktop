@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=openvas feed update
+Comment=Update signatures for OpenVas
 Encoding=UTF-8
 Exec=menuexec "openvas-feed-update"
 Icon=parrot-OpenVas.png

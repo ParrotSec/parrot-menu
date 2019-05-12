@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=keepnote
+Comment=Cross-platform note-taking and organization application
 Encoding=UTF-8
 Exec=menuexecg "keepnote"
 Icon=keepnote.png

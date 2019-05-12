@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=flood_dhcpc6
+Comment=flood_dhcpc6
 Encoding=UTF-8
 Exec=menuexec atk6-flood_dhcpc6 
 Icon=parrot-menu.png

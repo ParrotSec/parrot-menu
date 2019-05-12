@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=ophcrack
+Comment=Windows password cracker based on a time-memory trade-off using rainbow tables (GUI)
 Encoding=UTF-8
 Exec=menuexecg "ophcrack"
 Icon=parrot-ophcrack.png

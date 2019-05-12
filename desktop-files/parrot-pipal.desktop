@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=pipal
+Comment=Statistical analysis on password dumps: password length, charset
 Encoding=UTF-8
 Exec=menuexec "pipal -h"
 Icon=parrot-pipal.png

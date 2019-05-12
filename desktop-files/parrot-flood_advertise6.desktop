@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=flood_advertise6
+Comment=Flood the local network with neighbor advertisements
 Encoding=UTF-8
 Exec=menuexec atk6-flood_advertise6 
 Icon=parrot-menu.png
