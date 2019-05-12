@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=mailsnarf
-Comment=Sniff from SMTP and POP traffic in Berkeley	mbox format,
+Comment=Sniff from SMTP and POP traffic in Berkeley mbox format,
 Encoding=UTF-8
 Exec=menuexec mailsnarf -h 
 Icon=parrot-menu.png
