@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=clang++
+Comment=Compiler for C++ language
 Encoding=UTF-8
 Exec=menuexec "clang++ --help"
 Icon=parrot-clang.png
