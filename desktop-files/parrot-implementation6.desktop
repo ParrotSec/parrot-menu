@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=implementation6
+Comment=Performs an inverse address query
 Encoding=UTF-8
 Exec=menuexec atk6-implementation6 
 Icon=parrot-menu.png
