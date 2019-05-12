@@ -7,6 +7,7 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=05-04-pass-hash;
+Comment=Opens an interactive session to execute RPC commands
 X-Parrot-Package=passing-the-hash
 
 

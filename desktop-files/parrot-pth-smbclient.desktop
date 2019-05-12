@@ -7,6 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=05-04-pass-hash;
+Comment=Browses available shares on remote computers
 X-Parrot-Package=passing-the-hash
-
-
