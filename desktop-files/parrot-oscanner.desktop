@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=oscanner
+Comment=Oracle assessment framework developed in Java
 Encoding=UTF-8
 Exec=menuexec "oscanner"
 Icon=parrot-oscanner.png

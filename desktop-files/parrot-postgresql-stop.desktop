@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=postgresql stop
+Comment=Stop postgresql database service
 Encoding=UTF-8
 Exec=menuexec "service postgresql stop"
 Icon=parrot-menu.png

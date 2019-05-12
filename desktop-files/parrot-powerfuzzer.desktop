@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=powerfuzzer
+Comment=Highly automated and fully customizable web fuzzer
 Encoding=UTF-8
 Exec=menuexecg "powerfuzzer"
 Icon=parrot-menu.png

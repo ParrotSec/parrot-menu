@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=nishang
+Comment=collection of scripts and payloads which enables usage of PowerShell for offensive security and post exploitation
 Encoding=UTF-8
 Exec=menuexec nishang
 Icon=parrot-nishang.png

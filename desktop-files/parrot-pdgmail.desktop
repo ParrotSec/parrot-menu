@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=pdgmail
+Comment=Extracts gmail artifacts from a pd dump
 Encoding=UTF-8
 Exec=menuexec "pdgmail -h"
 Icon=parrot-menu.png

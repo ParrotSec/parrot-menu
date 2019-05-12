@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=ohrwurm
+Comment=A small and simple RTP
 Encoding=UTF-8
 Exec=menuexec "ohrwurm"
 Icon=parrot-menu.png

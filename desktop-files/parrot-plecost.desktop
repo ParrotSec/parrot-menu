@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=plecost
+Comment=Wordpress fingerprinting tool
 Encoding=UTF-8
 Exec=menuexec "plecost -h"
 Icon=parrot-menu.png

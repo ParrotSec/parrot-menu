@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=pev
+Comment=Text-based tool to analyze PE files
 Encoding=UTF-8
 Exec=menuexec "pev -h"
 Icon=parrot-menu.png
