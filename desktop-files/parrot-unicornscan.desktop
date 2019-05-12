@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=unicornscan
+Comment=Port scanner with superior interface for measuring TCP/IP response
 Encoding=UTF-8
 Exec=menuexec "us -h"
 Icon=parrot-menu.png
