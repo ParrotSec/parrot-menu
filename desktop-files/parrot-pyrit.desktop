@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=05-password-attacks;
+Comment=A GPGPU-driven WPA/WPA2-PSK key cracker
 X-Parrot-Package=pyrit

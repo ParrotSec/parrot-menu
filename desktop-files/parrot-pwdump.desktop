@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=05-02-offline-attacks;
+Comment=Dumps the password database of an NT machine
 X-Parrot-Package=creddump

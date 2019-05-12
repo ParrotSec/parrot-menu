@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=10-02-tunneling;
+Comment=NAT to NAT client-server communication
 X-Parrot-Package=pwnat
