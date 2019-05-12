@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=canplayer
+Comment=Replay CAN logfiles
 Encoding=UTF-8
 Exec=menuexec canplayer -h
 Icon=parrot-menu.png
