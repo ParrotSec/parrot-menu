@@ -8,5 +8,3 @@ Terminal=true
 Type=Application
 Categories=05-04-pass-hash;
 X-Parrot-Package=passing-the-hash
-
-

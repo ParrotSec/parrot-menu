@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=ptunnel
+Comment=Tunnel TCP connections over ICMP packets
 Encoding=UTF-8
 Exec=menuexec "ptunnel -h"
 Icon=parrot-menu.png
