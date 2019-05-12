@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=pth-curl
+Comment=Access curl comment using NTLM hash
 Encoding=UTF-8
 Exec=menuexec "pth-curl -h"
 Icon=parrot-menu.png
