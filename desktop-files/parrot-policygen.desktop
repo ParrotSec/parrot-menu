@@ -7,5 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=05-05-profile;
-CommenT=A mask/rule password generator 
+Comment=A mask/rule password generator 
 X-Parrot-Package=pack
