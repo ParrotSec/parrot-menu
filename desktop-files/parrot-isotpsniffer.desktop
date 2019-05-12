@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=isotpsniffer
+Comment=wiretap ISO-TP PDU(s)
 Encoding=UTF-8
 Exec=menuexec isotpsniffer
 Icon=parrot-menu.png
