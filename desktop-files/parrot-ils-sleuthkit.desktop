@@ -1,7 +1,8 @@
 [Desktop Entry]
 Name=ils-sleuthkit
+Comment=List inode information
 Encoding=UTF-8
-Exec=menuexec "ils-sleuthkit"
+Exec=menuexec "ils"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
