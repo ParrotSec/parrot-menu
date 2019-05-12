@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=hfind
+Comment=Lookup a hash value in a hash database
 Encoding=UTF-8
 Exec=menuexec "hfind"
 Icon=parrot-menu.png

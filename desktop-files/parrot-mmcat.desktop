@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=mmcat
+Comment=Output the contents of a partition to stdout
 Encoding=UTF-8
 Exec=menuexec "mmcat"
 Icon=parrot-menu.png
