@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=istat
+Comment=Display details of a meta-data structure (i.e. inode)
 Encoding=UTF-8
 Exec=menuexec "istat"
 Icon=parrot-menu.png
