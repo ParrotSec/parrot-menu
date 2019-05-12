@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=fake_mldrouter6
+Comment=Announce, delete or soliciated MLD router
 Encoding=UTF-8
 Exec=menuexec atk6-fake_mldrouter6 
 Icon=parrot-menu.png

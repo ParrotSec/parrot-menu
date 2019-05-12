@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=flood_solicitate6
+Comment=Flood the network with neighbor solicitations
 Encoding=UTF-8
 Exec=menuexec atk6-flood_solicitate6 
 Icon=parrot-menu.png
