@@ -1,11 +1,11 @@
 [Desktop Entry]
-Name=veil-evasion
+Name=veil
 Encoding=UTF-8
-Exec=menuexec "veil-evasion -h"
+Exec=menuexec "veil -h"
 Icon=parrot-veil-catapult-evasion.png
 StartupNotify=false
 Terminal=true
 Type=Application
 Categories=10-maintaining-access;
-Comment=Generate metasploit payloads
-X-Parrot-Package=veil-evasion
+Comment=generate metasploit payloads that bypass common anti-virus solutions.
+X-Parrot-Package=veil
