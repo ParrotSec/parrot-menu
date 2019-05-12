@@ -7,5 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=05-04-pass-hash;
-Comment=Browses available shares on remote computers
+Comment=Browses available shares on remote computers using NTLM hash
 X-Parrot-Package=passing-the-hash
