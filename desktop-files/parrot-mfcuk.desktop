@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=mfcuk
+Comment=Mifare Classic weakness demonstration/exploitation
 Encoding=UTF-8
 Exec=menuexec "mfcuk -h"
 Icon=parrot-menu.png
