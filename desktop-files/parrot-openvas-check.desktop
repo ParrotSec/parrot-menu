@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=openvas check setup
+Comment=Verify OpenVas installation
 Encoding=UTF-8
 Exec=menuexec "openvas-check-setup"
 Icon=parrot-OpenVas.png
