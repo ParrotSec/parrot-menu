@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=swaks
+Comment=SMTP command-line test tool
 Encoding=UTF-8
 Exec=menuexec "swaks --help"
 Icon=parrot-menu.png
