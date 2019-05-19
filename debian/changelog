@@ -1,3 +1,9 @@
+parrot-menu (2:2019.05.19) testing; urgency=medium
+
+  * Rewrite the menu lanucher updater in golang.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 19 May 2019 19:53:27 +0200
+
 parrot-menu (2:2019.04.10) testing; urgency=medium
 
   * Update airgeddon launcher.
