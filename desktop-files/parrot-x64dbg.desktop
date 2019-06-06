@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=x64dbg
+Encoding=UTF-8
+Exec=x64dbg
+Icon=parrot-ollydbg.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=07-reverseengineer;
+X-Parrot-Package=x64dbg

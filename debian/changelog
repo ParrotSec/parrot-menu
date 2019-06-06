@@ -1,3 +1,17 @@
+parrot-menu (2:2019.06.06.1) testing; urgency=medium
+
+  * Rebuild package.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 06 Jun 2019 22:36:07 +0200
+
+parrot-menu (2:2019.06.06) testing; urgency=medium
+
+  * Add new tool launchers.
+  * Update some launchers.
+  * Update service launchers to not open a terminal window.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 06 Jun 2019 18:38:28 +0200
+
 parrot-menu (2:2019.05.20) testing; urgency=medium
 
   * Update (and fix) new golang launcher updater.
