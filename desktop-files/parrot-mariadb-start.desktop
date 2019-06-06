@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=mysql/mariadb start
 Encoding=UTF-8
-Exec=menuexec "service mysql start"
+Exec=service mysql start
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

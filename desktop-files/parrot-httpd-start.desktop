@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=nginx start
 Encoding=UTF-8
-Exec=menuexec service nginx start 
+Exec=service nginx start 
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

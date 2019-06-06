@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=beef stop
 Encoding=UTF-8
-Exec=menuexec service beef-xss stop
+Exec=service beef-xss stop
 Icon=parrot-beef.png
 StartupNotify=false
 Terminal=true

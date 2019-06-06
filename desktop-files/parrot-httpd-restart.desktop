@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=nginx restart
 Encoding=UTF-8
-Exec=menuexec service nginx restart 
+Exec=service nginx restart 
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

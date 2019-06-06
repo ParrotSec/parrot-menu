@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=sshd start
 Encoding=UTF-8
-Exec=menuexec service ssh start 
+Exec=service ssh start 
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

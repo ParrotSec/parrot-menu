@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=postgresql start
 Encoding=UTF-8
-Exec=menuexec "service postgresql start"
+Exec=service postgresql start
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

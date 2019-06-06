@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=sshd stop
 Encoding=UTF-8
-Exec=menuexec service ssh stop 
+Exec=service ssh stop 
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
