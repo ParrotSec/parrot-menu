@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=impacket
+Encoding=UTF-8
+Exec=bash -c "echo -e 'Python module to easily build and dissect network protocols\n\navailable commands:\n\nimpacket-GetUserSPNs\nimpacket-rpcdump\nimpacket-smbserver\nimpacket-netview\nimpacket-samrdump\nimpacket-wmiexec\nimpacket-ntlmrelayx\nimpacket-secretsdump';bash"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-sniffing-spoofing;
+X-Parrot-Package=python-impacket
