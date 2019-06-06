@@ -1,10 +1,10 @@
 [Desktop Entry]
 Name=mimikatz
 Encoding=UTF-8
-Exec=xdg-open /usr/share/mimikatz
+Exec=menuexec "mimikatz"
 Icon=parrot-mimikatz.png
 StartupNotify=false
-Terminal=false
+Terminal=true
 Type=Application
 Categories=10-maintaining-access;05-04-pass-hash;
 X-Parrot-Package=mimikatz
