@@ -1,10 +1,10 @@
 [Desktop Entry]
 Name=nginx stop
 Encoding=UTF-8
-Exec=service nginx stop 
+Exec=/usr/sbin/service nginx stop 
 Icon=parrot-menu.png
 StartupNotify=false
-Terminal=true
+Terminal=false
 Type=Application
 Categories=14-02-httpd;
 X-Parrot-Package=nginx

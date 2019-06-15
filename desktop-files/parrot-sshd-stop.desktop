@@ -1,10 +1,10 @@
 [Desktop Entry]
 Name=sshd stop
 Encoding=UTF-8
-Exec=service ssh stop 
+Exec=/usr/sbin/service ssh stop 
 Icon=parrot-menu.png
 StartupNotify=false
-Terminal=true
+Terminal=false
 Type=Application
 Categories=14-06-sshd;
 X-Parrot-Package=openssh-server

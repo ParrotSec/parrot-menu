@@ -1,10 +1,10 @@
 [Desktop Entry]
 Name=nginx start
 Encoding=UTF-8
-Exec=service nginx start 
+Exec=/usr/sbin/service nginx start 
 Icon=parrot-menu.png
 StartupNotify=false
-Terminal=true
+Terminal=false
 Type=Application
 Categories=14-02-httpd;
 X-Parrot-Package=nginx
