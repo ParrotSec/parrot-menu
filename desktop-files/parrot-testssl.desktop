@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=
+Name=testssl
 Encoding=UTF-8
 Exec=menuexec "testssl -b"
 Icon=parrot-menu.png

@@ -1,3 +1,9 @@
+parrot-menu (2:2019.06.17) testing; urgency=medium
+
+  * Fix testssl launcher.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 17 Jun 2019 23:31:25 +0200
+
 parrot-menu (2:2019.06.15) testing; urgency=medium
 
   * Update daemon launchers.
