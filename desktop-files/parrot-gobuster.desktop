@@ -7,5 +7,5 @@ Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=01-info-gathering;03-webapp-analysis;top10
+Categories=03-04-web-crawlers;top10
 X-Parrot-Package=gobuster
