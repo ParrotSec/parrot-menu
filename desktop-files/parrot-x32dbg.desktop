@@ -6,5 +6,6 @@ Icon=parrot-ollydbg.png
 StartupNotify=false
 Terminal=false
 Type=Application
-Categories=07-reverseengineer;
+Comment=A x64/x32 debugger for windows binaries (32 bit)
+Categories=07-02-debuggers;
 X-Parrot-Package=x64dbg

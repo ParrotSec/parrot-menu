@@ -373,6 +373,33 @@
         <Category>07-reverseengineer</Category>
       </And>
     </Include>
+    <Menu>
+      <Name>Disassemblers</Name>
+      <Directory>07-01-disassemblers.directory</Directory>
+      <Include>
+        <And>
+          <Category>07-01-disassemblers</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Debuggers</Name>
+      <Directory>07-02-debuggers.directory</Directory>
+      <Include>
+        <And>
+          <Category>07-02-debuggers</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Decompilers</Name>
+      <Directory>07-03-decompilers.directory</Directory>
+      <Include>
+        <And>
+          <Category>07-03-decompilers</Category>
+        </And>
+      </Include>
+    </Menu>
   </Menu>
   <Menu>
     <Name>Exploit Frameworks</Name>

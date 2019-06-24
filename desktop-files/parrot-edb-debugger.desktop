@@ -7,5 +7,5 @@ Icon=parrot-edb-debugger.png
 StartupNotify=false
 Terminal=false
 Type=Application
-Categories=07-reverseengineer;top10
+Categories=07-02-debuggers;top10
 X-Parrot-Package=edb-debugger
