@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=windows-binaries
+Comment=A collection of Windows executables for use on penetration tests
 Encoding=UTF-8
 Exec=xdg-open /usr/share/windows-binaries/
 Icon=parrot-menu.png

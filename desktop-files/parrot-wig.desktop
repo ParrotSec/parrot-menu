@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=wig
+Comment=Web application information gathering tool, which can identify numerous Content Management Systems and other administrative applications
 Encoding=UTF-8
 Exec=bash -c "wig -h;bash"
 Icon=parrot-menu.png
