@@ -7,5 +7,5 @@ Icon=parrot-jd-gui.png
 StartupNotify=false
 Terminal=false
 Type=Application
-Categories=07-reverseengineer;
+Categories=07-03-decompilers;
 X-Parrot-Package=jd-gui
