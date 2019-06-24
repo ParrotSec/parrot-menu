@@ -7,4 +7,4 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=08-exploitation-tools;
-X-Parrot-Package=flasm
+X-Parrot-Package=owasp-zsc
