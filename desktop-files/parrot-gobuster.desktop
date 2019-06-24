@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=gobuster
+Comment=A fast directory/file & DNS busting tool written in Go
 Encoding=UTF-8
 Exec=menuexec "gobuster -h"
 Icon=parrot-menu.png
