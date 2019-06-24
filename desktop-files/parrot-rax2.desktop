@@ -6,6 +6,6 @@ Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=07-reverseengineer;
+Categories=07-04-radare2;
 Comment=Radare base converter
 X-Parrot-Package=radare2

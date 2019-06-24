@@ -400,6 +400,15 @@
         </And>
       </Include>
     </Menu>
+    <Menu>
+      <Name>Radare2 Framework</Name>
+      <Directory>07-04-radare2.directory</Directory>
+      <Include>
+        <And>
+          <Category>07-04-radare2</Category>
+        </And>
+      </Include>
+    </Menu>
   </Menu>
   <Menu>
     <Name>Exploit Frameworks</Name>

@@ -7,5 +7,5 @@ Icon=parrot-dex2jar.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=11-01-android-tools;07-reverseengineer;
+Categories=11-01-android-tools;07-03-decompilers;
 X-Parrot-Package=dex2jar
