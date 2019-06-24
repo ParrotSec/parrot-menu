@@ -7,5 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=05-02-offline-attacks;
-Comment=Rainbow table password cracker
+Comment=Generate rainbow table and crack dumped hashes
 X-Parrot-Package=rainbowcrack

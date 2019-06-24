@@ -7,5 +7,5 @@ Icon=parrot-john.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=05-password-attacks;
+Categories=05-02-offline-attacks;
 X-Parrot-Package=john

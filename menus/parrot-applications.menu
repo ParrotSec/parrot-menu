@@ -293,6 +293,15 @@
       </Include>
     </Menu>
     <Menu>
+      <Name>Hash Dump</Name>
+      <Directory>05-03-hash-dump.directory</Directory>
+      <Include>
+        <And>
+          <Category>05-03-hash-dump</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
       <Name>Passing the Hash</Name>
       <Directory>05-04-pass-hash.directory</Directory>
       <Include>

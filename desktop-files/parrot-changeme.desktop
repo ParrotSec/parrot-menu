@@ -7,5 +7,5 @@ Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=05-password-attacks;
+Categories=05-01-online-attacks;
 X-Parrot-Package=changeme

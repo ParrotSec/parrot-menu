@@ -27,7 +27,7 @@ categories=['04-database-assessment']
 [org/gnome/desktop/app-folders/folders/passwd]
 name='05-Password'
 translate=true
-categories=['01-online-attacks','05-01-online-attacks','05-02-offline-attacks','05-04-pass-hash','05-05-profile','05-password-attacks']
+categories=['05-01-online-attacks','05-02-offline-attacks','05-03-hash-dump', '05-04-pass-hash','05-05-profile','05-password-attacks']
 
 [org/gnome/desktop/app-folders/folders/wireless]
 name='06-Wireless'
