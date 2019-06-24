@@ -1,10 +1,10 @@
 [Desktop Entry]
 Name=sshd start
 Encoding=UTF-8
-Exec=menuexec service ssh start 
+Exec=/usr/sbin/service ssh start 
 Icon=parrot-menu.png
 StartupNotify=false
-Terminal=true
+Terminal=false
 Type=Application
 Categories=14-06-sshd;
 Comment=Start ssh server

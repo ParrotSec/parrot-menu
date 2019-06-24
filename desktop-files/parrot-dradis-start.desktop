@@ -2,7 +2,7 @@
 Name=dradis start
 Comment=Start Dradis reporting tool service
 Encoding=UTF-8
-Exec=menuexec "service dradis start"
+Exec=service dradis start
 Icon=parrot-dradis.png
 StartupNotify=false
 Terminal=true

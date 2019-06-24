@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=testssl
+Encoding=UTF-8
+Exec=menuexec "testssl -b"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-vulnerability-analysis;
+X-Parrot-Package=testssl.sh

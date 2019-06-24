@@ -2,7 +2,7 @@
 Name=dradis
 Comment=Web interface reporting tool for security assessments
 Encoding=UTF-8
-Exec=menuexecg "service dradis start; xdg-open https://127.0.0.1:3004"
+Exec=bash -c "service dradis start; xdg-open https://127.0.0.1:3004"
 Icon=parrot-dradis.png
 StartupNotify=false
 Terminal=false

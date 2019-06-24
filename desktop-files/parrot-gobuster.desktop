@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=gobuster
+Encoding=UTF-8
+Exec=menuexec "gobuster -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-info-gathering;03-webapp-analysis;top10
+X-Parrot-Package=gobuster

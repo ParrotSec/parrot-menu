@@ -1,3 +1,47 @@
+parrot-menu (2:2019.06.19) testing; urgency=medium
+
+  * Remove mimikatz wrapper, now provided by its package.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 19 Jun 2019 15:31:27 +0200
+
+parrot-menu (2:2019.06.17) testing; urgency=medium
+
+  * Fix testssl launcher.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 17 Jun 2019 23:31:25 +0200
+
+parrot-menu (2:2019.06.15) testing; urgency=medium
+
+  * Update daemon launchers.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 15 Jun 2019 16:56:08 +0200
+
+parrot-menu (2:2019.06.06.1) testing; urgency=medium
+
+  * Rebuild package.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 06 Jun 2019 22:36:07 +0200
+
+parrot-menu (2:2019.06.06) testing; urgency=medium
+
+  * Add new tool launchers.
+  * Update some launchers.
+  * Update service launchers to not open a terminal window.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 06 Jun 2019 18:38:28 +0200
+
+parrot-menu (2:2019.05.20) testing; urgency=medium
+
+  * Update (and fix) new golang launcher updater.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 19 May 2019 23:35:32 +0200
+
+parrot-menu (2:2019.05.19) testing; urgency=medium
+
+  * Rewrite the menu lanucher updater in golang.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 19 May 2019 19:53:27 +0200
+
 parrot-menu (2:2019.04.10) testing; urgency=medium
 
   * Update airgeddon launcher.

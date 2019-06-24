@@ -1,8 +1,0 @@
-#!/bin/bash
-echo -e "
-
-Mimikatz files are located at
-/usr/share/mimikatz
-
-enter this folder to use the tool
-"

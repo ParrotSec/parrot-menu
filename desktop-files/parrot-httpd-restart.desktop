@@ -2,10 +2,10 @@
 Name=nginx restart
 Comment=Restart nginx httpd service
 Encoding=UTF-8
-Exec=menuexec service nginx restart 
+Exec=/usr/sbin/service nginx restart 
 Icon=parrot-menu.png
 StartupNotify=false
-Terminal=true
+Terminal=false
 Type=Application
 Categories=14-02-httpd;
 X-Parrot-Package=nginx

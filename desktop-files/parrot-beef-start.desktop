@@ -2,7 +2,7 @@
 Name=beef start
 Comment=Turn Browser Exploitation framework service on
 Encoding=UTF-8
-Exec=menuexec service beef-xss start
+Exec=service beef-xss start
 Icon=parrot-beef.png
 StartupNotify=false
 Terminal=true
