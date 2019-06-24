@@ -37,7 +37,7 @@ categories=['06-01-wireless-tools','06-02-bluetooth-tools','06-03-rfid-nfc-tools
 [org/gnome/desktop/app-folders/folders/re]
 name='07-Reversing'
 translate=true
-categories=['07-01-disassemblers', '07-02-debuggers', '07-03-decompilers']
+categories=['07-01-disassemblers', '07-02-debuggers', '07-03-decompilers', '07-04-radare2', '07-Reversing']
 
 [org/gnome/desktop/app-folders/folders/exploit]
 name='08-Exploit'

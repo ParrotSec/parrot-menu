@@ -5,5 +5,5 @@ Encoding=UTF-8
 Exec=Cutter
 Icon=cutter
 Type=Application
-Categories=07-reverseengineer;
+Categories=07-04-radare2;
 X-Parrot-Package=radare2-cutter
