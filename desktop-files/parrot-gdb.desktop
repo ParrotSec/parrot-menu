@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=GNU Debugger
+Encoding=UTF-8
+Exec=menuexec gdb -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-02-debuggers;
+Comment=A powerful source-level debugger supports multiple languanges (CLI)
+X-Parrot-Package=gdb
