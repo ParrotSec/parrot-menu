@@ -7,5 +7,5 @@ Icon=parrot-cewl.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=05-02-offline-attacks
+Categories=05-05-profile;
 X-Parrot-Package=cewl
