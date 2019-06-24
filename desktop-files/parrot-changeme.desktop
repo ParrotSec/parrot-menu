@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=changeme
+Comment=Default credential scanner supports the http/https, MSSQL, MySQL, Postgres, ssh and ssh w/key protocols
 Encoding=UTF-8
 Exec=menuexec "changeme"
 Icon=parrot-menu.png
