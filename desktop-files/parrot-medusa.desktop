@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=medusa
-Comment=speedy, massively parallel, modular, login brute-forcer
+Comment=Speedy, massively parallel, modular, login brute-forcer
 Encoding=UTF-8
 Exec=menuexec "medusa -h"
 Icon=parrot-medusa.png
