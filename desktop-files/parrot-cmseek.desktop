@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=cmseek
-Comment=CMS Detection and vulnerability analysis for more than 170 CMSes
+Comment=CMS Detection and vulnerability analysis for more than 170 CMS
 Encoding=UTF-8
 Exec=menuexec "cmseek -h"
 Icon=parrot-menu.png
