@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=pompem
+Encoding=UTF-8
+Exec=menuexecg pompem -h
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=08-03-exploit-search;
+Comment=Exploit and Vulnerability Finder
+X-Parrot-Package=pompem
