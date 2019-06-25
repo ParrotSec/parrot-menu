@@ -6,6 +6,6 @@ Icon=parrot-sandi-gui.png
 StartupNotify=false
 Terminal=false
 Type=Application
-Categories=08-exploitation-tools;
+Categories=08-03-exploit-search;
 Comment=Search for exploitin: Exploitdb, Metasploit or Shell-storm database
 X-Parrot-Package=sandi

@@ -436,12 +436,30 @@
         </And>
       </Include>
     </Menu>
-	<Menu>
+	  <Menu>
       <Name>Social Engineering</Name>
       <Directory>08-02-social-engineering.directory</Directory>
       <Include>
         <And>
           <Category>08-02-social-engineering</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Exploit Search</Name>
+      <Directory>08-03-exploit-search.directory</Directory>
+      <Include>
+        <And>
+          <Category>08-03-exploit-search</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Payload Generator</Name>
+      <Directory>08-04-payload-generator.directory</Directory>
+      <Include>
+        <And>
+          <Category>08-04-payload-generator</Category>
         </And>
       </Include>
     </Menu>
