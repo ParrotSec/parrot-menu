@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=jsql
-Comment=lightweight application used to find database information from a distant server
+Comment=Java tool for automatic database injection (GUI)
 Encoding=UTF-8
 Exec=menuexecg "jsql"
 Icon=parrot-jsql.png
@@ -8,4 +8,4 @@ StartupNotify=false
 Terminal=false
 Type=Application
 Categories=04-database-assessment;03-05-web-vulnerability-scanners;
-X-Parrot-Package=jsql
+X-Parrot-Package=jsql-injection
