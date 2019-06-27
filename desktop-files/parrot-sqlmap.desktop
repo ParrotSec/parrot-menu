@@ -6,6 +6,6 @@ Icon=parrot-sqlmap.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=04-database-assessment;08-exploitation-tools
+Categories=04-database-assessment;08-05-web-exploit
 Comment=Automatic SQL injection tool
 X-Parrot-Package=sqlmap

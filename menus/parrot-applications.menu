@@ -463,6 +463,15 @@
         </And>
       </Include>
     </Menu>
+    <Menu>
+      <Name>Web Applications</Name>
+      <Directory>08-05-web-exploit.directory</Directory>
+      <Include>
+        <And>
+          <Category>08-05-web-exploit</Category>
+        </And>
+      </Include>
+    </Menu>
   </Menu>
   <Menu>
     <Name>Sniffing - Spoofing</Name>
