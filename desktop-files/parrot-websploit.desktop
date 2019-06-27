@@ -7,5 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=03-05-web-vulnerability-scanners;08-exploitation-tools
-Comment=Advanced MITM Framework
+Comment=Scan and analysis remote system to find various type of vulnerabilites
 X-Parrot-Package=websploit
