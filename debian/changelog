@@ -1,3 +1,11 @@
+parrot-menu (2:2019.07.18) rolling-testing; urgency=medium
+
+  * Remove old perl scripts.
+  * Fix bug in cryptography submenu in kde edition.
+  * Add Sandbox category.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 18 Jul 2019 15:36:44 +0200
+
 parrot-menu (2:2019.06.19) testing; urgency=medium
 
   * Remove mimikatz wrapper, now provided by its package.

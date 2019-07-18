@@ -2,7 +2,7 @@
 # https://developer.gnome.org/AppFolders/
 
 [org/gnome/desktop/app-folders]
-folder-children=['info','vuln','web','db','passwd','wireless','re','exploit','sniff','post','forensics','reporting','services']
+folder-children=['info','vuln','web','db','passwd','wireless','re','exploit','sniff','post','forensics','reporting','services', 'anonsurf', 'cryptography']
 
 [org/gnome/desktop/app-folders/folders/info]
 name='01-Information'
@@ -73,3 +73,13 @@ categories=['13-automotive','13-01-can-utils']
 name='14-Services'
 translate=true
 categories=['14-01-gpsd','14-02-httpd','14-03-mysqld','14-04-pcscd','14-5-postgresql','14-06-sshd','14-07-radius','14-08-beef-service','14-10-dradis-service','14-11-openvas-service','14-12-xplico-service','14-services']
+
+[org/gnome/desktop/app-folders/folders/anonsurf]
+name='anonsurf'
+translate=true
+categories=['anonsurf']
+
+[org/gnome/desktop/app-folders/folders/cryptography]
+name='cryptography'
+translate=true
+categories=['cryptography']
