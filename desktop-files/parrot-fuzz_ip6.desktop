@@ -7,5 +7,5 @@ Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=02-02-fuzzers;03-09-ipv6
+Categories=02-02-fuzzers;08-07-ipv6
 X-Parrot-Package=thc-ipv6

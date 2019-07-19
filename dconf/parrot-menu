@@ -42,7 +42,7 @@ categories=['07-01-disassemblers', '07-02-debuggers', '07-03-decompilers', '07-0
 [org/gnome/desktop/app-folders/folders/exploit]
 name='08-Exploit'
 translate=true
-categories=['08-exploitation-tools', '08-01-metasploit-framework', '08-02-social-engineering', '08-03-exploit-search', '08-04-payload-generator', '08-05-web-exploit', '08-06-db-exploit']
+categories=['08-exploitation-tools', '08-01-metasploit-framework', '08-02-social-engineering', '08-03-exploit-search', '08-04-payload-generator', '08-05-web-exploit', '08-06-db-exploit', '08-07-ipv6']
 
 [org/gnome/desktop/app-folders/folders/sniff]
 name='09-Sniffing'

@@ -6,6 +6,6 @@ Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=09-02-network-spoofing;03-09-ipv6
+Categories=09-02-network-spoofing;08-07-ipv6
 Comment=Sends all ICMPv6 type and code combinations to destination
 X-Parrot-Package=thc-ipv6
