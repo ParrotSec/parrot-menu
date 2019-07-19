@@ -472,6 +472,15 @@
         </And>
       </Include>
     </Menu>
+    <Menu>
+      <Name>Database Exploitation</Name>
+      <Directory>08-06-db-exploit.directory</Directory>
+      <Include>
+        <And>
+          <Category>08-06-db-exploit</Category>
+        </And>
+      </Include>
+    </Menu>
   </Menu>
   <Menu>
     <Name>Sniffing - Spoofing</Name>

@@ -7,5 +7,5 @@ Icon=parrot-bbqsql.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=04-database-assessment;
+Categories=08-05-web-exploit
 X-Parrot-Package=bbqsql
