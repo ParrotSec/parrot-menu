@@ -61,17 +61,6 @@
     </Include>
   </Menu> <!-- End Development Tools -->
 
-
-  <Menu>
-    <Name>Cryptography</Name>
-    <Directory>cryptography.directory</Directory>
-    <Include>
-      <And>
-        <Category>cryptography</Category>
-      </And>
-    </Include>
-  </Menu>
-
   <!-- Education -->
   <Menu>
     <Name>Education</Name>
@@ -120,6 +109,8 @@
   <!-- Parrot security tools -->
   <MergeFile type="path">applications-merged/parrot-applications.menu</MergeFile>
   <MergeFile type="path">applications-merged/anon-surf.menu</MergeFile>
+  <MergeFile type="path">applications-merged/cryptography.menu</MergeFile>
+  <MergeFile type="path">applications-merged/sandbox.menu</MergeFile>
 
   <!-- Multimedia -->
   <Menu>

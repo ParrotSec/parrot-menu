@@ -4,11 +4,11 @@
 <Name>Parrot Applications</Name>
 <!-- parrot submenu -->
 <Menu>
-	<Name>Anon Surf</Name>
-	<Directory>anon-surf.directory</Directory>
+	<Name>Sandbox</Name>
+	<Directory>sandbox.directory</Directory>
 	<Include>
 		<And>
-			<Category>anonsurf</Category>
+			<Category>sandbox</Category>
 		</And>
 	</Include>
 </Menu>

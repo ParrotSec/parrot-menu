@@ -4,7 +4,7 @@
 <Name>Applications</Name>
 <!-- parrot submenu -->
 <Menu>
-	<Name>Parrot</Name>
+	<Name>Parrot Security</Name>
 	<Directory>Parrot.directory</Directory>
 	<Layout>
 		<Menuname>Most Used Tools</Menuname>
