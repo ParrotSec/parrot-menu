@@ -7,5 +7,5 @@ Icon=parrot-exe2hex.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=10-02-tunneling;
+Categories=10-04-av-bypass;
 X-Parrot-Package=exe2hexbat

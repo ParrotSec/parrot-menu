@@ -544,6 +544,15 @@
         </And>
       </Include>
     </Menu>
+    <Menu>
+      <Name>AV Evasion</Name>
+      <Directory>10-04-av-bypass.directory</Directory>
+      <Include>
+        <And>
+          <Category>10-04-av-bypass</Category>
+        </And>
+      </Include>
+    </Menu>
   </Menu>
   <Menu>
     <Name>Forensic Tools</Name>

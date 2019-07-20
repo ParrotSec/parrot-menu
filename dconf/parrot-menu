@@ -52,7 +52,7 @@ categories=['09-01-network-sniffers','09-02-network-spoofing','09-sniffing-spoof
 [org/gnome/desktop/app-folders/folders/post]
 name='10-PostExploit'
 translate=true
-categories=['10-01-os-backdoors','10-02-tunneling','10-03-web-backdoors','10-maintaining-access']
+categories=['10-01-os-backdoors','10-02-tunneling','10-03-web-backdoors','10-04-av-bypass']
 
 [org/gnome/desktop/app-folders/folders/forensics]
 name='11-Forensics'

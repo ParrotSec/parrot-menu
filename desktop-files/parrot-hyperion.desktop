@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=hyperion
+Encoding=UTF-8
+Exec=menuexec "wine /usr/share/windows-resources/hyperion/hyperion.exe"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-04-av-bypass;
+Comment=Runtime encrypter for 32-bit portable executables with AES-128
+X-Parrot-Package=hyperion
