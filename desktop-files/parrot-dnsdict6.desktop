@@ -7,5 +7,5 @@ Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=01-01-dns-analysis;08-07-ipv6
+Categories=01-01-dns-analysis;04-07-ipv6
 X-Parrot-Package=thc-ipv6

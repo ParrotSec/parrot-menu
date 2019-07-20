@@ -19,10 +19,10 @@ name='03-WebApps'
 translate=true
 categories=['03-01-cms-identification','03-04-web-crawlers','03-05-web-vulnerability-scanners','03-06-web-application-proxies','03-webapp-analysis']
 
-[org/gnome/desktop/app-folders/folders/db]
-name='04-Database'
+[org/gnome/desktop/app-folders/folders/exploit]
+name='04-Exploit'
 translate=true
-categories=['04-database-assessment']
+categories=['04-exploitation-tools', '04-01-metasploit-framework', '04-02-social-engineering', '04-03-exploit-search', '04-04-payload-generator', '04-05-web-exploit', '04-06-db-exploit', '04-07-ipv6']
 
 [org/gnome/desktop/app-folders/folders/passwd]
 name='05-Password'
@@ -38,11 +38,6 @@ categories=['06-01-wireless-tools','06-02-bluetooth-tools','06-03-rfid-nfc-tools
 name='07-Reversing'
 translate=true
 categories=['07-01-disassemblers', '07-02-debuggers', '07-03-decompilers', '07-04-radare2', '07-Reversing']
-
-[org/gnome/desktop/app-folders/folders/exploit]
-name='08-Exploit'
-translate=true
-categories=['08-exploitation-tools', '08-01-metasploit-framework', '08-02-social-engineering', '08-03-exploit-search', '08-04-payload-generator', '08-05-web-exploit', '08-06-db-exploit', '08-07-ipv6']
 
 [org/gnome/desktop/app-folders/folders/sniff]
 name='09-Sniffing'

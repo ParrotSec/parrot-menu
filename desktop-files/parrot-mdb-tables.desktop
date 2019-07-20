@@ -7,5 +7,5 @@ Icon=parrot-bdb-sql.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=04-database-assessment;
+Categories=04-06-db-exploit;
 X-Parrot-Package=mdbtools

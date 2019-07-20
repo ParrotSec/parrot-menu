@@ -7,5 +7,5 @@ Icon=parrot-hexorbase.png
 StartupNotify=false
 Terminal=false
 Type=Application
-Categories=08-06-db-exploit;
+Categories=04-06-db-exploit;
 X-Parrot-Package=hexorbase

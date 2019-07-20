@@ -7,5 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Icon=parrot-owasp-zsc.png
-Categories=08-04-payload-generator;
+Categories=04-04-payload-generator;
 X-Parrot-Package=owasp-zsc

@@ -6,6 +6,6 @@ Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=08-03-exploit-search;
+Categories=04-03-exploit-search;
 Comment=Exploit and Vulnerability Finder
 X-Parrot-Package=pompem

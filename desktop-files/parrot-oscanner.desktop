@@ -7,5 +7,5 @@ Icon=parrot-oscanner.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=08-06-db-exploit;
+Categories=04-06-db-exploit;
 X-Parrot-Package=oscanner

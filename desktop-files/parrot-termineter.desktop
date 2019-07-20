@@ -6,6 +6,6 @@ Icon=parrot-termineter.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=08-exploitation-tools;
+Categories=04-exploitation-tools;
 Comment=Security testing of smart meters
 X-Parrot-Package=termineter

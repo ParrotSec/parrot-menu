@@ -7,5 +7,5 @@ Icon=parrot-menu.png
 StartupNotify=false
 Terminal=false
 Type=Application
-Categories=06-wireless-attacks;08-02-social-engineering;
+Categories=06-wireless-attacks;04-02-social-engineering;
 X-Parrot-Package=king-phisher
