@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=powersploit
-Comment=PowerShell Post-Exploitation Framework
+Comment=Collection of Antivirus Bypass, Persistence, Exfiltration, Recon script in Powershell
 Encoding=UTF-8
 Exec=menuexec powersploit
 Icon=parrot-menu.png
