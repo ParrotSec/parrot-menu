@@ -2,6 +2,6 @@
 echo -e "
 
 Mimikatz files are located at
-/usr/share/powersploit
+/usr/share/windows-resources/powersploit/
 enter this folder to use the tool
 "
