@@ -248,6 +248,78 @@
       </Include>
     </Menu>
   </Menu>
+    <Menu>
+    <Name>Exploit Frameworks</Name>
+    <Directory>04-exploitation-tools.directory</Directory>
+    <Include>
+      <And>
+        <Category>04-exploitation-tools</Category>
+      </And>
+    </Include>
+    <Menu>
+      <Name>Metasploit Framework</Name>
+      <Directory>04-01-metasploit-framework.directory</Directory>
+      <Include>
+        <And>
+          <Category>04-01-metasploit-framework</Category>
+        </And>
+      </Include>
+    </Menu>
+	  <Menu>
+      <Name>Social Engineering</Name>
+      <Directory>04-02-social-engineering.directory</Directory>
+      <Include>
+        <And>
+          <Category>04-02-social-engineering</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Exploit Search</Name>
+      <Directory>04-03-exploit-search.directory</Directory>
+      <Include>
+        <And>
+          <Category>04-03-exploit-search</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Payload Generator</Name>
+      <Directory>04-04-payload-generator.directory</Directory>
+      <Include>
+        <And>
+          <Category>04-04-payload-generator</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Web Applications</Name>
+      <Directory>04-05-web-exploit.directory</Directory>
+      <Include>
+        <And>
+          <Category>04-05-web-exploit</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Database Exploitation</Name>
+      <Directory>04-06-db-exploit.directory</Directory>
+      <Include>
+        <And>
+          <Category>04-06-db-exploit</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>IPv6 Exploitation</Name>
+      <Directory>04-07-ipv6.directory</Directory>
+      <Include>
+        <And>
+          <Category>04-07-ipv6</Category>
+        </And>
+      </Include>
+    </Menu>
+  </Menu>
   <Menu>
     <Name>Password Attacks</Name>
     <Directory>05-password-attacks.directory</Directory>
@@ -397,78 +469,6 @@
       <Include>
         <And>
           <Category>07-04-radare2</Category>
-        </And>
-      </Include>
-    </Menu>
-  </Menu>
-  <Menu>
-    <Name>Exploit Frameworks</Name>
-    <Directory>04-exploitation-tools.directory</Directory>
-    <Include>
-      <And>
-        <Category>04-exploitation-tools</Category>
-      </And>
-    </Include>
-    <Menu>
-      <Name>Metasploit Framework</Name>
-      <Directory>04-01-metasploit-framework.directory</Directory>
-      <Include>
-        <And>
-          <Category>04-01-metasploit-framework</Category>
-        </And>
-      </Include>
-    </Menu>
-	  <Menu>
-      <Name>Social Engineering</Name>
-      <Directory>04-02-social-engineering.directory</Directory>
-      <Include>
-        <And>
-          <Category>04-02-social-engineering</Category>
-        </And>
-      </Include>
-    </Menu>
-    <Menu>
-      <Name>Exploit Search</Name>
-      <Directory>04-03-exploit-search.directory</Directory>
-      <Include>
-        <And>
-          <Category>04-03-exploit-search</Category>
-        </And>
-      </Include>
-    </Menu>
-    <Menu>
-      <Name>Payload Generator</Name>
-      <Directory>04-04-payload-generator.directory</Directory>
-      <Include>
-        <And>
-          <Category>04-04-payload-generator</Category>
-        </And>
-      </Include>
-    </Menu>
-    <Menu>
-      <Name>Web Applications</Name>
-      <Directory>04-05-web-exploit.directory</Directory>
-      <Include>
-        <And>
-          <Category>04-05-web-exploit</Category>
-        </And>
-      </Include>
-    </Menu>
-    <Menu>
-      <Name>Database Exploitation</Name>
-      <Directory>04-06-db-exploit.directory</Directory>
-      <Include>
-        <And>
-          <Category>04-06-db-exploit</Category>
-        </And>
-      </Include>
-    </Menu>
-    <Menu>
-      <Name>IPv6 Exploitation</Name>
-      <Directory>04-07-ipv6.directory</Directory>
-      <Include>
-        <And>
-          <Category>04-07-ipv6</Category>
         </And>
       </Include>
     </Menu>

@@ -1,4 +1,5 @@
 [Desktop Entry]
 Name=• Payload Generators
+Comment=Generate shellcode or payload
 Type=Directory
 Icon=parrot-menu.png
