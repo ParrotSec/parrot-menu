@@ -24,10 +24,20 @@ name='04-Exploit'
 translate=true
 categories=['04-exploitation-tools', '04-01-metasploit-framework', '04-02-social-engineering', '04-03-exploit-search', '04-04-payload-generator', '04-05-web-exploit', '04-06-db-exploit', '04-07-ipv6']
 
+[org/gnome/desktop/app-folders/folders/maintain]
+name='10-Maintain'
+translate=true
+categories=['10-01-os-backdoors','10-02-tunneling','10-03-web-backdoors','10-04-av-bypass']
+
+[org/gnome/desktop/app-folders/folders/post]
+name='08-PostExploit'
+translate=true
+categories=['08-post-exploit', '08-01-priv-esc', '08-02-hash-dump', '08-03-pth']
+
 [org/gnome/desktop/app-folders/folders/passwd]
 name='05-Password'
 translate=true
-categories=['05-01-online-attacks','05-02-offline-attacks','05-03-hash-dump', '05-04-pass-hash','05-05-profile','05-password-attacks']
+categories=['05-01-online-attacks','05-02-offline-attacks','05-03-local-attacks','05-05-profile','05-password-attacks']
 
 [org/gnome/desktop/app-folders/folders/wireless]
 name='06-Wireless'
@@ -43,11 +53,6 @@ categories=['07-01-disassemblers', '07-02-debuggers', '07-03-decompilers', '07-0
 name='09-Sniffing'
 translate=true
 categories=['09-01-network-sniffers','09-02-network-spoofing','09-sniffing-spoofing']
-
-[org/gnome/desktop/app-folders/folders/post]
-name='10-PostExploit'
-translate=true
-categories=['10-01-os-backdoors','10-02-tunneling','10-03-web-backdoors','10-04-av-bypass']
 
 [org/gnome/desktop/app-folders/folders/forensics]
 name='11-Forensics'
