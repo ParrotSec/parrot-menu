@@ -7,5 +7,5 @@ Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=10-01-os-backdoors;
+Categories=08-post-exploit;
 X-Parrot-Package=intersect

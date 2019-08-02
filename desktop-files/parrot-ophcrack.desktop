@@ -7,5 +7,5 @@ Icon=parrot-ophcrack.png
 StartupNotify=false
 Terminal=false
 Type=Application
-Categories=05-03-hash-dump;top10
+Categories=05-03-local-attacks;top10
 X-Parrot-Package=ophcrack

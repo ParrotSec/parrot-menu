@@ -7,5 +7,5 @@ Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=10-01-os-backdoors;10-maintaining-access;
+Categories=08-post-exploit
 X-Parrot-Package=powersploit

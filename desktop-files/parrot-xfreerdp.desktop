@@ -6,6 +6,6 @@ Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=05-04-pass-hash;
+Categories=08-03-pth
 Comment=FreeRDP X11 client
 X-Parrot-Package=xfreerdp

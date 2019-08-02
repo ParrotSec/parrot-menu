@@ -6,7 +6,7 @@ Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=05-04-pass-hash;
+Categories=08-03-pth
 Comment=Executes net commands (net user, net share) on remote hosts using NTLM hash
 X-Parrot-Package=passing-the-hash
 
