@@ -347,20 +347,11 @@
       </Include>
     </Menu>
     <Menu>
-      <Name>Hash Dump</Name>
-      <Directory>05-03-hash-dump.directory</Directory>
+      <Name>Local Attack</Name>
+      <Directory>05-03-local-attacks.directory</Directory>
       <Include>
         <And>
-          <Category>05-03-hash-dump</Category>
-        </And>
-      </Include>
-    </Menu>
-    <Menu>
-      <Name>Passing the Hash</Name>
-      <Directory>05-04-pass-hash.directory</Directory>
-      <Include>
-        <And>
-          <Category>05-04-pass-hash</Category>
+          <Category>05-03-local-attacks</Category>
         </And>
       </Include>
     </Menu>
@@ -370,6 +361,96 @@
       <Include>
         <And>
           <Category>05-05-profile</Category>
+        </And>
+      </Include>
+    </Menu>
+  </Menu>
+    <Menu>
+    <Name>Maintaining Access</Name>
+    <Directory>10-maintaining-access.directory</Directory>
+    <Include>
+      <And>
+        <Category>10-maintaining-access</Category>
+      </And>
+    </Include>
+    <Menu>
+      <Name>OS Backdoors</Name>
+      <Directory>10-01-os-backdoors.directory</Directory>
+      <Include>
+        <And>
+          <Category>10-01-os-backdoors</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Web Backdoors</Name>
+      <Directory>10-03-web-backdoors.directory</Directory>
+      <Include>
+        <And>
+          <Category>10-03-web-backdoors</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Tunneling</Name>
+      <Directory>10-02-tunneling.directory</Directory>
+      <Include>
+        <And>
+          <Category>10-02-tunneling</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>AV Evasion</Name>
+      <Directory>10-04-av-bypass.directory</Directory>
+      <Include>
+        <And>
+          <Category>10-04-av-bypass</Category>
+        </And>
+      </Include>
+    </Menu>
+  </Menu>
+  <Menu>
+    <Name>Post Exploitation</Name>
+    <Directory>08-post-exploit.directory</Directory>
+    <Include>
+      <And>
+        <Category>08-post-exploit</Category>
+      </And>
+    </Include>
+    <Menu>
+      <Name>Privilege Escalation</Name>
+      <Directory>08-01-priv-esc.directory</Directory>
+      <Include>
+        <And>
+          <Category>08-01-priv-esc</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Hash Dump</Name>
+      <Directory>08-02-hash-dump.directory</Directory>
+      <Include>
+        <And>
+          <Category>08-02-hash-dump</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Passing the Hash</Name>
+      <Directory>08-03-pth.directory</Directory>
+      <Include>
+        <And>
+          <Category>08-03-pth</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Exploitation</Name>
+      <Directory>08-04-exploit.directory</Directory>
+      <Include>
+        <And>
+          <Category>08-04-exploit</Category>
         </And>
       </Include>
     </Menu>
@@ -496,51 +577,6 @@
       <Include>
         <And>
           <Category>09-02-network-spoofing</Category>
-        </And>
-      </Include>
-    </Menu>
-  </Menu>
-  <Menu>
-    <Name>Maintaining Access</Name>
-    <Directory>10-maintaining-access.directory</Directory>
-    <Include>
-      <And>
-        <Category>10-maintaining-access</Category>
-      </And>
-    </Include>
-    <Menu>
-      <Name>OS Backdoors</Name>
-      <Directory>10-01-os-backdoors.directory</Directory>
-      <Include>
-        <And>
-          <Category>10-01-os-backdoors</Category>
-        </And>
-      </Include>
-    </Menu>
-    <Menu>
-      <Name>Web Backdoors</Name>
-      <Directory>10-03-web-backdoors.directory</Directory>
-      <Include>
-        <And>
-          <Category>10-03-web-backdoors</Category>
-        </And>
-      </Include>
-    </Menu>
-    <Menu>
-      <Name>Tunneling</Name>
-      <Directory>10-02-tunneling.directory</Directory>
-      <Include>
-        <And>
-          <Category>10-02-tunneling</Category>
-        </And>
-      </Include>
-    </Menu>
-    <Menu>
-      <Name>AV Evasion</Name>
-      <Directory>10-04-av-bypass.directory</Directory>
-      <Include>
-        <And>
-          <Category>10-04-av-bypass</Category>
         </And>
       </Include>
     </Menu>
