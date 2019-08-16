@@ -6,5 +6,6 @@ Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=05-02-offline-attacks;
+Categories=05-03-local-attacks;
+Comment=Dumps the password database of an NT machine
 X-Parrot-Package=creddump

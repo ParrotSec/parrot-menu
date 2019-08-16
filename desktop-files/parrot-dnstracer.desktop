@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=dnstracer
+Comment=Get information from for a given hostname, and follows the chain of DNS servers back to the authoritative answer
 Encoding=UTF-8
 Exec=menuexec "dnstracer"
 Icon=parrot-menu.png

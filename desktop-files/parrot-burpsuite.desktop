@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=burpsuite
+Comment=Web Application proxy framework
 Encoding=UTF-8
 Exec=menuexecg burpsuite
 Icon=parrot-burpsuite.png

@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=msgsnarf
+Comment=Record selected messages from sniffed AOL Instant Messenger,	ICQ 2000, IRC, and Yahoo! Messenger chat sessions
 Encoding=UTF-8
 Exec=menuexec msgsnarf -h 
 Icon=parrot-menu.png

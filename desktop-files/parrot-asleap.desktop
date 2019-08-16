@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=asleap
+Comment=Cisco LEAP and Generic MS-CHAPv2 Dictionary Attack
 Encoding=UTF-8
 Exec=menuexec asleap -h
 Icon=parrot-menu.png

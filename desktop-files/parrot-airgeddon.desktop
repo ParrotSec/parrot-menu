@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=airgeddon
+Comment=Audit wireless network toolkit
 Encoding=UTF-8
 Exec=menuexec "/usr/share/airgeddon/airgeddon.sh"
 Icon=parrot-airgeddon.png

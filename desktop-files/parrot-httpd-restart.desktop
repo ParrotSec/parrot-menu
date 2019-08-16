@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=nginx restart
+Comment=Restart nginx httpd service
 Encoding=UTF-8
 Exec=/usr/sbin/service nginx restart 
 Icon=parrot-menu.png

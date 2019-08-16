@@ -6,5 +6,6 @@ Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=10-01-os-backdoors;
+Categories=04-04-payload-generator;
+Comment=Metasploit Payload Injection Tool For SanDisk Devices
 X-Parrot-Package=u3-pwn

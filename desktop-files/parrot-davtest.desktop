@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=davtest
+Comment=WebDAV audit tool
 Encoding=UTF-8
 Exec=menuexec "davtest"
 Icon=parrot-menu.png

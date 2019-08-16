@@ -1,7 +1,8 @@
 [Desktop Entry]
 Name=sucrack
+Comment=Cracking local user accounts via wordlist bruteforcing su
 Encoding=UTF-8
-Exec=menuexec "man sucrack"
+Exec=menuexec "sucrack -h"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

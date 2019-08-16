@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=06-03-rfid-nfc-tools;
+Comment=Test an ACG LAHF reader by selecting a TAG and displaying it's UID on both the LF and HF elements.
 X-Parrot-Package=python-rfidiot

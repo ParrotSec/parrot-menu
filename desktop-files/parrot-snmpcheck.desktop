@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=01-12-snmp-analysis;
+Comment=SNMP device enumerator
 X-Parrot-Package=snmpcheck

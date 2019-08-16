@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=06-05-radio-tools;
+Comment=Enables saving raw samples into a file
 X-Parrot-Package=librtlsdr-bin

@@ -12,10 +12,10 @@
 		<Menuname>Information Gathering</Menuname>
 		<Menuname>Vulnerability Analysis</Menuname>
         <Menuname>Web Application Analysis</Menuname>
-        <Menuname>Database Assessment</Menuname>
         <Separator> </Separator>
         <Menuname>Exploit Frameworks</Menuname>
         <Menuname>Maintaining Access</Menuname>
+        <Menuname>Post Exploitation</Menuname>
         <Menuname>Password Attacks</Menuname>
         <Separator> </Separator>
         <Menuname>Wireless Attacks</Menuname>
@@ -247,24 +247,78 @@
         </And>
       </Include>
     </Menu>
+  </Menu>
     <Menu>
-      <Name>IPv6 tools</Name>
-      <Directory>03-09-ipv6.directory</Directory>
+    <Name>Exploit Frameworks</Name>
+    <Directory>04-exploitation-tools.directory</Directory>
+    <Include>
+      <And>
+        <Category>04-exploitation-tools</Category>
+      </And>
+    </Include>
+    <Menu>
+      <Name>Metasploit Framework</Name>
+      <Directory>04-01-metasploit-framework.directory</Directory>
       <Include>
         <And>
-          <Category>03-09-ipv6</Category>
+          <Category>04-01-metasploit-framework</Category>
         </And>
       </Include>
     </Menu>
-  </Menu>
-  <Menu>
-    <Name>Database Assessment</Name>
-    <Directory>04-database-assessment.directory</Directory>
-    <Include>
-      <And>
-        <Category>04-database-assessment</Category>
-      </And>
-    </Include>
+	  <Menu>
+      <Name>Social Engineering</Name>
+      <Directory>04-02-social-engineering.directory</Directory>
+      <Include>
+        <And>
+          <Category>04-02-social-engineering</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Exploit Search</Name>
+      <Directory>04-03-exploit-search.directory</Directory>
+      <Include>
+        <And>
+          <Category>04-03-exploit-search</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Payload Generator</Name>
+      <Directory>04-04-payload-generator.directory</Directory>
+      <Include>
+        <And>
+          <Category>04-04-payload-generator</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Web Applications</Name>
+      <Directory>04-05-web-exploit.directory</Directory>
+      <Include>
+        <And>
+          <Category>04-05-web-exploit</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Database Exploitation</Name>
+      <Directory>04-06-db-exploit.directory</Directory>
+      <Include>
+        <And>
+          <Category>04-06-db-exploit</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>IPv6 Exploitation</Name>
+      <Directory>04-07-ipv6.directory</Directory>
+      <Include>
+        <And>
+          <Category>04-07-ipv6</Category>
+        </And>
+      </Include>
+    </Menu>
   </Menu>
   <Menu>
     <Name>Password Attacks</Name>
@@ -293,11 +347,11 @@
       </Include>
     </Menu>
     <Menu>
-      <Name>Passing the Hash</Name>
-      <Directory>05-04-pass-hash.directory</Directory>
+      <Name>Local Attack</Name>
+      <Directory>05-03-local-attacks.directory</Directory>
       <Include>
         <And>
-          <Category>05-04-pass-hash</Category>
+          <Category>05-03-local-attacks</Category>
         </And>
       </Include>
     </Menu>
@@ -307,6 +361,96 @@
       <Include>
         <And>
           <Category>05-05-profile</Category>
+        </And>
+      </Include>
+    </Menu>
+  </Menu>
+    <Menu>
+    <Name>Maintaining Access</Name>
+    <Directory>10-maintaining-access.directory</Directory>
+    <Include>
+      <And>
+        <Category>10-maintaining-access</Category>
+      </And>
+    </Include>
+    <Menu>
+      <Name>OS Backdoors</Name>
+      <Directory>10-01-os-backdoors.directory</Directory>
+      <Include>
+        <And>
+          <Category>10-01-os-backdoors</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Web Backdoors</Name>
+      <Directory>10-03-web-backdoors.directory</Directory>
+      <Include>
+        <And>
+          <Category>10-03-web-backdoors</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Tunneling</Name>
+      <Directory>10-02-tunneling.directory</Directory>
+      <Include>
+        <And>
+          <Category>10-02-tunneling</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>AV Evasion</Name>
+      <Directory>10-04-av-bypass.directory</Directory>
+      <Include>
+        <And>
+          <Category>10-04-av-bypass</Category>
+        </And>
+      </Include>
+    </Menu>
+  </Menu>
+  <Menu>
+    <Name>Post Exploitation</Name>
+    <Directory>08-post-exploit.directory</Directory>
+    <Include>
+      <And>
+        <Category>08-post-exploit</Category>
+      </And>
+    </Include>
+    <Menu>
+      <Name>Privilege Escalation</Name>
+      <Directory>08-01-priv-esc.directory</Directory>
+      <Include>
+        <And>
+          <Category>08-01-priv-esc</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Hash Dump</Name>
+      <Directory>08-02-hash-dump.directory</Directory>
+      <Include>
+        <And>
+          <Category>08-02-hash-dump</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Passing the Hash</Name>
+      <Directory>08-03-pth.directory</Directory>
+      <Include>
+        <And>
+          <Category>08-03-pth</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Exploitation</Name>
+      <Directory>08-04-exploit.directory</Directory>
+      <Include>
+        <And>
+          <Category>08-04-exploit</Category>
         </And>
       </Include>
     </Menu>
@@ -373,30 +517,39 @@
         <Category>07-reverseengineer</Category>
       </And>
     </Include>
-  </Menu>
-  <Menu>
-    <Name>Exploit Frameworks</Name>
-    <Directory>08-exploitation-tools.directory</Directory>
-    <Include>
-      <And>
-        <Category>08-exploitation-tools</Category>
-      </And>
-    </Include>
     <Menu>
-      <Name>Metasploit Framework</Name>
-      <Directory>08-01-metasploit-framework.directory</Directory>
+      <Name>Disassemblers</Name>
+      <Directory>07-01-disassemblers.directory</Directory>
       <Include>
         <And>
-          <Category>08-01-metasploit-framework</Category>
+          <Category>07-01-disassemblers</Category>
         </And>
       </Include>
     </Menu>
-	<Menu>
-      <Name>Social Engineering</Name>
-      <Directory>08-02-social-engineering.directory</Directory>
+    <Menu>
+      <Name>Debuggers</Name>
+      <Directory>07-02-debuggers.directory</Directory>
       <Include>
         <And>
-          <Category>08-02-social-engineering</Category>
+          <Category>07-02-debuggers</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Decompilers</Name>
+      <Directory>07-03-decompilers.directory</Directory>
+      <Include>
+        <And>
+          <Category>07-03-decompilers</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Radare2 Framework</Name>
+      <Directory>07-04-radare2.directory</Directory>
+      <Include>
+        <And>
+          <Category>07-04-radare2</Category>
         </And>
       </Include>
     </Menu>
@@ -424,42 +577,6 @@
       <Include>
         <And>
           <Category>09-02-network-spoofing</Category>
-        </And>
-      </Include>
-    </Menu>
-  </Menu>
-  <Menu>
-    <Name>Maintaining Access</Name>
-    <Directory>10-maintaining-access.directory</Directory>
-    <Include>
-      <And>
-        <Category>10-maintaining-access</Category>
-      </And>
-    </Include>
-    <Menu>
-      <Name>OS Backdoors</Name>
-      <Directory>10-01-os-backdoors.directory</Directory>
-      <Include>
-        <And>
-          <Category>10-01-os-backdoors</Category>
-        </And>
-      </Include>
-    </Menu>
-    <Menu>
-      <Name>Web Backdoors</Name>
-      <Directory>10-03-web-backdoors.directory</Directory>
-      <Include>
-        <And>
-          <Category>10-03-web-backdoors</Category>
-        </And>
-      </Include>
-    </Menu>
-    <Menu>
-      <Name>Tunneling</Name>
-      <Directory>10-02-tunneling.directory</Directory>
-      <Include>
-        <And>
-          <Category>10-02-tunneling</Category>
         </And>
       </Include>
     </Menu>

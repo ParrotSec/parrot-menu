@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=maltego
+Comment=Mining and gathering information
 Encoding=UTF-8
 Exec=menuexecg "maltego"
 Icon=parrot-maltego.png

@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=p0f
+Comment=Passive OS detection based on SYN packets
 Encoding=UTF-8
 Exec=menuexec "p0f -h"
 Icon=parrot-p0f.png

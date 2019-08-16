@@ -1,10 +1,11 @@
 [Desktop Entry]
 Name=implementation6d
+Comment=Identifies test packets by the implementation6 tool
 Encoding=UTF-8
 Exec=menuexec atk6-implementation6d 
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=03-09-ipv6
+Categories=04-07-ipv6
 X-Parrot-Package=thc-ipv6

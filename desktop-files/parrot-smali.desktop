@@ -6,5 +6,6 @@ Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=07-reverseengineer;
+Categories=07-01-disassemblers;
+Comment=An assembler/disassembler for the dex format used by dalvik
 X-Parrot-Package=smali

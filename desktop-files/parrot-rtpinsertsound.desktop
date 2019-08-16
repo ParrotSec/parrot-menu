@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=02-03-voip-tools;
+Comment=Inserts audio into a specified stream
 X-Parrot-Package=rtpinsertsound

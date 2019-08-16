@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=06-03-rfid-nfc-tools;
+Comment=Calculate 3DES keys for access to Mifare sectors on JCOP cards running Mifare access applet  (jcop_mifare_access.cap).
 X-Parrot-Package=python-rfidiot

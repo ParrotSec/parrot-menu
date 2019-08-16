@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=11-07-forensic-imaging-tools;
+Comment=Block based hashing utility
 X-Parrot-Package=radare2

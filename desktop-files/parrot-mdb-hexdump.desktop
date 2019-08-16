@@ -1,10 +1,11 @@
 [Desktop Entry]
 Name=mdb-hexdump
+Comment=Hexdump utility from MDB Tools
 Encoding=UTF-8
 Exec=menuexec mdb-hexdump 
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=04-database-assessment;
+Categories=04-06-db-exploit;
 X-Parrot-Package=mdbtools

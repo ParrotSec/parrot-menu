@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=11-forensics;
+Comment=Advanced memory forensics framework
 X-Parrot-Package=volatility

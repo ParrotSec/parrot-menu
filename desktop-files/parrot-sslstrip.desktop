@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=09-02-network-spoofing;
+Comment=SSL/TLS man-in-the-middle attack tool
 X-Parrot-Package=sslstrip

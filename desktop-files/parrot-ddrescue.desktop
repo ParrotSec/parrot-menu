@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=ddrescue
+Comment=Copy data from one file (or block device) to another
 Encoding=UTF-8
 Exec=menuexec "dd_rescue -h"
 Icon=parrot-menu.png

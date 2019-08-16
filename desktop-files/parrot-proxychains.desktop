@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=proxychains
+Comment=Redirect connections through proxy servers
 Encoding=UTF-8
 Exec=menuexec "proxychains"
 Icon=parrot-proxychains.png

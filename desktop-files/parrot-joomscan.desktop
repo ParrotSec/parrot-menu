@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=joomscan
+Comment=Detect Joomla CMS vulnerabilities
 Encoding=UTF-8
 Exec=menuexec "joomscan"
 Icon=parrot-menu.png

@@ -1,11 +1,12 @@
 [Desktop Entry]
 Name=cachedump
+Comment=Windows Password cache entries recover
 Encoding=UTF-8
 Exec=menuexec "cachedump -h"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=05-02-offline-attacks;
+Categories=05-03-local-attacks;
 X-Parrot-Package=creddump
 

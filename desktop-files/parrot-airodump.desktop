@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=airodump-ng
+Comment=Packet capturing of raw 802.11 frames
 Encoding=UTF-8
 Exec=menuexec "airodump-ng --help"
 Icon=parrot-aircrack.png

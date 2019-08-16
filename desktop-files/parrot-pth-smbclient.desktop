@@ -6,7 +6,6 @@ Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=05-04-pass-hash;
+Categories=08-03-pth
+Comment=Browses available shares on remote computers using NTLM hash
 X-Parrot-Package=passing-the-hash
-
-

@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=09-02-network-spoofing;
+Comment=A tool for man-in-the-middle attacks against SSL/TLS encrypted network connections
 X-Parrot-Package=sslsplit

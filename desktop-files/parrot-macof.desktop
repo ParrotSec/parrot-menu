@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=macof
+Comment=Flood the local network with random MAC addresses
 Encoding=UTF-8
 Exec=menuexec macof -h 
 Icon=parrot-menu.png

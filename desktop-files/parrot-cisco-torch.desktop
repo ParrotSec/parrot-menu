@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=cisco-torch
+Comment=Mass scanning, fingerprinting, and exploitation tool
 Encoding=UTF-8
 Exec=menuexec "cisco-torch"
 Icon=parrot-menu.png

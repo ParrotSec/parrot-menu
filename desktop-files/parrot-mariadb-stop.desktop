@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=mysql/mariadb stop
+Comment=Stop mysql / mariadb database service
 Encoding=UTF-8
 Exec=/usr/sbin/service mysql stop
 Icon=parrot-menu.png

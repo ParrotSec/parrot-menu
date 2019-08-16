@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=fragrouter
+Comment=Network intrusion detection evasion toolkit
 Encoding=UTF-8
 Exec=menuexec "fragrouter -h"
 Icon=parrot-menu.png

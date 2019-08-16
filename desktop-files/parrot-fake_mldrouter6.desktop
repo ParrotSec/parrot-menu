@@ -1,10 +1,11 @@
 [Desktop Entry]
 Name=fake_mldrouter6
+Comment=Announce, delete or soliciated MLD router
 Encoding=UTF-8
 Exec=menuexec atk6-fake_mldrouter6 
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=09-02-network-spoofing;03-09-ipv6
+Categories=09-02-network-spoofing;04-07-ipv6
 X-Parrot-Package=thc-ipv6

@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=canbusload
+Comment=Calculate and display the CAN busload
 Encoding=UTF-8
 Exec=menuexec canbusload -h
 Icon=parrot-menu.png

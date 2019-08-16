@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=onesixtyone
+Comment=SNMP scanner
 Encoding=UTF-8
 Exec=menuexec "onesixtyone"
 Icon=parrot-menu.png

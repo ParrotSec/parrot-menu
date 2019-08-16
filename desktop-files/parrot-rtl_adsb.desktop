@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=06-05-radio-tools;
+Comment=A simple ADS-B decoder
 X-Parrot-Package=librtlsdr-bin

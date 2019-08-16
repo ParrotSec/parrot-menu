@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=11-forensics;
+Comment=Compute context triggered piecewise hashes (fuzzy hashes)
 X-Parrot-Package=ssdeep

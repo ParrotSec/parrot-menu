@@ -1,6 +1,7 @@
 #!/usr/bin/env xdg-open
 [Desktop Entry]
 Name=mc
+Comment=Text-mode full-screen file manager
 Encoding=UTF-8
 Exec=menuexec mc --help 
 Icon=parrot-menu.png

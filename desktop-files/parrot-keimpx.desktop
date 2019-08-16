@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=keimpx
+Comment=Check for valid credentials across a network over SMB
 Encoding=UTF-8
 Exec=menuexec "keimpx -h"
 Icon=parrot-menu.png

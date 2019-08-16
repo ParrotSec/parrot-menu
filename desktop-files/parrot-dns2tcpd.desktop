@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=dns2tcpd
+Comment=Relay TCP connections through DNS traffic (SERVER)
 Encoding=UTF-8
 Exec=menuexec "dns2tcpd"
 Icon=parrot-menu.png

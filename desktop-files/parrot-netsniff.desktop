@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=netsniff-ng
+Comment=Linux network sniffer for packet inspection
 Encoding=UTF-8
 Exec=menuexec "netsniff-ng -h"
 Icon=parrot-netsniff-ng.png

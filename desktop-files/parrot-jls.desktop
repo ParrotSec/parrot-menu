@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=jls
+Comment=List the contents of a file system journal
 Encoding=UTF-8
 Exec=menuexec "jls"
 Icon=parrot-menu.png

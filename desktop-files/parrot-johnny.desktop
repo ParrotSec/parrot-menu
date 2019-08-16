@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=johnny
+Comment=Fast hash cracker that detects hash type automatically (GUI)
 Encoding=UTF-8
 Exec=menuexecg johnny
 Icon=parrot-johnny.png

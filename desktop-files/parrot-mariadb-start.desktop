@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=mysql/mariadb start
+Comment=Start mysql / mariadb database service
 Encoding=UTF-8
 Exec=/usr/sbin/service mysql start
 Icon=parrot-menu.png

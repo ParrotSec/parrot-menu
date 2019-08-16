@@ -1,12 +1,11 @@
 [Desktop Entry]
 Name=pth-curl
+Comment=Access curl comment using NTLM hash
 Encoding=UTF-8
 Exec=menuexec "pth-curl -h"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=05-04-pass-hash;
+Categories=08-03-pth
 X-Parrot-Package=passing-the-hash
-
-

@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=06-01-wireless-tools;
+Comment=WiFi injection ARP tool
 X-Parrot-Package=wifitap

@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=dnsenum
+Comment=Perl script to enumerate DNS information of a domain and to discover non-contiguous ip blocks
 Encoding=UTF-8
 Exec=menuexec "dnsenum -h"
 Icon=parrot-menu.png

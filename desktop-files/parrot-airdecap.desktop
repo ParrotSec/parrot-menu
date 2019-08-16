@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=airdecap-ng
+Comment=Decrypt WEP/WPA/WPA2 capture files
 Encoding=UTF-8
 Exec=menuexec "airdecap-ng --help"
 Icon=parrot-aircrack.png

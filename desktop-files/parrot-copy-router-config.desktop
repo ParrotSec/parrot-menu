@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=copy-router-config
+Comment=Copies Cisco configs via SNMP
 Encoding=UTF-8
 Exec=menuexec "copy-router-config.pl"
 Icon=parrot-menu.png

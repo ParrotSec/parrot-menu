@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=openvas initial setup
+Comment=Install modules, plugins, admin password for OpenVas service
 Encoding=UTF-8
 Exec=menuexec "openvas-setup"
 Icon=parrot-OpenVas.png

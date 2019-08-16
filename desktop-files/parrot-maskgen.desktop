@@ -1,10 +1,11 @@
 [Desktop Entry]
 Name=maskgen
+Comment=Generate hashcat masks
 Encoding=UTF-8
 Exec=menuexec "maskgen -h"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=05-02-offline-attacks;
+Categories=05-05-profile;
 X-Parrot-Package=pack

@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=01-info-gathering;
+Comment=Web Reconnaissance framework
 X-Parrot-Package=recon-ng

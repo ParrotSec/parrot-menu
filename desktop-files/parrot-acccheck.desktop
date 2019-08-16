@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=acccheck
+Comment=SMB account brute forcer
 Encoding=UTF-8
 Exec=menuexec acccheck
 Icon=parrot-menu.png

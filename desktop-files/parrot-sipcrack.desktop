@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=05-02-offline-attacks;
+Comment=Crack login credentials sniffed by SIPdump
 X-Parrot-Package=sipcrack

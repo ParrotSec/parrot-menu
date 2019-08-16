@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=isotprecv
+Comment=Receive ISO-TP PDU(s)
 Encoding=UTF-8
 Exec=menuexec isotprecv
 Icon=parrot-menu.png

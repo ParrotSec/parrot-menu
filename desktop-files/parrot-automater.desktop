@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=automater
+Comment=OSINT tool that analysis URL/Domain, IP Address, and Md5 Hash
 Encoding=UTF-8
 Exec=menuexec automater -h
 Icon=parrot-menu.png

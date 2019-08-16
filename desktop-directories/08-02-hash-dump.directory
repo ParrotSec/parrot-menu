@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=• Hash & Password Dump
+Comment=Gather hash dump, cleartext password, attack Pass-The-Hash
+Type=Directory
+Icon=password-attacks-trans.png

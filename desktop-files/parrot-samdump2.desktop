@@ -6,5 +6,6 @@ Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=05-02-offline-attacks;
+Categories=05-03-local-attacks;
+Comment=Retrieves syskey and extract hashes from Windows 2k/NT/XP/Vista SAM
 X-Parrot-Package=samdump2

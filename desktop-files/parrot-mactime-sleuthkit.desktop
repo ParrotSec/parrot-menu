@@ -1,7 +1,8 @@
 [Desktop Entry]
-Name=mactime-sleuthkit
+Name=mactime
+Comment=Create an ASCII time line of file activity
 Encoding=UTF-8
-Exec=menuexec "mactime-sleuthkit"
+Exec=menuexec "mactime"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

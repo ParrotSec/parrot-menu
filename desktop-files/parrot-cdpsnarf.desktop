@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=cdpsnarf
+Comment=Network sniffer exclusively written to extract information from CDP packets
 Encoding=UTF-8
 Exec=menuexec "cdpsnarf -h"
 Icon=parrot-menu.png

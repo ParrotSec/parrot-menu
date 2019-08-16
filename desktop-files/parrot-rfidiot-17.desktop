@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=06-03-rfid-nfc-tools;
+Comment=Reset Q5 TAG into default r/w mode and set UID. 
 X-Parrot-Package=python-rfidiot

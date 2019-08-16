@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=03-05-web-vulnerability-scanners;
+Comment=Next  generation Web scanner
 X-Parrot-Package=whatweb

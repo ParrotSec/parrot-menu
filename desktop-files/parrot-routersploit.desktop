@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=routersploit
+Comment=Exploitation framework dedicated to embedded devices
+Encoding=UTF-8
+Exec=menuexec routersploit
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=04-exploitation-tools;
+X-Parrot-Package=routersploit

@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=dradis start
+Comment=Start Dradis reporting tool service
 Encoding=UTF-8
 Exec=service dradis start
 Icon=parrot-dradis.png

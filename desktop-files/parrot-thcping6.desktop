@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=01-02-identify-live-hosts;
+Comment=Craft your special icmpv6 echo request packet
 X-Parrot-Package=thc-ipv6

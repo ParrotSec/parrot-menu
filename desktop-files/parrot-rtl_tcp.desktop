@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=06-05-radio-tools;
+Comment=Networked interface which we will use to dynamically load data into Matlab, change frequency etc. 
 X-Parrot-Package=librtlsdr-bin

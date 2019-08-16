@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=dhcpig
+Comment=Advanced DHCP exhaustion attack
 Encoding=UTF-8
 Exec=menuexec "pig.py -h"
 Icon=parrot-menu.png

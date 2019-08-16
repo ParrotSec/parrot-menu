@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=owasp-zsc
+Comment=Shellcode/Obfuscate Code Generator
+Encoding=UTF-8
+Exec=menuexec "owasp-zsc"
+StartupNotify=false
+Terminal=true
+Type=Application
+Icon=parrot-owasp-zsc.png
+Categories=04-04-payload-generator;
+X-Parrot-Package=owasp-zsc

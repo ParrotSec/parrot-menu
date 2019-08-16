@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=dnsmap
+Comment=Subdomain brute-forcing
 Encoding=UTF-8
 Exec=menuexec "dnsmap"
 Icon=parrot-menu.png

@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=pwnat
+Comment=Allow any number of clients behind NATs to communicate with a server behind a separate NAT with *no* port forwarding and *no* DMZ setup
 Encoding=UTF-8
 Exec=menuexec "pwnat -h"
 Icon=parrot-menu.png
@@ -7,4 +8,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=10-02-tunneling;
+Comment=NAT to NAT client-server communication
 X-Parrot-Package=pwnat

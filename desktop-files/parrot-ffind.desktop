@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=ffind
+Comment=Finds the name of the file or directory using a given inode
 Encoding=UTF-8
 Exec=menuexec "ffind"
 Icon=parrot-menu.png

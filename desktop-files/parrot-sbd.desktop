@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=10-01-os-backdoors;
+Comment=Secure backdoor for linux and windows
 X-Parrot-Package=sbd

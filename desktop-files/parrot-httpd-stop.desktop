@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=nginx stop
+Comment=Stop nginx httpd service
 Encoding=UTF-8
 Exec=/usr/sbin/service nginx stop 
 Icon=parrot-menu.png

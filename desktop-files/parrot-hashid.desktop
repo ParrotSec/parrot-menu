@@ -1,10 +1,11 @@
 [Desktop Entry]
 Name=hashid
+Comment=Identify the different types of hashes used to encrypt data and especially passwords
 Encoding=UTF-8
 Exec=menuexec "hashid -h"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=05-02-offline-attacks;
+Categories=05-password-attacks;
 X-Parrot-Package=hashid

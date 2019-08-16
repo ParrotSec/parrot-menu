@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=dnsspoof
+Comment=Replace DNS responses with spoofed DNS response
 Encoding=UTF-8
 Exec=menuexec dnsspoof -h 
 Icon=parrot-menu.png

@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=postgresql restart
+Comment=Restart postgresql database service
 Encoding=UTF-8
 Exec=/usr/sbin/service postgresql restart
 Icon=parrot-menu.png

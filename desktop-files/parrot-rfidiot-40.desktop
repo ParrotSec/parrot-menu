@@ -6,4 +6,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=06-03-rfid-nfc-tools;
+Comment=Reset Hitag2 to native r/w mode.
 X-Parrot-Package=python-rfidiot

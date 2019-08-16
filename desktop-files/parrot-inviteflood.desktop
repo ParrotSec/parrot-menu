@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=inviteflood
+Comment=Perform SIP/SDP INVITE message flooding over UDP/IP.
 Encoding=UTF-8
 Exec=menuexec "inviteflood -h"
 Icon=parrot-menu.png

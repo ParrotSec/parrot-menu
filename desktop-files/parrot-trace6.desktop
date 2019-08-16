@@ -6,5 +6,6 @@ Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=01-08-route-analysis;03-09-ipv6
+Categories=01-08-route-analysis;04-07-ipv6
+Comment=The Hacker Choice's IPv6 Attack Toolkit
 X-Parrot-Package=thc-ipv6

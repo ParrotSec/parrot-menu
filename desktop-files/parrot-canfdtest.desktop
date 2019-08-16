@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=canfdtest
+Comment=Full-duplex test program (DUT and host part)
 Encoding=UTF-8
 Exec=menuexec canfdtest
 Icon=parrot-menu.png

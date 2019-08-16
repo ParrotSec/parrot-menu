@@ -1,10 +1,11 @@
 [Desktop Entry]
 Name=cymothoa
+Comment=Inject backdoor’s shellcode into an existing process
 Encoding=UTF-8
 Exec=menuexec "cymothoa -h"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=10-01-os-backdoors;
+Categories=08-post-exploit;
 X-Parrot-Package=cymothoa

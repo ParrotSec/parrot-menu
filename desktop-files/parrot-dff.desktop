@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=dff
+Comment=Digital Forensics Framework
 Encoding=UTF-8
 Exec=menuexec "dff"
 Icon=parrot-dff.png

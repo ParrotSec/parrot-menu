@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=fsstat
+Comment=Display general details of a file system 
 Encoding=UTF-8
 Exec=menuexec "fsstat"
 Icon=parrot-menu.png

@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=cutycapt
+Comment=Capture WebKit’s rendering of a web page into a variety of vector and bitmap formats
 Encoding=UTF-8
 Exec=menuexec "cutycapt --help"
 Icon=parrot-cutycapt.png

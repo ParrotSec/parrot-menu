@@ -1,10 +1,11 @@
 [Desktop Entry]
 Name=implementation6
+Comment=Performs an inverse address query
 Encoding=UTF-8
 Exec=menuexec atk6-implementation6 
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=03-09-ipv6
+Categories=04-07-ipv6
 X-Parrot-Package=thc-ipv6

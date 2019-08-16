@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=laudanum
+Comment=Collection of injectable files, designed to be used in a pentest when upload vulnerabilities, administrative interfaces, and SQL injection flaws are found
 Encoding=UTF-8
 Exec=menuexec ls -l /usr/share/laudanum
 Icon=parrot-menu.png

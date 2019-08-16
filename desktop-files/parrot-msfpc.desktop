@@ -1,10 +1,11 @@
 [Desktop Entry]
 Name=msf payload creator
+Comment=Generate various basic Meterpreter payloads using msfvenom which is part of the Metasploit framework
 Encoding=UTF-8
 Exec=menuexec "msfpc"
 Icon=parrot-mpc.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=08-exploitation-tools;08-01-metasploit-framework;08-02-social-engineering;
+Categories=04-01-metasploit-framework;04-02-social-engineering;04-04-payload-generator;
 X-Parrot-Package=msfpc

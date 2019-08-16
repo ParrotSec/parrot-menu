@@ -6,5 +6,6 @@ Icon=parrot-searchsploit.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=08-exploitation-tools;
+Categories=04-03-exploit-search;
+Comment=A command line search tool for Exploit-DB
 X-Parrot-Package=exploitdb

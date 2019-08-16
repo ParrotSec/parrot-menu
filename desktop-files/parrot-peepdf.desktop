@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=peepdf
+Comment=PDF analysis tool written in Python 2
 Encoding=UTF-8
 Exec=menuexec "peepdf -h"
 Icon=parrot-menu.png

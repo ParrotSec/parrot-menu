@@ -7,4 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=10-03-web-backdoors;top10
+Comment=Weaponized web shell
 X-Parrot-Package=weevely

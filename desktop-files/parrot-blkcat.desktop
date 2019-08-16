@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=blkcat
+Comment=Display num data units starting at the unit address unit_addr from image to stdout in different formats.
 Encoding=UTF-8
 Exec=menuexec blkcat
 Icon=parrot-menu.png

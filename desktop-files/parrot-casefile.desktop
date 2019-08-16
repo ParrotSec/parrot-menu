@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=casefile
+Comment=Offline version of  maltego
 Encoding=UTF-8
 Exec=menuexecg "maltego"
 Icon=parrot-casefile.png

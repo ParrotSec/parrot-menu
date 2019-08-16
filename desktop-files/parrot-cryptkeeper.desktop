@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=Cryptkeeper
+Comment=Encrypt and decrypt folder
 Exec=cryptkeeper
 Icon=cryptkeeper
 Terminal=false

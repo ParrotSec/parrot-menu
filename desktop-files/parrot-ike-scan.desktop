@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=ike-scan
+Comment=Discover and fingerprint IKE hosts (IPsec VPN Servers)
 Encoding=UTF-8
 Exec=menuexec "ike-scan -h"
 Icon=parrot-ike-skan.png

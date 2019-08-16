@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=enum4linux
+Comment=Enumerating information from Windows and Samba systems
 Encoding=UTF-8
 Exec=menuexec "enum4linux"
 Icon=parrot-menu.png

@@ -1,10 +1,11 @@
 [Desktop Entry]
 Name=hexorbase
+Comment=SQL queries and bruteforce attacks against common database servers
 Encoding=UTF-8
 Exec=menuexecg "hexorbase"
 Icon=parrot-hexorbase.png
 StartupNotify=false
 Terminal=false
 Type=Application
-Categories=04-database-assessment;
+Categories=04-06-db-exploit;
 X-Parrot-Package=hexorbase

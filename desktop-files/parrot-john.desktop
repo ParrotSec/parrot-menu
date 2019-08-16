@@ -1,10 +1,11 @@
 [Desktop Entry]
 Name=john
+Comment=Fast hash cracker that detects hash type automatically (CLI)
 Encoding=UTF-8
 Exec=menuexec "john"
 Icon=parrot-john.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=05-password-attacks;
+Categories=05-02-offline-attacks;
 X-Parrot-Package=john

@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=mysql/mariadb restart
+Comment=Restart mysql / mariadb database service
 Encoding=UTF-8
 Exec=/usr/sbin/service mysql restart
 Icon=parrot-menu.png
