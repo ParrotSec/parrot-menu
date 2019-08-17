@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=bruteforce-salted-openssl
+Encoding=UTF-8
+Exec=menuexec "bruteforce-salted-openssl -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-02-offline-attacks;
+Comment=Try to find the passphrase for files encrypted with OpenSSL
+X-Parrot-Package=bruteforce-salted-openssl
