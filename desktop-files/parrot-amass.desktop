@@ -2,10 +2,10 @@
 Name=amass
 Comment=Ultimate DNS enumeration by Brute forcing, scraping from OSINT, pulling from Certificates
 Encoding=UTF-8
-Exec=menuexec "dnswalk --help"
+Exec=menuexec "amass"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
 Categories=01-01-dns-analysis;
-X-Parrot-Package=dnswalk
+X-Parrot-Package=amass
