@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=mifare-classic-format
+Comment=A convenient API for MIFARE card manipulations.
 Encoding=UTF-8
 Exec=menuexec "mifare-classic-format -h"
 Icon=parrot-menu.png
