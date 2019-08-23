@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd "/usr/share/windows-resources/powersploit"
+ls
