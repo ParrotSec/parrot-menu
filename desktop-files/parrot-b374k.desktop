@@ -6,6 +6,6 @@ Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=10-03-web-backdoors;top10
+Categories=10-03-web-backdoors
 Comment=b374k webshell
 X-Parrot-Package=b374k
