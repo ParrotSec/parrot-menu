@@ -1,3 +1,9 @@
+parrot-menu (2:2019.09.12) rolling; urgency=medium
+
+  * Import new menu improvements from git (thanks dm, we all love you).
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 12 Sep 2019 12:31:10 +0200
+
 parrot-menu (2:2019.08.19) rolling; urgency=medium
 
   * Refactor menu structure.
