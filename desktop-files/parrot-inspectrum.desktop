@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=inspectrum
+Comment=Offline radio signal analyser 
 Encoding=UTF-8
 Exec=inspectrum
 Icon=parrot-gqrx.png

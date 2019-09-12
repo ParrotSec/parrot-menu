@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=fake_mld26
+Comment=Ad(d)vertise or delete yourself - or anyone you want - in a multicast group of your choice
 Encoding=UTF-8
 Exec=menuexec atk6-fake_mld26 
 Icon=parrot-menu.png

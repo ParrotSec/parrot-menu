@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=nfc-list
+Comment=Lists the first target present of each founded device
 Encoding=UTF-8
 Exec=menuexec "nfc-list -h"
 Icon=parrot-menu.png

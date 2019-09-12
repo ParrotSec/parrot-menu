@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=amap
+Comment=Identify applications on running ports
+Encoding=UTF-8
+Exec=menuexec "amap"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-info-gathering;01-04-network-scanners;
+X-Parrot-Package=amap
