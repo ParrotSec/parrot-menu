@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=irpas-ass
+Comment=An autonomous system scanner
 Encoding=UTF-8
 Exec=menuexec "ass -h"
 Icon=parrot-menu.png

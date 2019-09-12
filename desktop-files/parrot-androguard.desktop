@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=androguard
+Comment=A full Python tool to analysis with Android files
+Encoding=UTF-8
+Exec=androgui
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=07-reverseengineer;
+X-Parrot-Package=androguard
