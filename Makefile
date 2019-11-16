@@ -1,3 +1,2 @@
-all:
-	/usr/bin/go build update-launchers.go
-	/usr/bin/strip update-launchers
+install:
+	nim c -o:update-launchers src/update_launchers.nim
