@@ -1,6 +1,4 @@
 ./menus/parrot-applications.menu
-./menus/anon-surf.menu
-./menus/cryptography.menu
 ./menus/sandbox.menu
 ./menus/mate-applications.menu
 ./bin/menuexec

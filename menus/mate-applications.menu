@@ -108,8 +108,7 @@
 
   <!-- Parrot security tools -->
   <MergeFile type="path">applications-merged/parrot-applications.menu</MergeFile>
-  <MergeFile type="path">applications-merged/anon-surf.menu</MergeFile>
-  <MergeFile type="path">applications-merged/cryptography.menu</MergeFile>
+  <MergeFile type="path">applications-merged/privacy.menu</MergeFile>
   <MergeFile type="path">applications-merged/sandbox.menu</MergeFile>
 
   <!-- Multimedia -->

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN" "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
+<Menu>
+	<Name>Parrot Privacy Applications</Name>
+	<!-- parrot submenu for privacy tools -->
+	<Layout>
+		<Menuname>• Anon Surf</Menuname>
+        <Menuname>• Privacy</Menuname>
+		<Merge type="all"/>
+	</Layout>
+	<Menu>
+		<Name>Privacy</Name>
+		<Directory>privacy.directory</Directory>
+		<Include>
+			<And>
+				<Category>privacy</Category>
+			</And>
+		</Include>
+
+		<Menu>
+			<Name>Anon Surf</Name>
+			<Directory>anon-surf.directory</Directory>
+			<Include>
+				<And>
+					<Category>anonsurf</Category>
+				</And>
+			</Include>
+		</Menu>
+
+		<Menu>
+			<Name>Cryptography</Name>
+			<Directory>cryptography.directory</Directory>
+			<Include>
+				<And>
+					<Category>cryptography</Category>
+				</And>
+			</Include>
+		</Menu>
+	</Menu>
+</Menu>
