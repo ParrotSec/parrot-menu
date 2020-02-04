@@ -2,7 +2,7 @@
 # https://developer.gnome.org/AppFolders/
 
 [org/gnome/desktop/app-folders]
-folder-children=['info','vuln','web','db','passwd','wireless','re','exploit','sniff','post','forensics','reporting','services', 'anonsurf', 'cryptography']
+folder-children=['info','vuln','web','db','passwd','wireless','re','exploit','sniff','post','forensics','reporting','services', 'privacy']
 
 [org/gnome/desktop/app-folders/folders/info]
 name='01-Information'

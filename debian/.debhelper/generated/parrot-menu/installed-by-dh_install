@@ -91,6 +91,7 @@
 ./desktop-directories/14-11-openvas-service.directory
 ./desktop-directories/14-12-xplico-service.directory
 ./desktop-directories/14-services.directory
+./desktop-directories/privacy.directory
 ./desktop-directories/anon-surf.directory
 ./desktop-directories/cryptography.directory
 ./desktop-directories/parrot-controllers.directory
