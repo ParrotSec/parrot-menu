@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=fake_dnsupdate6
+Comment=Advertise ipv6 address on the network, sending it to the all-nodes multicast address if no target address is set.
+Encoding=UTF-8
+Exec=menuexec atk6-fake_dnsupdate6 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-02-network-spoofing;04-07-ipv6
+X-Parrot-Package=thc-ipv6

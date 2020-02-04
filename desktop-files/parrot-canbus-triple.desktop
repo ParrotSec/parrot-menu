@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=canbus-triple
+Comment=CANToolz is a framework for analysing CAN networks and devices.
+Encoding=UTF-8
+Exec=sh -c "echo 'SocketCAN tools';echo;echo;cd /opt/car-hacking/CANBus-Triple/;ls;bash"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=13-automotive
+X-Parrot-Package=kayak

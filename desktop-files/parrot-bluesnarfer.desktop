@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=bluesnarfer
+Comment=Access to calendars, contact lists, emails and text messages, and even pictures and private videos through a Bluetooth connection
+Encoding=UTF-8
+Exec=menuexec bluesnarfer
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-02-bluetooth-tools;
+X-Parrot-Package=bluesnarfer

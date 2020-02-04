@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=slcand
+Encoding=UTF-8
+Exec=menuexec slcand
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=13-01-can-utils
+Comment=Userspace daemon for serial line CAN interface driver SLCAN
+X-Parrot-Package=can-utils

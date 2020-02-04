@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=mfcuk
+Comment=Mifare Classic weakness demonstration/exploitation
+Encoding=UTF-8
+Exec=menuexec "mfcuk -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-03-rfid-nfc-tools;
+X-Parrot-Package=mfcuk

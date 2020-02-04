@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=nfc-mfclassic
+Comment=A MIFARE Classic tool that allow to read or write DUMP file using MIFARE keys provided in KEYS file
+Encoding=UTF-8
+Exec=menuexec "nfc-mfclassic -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-03-rfid-nfc-tools;
+X-Parrot-Package=libnfc-bin

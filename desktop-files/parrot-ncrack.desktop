@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=ncrack
+Comment=Network authentication cracking tool from Nmap project
+Encoding=UTF-8
+Exec=menuexec "ncrack -h"
+Icon=parrot-ncrack.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-01-online-attacks;
+X-Parrot-Package=ncrack
+
+

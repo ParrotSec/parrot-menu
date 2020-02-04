@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=fake_dns6d
+Comment=Serves the same ipv6 address to any lookup request
+Encoding=UTF-8
+Exec=menuexec atk6-fake_dns6d 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-02-network-spoofing;04-07-ipv6
+X-Parrot-Package=thc-ipv6

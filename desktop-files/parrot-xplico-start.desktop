@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=xplico start
+Encoding=UTF-8
+Exec=menuexec "service xplico start"
+Icon=parrot-xplico.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=14-12-xplico-service
+Comment=Start the network forensics analysis tool
+X-Parrot-Package=xplico

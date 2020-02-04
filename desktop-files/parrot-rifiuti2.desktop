@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=rifiuti2
+Encoding=UTF-8
+Exec=menuexec "rifiuti2 -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-05-forensic-carving-tools;
+Comment=Parse INFO2 file and dump recycle bin data.
+X-Parrot-Package=rifiuti2

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=airolib-ng
+Comment=Store and manage essid and password lists
+Encoding=UTF-8
+Exec=menuexec "airolib-ng --help"
+Icon=parrot-aircrack.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-01-wireless-tools;
+X-Parrot-Package=aircrack-ng

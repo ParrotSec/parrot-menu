@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=tcpreplay
+Encoding=UTF-8
+Exec=menuexec "tcpreplay -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-02-network-spoofing;
+Comment=Replay network traffic stored in pcap files 
+X-Parrot-Package=tcpreplay

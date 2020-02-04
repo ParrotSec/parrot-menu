@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=autopsy
+Comment=Digital forensics platform and graphical interface to The Sleuth Kit and other digital forensics tools
+Encoding=UTF-8
+Exec=menuexec autopsy
+Icon=parrot-autopsy.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-forensics
+X-Parrot-Package=autopsy

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=svreport
+Encoding=UTF-8
+Exec=menuexec "svreport -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-03-voip-tools;
+Comment=Manage session created by SIPvicious tools
+X-Parrot-Package=sipvicious

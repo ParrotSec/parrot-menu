@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=isotpdump
+Comment=wiretap and interpret CAN messages (CAN_RAW)
+Encoding=UTF-8
+Exec=menuexec isotpdump
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=13-01-can-utils
+X-Parrot-Package=can-utils

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=shellter
+Encoding=UTF-8
+Exec=menuexec "shellter"
+Icon=shellter.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-04-av-bypass;
+Comment=Dynamic shellcode injection tool and dynamic PE infector
+X-Parrot-Package=shellter

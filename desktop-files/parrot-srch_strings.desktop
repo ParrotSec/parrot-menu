@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=srch_strings
+Encoding=UTF-8
+Exec=menuexec "srch_strings -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-08-forensic-suites;
+Comment=Display printable strings in files
+X-Parrot-Package=sleuthkit

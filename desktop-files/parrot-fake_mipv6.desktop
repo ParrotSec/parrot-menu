@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=fake_mipv6
+Comment=Redirect all packets for home-address to care-of-address
+Encoding=UTF-8
+Exec=menuexec atk6-fake_mipv6 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-02-network-spoofing;04-07-ipv6
+X-Parrot-Package=thc-ipv6

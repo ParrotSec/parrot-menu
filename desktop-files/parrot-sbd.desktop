@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=sbd
+Encoding=UTF-8
+Exec=menuexec "sbd -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-01-os-backdoors;
+Comment=Secure backdoor for linux and windows
+X-Parrot-Package=sbd

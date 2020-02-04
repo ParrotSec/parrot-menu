@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=dbpwaudit
+Comment=A Java tool that allows you to perform online audits of password quality for several database engines
+Encoding=UTF-8
+Exec=menuexec "dbpwaudit"
+Icon=parrot-dbpwaudit.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=04-database-assessment;05-01-online-attacks;
+X-Parrot-Package=dbpwaudit

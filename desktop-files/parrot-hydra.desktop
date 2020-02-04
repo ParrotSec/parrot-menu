@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=hydra
+Comment=Parallelized login cracker which supports numerous protocols to attack.
+Encoding=UTF-8
+Exec=menuexec "hydra -h"
+Icon=parrot-hydra.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-01-online-attacks;
+X-Parrot-Package=hydra
+
+

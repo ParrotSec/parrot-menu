@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=radiff2
+Encoding=UTF-8
+Exec=menuexec radiff2 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-04-radare2;
+Comment=Unified binary diffing utility
+X-Parrot-Package=radare2

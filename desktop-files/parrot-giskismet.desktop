@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=giskismet
+Comment=Wireless recon visualization tool to represent data gathered using Kismet in a flexible manner
+Encoding=UTF-8
+Exec=menuexec "giskismet -h"
+Icon=parrot-kismet.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-01-wireless-tools
+X-Parrot-Package=giskismet

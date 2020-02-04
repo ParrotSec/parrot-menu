@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=proxystrike
+Comment=Find Sql injection and xss vulnerabilities while browsing an application
+Encoding=UTF-8
+Exec=menuexecg "proxystrike"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=03-06-web-application-proxies
+X-Parrot-Package=proxystrike

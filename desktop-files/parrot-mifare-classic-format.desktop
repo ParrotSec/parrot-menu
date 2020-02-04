@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=mifare-classic-format
+Comment=A convenient API for MIFARE card manipulations.
+Encoding=UTF-8
+Exec=menuexec "mifare-classic-format -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-03-rfid-nfc-tools;
+X-Parrot-package=libfreefare-bin

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=multiforcer
+Comment=GPU accelerated offline password cracking tool
+Encoding=UTF-8
+Exec=menuexec "multiforcer --help"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-02-offline-attacks;
+X-Parrot-Package=multiforcer

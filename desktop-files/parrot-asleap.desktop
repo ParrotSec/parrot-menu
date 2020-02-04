@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=asleap
+Comment=Cisco LEAP and Generic MS-CHAPv2 Dictionary Attack
+Encoding=UTF-8
+Exec=menuexec asleap -h
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-01-wireless-tools;
+X-Parrot-Package=asleap

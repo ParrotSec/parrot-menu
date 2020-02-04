@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=galleta
+Comment=Examine the content of cookie files produced by Microsofts Internet Explorer
+Encoding=UTF-8
+Exec=menuexec "galleta"
+Icon=galleta.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-forensics;
+X-Parrot-Package=galleta

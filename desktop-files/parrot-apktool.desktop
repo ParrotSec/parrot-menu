@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=apktool
+Comment=A tool for reverse engineering Android apk files
+Encoding=UTF-8
+Exec=menuexec apktool --help 
+Icon=parrot-apktool.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-reverseengineer;
+X-Parrot-Package=apktool

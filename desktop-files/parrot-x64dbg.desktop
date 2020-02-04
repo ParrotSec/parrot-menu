@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=x64dbg
+Encoding=UTF-8
+Exec=x64dbg
+Icon=parrot-ollydbg.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Comment=A x64/x32 debugger for windows binaries (64 bit)
+Categories=07-02-debuggers;
+X-Parrot-Package=x64dbg

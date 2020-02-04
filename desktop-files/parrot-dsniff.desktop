@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=dsniff
+Comment=Password sniffing and network traffic analysis tool
+Encoding=UTF-8
+Exec=menuexec "dsniff -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-01-network-sniffers;
+X-Parrot-Package=dsniff

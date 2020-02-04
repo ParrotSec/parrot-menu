@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=mitmproxy
+Comment=Allows traffic flows to be inspected and edited on the fly
+Encoding=UTF-8
+Exec=menuexec "mitmproxy -h"
+Icon=parrot-mitmproxy.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-sniffing-spoofing;
+X-Parrot-Package=mitmproxy

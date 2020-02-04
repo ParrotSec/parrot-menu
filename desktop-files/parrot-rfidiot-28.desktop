@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=bruteforce mifare
+Encoding=UTF-8
+Exec=menuexec loginall.py -R RFIDIOt.rfidiot.READER_PCSC 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-03-rfid-nfc-tools;
+Comment=Attempt to login to each sector of a Mifare TAG with standard transport keys.
+X-Parrot-Package=python-rfidiot

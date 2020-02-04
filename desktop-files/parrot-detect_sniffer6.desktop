@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=detect_sniffer6
+Comment=Detect MITM attackers
+Encoding=UTF-8
+Exec=menuexec atk6-detect_sniffer6 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=04-07-ipv6
+X-Parrot-Package=thc-ipv6

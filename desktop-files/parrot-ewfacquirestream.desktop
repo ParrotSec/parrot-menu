@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=ewfacquirestream
+Comment=Write data from STDIN to Expert Witness Compression Format files
+Encoding=UTF-8
+Exec=menuexec ewfacquirestream -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-07-forensic-imaging-tools;
+X-Parrot-Package=ewf-tools

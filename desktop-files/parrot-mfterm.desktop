@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=mfterm
+Comment=Terminal for working with Mifare Classic 1-4k Tags
+Encoding=UTF-8
+Exec=menuexec "mfterm -h"
+Icon=parrot-mfterm.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-03-rfid-nfc-tools;
+X-Parrot-Package=mfterm

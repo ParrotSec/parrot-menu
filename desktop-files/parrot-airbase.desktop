@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=airbase-ng
+Comment=Multi-purpose tool aimed at attacking clients as opposed to the Access Point itself.
+Encoding=UTF-8
+Exec=menuexec "airbase-ng --help"
+Icon=parrot-aircrack.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-01-wireless-tools;
+X-Parrot-Package=aircrack-ng

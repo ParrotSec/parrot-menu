@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=netsniff-ng
+Comment=Linux network sniffer for packet inspection
+Encoding=UTF-8
+Exec=menuexec "netsniff-ng -h"
+Icon=parrot-netsniff-ng.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-01-network-sniffers;
+X-Parrot-Package=netsniff-ng

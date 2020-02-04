@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=u3-pwn
+Encoding=UTF-8
+Exec=menuexec "u3-pwn"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=04-04-payload-generator;
+Comment=Metasploit Payload Injection Tool For SanDisk Devices
+X-Parrot-Package=u3-pwn

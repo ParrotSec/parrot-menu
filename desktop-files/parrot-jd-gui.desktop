@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=jd-gui
+Comment=Java decompiler (GUI)
+Encoding=UTF-8
+Exec=menuexecg "jd-gui"
+Icon=parrot-jd-gui.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=07-03-decompilers;
+X-Parrot-Package=jd-gui

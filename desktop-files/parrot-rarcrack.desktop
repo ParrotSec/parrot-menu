@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=rarcrack
+Comment=Brute force zip, 7z and rar file passwords
+Encoding=UTF-8
+Exec=menuexec "rarcrack --help"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-02-offline-attacks;
+X-Parrot-Package=rarcrack

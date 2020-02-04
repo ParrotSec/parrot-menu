@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=cowpatty
+Comment=Offline dictionary attack against WPA/WPA2 networks using PSK-based authentication
+Encoding=UTF-8
+Exec=menuexec "cowpatty"
+Icon=parrot-cowpatty.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-01-wireless-tools
+X-Parrot-Package=cowpatty

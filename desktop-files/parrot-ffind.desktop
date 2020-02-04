@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=ffind
+Comment=Finds the name of the file or directory using a given inode
+Encoding=UTF-8
+Exec=menuexec "ffind"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-08-forensic-suites;
+X-Parrot-Package=sleuthkit

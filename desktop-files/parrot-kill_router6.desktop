@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=kill_router6
+Comment=Announce that a target a router going down to delete it from the routing tables
+Encoding=UTF-8
+Exec=menuexec atk6-kill_router6 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-07-stress-testing;04-07-ipv6
+X-Parrot-Package=thc-ipv6

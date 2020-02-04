@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=rtpmixsound
+Encoding=UTF-8
+Exec=menuexec "rtpmixsound -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-03-voip-tools;
+Comment=Mixes pre-recorded audio in real-time
+X-Parrot-Package=rtpmixsound

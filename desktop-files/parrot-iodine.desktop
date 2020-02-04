@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=iodine
+Comment=Tunneling IPv4 data through a DNS server
+Encoding=UTF-8
+Exec=menuexec "iodine-client-start -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-02-tunneling;
+X-Parrot-Package=iodine

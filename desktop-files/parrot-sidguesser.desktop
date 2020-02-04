@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=sidguesser
+Encoding=UTF-8
+Exec=menuexec "sidguess"
+Icon=parrot-sidguesser.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=04-06-db-exploit;
+Comment=Guesses sids against an Oracle database
+X-Parrot-Package=sidguesser

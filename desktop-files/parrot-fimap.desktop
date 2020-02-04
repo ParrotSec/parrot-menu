@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=fimap
+Comment=Find, prepare, audit, exploit and even google automatically for local and remote file inclusion bugs in webapps
+Encoding=UTF-8
+Exec=menuexec "fimap -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-05-web-vulnerability-scanners;04-05-web-exploit
+X-Parrot-Package=fimap

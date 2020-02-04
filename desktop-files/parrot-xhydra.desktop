@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=xhydra
+Encoding=UTF-8
+Exec=menuexecg xhydra
+Icon=parrot-hydra.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-01-online-attacks;
+Comment=Gtk+2 frontend for thc-hydra
+X-Parrot-Package=hydra

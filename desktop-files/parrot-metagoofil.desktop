@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=metagoofil
+Comment=Extracting metadata of public documents (pdf,doc,xls,ppt,docx,pptx,xlsx) belonging to a target company.
+Encoding=UTF-8
+Exec=menuexec "metagoofil"
+Icon=parrot-metagoofil.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-07-osint-analysis;12-reporting;
+X-Parrot-Package=metagoofil

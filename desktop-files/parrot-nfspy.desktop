@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=nfspy
+Comment=Python library for automating the falsification of NFS credentials when mounting an NFS share
+Encoding=UTF-8
+Exec=menuexec "nfspy -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-01-network-sniffers;
+X-Parrot-Package=nfspy

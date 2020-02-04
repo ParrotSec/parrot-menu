@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=dnsdict6
+Comment=Enumerates a domain for DNS entries
+Encoding=UTF-8
+Exec=menuexec atk6-dnsdict6 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-01-dns-analysis;04-07-ipv6
+X-Parrot-Package=thc-ipv6

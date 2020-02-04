@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=ferret
+Comment=Monitors data and extracts interesting data
+Encoding=UTF-8
+Exec=menuexec "ferret"
+Icon=parrot-ferret.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-sniffing-spoofing;
+X-Parrot-Package=ferret-sidejack

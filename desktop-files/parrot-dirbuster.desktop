@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=dirbuster
+Comment=Java GUI of Web Content Scanner
+Encoding=UTF-8
+Exec=menuexecg dirbuster
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=03-04-web-crawlers;
+X-Parrot-Package=dirbuster

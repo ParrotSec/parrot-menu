@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=rtpbreak
+Encoding=UTF-8
+Exec=menuexec "rtpbreak -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-03-voip-tools;
+Comment=Detects, reconstructs, and analyzes RTP sessions
+X-Parrot-Package=rtpbreak

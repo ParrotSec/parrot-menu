@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=dnsspoof
+Comment=Replace DNS responses with spoofed DNS response
+Encoding=UTF-8
+Exec=menuexec dnsspoof -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-02-network-spoofing
+X-Parrot-Package=dsniff

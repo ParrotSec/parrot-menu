@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=pth-winexe
+Encoding=UTF-8
+Exec=menuexec "pth-winexe -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=08-03-pth
+Comment=Executes interactively a command on remote computers using NTLM hash
+X-Parrot-Package=passing-the-hash

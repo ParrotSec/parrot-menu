@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=social engineering toolkit
+Encoding=UTF-8
+Exec=menuexec "setoolkit"
+Icon=parrot-set.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=04-02-social-engineering;
+Comment=A social engineering toolkit
+X-Parrot-Package=set

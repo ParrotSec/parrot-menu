@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=fierce
+Comment=Locate non-contiguous IP space and hostnames against specified domains
+Encoding=UTF-8
+Exec=menuexec "fierce -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-01-dns-analysis;
+X-Parrot-Package=fierce

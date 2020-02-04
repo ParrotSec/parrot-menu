@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=mdb-sql
+Comment=SQL interface to MDB Tools
+Encoding=UTF-8
+Exec=menuexec "mdb-sql -h"
+Icon=parrot-mdb-sql.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=04-06-db-exploit;
+X-Parrot-Package=mdbtools

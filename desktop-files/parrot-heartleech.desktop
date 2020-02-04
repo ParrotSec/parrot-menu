@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=heartleech
+Comment=Scan for heartbleed and download data
+Encoding=UTF-8
+Exec=menuexec "heartleech"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-05-web-vulnerability-scanners;
+X-Parrot-Package=heartleech

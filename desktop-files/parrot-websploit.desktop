@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=websploit
+Encoding=UTF-8
+Exec=menuexec websploit 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-05-web-vulnerability-scanners;04-exploitation-tools
+Comment=Scan and analysis remote system to find various type of vulnerabilites
+X-Parrot-Package=websploit

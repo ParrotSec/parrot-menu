@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=tsk_comparedir
+Encoding=UTF-8
+Exec=menuexec "tsk_comparedir"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-08-forensic-suites;
+Comment=compare the contents of a directory with the contents of an image or local device.
+X-Parrot-Package=sleuthkit

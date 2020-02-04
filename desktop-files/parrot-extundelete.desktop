@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=extundelete
+Comment=Undelete file from EXT3 and EXT4 parititons
+Encoding=UTF-8
+Exec=menuexec "extundelete --help"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-03-digital-forensics;
+X-Parrot-Package=extundelete

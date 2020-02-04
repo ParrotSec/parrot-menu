@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=grabber
+Comment=Detects common vulnerabilities of web application
+Encoding=UTF-8
+Exec=menuexec "grabber -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-05-web-vulnerability-scanners;
+X-Parrot-Package=grabber

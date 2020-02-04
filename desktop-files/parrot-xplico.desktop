@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=xplico
+Encoding=UTF-8
+Exec=xdg-open http://localhost:9876
+Icon=parrot-xplico.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=11-forensics;
+Comment=A network forensics analysis tool
+X-Parrot-Package=xplico

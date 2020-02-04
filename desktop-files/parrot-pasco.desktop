@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=pasco
+Comment=Forensic tool that examines the content of cache files (index.dat)
+Encoding=UTF-8
+Exec=menuexec "pasco"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-05-forensic-carving-tools;
+X-Parrot-Package=pasco

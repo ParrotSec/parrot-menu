@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=jcop set atr historical bytes
+Encoding=UTF-8
+Exec=menuexec jcopsetatrhist.py -R RFIDIOt.rfidiot.READER_PCSC 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-03-rfid-nfc-tools;
+Comment=Set ATR Historical Bytes on JCOP card running jcopatrhist applet (jcop_set_atr_hist.cap).
+X-Parrot-Package=python-rfidiot

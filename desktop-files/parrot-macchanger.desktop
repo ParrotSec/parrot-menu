@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=macchanger
+Comment=Change MAC address
+Encoding=UTF-8
+Exec=menuexec "macchanger -h"
+Icon=parrot-macchanger.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-sniffing-spoofing;
+X-Parrot-Package=macchanger

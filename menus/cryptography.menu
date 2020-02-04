@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN" "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
+<Menu>
+<Name>Parrot Applications</Name>
+<!-- parrot submenu -->
+<Menu>
+	<Name>Cryptography</Name>
+	<Directory>cryptography.directory</Directory>
+	<Include>
+		<And>
+			<Category>cryptography</Category>
+		</And>
+	</Include>
+</Menu>
+</Menu>

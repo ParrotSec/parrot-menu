@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=airserv-ng
+Comment=Allows multiple wireless application programs to independently use a wireless card via a client-server TCP network connection
+Encoding=UTF-8
+Exec=menuexec "airserv-ng"
+Icon=parrot-aircrack.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-01-wireless-tools;
+X-Parrot-Package=aircrack-ng

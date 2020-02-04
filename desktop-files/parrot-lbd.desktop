@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=lbd
+Comment=Detect if a given domain uses DNS and/or HTTP Load-Balancing
+Encoding=UTF-8
+Exec=menuexec "lbd"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-03-ids-ips-identification;
+X-Parrot-Package=lbd

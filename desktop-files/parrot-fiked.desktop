@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=fiked
+Comment=Fake IKE daemon supporting standards and Cisco extensions to attack commonly found insecure Cisco VPN PSK+XAUTH based IPsec authentication setups
+Encoding=UTF-8
+Exec=menuexec "fiked -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-02-network-spoofing;
+X-Parrot-Package=fiked
+

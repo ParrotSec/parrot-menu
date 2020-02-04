@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=mfoc
+Comment=MIFARE Classic offline cracker
+Encoding=UTF-8
+Exec=menuexec "mfoc -h"
+Icon=parrot-mfoc.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-03-rfid-nfc-tools;
+X-Parrot-Package=mfoc

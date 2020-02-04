@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=ewfacquire
+Comment=Write data from a source in Expert Witness Compression Format
+Encoding=UTF-8
+Exec=menuexec "ewfacquire -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-07-forensic-imaging-tools;
+X-Parrot-Package=ewf-tools

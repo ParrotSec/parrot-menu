@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=spike-generic_listen_tcp
+Encoding=UTF-8
+Exec=menuexec "generic_listen_tcp"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-02-fuzzers;
+Comment=A network protocol fuzzing test software
+X-Parrot-Package=spike

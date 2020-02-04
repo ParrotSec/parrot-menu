@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=hashcat
+Comment=Password recovery utility supports CPUs, GPUs, and other hardware accelerators 
+Encoding=UTF-8
+Exec=menuexec "hashcat --help"
+Icon=parrot-hashcat.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-02-offline-attacks;
+X-Parrot-Package=hashcat

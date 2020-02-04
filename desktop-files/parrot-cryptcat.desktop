@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=cryptcat
+Comment=Standard netcat enhanced with twofish encryption
+Encoding=UTF-8
+Exec=menuexec cryptcat -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-01-os-backdoors;
+X-Parrot-Package=cryptcat

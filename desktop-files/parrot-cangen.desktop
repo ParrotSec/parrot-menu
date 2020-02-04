@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=cangen
+Comment=generate (random) CAN traffic
+Encoding=UTF-8
+Exec=menuexec cangen -h
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=13-01-can-utils
+X-Parrot-Package=can-utils

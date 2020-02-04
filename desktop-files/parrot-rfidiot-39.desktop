@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=read write clone unique (em4x02)
+Encoding=UTF-8
+Exec=menuexec unique.py -R RFIDIOt.rfidiot.READER_FROSCH -l /dev/ttyUSB0 -s 9600 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-03-rfid-nfc-tools;
+Comment=Set EM4x02 (Unique/Mira) UID and emulation mode on Q5 or Hitag2.
+X-Parrot-Package=python-rfidiot

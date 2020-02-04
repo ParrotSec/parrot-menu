@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=stunnel4
+Encoding=UTF-8
+Exec=menuexec "stunnel4 -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-02-tunneling;
+Comment=TLS offloading and load-balancing proxy
+X-Parrot-Package=stunnel4

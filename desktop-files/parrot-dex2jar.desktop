@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=dex2jar
+Comment=Convert .dex file to .class files
+Encoding=UTF-8
+Exec=menuexec "d2j-dex2jar -h"
+Icon=parrot-dex2jar.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-01-android-tools;07-03-decompilers;
+X-Parrot-Package=dex2jar

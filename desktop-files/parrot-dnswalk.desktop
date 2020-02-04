@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=dnswalk
+Comment=Check DNS information using name server lookups
+Encoding=UTF-8
+Exec=menuexec "dnswalk --help"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-01-dns-analysis;
+X-Parrot-Package=dnswalk

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=ewfinfo
+Comment=Determine information about Expert Witness Compression Format files
+Encoding=UTF-8
+Exec=menuexec ewfinfo -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-07-forensic-imaging-tools;
+X-Parrot-Package=ewf-tools

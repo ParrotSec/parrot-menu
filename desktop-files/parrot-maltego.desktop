@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=maltego
+Comment=Mining and gathering information
+Encoding=UTF-8
+Exec=menuexecg "maltego"
+Icon=parrot-maltego.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=01-info-gathering;01-07-osint-analysis;top10
+X-Parrot-Package=maltego

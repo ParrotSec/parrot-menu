@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=sqlmap
+Encoding=UTF-8
+Exec=menuexec "sqlmap -h"
+Icon=parrot-sqlmap.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=04-05-web-exploit
+Comment=Automatic SQL injection tool
+X-Parrot-Package=sqlmap

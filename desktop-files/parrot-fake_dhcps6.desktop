@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=fake_dhcps6
+Comment=Fake DHCPv6 server. Use to configure an address and set a DNS server.
+Encoding=UTF-8
+Exec=menuexec atk6-fake_dhcps6 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-02-network-spoofing;04-07-ipv6
+X-Parrot-Package=thc-ipv6

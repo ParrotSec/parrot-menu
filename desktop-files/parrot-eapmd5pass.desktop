@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=eapmd5pass
+Comment=Read from network interface in monitor-mode, or from a stored capture file, and extracts the portions of the EAP-MD5 authentication exchange
+Encoding=UTF-8
+Exec=menuexec "eapmd5pass -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-01-wireless-tools;
+X-Parrot-Package=eapmd5pass

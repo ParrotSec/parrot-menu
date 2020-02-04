@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN" "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
+<Menu>
+<Name>Parrot Applications</Name>
+<!-- parrot submenu -->
+<Menu>
+	<Name>Sandbox</Name>
+	<Directory>sandbox.directory</Directory>
+	<Include>
+		<And>
+			<Category>sandbox</Category>
+		</And>
+	</Include>
+</Menu>
+</Menu>

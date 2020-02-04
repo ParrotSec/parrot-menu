@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=netmask
+Comment=Determine network masks to specify a range of hosts
+Encoding=UTF-8
+Exec=menuexec "netmask -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-08-route-analysis;
+X-Parrot-Package=netmask

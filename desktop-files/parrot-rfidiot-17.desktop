@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=reset q5 tag
+Encoding=UTF-8
+Exec=menuexec q5reset.py -R RFIDIOt.rfidiot.READER_ACG -l /dev/ttyUSB0 -s 9600 CONTROL ID 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-03-rfid-nfc-tools;
+Comment=Reset Q5 TAG into default r/w mode and set UID. 
+X-Parrot-Package=python-rfidiot

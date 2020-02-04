@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=rtl_test
+Encoding=UTF-8
+Exec=menuexec "rtl_test -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-05-radio-tools;
+Comment=this will test the dongle and its function. 
+X-Parrot-Package=librtlsdr-bin

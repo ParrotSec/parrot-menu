@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=cewl
+Comment=Get keywords from website, generate wordlist
+Encoding=UTF-8
+Exec=menuexec "cewl --help"
+Icon=parrot-cewl.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-05-profile;
+X-Parrot-Package=cewl

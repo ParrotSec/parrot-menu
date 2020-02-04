@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=sorter
+Encoding=UTF-8
+Exec=menuexec "sorter"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-08-forensic-suites;
+Comment=Sort files in an image into categories based on file type
+X-Parrot-Package=sleuthkit

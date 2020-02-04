@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=trace6
+Encoding=UTF-8
+Exec=menuexec atk6-trace6 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-08-route-analysis;04-07-ipv6
+Comment=The Hacker Choice's IPv6 Attack Toolkit
+X-Parrot-Package=thc-ipv6

@@ -1,0 +1,8 @@
+#!/bin/bash
+echo -e "
+
+Nishang files are located at
+/usr/share/nishang
+
+enter this folder to use the tool
+"

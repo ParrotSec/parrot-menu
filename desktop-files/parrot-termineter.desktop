@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=termineter
+Encoding=UTF-8
+Exec=menuexec "termineter -h"
+Icon=parrot-termineter.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=04-exploitation-tools;
+Comment=Security testing of smart meters
+X-Parrot-Package=termineter

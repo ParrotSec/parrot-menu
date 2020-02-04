@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=gobuster
+Comment=A fast directory/file & DNS busting tool written in Go
+Encoding=UTF-8
+Exec=menuexec "gobuster -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-04-web-crawlers;01-01-dns-analysis;top10
+X-Parrot-Package=gobuster

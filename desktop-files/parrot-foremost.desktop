@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=foremost
+Comment=Recover lost files based on their headers, footers, and internal data structures
+Encoding=UTF-8
+Exec=menuexec "foremost -h"
+Icon=parrot-foremost.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-forensics;
+X-Parrot-Package=foremost

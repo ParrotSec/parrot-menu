@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=medusa
+Comment=Speedy, massively parallel, modular, login brute-forcer
+Encoding=UTF-8
+Exec=menuexec "medusa -h"
+Icon=parrot-medusa.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-01-online-attacks;
+X-Parrot-Package=medusa

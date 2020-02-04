@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=pdfbook
+Comment=Gathers facebook artifacts from a pd dump
+Encoding=UTF-8
+Exec=menuexec "pd-fbook -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-04-forensic-analysis-tools;
+X-Parrot-Package=pdfbook

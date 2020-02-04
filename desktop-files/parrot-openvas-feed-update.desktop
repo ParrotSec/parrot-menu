@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=openvas feed update
+Comment=Update signatures for OpenVas
+Encoding=UTF-8
+Exec=menuexec "openvas-feed-update"
+Icon=parrot-OpenVas.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=14-11-openvas-service;02-06-openvas;
+X-Parrot-Package=openvas

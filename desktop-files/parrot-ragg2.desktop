@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=ragg2
+Encoding=UTF-8
+Exec=menuexec ragg2 -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-04-radare2;
+Comment=radare2 frontend for r_egg, compile programs into tiny binaries for x86-32/64 and arm.
+X-Parrot-Package=radare2

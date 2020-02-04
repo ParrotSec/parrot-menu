@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=fern wifi cracker
+Comment=Security auditing and attack software written in PyQT GUI
+Encoding=UTF-8
+Exec=menuexecg "fern-wifi-cracker"
+Icon=parrot-fern-wifi-cracker.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=06-wireless-attacks
+X-Parrot-Package=fern-wifi-cracker

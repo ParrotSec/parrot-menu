@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=wireshark
+Encoding=UTF-8
+Exec=menuexecg "wireshark"
+Icon=wireshark
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=09-sniffing-spoofing;01-info-gathering;01-04-network-scanners;top10
+Comment=Interactively dump and analyze network traffic
+X-Parrot-Package=wireshark

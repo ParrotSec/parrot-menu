@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=chkrootkit
+Comment=Check for rootkits on your system
+Encoding=UTF-8
+Exec=menuexec "chkrootkit -h"
+Icon=parrot-chkrootkit.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-forensics;
+X-Parrot-Package=chkrootkit

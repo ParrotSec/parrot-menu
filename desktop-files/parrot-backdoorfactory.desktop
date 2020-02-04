@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=backdoor-factory
+Comment=Patch PE, ELF, Mach-O binaries with shellcode
+Encoding=UTF-8
+Exec=menuexec backdoor-factory -h
+Icon=parrot-backdoor-factory.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-01-os-backdoors;
+X-Parrot-Package=backdoor-factory

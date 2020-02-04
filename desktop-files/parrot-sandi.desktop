@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=sandi-gui
+Encoding=UTF-8
+Exec=menuexecg "sandi-gui"
+Icon=parrot-sandi-gui.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=04-03-exploit-search;
+Comment=Search for exploitin: Exploitdb, Metasploit or Shell-storm database
+X-Parrot-Package=sandi

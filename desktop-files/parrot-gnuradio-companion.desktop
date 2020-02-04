@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=gnuradio-companion
+Comment=Graphical tool for creating signal flow graphs and generating flow-graph source code.
+Encoding=UTF-8
+Exec=menuexecg "gnuradio-companion"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=06-05-radio-tools;
+X-Parrot-Package=gnuradio

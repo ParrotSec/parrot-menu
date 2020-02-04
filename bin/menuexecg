@@ -1,0 +1,10 @@
+#!/bin/bash
+
+function notify {
+	if [ -e /usr/bin/notify-send ]; then
+		/usr/bin/notify-send "ParrotSec" "$1"
+	fi
+}
+
+notify "starting $*"
+gksu "$*"

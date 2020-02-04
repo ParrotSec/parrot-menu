@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=searchsploit
+Encoding=UTF-8
+Exec=menuexec "searchsploit"
+Icon=parrot-searchsploit.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=04-03-exploit-search;
+Comment=A command line search tool for Exploit-DB
+X-Parrot-Package=exploitdb

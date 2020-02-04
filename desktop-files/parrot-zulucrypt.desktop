@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=zuluCrypt
+GenericName=Encrypted volumes manager
+Comment=Graphical front end for zulucrypt-cli
+Icon=zuluCrypt.xpm
+Exec=zuluCrypt-gui
+Terminal=false
+StartupNotify=true
+Categories=cryptography
+Keywords=volumes;encrypting;luks;truecrypt;encrypt;security;cryptsetup
+X-Parrot-Package=zulucrypt-gui

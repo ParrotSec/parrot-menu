@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=mdb-export
+Comment=Export data in an MDB database table to CSV format.
+Encoding=UTF-8
+Exec=menuexec mdb-export 
+Icon=parrot-mdb-sql.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=04-06-db-exploit;
+X-Parrot-Package=mdbtools

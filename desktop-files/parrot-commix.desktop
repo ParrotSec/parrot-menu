@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=commix
+Comment=Command injection scanner and exploitation tool
+Encoding=UTF-8
+Exec=menuexec "commix"
+Icon=parrot-commix.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-webapp-analysis;04-05-web-exploit
+X-Parrot-Package=commix

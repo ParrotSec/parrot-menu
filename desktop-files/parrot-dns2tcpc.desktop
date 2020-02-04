@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=dns2tcpc
+Comment=Relay TCP connections through DNS traffic (CLIENT)
+Encoding=UTF-8
+Exec=menuexec "dns2tcpc"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-02-tunneling;
+X-Parrot-Package=dns2tcp

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=mdb-parsecsv
+Comment=Convert CSV table dump into C file
+Encoding=UTF-8
+Exec=menuexec mdb-parsecsv 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=04-06-db-exploit;
+X-Parrot-Package=mdbtools

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=pth-smbget
+Comment=Download file via SMB protocol using NTLM hash
+Encoding=UTF-8
+Exec=menuexec "pth-smbget --help"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=08-03-pth
+X-Parrot-Package=passing-the-hash

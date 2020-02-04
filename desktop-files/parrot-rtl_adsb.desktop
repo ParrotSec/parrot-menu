@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=rtl_adsb
+Encoding=UTF-8
+Exec=menuexec "rtl_adsb -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-05-radio-tools;
+Comment=A simple ADS-B decoder
+X-Parrot-Package=librtlsdr-bin

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=jboss-autopwn-linux
+Comment=JBoss script for obtaining remote shell access (targets Linux system)
+Encoding=UTF-8
+Exec=menuexec "jboss-linux"
+Icon=parrot-jboss-autopwn.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-05-web-vulnerability-scanners;
+X-Parrot-Package=jboss-autopwn

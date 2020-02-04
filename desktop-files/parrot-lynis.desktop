@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=lynis
+Comment=Audit and harden Unix and Linux based systems
+Encoding=UTF-8
+Exec=menuexec "lynis -h"
+Icon=parrot-lynis.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-vulnerability-analysis;
+X-Parrot-Package=lynis

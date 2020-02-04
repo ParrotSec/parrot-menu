@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=missidentify
+Comment=Find MS Windows type win32 applications
+Encoding=UTF-8
+Exec=menuexec "missidentify -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-04-forensic-analysis-tools;
+X-Parrot-Package=missidentify

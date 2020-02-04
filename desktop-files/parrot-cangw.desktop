@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=cangw
+Comment=CAN gateway userpace tool for netlink configuration
+Encoding=UTF-8
+Exec=menuexec cangw
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=13-01-can-utils
+X-Parrot-Package=can-utils

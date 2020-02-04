@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=rfcat
+Encoding=UTF-8
+Exec=menuexec "rfcat -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-05-radio-tools;
+Comment=The swiss army knife of sub-GHz radio.
+X-Parrot-Package=rfcat

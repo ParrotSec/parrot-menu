@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=magictree
+Comment=Storage Pentesting data results in a tree structure and generate reports
+Encoding=UTF-8
+Exec=menuexecg "magictree"
+Icon=parrot-magictree.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=12-reporting;
+X-Parrot-Package=magictree

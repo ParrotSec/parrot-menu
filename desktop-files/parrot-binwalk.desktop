@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=binwalk
+Comment=Firmware Analysis Tool 
+Encoding=UTF-8
+Exec=menuexec binwalk -h
+Icon=parrot-binwalk.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-forensics;
+X-Parrot-Package=binwalk

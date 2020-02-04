@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=airodump-ng
+Comment=Packet capturing of raw 802.11 frames
+Encoding=UTF-8
+Exec=menuexec "airodump-ng --help"
+Icon=parrot-aircrack.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-01-wireless-tools;
+X-Parrot-Package=aircrack-ng

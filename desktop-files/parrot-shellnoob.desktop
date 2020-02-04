@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=shellnoob
+Encoding=UTF-8
+Exec=menuexec "shellnoob"
+Icon=parrot-shellnoob.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=04-04-payload-generator;
+Comment=A shellcode writing toolkit
+X-Parrot-Package=shellnoob

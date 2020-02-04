@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Cutter
+Comment=GUI interface for radare2 dissembler framework
+Encoding=UTF-8
+Exec=Cutter
+Icon=cutter
+Type=Application
+Categories=07-04-radare2;
+X-Parrot-Package=radare2-cutter

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=fake_mld6
+Comment=Ad(d)vertise or delete yourself - or anyone you want - in a multicast group of your choice
+Encoding=UTF-8
+Exec=menuexec atk6-fake_mld6 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-02-network-spoofing;04-07-ipv6
+X-Parrot-Package=thc-ipv6

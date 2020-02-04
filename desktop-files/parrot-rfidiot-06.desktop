@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=read acg reader eeprom
+Encoding=UTF-8
+Exec=menuexec eeprom.py -R RFIDIOt.rfidiot.READER_ACG -l /dev/ttyUSB0 -s 9600 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-03-rfid-nfc-tools;
+Comment=Display contents of an ACG reader's EEPROM. Refer to ACG user manuals for detailed description.
+X-Parrot-Package=python-rfidiot

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=isotpsend
+Comment=Send a single ISO-TP PDU
+Encoding=UTF-8
+Exec=menuexec isotpsend
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=13-01-can-utils
+X-Parrot-Package=can-utils

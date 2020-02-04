@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=seclists
+Encoding=UTF-8
+Exec=menuexec "cd /usr/share/seclists/ && ls -la"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-05-profile;
+Comment=Collection of multiple types of security lists
+X-Parrot-Package=seclists

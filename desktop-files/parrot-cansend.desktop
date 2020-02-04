@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=cansend
+Comment=Send a single frame
+Encoding=UTF-8
+Exec=menuexec cansend
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=13-01-can-utils
+X-Parrot-Package=can-utils

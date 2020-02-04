@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=dcfldd
+Comment=An enhanced version of dd developed by the U.S. Department of Defense Computer Forensics Lab
+Encoding=UTF-8
+Exec=menuexec "dcfldd --help"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-07-forensic-imaging-tools;
+X-Parrot-Package=dcfldd

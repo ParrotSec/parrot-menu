@@ -1,0 +1,15 @@
+[Desktop Entry]
+X-AppInstall-Package=sqlitebrowser
+X-AppInstall-Popcon=359
+X-AppInstall-Section=main
+
+Name=SQLite database browser
+Comment=GUI editor for SQLite databases
+Exec=sqlitebrowser
+Icon=sqlitebrowser.png
+Terminal=false
+Type=Application
+Categories=04-06-db-exploit;Development;Database;Qt;
+StartupNotify=false
+MimeType=application/x-sqlite;
+X-Parrot-Package=sqlitebrowser

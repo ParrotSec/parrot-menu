@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=wapiti
+Encoding=UTF-8
+Exec=menuexec "wapiti -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-05-web-vulnerability-scanners;
+Comment=Web application vulnerability scanner
+X-Parrot-Package=wapiti

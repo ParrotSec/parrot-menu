@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=inspectrum
+Comment=Offline radio signal analyser 
+Encoding=UTF-8
+Exec=inspectrum
+Icon=parrot-gqrx.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=06-05-radio-tools;
+X-Parrot-Package=inspectrum

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=wol-e
+Encoding=UTF-8
+Exec=menuexec "wol-e -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-02-identify-live-hosts;
+Comment=Suite of pentesting tools for Wake on LAN
+X-Parrot-Package=wol-e

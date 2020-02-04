@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=dradis stop
+Comment=Stop Dradis reporting tool service
+Encoding=UTF-8
+Exec=service dradis stop
+Icon=parrot-dradis.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=14-10-dradis-service
+X-Parrot-Package=dradis

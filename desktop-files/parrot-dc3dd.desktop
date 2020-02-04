@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=dc3dd
+Comment=A patched version of GNU dd with added features for computer forensics
+Encoding=UTF-8
+Exec=menuexec "dc3dd --help"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-07-forensic-imaging-tools;
+X-Parrot-Package=dc3dd

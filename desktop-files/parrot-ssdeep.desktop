@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=ssdeep
+Encoding=UTF-8
+Exec=menuexec "ssdeep -h"
+Icon=parrot-ssdeep.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-forensics;
+Comment=Compute context triggered piecewise hashes (fuzzy hashes)
+X-Parrot-Package=ssdeep

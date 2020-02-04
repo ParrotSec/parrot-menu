@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=statsgen
+Comment=Generate dictionary file statistics
+Encoding=UTF-8
+Exec=menuexec "statsgen -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-05-profile;
+X-Parrot-Package=pack

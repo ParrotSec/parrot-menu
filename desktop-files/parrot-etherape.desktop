@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=etherape
+Comment=Graphical network monitor
+Encoding=UTF-8
+Exec=menuexecg "etherape"
+Icon=etherape
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=09-sniffing-spoofing;01-04-network-scanners
+X-Parrot-Package=etherape

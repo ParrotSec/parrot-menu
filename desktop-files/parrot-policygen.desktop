@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=policygen
+Encoding=UTF-8
+Exec=menuexec "policygen -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-05-profile;
+Comment=A mask/rule password generator 
+X-Parrot-Package=pack

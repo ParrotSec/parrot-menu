@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=responder
+Encoding=UTF-8
+Exec=menuexec "responder -h"
+Icon=parrot-responder.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-sniffing-spoofing;
+Comment=A LLMNR/NBT-NS/mDNS Poisoner
+X-Parrot-Package=responder

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=LinEnum
+Comment=Linux Privilege Escalate enumeration script in bash
+Encoding=UTF-8
+Exec=man linenum
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=08-01-priv-esc
+X-Parrot-Package=linenum

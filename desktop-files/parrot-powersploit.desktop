@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=powersploit
+Comment=Collection of Antivirus Bypass, Persistence, Exfiltration, Recon scripts in Powershell
+Encoding=UTF-8
+Exec=menuexec powersploit
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=08-post-exploit
+X-Parrot-Package=powersploit

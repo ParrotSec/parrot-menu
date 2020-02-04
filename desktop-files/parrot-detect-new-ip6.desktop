@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=detect-new-ip6
+Comment=Detects new ipv6 addresses joining the local network
+Encoding=UTF-8
+Exec=menuexec atk6-detect-new-ip6 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-02-identify-live-hosts;04-07-ipv6
+X-Parrot-Package=thc-ipv6

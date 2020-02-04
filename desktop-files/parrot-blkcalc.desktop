@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=blkcalc
+Comment=Map between the output of blkls and the original file system data units
+Encoding=UTF-8
+Exec=menuexec blkcalc
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-08-forensic-suites;
+X-Parrot-Package=sleuthkit

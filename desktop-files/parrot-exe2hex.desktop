@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=exe2hex
+Comment=Encode PE file into ASCII text format to .BAT or .CMD (PoSh) files
+Encoding=UTF-8
+Exec=menuexec "exe2hex"
+Icon=parrot-exe2hex.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-04-av-bypass;
+X-Parrot-Package=exe2hexbat

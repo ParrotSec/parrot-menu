@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=whatweb
+Encoding=UTF-8
+Exec=menuexec "whatweb -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-05-web-vulnerability-scanners;
+Comment=Next  generation Web scanner
+X-Parrot-Package=whatweb

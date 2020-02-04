@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=openvas-gsd
+Comment=OpenVas vulnerability scanning and vulnerability management solution service
+Encoding=UTF-8
+Exec=menuexecg gsd
+Icon=parrot-openvas.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=02-06-openvas;
+X-Parrot-Package=openvas

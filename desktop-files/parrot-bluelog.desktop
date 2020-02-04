@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=bluelog
+Comment=Linux Bluetooth scanner with optional daemon mode and web front-end
+Encoding=UTF-8
+Exec=menuexec bluelog -h
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-02-bluetooth-tools;
+X-Parrot-Package=bluelog

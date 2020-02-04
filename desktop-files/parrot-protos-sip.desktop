@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=protos-sip
+Comment=evaluate implementation level security and robustness of Session Initiation Protocol (SIP) implementations
+Encoding=UTF-8
+Exec=menuexec "protos-sip -help"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-03-voip-tools;
+X-Parrot-Package=protos-sip

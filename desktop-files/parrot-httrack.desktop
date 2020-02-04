@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=httrack
+Comment=Copy websites to your computer (Offline browser)
+Encoding=UTF-8
+Exec=menuexec "httrack -h"
+Icon=parrot-sqlmap.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-webapp-analysis;
+X-Parrot-Package=httrack

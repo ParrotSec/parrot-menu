@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=svwar
+Encoding=UTF-8
+Exec=menuexec "svwar -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-03-voip-tools;
+Comment=Identifies working extension lines on a PBX
+X-Parrot-Package=sipvicious

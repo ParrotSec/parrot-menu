@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=rax2
+Encoding=UTF-8
+Exec=menuexec rax2 -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-04-radare2;
+Comment=Radare base converter
+X-Parrot-Package=radare2

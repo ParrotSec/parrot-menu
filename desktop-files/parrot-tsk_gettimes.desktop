@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=tsk_gettimes
+Encoding=UTF-8
+Exec=menuexec "tsk_gettimes -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-08-forensic-suites;
+Comment=Collect MAC times from a disk image into a body file.
+X-Parrot-Package=sleuthkit

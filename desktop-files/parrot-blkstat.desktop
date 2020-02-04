@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=blkstat
+Comment=Displays the allocation status of the given data unit
+Encoding=UTF-8
+Exec=menuexec blkstat
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-08-forensic-suites;
+X-Parrot-Package=sleuthkit

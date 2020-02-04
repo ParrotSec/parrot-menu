@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=hackrf_info
+Comment=Let the user probe the device and show configuration
+Encoding=UTF-8
+Exec=menuexec "hackrf_info -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-04-other-wireless;
+X-Parrot-Package=hackrf

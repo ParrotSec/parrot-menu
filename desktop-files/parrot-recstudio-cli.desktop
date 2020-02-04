@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=recstudio-cli
+Encoding=UTF-8
+Exec=menuexec "recstudio-cli"
+Icon=parrot-recstudio.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-03-decompilers;
+Comment=Produce a C-like representation of the code for Windows, Linux, Mac OS X or raw executable file (CLI)
+X-Parrot-Package=recstudio

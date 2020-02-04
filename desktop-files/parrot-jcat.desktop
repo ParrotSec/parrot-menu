@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=jcat
+Comment=Show the contents of a block in the file system journal
+Encoding=UTF-8
+Exec=menuexec "jcat"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-08-forensic-suites;
+X-Parrot-Package=sleuthkit

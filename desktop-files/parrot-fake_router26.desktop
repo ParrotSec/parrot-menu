@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=fake_router26
+Comment=Announce yourself as a router and try to become the default router
+Encoding=UTF-8
+Exec=menuexec atk6-fake_router26 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-02-network-spoofing;04-07-ipv6
+X-Parrot-Package=thc-ipv6

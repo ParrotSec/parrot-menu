@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=blkcat
+Comment=Display num data units starting at the unit address unit_addr from image to stdout in different formats.
+Encoding=UTF-8
+Exec=menuexec blkcat
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-08-forensic-suites;
+X-Parrot-Package=sleuthkit

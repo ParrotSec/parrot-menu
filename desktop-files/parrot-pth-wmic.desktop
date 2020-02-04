@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=pth-wmic
+Encoding=UTF-8
+Exec=menuexec "pth-wmic -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=08-03-pth
+Comment=Executes WMI queries on remote computers using NTLM hash
+X-Parrot-Package=passing-the-hash

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=urlsnarf
+Encoding=UTF-8
+Exec=menuexec urlsnarf -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-01-network-sniffers
+Comment=Sniff HTTP requests in Common Log Format
+X-Parrot-Package=dsniff

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=wordlists
+Encoding=UTF-8
+Exec=menuexec wordlists
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-05-profile;
+Comment=A collection of common passwords
+X-Parrot-Package=wordlists

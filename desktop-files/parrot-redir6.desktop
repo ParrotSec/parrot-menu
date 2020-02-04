@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=redir6
+Encoding=UTF-8
+Exec=menuexec atk6-redir6 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-02-network-spoofing;04-07-ipv6
+Comment=Redirect traffic to you intelligently (man-in-the-middle) with a clever ICMPv6 redirect spoofer
+X-Parrot-Package=thc-ipv6

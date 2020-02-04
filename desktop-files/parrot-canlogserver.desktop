@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=canlogserver
+Comment=Log CAN frames from a remote/local host
+Encoding=UTF-8
+Exec=menuexec canlogserver
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=13-01-can-utils
+X-Parrot-Package=can-utils

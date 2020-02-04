@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=scrounge-ntfs
+Encoding=UTF-8
+Exec=menuexec "scrounge-ntfs -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-05-forensic-carving-tools;
+Comment=Data recovery program for NTFS file systems
+X-Parrot-Package=scrounge-ntfs

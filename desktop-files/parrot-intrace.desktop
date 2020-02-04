@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=intrace
+Comment=Traceroute-like application that enables users to enumerate IP hops exploiting existing TCP connections
+Encoding=UTF-8
+Exec=menuexec "intrace"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-08-route-analysis;
+X-Parrot-Package=intrace

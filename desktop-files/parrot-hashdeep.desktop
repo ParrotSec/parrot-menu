@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=hashdeep
+Comment=Compute MD5, SHA1, SHA256, tiger and whirlpool hashsums of arbitrary number of files recursively
+Encoding=UTF-8
+Exec=menuexec "hashdeep -h"
+Icon=parrot-hashdeep.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-forensics;
+X-Parrot-Package=hashdeep

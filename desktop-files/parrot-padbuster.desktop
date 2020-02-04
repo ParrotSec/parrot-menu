@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=padbuster
+Comment=automating Padding Oracle Attacks: decrypt arbitrary ciphertext, encrypt arbitrary plaintext, and perform automated response analysis
+Encoding=UTF-8
+Exec=menuexec "padbuster"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-05-web-vulnerability-scanners;
+X-Parrot-Package=padbuster

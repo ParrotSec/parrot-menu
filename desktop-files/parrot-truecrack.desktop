@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=truecrack
+Encoding=UTF-8
+Exec=menuexec "truecrack -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-02-offline-attacks;
+Comment=Brute-force password cracker for TrueCrypt (Copyright) volumes
+X-Parrot-Package=truecrack

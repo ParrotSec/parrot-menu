@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=crunch
+Comment=Password generator from charsets
+Encoding=UTF-8
+Exec=menuexec "crunch"
+Icon=parrot-crunch.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-05-profile;
+X-Parrot-Package=crunch

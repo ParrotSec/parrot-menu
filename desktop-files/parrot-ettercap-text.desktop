@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=ettercap-text
+Comment=Network sniffing tool
+Encoding=UTF-8
+Exec=menuexec "ettercap -h"
+Icon=parrot-ettercap.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-sniffing-spoofing;
+X-Parrot-Package=ettercap-text-only

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=udsim
+Comment=A graphical simulator that can emulate different modules in a vehicle and respond to UDS request
+Encoding=UTF-8
+Exec=sh -c "echo 'SocketCAN tools';echo;echo;cd /opt/car-hacking/UDSim;ls --color;bash"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=13-automotive
+X-Parrot-Package=kayak

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=inverse_lookup6
+Comment=Performs an inverse address query
+Encoding=UTF-8
+Exec=menuexec atk6-inverse_lookup6 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-02-identify-live-hosts;04-07-ipv6
+X-Parrot-Package=thc-ipv6

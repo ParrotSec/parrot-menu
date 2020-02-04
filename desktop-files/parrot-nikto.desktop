@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=nikto
+Comment=Web server and CGI scanner
+Encoding=UTF-8
+Exec=menuexec "nikto -h"
+Icon=parrot-nikto.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-05-web-vulnerability-scanners
+X-Parrot-Package=nikto

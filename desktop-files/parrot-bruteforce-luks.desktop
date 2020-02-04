@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Bruteforce LUKS
+Encoding=UTF-8
+Exec=menuexec "bruteforce-luks -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-03-local-attacks;
+Comment=Bruteforce a password for encrypted LUKS volume
+X-Parrot-Package=bruteforce-luks

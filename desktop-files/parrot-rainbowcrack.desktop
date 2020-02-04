@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=rainbowcrack
+Encoding=UTF-8
+Exec=menuexec "rcrack"
+Icon=parrot-rainbowcrack.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-02-offline-attacks;
+Comment=Generate rainbow table and crack dumped hashes
+X-Parrot-Package=rainbowcrack

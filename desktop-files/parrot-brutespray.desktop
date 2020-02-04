@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=brutespray
+Comment=Takes nmap GNMAP/XML output and automatically brute-forces with default credentials using Medusa
+Encoding=UTF-8
+Exec=menuexec "brutespray"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-01-online-attacks;
+X-Parrot-Package=brutespray

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=passive_discovery6
+Comment=Passively sniffs the network and dump all client’s IPv6 addresses
+Encoding=UTF-8
+Exec=menuexec atk6-passive_discovery6 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-02-identify-live-hosts;04-07-ipv6
+X-Parrot-Package=thc-ipv6

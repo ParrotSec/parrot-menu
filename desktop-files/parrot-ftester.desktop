@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=ftest
+Comment=Testing firewall filtering policies and Intrusion Detection System (IDS) capabilities
+Encoding=UTF-8
+Exec=menuexec "ftest"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-03-ids-ips-identification;
+X-Parrot-Package=ftester

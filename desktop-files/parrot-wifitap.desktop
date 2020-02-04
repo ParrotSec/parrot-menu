@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=wifitap
+Encoding=UTF-8
+Exec=menuexec "wifitap -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-01-wireless-tools;
+Comment=tool allowing WiFi communications using traffic injection.
+X-Parrot-Package=wifitap

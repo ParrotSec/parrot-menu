@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=wifiping
+Encoding=UTF-8
+Exec=menuexec "wifiping -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-01-wireless-tools;
+Comment=WiFi injection/answering tool
+X-Parrot-Package=wifitap

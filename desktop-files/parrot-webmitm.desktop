@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=webmitm
+Encoding=UTF-8
+Exec=menuexec webmitm -h 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-01-network-sniffers
+Comment=HTTP / HTTPS monkey-in-the-middle
+X-Parrot-Package=dsniff

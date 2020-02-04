@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=eyewitness
+Comment=Take screenshots of websites
+Encoding=UTF-8
+Exec=menuexec "eyewitness -h"
+Icon=parrot-eyewitness.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=12-reporting;
+X-Parrot-Package=eyewitness

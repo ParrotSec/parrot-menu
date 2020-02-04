@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=clang++
+Comment=Compiler for C++ language
+Encoding=UTF-8
+Exec=menuexec "clang++ --help"
+Icon=parrot-clang.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-reverseengineer;
+X-Parrot-Package=clang

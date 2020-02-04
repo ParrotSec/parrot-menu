@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=modes_gui
+Comment=Gnuradio Mode-S/ADS-B radio
+Encoding=UTF-8
+Exec=menuexecg "modes_gui"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=06-05-radio-tools;
+X-Parrot-Package=gr-air-modes

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=airtun-ng
+Comment=Virtual tunnel interface creator
+Encoding=UTF-8
+Exec=menuexec "airtun-ng --help"
+Icon=parrot-aircrack.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-01-wireless-tools;
+X-Parrot-Package=aircrack-ng

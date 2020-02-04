@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=afl
+Comment=Application fuzzer
+Encoding=UTF-8
+Exec=menuexec afl-fuzz -h
+Icon=parrot-afl.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-02-fuzzers;
+X-Parrot-Package=afl

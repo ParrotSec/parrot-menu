@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=img_cat
+Comment=Output contents of an image file
+Encoding=UTF-8
+Exec=menuexec "img_cat"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-08-forensic-suites;
+X-Parrot-Package=sleuthkit

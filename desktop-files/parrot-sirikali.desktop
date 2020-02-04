@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=SiriKali
+GenericName=Encrypted Folder Manager
+Comment=A Qt/C++ GUI front end to cryfs,gocryptfs,securefs and encfs.
+Icon=sirikali
+Exec=/usr/bin/sirikali -d %U
+Terminal=false
+StartupNotify=true
+Categories=cryptography
+Keywords=volumes;encrypting;encrypt;security;cryfs;gocryptfs;securefs;encfs
+X-Parrot-Package=sirikali

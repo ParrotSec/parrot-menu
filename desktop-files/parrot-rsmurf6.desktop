@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=rsmurf6
+Encoding=UTF-8
+Exec=menuexec atk6-rsmurf6 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-07-stress-testing;04-07-ipv6
+Comment=Smurfs the local network of the victim
+X-Parrot-Package=thc-ipv6

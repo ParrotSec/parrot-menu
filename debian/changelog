@@ -1,0 +1,311 @@
+parrot-menu (2:2019.09.12) rolling; urgency=medium
+
+  * Import new menu improvements from git (thanks dm, we all love you).
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 12 Sep 2019 12:31:10 +0200
+
+parrot-menu (2:2019.08.19) rolling; urgency=medium
+
+  * Refactor menu structure.
+
+ -- DM Knght <dmknght@parrotsec.org>  Mon, 19 Aug 2019 12:55:14 +0200
+
+parrot-menu (2:2019.07.18) rolling-testing; urgency=medium
+
+  * Remove old perl scripts.
+  * Fix bug in cryptography submenu in kde edition.
+  * Add Sandbox category.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 18 Jul 2019 15:36:44 +0200
+
+parrot-menu (2:2019.06.19) testing; urgency=medium
+
+  * Remove mimikatz wrapper, now provided by its package.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 19 Jun 2019 15:31:27 +0200
+
+parrot-menu (2:2019.06.17) testing; urgency=medium
+
+  * Fix testssl launcher.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 17 Jun 2019 23:31:25 +0200
+
+parrot-menu (2:2019.06.15) testing; urgency=medium
+
+  * Update daemon launchers.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 15 Jun 2019 16:56:08 +0200
+
+parrot-menu (2:2019.06.06.1) testing; urgency=medium
+
+  * Rebuild package.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 06 Jun 2019 22:36:07 +0200
+
+parrot-menu (2:2019.06.06) testing; urgency=medium
+
+  * Add new tool launchers.
+  * Update some launchers.
+  * Update service launchers to not open a terminal window.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 06 Jun 2019 18:38:28 +0200
+
+parrot-menu (2:2019.05.20) testing; urgency=medium
+
+  * Update (and fix) new golang launcher updater.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 19 May 2019 23:35:32 +0200
+
+parrot-menu (2:2019.05.19) testing; urgency=medium
+
+  * Rewrite the menu lanucher updater in golang.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 19 May 2019 19:53:27 +0200
+
+parrot-menu (2:2019.04.10) testing; urgency=medium
+
+  * Update airgeddon launcher.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 10 Apr 2019 00:39:53 +0200
+
+parrot-menu (2:2019.01.31) testing; urgency=medium
+
+  * Add snap applications.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 31 Jan 2019 18:00:59 +0100
+
+parrot-menu (2:2018.09.19) testing; urgency=medium
+
+  * Add applications-merged support.
+  * Fix typo in wordlists wrapper.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 19 Sep 2018 14:44:17 +0200
+
+parrot-menu (2:2018.06.03) testing; urgency=medium
+
+  * Fix burpsuite launcher.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 03 Jun 2018 14:04:08 +0200
+
+parrot-menu (2:2018.05.30) testing; urgency=medium
+
+  * Add xhydra launcher.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 30 May 2018 22:28:35 +0200
+
+parrot-menu (2:2018.05.11) testing; urgency=medium
+
+  * Replace apache2 with nginx.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 11 May 2018 04:10:42 +0200
+
+parrot-menu (2:2018.04.27) testing; urgency=medium
+
+  * Clean redundant launchers.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 26 Apr 2018 23:12:27 +0200
+
+parrot-menu (2:2018.04.26) testing; urgency=medium
+
+  * Add gksu dependency (nope, we don't want to drop it).
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 26 Apr 2018 02:02:40 +0200
+
+parrot-menu (2:2018.03.30) testing; urgency=medium
+
+  * Use gksudo instead of gksu in menuexecg.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 30 Mar 2018 14:18:59 +0200
+
+parrot-menu (2:2018.01.21) testing; urgency=medium
+
+  * Change anonsurf icon.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 21 Jan 2018 17:58:35 +0100
+
+parrot-menu (2:2018.01.19.2) testing; urgency=medium
+
+  * Rebuild package.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 19 Jan 2018 01:05:26 +0100
+
+parrot-menu (2:2018.01.19.1) testing; urgency=medium
+
+  * Change can-tools to can-utils.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 19 Jan 2018 00:50:45 +0100
+
+parrot-menu (2:2018.01.19) testing; urgency=medium
+
+  * Add icons to automotive launchers.
+  * Fix udsim and caringcaribou launchers.
+  * Fix Can Tools submenu.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 19 Jan 2018 00:23:11 +0100
+
+parrot-menu (2:2018.01.17) testing; urgency=medium
+
+  * Add automotive category.
+  * Add can-utils launcher.
+  * Add canbus-triple launcher.
+  * Add caring-caribou launcher.
+  * Add udsim launcher.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 17 Jan 2018 15:15:56 +0100
+
+parrot-menu (2:2017.12.26) testing; urgency=medium
+
+  * Fix wireshark launcher.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 26 Dec 2017 14:02:01 +0100
+
+parrot-menu (2:2017.12.11) testing; urgency=medium
+
+  * Update maltego/casefile launchers.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 11 Dec 2017 15:01:25 +0100
+
+parrot-menu (2:2017.12.08) testing; urgency=medium
+
+  * Fix zulucrypt launchers.
+  * Add etherape launcher.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 08 Dec 2017 00:00:43 +0100
+
+parrot-menu (2:2017.10.2) testing; urgency=medium
+
+  * Remove duplicated cryptography menu.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 19 Oct 2017 12:27:05 +0200
+
+parrot-menu (2:2017.10.1) testing; urgency=medium
+
+  * Switch back to gksu.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 01 Oct 2017 17:55:34 +0200
+
+parrot-menu (2017.9.26) testing; urgency=medium
+
+  * Add new launchers.
+  * use pkexec instead of gksu.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 26 Sep 2017 18:20:05 +0200
+
+parrot-menu (2017.09.02) testing; urgency=medium
+
+  * Import pull request from Christopher Ngo.
+    - https://dev.parrotsec.org/parrot/parrot-menu/commit/dfbf1ee1ef74f8f49156afd628360ae2606efefc
+  * Fix all remaining broken thc-ipv6 launchers.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 02 Sep 2017 12:26:49 +0200
+
+parrot-menu (2017.05.28) testing; urgency=medium
+
+  * Add airgeddon launcher.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 28 May 2017 22:02:29 +0200
+
+parrot-menu (2017.05.09) testing; urgency=medium
+
+  * Remove missing exploit6 launcher.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 09 May 2017 00:05:27 +0200
+
+parrot-menu (2017.04.19) testing; urgency=medium
+
+  * Add apktool launcher.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 19 Apr 2017 23:29:41 +0200
+
+parrot-menu (2017.02.24+p3) testing; urgency=medium
+
+  * Fix maltego launcher
+  * Do not open terminal for armitage
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 17 Mar 2017 10:09:11 +0100
+
+parrot-menu (2017.02.24+p2) testing; urgency=medium
+
+  * Add cryptkeeper launcher
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 24 Feb 2017 00:31:56 +0100
+
+parrot-menu (2017.02.24+p1) testing; urgency=medium
+
+  * Add sirikali
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 23 Feb 2017 23:35:35 +0100
+
+parrot-menu (2017.02.24) testing; urgency=medium
+
+  * Fix volatility launcher
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 23 Feb 2017 22:39:47 +0100
+
+parrot-menu (2017.02.23) testing; urgency=medium
+
+  * Add Postgresql menu category and launchers
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 23 Feb 2017 20:31:24 +0100
+
+parrot-menu (2016.12.29) testing; urgency=medium
+
+  * Add quickhash launcher
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 29 Dec 2016 19:02:57 +0100
+
+parrot-menu (2016.12.27) testing; urgency=medium
+
+  * add zulucrypt custom launcher
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 27 Dec 2016 20:33:44 +0100
+
+parrot-menu (2016.10.13) testing; urgency=medium
+
+  * Fix menu launchers (thanks to Darix Deros)
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 13 Oct 2016 17:04:43 +0200
+
+parrot-menu (2016.10.08) testing; urgency=medium
+
+  * Fix aircrack launchers
+  * Make menuexec fail-tolerant
+  * Implement notify_send in menuexecg
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 08 Oct 2016 01:09:16 +0200
+
+parrot-menu (2016.9.11) testing; urgency=medium
+
+  * Add full aircrack support
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 11 Sep 2016 23:09:55 +0200
+
+parrot-menu (2016.7.26) testing; urgency=medium
+
+  * Fix armitage launcher
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 26 Jul 2016 07:31:49 +0200
+
+parrot-menu (2016.7.24.3) testing; urgency=medium
+
+  * Fix parrot menu icon
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 24 Jul 2016 19:06:14 +0200
+
+parrot-menu (2016.7.24.2) testing; urgency=medium
+
+  * Add metasploit start binaries
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 24 Jul 2016 15:29:30 +0200
+
+parrot-menu (2016.7.24.1) testing; urgency=medium
+
+  * Prevent conflicts with mate-menus
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 24 Jul 2016 09:19:28 +0200
+
+parrot-menu (2016.7.24) testing; urgency=medium
+
+  * Debianize source code and update launchers
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 24 Jul 2016 03:19:53 +0200

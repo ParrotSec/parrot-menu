@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=aircrack-ng
+Comment=802.11 WEP and WPA/WPA2-PSK key cracking program
+Encoding=UTF-8
+Exec=menuexec "aircrack-ng --help"
+Icon=parrot-aircrack.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-01-wireless-tools;06-wireless-attacks;top10;
+X-Parrot-Package=aircrack-ng

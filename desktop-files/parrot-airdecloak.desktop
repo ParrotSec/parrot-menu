@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=airdecloak-ng
+Comment=Remove wep cloaking from a pcap file
+Encoding=UTF-8
+Exec=menuexec "airdecloak-ng --help"
+Icon=parrot-aircrack.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-01-wireless-tools;
+X-Parrot-Package=aircrack-ng

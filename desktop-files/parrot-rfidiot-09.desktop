@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=brute force hitag2
+Encoding=UTF-8
+Exec=menuexec hitag2brute.py -R RFIDIOt.rfidiot.READER_ACG -l /dev/ttyUSB0 -s 9600 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-03-rfid-nfc-tools;
+Comment=Attempt to login to Hitag2 password protected TAG with random passwords.
+X-Parrot-Package=python-rfidiot

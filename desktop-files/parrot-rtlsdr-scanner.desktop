@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=rtlsdr-scanner
+Encoding=UTF-8
+Exec=menuexecg "rtlsdr-scanner"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=06-05-radio-tools;
+Comment=A cross platform Python frequency scanning GUI for USB TV dongles
+X-Parrot-Package=rtlsdr-scanner

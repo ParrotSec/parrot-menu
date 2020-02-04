@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=calculate jcop mifare keys
+Encoding=UTF-8
+Exec=menuexec mifarekeys.py -R RFIDIOt.rfidiot.READER_ACG -l /dev/ttyUSB0 -s 9600 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-03-rfid-nfc-tools;
+Comment=Calculate 3DES keys for access to Mifare sectors on JCOP cards running Mifare access applet  (jcop_mifare_access.cap).
+X-Parrot-Package=python-rfidiot

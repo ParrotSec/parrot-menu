@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=king phisher server
+Comment=Simulating real world phishing attacks
+Encoding=UTF-8
+Exec=menuexec "king-phisher-server"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=06-wireless-attacks;04-02-social-engineering;
+X-Parrot-Package=king-phisher

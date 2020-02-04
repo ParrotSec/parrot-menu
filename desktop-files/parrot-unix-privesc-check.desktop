@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=unix-privesc-check
+Encoding=UTF-8
+Exec=menuexec "unix-privesc-check"
+Icon=parrot-unix-privesc-check.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-vulnerability-analysis;
+Comment=Script checking for file permission and settings to avoid local user to escalate privileges
+X-Parrot-Package=unix-privesc-check

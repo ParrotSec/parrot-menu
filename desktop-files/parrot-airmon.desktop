@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=airmon-ng
+Comment=(Enable | Disable) monitor mode on wireless interfaces
+Encoding=UTF-8
+Exec=menuexec "airmon-ng -h"
+Icon=parrot-aircrack.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-01-wireless-tools;
+X-Parrot-Package=aircrack-ng

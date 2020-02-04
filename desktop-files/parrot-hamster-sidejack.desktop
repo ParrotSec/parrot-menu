@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=hamster
+Comment=Hijack victim cookies using Ferret program
+Encoding=UTF-8
+Exec=menuexec "hamster"
+Icon=parrot-hamster.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-sniffing-spoofing;
+X-Parrot-Package=hamster-sidejack

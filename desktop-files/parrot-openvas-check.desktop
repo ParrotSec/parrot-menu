@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=openvas check setup
+Comment=Verify OpenVas installation
+Encoding=UTF-8
+Exec=menuexec "openvas-check-setup"
+Icon=parrot-OpenVas.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=14-11-openvas-service;02-06-openvas;
+X-Parrot-Package=openvas

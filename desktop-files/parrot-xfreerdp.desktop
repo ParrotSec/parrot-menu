@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=pth-xfreerdp
+Encoding=UTF-8
+Exec=menuexec "xfreerdp"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=08-03-pth
+Comment=FreeRDP X11 client
+X-Parrot-Package=xfreerdp

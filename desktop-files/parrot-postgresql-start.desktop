@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=postgresql start
+Comment=Start postgresql database service
+Encoding=UTF-8
+Exec=/usr/sbin/service postgresql start
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=14-05-postgresql;
+X-Parrot-Package=postgresql

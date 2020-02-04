@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=mysql/mariadb start
+Comment=Start mysql / mariadb database service
+Encoding=UTF-8
+Exec=/usr/sbin/service mysql start
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=14-03-mysqld;
+X-Parrot-Package=mariadb-server

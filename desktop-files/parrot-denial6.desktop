@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=denial6
+Comment=IPv6 Denial of Service
+Encoding=UTF-8
+Exec=menuexec atk6-denial6 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-07-stress-testing;04-07-ipv6
+X-Parrot-Package=thc-ipv6

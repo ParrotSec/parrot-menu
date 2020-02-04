@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=t50
+Encoding=UTF-8
+Exec=menuexec "t50 --help"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-07-stress-testing;
+Comment=Network packet injector
+X-Parrot-Package=t50

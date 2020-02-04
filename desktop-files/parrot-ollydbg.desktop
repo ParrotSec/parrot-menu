@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=ollydbg
+Comment=32-bit assembler level analysing debugger for Microsoft Windows
+Encoding=UTF-8
+Exec=menuexecg "ollydbg"
+Icon=parrot-ollydbg.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=07-02-debuggers;
+X-Parrot-Package=ollydbg

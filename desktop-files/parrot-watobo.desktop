@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=watobo
+Encoding=UTF-8
+Exec=menuexecg "watobo"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=03-05-web-vulnerability-scanners;03-04-web-crawlers;
+Comment=Web application security audits
+X-Parrot-Package=watobo

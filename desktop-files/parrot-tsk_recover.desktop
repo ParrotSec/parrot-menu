@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=tsk_recover
+Encoding=UTF-8
+Exec=menuexec "tsk_recover"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-08-forensic-suites;
+Comment=Export files from an image into a local directory
+X-Parrot-Package=sleuthkit

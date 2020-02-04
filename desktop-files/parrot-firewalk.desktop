@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=firewalk
+Comment=Reconnaissance network security tool that attempts to determine what layer 4 protocols a given IP forwarding device will pass
+Encoding=UTF-8
+Exec=menuexec "firewalk"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-03-ids-ips-identification;
+X-Parrot-Package=firewalk

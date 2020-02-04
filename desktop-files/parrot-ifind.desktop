@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=ifind
+Comment=Find the meta-data structure that has allocated a given disk unit or file name
+Encoding=UTF-8
+Exec=menuexec "ifind"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-08-forensic-suites;
+X-Parrot-Package=sleuthkit

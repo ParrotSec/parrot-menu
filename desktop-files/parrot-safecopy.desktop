@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=safecopy
+Encoding=UTF-8
+Exec=menuexec "safecopy -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-05-forensic-carving-tools;
+Comment=Rescue data from a source that causes IO errors
+X-Parrot-Package=safecopy

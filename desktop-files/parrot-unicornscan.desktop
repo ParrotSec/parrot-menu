@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=unicornscan
+Comment=Port scanner with superior interface for measuring TCP/IP response
+Encoding=UTF-8
+Exec=menuexec "us -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-04-network-scanners;
+X-Parrot-Package=unicornscan
