@@ -1,3 +1,13 @@
+parrot-menu (2:2020.02.15) testing; urgency=medium
+
+  * Create Privacy menu. It has anonsurf and cryptography
+  * Add mat2 launcher to privacy
+  * Fix icon of categories missing for other themes
+  * Correct categories of some launchers
+  * Upgrade menu updater. Now it update changed launchers
+
+ -- Nong Hoang Tu  <dmknght@parrotsec.org>  Wed, 05 Feb 2020 23:10:59 +0700
+
 parrot-menu (2:2019.09.12) rolling; urgency=medium
 
   * Import new menu improvements from git (thanks dm, we all love you).
