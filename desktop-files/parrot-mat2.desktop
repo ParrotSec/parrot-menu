@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=mat2
+Comment=Remove metadata in documentation for data products
+Exec=man mat2
+Terminal=true
+Type=Application
+Version=1.0
+Categories=privacy;
+X-Parrot-Package=mat2
+Icon=parrot-menu.png
