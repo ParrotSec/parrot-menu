@@ -8,4 +8,5 @@ desktop-files/*.desktop usr/share/parrot-menu/applications/
 apt.conf.d/99parrot-menu etc/apt/apt.conf.d/
 update-launchers usr/share/parrot-menu/
 menu-icons/* usr/share/icons/
+categories-icons/* usr/share/icons/
 dconf/parrot-menu etc/dconf/db/local.d/
