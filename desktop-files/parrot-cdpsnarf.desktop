@@ -7,5 +7,5 @@ Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=09-01-network-sniffers
+Categories=01-02-identify-live-hosts;
 X-Parrot-Package=cdpsnarf
