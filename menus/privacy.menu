@@ -4,8 +4,8 @@
 	<Name>Parrot Privacy Applications</Name>
 	<!-- parrot submenu for privacy tools -->
 	<Layout>
-		<Menuname>• Anon Surf</Menuname>
-        <Menuname>• Privacy</Menuname>
+		<Menuname>Anon Surf</Menuname>
+		<Menuname>Privacy</Menuname>
 		<Merge type="all"/>
 	</Layout>
 	<Menu>
