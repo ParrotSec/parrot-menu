@@ -11,22 +11,22 @@
 		<Separator> </Separator>
 		<Menuname>Information Gathering</Menuname>
 		<Menuname>Vulnerability Analysis</Menuname>
-        <Menuname>Web Application Analysis</Menuname>
-        <Separator> </Separator>
-        <Menuname>Exploit Frameworks</Menuname>
-        <Menuname>Maintaining Access</Menuname>
-        <Menuname>Post Exploitation</Menuname>
-        <Menuname>Password Attacks</Menuname>
-        <Separator> </Separator>
-        <Menuname>Wireless Attacks</Menuname>
-        <Menuname>Sniffing - Spoofing</Menuname>
-        <Separator> </Separator>
-        <Menuname>Forensic Tools</Menuname>
-        <Menuname>Automotive</Menuname>
-        <Menuname>Reverse Engineering</Menuname>
-        <Separator> </Separator>
-        <Menuname>Reporting Tools</Menuname>
-        <Menuname>System Services</Menuname>
+    <Menuname>Web Application Analysis</Menuname>
+    <Separator> </Separator>
+    <Menuname>Exploit Frameworks</Menuname>
+    <Menuname>Maintaining Access</Menuname>
+    <Menuname>Post Exploitation</Menuname>
+    <Menuname>Password Attacks</Menuname>
+    <Separator> </Separator>
+    <Menuname>Wireless Attacks</Menuname>
+    <Menuname>Sniffing - Spoofing</Menuname>
+    <Separator> </Separator>
+    <Menuname>Forensic Tools</Menuname>
+    <Menuname>Automotive</Menuname>
+    <Menuname>Reverse Engineering</Menuname>
+    <Separator> </Separator>
+    <Menuname>Reporting Tools</Menuname>
+    <Menuname>System Services</Menuname>
 		<Merge type="all"/>
 	</Layout>
 
