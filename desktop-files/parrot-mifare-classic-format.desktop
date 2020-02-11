@@ -8,4 +8,4 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=06-03-rfid-nfc-tools;
-X-Parrot-package=libfreefare-bin
+X-Parrot-Package=libfreefare-bin
