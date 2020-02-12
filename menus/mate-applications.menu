@@ -2,9 +2,28 @@
  "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
 
 <Menu>
-
   <Name>Applications</Name>
   <Directory>mate-menu-applications.directory</Directory>
+  <Layout>
+    <Menuname>Privacy</Menuname>
+    <Menuname>Sandbox</Menuname>
+    <Separator/>
+    <Menuname>Education</Menuname>
+    <Menuname>Office</Menuname>
+    <Separator/>
+    <Menuname>Internet</Menuname>
+    <Menuname>Graphics</Menuname>
+    <Menuname>Multimedia</Menuname>
+    <Separator/>
+    <Menuname>Parrot Security</Menuname>
+    <Menuname>Development</Menuname>
+    <Menuname>System</Menuname>
+    <Separator/>
+    <Menuname>Accessories</Menuname>
+    <Menuname>Universal Access</Menuname>
+    <Menuname>Other</Menuname>
+    <Merge type="all"/>
+  </Layout>
 
   <!-- Scan legacy dirs first, as later items take priority -->
   <KDELegacyDirs/>
@@ -19,6 +38,11 @@
   <!-- Read in overrides and child menus from applications-merged/ -->
   <DefaultMergeDirs/>
   <MergeDir>applications-merged</MergeDir>
+
+  <!-- Parrot security tools -->
+  <MergeFile type="path">applications-merged/privacy.menu</MergeFile>
+  <MergeFile type="path">applications-merged/sandbox.menu</MergeFile>
+  <MergeFile type="path">applications-merged/parrot-applications.menu</MergeFile>
 
   <!-- Accessories submenu -->
   <Menu>
@@ -104,12 +128,6 @@
       </And>
     </Include>
   </Menu>   <!-- End Internet -->
-
-
-  <!-- Parrot security tools -->
-  <MergeFile type="path">applications-merged/parrot-applications.menu</MergeFile>
-  <MergeFile type="path">applications-merged/privacy.menu</MergeFile>
-  <MergeFile type="path">applications-merged/sandbox.menu</MergeFile>
 
   <!-- Multimedia -->
   <Menu>
