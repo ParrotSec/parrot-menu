@@ -40,7 +40,8 @@ proc update_launchers() =
     try:
       let finalDestPath = dirLaucherDest & splitPath(path).tail
       # If the package is installed
-      if contains(installed, re("(^|\\n)" & aptParrotPackage & "($|\\n)")): # Check for exact string match in a line
+      # Check if package name is in installed list. The name matches a line exactly
+      if contains(installed, re("(^|\\n)" & aptParrotPackage & "($|\\n)")):
         # Check if file is not in the final directory
         if not fileExists(finalDestPath):
           # Update new launcher
