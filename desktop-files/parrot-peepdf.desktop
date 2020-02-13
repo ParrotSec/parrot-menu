@@ -8,4 +8,4 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=11-11-pdf-forensics-tools;
-X-Parrot-Package=peepdf
+X-Parrot-Package=python-peepdf
