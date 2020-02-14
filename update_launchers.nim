@@ -13,7 +13,7 @@ proc update_launchers() =
   const
     # Path must have / at the end of string or it makes error
     dirLauncherSource = "/usr/share/parrot-menu/applications/"
-    dirLaucherDest = "/usr/share/applications/" # /usr/share/applications/
+    dirLaucherDest = "/usr/share/applications/"
   # Get all installed packages
   let installed = execProcess("apt list --installed | cut -d '/' -f 1")
 
