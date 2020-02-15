@@ -1,3 +1,9 @@
+parrot-menu (2:2020.02.16) testing; urgency=medium
+
+  * Update update-launcher script: use function instead of global
+
+ -- Nong Hoang Tu  <dmknght@parrotsec.org>  Sat, 15 Feb 2020 16:34:18 +0700
+
 parrot-menu (2:2020.02.15) testing; urgency=medium
 
   * Create Privacy menu. It has anonsurf and cryptography
