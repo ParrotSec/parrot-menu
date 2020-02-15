@@ -1,2 +1,2 @@
 install:
-	nim c -o:update-launchers update_launchers.nim
+	nim c -d:release -o:update-launchers update_launchers.nim
