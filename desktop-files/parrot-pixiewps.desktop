@@ -7,5 +7,5 @@ Icon=parrot-pixiewps.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=06-wireless-attacks;
+Categories=06-wireless-attacks;05-02-offline-attacks;
 X-Parrot-Package=pixiewps
