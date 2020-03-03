@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=pixiewps
-Comment=Bruteforce offline the WPS pin exploiting the low or non-existing entropy (pixie dust attack)
+Comment=Bruteforce offline the WPS PIN exploiting the low or non-existing entropy (pixie dust attack)
 Encoding=UTF-8
 Exec=menuexec "pixiewps -h"
 Icon=parrot-pixiewps.png
