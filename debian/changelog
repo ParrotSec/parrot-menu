@@ -2,6 +2,7 @@ parrot-menu (2:2020.02.17) rolling-testing; urgency=medium
 
   * Add icon for pentesting, sandbox, privacy
   * Add pixie wps launcher to password offline attack
+  * Fix menu layout doesn't work
 
  -- Nong Hoang Tu  <dmknght@parrotsec.org>  Wed, 04 Mar 2020 04:12:57 +0700
 
