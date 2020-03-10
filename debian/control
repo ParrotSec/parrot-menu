@@ -2,7 +2,8 @@ Source: parrot-menu
 Section: parrot
 Priority: optional
 Maintainer: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
-Build-Depends: debhelper, nim
+Build-Depends: debhelper-compat (=12),
+               nim,
 Standards-Version: 3.8.4
 
 Package: parrot-menu
