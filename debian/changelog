@@ -1,3 +1,9 @@
+parrot-menu (2:2020.03.10) rolling-testing; urgency=medium
+
+  * Import new menu layout from dmknght.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 10 Mar 2020 10:21:53 +0100
+
 parrot-menu (2:2019.09.12) rolling; urgency=medium
 
   * Import new menu improvements from git (thanks dm, we all love you).
