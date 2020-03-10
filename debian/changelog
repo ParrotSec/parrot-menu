@@ -1,5 +1,19 @@
 parrot-menu (2:2020.02.17) rolling-testing; urgency=medium
 
+  [ dmknght ]
+  * Add game category to layout
+  * Use new version of privacy icon
+  * Update new copyright (deb standard)
+
+  [ Vangelis Mouhtsis ]
+  * debian/control: debian/{compat,control}: Use debhelper-compat notation. Bump to DH compat level version 12.
+  * debian/control: Bump Standards-Version: to 4.5.0. No changes needed.
+  * debian/control: Add myself to Uploaders: field.
+
+ -- Vangelis Mouhtsis <vangelis@gnugr.org>  Tue, 10 Mar 2020 14:19:57 +0200
+
+parrot-menu (2:2020.02.17) rolling-testing; urgency=medium
+
   * Add icon for pentesting, sandbox, privacy
   * Add pixie wps launcher to password offline attack
   * Fix menu layout doesn't work
