@@ -2,6 +2,7 @@ Source: parrot-menu
 Section: parrot
 Priority: optional
 Maintainer: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
+Uploaders: Vangelis Mouhtsis <gnugr@parrotsec.org>,
 Build-Depends: debhelper-compat (=12),
                nim,
 Standards-Version: 4.5.0
