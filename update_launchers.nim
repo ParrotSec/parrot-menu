@@ -54,7 +54,7 @@ proc update_launchers() =
         else:
           # Compare files and update launcher or discard
           # if readFile(path) != readFile(finalDestPath):
-          if not sameFile(path, finalDestPath):
+          if not sameFileContent(path, finalDestPath):
             try:
               copyFile(path, finalDestPath)
             except:
