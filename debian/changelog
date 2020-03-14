@@ -1,3 +1,9 @@
+parrot-menu (2:2020.03.14) rolling-testing; urgency=medium
+
+  * Use sameFile to compare 2 files instead of return of readFile
+
+ -- Nong Hoang Tu <dmknght@parrotsec.org>  Sat, 14 Mar 2020 21:41:37 +0700
+
 parrot-menu (2:2020.02.17) rolling-testing; urgency=medium
 
   [ dmknght ]
