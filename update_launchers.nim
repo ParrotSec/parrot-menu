@@ -53,7 +53,8 @@ proc update_launchers() =
         # If it is in there, check to upgrade it
         else:
           # Compare files and update launcher or discard
-          if readFile(path) != readFile(finalDestPath):
+          # if readFile(path) != readFile(finalDestPath):
+          if not sameFile(path, finalDestPath):
             try:
               copyFile(path, finalDestPath)
             except:
