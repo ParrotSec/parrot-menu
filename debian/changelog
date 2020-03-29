@@ -1,3 +1,9 @@
+parrot-menu (2:2020.03.30) rolling; urgency=medium
+
+  * Fix wrong executable path in airgeddon
+
+ -- Nong Hoang Tu <dmknght@parrotsec.org>  Mon, 30 Mar 2020 03:05:06 +0700
+
 parrot-menu (2:2020.03.14) rolling-testing; urgency=medium
 
   * Use sameFileContent to compare 2 files instead of return of readFile
