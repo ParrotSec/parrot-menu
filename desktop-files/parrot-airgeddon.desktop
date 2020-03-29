@@ -2,7 +2,7 @@
 Name=airgeddon
 Comment=Audit wireless network toolkit
 Encoding=UTF-8
-Exec=menuexec "/usr/share/airgeddon/airgeddon.sh"
+Exec=menuexec "/usr/bin/airgeddon"
 Icon=parrot-airgeddon.png
 StartupNotify=false
 Terminal=true
