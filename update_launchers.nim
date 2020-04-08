@@ -9,6 +9,26 @@
 
 import os, osproc, strutils, re
 
+
+proc fixDebLaunchers() =
+  #[
+    There are packages from Debian that has custom launchers
+    It makes error after install pentest tools from Home Edition
+    or create duplicate launchers in menu.
+    We are removing them here
+  ]#
+  let blacklistLauncherName = [
+    "org.radare2.Cutter.desktop",
+    "gpa.desktop",
+    "rtlsdr-scanner.desktop",
+    "gnuradio-grc.desktop",
+  ]
+  for fileName in blacklistLauncherName:
+    let finalPath = "/usr/share/applications/" & fileName
+    if fileExists(finalPath):
+      removeFile(finalPath)
+
+
 proc update_launchers() =
   const
     # Path must have / at the end of string or it makes error
@@ -72,4 +92,6 @@ proc update_launchers() =
 
 echo "Scanning application launchers"
 update_launchers()
+echo "Removing duplicate launchers from Debian"
+fixDebLaunchers()
 echo "Launchers are updated"
