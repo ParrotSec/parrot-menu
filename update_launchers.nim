@@ -5,6 +5,7 @@
 #   3.
 #     a. If it is not in the list -> Remove it in destination folder
 #     b. If it is in the list -> copy it to dest folder if it doesnt exists
+#   4. Fix duplicate launchers
 # Remove old launchers that removed or uninstalled
 
 import os, osproc, strutils, re
@@ -26,7 +27,8 @@ proc fixDebLaunchers() =
   for fileName in blacklistLauncherName:
     let finalPath = "/usr/share/applications/" & fileName
     if fileExists(finalPath):
-      removeFile(finalPath)
+      if not tryRemoveFile(finalPath):
+        stderr.write("[x] Error while removing " & finalPath & "\n")
 
 
 proc update_launchers() =
@@ -48,7 +50,7 @@ proc update_launchers() =
     except IndexError:
       aptParrotPackage = findAll(fileData, re("Name=(\\S+)"))[0].split("=")[1].toLower() # TODO packages may have Upper char?
     except:
-      echo "[ERROR] Error while getting package name from " & path
+      stderr.write("[x] Error while getting package name from " & path & "\n")
 
     #[
       1. Case 1: if the package is installed but
@@ -69,7 +71,7 @@ proc update_launchers() =
             # If file does not exists in dest folder, copy it
             copyFile(path, finalDestPath)
           except:
-            echo "[WARNING] Error while copying file " & path & " to " & finalDestPath
+            stderr.write("[x] Error while copying file " & path & " to " & finalDestPath & "\n")
         # If it is in there, check to upgrade it
         else:
           # Compare files and update launcher or discard
@@ -78,17 +80,14 @@ proc update_launchers() =
             try:
               copyFile(path, finalDestPath)
             except:
-              echo "[WARNING] Error while copying file " & path & " to " & finalDestPath
+              stderr.write("[x] Error while copying file " & path & " to " & finalDestPath & "\n")
       else:
-        try:
-          # If file is in dest folder -> remove
-          if fileExists(finalDestPath):
-            # Remove old launchers here
-            removeFile(finalDestPath)
-        except:
-          echo "[WARNING] Error while removing file " & finalDestPath
+        if fileExists(finalDestPath):
+          # Remove old launchers here
+          if not tryRemoveFile(finalDestPath):
+            stderr.write("[x] Error while processing " & path & "\n")
     except:
-      echo "[ERROR] Error while processing " & path
+      stderr.write("[x] Error while processing " & path & "\n")
 
 echo "Scanning application launchers"
 update_launchers()
