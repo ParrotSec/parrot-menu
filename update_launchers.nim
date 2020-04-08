@@ -80,7 +80,7 @@ proc update_launchers() =
             try:
               copyFile(path, finalDestPath)
             except:
-              stderr.write("[x] Error while copying file " & path & " to " & finalDestPath & "\n")
+              stderr.write("[x] Error while updating launcher " & path & " to " & finalDestPath & "\n")
       else:
         if fileExists(finalDestPath):
           # Remove old launchers here
