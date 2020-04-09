@@ -1,3 +1,17 @@
+parrot-menu (2:2020.04.09) rolling; urgency=medium
+
+  * Update launcher and broken menu for home edition:
+    Remove duplicate launchers for radare2-cutter gpa,
+    rtldsr-scanner, gnuradio-grc
+  * update launchers: use stderr for error msg, use different
+    error syntax
+  * update launchers: use tryRemoveFile instead of removeFile
+  * parrot-gnuradio: Fix icon. It uses gnuradio-grc icon instead of
+    parrot-menu
+  * gqrx: Correct package name in parrot launcher
+
+ -- Nong Hoang Tu <dmknght@parrotsec.org>  Thu, 09 Apr 2020 10:38:41 +0700
+
 parrot-menu (2:2020.03.30) rolling; urgency=medium
 
   * Fix wrong executable path in airgeddon
