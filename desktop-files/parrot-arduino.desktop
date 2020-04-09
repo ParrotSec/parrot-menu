@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Arduino IDE
+Exec=arduino
+Icon=arduino
+Terminal=false
+Categories=Development;Engineering;
+X-Parrot-Package=arduino

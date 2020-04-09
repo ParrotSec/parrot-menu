@@ -17,12 +17,16 @@ proc fixDebLaunchers() =
     It makes error after install pentest tools from Home Edition
     or create duplicate launchers in menu.
     We are removing them here
+    arduino is having launchers in both electronic and programming
+    chirp will be removed because of python2 removal problem
   ]#
   let blacklistLauncherName = [
     "org.radare2.Cutter.desktop",
     "gpa.desktop",
     "rtlsdr-scanner.desktop",
     "gnuradio-grc.desktop",
+    "arduino.desktop",
+    "gqrx.desktop",
   ]
   for fileName in blacklistLauncherName:
     let finalPath = "/usr/share/applications/" & fileName
