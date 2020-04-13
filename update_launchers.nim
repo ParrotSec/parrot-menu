@@ -30,7 +30,6 @@ proc fixDebLaunchers() =
   ]
   for fileName in blacklistLauncherName:
     let finalPath = "/usr/share/applications/" & fileName
-    echo "Trying " & finalPath
     if fileExists(finalPath):
       if not tryRemoveFile(finalPath):
         stderr.write("[x] Error while removing " & finalPath & "\n")
