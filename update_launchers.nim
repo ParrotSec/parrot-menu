@@ -21,7 +21,7 @@ proc fixDebLaunchers() =
     chirp will be removed because of python2 removal problem
   ]#
   let blacklistLauncherName = [
-    "org.radare2.Cutter.desktop",
+    "org.radare.Cutter.desktop",
     "gpa.desktop",
     "rtlsdr-scanner.desktop",
     "gnuradio-grc.desktop",
@@ -30,6 +30,7 @@ proc fixDebLaunchers() =
   ]
   for fileName in blacklistLauncherName:
     let finalPath = "/usr/share/applications/" & fileName
+    echo "Trying " & finalPath
     if fileExists(finalPath):
       if not tryRemoveFile(finalPath):
         stderr.write("[x] Error while removing " & finalPath & "\n")
