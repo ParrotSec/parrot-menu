@@ -12,12 +12,12 @@ import os, osproc, strutils, re
 
 
 proc fixDebLaunchers() =
+  # TODO for only security distro
   #[
     There are packages from Debian that has custom launchers
     It makes error after install pentest tools from Home Edition
     or create duplicate launchers in menu.
     We are removing them here
-    arduino is having launchers in both electronic and programming
     chirp will be removed because of python2 removal problem
   ]#
   let blacklistLauncherName = [
@@ -27,6 +27,13 @@ proc fixDebLaunchers() =
     "gnuradio-grc.desktop",
     "arduino.desktop",
     "gqrx.desktop",
+    "zulucrypt-gui.desktop",
+    "zulumount-gui.desktop",
+    "ophcrack.desktop",
+    "xsser.desktop",
+    "io.github.mhogomchungu.sirikali.desktop",
+    "etherape.desktop",
+    "edb.desktop",
   ]
   for fileName in blacklistLauncherName:
     let finalPath = "/usr/share/applications/" & fileName
