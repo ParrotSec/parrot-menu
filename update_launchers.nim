@@ -34,6 +34,7 @@ proc fixDebLaunchers() =
     "io.github.mhogomchungu.sirikali.desktop",
     "etherape.desktop",
     "edb.desktop",
+    "lynis.desktop",
   ]
   for fileName in blacklistLauncherName:
     let finalPath = "/usr/share/applications/" & fileName
