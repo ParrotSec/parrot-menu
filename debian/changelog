@@ -2,7 +2,7 @@ parrot-menu (2:2020.04.13) rolling; urgency=medium
 
   * parrot-xsser.desktop: fix icon
   * update_launchers: Add zulu*.desktop, ophcrack,xsser, sirikali
-    etherape, edb, lynis launchers to remove list
+    etherape, edb, lynis, wireshark, ettercap launchers to remove list
 
  -- Nong Hoang Tu <dmknght@parrotsec.org>  Mon, 13 Apr 2020 14:48:22 +0700
 
