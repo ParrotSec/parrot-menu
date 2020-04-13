@@ -2,7 +2,7 @@
 Name=xsser
 Encoding=UTF-8
 Exec=menuexec "xsser -h"
-Icon=parrot-menu.png
+Icon=/usr/share/xsser/gtk/images/xssericon_24x24.png
 StartupNotify=false
 Terminal=true
 Type=Application
