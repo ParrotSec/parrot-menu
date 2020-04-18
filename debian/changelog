@@ -1,3 +1,9 @@
+parrot-menu (2:2020.04.19) rolling; urgency=medium
+
+  * Set nimcache path to /tmp to make it build in Deb env
+
+ -- Nong Hoang Tu <dmknght@parrotsec.org>  Sun, 19 Apr 2020 04:46:48 +0700
+
 parrot-menu (2:2020.04.13) rolling; urgency=medium
 
   * parrot-xsser.desktop: fix icon
