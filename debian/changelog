@@ -1,3 +1,9 @@
+parrot-menu (2:2020.04.25) rolling; urgency=medium
+
+  * Fix icon missing in brisk menu
+
+ -- Nong Hoang Tu <dmknght@parrotsec.org>  Sat, 25 Apr 2020 02:55:09 +0700
+
 parrot-menu (2:2020.04.19) rolling; urgency=medium
 
   * Set nimcache path to /tmp to make it build in Deb env
