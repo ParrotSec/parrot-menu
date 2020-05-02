@@ -37,6 +37,7 @@ proc fixDebLaunchers() =
     "lynis.desktop",
     "wireshark.desktop",
     "ettercap.desktop",
+    "chirp.desktop"
   ]
   for fileName in blacklistLauncherName:
     let finalPath = "/usr/share/applications/" & fileName
