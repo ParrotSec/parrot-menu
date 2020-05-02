@@ -1,3 +1,9 @@
+parrot-menu (2:2020.05.02) rolling; urgency=medium
+
+  * Use gksudo instead of gksu
+
+ -- Nong Hoang Tu <dmknght@parrotsec.org>  Sat, 02 May 2020 18:31:33 +0700
+
 parrot-menu (2:2020.04.25) rolling; urgency=medium
 
   * Fix icon missing in brisk menu
