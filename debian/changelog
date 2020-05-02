@@ -1,3 +1,9 @@
+parrot-menu (2:2020.05.03) rolling; urgency=medium
+
+  * Add chirp to custom launcher and remove launcher from Deb
+
+ -- Nong Hoang Tu <dmknght@parrotsec.org>  Sun, 03 May 2020 06:52:11 +0700
+
 parrot-menu (2:2020.05.02) rolling; urgency=medium
 
   * Use gksudo instead of gksu
