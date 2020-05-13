@@ -12,22 +12,6 @@
         <Category>X-Xfce-Toplevel</Category>
     </Include>
 
-    <Layout>
-        <Filename>xfce4-run.desktop</Filename>
-        <Separator/>
-        <Filename>exo-terminal-emulator.desktop</Filename>
-        <Filename>exo-file-manager.desktop</Filename>
-        <Filename>exo-mail-reader.desktop</Filename>
-        <Filename>exo-web-browser.desktop</Filename>
-        <Separator/>
-        <Menuname>Settings</Menuname>
-        <Separator/>
-        <Merge type="all"/>
-        <Separator/>
-        <Filename>xfce4-about.desktop</Filename>
-        <Filename>xfce4-session-logout.desktop</Filename>
-    </Layout>
-
     <Menu>
         <Name>Settings</Name>
         <Directory>xfce-settings.directory</Directory>
@@ -54,21 +38,8 @@
         <Name>Accessories</Name>
         <Directory>xfce-accessories.directory</Directory>
         <Include>
-            <Or>
-                <Category>Accessibility</Category>
-                <Category>Core</Category>
-                <Category>Legacy</Category>
-                <Category>Utility</Category>
-            </Or>
+          <Category>Accessibility</Category>
         </Include>
-        <Exclude>
-            <Or>
-                <Filename>exo-file-manager.desktop</Filename>
-                <Filename>exo-terminal-emulator.desktop</Filename>
-                <Filename>xfce4-about.desktop</Filename>
-                <Filename>xfce4-run.desktop</Filename>
-            </Or>
-        </Exclude>
     </Menu>
 
     <Menu>
@@ -114,20 +85,6 @@
     </Menu>
 
     <Menu>
-        <Name>Network</Name>
-        <Directory>xfce-network.directory</Directory>
-        <Include>
-            <Category>Network</Category>
-        </Include>
-        <Exclude>
-            <Or>
-                <Filename>exo-mail-reader.desktop</Filename>
-                <Filename>exo-web-browser.desktop</Filename>
-            </Or>
-        </Exclude>
-    </Menu>
-
-    <Menu>
         <Name>Office</Name>
         <Directory>xfce-office.directory</Directory>
         <Include>
@@ -139,16 +96,8 @@
         <Name>System</Name>
         <Directory>xfce-system.directory</Directory>
         <Include>
-            <Or>
-                <Category>Emulator</Category>
-                <Category>System</Category>
-            </Or>
+          <Category>System</Category>
         </Include>
-        <Exclude>
-            <Or>
-                <Filename>xfce4-session-logout.desktop</Filename>
-            </Or>
-        </Exclude>
     </Menu>
 
     <Menu>
@@ -159,5 +108,26 @@
             <All/>
         </Include>
     </Menu>
-
+  <Layout>
+      <Menuname>Privacy</Menuname>
+      <Menuname>Sandbox</Menuname>
+      <Separator></Separator>
+      <Menuname>Education</Menuname>
+      <Menuname>Office</Menuname>
+      <Separator></Separator>
+      <Menuname>Internet</Menuname>
+      <Menuname>Graphics</Menuname>
+      <Menuname>Multimedia</Menuname>
+      <Menuname>Games</Menuname>
+      <Separator></Separator>
+      <Menuname>Parrot Security</Menuname>
+      <Menuname>Development</Menuname>
+      <Menuname>System</Menuname>
+      <Separator></Separator>
+      <Menuname>Accessories</Menuname>
+      <Menuname>Universal Access</Menuname>
+      <Separator></Separator>
+      <Menuname>Other</Menuname>
+      <Merge type="all"/>
+  </Layout>
 </Menu>
