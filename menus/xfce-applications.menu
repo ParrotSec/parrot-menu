@@ -83,6 +83,13 @@
             <Category>AudioVideo</Category>
         </Include>
     </Menu>
+    <Menu>
+        <Name>Network</Name>
+        <Directory>xfce-network.directory</Directory>
+        <Include>
+            <Category>Network</Category>
+        </Include>
+    </Menu>
 
     <Menu>
         <Name>Office</Name>
