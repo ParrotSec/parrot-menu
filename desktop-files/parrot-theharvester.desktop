@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=theharvester
 Encoding=UTF-8
-Exec=menuexec "theharvester"
+Exec=menuexec "theHarvester"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
