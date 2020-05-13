@@ -133,7 +133,7 @@
     <Menuname>Education</Menuname>
     <Menuname>Office</Menuname>
     <Separator></Separator>
-    <Menuname>Internet</Menuname>
+    <Menuname>Network</Menuname>
     <Menuname>Graphics</Menuname>
     <Menuname>Multimedia</Menuname>
     <Menuname>Games</Menuname>
@@ -143,9 +143,8 @@
     <Menuname>System</Menuname>
     <Separator></Separator>
     <Menuname>Accessories</Menuname>
-    <Menuname>Universal Access</Menuname>
-    <Separator></Separator>
     <Menuname>Other</Menuname>
+    <Separator></Separator>
     <Merge type="all"/>
   </Layout>
 </Menu>
