@@ -39,6 +39,7 @@ proc fixDebLaunchers() =
     "ettercap.desktop",
     "chirp.desktop",
     "hydra-gtk.desktop",
+    "driftnet.desktop",
   ]
   for fileName in blacklistLauncherName:
     let finalPath = "/usr/share/applications/" & fileName
