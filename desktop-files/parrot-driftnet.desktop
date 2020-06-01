@@ -7,4 +7,4 @@ Terminal=true
 Type=Application
 Keywords=Sniffer;Network capture;
 Categories=09-01-network-sniffers;
-X-Parrot-Package=dsniff
+X-Parrot-Package=driftnet
