@@ -41,6 +41,7 @@ proc fixDebLaunchers() =
     "hydra-gtk.desktop",
     "driftnet.desktop",
     "gscriptor.desktop",
+    "spectool_gtk.desktop",
   ]
   for fileName in blacklistLauncherName:
     let finalPath = "/usr/share/applications/" & fileName
