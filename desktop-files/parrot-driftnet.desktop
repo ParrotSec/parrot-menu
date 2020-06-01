@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Driftnet
+Comment=Picks out and displays images from network traffic
+Exec=menuexec "driftnet -h"
+Icon=parrot-menu.png
+Terminal=true
+Type=Application
+Keywords=Sniffer;Network capture;
+Categories=09-01-network-sniffers;
+X-Parrot-Package=dsniff
