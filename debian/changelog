@@ -1,3 +1,9 @@
+parrot-menu (2:2020.06.05) rolling; urgency=medium
+
+  * Commit new changes from git.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 05 Jun 2020 15:46:08 +0200
+
 parrot-menu (2:2020.05.13) rolling; urgency=medium
 
   * Fix theHarvester exec command
