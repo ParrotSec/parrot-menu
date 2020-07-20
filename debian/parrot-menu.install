@@ -4,6 +4,7 @@ menus/sandbox.menu etc/xdg/menus/applications-merged/
 menus/anon-surf.menu etc/xdg/menus/applications-merged/
 menus/cryptography.menu etc/xdg/menus/applications-merged/
 menus/mate-applications.menu etc/xdg/menus/
+menus/xfce-applications.menu etc/xdg/menus/
 bin/* usr/bin/
 desktop-directories/*.directory usr/share/desktop-directories/
 desktop-files/*.desktop usr/share/parrot-menu/applications/
