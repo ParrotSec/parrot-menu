@@ -47,3 +47,4 @@ Terminal=false
 X-MultipleArgs=false
 Type=Application
 Categories=GTK;System;TerminalEmulator;
+X-Parrot-Package=gksu
