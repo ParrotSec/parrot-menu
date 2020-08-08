@@ -42,6 +42,7 @@ proc fixDebLaunchers() =
     "driftnet.desktop",
     "gscriptor.desktop",
     "spectool_gtk.desktop",
+    "gksu.desktop",
   ]
   for fileName in blacklistLauncherName:
     let finalPath = "/usr/share/applications/" & fileName
