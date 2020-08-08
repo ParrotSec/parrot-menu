@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=openvas initial setup
-Comment=Install modules, plugins, admin password for OpenVas service
+Name=Setup
+Comment=Install modules, plugins, admin password for Greenbone Vulnerability Manager (OpenVas)
 Encoding=UTF-8
-Exec=menuexec "openvas-setup"
+Exec=menuexec "gvm-setup"
 Icon=parrot-OpenVas.png
 StartupNotify=false
 Terminal=true

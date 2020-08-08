@@ -1,12 +1,12 @@
 [Desktop Entry]
-Name=• OpenVAS Scanner
-Name[fr]=• OpenVAS
-Name[es]=• OpenVAS
-Name[hr]=• OpenVAS
-Name[de]=• OpenVAS
-Name[it]=• OpenVAS
-Name[zh_CN]=• OpenVAS
-Name[zh_HK]=• OpenVAS
-Name[zh_TW]=• OpenVAS
+Name=• Greenbone Vulnerability Manager
+Name[fr]=• Greenbone Vulnerability Manager
+Name[es]=• Greenbone Vulnerability Manager
+Name[hr]=• Greenbone Vulnerability Manager
+Name[de]=• Greenbone Vulnerability Manager
+Name[it]=• Greenbone Vulnerability Manager
+Name[zh_CN]=• Greenbone Vulnerability Manager
+Name[zh_HK]=• Greenbone Vulnerability Manager
+Name[zh_TW]=• Greenbone Vulnerability Manager
 Type=Directory
 Icon=vuln-assessment-trans.png

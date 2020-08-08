@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=openvas start
-Comment=Start OpenVas vulnerability scanning and vulnerability management solution service
+Name=Database update
+Comment=Update signatures for Greenbone Vulnerability Manager (OpenVas)
 Encoding=UTF-8
-Exec=menuexec "openvas-start"
+Exec=menuexec "gvm-feed-update"
 Icon=parrot-OpenVas.png
 StartupNotify=false
 Terminal=true

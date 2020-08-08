@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=openvas feed update
-Comment=Update signatures for OpenVas
+Name=Check setup
+Comment=Verify installation of Greenbone Vulnerability Manager (OpenVas)
 Encoding=UTF-8
-Exec=menuexec "openvas-feed-update"
+Exec=menuexec "gvm-check-setup"
 Icon=parrot-OpenVas.png
 StartupNotify=false
 Terminal=true

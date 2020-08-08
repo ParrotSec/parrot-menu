@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=openvas stop
-Comment=Stop OpenVas vulnerability scanning and vulnerability management solution service
+Name=Stop
+Comment=Stop Greenbone Vulnerability Manager (OpenVas)
 Encoding=UTF-8
-Exec=menuexec "openvas-stop"
+Exec=menuexec "gvm-stop"
 Icon=parrot-OpenVas.png
 StartupNotify=false
 Terminal=true

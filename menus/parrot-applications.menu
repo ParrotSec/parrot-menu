@@ -185,7 +185,7 @@
       </Include>
     </Menu>
     <Menu>
-      <Name>OpenVAS</Name>
+      <Name>Greenbone Vulnerability Manager</Name>
       <Directory>02-06-openvas.directory</Directory>
       <Include>
         <And>

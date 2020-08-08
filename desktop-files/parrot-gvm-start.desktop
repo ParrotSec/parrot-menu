@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=openvas check setup
-Comment=Verify OpenVas installation
+Name=Start
+Comment=Start Greenbone Vulnerability Manager (OpenVas)
 Encoding=UTF-8
-Exec=menuexec "openvas-check-setup"
+Exec=menuexec "gvm-start"
 Icon=parrot-OpenVas.png
 StartupNotify=false
 Terminal=true
