@@ -1,12 +1,4 @@
 [Desktop Entry]
-Name=• Greenbone Vulnerability Manager
-Name[fr]=• Greenbone Vulnerability Manager
-Name[es]=• Greenbone Vulnerability Manager
-Name[hr]=• Greenbone Vulnerability Manager
-Name[de]=• Greenbone Vulnerability Manager
-Name[it]=• Greenbone Vulnerability Manager
-Name[zh_CN]=• Greenbone Vulnerability Manager
-Name[zh_HK]=• Greenbone Vulnerability Manager
-Name[zh_TW]=• Greenbone Vulnerability Manager
+Name=• Openvas - Greenbone
 Type=Directory
 Icon=vuln-assessment-trans.png

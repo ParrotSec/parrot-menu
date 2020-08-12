@@ -1,3 +1,9 @@
+parrot-menu (2:2020.08.13) rolling-testing; urgency=medium
+
+  * Update openvas/greenbone menu names.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 13 Aug 2020 00:43:25 +0200
+
 parrot-menu (2:2020.08.11) rolling-testing; urgency=medium
 
   * Fix conflict with xfce packages.
