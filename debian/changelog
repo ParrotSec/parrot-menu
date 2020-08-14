@@ -1,3 +1,9 @@
+parrot-menu (2:2020.08.14) rolling-testing; urgency=medium
+
+  * Add exclude for default web browser and mail in menu.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 14 Aug 2020 12:41:33 +0200
+
 parrot-menu (2:2020.08.13) rolling-testing; urgency=medium
 
   * Update openvas/greenbone menu names.
