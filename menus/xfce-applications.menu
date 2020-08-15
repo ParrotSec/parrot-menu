@@ -118,6 +118,9 @@
       <Include>
         <All/>
       </Include>
+      <Exclude>
+        <Filename>xfce4-appfinder.desktop</Filename>
+      </Exclude>
     </Menu>
   <Exclude>
     <Filename>exo-file-manager.desktop</Filename>
