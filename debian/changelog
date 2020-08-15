@@ -1,3 +1,9 @@
+parrot-menu (2:2020.08.15) rolling-testing; urgency=medium
+
+  * Exclude xfce appfinder.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 15 Aug 2020 23:20:20 +0200
+
 parrot-menu (2:2020.08.14) rolling-testing; urgency=medium
 
   * Add exclude for default web browser and mail in menu.
