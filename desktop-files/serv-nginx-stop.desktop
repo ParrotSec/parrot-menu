@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=nginx start
-Comment=Start nginx httpd service
+Name=Stop nginx server
+Comment=Stop nginx httpd service
 Encoding=UTF-8
-Exec=/usr/sbin/service nginx start 
+Exec=/usr/sbin/service nginx stop 
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=false

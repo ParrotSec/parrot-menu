@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=dradis stop
+Name=Stop Dradis reporting tool service
 Comment=Stop Dradis reporting tool service
 Encoding=UTF-8
 Exec=service dradis stop

@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=nginx restart
-Comment=Restart nginx httpd service
+Name=Start nginx server
+Comment=Start nginx httpd service
 Encoding=UTF-8
-Exec=/usr/sbin/service nginx restart 
+Exec=/usr/sbin/service nginx start 
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=false
