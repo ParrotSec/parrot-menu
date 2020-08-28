@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=sshd restart
+Name=Restart SSH server
 Encoding=UTF-8
 Exec=/usr/sbin/service ssh restart 
 Icon=parrot-menu.png
