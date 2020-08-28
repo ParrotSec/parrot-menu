@@ -30,16 +30,16 @@
     </Menu>
     <Menu>
       <Name>MySQL</Name>
-      <Directory>14-03-mysqld.directory</Directory>
+      <Directory>14-03-database.directory</Directory>
       <Include>
         <And>
-          <Category>14-03-mysqld</Category>
+          <Category>14-03-database</Category>
         </And>
       </Include>
     </Menu>
     <Menu>
       <Name>PCSCD</Name>
-      <Directory>14-08-pcscd.directory</Directory>
+      <Directory>14-04-pcscd.directory</Directory>
       <Include>
         <And>
           <Category>14-04-pcscd</Category>
@@ -48,10 +48,10 @@
     </Menu>
     <Menu>
       <Name>PCSCD</Name>
-      <Directory>14-05-postgresql.directory</Directory>
+      <Directory>14-05-faraday.directory</Directory>
       <Include>
         <And>
-          <Category>14-05-postgresql</Category>
+          <Category>14-05-faraday</Category>
         </And>
       </Include>
     </Menu>
