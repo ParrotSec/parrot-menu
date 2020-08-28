@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=ReStart PostgreSQL server
+Name=Restart PostgreSQL server
 Comment=Restart postgresql database service
 Encoding=UTF-8
 Exec=/usr/sbin/service postgresql restart
