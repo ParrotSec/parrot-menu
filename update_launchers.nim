@@ -10,6 +10,7 @@
 
 import os, osproc, strutils, re
 
+const dirLaucherDest = "/usr/share/applications/"
 
 proc fixDebLaunchers() =
   # TODO for only security distro
@@ -45,17 +46,36 @@ proc fixDebLaunchers() =
     "gksu.desktop",
   ]
   for fileName in blacklistLauncherName:
-    let finalPath = "/usr/share/applications/" & fileName
+    let finalPath = dirLaucherDest & fileName
     if fileExists(finalPath):
       if not tryRemoveFile(finalPath):
         stderr.write("[x] Error while removing " & finalPath & "\n")
+
+
+proc fixOldLaunchers(path: string) =
+  let fileName = path.split("/")[^1]
+  var
+    destName: string = dirLaucherDest
+    isDeleteNeeded = false
+  
+
+  if fileName.startsWith("serv-"):
+    isDeleteNeeded = true
+    destName &= "parrot-" & fileName.replace("serv-", "")
+  elif fileName.startsWith("native-"):
+    isDeleteNeeded = true
+    destName &= "parrot-" & fileName.replace("native-", "")
+
+  if isDeleteNeeded:
+    if not tryRemoveFile(destName):
+      stderr.write("[x] Error while removing " & destName & "\n")
 
 
 proc update_launchers() =
   const
     # Path must have / at the end of string or it makes error
     dirLauncherSource = "/usr/share/parrot-menu/applications/"
-    dirLaucherDest = "/usr/share/applications/"
+
   # Get all installed packages
   let installed = execProcess("apt list --installed | cut -d '/' -f 1")
 
@@ -106,8 +126,12 @@ proc update_launchers() =
           # Remove old launchers here
           if not tryRemoveFile(finalDestPath):
             stderr.write("[x] Error while processing " & path & "\n")
+      # In this version, we are moving name to serv-, native and being more with different categories
+
+      fixOldLaunchers(path)
     except:
       stderr.write("[x] Error while processing " & path & "\n")
+      echo getCurrentExceptionMsg()
 
 echo "Scanning application launchers"
 update_launchers()
