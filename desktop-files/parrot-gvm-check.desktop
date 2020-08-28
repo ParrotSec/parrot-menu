@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Check setup
+Name=Check setup of Greenbone Vulnerability Manager
 Comment=Verify installation of Greenbone Vulnerability Manager (OpenVas)
 Encoding=UTF-8
 Exec=menuexec "gvm-check-setup"
