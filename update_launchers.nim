@@ -53,18 +53,19 @@ proc fixDebLaunchers() =
 
 
 proc fixOldLaunchers(path: string) =
-  let fileName = path.split("/")[^1]
+  let
+    fileName = path.split("/")[^1]
+    newNameArr = ["serv-", "native-"]
   var
     destName: string = dirLaucherDest
-    isDeleteNeeded = false
-  
+    isDeleteNeeded: bool
 
-  if fileName.startsWith("serv-"):
-    isDeleteNeeded = true
-    destName &= "parrot-" & fileName.replace("serv-", "")
-  elif fileName.startsWith("native-"):
-    isDeleteNeeded = true
-    destName &= "parrot-" & fileName.replace("native-", "")
+  for checkName in newNameArr:
+    isDeleteNeeded = false
+    if fileName.startsWith(checkName):
+      isDeleteNeeded = true
+      destName &= "parrot-" & fileName.replace(checkName, "")
+      break
 
   if isDeleteNeeded:
     if not tryRemoveFile(destName):
