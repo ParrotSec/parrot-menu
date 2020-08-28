@@ -1,6 +1,5 @@
-#!/usr/bin/bash
-# TODO check if service is not started
+#!/bin/bash
 if [ "$(systemctl is-active faraday)" = "inactive" ]; then
-    menuexecg service faraday start
+    menuexecg faraday
 fi
-faraday-client --gui GUI
+faraday-client
