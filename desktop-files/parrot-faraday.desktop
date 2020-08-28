@@ -8,4 +8,4 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=12-reporting;
-X-Parrot-Package=python-faraday
+X-Parrot-Package=faraday-client
