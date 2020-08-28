@@ -154,8 +154,10 @@
     <Menuname>Games</Menuname>
     <Separator></Separator>
     <Menuname>Parrot Security</Menuname>
+    <Separator></Separator>
     <Menuname>Development</Menuname>
     <Menuname>System</Menuname>
+    <Menuname>System Services</Menuname>
     <Separator></Separator>
     <Menuname>Accessories</Menuname>
     <Menuname>Other</Menuname>

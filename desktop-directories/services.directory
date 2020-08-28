@@ -9,4 +9,4 @@ Name[zh_CN]=系统服务
 Name[zh_HK]=系統服務
 Name[zh_TW]=系統服務
 Type=Directory
-Icon=/usr/share/icons/system-services-trans.png
+Icon=system-services-trans.png
