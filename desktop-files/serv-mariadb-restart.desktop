@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=mysql/mariadb restart
+Name=Restart MariaDb
 Comment=Restart mysql / mariadb database service
 Encoding=UTF-8
-Exec=/usr/sbin/service mysql restart
+Exec=/usr/sbin/service mariadb restart
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=false
