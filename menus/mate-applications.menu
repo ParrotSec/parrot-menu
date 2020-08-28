@@ -21,7 +21,8 @@
 
   <!-- Parrot security tools -->
   <MergeFile type="path">applications-merged/privacy.menu</MergeFile>
-  <MergeFile type="path">applications-merged/sandbox.menu</MergeFile>
+  <!-- <MergeFile type="path">applications-merged/sandbox.menu</MergeFile> -->
+  <MergeFile type="path">applications-merged/services.menu</MergeFile>
   <MergeFile type="path">applications-merged/parrot-applications.menu</MergeFile>
 
   <!-- Accessories submenu -->
@@ -141,7 +142,8 @@
         <Not><Category>Settings</Category></Not>
       </And>
     </Include>
-  </Menu>   <!-- End System Tools -->
+  </Menu>
+  <!-- End System Tools -->
 
   <!-- Other -->
   <Menu>
@@ -170,8 +172,11 @@
     <Menuname>Games</Menuname>
     <Separator></Separator>
     <Menuname>Parrot Security</Menuname>
+    <!-- TODO forensic goes here -->
+    <Separator></Separator>
     <Menuname>Development</Menuname>
     <Menuname>System</Menuname>
+    <Menuname>System Services</Menuname>
     <Separator></Separator>
     <Menuname>Accessories</Menuname>
     <Menuname>Universal Access</Menuname>

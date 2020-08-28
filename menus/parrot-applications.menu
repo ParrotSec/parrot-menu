@@ -26,7 +26,6 @@
     <Menuname>Reverse Engineering</Menuname>
     <Separator> </Separator>
     <Menuname>Reporting Tools</Menuname>
-    <Menuname>System Services</Menuname>
 		<Merge type="all"/>
 	</Layout>
 
@@ -672,123 +671,6 @@
       <Include>
         <And>
           <Category>13-01-can-utils</Category>
-        </And>
-      </Include>
-    </Menu>
-  </Menu>
-  <Menu>
-    <Name>System Services</Name>
-    <Directory>14-services.directory</Directory>
-    <Include>
-      <And>
-        <Category>14-services</Category>
-      </And>
-    </Include>
-    <Menu>
-      <Name>GPS</Name>
-      <Directory>14-01-gpsd.directory</Directory>
-      <Include>
-        <And>
-          <Category>14-01-gpsd</Category>
-        </And>
-      </Include>
-    </Menu>
-    <Menu>
-      <Name>HTTP</Name>
-      <Directory>14-02-httpd.directory</Directory>
-      <Include>
-        <And>
-          <Category>14-02-httpd</Category>
-        </And>
-      </Include>
-    </Menu>
-    <Menu>
-      <Name>MySQL</Name>
-      <Directory>14-03-mysqld.directory</Directory>
-      <Include>
-        <And>
-          <Category>14-03-mysqld</Category>
-        </And>
-      </Include>
-    </Menu>
-    <Menu>
-      <Name>PCSCD</Name>
-      <Directory>14-08-pcscd.directory</Directory>
-      <Include>
-        <And>
-          <Category>14-04-pcscd</Category>
-        </And>
-      </Include>
-    </Menu>
-    <Menu>
-      <Name>PCSCD</Name>
-      <Directory>14-05-postgresql.directory</Directory>
-      <Include>
-        <And>
-          <Category>14-05-postgresql</Category>
-        </And>
-      </Include>
-    </Menu>
-    <Menu>
-      <Name>SSH</Name>
-      <Directory>14-06-sshd.directory</Directory>
-      <Include>
-        <And>
-          <Category>14-06-sshd</Category>
-        </And>
-      </Include>
-    </Menu>
-    <Menu>
-      <Name>Radius</Name>
-      <Directory>14-07-radius.directory</Directory>
-      <Include>
-        <And>
-          <Category>14-07-radius</Category>
-        </And>
-      </Include>
-    </Menu>
-    <Menu>
-      <Name>BEEF XSS Framework</Name>
-      <Directory>14-08-beef-service.directory</Directory>
-      <Include>
-        <And>
-          <Category>14-08-beef-service</Category>
-        </And>
-      </Include>
-    </Menu>
-    <Menu>
-      <Name>Metasploit</Name>
-      <Directory>14-09-metasploit-service.directory</Directory>
-      <Include>
-        <And>
-          <Category>14-09-metasploit-service</Category>
-        </And>
-      </Include>
-    </Menu>
-    <Menu>
-      <Name>Dradis</Name>
-      <Directory>14-10-dradis-service.directory</Directory>
-      <Include>
-        <And>
-          <Category>14-10-dradis-service</Category>
-        </And>
-      </Include>
-    </Menu>
-    <Menu>
-      <Name>OpenVas</Name>
-      <Directory>14-11-openvas-service.directory</Directory>
-      <Include>
-        <And>
-          <Category>14-11-openvas-service</Category>
-        </And>
-      </Include>
-    </Menu>
-    <Menu>
-      <Name>Xplico</Name>
-      <Directory>14-12-xplico-service.directory</Directory>
-      <Include>
-        <And>
-          <Category>14-12-xplico-service</Category>
         </And>
       </Include>
     </Menu>

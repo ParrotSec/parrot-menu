@@ -1,6 +1,6 @@
 menus/parrot-applications.menu etc/xdg/menus/applications-merged/
 menus/privacy.menu etc/xdg/menus/applications-merged/
-menus/sandbox.menu etc/xdg/menus/applications-merged/
+menus/services.menu etc/xdg/menus/applications-merged/
 menus/anon-surf.menu etc/xdg/menus/applications-merged/
 menus/cryptography.menu etc/xdg/menus/applications-merged/
 menus/mate-applications.menu etc/xdg/menus/

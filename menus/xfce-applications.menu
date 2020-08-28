@@ -112,6 +112,14 @@
     </Menu>
 
     <Menu>
+      <Name>System Services</Name>
+      <Directory>services.directory</Directory>
+      <Include>
+        <Category>Services</Category>
+      </Include>
+    </Menu>
+
+    <Menu>
       <Name>Other</Name>
       <Directory>xfce-other.directory</Directory>
       <OnlyUnallocated/>
