@@ -2,4 +2,4 @@
 Name=• Payload Generators
 Comment=Generate shellcode or payload
 Type=Directory
-Icon=parrot-menu.png
+Icon=/usr/share/icons/parrot-common/parrot-menu.png

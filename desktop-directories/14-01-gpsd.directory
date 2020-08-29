@@ -9,4 +9,4 @@ Name[zh_CN]=GPSd
 Name[zh_HK]=GPSd
 Name[zh_TW]=GPSd
 Type=Directory
-Icon=system-services-trans.png
+Icon=/usr/share/icons/parrot-common/system-services-trans.png

@@ -9,4 +9,4 @@ Name[zh_CN]=PCSCD
 Name[zh_HK]=PCSCD
 Name[zh_TW]=PCSCD
 Type=Directory
-Icon=system-services-trans.png
+Icon=/usr/share/icons/parrot-common/system-services-trans.png

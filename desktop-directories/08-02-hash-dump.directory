@@ -2,4 +2,4 @@
 Name=• Hash & Password Dump
 Comment=Gather hash dump, cleartext password, attack Pass-The-Hash
 Type=Directory
-Icon=password-attacks-trans.png
+Icon=/usr/share/icons/parrot-common/password-attacks-trans.png

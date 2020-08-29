@@ -2,4 +2,4 @@
 Name=• Privilege Escalation
 Comment=Gaining root or system permission
 Type=Directory
-Icon=exploitation-tools-trans.png
+Icon=/usr/share/icons/parrot-common/exploitation-tools-trans.png

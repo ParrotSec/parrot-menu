@@ -7,9 +7,9 @@ Copyright: 2012-2020, Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
 License: GPL-3+
 
 Files:
- categories-icons/privacy.png
- categories-icons/pentesting.png
- categories-icons/sandbox.png
+ parrot-common/privacy.png
+ parrot-common/pentesting.png
+ parrot-common/sandbox.png
 
 Copyright: 2020, Nguyen Tung Duong <d.nguyen0013@gmail.com>
 License: GPL-3+
