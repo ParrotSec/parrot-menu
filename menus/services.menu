@@ -47,7 +47,7 @@
       </Include>
     </Menu>
     <Menu>
-      <Name>PCSCD</Name>
+      <Name>Faraday</Name>
       <Directory>serv-05-faraday.directory</Directory>
       <Include>
         <And>
