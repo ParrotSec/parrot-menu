@@ -7,5 +7,5 @@ Icon=parrot-beef.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=14-08-beef-service;
+Categories=serv-08-beef-service;
 X-Parrot-Package=beef-xss

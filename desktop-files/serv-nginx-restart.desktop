@@ -7,5 +7,5 @@ Icon=parrot-menu.png
 StartupNotify=false
 Terminal=false
 Type=Application
-Categories=14-02-httpd;
+Categories=serv-02-httpd;
 X-Parrot-Package=nginx

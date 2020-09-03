@@ -6,6 +6,6 @@ Icon=parrot-menu.png
 StartupNotify=false
 Terminal=false
 Type=Application
-Categories=14-06-sshd;
+Categories=serv-06-sshd;
 Comment=Stop ssh server
 X-Parrot-Package=openssh-server

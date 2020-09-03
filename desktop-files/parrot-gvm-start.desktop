@@ -7,5 +7,5 @@ Icon=parrot-OpenVas.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=14-11-openvas-service;02-06-openvas;
+Categories=serv-11-openvas-service;02-06-openvas;
 X-Parrot-Package=gvm

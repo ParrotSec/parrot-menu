@@ -7,5 +7,5 @@ Icon=parrot-menu.png
 StartupNotify=false
 Terminal=false
 Type=Application
-Categories=14-03-database;
+Categories=serv-03-database;
 X-Parrot-Package=mariadb-server

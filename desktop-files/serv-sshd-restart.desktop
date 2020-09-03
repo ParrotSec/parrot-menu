@@ -6,6 +6,6 @@ Icon=parrot-menu.png
 StartupNotify=false
 Terminal=false
 Type=Application
-Categories=14-06-sshd;
+Categories=serv-06-sshd;
 Comment=Restart the ssh service
 X-Parrot-Package=openssh-server

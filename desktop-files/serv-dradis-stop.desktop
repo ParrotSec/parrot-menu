@@ -7,5 +7,5 @@ Icon=parrot-dradis.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=14-10-dradis-service
+Categories=serv-10-dradis-service
 X-Parrot-Package=dradis

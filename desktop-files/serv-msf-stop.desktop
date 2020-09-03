@@ -7,5 +7,5 @@ Icon=parrot-metasploit.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=14-09-metasploit-service;
+Categories=serv-09-metasploit-service;
 X-Parrot-Package=metasploit-framework
