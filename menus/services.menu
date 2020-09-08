@@ -1,10 +1,10 @@
 <!-- <?xml version="1.0"?> -->
 <!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN" "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
 <Menu>
-  <Name>>Parrot Applications</Name>
+  <Name>Parrot Applications</Name>
   <Menu>
     <Name>System Services</Name>
-    <Directory>serv-services.directory</Directory>
+    <Directory>services.directory</Directory>
     <Include>
       <And>
         <Category>serv-services</Category>
