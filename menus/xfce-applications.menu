@@ -109,6 +109,9 @@
       <Include>
         <Category>System</Category>
       </Include>
+      <Exclude>
+        <Filename>xfce4-session-logout.desktop</Filename>
+      </Exclude>
     </Menu>
 
     <Menu>
@@ -138,7 +141,6 @@
     <Filename>xfce4-session-logout.desktop</Filename>
     <Filename>exo-mail-reader.desktop</Filename>
     <Filename>exo-web-browser.desktop</Filename>
-
   </Exclude>
 
   <Layout>
