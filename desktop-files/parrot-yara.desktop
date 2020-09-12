@@ -2,7 +2,7 @@
 Name=yara
 Encoding=UTF-8
 Exec=menuexec "yara"
-Icon=yara.png
+Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
