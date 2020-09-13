@@ -9,15 +9,32 @@
 # Excepted usage: servicexc <name> <start / stop / restart>
 TITLE="Parrot Service Runner"
 
+result="$(systemctl is-active $1)"
+# Check status of current service
+# If it is started, do not start it again
+# if it is not started, do not stop or restart
+
+if [ "$2" = "start" ]; then
+  if [ "$result" = "active" ]; then
+    /usr/bin/notify-send "$TITLE" "Service $1 is already activated. Can not start!"
+    exit
+  fi
+elif [ "$2" = "stop" ]; then
+  if [ "$result" = "inactive" ]; then
+    /usr/bin/notify-send "$TITLE" "Service $1 is not started. Can not stop!"
+    exit
+  fi
+elif [ "$2" = "restart" ]; then
+  if [ "$result" = "inactive" ]; then
+    /usr/bin/notify-send "$TITLE" "Service $1 is not started. Can not restart!"
+    exit
+  fi
+else
+  /usr/bin/notify-send "$TITLE" "Don't understand action $2 for service $1"
+  exit
+fi
+
 menuexecg "/usr/sbin/service $1 $2"
 result="$(systemctl is-active $1)"
 # This is the command to show notification without icon
 /usr/bin/notify-send "$TITLE" "$2 for service $1 completed. Result: $result"
-  # This is command to show notification with icon
-  # if [ $result == "active" ]; then
-  #   /usr/bin/notify-send "$TITLE" "$2 $result" # TODO -i icon succes
-  # elif [ $result == "failed" ]; then
-  #   /usr/bin/notifi-send $2 $result # TODO -i icon failed
-  # else
-  #   /usr/bin/notif-send $2 $result # TODO -i icon
-  # fi
