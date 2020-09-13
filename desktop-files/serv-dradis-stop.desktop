@@ -2,7 +2,7 @@
 Name=Stop Dradis reporting tool service
 Comment=Stop Dradis reporting tool service
 Encoding=UTF-8
-Exec=service dradis stop
+Exec=servicexc dradis stop
 Icon=parrot-dradis.png
 StartupNotify=false
 Terminal=true

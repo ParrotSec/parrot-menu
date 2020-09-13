@@ -2,7 +2,7 @@
 Name=Start nginx server
 Comment=Start nginx httpd service
 Encoding=UTF-8
-Exec=/usr/sbin/service nginx start 
+Exec=servicexc nginx start 
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=false

@@ -2,7 +2,7 @@
 Name=Restart nginx server
 Comment=Restart nginx httpd service
 Encoding=UTF-8
-Exec=/usr/sbin/service nginx restart 
+Exec=servicexc nginx restart 
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=false

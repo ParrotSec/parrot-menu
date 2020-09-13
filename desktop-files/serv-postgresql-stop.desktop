@@ -2,7 +2,7 @@
 Name=Stop PostgreSQL server
 Comment=Stop postgresql database service
 Encoding=UTF-8
-Exec=/usr/sbin/service postgresql stop
+Exec=servicexc postgresql stop
 Icon=/usr/share/icons/parrot-common/parrot-postgresql.png
 StartupNotify=false
 Terminal=false

@@ -6,13 +6,13 @@
 # The idea is we get rid of terminal with no useful usage
 # author: Nong Hoang Tu <dmknght@parrotsec.org>
 
-# Excepted usage: servicexc <start / stop / restart> <name>
+# Excepted usage: servicexc <name> <start / stop / restart>
 TITLE="Parrot Service Runner"
 
-menuexecg "/usr/sbin/service $2 $1"
-result="$(systemctl is-active $2)"
+menuexecg "/usr/sbin/service $1 $2"
+result="$(systemctl is-active $1)"
 # This is the command to show notification without icon
-/usr/bin/notify-send "$TITLE" "$1 service $2: $result"
+/usr/bin/notify-send "$TITLE" "$2 for service $1 completed. Result: $result"
   # This is command to show notification with icon
   # if [ $result == "active" ]; then
   #   /usr/bin/notify-send "$TITLE" "$2 $result" # TODO -i icon succes

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Stop SSH service
 Encoding=UTF-8
-Exec=/usr/sbin/service ssh stop 
+Exec=servicexc ssh stop 
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=false

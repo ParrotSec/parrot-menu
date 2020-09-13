@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Start SSH server
 Encoding=UTF-8
-Exec=/usr/sbin/service ssh start 
+Exec=servicexc ssh start 
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=false

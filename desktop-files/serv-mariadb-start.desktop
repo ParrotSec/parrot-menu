@@ -2,7 +2,7 @@
 Name=Start MariaDB
 Comment=Start mysql / mariadb database service
 Encoding=UTF-8
-Exec=/usr/sbin/service mariadb start
+Exec=servicexc mariadb start
 Icon=/usr/share/icons/parrot-common/parrot-mysql.png
 StartupNotify=false
 Terminal=false

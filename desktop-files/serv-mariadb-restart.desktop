@@ -2,7 +2,7 @@
 Name=Restart MariaDB
 Comment=Restart mysql / mariadb database service
 Encoding=UTF-8
-Exec=/usr/sbin/service mariadb restart
+Exec=servicexc mariadb restart
 Icon=/usr/share/icons/parrot-common/parrot-mysql.png
 StartupNotify=false
 Terminal=false

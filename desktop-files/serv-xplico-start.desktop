@@ -2,7 +2,7 @@
 Name=Start Xplico service
 Comment=Start the network forensics analysis tool
 Encoding=UTF-8
-Exec=menuexec "service xplico start"
+Exec=servicexc xplico start
 Icon=parrot-xplico.png
 StartupNotify=false
 Terminal=true

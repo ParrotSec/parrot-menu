@@ -2,7 +2,7 @@
 Name=Stop nginx server
 Comment=Stop nginx httpd service
 Encoding=UTF-8
-Exec=/usr/sbin/service nginx stop 
+Exec=servicexc nginx stop 
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=false

@@ -2,7 +2,7 @@
 Name=Start PostgreSQL server
 Comment=Start postgresql database service
 Encoding=UTF-8
-Exec=/usr/sbin/service postgresql start
+Exec=servicexc postgresql start
 Icon=/usr/share/icons/parrot-common/parrot-postgresql.png
 StartupNotify=false
 Terminal=false
