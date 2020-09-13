@@ -1,4 +1,4 @@
-#/bin/bash
+#/usr/bin/bash
 # This file is a simple script that start / stop / restart 
 # services which is used from launchers
 # It use menuexecg to start / stop / restart services and 
