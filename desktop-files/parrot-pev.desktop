@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=pev
+Name=readpe
 Comment=Text-based tool to analyze PE files
 Encoding=UTF-8
-Exec=menuexec "pev -h"
+Exec=readpe
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
