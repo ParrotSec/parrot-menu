@@ -49,6 +49,7 @@ proc fixDebLaunchers() =
     "parrot-acccheck.desktop",
     "parrot-blindelephant.desktop",
     "parrot-bluemaho.desktop",
+    "parrot-cachedump.desktop",
   ]
   for fileName in blacklistLauncherName:
     let finalPath = dirLaucherDest & fileName

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=creddump
+Comment=Python tool to extract credentials and secrets from Windows registry
+Encoding=UTF-8
+Exec=cd "/usr/share/creddump7"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-03-local-attacks;
+X-Parrot-Package=creddump7
+
