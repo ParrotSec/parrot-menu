@@ -13,7 +13,6 @@ import os, osproc, strutils, re
 const dirLaucherDest = "/usr/share/applications/"
 
 proc fixDebLaunchers() =
-  # TODO for only security distro
   #[
     There are packages from Debian that has custom launchers
     It makes error after install pentest tools from Home Edition
@@ -44,7 +43,7 @@ proc fixDebLaunchers() =
     "gscriptor.desktop",
     "spectool_gtk.desktop",
     "gksu.desktop",
-    "parrot-sipsak.desktop",
+    "parrot-sipsak.desktop", # start removing broken launchers from here
     "parrot-ragg2-cc.desktop",
     "parrot-acccheck.desktop",
     "parrot-blindelephant.desktop",
@@ -52,6 +51,8 @@ proc fixDebLaunchers() =
     "parrot-cachedump.desktop",
     "parrot-dbpwaudit.desktop",
     "parrot-deblaze.desktop",
+    "parrot-dff.desktop",
+    "parrot-dff-gui.desktop",
   ]
   for fileName in blacklistLauncherName:
     let finalPath = dirLaucherDest & fileName
@@ -144,6 +145,6 @@ proc update_launchers() =
 
 echo "Scanning application launchers"
 update_launchers()
-echo "Removing duplicate launchers from Debian"
+echo "Removing duplicate launchers or broken launchers"
 fixDebLaunchers()
 echo "Launchers are updated"
