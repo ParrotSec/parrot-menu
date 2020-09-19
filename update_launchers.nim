@@ -65,6 +65,7 @@ proc fixDebLaunchers() =
     "parrot-gr-scan.desktop",
     "parrot-hexorbase.desktop",
     "parot-intersect.desktop",
+    "parrot-inundator.desktop",
   ]
   for fileName in blacklistLauncherName:
     let finalPath = dirLaucherDest & fileName
