@@ -61,6 +61,7 @@ proc fixDebLaunchers() =
     "parrot-automater.desktop",
     "parrot-clusterd.desktop",
     "parrot-cryptkeeper.desktop",
+    "parrot-ghost-phisher.desktop",
   ]
   for fileName in blacklistLauncherName:
     let finalPath = dirLaucherDest & fileName
