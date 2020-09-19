@@ -6,9 +6,20 @@
 import os
 import strutils
 
-# const path = "desktop-files" # Use this path for full launchers
-const path = "/usr/share/applications/" # Use this path for launchers in system
-let env_path = getEnv("PATH").split(":")
+const
+  path = "desktop-files" # Use this path for full launchers
+  # const path = "/usr/share/applications/" # Use this path for launchers in system
+  index = "/var/lib/apt/lists/" # cache file of apt update
+  rMain = "vietnam.deb.parrot.sh_parrot_dists_rolling-testing_main_binary-amd64_Packages" # Index name
+  rContrib = "vietnam.deb.parrot.sh_parrot_dists_rolling-testing_contrib_binary-amd64_Packages"
+  rNonFree = "vietnam.deb.parrot.sh_parrot_dists_rolling-testing_non-free_binary-amd64_Packages"
+let
+  env_path = getEnv("PATH").split(":")
+  dataMain = readFile(index & rMain)
+  dataContrib = readFile(index & rContrib)
+  dataNonFree = readFile(index & rNonFree)
+var
+  checkPackages: seq[string]
 
 
 proc checkPath(name: string): bool =
@@ -40,4 +51,13 @@ for file, path in walkDir(path):
         thisName = line.split("=")[1]
     if thisName != "":
       if not checkPath(thisCmd) and not fileExists(thisCmd):
-        echo "[" & thisCmd, "] [", thisName, "] Not found"
+        # echo "[" & thisCmd, "] [", thisName, "] Not found"
+        let searchFor = "Package: " & thisName
+        if not contains(dataMain, searchFor) and not contains(dataContrib, searchFor) and not contains(dataNonFree, searchFor):
+          if thisName in checkPackages:
+            discard
+          else:
+            checkPackages.add(thisName)
+
+
+writeFile("/tmp/allPackages", join(checkPackages, "\n"))
