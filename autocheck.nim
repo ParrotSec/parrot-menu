@@ -52,7 +52,7 @@ for file, path in walkDir(path):
     if thisName != "":
       if not checkPath(thisCmd) and not fileExists(thisCmd):
         # echo "[" & thisCmd, "] [", thisName, "] Not found"
-        let searchFor = "Package: " & thisName
+        let searchFor = "Package: " & thisName & "\n"
         if not contains(dataMain, searchFor) and not contains(dataContrib, searchFor) and not contains(dataNonFree, searchFor):
           if thisName in checkPackages:
             discard
