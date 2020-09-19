@@ -2,7 +2,7 @@
 Name=modes_gui
 Comment=Gnuradio Mode-S/ADS-B radio
 Encoding=UTF-8
-Exec=menuexecg "modes_gui"
+Exec=menuexecg "modes_rx"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=false
