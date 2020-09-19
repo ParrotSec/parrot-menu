@@ -53,6 +53,8 @@ proc fixDebLaunchers() =
     "parrot-deblaze.desktop",
     "parrot-dff.desktop",
     "parrot-dff-gui.desktop",
+    "parrot-dnmap-client.desktop",
+    "parrot-dnmap-server.desktop",
   ]
   for fileName in blacklistLauncherName:
     let finalPath = dirLaucherDest & fileName
