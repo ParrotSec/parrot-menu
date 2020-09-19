@@ -44,7 +44,8 @@ proc fixDebLaunchers() =
     "gscriptor.desktop",
     "spectool_gtk.desktop",
     "gksu.desktop",
-    "parrot-sipsak.desktop"
+    "parrot-sipsak.desktop",
+    "parrot-ragg2-cc.desktop"
   ]
   for fileName in blacklistLauncherName:
     let finalPath = dirLaucherDest & fileName
