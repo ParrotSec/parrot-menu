@@ -75,6 +75,7 @@ proc fixDebLaunchers() =
     "parrot-pdfbook.desktop",
     "parrot-pdgmail.desktop",
     "parrot-powerfuzzer.desktop",
+    "parrot-proxystrike.desktop",
   ]
   for fileName in blacklistLauncherName:
     let finalPath = dirLaucherDest & fileName
