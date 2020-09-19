@@ -57,6 +57,7 @@ proc fixDebLaunchers() =
     "parrot-dnmap-server.desktop",
     "parrot-creepy.desktop",
     "parrot-giskismet.desktop",
+    "parrot-grabber.desktop",
   ]
   for fileName in blacklistLauncherName:
     let finalPath = dirLaucherDest & fileName
