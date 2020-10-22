@@ -2,7 +2,7 @@
 Name=xspy
 Comment=Capture *nix X-Server keystroke
 Encoding=UTF-8
-Exec=pentestexec "echo \"Run command [xspy] on target machine to sniff keystroke\""
+Exec=pentestexec "echo \"Run tool [xspy] on target machine to sniff keystroke\""
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
