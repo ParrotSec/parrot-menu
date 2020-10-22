@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=unicorn-magic
+Comment=Tool for a PowerShell downgrade attack and inject shellcode
+Encoding=UTF-8
+Exec=python "/usr/share/unicorn-magic/unicorn.py"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=04-04-payload-generator;
+X-Parrot-Package=unicorn-magic
