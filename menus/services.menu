@@ -118,5 +118,14 @@
         </And>
       </Include>
     </Menu>
+    <Menu>
+      <Name>Neo4j</Name>
+      <Directory>serv-13-neo4j-service.directory</Directory>
+      <Include>
+        <And>
+          <Category>serv-13-neo4j-service</Category>
+        </And>
+      </Include>
+    </Menu>
   </Menu>
 </Menu>
