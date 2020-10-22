@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=weevely
 Encoding=UTF-8
-Exec=menuexec "weevely"
+Exec=pentestexec "weevely"
 Icon=parrot-weevely.png
 StartupNotify=false
 Terminal=true
