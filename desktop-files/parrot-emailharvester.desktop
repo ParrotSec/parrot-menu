@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=emailharvester
+Encoding=UTF-8
+Exec=emailharvester -h
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-07-osint-analysis;
+Comment=Retrieve Domain email addresses from Search Engines
+X-Parrot-Package=emailharvester
