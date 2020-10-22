@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=cloud-enum
+Encoding=UTF-8
+Exec=cloud-enum -h
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-07-osint-analysis;
+Comment=Enumerate public cloud platforms matching keywords
+X-Parrot-Package=cloud-enum
