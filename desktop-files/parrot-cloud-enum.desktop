@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=cloud-enum
 Encoding=UTF-8
-Exec=cloud-enum -h
+Exec=pentestexec "cloud-enum -h"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
