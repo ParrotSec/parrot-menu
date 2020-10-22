@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=crackmapexec
+Encoding=UTF-8
+Exec=pentestexec "crackmapexec -h" 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-05-web-vulnerability-scanners;04-exploitation-tools
+Comment=Enumerating logged on users and spidering SMB shares to executing psexec attack
+X-Parrot-Package=cme
