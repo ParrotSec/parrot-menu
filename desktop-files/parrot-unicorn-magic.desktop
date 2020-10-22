@@ -2,7 +2,7 @@
 Name=unicorn-magic
 Comment=Tool for a PowerShell downgrade attack and inject shellcode
 Encoding=UTF-8
-Exec=python "/usr/share/unicorn-magic/unicorn.py"
+Exec=python3 "/usr/share/unicorn-magic/unicorn.py"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
