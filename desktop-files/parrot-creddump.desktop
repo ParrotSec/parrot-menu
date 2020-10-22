@@ -2,7 +2,7 @@
 Name=creddump
 Comment=Python tool to extract credentials and secrets from Windows registry
 Encoding=UTF-8
-Exec=cd "/usr/share/creddump7"
+Exec=pentestls "/usr/share/creddump7/"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
