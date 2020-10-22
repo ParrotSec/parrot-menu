@@ -2,7 +2,7 @@
 Name=readpe
 Comment=Text-based tool to analyze PE files
 Encoding=UTF-8
-Exec=readpe
+Exec=pentestexec "readpe -h"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
