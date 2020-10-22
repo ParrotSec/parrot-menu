@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=ibombshell
+Comment=Windows Post-Exploitation Tools wiht Powershell scripts (C&C)
+Encoding=UTF-8
+Exec=ibombshell
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=08-post-exploit;
+X-Parrot-Package=ibombshell
