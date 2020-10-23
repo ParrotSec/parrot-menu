@@ -26,6 +26,8 @@ var
 
 proc parser() =
   for kind, path in walkDir(pathLaunchers):
+    if not path.split("/")[^1].startsWith("parrot-"):
+      continue
     var
       pkgName = ""
       categories = ""
@@ -36,31 +38,31 @@ proc parser() =
         categories = line.split("=")[^1]
     for thisCat in categories.split(";"):
       if thisCat.startsWith("01-"):
-        seqInfo.add(thisCat)
+        seqInfo.add(pkgName)
       elif thisCat.startsWith("02-"):
-        seqVuln.add(thisCat)
+        seqVuln.add(pkgName)
       elif thisCat.startsWith("03-"):
-        seqWeb.add(thisCat)
+        seqWeb.add(pkgName)
       elif thisCat.startsWith("04-"):
-        seqPwn.add(thisCat)
+        seqPwn.add(pkgName)
       elif thisCat.startsWith("05-"):
-        seqMaintain.add(thisCat)
+        seqMaintain.add(pkgName)
       elif thisCat.startsWith("06-"):
-        seqPost.add(thisCat)
+        seqPost.add(pkgName)
       elif thisCat.startsWith("07-"):
-        seqPwd.add(thisCat)
+        seqPwd.add(pkgName)
       elif thisCat.startsWith("08-"):
-        seqWireless.add(thisCat)
+        seqWireless.add(pkgName)
       elif thisCat.startsWith("09-"):
-        seqSniff.add(thisCat)
+        seqSniff.add(pkgName)
       elif thisCat.startsWith("10-"):
-        seqFor.add(thisCat)
+        seqFor.add(pkgName)
       elif thisCat.startsWith("11-"):
-        seqAuto.add(thisCat)
+        seqAuto.add(pkgName)
       elif thisCat.startsWith("12-"):
-        seqRev.add(thisCat)
+        seqRev.add(pkgName)
       elif thisCat.startsWith("13-"):
-        seqReport.add(thisCat)
+        seqReport.add(pkgName)
   echo "Info"
   for this in seqInfo:
     echo "  ", this, ","
