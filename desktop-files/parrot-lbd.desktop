@@ -2,7 +2,7 @@
 Name=lbd
 Comment=Detect if a given domain uses DNS and/or HTTP Load-Balancing
 Encoding=UTF-8
-Exec=menuexec "lbd"
+Exec=pentestexec "lbd"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
