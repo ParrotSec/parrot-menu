@@ -92,7 +92,7 @@ proc update_launchers() =
     # Try get package name from X-parrot-package section
     try:
       aptParrotPackage = findAll(fileData, re("X-Parrot-[Pp]ackage=(\\S+)"))[0].split("=")[1]
-    except IndexError:
+    except IndexDefect:
       aptParrotPackage = findAll(fileData, re("Name=(\\S+)"))[0].split("=")[1].toLower() # TODO packages may have Upper char?
     except:
       stderr.write("[x] Error while getting package name from " & path & "\n")
