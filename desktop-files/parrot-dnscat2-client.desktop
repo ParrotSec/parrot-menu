@@ -2,7 +2,7 @@
 Name=dnscat2-client
 Comment=Client to run on compromised machine and connect to encrypted command-and-control (C&C) over DNS protocol
 Encoding=UTF-8
-Exec=pentestexec "dnscat --help"
+Exec=pentestexec "Run /usr/share/dnscat2-client/dnscat on target's machine"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
