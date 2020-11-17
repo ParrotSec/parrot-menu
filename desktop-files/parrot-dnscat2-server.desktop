@@ -2,7 +2,7 @@
 Name=dnscat2-server
 Comment=Client to run on compromised machine and connect to encrypted command-and-control (C&C) over DNS protocol
 Encoding=UTF-8
-Exec=menuexec "dnscat2-server --help --help"
+Exec=menuexec "dnscat2-server --help"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
