@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Start Dradis reporting tool service
+Comment=Start Dradis reporting tool service
+Encoding=UTF-8
+Exec=servicexc dradis start
+Icon=parrot-dradis.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=serv-10-dradis-service
+X-Parrot-Package=dradis

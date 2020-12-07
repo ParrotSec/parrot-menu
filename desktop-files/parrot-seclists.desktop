@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=seclists
 Encoding=UTF-8
-Exec=menuexec "cd /usr/share/seclists/ && ls -la"
+Exec=pentestls "/usr/share/seclists/"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

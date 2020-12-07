@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Start Faraday service
+Comment=Start the Faraday Pentest reporting service
+Encoding=UTF-8
+Exec=menuexecg "faraday"
+Icon=/usr/share/icons/parrot-common/faraday.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=serv-05-faraday
+X-Parrot-Package=faraday

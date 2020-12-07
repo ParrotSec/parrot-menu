@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Stop Faraday service
+Comment=Stop the Faraday Pentest reporting service
+Encoding=UTF-8
+Exec=servicexc faraday stop
+Icon=/usr/share/icons/parrot-common/faraday.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=serv-05-faraday
+X-Parrot-Package=faraday

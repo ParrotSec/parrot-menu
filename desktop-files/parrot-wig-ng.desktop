@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=wig-ng
+Encoding=UTF-8
+Exec=menuexec "wig-ng -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-wireless-attacks;
+Comment=Wi-Fi device fingerprinting
+X-Parrot-Package=wig-ng

@@ -89,6 +89,10 @@
       <Include>
         <Category>Network</Category>
       </Include>
+      <Exclude>
+        <Filename>exo-web-browser.desktop</Filename>
+        <Filename>exo-mail-reader.desktop</Filename>
+      </Exclude>
     </Menu>
 
     <Menu>
@@ -105,6 +109,17 @@
       <Include>
         <Category>System</Category>
       </Include>
+      <Exclude>
+        <Filename>xfce4-session-logout.desktop</Filename>
+      </Exclude>
+    </Menu>
+
+    <Menu>
+      <Name>System Services</Name>
+      <Directory>services.directory</Directory>
+      <Include>
+        <Category>Services</Category>
+      </Include>
     </Menu>
 
     <Menu>
@@ -114,6 +129,9 @@
       <Include>
         <All/>
       </Include>
+      <Exclude>
+        <Filename>xfce4-appfinder.desktop</Filename>
+      </Exclude>
     </Menu>
   <Exclude>
     <Filename>exo-file-manager.desktop</Filename>
@@ -123,7 +141,6 @@
     <Filename>xfce4-session-logout.desktop</Filename>
     <Filename>exo-mail-reader.desktop</Filename>
     <Filename>exo-web-browser.desktop</Filename>
-
   </Exclude>
 
   <Layout>
@@ -139,8 +156,10 @@
     <Menuname>Games</Menuname>
     <Separator></Separator>
     <Menuname>Parrot Security</Menuname>
+    <Separator></Separator>
     <Menuname>Development</Menuname>
     <Menuname>System</Menuname>
+    <Menuname>System Services</Menuname>
     <Separator></Separator>
     <Menuname>Accessories</Menuname>
     <Menuname>Other</Menuname>

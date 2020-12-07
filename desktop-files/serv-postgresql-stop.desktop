@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Stop PostgreSQL server
+Comment=Stop postgresql database service
+Encoding=UTF-8
+Exec=servicexc postgresql stop
+Icon=/usr/share/icons/parrot-common/parrot-postgresql.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=serv-03-database;;
+X-Parrot-Package=postgresql

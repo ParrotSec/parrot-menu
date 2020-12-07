@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Stop Xplico service
+Comment=Stop the network forensics analysis tool
+Encoding=UTF-8
+Exec=servicexc xplico stop
+Icon=parrot-xplico.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=serv-12-xplico-service
+X-Parrot-Package=xplico

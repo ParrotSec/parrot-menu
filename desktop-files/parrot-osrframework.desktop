@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=osrframework
+Encoding=UTF-8
+Exec=pentestexec "osrframework-cli -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-07-osint-analysis;
+Comment=OSINT tool for username checking, DNS lookups, information leaks research, deep web search and more
+X-Parrot-Package=osrframework

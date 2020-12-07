@@ -2,7 +2,7 @@
 Name=dhcpig
 Comment=Advanced DHCP exhaustion attack
 Encoding=UTF-8
-Exec=menuexec "pig.py -h"
+Exec=menuexec "dhcpig -h"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

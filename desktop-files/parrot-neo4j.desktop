@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=neo4j
+Comment=Graph database Neo4j Community Edition
+Encoding=UTF-8
+Exec=menuexec "neo4j console"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=12-reporting;
+X-Parrot-Package=neo4j

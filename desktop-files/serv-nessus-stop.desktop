@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Stop Nessus service
+Comment=Stop Nessus vulnerability scanner service
+Encoding=UTF-8
+Exec=menuexec "/etc/init.d/nessusd stop"
+Icon=parrot-nessus.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-08-nessus;serv-services;
+X-Parrot-Package=nessus

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=readpe
+Comment=Text-based tool to analyze PE files
+Encoding=UTF-8
+Exec=pentestexec "readpe -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-05-forensic-carving-tools;
+X-Parrot-Package=pev

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=sherlock
+Encoding=UTF-8
+Exec=pentestexec "sherlock -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-07-osint-analysis;
+Comment=Find Usernames Across Social Networks
+X-Parrot-Package=sherlock

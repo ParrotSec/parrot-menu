@@ -10,9 +10,9 @@
 
 import os, osproc, strutils, re
 
+const dirLaucherDest = "/usr/share/applications/"
 
 proc fixDebLaunchers() =
-  # TODO for only security distro
   #[
     There are packages from Debian that has custom launchers
     It makes error after install pentest tools from Home Edition
@@ -43,19 +43,44 @@ proc fixDebLaunchers() =
     "gscriptor.desktop",
     "spectool_gtk.desktop",
     "gksu.desktop",
+    "parrot-sipsak.desktop", # start removing broken launchers from here
+    "parrot-ragg2-cc.desktop",
+    "parrot-cachedump.desktop",
+    "parrot-lsadump.desktop",
+    "parrot-pwdump.desktop",
   ]
   for fileName in blacklistLauncherName:
-    let finalPath = "/usr/share/applications/" & fileName
+    let finalPath = dirLaucherDest & fileName
     if fileExists(finalPath):
       if not tryRemoveFile(finalPath):
         stderr.write("[x] Error while removing " & finalPath & "\n")
+
+
+proc fixOldLaunchers(path: string) =
+  let
+    fileName = path.split("/")[^1]
+    newNameArr = ["serv-", "native-"]
+  var
+    destName: string = dirLaucherDest
+    isDeleteNeeded: bool
+
+  for checkName in newNameArr:
+    isDeleteNeeded = false
+    if fileName.startsWith(checkName):
+      isDeleteNeeded = true
+      destName &= "parrot-" & fileName.replace(checkName, "")
+      break
+
+  if isDeleteNeeded:
+    if not tryRemoveFile(destName):
+      stderr.write("[x] Error while removing " & destName & "\n")
 
 
 proc update_launchers() =
   const
     # Path must have / at the end of string or it makes error
     dirLauncherSource = "/usr/share/parrot-menu/applications/"
-    dirLaucherDest = "/usr/share/applications/"
+
   # Get all installed packages
   let installed = execProcess("apt list --installed | cut -d '/' -f 1")
 
@@ -67,7 +92,7 @@ proc update_launchers() =
     # Try get package name from X-parrot-package section
     try:
       aptParrotPackage = findAll(fileData, re("X-Parrot-[Pp]ackage=(\\S+)"))[0].split("=")[1]
-    except IndexError:
+    except IndexDefect:
       aptParrotPackage = findAll(fileData, re("Name=(\\S+)"))[0].split("=")[1].toLower() # TODO packages may have Upper char?
     except:
       stderr.write("[x] Error while getting package name from " & path & "\n")
@@ -106,11 +131,15 @@ proc update_launchers() =
           # Remove old launchers here
           if not tryRemoveFile(finalDestPath):
             stderr.write("[x] Error while processing " & path & "\n")
+      # In this version, we are moving name to serv-, native and being more with different categories
+
+      fixOldLaunchers(path)
     except:
       stderr.write("[x] Error while processing " & path & "\n")
+      echo getCurrentExceptionMsg()
 
 echo "Scanning application launchers"
 update_launchers()
-echo "Removing duplicate launchers from Debian"
+echo "Removing duplicate launchers or broken launchers"
 fixDebLaunchers()
 echo "Launchers are updated"

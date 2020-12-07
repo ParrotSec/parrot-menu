@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Stop Neo4j service
+Comment=Stop graph database Neo4j Community Edition
+Encoding=UTF-8
+Exec=gksudo neo4j stop
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=serv-13-neo4j-service
+X-Parrot-Package=neo4j

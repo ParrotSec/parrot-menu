@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=xspy
+Comment=Capture *nix X-Server keystroke
+Encoding=UTF-8
+Exec=pentestexec "echo \"Run tool [/usr/share/xspy/xspy] on target machine to sniff keystroke\""
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-03-local-attacks;
+X-Parrot-Package=xspy

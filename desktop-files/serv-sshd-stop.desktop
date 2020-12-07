@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Stop SSH service
+Encoding=UTF-8
+Exec=servicexc ssh stop 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=serv-06-sshd;
+Comment=Stop ssh server
+X-Parrot-Package=openssh-server

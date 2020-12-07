@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Start SSH server
+Encoding=UTF-8
+Exec=servicexc ssh start 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=serv-06-sshd;
+Comment=Start ssh server
+X-Parrot-Package=openssh-server

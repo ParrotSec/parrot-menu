@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=spiderfoot
+Encoding=UTF-8
+Exec=notify-send "Starting spiderfoot" "Address: 127.0.0.1:8099" && spiderfoot -l 127.0.0.1:8099
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=01-07-osint-analysis;
+Comment=Automate OSINT tool that gathers intelligence about a given target (Web Interface)
+X-Parrot-Package=spiderfoot

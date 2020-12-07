@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Stop nginx server
+Comment=Stop nginx httpd service
+Encoding=UTF-8
+Exec=servicexc nginx stop 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=serv-02-httpd;
+X-Parrot-Package=nginx

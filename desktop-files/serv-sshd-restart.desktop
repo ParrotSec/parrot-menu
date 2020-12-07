@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Restart SSH server
+Encoding=UTF-8
+Exec=servicexc ssh restart 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=serv-06-sshd;
+Comment=Restart the ssh service
+X-Parrot-Package=openssh-server

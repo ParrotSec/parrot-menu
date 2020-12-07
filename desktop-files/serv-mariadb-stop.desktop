@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Stop MariaDB
+Comment=Stop mysql / mariadb database service
+Encoding=UTF-8
+Exec=servicexc mariadb stop
+Icon=/usr/share/icons/parrot-common/parrot-mysql.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=serv-03-database;
+X-Parrot-Package=mariadb-server

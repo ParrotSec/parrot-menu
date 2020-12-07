@@ -1,0 +1,5 @@
+#!/bin/bash
+if [ "$(systemctl is-active faraday)" = "inactive" ]; then
+    menuexecg faraday
+fi
+faraday-client

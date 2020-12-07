@@ -2,7 +2,7 @@
 Name=dirb
 Comment=OWASP Web Content Scanner
 Encoding=UTF-8
-Exec=menuexec "dirb"
+Exec=pentestexec "dirb"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

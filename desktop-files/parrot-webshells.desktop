@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=webshells
+Encoding=UTF-8
+Exec=pentestls "/usr/share/webshells"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-03-web-backdoors;top10
+Comment=Collection of webshells
+X-Parrot-Package=webshells

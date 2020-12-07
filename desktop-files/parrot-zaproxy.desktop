@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=owasp-zap
 Encoding=UTF-8
-Exec=menuexecg "zaproxy"
+Exec=zaproxy
 Icon=parrot-zaproxy.png
 StartupNotify=false
 Terminal=false

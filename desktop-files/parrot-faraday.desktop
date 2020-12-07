@@ -1,11 +1,11 @@
 [Desktop Entry]
-Name=faraday IDE
-Comment=Collaborative Penetration Test and Vulnerability Management Platform 
+Name=Faraday Client (GTK)
+Comment=Start Faraday server and GTK client 
 Encoding=UTF-8
-Exec=menuexec "python-faraday"
+Exec=faraday-gtk
 Icon=parrot-faraday.png
 StartupNotify=false
 Terminal=true
 Type=Application
 Categories=12-reporting;
-X-Parrot-Package=python-faraday
+X-Parrot-Package=faraday-client

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=sliver
+Comment=Cross-platform C&C framework
+Encoding=UTF-8
+Exec=sliver-server
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-01-os-backdoors;
+X-Parrot-Package=sliver

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=evil-ssdp
+Encoding=UTF-8
+Exec=menuexec "evil-ssdp -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-02-network-spoofing;
+Comment=Spoof SSDP replies to phish for NTLM hashes on a network
+X-Parrot-Package=evil-ssdp

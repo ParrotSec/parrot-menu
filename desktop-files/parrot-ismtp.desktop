@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=ismtp
+Comment=SMTP enumeration and pentesting tool
+Encoding=UTF-8
+Exec=pentestexec "ismtp --help"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-11-smtp-analysis;
+X-Parrot-Package=ismtp

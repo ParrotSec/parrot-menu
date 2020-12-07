@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=legion
+Encoding=UTF-8
+Exec=menuexec "legion"
+Icon=parrot-sparta.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-info-gathering;
+Comment=A semi-automated network penetration testing tool
+X-Parrot-Package=legion

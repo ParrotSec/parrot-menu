@@ -1,11 +1,11 @@
 [Desktop Entry]
 Name=wordlists
 Encoding=UTF-8
-Exec=menuexec wordlists
+Exec=pentestls "/usr/share/wordlists"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
 Categories=05-05-profile;
-Comment=A collection of common passwords
+Comment=A collection of rockyou and common password wordlists
 X-Parrot-Package=wordlists

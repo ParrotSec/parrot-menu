@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=jadx
+Encoding=UTF-8
+Exec=pentestexec "jadx -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=07-03-decompilers;
+Comment=Dex to java decompiler
+X-Parrot-Package=jadx

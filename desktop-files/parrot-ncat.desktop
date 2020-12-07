@@ -8,4 +8,4 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=01-02-identify-live-hosts;
-X-Parrot-Package=nmap
+X-Parrot-Package=ncat

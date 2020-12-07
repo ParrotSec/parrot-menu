@@ -1,8 +1,0 @@
-#!/bin/bash
-echo -e "
-
-Wordlist files are located at
-/usr/share/wordlists
-
-enter this folder to use the tool
-"

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Restart nginx server
+Comment=Restart nginx httpd service
+Encoding=UTF-8
+Exec=servicexc nginx restart 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=serv-02-httpd;
+X-Parrot-Package=nginx
