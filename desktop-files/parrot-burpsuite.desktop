@@ -2,7 +2,7 @@
 Name=burpsuite
 Comment=Web Application proxy framework
 Encoding=UTF-8
-Exec=burpsuite
+Exec=java -jar /usr/bin/burpsuite
 Icon=parrot-burpsuite.png
 StartupNotify=false
 Terminal=false
