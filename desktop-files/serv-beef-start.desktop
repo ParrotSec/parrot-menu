@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=Start BeEf service
-Comment=Turn Browser Exploitation framework service on
+Name=Start BeEf server
+Comment=Turn Browser Exploitation framework server on
 Encoding=UTF-8
-Exec=servicexc beef-xss start
+Exec=menuexec beef-xss start
 Icon=parrot-beef.png
 StartupNotify=false
 Terminal=false

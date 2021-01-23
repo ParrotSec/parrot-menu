@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Stop BeEf service
+Name=Stop BeEf server
 Comment=Turn Browser Exploitation framework off
 Encoding=UTF-8
 Exec=servicexc beef-xss stop
