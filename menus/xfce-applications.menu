@@ -8,10 +8,6 @@
     <DefaultDirectoryDirs/>
     <DefaultMergeDirs/>
 
-    <Include>
-      <Category>X-Xfce-Toplevel</Category>
-    </Include>
-
     <Menu>
       <Name>Settings</Name>
       <Directory>xfce-settings.directory</Directory>
@@ -89,12 +85,6 @@
       <Include>
         <Category>Network</Category>
       </Include>
-      <Exclude>
-        <Filename>exo-web-browser.desktop</Filename>
-        <Filename>xfce4-web-browser.desktop</Filename>
-        <Filename>exo-mail-reader.desktop</Filename>
-        <Filename>xfce4-mail-reader.desktop</Filename>
-      </Exclude>
     </Menu>
 
     <Menu>
@@ -111,9 +101,6 @@
       <Include>
         <Category>System</Category>
       </Include>
-      <Exclude>
-        <Filename>xfce4-session-logout.desktop</Filename>
-      </Exclude>
     </Menu>
 
     <Menu>
@@ -131,23 +118,7 @@
       <Include>
         <All/>
       </Include>
-      <Exclude>
-        <Filename>xfce4-appfinder.desktop</Filename>
-      </Exclude>
     </Menu>
-  <Exclude>
-    <Filename>exo-file-manager.desktop</Filename>
-    <Filename>xfce4-file-manager.desktop</Filename>
-    <Filename>exo-terminal-emulator.desktop</Filename>
-    <Filename>xfce4-terminal-emulator.desktop</Filename>
-    <Filename>xfce4-about.desktop</Filename>
-    <Filename>xfce4-run.desktop</Filename>
-    <Filename>xfce4-session-logout.desktop</Filename>
-    <Filename>exo-mail-reader.desktop</Filename>
-    <Filename>xfce4-mail-reader.desktop</Filename>
-    <Filename>exo-web-browser.desktop</Filename>
-    <Filename>xfce4-web-browser.desktop</Filename>
-  </Exclude>
 
   <Layout>
     <Menuname>Privacy</Menuname>
