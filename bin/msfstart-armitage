@@ -1,6 +1,6 @@
 #!/bin/bash
-service postgresql start
-msfdb init
-msfdb start
+gksudo service postgresql start
+gksudo msfdb init
+gksudo msfdb start
 msfd
 armitage
