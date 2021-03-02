@@ -1,3 +1,15 @@
+parrot-menu (2:2021.03.03) rolling; urgency=medium
+
+  * Import new git commits.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 02 Mar 2021 11:20:10 +0100
+
+parrot-menu (2:2021.03.02) rolling; urgency=medium
+
+  * Solve conflict with metasploit-framework.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 02 Mar 2021 11:18:46 +0100
+
 parrot-menu (2:2021.02.19) rolling-testing; urgency=medium
 
   * Import new release from git.
