@@ -6,7 +6,15 @@ echo -e " ____                      _   ____
 |_|   \__,_|_|  |_|  \___/ \__|____/ \___|\___|
                                                
 "
-echo "executing \"$*\""
-echo ""
-sudo $* || true
-sudo -s
+# We have bug when command passes with parameters
+# Split the command to get first string which should be
+# name of command or full path of command to check
+cmd_exec=$(echo "$1" | cut -d " " -f 1)
+which "$cmd_exec" 1>/dev/null
+if [ $? -eq 1 ]; then
+	echo -e "Command \033[1;95m$1\033[1;0m is missing.\nPlease report this bug to \033[1;96mteam@parrotsec.org\033[1;0m\n"
+  $SHELL -s
+else
+  sudo $* || true
+  sudo $SHELL -s
+fi

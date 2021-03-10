@@ -1,10 +1,14 @@
 #!/bin/bash
 
-function notify {
-	if [ -e /usr/bin/notify-send ]; then
-		/usr/bin/notify-send "ParrotSec" "$1"
-	fi
-}
-
-notify "starting $*"
-gksudo "$*"
+# We have bug when command passes with parameters
+# Split the command to get first string which should be
+# name of command or full path of command to check
+cmd_exec=$(echo "$1" | cut -d " " -f 1)
+which "$cmd_exec" 1>/dev/null
+if [ $? -eq 1 ]; then
+	notify-send "Command \"$1\" is missing" "Please report this bug to team@parrotsec.org" -i "security-low"
+	exit
+else
+	notify-send "ParrotSec" "Starting $*"
+	gksudo "$*"
+fi
