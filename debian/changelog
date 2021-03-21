@@ -1,3 +1,20 @@
+parrot-menu (2:2021.03.22) rolling; urgency=medium
+
+  [ Nong Hoang Tu ]
+  * Remove launchers added to native packages.
+  * Fix name of launcher: upper cases.
+  * Check command / path exists before execute it. If not: show report error
+  * Add show "executing" notification when sudo is needed
+  * Fix missing color while showing "executing"
+  * change message to better English grammar
+  * Move launchers of metasploit-framework
+
+  [ Lorenzo "Palinuro" Faletra ]
+  * Bump new package version.
+
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@localhost.localdomain>  Mon, 22 Mar 2021 00:00:37 +0100
+
 parrot-menu (2:2021.03.08) rolling; urgency=medium
 
   * Import new git commits.
