@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=armitage
+Comment=Java GUI for metasploit-framework
+Encoding=UTF-8
+Exec=menuexecg armitage
+Icon=parrot-armitage.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=04-01-metasploit-framework;top10
+X-Parrot-Package=armitage
