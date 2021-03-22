@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Merlin's server
+Encoding=UTF-8
+Exec=pentestexec "merlinserver"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-03-web-backdoors
+Comment=Start Merlin's C&C server
+X-Parrot-Package=merlin-server
