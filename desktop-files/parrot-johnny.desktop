@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=johnny
+Comment=Fast hash cracker that detects hash type automatically (GUI)
+Encoding=UTF-8
+Exec=johnny
+Icon=parrot-johnny.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=05-02-offline-attacks;top10
+X-Parrot-Package=johnny
