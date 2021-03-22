@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=mimikatz
+Comment=Uses admin rights on Windows to display passwords of currently logged in users in plaintext
+Encoding=UTF-8
+Exec=pentestls /usr/share/mimikatz
+Icon=parrot-mimikatz.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=08-02-hash-dump;
+X-Parrot-Package=mimikatz
