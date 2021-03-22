@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=BeEf XSS Web Panel
+Comment=Client-side attack based on XSS from vulnerable web applications
+Encoding=UTF-8
+Exec=menuexec beef-xss
+Icon=parrot-beef.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=04-02-social-engineering;
+X-Parrot-Package=beef-xss

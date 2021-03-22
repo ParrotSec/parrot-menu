@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Stop BeEf server
+Comment=Turn Browser Exploitation framework off
+Encoding=UTF-8
+Exec=servicexc beef-xss stop
+Icon=parrot-beef.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=serv-08-beef-service;
+X-Parrot-Package=beef-xss

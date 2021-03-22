@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Start BeEf server
+Comment=Turn Browser Exploitation framework server on
+Encoding=UTF-8
+Exec=menuexec beef-xss start
+Icon=parrot-beef.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=serv-08-beef-service;
+X-Parrot-Package=beef-xss
