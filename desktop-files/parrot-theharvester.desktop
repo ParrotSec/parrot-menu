@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=theharvester
+Encoding=UTF-8
+Exec=pentestexec "theHarvester -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-07-osint-analysis;
+Comment=Gathering e-mail accounts and subdomain names from public sources
+X-Parrot-Package=theharvester
