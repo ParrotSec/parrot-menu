@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Merlin agents
+Encoding=UTF-8
+Exec=pentestls "/usr/share/merlin-agents"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-03-web-backdoors
+Comment=Prebuild of Merlin's C&C agents on platforms
+X-Parrot-Package=merlin-agent
