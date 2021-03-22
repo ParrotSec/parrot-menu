@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=edb-debugger
+Comment=Cross platform x86/x86-64 debugger written in QT
+Encoding=UTF-8
+Exec=edb
+Icon=edb
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=07-02-debuggers;top10
+X-Parrot-Package=edb-debugger
