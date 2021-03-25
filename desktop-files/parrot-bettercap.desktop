@@ -7,5 +7,5 @@ Icon=parrot-bettercap.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=09-sniffing-spoofing;
+Categories=09-sniffing-spoofing;top10
 X-Parrot-Package=bettercap
