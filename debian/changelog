@@ -1,3 +1,37 @@
+parrot-menu (2:2021.03.24) rolling; urgency=medium
+
+  [ Nong Hoang Tu ]
+  * restore amap
+  * restore beef
+  * add bing-ip2hosts
+  * restore bytecode-viewer
+  * add certgraph
+  * add cloud-enum
+  * add crowbar
+  * add edb-debugger
+  * add hyperion
+  * add instaloader
+  * add jadx
+  * add john
+  * Add johny
+  * add jsql-injection
+  * add merlin agent
+  * add other merlin's launchers
+  * add mimikatz
+  * restore nmap launchers
+  * add sliver
+  * add smali
+  * add sqlmap
+  * add theharvester
+  * add wpscan
+  * add armitage
+  * restore bettercap
+
+  [ Lorenzo "Palinuro" Faletra ]
+  * Upload package.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 25 Mar 2021 03:06:27 +0100
+
 parrot-menu (2:2021.03.22) rolling; urgency=medium
 
   [ Nong Hoang Tu ]
