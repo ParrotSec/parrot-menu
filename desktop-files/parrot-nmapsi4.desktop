@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=nmap
+Name=Nmapsi4 - QT GUI for Nmap
 Comment=Network exploration or security auditing with QT GUI
 Encoding=UTF-8
 Exec=nmapsi4
