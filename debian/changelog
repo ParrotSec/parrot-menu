@@ -1,3 +1,10 @@
+parrot-menu (2:2021.03.27) rolling; urgency=medium
+
+  * Add bettercap to most used tools.
+  * Remove ettercap from most used tools.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 27 Mar 2021 01:01:37 +0100
+
 parrot-menu (2:2021.03.24) rolling; urgency=medium
 
   [ Nong Hoang Tu ]
