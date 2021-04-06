@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=Stop MariaDB
-Comment=Stop mysql / mariadb database service
+Name=Stop MySQL/MariaDB
+Comment=Stop mariadb database service
 Encoding=UTF-8
 Exec=servicexc mariadb stop
 Icon=/usr/share/icons/parrot-common/parrot-mysql.png

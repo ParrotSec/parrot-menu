@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=Restart MariaDB
-Comment=Restart mysql / mariadb database service
+Name=Restart MySQL/MariaDB
+Comment=Restart mariadb database service
 Encoding=UTF-8
 Exec=servicexc mariadb restart
 Icon=/usr/share/icons/parrot-common/parrot-mysql.png

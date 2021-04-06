@@ -1,3 +1,15 @@
+parrot-menu (2:2021.04.04) rolling; urgency=medium
+
+  [ Nong Hoang Tu ]
+  * Fix nmapsi4 name
+  * Fix nmapsi4 icon
+
+  [ Lorenzo "Palinuro" Faletra ]
+  * Add missing apache2 launchers.
+  * Add/improve mysql launchers.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 04 Apr 2021 17:06:41 +0200
+
 parrot-menu (2:2021.03.27) rolling; urgency=medium
 
   * Add bettercap to most used tools.

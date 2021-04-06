@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Start Apache Webserver
+Comment=Start Apache2 web service
+Encoding=UTF-8
+Exec=servicexc apache2 start 
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=serv-02-httpd;
+X-Parrot-Package=apache2
