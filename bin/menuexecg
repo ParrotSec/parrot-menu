@@ -3,6 +3,8 @@
 # We have bug when command passes with parameters
 # Split the command to get first string which should be
 # name of command or full path of command to check
+export PATH=~/.local/bin:/snap/bin:/usr/sandbox/:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:$PATH
+
 cmd_exec=$(echo "$1" | cut -d " " -f 1)
 which "$cmd_exec" 1>/dev/null
 if [ $? -eq 1 ]; then
