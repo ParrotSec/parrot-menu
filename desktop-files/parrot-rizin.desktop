@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=rizin
+Encoding=UTF-8
+Exec=pentestexec "radare2 -h"
+Icon=parrot-radare2.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-05-rizin;
+Comment=Advanced commandline hexadecimal editor, disassembler and debugger
+X-Parrot-Package=rizin

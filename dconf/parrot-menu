@@ -47,7 +47,7 @@ categories=['06-01-wireless-tools','06-02-bluetooth-tools','06-03-rfid-nfc-tools
 [org/gnome/desktop/app-folders/folders/re]
 name='07-Reversing'
 translate=true
-categories=['07-01-disassemblers', '07-02-debuggers', '07-03-decompilers', '07-04-radare2', '07-Reversing']
+categories=['07-01-disassemblers', '07-02-debuggers', '07-03-decompilers', '07-04-radare2', '07-05-rizin','07-Reversing']
 
 [org/gnome/desktop/app-folders/folders/sniff]
 name='09-Sniffing'

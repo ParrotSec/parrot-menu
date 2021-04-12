@@ -552,6 +552,15 @@
         </And>
       </Include>
     </Menu>
+    <Menu>
+      <Name>Rizin Framework</Name>
+      <Directory>07-05-rizin.directory</Directory>
+      <Include>
+        <And>
+          <Category>07-05-rizin</Category>
+        </And>
+      </Include>
+    </Menu>
   </Menu>
   <Menu>
     <Name>Sniffing - Spoofing</Name>
