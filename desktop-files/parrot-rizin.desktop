@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=rizin
+Name=rizin — Advanced commandline hexadecimal editor, disassembler and debugger
 Encoding=UTF-8
 Exec=pentestexec "rizin -h"
 Icon=parrot-radare2.png
