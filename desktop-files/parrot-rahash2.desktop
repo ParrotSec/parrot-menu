@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=rahash2
 Encoding=UTF-8
-Exec=menuexec rahash2 -h 
+Exec=pentestexec "rahash2 -h"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

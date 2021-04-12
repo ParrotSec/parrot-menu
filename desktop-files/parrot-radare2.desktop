@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=radare2
 Encoding=UTF-8
-Exec=menuexec "radare2 -h"
+Exec=pentestexec "radare2 -h"
 Icon=parrot-radare2.png
 StartupNotify=false
 Terminal=true

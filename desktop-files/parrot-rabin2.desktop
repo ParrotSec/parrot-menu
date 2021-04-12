@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=rabin2
 Encoding=UTF-8
-Exec=menuexec rabin2 -h 
+Exec=pentestexec "rabin2 -h"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
