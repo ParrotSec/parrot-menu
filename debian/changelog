@@ -1,3 +1,13 @@
+parrot-menu (2:2021.04.11) rolling; urgency=medium
+
+  [ Nong Hoang Tu ]
+  * Remove nasm shell (not in sec tools)
+  * minor improvement for output msg
+  * Fix netdiscover by using full path. solve issue that user reported
+  * Add export path to fix bug for some binaries at /usr/sbin/
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 11 Apr 2021 23:17:45 +0200
+
 parrot-menu (2:2021.04.04) rolling; urgency=medium
 
   [ Nong Hoang Tu ]
