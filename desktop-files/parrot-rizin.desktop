@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=rizin
 Encoding=UTF-8
-Exec=pentestexec "radare2 -h"
+Exec=pentestexec "rizin -h"
 Icon=parrot-radare2.png
 StartupNotify=false
 Terminal=true
