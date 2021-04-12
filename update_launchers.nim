@@ -59,6 +59,7 @@ proc fixDebLaunchers() =
     "parrot-cachedump.desktop",
     "parrot-lsadump.desktop",
     "parrot-pwdump.desktop",
+    "re.rizin.cutter.desktop" # Duplicate launcher of rizin's cutter
   ]
   for fileName in blacklistLauncherName:
     let finalPath = dirLaucherDest & fileName
