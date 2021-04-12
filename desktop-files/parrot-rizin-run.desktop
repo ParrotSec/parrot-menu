@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=rz-run — rizin utility to run programs in exotic environments
+Encoding=UTF-8
+Exec=pentestexec "rz-run -h"
+Icon=parrot-radare2.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-05-rizin;
+Comment=Run programs with different environment, arguments, permissions, directories and overridden default filedescriptors
+X-Parrot-Package=rizin

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=rz-asm — rizin assembler and disassembler tool
+Encoding=UTF-8
+Exec=pentestexec "rz-asm -h"
+Icon=parrot-radare2.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-05-rizin;
+Comment=Assemble and disassemble files or hexpair strings
+X-Parrot-Package=rizin

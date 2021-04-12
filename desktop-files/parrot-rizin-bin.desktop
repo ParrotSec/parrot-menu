@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=RZ_BIN — Binary program info extractor
+Encoding=UTF-8
+Exec=pentestexec "rz-bin -h"
+Icon=parrot-radare2.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-05-rizin;
+Comment=Get information about ELF/PE/MZ and CLASS files
+X-Parrot-Package=rizin

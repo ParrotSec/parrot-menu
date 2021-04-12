@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=rz-find — Advanced commandline hexadecimal editor
+Encoding=UTF-8
+Exec=pentestexec "rz-find -h"
+Icon=parrot-radare2.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-05-rizin;
+Comment=Find byte patterns into files
+X-Parrot-Package=rizin

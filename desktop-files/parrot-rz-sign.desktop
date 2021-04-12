@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=rz-sign — rizin zignature utility
+Encoding=UTF-8
+Exec=pentestexec "rz-sign -h"
+Icon=parrot-radare2.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-05-rizin;
+Comment=Generate signature of a binary file in sdb format
+X-Parrot-Package=rizin

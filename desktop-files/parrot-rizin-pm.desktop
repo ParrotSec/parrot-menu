@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=rz-pm — rizin package manager
+Encoding=UTF-8
+Exec=pentestexec "rz-pm -h"
+Icon=parrot-radare2.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-05-rizin;
+Comment=Install, update, uninstall and discover plugins and tools for Rizin framework
+X-Parrot-Package=rizin

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=rz-hash — block based hashing utility
+Encoding=UTF-8
+Exec=pentestexec "rz-hash -h"
+Icon=parrot-radare2.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-05-rizin;
+Comment=Calculate, check and show the hash values of each block of a target file
+X-Parrot-Package=rizin

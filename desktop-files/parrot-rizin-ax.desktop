@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=rz-ax — rizin base converter
+Encoding=UTF-8
+Exec=pentestexec "rz-ax -h"
+Icon=parrot-radare2.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-05-rizin;
+Comment=Convert values between positive and negative integer, float, octal, binary and hexadecimal values
+X-Parrot-Package=rizin

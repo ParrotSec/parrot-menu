@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=rz-diff — unified binary diffing utility
+Encoding=UTF-8
+Exec=pentestexec "rz-diff -h"
+Icon=parrot-radare2.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-05-rizin;
+Comment=Binary diffing for data and code
+X-Parrot-Package=rizin
