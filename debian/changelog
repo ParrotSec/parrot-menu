@@ -1,3 +1,19 @@
+parrot-menu (2:2021.04.13) rolling; urgency=medium
+
+  [ Nong Hoang Tu ]
+  * Add default rizin-cutter to ignore list
+  * Add rizin-cutter launcher
+  * No longer require sudo for radare2 from menu
+  * Add rizin sub category
+  * Fix wrong command call
+  * Update the name of rizin
+  * add rizin launchers for binaries
+
+  [ Lorenzo "Palinuro" Faletra ]
+  * Upload new package version.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 13 Apr 2021 18:07:04 +0200
+
 parrot-menu (2:2021.04.11) rolling; urgency=medium
 
   [ Nong Hoang Tu ]
