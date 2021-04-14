@@ -2,7 +2,7 @@
 Name=gqrx
 Comment=Software defined radio receiver
 Encoding=UTF-8
-Exec=menuexecg "gqrx"
+Exec=gqrx
 Icon=parrot-gqrx.png
 StartupNotify=false
 Terminal=false
