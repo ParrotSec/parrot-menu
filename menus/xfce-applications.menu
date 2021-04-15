@@ -35,6 +35,7 @@
       <Directory>xfce-accessories.directory</Directory>
       <Include>
         <Category>Accessibility</Category>
+        <Category>Utility</Category>
       </Include>
     </Menu>
 
@@ -111,14 +112,6 @@
       </Include>
     </Menu>
 
-    <Menu>
-      <Name>Other</Name>
-      <Directory>xfce-other.directory</Directory>
-      <OnlyUnallocated/>
-      <Include>
-        <All/>
-      </Include>
-    </Menu>
 
   <Layout>
     <Menuname>Privacy</Menuname>
@@ -139,7 +132,6 @@
     <Menuname>System Services</Menuname>
     <Separator></Separator>
     <Menuname>Accessories</Menuname>
-    <Menuname>Other</Menuname>
     <Separator></Separator>
     <Merge type="all"/>
   </Layout>
