@@ -6,6 +6,6 @@ Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=02-01-cisco-tools;06-01-cisco-attacks;09-02-network-spoofing;
+Categories=02-01-cisco-tools;09-02-network-spoofing;
 Comment=A Framework for layer 2 attacks
 X-Parrot-Package=yersinia
