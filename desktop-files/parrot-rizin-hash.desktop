@@ -2,7 +2,7 @@
 Name=rz-hash — block based hashing utility
 Encoding=UTF-8
 Exec=pentestexec "rz-hash -h"
-Icon=parrot-radare2.png
+Icon=parrot-rizin.png
 StartupNotify=false
 Terminal=true
 Type=Application

@@ -2,7 +2,7 @@
 Name=rz-sign — rizin zignature utility
 Encoding=UTF-8
 Exec=pentestexec "rz-sign -h"
-Icon=parrot-radare2.png
+Icon=parrot-rizin.png
 StartupNotify=false
 Terminal=true
 Type=Application

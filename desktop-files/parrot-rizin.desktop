@@ -2,7 +2,7 @@
 Name=rizin — Advanced commandline hexadecimal editor, disassembler and debugger
 Encoding=UTF-8
 Exec=pentestexec "rizin -h"
-Icon=parrot-radare2.png
+Icon=parrot-rizin.png
 StartupNotify=false
 Terminal=true
 Type=Application

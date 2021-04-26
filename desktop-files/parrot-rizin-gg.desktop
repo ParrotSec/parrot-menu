@@ -2,7 +2,7 @@
 Name=rz-gg
 Encoding=UTF-8
 Exec=pentestexec "rz-gg -h"
-Icon=parrot-radare2.png
+Icon=parrot-rizin.png
 StartupNotify=false
 Terminal=true
 Type=Application

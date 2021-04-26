@@ -2,7 +2,7 @@
 Name=rz-find — Advanced commandline hexadecimal editor
 Encoding=UTF-8
 Exec=pentestexec "rz-find -h"
-Icon=parrot-radare2.png
+Icon=parrot-rizin.png
 StartupNotify=false
 Terminal=true
 Type=Application
