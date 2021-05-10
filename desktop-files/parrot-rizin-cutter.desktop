@@ -4,5 +4,5 @@ Name=Cutter
 Exec=cutter
 Icon=cutter
 Comment=QT GUI for rizin dissembler framework
-Categories=07-04-rizin;
+Categories=07-reverseengineer;
 X-Parrot-Package=rizin-cutter
