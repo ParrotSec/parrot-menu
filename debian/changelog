@@ -1,3 +1,14 @@
+parrot-menu (2:2021.05.10) rolling; urgency=medium
+
+  [ Nong Hoang Tu ]
+  * don't show cd not be found. It is a built-in function
+  * Rizin category use rizin icon instead of radare2
+
+  [ Lorenzo "Palinuro" Faletra ]
+  * Rebuild package.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 10 May 2021 20:05:42 +0200
+
 parrot-menu (2:2021.04.28) rolling; urgency=medium
 
   * Update rizin icons.
