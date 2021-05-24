@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=jadx
+Name=jadx - CLI
 Encoding=UTF-8
 Exec=pentestexec "jadx -h"
 Icon=parrot-menu.png
