@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=dial_tone
+Comment=Play a Dial Tone on the sound card output device.
+Encoding=UTF-8
+Exec=dial_tone
+Icon=gnuradio-grc
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=06-05-radio-tools;
+X-Parrot-Package=gnuradio

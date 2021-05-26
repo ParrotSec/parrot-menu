@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=uhd_rx_cfile - Save UHD received data
+Comment=Save I&Q data to a complex file for later use
+Encoding=UTF-8
+Exec=pentestexec "uhd_rx_cfile -h"
+Icon=gnuradio-grc
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=06-05-radio-tools;
+X-Parrot-Package=gnuradio

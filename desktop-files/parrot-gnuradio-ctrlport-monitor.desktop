@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=gr-ctrlport-monitor - gnuradio control port gui
+Comment=GNU Radio Control Port Monitor
+Encoding=UTF-8
+Exec=pentestexec "gr-ctrlport-monitor -h"
+Icon=gnuradio-grc
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=06-05-radio-tools;
+X-Parrot-Package=gnuradio

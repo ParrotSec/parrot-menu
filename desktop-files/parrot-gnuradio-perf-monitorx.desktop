@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=gr-perf-monitorx
+Comment=GNU Radio Performance Monitor
+Encoding=UTF-8
+Exec=pentestexec "gr-perf-monitorx -h"
+Icon=gnuradio-grc
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=06-05-radio-tools;
+X-Parrot-Package=gnuradio

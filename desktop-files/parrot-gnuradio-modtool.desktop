@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=gr-modtool - The swiss army knife of module editing
+Comment=Automatically editing makefiles, using templates and doing as much work as possible for the developer
+Encoding=UTF-8
+Exec=pentestexec "gr_modtool --help"
+Icon=gnuradio-grc
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=06-05-radio-tools;
+X-Parrot-Package=gnuradio

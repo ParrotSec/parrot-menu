@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=gr_plot_iq - plot complex binary I&Q data versus time using GNU Radio
+Comment=Takes a GNU Radio complex binary file and displays the I&Q data versus time
+Encoding=UTF-8
+Exec=pentestexec "gr_plot_iq -h"
+Icon=gnuradio-grc
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=06-05-radio-tools;
+X-Parrot-Package=gnuradio

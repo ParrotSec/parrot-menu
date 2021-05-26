@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name= gr_read_file_metadata 
+Comment=Read in a GNU Radio file with meta data, extracts the header and prints it
+Encoding=UTF-8
+Exec=pentestexec "gr_read_file_metadata -h"
+Icon=gnuradio-grc
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=06-05-radio-tools;
+X-Parrot-Package=gnuradio

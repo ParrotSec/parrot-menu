@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=grcc - Gnu Radio Companion Compiler 
+Comment=Compile a gnuradio companion flowgraph without invoking the gui
+Encoding=UTF-8
+Exec=pentestexec "grcc -h"
+Icon=gnuradio-grc
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=06-05-radio-tools;
+X-Parrot-Package=gnuradio

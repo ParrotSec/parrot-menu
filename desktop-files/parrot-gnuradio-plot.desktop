@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=gr_plot - display time series of samples from a file 
+Comment=Takes a GNU Radio binary file and displays the samples versus time
+Encoding=UTF-8
+Exec=pentestexec "gr_plot -h"
+Icon=gnuradio-grc
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=06-05-radio-tools;
+X-Parrot-Package=gnuradio

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=gnuradio-config-info
+Comment=Show details on installed GNU radio
+Encoding=UTF-8
+Exec=pentestexec "gnuradio-config-info --print-all"
+Icon=gnuradio-grc
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=06-05-radio-tools;
+X-Parrot-Package=gnuradio

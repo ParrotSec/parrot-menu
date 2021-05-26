@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=uhd_rx_nogui - GNU Radio receiver
+Comment=Command line GNU Radio receiver that takes signal from a UHD peripheral receiver and sends demodulated audio to the sound device. 
+Encoding=UTF-8
+Exec=pentestexec "uhd_rx_nogui -h"
+Icon=gnuradio-grc
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=06-05-radio-tools;
+X-Parrot-Package=gnuradio

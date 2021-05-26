@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=gr_filter_design - GUI for creating filters for GNU Radio
+Comment=Graphical tool for creating filters for GNU Radio
+Encoding=UTF-8
+Exec=gr_filter_design
+Icon=gnuradio-grc
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=06-05-radio-tools;
+X-Parrot-Package=gnuradio
