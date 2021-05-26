@@ -2,7 +2,7 @@
 Name=hamster
 Comment=Hijack victim cookies using Ferret program
 Encoding=UTF-8
-Exec=menuexec "hamster"
+Exec=menuexec "hamster-sidejack"
 Icon=parrot-hamster.png
 StartupNotify=false
 Terminal=true
