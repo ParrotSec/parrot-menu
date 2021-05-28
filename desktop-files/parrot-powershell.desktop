@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Powershell
+Comment=Microsoft's Powershell command-line on Linux system
+Exec=pwsh
+Terminal=true
+Categories=Development
