@@ -8,7 +8,7 @@
 #   4. Fix duplicate launchers
 # Remove old launchers that removed or uninstalled
 
-import os, osproc, strutils, re
+import os, osproc, strutils
 
 const dirLaucherDest = "/usr/share/applications/"
 
@@ -93,7 +93,7 @@ proc update_launchers() =
     dirLauncherSource = "/usr/share/parrot-menu/applications/"
 
   # Get all installed packages
-  let installed = execProcess("apt list --installed | cut -d '/' -f 1")
+  let installed = execProcess("apt list --installed | cut -d '/' -f 1").split("\n")
 
   # Get all file in applications
   var allLaunchers: seq[string]
@@ -115,7 +115,8 @@ proc update_launchers() =
           let finalDestPath = dirLaucherDest & fileName
           # If the package is installed
           # Check if package name is in installed list. The name matches a line exactly
-          if contains(installed, re("(^|\\n)" & aptParrotPackage & "($|\\n)")):
+          # if contains(installed, re("(^|\\n)" & aptParrotPackage & "($|\\n)")):
+          if installed.contains(aptParrotPackage):
             # Check if file is not in the final directory
             if not fileExists(finalDestPath) or not sameFileContent(path, finalDestPath):
               # Update new launcher
@@ -144,8 +145,9 @@ proc update_launchers() =
       let packageOfLauncher = getXPackageName(path)
       if packageOfLauncher != "":
         # We must test if package is not installed here
-        if not allLaunchers.contains(currentLauncher) and not contains(installed, re("(^|\\n)" & packageOfLauncher & "($|\\n)")):
-          echo "[!] DEBUG ", currentLauncher
+        if not allLaunchers.contains(currentLauncher) and not installed.contains(packageOfLauncher):
+          if not tryRemoveFile(path):
+            stderr.write("[x] Error while removing " & path & "\n")
 
 echo "Scanning application launchers"
 update_launchers()
