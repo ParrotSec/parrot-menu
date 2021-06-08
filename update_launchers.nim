@@ -54,11 +54,6 @@ proc fixDebLaunchers() =
     "gscriptor.desktop",
     "spectool_gtk.desktop",
     "gksu.desktop",
-    "parrot-sipsak.desktop", # start removing broken launchers from here
-    "parrot-ragg2-cc.desktop",
-    "parrot-cachedump.desktop",
-    "parrot-lsadump.desktop",
-    "parrot-pwdump.desktop",
     "re.rizin.cutter.desktop" # Duplicate launcher of rizin's cutter
   ]
   for fileName in blacklistLauncherName:
@@ -75,7 +70,6 @@ proc fixOldLaunchers(path: string) =
   ]#
   let
     fileName = splitPath(path).tail
-    # newNameArr = ["serv-", "native-"]
     newNameArr = ["serv-"]
   var
     destName: string = dirLaucherDest
@@ -102,8 +96,10 @@ proc update_launchers() =
   let installed = execProcess("apt list --installed | cut -d '/' -f 1")
 
   # Get all file in applications
+  var allLaunchers: seq[string]
   for kind, path in walkDir(dirLauncherSource):
     let fileName = splitPath(path).tail
+    allLaunchers.add(fileName)
     if fileName.startsWith("parrot-") or fileName.startsWith("serv-"):
       let
         aptParrotPackage = getXPackageName(path)
@@ -139,6 +135,17 @@ proc update_launchers() =
         except:
           stderr.write("[x] Error while processing " & path & "\n")
           echo getCurrentExceptionMsg()
+
+  for kind, path in walkDir(dirLaucherDest):
+    let currentLauncher = splitPath(path).tail
+    # Check if the launcher is Parrot's specific
+    if (currentLauncher.startsWith("parrot-") or currentLauncher.startsWith("serv-")) and currentLauncher.endsWith(".desktop"):
+      # Get package name from launcher. If package name != "" then it belongs to parrot-menu (or old one)
+      let packageOfLauncher = getXPackageName(path)
+      if packageOfLauncher != "":
+        # We must test if package is not installed here
+        if not allLaunchers.contains(currentLauncher) and not contains(installed, re("(^|\\n)" & packageOfLauncher & "($|\\n)")):
+          echo "[!] DEBUG ", currentLauncher
 
 echo "Scanning application launchers"
 update_launchers()
