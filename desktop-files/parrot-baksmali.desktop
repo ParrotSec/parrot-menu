@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=smali
+Name=baksmali
 Encoding=UTF-8
 Exec=pentestexec baksmali --help 
 Icon=parrot-menu.png
