@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=twinkle
+Encoding=UTF-8
+Exec=twinkle
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=02-03-voip-tools;
+Comment=SIP-based VoIP client (Qt5 GUI)
+X-Parrot-Package=twinkle
