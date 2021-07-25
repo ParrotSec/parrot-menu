@@ -54,7 +54,8 @@ proc fixDebLaunchers() =
     "gscriptor.desktop",
     "spectool_gtk.desktop",
     "gksu.desktop",
-    "re.rizin.cutter.desktop" # Duplicate launcher of rizin's cutter
+    "re.rizin.cutter.desktop", # Duplicate launcher of rizin's cutter
+    "openjdk-8-policytool.desktop",
   ]
   for fileName in blacklistLauncherName:
     let finalPath = dirLaucherDest & fileName
