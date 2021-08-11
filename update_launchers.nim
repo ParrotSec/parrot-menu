@@ -8,9 +8,11 @@
 #   4. Fix duplicate launchers
 # Remove old launchers that removed or uninstalled
 
-import os, osproc, strutils
+import os, strutils
 
-const dirLaucherDest = "/usr/share/applications/"
+const
+  dirLaucherDest = "/usr/share/applications/"
+  path = "/var/lib/dpkg/status"
 
 
 proc getXPackageName(path: string): string =
@@ -21,6 +23,17 @@ proc getXPackageName(path: string): string =
     if line.startsWith("X-Parrot-"):
       return line.split("=")[1]
   return ""
+
+
+proc query_installed(): seq[string] =
+  var
+    pkg_name: string
+  for line in lines(path):
+    if line.startsWith("Package: "):
+      pkg_name = line.split(": ")[1]
+    elif line.startsWith("Status: "):
+      if line == "Status: install ok installed":
+        result.add(pkg_name)
 
 
 proc fixDebLaunchers() =
@@ -94,7 +107,7 @@ proc update_launchers() =
     dirLauncherSource = "/usr/share/parrot-menu/applications/"
 
   # Get all installed packages
-  let installed = execProcess("apt list --installed | cut -d '/' -f 1").split("\n")
+  let installed = query_installed()
 
   # Get all file in applications
   var allLaunchers: seq[string]
