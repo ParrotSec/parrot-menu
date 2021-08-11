@@ -11,6 +11,7 @@
 import os, strutils
 
 const
+  dirLauncherSource = "/usr/share/parrot-menu/applications/"
   dirLaucherDest = "/usr/share/applications/"
   path = "/var/lib/dpkg/status"
 
@@ -102,10 +103,6 @@ proc fixOldLaunchers(path: string) =
 
 
 proc update_launchers() =
-  const
-    # Path must have / at the end of string or it makes error
-    dirLauncherSource = "/usr/share/parrot-menu/applications/"
-
   # Get all installed packages
   let installed = query_installed()
 
@@ -156,6 +153,7 @@ proc update_launchers() =
     # Check if the launcher is Parrot's specific
     if (currentLauncher.startsWith("parrot-") or currentLauncher.startsWith("serv-")) and currentLauncher.endsWith(".desktop"):
       # Get package name from launcher. If package name != "" then it belongs to parrot-menu (or old one)
+      # We can use the fileExist from source method because some packages are having custom launcher in the package
       let packageOfLauncher = getXPackageName(path)
       if packageOfLauncher != "":
         # We must test if package is not installed here
