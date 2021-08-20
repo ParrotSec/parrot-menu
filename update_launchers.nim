@@ -154,12 +154,16 @@ proc update_launchers() =
     if (currentLauncher.startsWith("parrot-") or currentLauncher.startsWith("serv-")) and currentLauncher.endsWith(".desktop"):
       # Get package name from launcher. If package name != "" then it belongs to parrot-menu (or old one)
       # We can use the fileExist from source method because some packages are having custom launcher in the package
-      let packageOfLauncher = getXPackageName(path)
-      if packageOfLauncher != "":
-        # We must test if package is not installed here
-        if not allLaunchers.contains(currentLauncher) and not installed.contains(packageOfLauncher):
-          if not tryRemoveFile(path):
-            stderr.write("[x] Error while removing " & path & "\n")
+      let srcToCheck = dirLauncherSource & path.splitPath().tail
+      if not fileExists(srcToCheck):
+        if not tryRemoveFile(path):
+          echo "Failed to remove ", path
+      # let packageOfLauncher = getXPackageName(path)
+      # if packageOfLauncher != "":
+      #   # We must test if package is not installed here
+      #   if not allLaunchers.contains(currentLauncher) and not installed.contains(packageOfLauncher):
+      #     if not tryRemoveFile(path):
+      #       stderr.write("[x] Error while removing " & path & "\n")
 
 echo "Scanning application launchers"
 update_launchers()
