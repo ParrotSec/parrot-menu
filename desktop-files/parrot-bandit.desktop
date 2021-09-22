@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Bandit
+Comment=Security oriented static analyzer for Python code - Python 3.x
+Encoding=UTF-8
+Exec=pentestexec "bandit -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-vulnerability-analysis;
+X-Parrot-Package=python3-bandit
