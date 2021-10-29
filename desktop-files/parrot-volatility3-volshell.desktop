@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=volatility - volshell
+Encoding=UTF-8
+Exec=pentestexec "volshell -h"
+Icon=parrot-volatility.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-forensics;
+Comment=A tool for interactivate forensic analysis of memory images
+X-Parrot-Package=volatility3
