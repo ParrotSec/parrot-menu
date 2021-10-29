@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=PocSuite Console
+Comment=POC testing framework
+Encoding=UTF-8
+Exec=pentestexec poc-console
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=04-exploitation-tools;
+X-Parrot-Package=pocsuite3
