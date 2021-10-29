@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=GDB enchanced features (GEF)
+Encoding=UTF-8
+Exec=gdb-gef
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-02-debuggers;
+Comment=A set of commands to assist exploit developers and reverse-engineers
+X-Parrot-Package=gdb-gef
