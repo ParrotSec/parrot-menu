@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=instaloader - Instagram OSINT tool
+Encoding=UTF-8
+Exec=pentestexec "instaloader --help"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-07-osint-analysis;
+Comment=Download pictures (or videos) along with their captions and other metadata from Instagram
+X-Parrot-Package=instaloader

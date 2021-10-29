@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=mimipenguin
+Comment=Uses root permission on Linux to display passwords in plaintext
+Encoding=UTF-8
+Exec=pentestls /usr/share/mimipenguin
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=08-02-hash-dump;
+X-Parrot-Package=mimipenguin
