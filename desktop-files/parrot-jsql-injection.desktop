@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=jSQL Injection
+Comment=Java tool for automatic database injection (GUI)
+Encoding=UTF-8
+Exec=pentestexec "jsql"
+Icon=parrot-jsql.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=03-05-web-vulnerability-scanners;04-05-web-exploit
+X-Parrot-Package=jsql-injection
