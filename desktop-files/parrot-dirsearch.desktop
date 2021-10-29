@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=DirSearch
+Comment=Web path bruteforcer
+Encoding=UTF-8
+Exec=pentestexec "dirsearch -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-04-web-crawlers;
+X-Parrot-Package=dirsearch
