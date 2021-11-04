@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Burpsuite Community Edition
+Comment=Web Application proxy framework
+Encoding=UTF-8
+Exec=java -jar /usr/bin/burpsuite
+Icon=parrot-burpsuite.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=03-06-web-application-proxies;top10
+X-Parrot-Package=burpsuite

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Burpsuite Legacy Edition - 1.7.36 Community
+Comment=Web Application proxy framework
+Encoding=UTF-8
+Exec=java -jar /usr/bin/burpsuite-legacy
+Icon=parrot-burpsuite.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=03-06-web-application-proxies
+X-Parrot-Package=burpsuite-legacy
