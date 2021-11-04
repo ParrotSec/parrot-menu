@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=parsero
+Comment=Fast robots.txt checker written in Python
+Encoding=UTF-8
+Exec=pentestexec parsero
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-webapp-analysis;
+X-Parrot-Package=parsero
