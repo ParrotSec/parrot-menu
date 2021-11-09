@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Detect It Easy - QT GUI
+Comment=Determining types of files, packers, file structure and more
+Encoding=UTF-8
+Exec=die
+Icon=/usr/share/icons/parrot-common/die/main.ico
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=07-reverseengineer;
