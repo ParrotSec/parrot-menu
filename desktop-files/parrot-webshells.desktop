@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=webshells
 Encoding=UTF-8
-Exec=pentestls "/usr/share/webshells"
+Exec=parrot-ls "/usr/share/webshells"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

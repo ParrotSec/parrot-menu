@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=seclists
 Encoding=UTF-8
-Exec=pentestls "/usr/share/seclists/"
+Exec=parrot-ls "/usr/share/seclists/"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

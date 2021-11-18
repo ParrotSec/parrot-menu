@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Merlin agents
 Encoding=UTF-8
-Exec=pentestls "/usr/share/merlin-agents"
+Exec=parrot-ls "/usr/share/merlin-agents"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

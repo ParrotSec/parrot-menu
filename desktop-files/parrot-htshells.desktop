@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=htshells
 Encoding=UTF-8
-Exec=pentestls "/usr/share/htshells"
+Exec=parrot-ls "/usr/share/htshells"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
