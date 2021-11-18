@@ -2,7 +2,7 @@
 Name=jSQL Injection
 Comment=Java tool for automatic database injection (GUI)
 Encoding=UTF-8
-Exec=pentestexec "jsql"
+Exec=parrot-exec "jsql"
 Icon=parrot-jsql.png
 StartupNotify=false
 Terminal=false

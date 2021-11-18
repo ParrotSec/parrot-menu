@@ -2,7 +2,7 @@
 Name=findmyhash
 Comment=Crack hashes with online services
 Encoding=UTF-8
-Exec=pentestexec "findmyhash"
+Exec=parrot-exec "findmyhash"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

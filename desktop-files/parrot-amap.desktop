@@ -2,7 +2,7 @@
 Name=amap
 Comment=Identify applications on running ports
 Encoding=UTF-8
-Exec=pentestexec "amap"
+Exec=parrot-exec "amap"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=phpggc
 Encoding=UTF-8
-Exec=pentestexec "phpggc -h"
+Exec=parrot-exec "phpggc -h"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

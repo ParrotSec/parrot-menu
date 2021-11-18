@@ -2,7 +2,7 @@
 Name=NTLM Recon
 Comment=Enumerate information from NTLM authentication enabled web endpoints
 Encoding=UTF-8
-Exec=pentestexec "ntlmrecon -h"
+Exec=parrot-exec "ntlmrecon -h"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

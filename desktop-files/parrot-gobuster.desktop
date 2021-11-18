@@ -2,7 +2,7 @@
 Name=gobuster
 Comment=A fast directory/file & DNS busting tool written in Go
 Encoding=UTF-8
-Exec=pentestexec "gobuster -h"
+Exec=parrot-exec "gobuster -h"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

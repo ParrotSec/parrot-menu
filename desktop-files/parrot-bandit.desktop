@@ -2,7 +2,7 @@
 Name=Bandit
 Comment=Security oriented static analyzer for Python code - Python 3.x
 Encoding=UTF-8
-Exec=pentestexec "bandit -h"
+Exec=parrot-exec "bandit -h"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

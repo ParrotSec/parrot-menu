@@ -2,7 +2,7 @@
 Name=PocSuite Console
 Comment=POC testing framework
 Encoding=UTF-8
-Exec=pentestexec poc-console
+Exec=parrot-exec poc-console
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

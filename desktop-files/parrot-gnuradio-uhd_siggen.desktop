@@ -2,7 +2,7 @@
 Name=uhd_siggen - Signal Generator using UHD hardware
 Comment=Command-line signal generator application.
 Encoding=UTF-8
-Exec=pentestexec "uhd_siggen -h"
+Exec=parrot-exec "uhd_siggen -h"
 Icon=gnuradio-grc
 StartupNotify=false
 Terminal=false

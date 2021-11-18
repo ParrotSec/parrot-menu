@@ -2,7 +2,7 @@
 Name=uhd_fft - Display spectrum from UHD receiver
 Comment=Show received signal spectrum 
 Encoding=UTF-8
-Exec=pentestexec "uhd_fft -h"
+Exec=parrot-exec "uhd_fft -h"
 Icon=gnuradio-grc
 StartupNotify=false
 Terminal=false

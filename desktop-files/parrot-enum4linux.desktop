@@ -2,7 +2,7 @@
 Name=enum4linux
 Comment=Enumerating information from Windows and Samba systems
 Encoding=UTF-8
-Exec=pentestexec "enum4linux"
+Exec=parrot-exec "enum4linux"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

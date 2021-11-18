@@ -2,7 +2,7 @@
 Name=gr_plot_psd - GNU Radio power spectrum plotting
 Comment=Takes a GNU Radio binary file (with specified data type using --data-type) and displays the I&Q data versus time as well as the power spectral density (PSD) plot
 Encoding=UTF-8
-Exec=pentestexec "gr_plot_psd -h"
+Exec=parrot-exec "gr_plot_psd -h"
 Icon=gnuradio-grc
 StartupNotify=false
 Terminal=false

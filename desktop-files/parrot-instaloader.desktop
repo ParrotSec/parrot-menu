@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=instaloader - Instagram OSINT tool
 Encoding=UTF-8
-Exec=pentestexec "instaloader --help"
+Exec=parrot-exec "instaloader --help"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

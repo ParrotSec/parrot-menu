@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=rafind2
 Encoding=UTF-8
-Exec=pentestexec "rafind2 -h"
+Exec=parrot-exec "rafind2 -h"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

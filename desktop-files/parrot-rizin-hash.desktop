@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=rz-hash — block based hashing utility
 Encoding=UTF-8
-Exec=pentestexec "rz-hash -h"
+Exec=parrot-exec "rz-hash -h"
 Icon=parrot-rizin.png
 StartupNotify=false
 Terminal=true

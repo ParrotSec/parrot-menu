@@ -2,7 +2,7 @@
 Name=gr_plot_const
 Comment=Takes a GNU Radio complex binary file and displays the I&Q data versus time and the constellation plot (I vs. Q)
 Encoding=UTF-8
-Exec=pentestexec "gr_plot_const -h"
+Exec=parrot-exec "gr_plot_const -h"
 Icon=gnuradio-grc
 StartupNotify=false
 Terminal=false

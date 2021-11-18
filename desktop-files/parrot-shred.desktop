@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Secure file deleter
 Comment=Overwrite  the specified FILE(s) repeatedly, in order to make it harder for even very expensive hardware probing to recover the data.
-Exec=pentestexec "man shred"
+Exec=parrot-exec "man shred"
 Terminal=true
 Type=Application
 Version=1.0

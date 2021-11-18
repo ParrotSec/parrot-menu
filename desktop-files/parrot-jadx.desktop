@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=jadx - CLI
 Encoding=UTF-8
-Exec=pentestexec "jadx -h"
+Exec=parrot-exec "jadx -h"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=false

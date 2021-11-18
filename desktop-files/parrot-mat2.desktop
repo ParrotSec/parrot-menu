@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Meta data cleaner
 Comment=Remove metadata in documentation for data products
-Exec=pentestexec "man mat2"
+Exec=parrot-exec "man mat2"
 Terminal=true
 Type=Application
 Version=1.0

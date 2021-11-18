@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=sqlmap - automatic SQL Injection tool
 Encoding=UTF-8
-Exec=pentestexec "sqlmap -hh"
+Exec=parrot-exec "sqlmap -hh"
 Icon=parrot-sqlmap.png
 StartupNotify=false
 Terminal=true

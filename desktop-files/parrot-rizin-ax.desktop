@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=rz-ax — rizin base converter
 Encoding=UTF-8
-Exec=pentestexec "rz-ax -h"
+Exec=parrot-exec "rz-ax -h"
 Icon=parrot-rizin.png
 StartupNotify=false
 Terminal=true

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=ragg2
 Encoding=UTF-8
-Exec=pentestexec "ragg2 -h"
+Exec=parrot-exec "ragg2 -h"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

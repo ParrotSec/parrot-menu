@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=pompem
 Encoding=UTF-8
-Exec=pentestexec pompem -h
+Exec=parrot-exec pompem -h
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

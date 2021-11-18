@@ -2,7 +2,7 @@
 Name=john
 Comment=Fast hash cracker that detects hash type automatically (CLI)
 Encoding=UTF-8
-Exec=pentestexec "john"
+Exec=parrot-exec "john"
 Icon=parrot-john.png
 StartupNotify=false
 Terminal=true

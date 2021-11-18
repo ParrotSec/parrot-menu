@@ -2,7 +2,7 @@
 Name=dwarf2json
 Comment=Processing DWARF and symbol table information from ELF files and symbols from System.map
 Encoding=UTF-8
-Exec=pentestexec "dwarf2json --help"
+Exec=parrot-exec "dwarf2json --help"
 Icon=parrot-foremost.png
 StartupNotify=false
 Terminal=true

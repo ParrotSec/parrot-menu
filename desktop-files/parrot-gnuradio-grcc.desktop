@@ -2,7 +2,7 @@
 Name=grcc - Gnu Radio Companion Compiler 
 Comment=Compile a gnuradio companion flowgraph without invoking the gui
 Encoding=UTF-8
-Exec=pentestexec "grcc -h"
+Exec=parrot-exec "grcc -h"
 Icon=gnuradio-grc
 StartupNotify=false
 Terminal=false

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=rz-sign — rizin zignature utility
 Encoding=UTF-8
-Exec=pentestexec "rz-sign -h"
+Exec=parrot-exec "rz-sign -h"
 Icon=parrot-rizin.png
 StartupNotify=false
 Terminal=true

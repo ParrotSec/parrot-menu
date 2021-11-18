@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=crackmapexec
 Encoding=UTF-8
-Exec=pentestexec "crackmapexec -h" 
+Exec=parrot-exec "crackmapexec -h" 
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

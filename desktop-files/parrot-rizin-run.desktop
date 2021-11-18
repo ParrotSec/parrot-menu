@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=rz-run — rizin utility to run programs in exotic environments
 Encoding=UTF-8
-Exec=pentestexec "rz-run -h"
+Exec=parrot-exec "rz-run -h"
 Icon=parrot-rizin.png
 StartupNotify=false
 Terminal=true

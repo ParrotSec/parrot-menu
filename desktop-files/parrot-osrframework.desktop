@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=osrframework
 Encoding=UTF-8
-Exec=pentestexec "osrframework-cli -h"
+Exec=parrot-exec "osrframework-cli -h"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

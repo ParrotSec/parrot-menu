@@ -2,7 +2,7 @@
 Name=Detect It Easy - CLI
 Comment=Determining types of files, packers, file structure and more
 Encoding=UTF-8
-Exec=pentestexec "diec -h"
+Exec=parrot-exec "diec -h"
 Icon=/usr/share/icons/parrot-common/die/main.ico
 StartupNotify=false
 Terminal=true

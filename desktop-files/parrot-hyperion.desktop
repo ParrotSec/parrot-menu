@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=hyperion
 Encoding=UTF-8
-Exec=pentestexec wine /usr/share/hyperion/hyperion.exe
+Exec=parrot-exec wine /usr/share/hyperion/hyperion.exe
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

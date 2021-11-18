@@ -2,7 +2,7 @@
 Name=xspy
 Comment=Capture *nix X-Server keystroke
 Encoding=UTF-8
-Exec=pentestexec "echo \"Run tool [/usr/share/xspy/xspy] on target machine to sniff keystroke\""
+Exec=parrot-exec "echo \"Run tool [/usr/share/xspy/xspy] on target machine to sniff keystroke\""
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

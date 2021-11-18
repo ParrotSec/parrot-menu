@@ -2,7 +2,7 @@
 Name=uhd_siggen_gui - GNU Radio signal generator using UHD hardware
 Comment=GUI to allow UHD supported hardware to be a signal generator.
 Encoding=UTF-8
-Exec=pentestexec "uhd_siggen_gui -h"
+Exec=parrot-exec "uhd_siggen_gui -h"
 Icon=gnuradio-grc
 StartupNotify=false
 Terminal=false

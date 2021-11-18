@@ -2,7 +2,7 @@
 Name=device-pharmer
 Comment=Search Shodan results and test credentials
 Encoding=UTF-8
-Exec=pentestexec "device-pharmer -h"
+Exec=parrot-exec "device-pharmer -h"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

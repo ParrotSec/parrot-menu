@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=WPScan - Wordpress Security Scanner
 Encoding=UTF-8
-Exec=pentestexec "wpscan --help"
+Exec=parrot-exec "wpscan --help"
 Icon=parrot-wpscan.png
 StartupNotify=false
 Terminal=true

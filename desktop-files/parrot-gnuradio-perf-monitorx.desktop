@@ -2,7 +2,7 @@
 Name=gr-perf-monitorx
 Comment=GNU Radio Performance Monitor
 Encoding=UTF-8
-Exec=pentestexec "gr-perf-monitorx -h"
+Exec=parrot-exec "gr-perf-monitorx -h"
 Icon=gnuradio-grc
 StartupNotify=false
 Terminal=false

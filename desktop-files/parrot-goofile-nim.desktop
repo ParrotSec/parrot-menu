@@ -2,7 +2,7 @@
 Name=Goofile Nim
 Comment=OSINT tool that use google engine to find specific files
 Encoding=UTF-8
-Exec=pentestexec goofileN
+Exec=parrot-exec goofileN
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

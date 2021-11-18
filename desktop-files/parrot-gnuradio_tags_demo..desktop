@@ -2,7 +2,7 @@
 Name=tags_demo - GNURadio and UHD tags example
 Comment=Show source timestamps and demonstrate timed bursts on a sink.
 Encoding=UTF-8
-Exec=pentestexec "tags_demo --help"
+Exec=parrot-exec "tags_demo --help"
 Icon=gnuradio-grc
 StartupNotify=false
 Terminal=false

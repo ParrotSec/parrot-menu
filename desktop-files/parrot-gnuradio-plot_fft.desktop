@@ -2,7 +2,7 @@
 Name=gr_plot_fft - Frequency domain GNU Radio plotting
 Comment=Takes a GNU Radio complex binary file and displays the I&Q data versus time as well as the frequency domain (FFT) plot
 Encoding=UTF-8
-Exec=pentestexec "gr_plot_fft -h"
+Exec=parrot-exec "gr_plot_fft -h"
 Icon=gnuradio-grc
 StartupNotify=false
 Terminal=false

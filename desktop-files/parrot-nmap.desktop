@@ -2,7 +2,7 @@
 Name=Nmap - the Network Mapper
 Comment=Network exploration or security auditing
 Encoding=UTF-8
-Exec=pentestexec "nmap"
+Exec=parrot-exec "nmap"
 Icon=parrot-nmap.png
 StartupNotify=false
 Terminal=true

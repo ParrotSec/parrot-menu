@@ -2,7 +2,7 @@
 Name=DirSearch
 Comment=Web path bruteforcer
 Encoding=UTF-8
-Exec=pentestexec "dirsearch -h"
+Exec=parrot-exec "dirsearch -h"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

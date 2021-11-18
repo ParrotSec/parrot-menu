@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Merlin's server identification tool
 Encoding=UTF-8
-Exec=pentestexec "prism -h"
+Exec=parrot-exec "prism -h"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=rz-gg
 Encoding=UTF-8
-Exec=pentestexec "rz-gg -h"
+Exec=parrot-exec "rz-gg -h"
 Icon=parrot-rizin.png
 StartupNotify=false
 Terminal=true

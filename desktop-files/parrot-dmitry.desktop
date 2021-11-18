@@ -2,7 +2,7 @@
 Name=dmitry
 Comment=Gather information about a host
 Encoding=UTF-8
-Exec=pentestexec "dmitry"
+Exec=parrot-exec "dmitry"
 Icon=parrot-dmitry.png
 StartupNotify=false
 Terminal=true

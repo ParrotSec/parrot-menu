@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=theharvester
 Encoding=UTF-8
-Exec=pentestexec "theHarvester -h"
+Exec=parrot-exec "theHarvester -h"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

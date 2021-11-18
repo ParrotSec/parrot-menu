@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=spiderfoot-cli
 Encoding=UTF-8
-Exec=pentestexec "spiderfoot-cli -h"
+Exec=parrot-exec "spiderfoot-cli -h"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

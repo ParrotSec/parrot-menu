@@ -2,7 +2,7 @@
 Name=gr-ctrlport-monitor - gnuradio control port gui
 Comment=GNU Radio Control Port Monitor
 Encoding=UTF-8
-Exec=pentestexec "gr-ctrlport-monitor -h"
+Exec=parrot-exec "gr-ctrlport-monitor -h"
 Icon=gnuradio-grc
 StartupNotify=false
 Terminal=false

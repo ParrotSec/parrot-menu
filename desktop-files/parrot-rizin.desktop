@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=rizin — Advanced commandline hexadecimal editor, disassembler and debugger
 Encoding=UTF-8
-Exec=pentestexec "rizin -h"
+Exec=parrot-exec "rizin -h"
 Icon=parrot-rizin.png
 StartupNotify=false
 Terminal=true

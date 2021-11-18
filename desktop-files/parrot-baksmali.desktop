@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=baksmali
 Encoding=UTF-8
-Exec=pentestexec baksmali --help 
+Exec=parrot-exec baksmali --help 
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

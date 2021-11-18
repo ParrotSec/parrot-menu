@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Merlin's server
 Encoding=UTF-8
-Exec=pentestexec "merlinserver"
+Exec=parrot-exec "merlinserver"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

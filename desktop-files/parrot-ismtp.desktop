@@ -2,7 +2,7 @@
 Name=ismtp
 Comment=SMTP enumeration and pentesting tool
 Encoding=UTF-8
-Exec=pentestexec "ismtp --help"
+Exec=parrot-exec "ismtp --help"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

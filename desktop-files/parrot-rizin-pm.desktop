@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=rz-pm — rizin package manager
 Encoding=UTF-8
-Exec=pentestexec "rz-pm -h"
+Exec=parrot-exec "rz-pm -h"
 Icon=parrot-rizin.png
 StartupNotify=false
 Terminal=true

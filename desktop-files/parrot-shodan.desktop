@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=python3-shodan
 Encoding=UTF-8
-Exec=pentestexec "shodan -h"
+Exec=parrot-exec "shodan -h"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

@@ -2,7 +2,7 @@
 Name=PocSuite CLI
 Comment=POC testing framework
 Encoding=UTF-8
-Exec=pentestexec pocsuite -h
+Exec=parrot-exec pocsuite -h
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

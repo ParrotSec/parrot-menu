@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=volatility - vol
 Encoding=UTF-8
-Exec=pentestexec "vol -h"
+Exec=parrot-exec "vol -h"
 Icon=parrot-volatility.png
 StartupNotify=false
 Terminal=true

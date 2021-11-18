@@ -2,7 +2,7 @@
 Name=ndiff - Nmap's result compare utility
 Comment=The Network Mapper - result compare utility
 Encoding=UTF-8
-Exec=pentestexec "ndiff"
+Exec=parrot-exec "ndiff"
 Icon=parrot-nmap.png
 StartupNotify=false
 Terminal=true

@@ -2,7 +2,7 @@
 Name=dnsenum
 Comment=Perl script to enumerate DNS information of a domain and to discover non-contiguous ip blocks
 Encoding=UTF-8
-Exec=pentestexec "dnsenum -h"
+Exec=parrot-exec "dnsenum -h"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true

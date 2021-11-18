@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=rz-find — Advanced commandline hexadecimal editor
 Encoding=UTF-8
-Exec=pentestexec "rz-find -h"
+Exec=parrot-exec "rz-find -h"
 Icon=parrot-rizin.png
 StartupNotify=false
 Terminal=true

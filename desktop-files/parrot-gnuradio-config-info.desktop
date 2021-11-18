@@ -2,7 +2,7 @@
 Name=gnuradio-config-info
 Comment=Show details on installed GNU radio
 Encoding=UTF-8
-Exec=pentestexec "gnuradio-config-info --print-all"
+Exec=parrot-exec "gnuradio-config-info --print-all"
 Icon=gnuradio-grc
 StartupNotify=false
 Terminal=false

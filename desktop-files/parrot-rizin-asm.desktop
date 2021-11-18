@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=rz-asm — rizin assembler and disassembler tool
 Encoding=UTF-8
-Exec=pentestexec "rz-asm -h"
+Exec=parrot-exec "rz-asm -h"
 Icon=parrot-rizin.png
 StartupNotify=false
 Terminal=true
