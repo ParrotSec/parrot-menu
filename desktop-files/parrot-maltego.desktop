@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=maltego
+Name=Maltego
 Comment=Mining and gathering information
 Encoding=UTF-8
-Exec=menuexecg "maltego"
+Exec=parrot-exec "maltego"
 Icon=parrot-maltego.png
 StartupNotify=false
 Terminal=false
