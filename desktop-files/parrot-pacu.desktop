@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=pacu - AWS Exploitation framework
+Encoding=UTF-8
+Exec=pacu
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=04-exploitation-tools
+Comment=Framework for AWS Exploitation
+X-Parrot-Package=cme
