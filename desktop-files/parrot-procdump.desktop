@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Procdump
+Encoding=UTF-8
+Exec=parrot-exec "procdump -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-forensics;
+Comment=Utility to create core dumps based on performance triggers
+X-Parrot-Package=procdump
