@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Ghidra
+Exec=ghidra
+Icon=parrot-menu
+Comment=Advanced Reverse Engineering framework
+Categories=07-reverseengineer;
+X-Parrot-Package=ghidra
