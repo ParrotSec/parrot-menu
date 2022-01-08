@@ -2,7 +2,7 @@
 Name=maskgen
 Comment=Generate hashcat masks
 Encoding=UTF-8
-Exec=menuexec "maskgen -h"
+Exec=parrot-exec "maskgen -h"
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=true
