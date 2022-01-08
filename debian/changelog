@@ -1,3 +1,66 @@
+parrot-menu (2:2022.01.08) rolling; urgency=medium
+
+  * Fix the name of jadx missing GUI description
+  * Fix jadx misisng CLI descriotion
+  * Fix missing entry hamster for hamster-sidejack
+  * Add launchers for binaries from gnuradio
+  * chnage name of parrot-empire to parrot-powershell-empire
+  * Add powershell launcher to development
+  * Add check launchers that were removed from parrot-menu
+  * Add remove function instead of debug msg and nolonger use re
+  * Remove wash (no longer on repo)
+  * Fix wrong name
+  * add launchers for twinkle (SIP clients)
+  * Add openjdk-8-policytool.desktop to remove launchers
+  * Change name of jsql injection desktop file
+  * Improve performance by query the installed packages from the cache file
+  * Change code structure and add comment
+  * Restore jsql-injection name
+  * Remove bytecode viewer for duplicated launchers
+  * Remove duplicated launchers
+  * Use name prefix check to remove launchers
+  * Remove jsql-injection launcher
+  * Remove burpsuite launcher
+  * Remove sqlmap launcher
+  * Correct value of icon
+  * Remove instaloader launcher
+  * remove duplicate nmap launchers
+  * remove wpscan launcher
+  * remove launcher of mimikatz
+  * remove theharvester launcher
+  * remove hyperion launcher
+  * remove findmyhash
+  * add launcher for bandit
+  * add pocsuite launchers
+  * add volatility3
+  * add gdb-gef launcher
+  * add hyperion launcher
+  * add wpscan launcher
+  * add findmyhash and veil launcher
+  * add mimikatz launcher
+  * add nmap launchers
+  * add bytecode viewer
+  * add dirsearch, ntlmrecon, seclists, sqlmap
+  * add the harvester
+  * add jsql-injection luancher
+  * add instaloader and mimipenguin
+  * add metasploit launchers
+  * add burpsuite launchers
+  * add parsero and goofile nim launcher
+  * add detect it easy
+  * change pentestexec to parrot-exec
+  * change pentestls to parrot-ls
+  * no longer run maltego as root
+  * add pacu launcher
+  * fix wrong parrot-package name
+  * add goofile launcher
+  * add procdump's launcher
+  * add ghidra launcher
+  * change menuexec to parrot-exec
+  * Update launcher for nishang
+
+ -- Nong Hoang Tu <dmknght@parrotsec.org>  Sat, 08 Jan 2022 08:25:18 +0700
+
 parrot-menu (2:2021.05.10) rolling; urgency=medium
 
   [ Nong Hoang Tu ]
