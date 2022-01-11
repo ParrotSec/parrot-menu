@@ -7,5 +7,5 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=03-04-web-crawlers;
-Comment=A web application bruteforcer
+Comment=A web application fuzzer
 X-Parrot-Package=wfuzz
