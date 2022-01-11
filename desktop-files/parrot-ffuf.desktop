@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=ffuf
+Encoding=UTF-8
+Exec=parrot-exec "ffuf"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-04-web-crawlers;
+Comment=A web application fuzzer in go lang
+X-Parrot-Package=ffuf
