@@ -10,7 +10,7 @@ Standards-Version: 4.5.0
 
 Package: parrot-menu
 Architecture: any
-Depends: ${misc:Depends}, gksu, xdg-utils, libc6
+Depends: ${misc:Depends}, policykit-1, xdg-utils, libc6
 Breaks: dradis (<< 3.1.0~rc2)
 Replaces: mate-menus, libgarcon-common
 Description: Parrot GNU/Linux custom menu

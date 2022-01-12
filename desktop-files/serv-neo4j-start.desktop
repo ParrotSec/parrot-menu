@@ -2,7 +2,7 @@
 Name=Start Neo4j service
 Comment=Start graph database Neo4j Community Edition
 Encoding=UTF-8
-Exec=gksudo neo4j start
+Exec=menuexec neo4j start
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=false
