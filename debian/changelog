@@ -1,3 +1,9 @@
+parrot-menu (2:2022.01.09) parrot-updates; urgency=medium
+
+  * Use pkexec instead of gksu.
+
+ -- Nong Hoang Tu <dmknght@parrotsec.org>  Wed, 12 Jan 2022 19:30:07 +0100
+
 parrot-menu (2:2022.01.08) rolling; urgency=medium
 
   * Fix the name of jadx missing GUI description
