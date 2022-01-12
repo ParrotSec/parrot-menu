@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=pcodedmp
+Encoding=UTF-8
+Exec=parrot-exec pcodedmp -h
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-01-disassemblers;
+Comment=Display disassembled VBA code in Microsoft Office
+X-Parrot-Package=pcodedmp
