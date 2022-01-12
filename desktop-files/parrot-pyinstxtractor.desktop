@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=pyinstxtractor
+Comment=Extract contents of compiled Python files
+Encoding=UTF-8
+Exec=parrot-exec pyinstxtractor
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-forensics;
+X-Parrot-Package=pyinstxtractor
