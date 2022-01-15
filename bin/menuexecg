@@ -12,5 +12,5 @@ if [ $? -eq 1 ]; then
 	exit
 else
 	notify-send "ParrotSec" "Starting $*"
-	pkexec env DISPLAY="$DISPLAY" XAUTHORITY="$XAUTHORITY" "$*"
+	pkexec env DISPLAY="$DISPLAY" XAUTHORITY="$XAUTHORITY" $*
 fi
