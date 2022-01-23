@@ -2,7 +2,7 @@
 Name=siege
 Encoding=UTF-8
 Exec=menuexec "siege -h"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

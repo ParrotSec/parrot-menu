@@ -2,7 +2,7 @@
 Name=sslscan
 Encoding=UTF-8
 Exec=menuexec "sslscan"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

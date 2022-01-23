@@ -2,7 +2,7 @@
 Name=bing-ip2hosts
 Encoding=UTF-8
 Exec=parrot-exec "bing-ip2hosts"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

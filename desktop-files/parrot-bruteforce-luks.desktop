@@ -2,7 +2,7 @@
 Name=Bruteforce LUKS
 Encoding=UTF-8
 Exec=menuexec "bruteforce-luks -h"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

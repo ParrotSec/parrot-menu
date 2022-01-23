@@ -2,7 +2,7 @@
 Name=evil-ssdp
 Encoding=UTF-8
 Exec=menuexec "evil-ssdp -h"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

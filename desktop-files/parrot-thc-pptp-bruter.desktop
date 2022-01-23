@@ -2,7 +2,7 @@
 Name=thc-pptp-bruter
 Encoding=UTF-8
 Exec=menuexec "thc-pptp-bruter"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

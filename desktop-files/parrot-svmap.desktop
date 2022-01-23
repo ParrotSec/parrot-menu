@@ -2,7 +2,7 @@
 Name=svmap
 Encoding=UTF-8
 Exec=menuexec "svmap -h"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

@@ -2,7 +2,7 @@
 Name=radiff2
 Encoding=UTF-8
 Exec=parrot-exec "radiff2 -h"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

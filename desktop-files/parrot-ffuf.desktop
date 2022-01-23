@@ -2,7 +2,7 @@
 Name=ffuf
 Encoding=UTF-8
 Exec=parrot-exec "ffuf"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

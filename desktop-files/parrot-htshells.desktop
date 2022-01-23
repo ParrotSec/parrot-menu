@@ -2,7 +2,7 @@
 Name=htshells
 Encoding=UTF-8
 Exec=parrot-ls "/usr/share/htshells"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

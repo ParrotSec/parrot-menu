@@ -2,7 +2,7 @@
 Name=Bytecode Viewer
 Encoding=UTF-8
 Exec=bytecode-viewer
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=false
 Type=Application

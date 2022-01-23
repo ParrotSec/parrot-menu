@@ -2,7 +2,7 @@
 Name=rtlsdr-scanner
 Encoding=UTF-8
 Exec=menuexecg "rtlsdr-scanner"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=false
 Type=Application

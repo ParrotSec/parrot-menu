@@ -2,7 +2,7 @@
 Name=GNU Debugger
 Encoding=UTF-8
 Exec=menuexec gdb -h 
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

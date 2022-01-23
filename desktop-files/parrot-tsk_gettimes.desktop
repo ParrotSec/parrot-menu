@@ -2,7 +2,7 @@
 Name=tsk_gettimes
 Encoding=UTF-8
 Exec=menuexec "tsk_gettimes -h"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

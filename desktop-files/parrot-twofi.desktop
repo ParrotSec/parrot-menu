@@ -2,7 +2,7 @@
 Name=twofi
 Encoding=UTF-8
 Exec=menuexec "twofi -h"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

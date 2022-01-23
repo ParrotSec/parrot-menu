@@ -2,7 +2,7 @@
 Name=wifi-honey
 Encoding=UTF-8
 Exec=menuexec "wifi-honey -h"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

@@ -2,7 +2,7 @@
 Name=smurf6
 Encoding=UTF-8
 Exec=menuexec atk6-smurf6 
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

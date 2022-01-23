@@ -1,3 +1,9 @@
+parrot-menu (2:2022.01.22) parrot-updates; urgency=medium
+
+  * Use xterm icon instead of parrot-menu.png (currently not available).
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 23 Jan 2022 18:31:41 +0100
+
 parrot-menu (2:2022.01.21) parrot-updates; urgency=medium
 
   * add ivy tool launcher

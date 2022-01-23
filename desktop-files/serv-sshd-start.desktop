@@ -2,7 +2,7 @@
 Name=Start SSH server
 Encoding=UTF-8
 Exec=servicexc ssh start 
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=false
 Type=Application

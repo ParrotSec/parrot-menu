@@ -2,7 +2,7 @@
 Name=jadx - CLI
 Encoding=UTF-8
 Exec=parrot-exec "jadx -h"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=false
 Type=Application

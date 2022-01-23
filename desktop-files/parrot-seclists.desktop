@@ -2,7 +2,7 @@
 Name=seclists
 Encoding=UTF-8
 Exec=parrot-ls "/usr/share/seclists/"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

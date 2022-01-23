@@ -2,7 +2,7 @@
 Name=wordlists
 Encoding=UTF-8
 Exec=parrot-ls "/usr/share/wordlists"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

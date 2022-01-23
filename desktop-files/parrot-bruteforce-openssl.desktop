@@ -2,7 +2,7 @@
 Name=bruteforce-salted-openssl
 Encoding=UTF-8
 Exec=menuexec "bruteforce-salted-openssl -h"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

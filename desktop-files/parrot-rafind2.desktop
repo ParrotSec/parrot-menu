@@ -2,7 +2,7 @@
 Name=rafind2
 Encoding=UTF-8
 Exec=parrot-exec "rafind2 -h"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

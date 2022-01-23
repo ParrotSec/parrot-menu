@@ -2,7 +2,7 @@
 Name=pth-wmic
 Encoding=UTF-8
 Exec=menuexec "pth-wmic -h"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

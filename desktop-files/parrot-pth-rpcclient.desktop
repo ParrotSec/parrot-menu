@@ -2,7 +2,7 @@
 Name=pth-rpcclient
 Encoding=UTF-8
 Exec=menuexec "pth-rpcclient -h"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

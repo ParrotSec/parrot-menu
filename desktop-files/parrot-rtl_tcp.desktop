@@ -2,7 +2,7 @@
 Name=rtl_tcp
 Encoding=UTF-8
 Exec=menuexec "rtl_tcp -h"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

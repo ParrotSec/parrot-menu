@@ -2,7 +2,7 @@
 Name=policygen
 Encoding=UTF-8
 Exec=parrot-exec "policygen -h"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

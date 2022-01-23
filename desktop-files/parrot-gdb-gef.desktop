@@ -2,7 +2,7 @@
 Name=GDB enchanced features (GEF)
 Encoding=UTF-8
 Exec=gdb-gef
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

@@ -2,7 +2,7 @@
 Name=rtl_test
 Encoding=UTF-8
 Exec=menuexec "rtl_test -h"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

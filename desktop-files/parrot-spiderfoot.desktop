@@ -2,7 +2,7 @@
 Name=spiderfoot
 Encoding=UTF-8
 Exec=notify-send "Starting spiderfoot" "Address: 127.0.0.1:8099" && spiderfoot -l 127.0.0.1:8099
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=false
 Type=Application

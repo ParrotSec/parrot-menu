@@ -2,7 +2,7 @@
 Name=sctpscan
 Encoding=UTF-8
 Exec=menuexec "sctpscan"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

@@ -2,7 +2,7 @@
 Name=tcpreplay
 Encoding=UTF-8
 Exec=menuexec "tcpreplay -h"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

@@ -2,7 +2,7 @@
 Name=wapiti
 Encoding=UTF-8
 Exec=menuexec "wapiti -h"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

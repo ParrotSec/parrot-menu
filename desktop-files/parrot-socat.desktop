@@ -2,7 +2,7 @@
 Name=socat
 Encoding=UTF-8
 Exec=menuexec socat -h 
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

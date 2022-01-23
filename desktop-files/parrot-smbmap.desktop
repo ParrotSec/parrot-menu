@@ -2,7 +2,7 @@
 Name=smbmap
 Encoding=UTF-8
 Exec=menuexec "smbmap -h"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

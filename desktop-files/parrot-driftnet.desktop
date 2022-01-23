@@ -2,7 +2,7 @@
 Name=Driftnet
 Comment=Picks out and displays images from network traffic
 Exec=menuexec "driftnet -h"
-Icon=parrot-menu.png
+Icon=xterm
 Terminal=true
 Type=Application
 Keywords=Sniffer;Network capture;

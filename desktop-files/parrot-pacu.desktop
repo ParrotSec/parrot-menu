@@ -2,7 +2,7 @@
 Name=pacu - AWS Exploitation framework
 Encoding=UTF-8
 Exec=pacu
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

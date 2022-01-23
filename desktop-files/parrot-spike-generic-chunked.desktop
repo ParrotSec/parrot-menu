@@ -2,7 +2,7 @@
 Name=spike-generic_chunked
 Encoding=UTF-8
 Exec=menuexec "generic_chunked"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

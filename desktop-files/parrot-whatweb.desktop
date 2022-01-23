@@ -2,7 +2,7 @@
 Name=whatweb
 Encoding=UTF-8
 Exec=menuexec "whatweb -h"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

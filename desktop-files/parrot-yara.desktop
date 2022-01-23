@@ -2,7 +2,7 @@
 Name=yara
 Encoding=UTF-8
 Exec=menuexec "yara"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

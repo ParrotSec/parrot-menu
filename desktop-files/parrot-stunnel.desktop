@@ -2,7 +2,7 @@
 Name=stunnel4
 Encoding=UTF-8
 Exec=menuexec "stunnel4 -h"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

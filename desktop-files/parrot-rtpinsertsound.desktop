@@ -2,7 +2,7 @@
 Name=rtpinsertsound
 Encoding=UTF-8
 Exec=menuexec "rtpinsertsound -h"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

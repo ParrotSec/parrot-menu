@@ -2,7 +2,7 @@
 Name=spiderfoot-cli
 Encoding=UTF-8
 Exec=parrot-exec "spiderfoot-cli -h"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

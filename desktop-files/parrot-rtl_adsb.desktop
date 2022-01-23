@@ -2,7 +2,7 @@
 Name=rtl_adsb
 Encoding=UTF-8
 Exec=menuexec "rtl_adsb -h"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

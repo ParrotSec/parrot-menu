@@ -2,7 +2,7 @@
 Name=srch_strings
 Encoding=UTF-8
 Exec=menuexec "srch_strings -h"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

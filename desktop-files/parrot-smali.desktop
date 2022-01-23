@@ -2,7 +2,7 @@
 Name=smali
 Encoding=UTF-8
 Exec=parrot-exec smali --help 
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

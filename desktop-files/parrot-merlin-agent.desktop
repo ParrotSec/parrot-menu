@@ -2,7 +2,7 @@
 Name=Merlin agents
 Encoding=UTF-8
 Exec=parrot-ls "/usr/share/merlin-agents"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

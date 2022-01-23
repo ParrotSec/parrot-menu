@@ -2,7 +2,7 @@
 Name=Merlin's server
 Encoding=UTF-8
 Exec=parrot-exec "merlinserver"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

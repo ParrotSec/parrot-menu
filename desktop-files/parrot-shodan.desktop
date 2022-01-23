@@ -2,7 +2,7 @@
 Name=python3-shodan
 Encoding=UTF-8
 Exec=parrot-exec "shodan -h"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

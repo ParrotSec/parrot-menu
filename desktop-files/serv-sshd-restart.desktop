@@ -2,7 +2,7 @@
 Name=Restart SSH server
 Encoding=UTF-8
 Exec=servicexc ssh restart 
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=false
 Type=Application

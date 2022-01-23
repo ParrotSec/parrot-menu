@@ -2,7 +2,7 @@
 Name=osrframework
 Encoding=UTF-8
 Exec=parrot-exec "osrframework-cli -h"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

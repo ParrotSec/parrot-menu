@@ -2,7 +2,7 @@
 Name=redir6
 Encoding=UTF-8
 Exec=menuexec atk6-redir6 
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

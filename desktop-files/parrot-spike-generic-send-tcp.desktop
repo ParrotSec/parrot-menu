@@ -2,7 +2,7 @@
 Name=spike-generic_send_tcp
 Encoding=UTF-8
 Exec=menuexec "generic_send_tcp"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

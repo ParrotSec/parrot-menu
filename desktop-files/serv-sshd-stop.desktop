@@ -2,7 +2,7 @@
 Name=Stop SSH service
 Encoding=UTF-8
 Exec=servicexc ssh stop 
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=false
 Type=Application

@@ -2,7 +2,7 @@
 Name=jadx GUI
 Encoding=UTF-8
 Exec=parrot-exec "jadx-gui"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=false
 Type=Application

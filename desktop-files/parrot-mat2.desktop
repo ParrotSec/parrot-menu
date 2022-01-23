@@ -7,4 +7,4 @@ Type=Application
 Version=1.0
 Categories=privacy;
 X-Parrot-Package=mat2
-Icon=parrot-menu.png
+Icon=xterm

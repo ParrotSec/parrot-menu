@@ -2,7 +2,7 @@
 Name=twinkle-consle
 Encoding=UTF-8
 Exec=twinkle-console
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

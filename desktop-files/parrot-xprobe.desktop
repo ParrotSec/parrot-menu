@@ -2,7 +2,7 @@
 Name=xprobe2
 Encoding=UTF-8
 Exec=menuexec "xprobe2 -h"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application

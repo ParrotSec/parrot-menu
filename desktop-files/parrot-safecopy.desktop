@@ -2,7 +2,7 @@
 Name=safecopy
 Encoding=UTF-8
 Exec=menuexec "safecopy -h"
-Icon=parrot-menu.png
+Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application
