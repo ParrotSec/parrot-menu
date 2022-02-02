@@ -7,4 +7,5 @@ Icon=parrot-mimikatz.png
 StartupNotify=false
 Terminal=true
 Type=Application
+Categories=08-post-exploit
 X-Parrot-Package=mimikatz
