@@ -7,5 +7,5 @@ Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=05-03-local-attacks;
+Categories=08-post-exploit
 X-Parrot-Package=xspy

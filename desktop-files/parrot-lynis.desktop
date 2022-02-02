@@ -7,5 +7,5 @@ Icon=parrot-lynis.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=02-vulnerability-analysis;
+Categories=08-post-exploit
 X-Parrot-Package=lynis
