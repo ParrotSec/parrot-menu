@@ -7,5 +7,5 @@ Icon=parrot-commix.png
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=03-webapp-analysis;04-05-web-exploit
+Categories=04-05-web-exploit
 X-Parrot-Package=commix
