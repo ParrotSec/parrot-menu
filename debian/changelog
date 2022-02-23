@@ -1,3 +1,32 @@
+parrot-menu (2:2022.02.16) parrot-updates; urgency=medium
+
+  [ Nong Hoang Tu ]
+  * fix missing icons. close #4
+  * add categories to mimikatz. Close #8
+  * add launcher for linux-exploit-suggester. Fix #6
+  * move xspy and lynis to postexploit. Fix #5
+  * update the way to show help banner
+  * commix is in exploit only
+  * add launcher for jwt exploiter
+  * Fix wrong binary name for cloud-enum
+  * fix wrong pakcage name of hydra-gtk
+  * Use parrot-exec for unicorn magic
+  * Beef xss is terminal
+  * fix spiderfoot start
+  * Add launcher for root
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 23 Feb 2022 15:51:30 +0100
+
+parrot-menu (2:2022.02.15) parrot-updates; urgency=medium
+
+  [ Nong Hoang Tu ]
+  * fix missing icons. close #4
+  * add categories to mimikatz. Close #8
+  * add launcher for linux-exploit-suggester. Fix #6
+  * move xspy and lynis to postexploit. Fix #5
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 15 Feb 2022 10:57:24 +0100
+
 parrot-menu (2:2022.01.22) parrot-updates; urgency=medium
 
   * Use xterm icon instead of parrot-menu.png (currently not available).
