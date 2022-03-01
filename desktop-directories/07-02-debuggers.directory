@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=• Debuggers
 Type=Directory
-Icon=parrot-menu.png
 Comment=Creates a high level source file from binaries
+Icon=/usr/share/icons/parrot-common/reverse-engineering-trans.png
