@@ -2,7 +2,7 @@
 Name=jwtxploiter
 Comment=A tool to test security of JSON Web Tokens. Test a JWT against all known CVEs.
 Encoding=UTF-8
-Exec=pentestexec "jwtxpl -h"
+Exec=parrot-exec "jwtxpl -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true
