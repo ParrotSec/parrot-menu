@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=BashFuscator
+Encoding=UTF-8
+Exec=parrot-exec "bashfuscator -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-04-av-bypass;
+Comment=Making Bash one-liners or scripts much more difficult to understand
+X-Parrot-Package=bashfuscator
