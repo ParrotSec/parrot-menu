@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=zkar - Java serialization protocol analysis
+Comment=A Java serialization payloads parser and viewer
+Encoding=UTF-8
+Exec=parrot-exec "zkar -h"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=04-04-payload-generator;
+X-Parrot-Package=zkar
