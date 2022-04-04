@@ -2,7 +2,7 @@
 Name=Burpsuite Community Edition
 Comment=Web Application proxy framework
 Encoding=UTF-8
-Exec=java -jar /usr/bin/burpsuite
+Exec=java -jar --add-opens=java.desktop/javax.swing=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED /usr/bin/burpsuite
 Icon=parrot-burpsuite.png
 StartupNotify=false
 Terminal=false
