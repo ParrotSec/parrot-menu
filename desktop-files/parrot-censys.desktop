@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Censys
+Encoding=UTF-8
+Exec=parrot-exec "censys -h"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-07-osint-analysis;
+Comment=Search engine for Internet-connected devices
+X-Parrot-Package=python3-censys
