@@ -70,6 +70,7 @@ proc fixDebLaunchers() =
     "gksu.desktop",
     "re.rizin.cutter.desktop", # Duplicate launcher of rizin's cutter
     "openjdk-8-policytool.desktop",
+    "org.keepassxc.KeePassXC.desktop"
   ]
   for fileName in blacklistLauncherName:
     let finalPath = dirLaucherDest & fileName
@@ -141,7 +142,7 @@ proc update_launchers() =
               # Remove old launchers here
               if not tryRemoveFile(finalDestPath):
                 stderr.write("[x] Error while processing " & path & "\n")
-          
+
           # In this version, we are moving name to serv-, native and being more with different categories
           fixOldLaunchers(path)
         except:
