@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=python3-shodan
+Name=Shodan
 Encoding=UTF-8
 Exec=parrot-exec "shodan -h"
 Icon=xterm
