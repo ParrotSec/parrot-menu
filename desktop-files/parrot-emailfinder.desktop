@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=emailfinder
+Encoding=UTF-8
+Exec=parrot-exec "emailfinder -h"
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-07-osint-analysis;
+Comment=Search emails through Search Engines
+X-Parrot-Package=emailfinder
