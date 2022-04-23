@@ -1,2 +1,3 @@
 install:
-	nim c --nimcache:/tmp -d:release -o:update-launchers update_launchers.nim
+	mkdir -p build
+	nim c --nimcache:/tmp -d:release -o:build/update-launchers launcher-updater/update_launchers.nim
