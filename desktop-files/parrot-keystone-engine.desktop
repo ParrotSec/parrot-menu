@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Keystone Engine
+Comment=Commandline tool of Keystone Assembler Framework
+Encoding=UTF-8
+Exec=pentestexec kstool
+Icon=parrot-menu.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=Development
+X-Parrot-Package=keystone-engine
