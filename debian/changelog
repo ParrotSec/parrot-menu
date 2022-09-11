@@ -7,7 +7,7 @@ parrot-menu (2:2022.09.07) parrot-updates; urgency=medium
   * Move source code to different location
   * Generate binary in folder build at build time
   * Change binary location of update-launchers to build
-  * Update code structure. Add a function to check and warn invalid binary. Close #9
+  * Update code structure. Close #9
   * Add launcher for email finder
   * Add launcher for keystone engine
   * Add dumpzilla
