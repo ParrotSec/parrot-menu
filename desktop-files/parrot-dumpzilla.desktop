@@ -2,7 +2,7 @@
 Name=Dumpzilla 
 Comment=Extract all forensic interesting information of Firefox, Iceweasel and Seamonkey browsers
 Encoding=UTF-8
-Exec=pentestexec dumpzilla
+Exec=parrot-exec dumpzilla
 Icon=parrot-menu.png
 StartupNotify=false
 Terminal=false
