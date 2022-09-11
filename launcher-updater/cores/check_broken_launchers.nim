@@ -9,7 +9,7 @@ proc checkValidBinary(path: string) =
     if line.startsWith("Exec="):
       let execFile = line.captureBetween('=', ' ').replace("\"", "").replace("\'", "")
       if findExe(execFile) == "":
-        echo " [-] Invalid binary ", execFile, " at launcher ", path
+        echo " [-] Invalid executable path ", execFile, " at launcher ", path
         return
   return
 
