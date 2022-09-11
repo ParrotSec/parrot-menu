@@ -263,7 +263,7 @@ parrot-menu (2:2021.03.22) rolling; urgency=medium
   * Bump new package version.
 
 
- -- Lorenzo "Palinuro" Faletra <palinuro@localhost.localdomain>  Mon, 22 Mar 2021 00:00:37 +0100
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 22 Mar 2021 00:00:37 +0100
 
 parrot-menu (2:2021.03.08) rolling; urgency=medium
 
