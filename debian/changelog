@@ -1,3 +1,20 @@
+parrot-menu (2:2022.09.07) parrot-updates; urgency=medium
+
+  * Add censys launcher
+  * Update shodan name
+  * Add keepassxc to ignore launchers
+  * Add gitignore to ignore temp files
+  * Move source code to different location
+  * Generate binary in folder build at build time
+  * Change binary location of update-launchers to build
+  * Update code structure. Add a function to check and warn invalid binary. Close #9
+  * Add launcher for email finder
+  * Add launcher for keystone engine
+  * Add dumpzilla
+  * Add launcher for savi
+
+ -- Nong Hoang Tu <dmknght@parrotsec.org>  Wed, 07 Sep 2022 00:54:29 +0200
+
 parrot-menu (2:2022.04.04) parrot-updates; urgency=medium
 
   * Import bashfuscator launcher.
