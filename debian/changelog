@@ -1,3 +1,10 @@
+parrot-menu (2:2022.09.12) parrot-updates; urgency=medium
+
+  * Improve error msg
+  * Add hardcoded path. Fix false positive for games
+
+ -- Nong Hoang Tu <dmknght@parrotsec.org>  Mon, 12 Sep 2022 16:29:38 +0200
+
 parrot-menu (2:2022.09.07) parrot-updates; urgency=medium
 
   * Add censys launcher
