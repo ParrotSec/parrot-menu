@@ -5,6 +5,12 @@ import parseutils
 
 
 proc checkValidBinary(path: string) =
+  #[
+    When the script is invoked by APT, the PATH is the system's default of root user
+    Therefore /usr/games/ is not in the path. We have to set our custom PATH manually
+    to avoid the false positive
+  ]#
+  putEnv("PATH", "/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/local/sbin:/usr/sbin:/sbin")
   for line in lines(path):
     if line.startsWith("Exec="):
       let execFile = line.captureBetween('=', ' ').replace("\"", "").replace("\'", "")
