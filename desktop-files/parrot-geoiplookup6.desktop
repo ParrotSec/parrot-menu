@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=geoiplookup6
+Comment=Check location of IPv6 address
+Encoding=UTF-8
+Exec=parrot-exec "geoiplookup6"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-info-gathering;01-04-network-scanners;
+X-Parrot-Package=geoip-bin
