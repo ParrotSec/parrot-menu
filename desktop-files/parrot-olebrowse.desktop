@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=olebrowse
+Comment=Simple GUI tool to analysis OLE files
+Encoding=UTF-8
+Exec=olebrowse
+Icon=xterm.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=07-06-oletools;
+X-Parrot-Package=oletools

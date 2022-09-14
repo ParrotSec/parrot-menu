@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=mraptor
+Comment=Detect malicious VBA Macros
+Encoding=UTF-8
+Exec=parrot-exec "mraptor -h"
+Icon=xterm.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-06-oletools;
+X-Parrot-Package=oletools

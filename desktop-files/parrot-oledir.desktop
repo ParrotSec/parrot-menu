@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=oledir
+Comment=Display all the directory entries of an OLE file, including free and orphaned entries
+Encoding=UTF-8
+Exec=parrot-exec "oledir -h"
+Icon=xterm.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-06-oletools;
+X-Parrot-Package=oletools
