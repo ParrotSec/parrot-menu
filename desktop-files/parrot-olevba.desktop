@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=olevba
+Comment=Extract and analyze VBA Macro source code from MS Office documents
+Encoding=UTF-8
+Exec=parrot-exec "olevba -h"
+Icon=xterm.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-06-oletools;
+X-Parrot-Package=oletools
