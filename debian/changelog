@@ -1,3 +1,12 @@
+parrot-menu (2:2022.09.17) parrot-updates; urgency=medium
+
+  * add gitignore agian
+  * Add launcher for geoiplookup
+  * Add new section for oletools, and launchers for oletools
+  * Add more launchers for oletools
+
+ -- Nong Hoang Tu <dmknght@parrotsec.org>  Sat, 17 Sep 2022 14:04:26 +0200
+
 parrot-menu (2:2022.09.12) parrot-updates; urgency=medium
 
   * Improve error msg

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=oletimes
+Comment=Extract creation and modification timestamps of all streams and storages
+Encoding=UTF-8
+Exec=parrot-exec "oletimes -h"
+Icon=xterm.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-06-oletools;
+X-Parrot-Package=oletools

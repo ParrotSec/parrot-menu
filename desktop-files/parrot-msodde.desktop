@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=msodde
+Comment=Detect and extract DDE/DDEAUTO links from MS Office documents, RTF and CSV
+Encoding=UTF-8
+Exec=parrot-exec "msodde -h"
+Icon=xterm.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-06-oletools;
+X-Parrot-Package=oletools
