@@ -36,9 +36,8 @@ proc fixDebLaunchers*() =
     "re.rizin.cutter.desktop", # Duplicate launcher of rizin's cutter
     "openjdk-8-policytool.desktop",
     "org.keepassxc.KeePassXC.desktop",
-    "firefox-esr.desktop",
-    "firefox.desktop"
   ]
+
   for fileName in blacklistLauncherName:
     let finalPath = dirLaucherDest & fileName
     if fileExists(finalPath):
