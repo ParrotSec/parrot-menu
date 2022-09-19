@@ -1,3 +1,13 @@
+parrot-menu (2:2022.09.18) parrot-updates; urgency=medium
+
+  [ Nong Hoang Tu ]
+  * Add firefox's original launcher to blacklist
+
+  [ Lorenzo "Palinuro" Faletra ]
+  * Rebuild package.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 17 Sep 2022 18:04:08 +0200
+
 parrot-menu (2:2022.09.17) parrot-updates; urgency=medium
 
   * add gitignore agian
