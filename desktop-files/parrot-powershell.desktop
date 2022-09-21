@@ -1,8 +1,11 @@
 [Desktop Entry]
-Type=Application
-Version=1.0
 Name=Powershell
-Comment=Microsoft's Powershell command-line on Linux system
+Comment=Microsoft's Powershell
+Encoding=UTF-8
+Type=Application
 Exec=pwsh
 Terminal=true
 Categories=Development
+Icon=parrot-powersploit
+CAtegories=top10;Development
+X-Parrot-Package=powershell
