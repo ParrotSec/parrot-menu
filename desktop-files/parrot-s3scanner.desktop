@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=s3scanner
+Comment=Find open S3 buckets and dump their contents
+Encoding=UTF-8
+Exec=parrot-exec "s3scanner -h"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-webapp-analysis;03-01-cms-identification;03-05-web-vulnerability-scanners;
+X-Parrot-Package=s3scanner
