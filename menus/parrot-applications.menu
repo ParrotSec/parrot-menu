@@ -561,6 +561,15 @@
         </And>
       </Include>
     </Menu>
+    <Menu>
+      <Name>Oletools Framework</Name>
+      <Directory>07-06-oletools.directory</Directory>
+      <Include>
+        <And>
+          <Category>07-06-oletools</Category>
+        </And>
+      </Include>
+    </Menu>
   </Menu>
   <Menu>
     <Name>Sniffing - Spoofing</Name>
