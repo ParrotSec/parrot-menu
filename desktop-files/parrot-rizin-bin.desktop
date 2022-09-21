@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=RZ_BIN — Binary program info extractor
+Name=rz_bin — Binary program info extractor
 Encoding=UTF-8
 Exec=parrot-exec "rz-bin -h"
 Icon=parrot-rizin.png
