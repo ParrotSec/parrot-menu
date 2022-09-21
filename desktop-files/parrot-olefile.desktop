@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=olefiles
+Comment=Parse, read and write Microsoft OLE2 files
+Encoding=UTF-8
+Exec=parrot-exec "olefile -h"
+Icon=xterm.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-06-oletools;
+X-Parrot-Package=oletools
