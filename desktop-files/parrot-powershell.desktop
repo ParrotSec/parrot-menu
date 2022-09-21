@@ -7,5 +7,5 @@ Exec=pwsh
 Terminal=true
 Categories=Development
 Icon=parrot-powersploit
-CAtegories=top10;Development
+Categories=top10;Development
 X-Parrot-Package=powershell
