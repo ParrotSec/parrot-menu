@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Start Greenbone Vulnerability Manager Service
+Name=Start GVM Service
 Comment=Start Greenbone Vulnerability Manager (OpenVas)
 Encoding=UTF-8
 Exec=menuexec "gvm-start"

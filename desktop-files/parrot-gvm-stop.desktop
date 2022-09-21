@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Stop Greenbone Vulnerability Manager Service
+Name=Stop GVM Service
 Comment=Stop Greenbone Vulnerability Manager (OpenVas)
 Encoding=UTF-8
 Exec=menuexec "gvm-stop"

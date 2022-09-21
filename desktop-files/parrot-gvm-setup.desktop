@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Start new installation
+Name=GVM Setup
 Comment=Install modules, plugins, admin password for Greenbone Vulnerability Manager (OpenVas)
 Encoding=UTF-8
 Exec=menuexec "gvm-setup"
