@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=ezhexviewer
+Comment=Hexview tool
+Encoding=UTF-8
+Exec=ezhexviewer
+Icon=xterm.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=07-06-oletools;
+X-Parrot-Package=oletools
