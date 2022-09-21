@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Stop Metasploit Framework service
+Name=Stop Metasploit service
 Comment=Stop metasploit framework and back-end services
 Encoding=UTF-8
 Exec=menuexec msfstop

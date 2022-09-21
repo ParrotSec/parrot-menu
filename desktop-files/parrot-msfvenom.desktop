@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=msfvenom
-Comment=Metasploit framework standalone payload and shellcode generator
+Comment=Metasploit Payload Generator
 Encoding=UTF-8
 Exec=parrot-exec "msfvenom -h"
 Icon=parrot-mpc.png

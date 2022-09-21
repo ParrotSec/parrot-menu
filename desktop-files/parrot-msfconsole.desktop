@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Metasploit-Framework's console
+Name=Metasploit Console
 Comment=Start Metasploit's interpreter
 Encoding=UTF-8
 Exec=menuexec msfconsole-start
