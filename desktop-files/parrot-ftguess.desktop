@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=ftguess
+Comment=Identify file formats and containers of MS Office documents
+Encoding=UTF-8
+Exec=parrot-exec "ftguess -h"
+Icon=xterm.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-06-oletools;
+X-Parrot-Package=oletools
