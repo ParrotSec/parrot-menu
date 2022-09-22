@@ -1,3 +1,26 @@
+parrot-menu (2:2022.09.23) parrot-updates; urgency=medium
+
+  [ Nong Hoang Tu ]
+  * Restore original launcher for firefox and firefox-esr
+  * Searchsploit launcher belongs to exploitdb-tiny
+  * Fix wrong section name format caused wrong display in English
+  * fix rz-bin case
+  * Fix parrot-mdb-tables icon
+  * Shorter gvm names
+  * Shorter metasploit name
+  * Use custom icon for powersploit
+  * Fix powershell launcher
+  * Add s3scanner launcher
+  * Improve error msg when check launchers
+  * Add olefile launcher
+  * Add ftguess launcher
+  * Add ezhexviewer launcher
+  * Fix grammar
+  * Fix missing oletools config for categories
+  * Fix typo in category section
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 23 Sep 2022 00:19:31 +0200
+
 parrot-menu (2:2022.09.18) parrot-updates; urgency=medium
 
   [ Nong Hoang Tu ]
