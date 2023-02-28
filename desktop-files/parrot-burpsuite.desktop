@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=Burpsuite Community Edition
+Name=Burpsuite CE
 Comment=Web Application proxy framework
 Encoding=UTF-8
-Exec=java -jar --add-opens=java.desktop/javax.swing=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED /usr/bin/burpsuite
+Exec=/usr/bin/burpsuite
 Icon=parrot-burpsuite.png
 StartupNotify=false
 Terminal=false
