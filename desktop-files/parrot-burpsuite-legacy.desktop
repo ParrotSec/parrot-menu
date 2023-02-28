@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Burpsuite Legacy Edition - 1.7.36 Community
+Name=Burpsuite Legacy
 Comment=Web Application proxy framework
 Encoding=UTF-8
 Exec=java -jar /usr/bin/burpsuite-legacy
