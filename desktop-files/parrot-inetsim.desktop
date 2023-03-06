@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=inetsim
+Comment=Simulating common internet services
+Encoding=UTF-8
+Exec=menuexec "inetsim -h"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-forensics;
+X-Parrot-Package=inetsim
