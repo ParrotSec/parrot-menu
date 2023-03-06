@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=gospider
+Comment=Fast web spider written in Go
+Encoding=UTF-8
+Exec=parrot-exec "gospider -h"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-04-web-crawlers;
+X-Parrot-Package=gospider
