@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=arjun - Discover parameters
+Comment=Find hidden parameters
+Encoding=UTF-8
+Exec=parrot-exec "arjun -h"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-04-web-crawlers;
+X-Parrot-Package=arjun
