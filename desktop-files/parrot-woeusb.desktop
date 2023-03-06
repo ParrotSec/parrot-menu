@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=WoeUSB
+Comment=Create Windows bootable USB
+Exec=menuexecg woeusbgui
+Icon=xterm
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Utility;
+X-Parrot-Package=woeusb-ng
