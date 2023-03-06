@@ -26,6 +26,7 @@ proc fixDebLaunchers*() =
     "edb.desktop",
     "lynis.desktop",
     "wireshark.desktop",
+    "org.wireshark.Wireshark.desktop",
     "ettercap.desktop",
     "chirp.desktop",
     "hydra-gtk.desktop",
