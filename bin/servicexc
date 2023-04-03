@@ -34,7 +34,7 @@ else
   exit
 fi
 
-menuexecg "/usr/sbin/service $1 $2"
+menuexecg "/usr/sbin/service" "$1" "$2"
 result="$(systemctl is-active $1)"
 # This is the command to show notification without icon
 /usr/bin/notify-send "$TITLE" "$2 for service $1 completed. Result: $result"
