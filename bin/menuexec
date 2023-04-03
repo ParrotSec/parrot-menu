@@ -19,6 +19,6 @@ if [ $? -eq 1 ]; then
 	echo -e "Command \033[1;95m$cmd_exec\033[1;0m cannot be found.\nPlease report this bug to \033[1;96mteam@parrotsec.org\033[1;0m\n"
   $SHELL -s
 else
-  sudo $* || true
-  sudo $SHELL -s
+  sudo "$*" || true
+  sudo "$SHELL" -s
 fi
