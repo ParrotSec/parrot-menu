@@ -7,34 +7,26 @@
 # author: Nong Hoang Tu <dmknght@parrotsec.org>
 
 # Excepted usage: servicexc <name> <start / stop / restart>
-TITLE="Parrot Service Runner"
 
-result="$(systemctl is-active $1)"
+service_name="$1"
+service_action="$2"
+service_status="$(systemctl is-active $1)"
+service_title="$service_name $service_action"
 # Check status of current service
 # If it is started, do not start it again
 # if it is not started, do not stop or restart
 
-if [ "$2" = "start" ]; then
-  if [ "$result" = "active" ]; then
-    /usr/bin/notify-send "$TITLE" "Service $1 is already activated. Can not start!"
-    exit
-  fi
-elif [ "$2" = "stop" ]; then
-  if [ "$result" = "inactive" ]; then
-    /usr/bin/notify-send "$TITLE" "Service $1 is not started. Can not stop!"
-    exit
-  fi
-elif [ "$2" = "restart" ]; then
-  if [ "$result" = "inactive" ]; then
-    /usr/bin/notify-send "$TITLE" "Service $1 is not started. Can not restart!"
-    exit
-  fi
-else
-  /usr/bin/notify-send "$TITLE" "Don't understand action $2 for service $1"
+if [ "$service_action" = "start" ] && [ "$service_status" = "active" ] ; then
+  /usr/bin/notify-send "$service_title error" "$service_name is already activated!"
   exit
 fi
 
-menuexecg "/usr/sbin/service" "$1" "$2"
-result="$(systemctl is-active $1)"
+if ([ "$service_action" = "stop" ] || [ "$service_action" == "restart" ]) && [ "$service_status" = "inactive" ] ; then
+  /usr/bin/notify-send "$service_title error" "$service_name is not started!"
+  exit
+fi
+
+menuexecg "/usr/sbin/service" "$service_name" "$service_action"
+service_status="$(systemctl is-active $1)"
 # This is the command to show notification without icon
-/usr/bin/notify-send "$TITLE" "$2 for service $1 completed. Result: $result"
+/usr/bin/notify-send "$service_status" "$service_name $service_action executed"
