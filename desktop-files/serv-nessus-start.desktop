@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=Start Nessus Service
+Name=Start Nessus
 Comment=Start Nessus vulnerability scanner service
 Encoding=UTF-8
-Exec=menuexec "/etc/init.d/nessusd start"
+Exec=servicexc nessusd start
 Icon=parrot-nessus.png
 StartupNotify=false
 Terminal=true
