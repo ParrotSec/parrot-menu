@@ -1,4 +1,4 @@
-parrot-menu (2:2022.09.23) parrot-updates; urgency=medium
+parrot-menu (2:2023.04.14) parrot-updates; urgency=medium
 
   [ Nong Hoang Tu ]
   * Restore original launcher for firefox and firefox-esr
@@ -19,7 +19,7 @@ parrot-menu (2:2022.09.23) parrot-updates; urgency=medium
   * Fix missing oletools config for categories
   * Fix typo in category section
 
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 23 Sep 2022 00:19:31 +0200
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 14 Apr 2023 18:49:29 +0200
 
 parrot-menu (2:2022.09.18) parrot-updates; urgency=medium
 
