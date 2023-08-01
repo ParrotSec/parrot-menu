@@ -1,3 +1,35 @@
+parrot-menu (2:2023.08.01) parrot-updates; urgency=medium
+
+  [ Nong Hoang Tu ]
+  * Shorter name for burpsuite legacy
+  * Shorter name, new execute method for burpsuite
+  * Add new name of wireshark original launcher
+  * Update launchers for powershell-empire
+  * Add bddisasm launcher
+  * Fix wrong executable name of bddisasm
+  * Fix file name typo
+  * Add gospider
+  * Add launcher for inetsim
+  * Add arjun
+  * Add woeusb launcher
+  * Bump new version
+  * Update changelog for 2:2023.03.06 release
+  * Add icon to woeusb-ng launcher
+  * Fix shebang
+  * Update nessus launcher
+  * Improve shell syntax
+  * Improve bash sytnax
+  * Fix wrong bash path
+  * Try fixing quote problem
+  * Restore "improvement change" because fuck bash
+  * Improve notification when start / stop service
+  * Improve message when command is executed
+
+  [ Lorenzo "Palinuro" Faletra ]
+  * Import new GIT version.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 01 Aug 2023 20:57:54 +0200
+
 parrot-menu (2:2023.04.14) parrot-updates; urgency=medium
 
   [ Nong Hoang Tu ]
