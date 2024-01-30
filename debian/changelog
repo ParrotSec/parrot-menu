@@ -1,3 +1,10 @@
+parrot-menu (2:2024.01.30) lory; urgency=medium
+
+  * Remove PATH from launcher scripts.
+  * Add missing shell call when launching a command.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 30 Jan 2024 23:22:22 +0100
+
 parrot-menu (2:2023.08.01) parrot-updates; urgency=medium
 
   [ Nong Hoang Tu ]
