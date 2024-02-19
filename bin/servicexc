@@ -26,7 +26,7 @@ if ([ "$service_action" = "stop" ] || [ "$service_action" == "restart" ]) && [ "
   exit
 fi
 
-menuexecg "/usr/sbin/service" "$service_name" "$service_action"
+"/usr/sbin/service" "$service_name" "$service_action"
 service_status="$(systemctl is-active $1)"
 # This is the command to show notification without icon
 /usr/bin/notify-send "$service_name $service_status" "Command \"$service_name $service_action\" executed"

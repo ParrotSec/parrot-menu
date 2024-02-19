@@ -1,3 +1,9 @@
+parrot-menu (2:2024.02.19) lory-updates; urgency=medium
+
+  * Update servicexg.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 19 Feb 2024 14:55:08 +0100
+
 parrot-menu (2:2024.01.30) lory; urgency=medium
 
   * Remove PATH from launcher scripts.
