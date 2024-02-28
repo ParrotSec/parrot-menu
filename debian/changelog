@@ -1,3 +1,15 @@
+parrot-menu (2:2024.02.28) lory-updates; urgency=medium
+
+  [ Nong Hoang Tu ]
+  * Remove faraday-gtk
+  * Remove faraday-gtk launcher
+  * Restore PATH in menuexec. Fix for various command not found problem
+
+  [ Lorenzo "Palinuro" Faletra ]
+  * Upload package.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 28 Feb 2024 18:50:03 +0100
+
 parrot-menu (2:2024.02.19) lory-updates; urgency=medium
 
   * Update servicexg.
