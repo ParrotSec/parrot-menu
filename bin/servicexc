@@ -8,6 +8,8 @@
 
 # Excepted usage: servicexc <name> <start / stop / restart>
 
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH
+
 service_name="$1"
 service_action="$2"
 service_status="$(systemctl is-active $1)"
