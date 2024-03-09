@@ -1,3 +1,10 @@
+parrot-menu (2:2024.02.29) lory-updates; urgency=medium
+
+  [ Nong Hoang Tu ]
+  * Add export PATH to other scripts to prevent missing file
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 09 Mar 2024 21:57:10 +0100
+
 parrot-menu (2:2024.02.28) lory-updates; urgency=medium
 
   [ Nong Hoang Tu ]
