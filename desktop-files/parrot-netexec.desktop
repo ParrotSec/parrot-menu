@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=netexec
+Comment=The Network Execution Tool
+Encoding=UTF-8
+Exec=parrot-exec nxc -h
+Icon=parrot-netexec.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=04-exploitation-tool;
+X-Parrot-Package=netexec
