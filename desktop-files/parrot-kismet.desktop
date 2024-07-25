@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=kismet
+Comment=Sniffer, WIDS, wardriver, and packet capture tool for Wi-Fi, Bluetooth, BTLE and more
+Encoding=UTF-8
+Exec=parrot-exec "kismet -h"
+Icon=kali-kismet
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-wireless-attacks;06-01-wireless-tools;
+X-Parrot-Package=kismet-core

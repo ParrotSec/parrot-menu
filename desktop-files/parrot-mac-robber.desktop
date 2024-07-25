@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=mac-robber
+Comment=Collects data about allocated files in mounted filesystems
+Encoding=UTF-8
+Exec=parrot-exec "mac-robber"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-info-gathering;
+X-Parrot-Package=mac-robber

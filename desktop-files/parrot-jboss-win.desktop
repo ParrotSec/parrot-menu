@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=jboss-win
+Comment=JBoss script for obtaining remote shell access
+Encoding=UTF-8
+Exec=parrot-exec "jboss-win -h"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-01-cms-identification;03-05-web-vulnerability-scanners;
+X-Parrot-Package=jboss-autopwn

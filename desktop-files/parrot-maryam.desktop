@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=maryam
+Comment=OWASP Maryam is a modular/optional open source framework bas
+Encoding=UTF-8
+Exec=parrot-exec "maryam"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-02-identify-live-hosts;
+X-Parrot-Package=maryam

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=ext3grep
+Comment=Ext3 file recovery tool
+Encoding=UTF-8
+Exec=parrot-exec "ext3grep --help"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-05-forensic-carving-tools;
+X-Parrot-Package=ext3grep

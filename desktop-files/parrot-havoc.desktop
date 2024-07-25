@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=havoc
+Comment=Modern and malleable post-exploitation command and control (C2) framework
+Encoding=UTF-8
+Exec=parrot-exec "havoc client"
+Icon=parrot-havoc.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-maintaining-access;
+X-Parrot-Package=havoc

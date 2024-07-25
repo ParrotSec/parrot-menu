@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=urlcrazy
+Comment=Domain typo generator
+Encoding=UTF-8
+Exec=parrot-exec "urlcrazy -h"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-01-dns-analysis;01-07-osint-analysis;
+X-Parrot-Package=urlcrazy

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=passing-the-hash
+Comment=Patched tools to use password hashes as authentication input
+Encoding=UTF-8
+Exec=parrot-exec "pth-curl -h"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-03-local-attacks;
+X-Parrot-Package=pth-curl

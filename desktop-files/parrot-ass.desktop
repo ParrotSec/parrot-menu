@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=ass
+Comment=Autonomous system scanner
+Encoding=UTF-8
+Exec=parrot-exec "ass"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-08-route-analysis;
+X-Parrot-Package=irpas
