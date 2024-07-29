@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=dnsrecon
+Comment=DNS Enumeration and Scanning Tool
+Encoding=UTF-8
+Exec=parrot-exec "dnsrecon -h"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-01-dns-analysis;
+X-Parrot-Package=dnsrecon

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=ubertooth-util
+Comment=General purpose Ubertooth utility
+Encoding=UTF-8
+Exec=parrot-exec "ubertooth-util"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-04-other-wireless;
+X-Parrot-Package=ubertooth

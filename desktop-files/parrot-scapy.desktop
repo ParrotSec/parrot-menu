@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=scapy
+Comment=Interactive packet manipulation tool
+Encoding=UTF-8
+Exec=parrot-exec "scapy"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-sniffing-spoofing;
+X-Parrot-Package=python3-scapy

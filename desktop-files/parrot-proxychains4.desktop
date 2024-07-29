@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=proxychains4
+Comment=Redirect connections through proxy servers
+Encoding=UTF-8
+Exec=parrot-exec "proxychains4"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-02-tunneling;10-maintaining-access;
+X-Parrot-Package=proxychains4

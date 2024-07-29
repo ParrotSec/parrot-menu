@@ -1,11 +1,11 @@
 [Desktop Entry]
-Name=sqldict
-Comment=Dictionary attack tool for SQL Server
+Name=sqlsus
+Comment=MySQL injection tool
 Encoding=UTF-8
-Exec=parrot-exec "sqldict"
+Exec=parrot-exec "sqlsus -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application
 Categories=04-05-web-exploit;
-X-Parrot-Package=sqldict
+X-Parrot-Package=sqlsus

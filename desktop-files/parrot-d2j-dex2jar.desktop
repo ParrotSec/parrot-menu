@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=d2j-dex2jar
+Comment=Tools to work with android .dex and java .class files
+Encoding=UTF-8
+Exec=parrot-exec "d2j-dex2jar -h"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=07-reverseengineer;
+X-Parrot-Package=dex2jar

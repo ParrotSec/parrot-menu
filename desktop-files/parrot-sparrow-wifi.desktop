@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=sparrow-wifi
+Comment=Graphical Wi-Fi Analyzer for Linux
+Encoding=UTF-8
+Exec=parrot-exec "sparrow-wifi"
+Icon=xterm
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=06-01-wireless-tools;06-wireless-attacks;
+X-Parrot-Package=sparrow-wifi

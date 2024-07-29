@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=witnessme
+Comment=Web Inventory tool
+Encoding=UTF-8
+Exec=parrot-exec "witnessme -h"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-info-gathering;
+X-Parrot-Package=witnessme

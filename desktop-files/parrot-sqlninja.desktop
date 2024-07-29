@@ -7,5 +7,5 @@ Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=02-vulnerability-analysis;
+Categories=04-05-web-exploit;
 X-Parrot-Package=sqlninja

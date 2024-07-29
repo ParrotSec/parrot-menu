@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=sniffjoke
+Comment=Transparent TCP connection scrambler
+Encoding=UTF-8
+Exec=parrot-exec "sniffjoke --help"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-02-network-spoofing;
+X-Parrot-Package=sniffjoke

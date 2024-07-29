@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=starkiller
+Comment=PowerShell and Python post-exploitation agent
+Encoding=UTF-8
+Exec=parrot-exec "starkiller"
+Icon=parrot-starkiller
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-maintaining-access;
+X-Parrot-Package=powershell-empire

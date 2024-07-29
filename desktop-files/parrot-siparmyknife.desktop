@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=siparmyknife
+Comment=SIP fuzzing tool
+Encoding=UTF-8
+Exec=parrot-exec "siparmyknife"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-02-fuzzers;02-03-voip-tools;
+X-Parrot-Package=siparmyknife

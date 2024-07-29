@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=CAT
+Comment=Concatenate files and print on the standard output
+Encoding=UTF-8
+Exec=parrot-exec "CAT --help"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-01-cisco-attacks;02-01-cisco-tools;05-01-online-attacks;
+X-Parrot-Package=cisco-auditing-tool
