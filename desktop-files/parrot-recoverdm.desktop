@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=recoverdm
+Comment=Recover files on disks with damaged sectors
+Encoding=UTF-8
+Exec=parrot-exec "recoverdm"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-05-forensic-carving-tools;
+X-Parrot-Package=recoverdm

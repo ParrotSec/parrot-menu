@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=ils
+Comment=List inode information
+Encoding=UTF-8
+Exec=parrot-exec "ils"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-08-forensic-suites;
+X-Parrot-Package=sleuthkit

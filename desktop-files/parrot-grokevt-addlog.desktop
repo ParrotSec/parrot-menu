@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=grokevt-addlog
+Comment=Tool for adding a raw event log to an existing GrokEVT database
+Encoding=UTF-8
+Exec=parrot-exec "grokevt-addlog"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-08-forensic-suites;
+X-Parrot-Package=grokevt

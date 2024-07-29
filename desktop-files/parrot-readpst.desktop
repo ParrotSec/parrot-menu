@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=readpst
+Comment=Convert PST (MS Outlook Personal Folders) files to mbox and other formats
+Encoding=UTF-8
+Exec=parrot-exec "readpst -h"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-04-forensic-analysis-tools;
+X-Parrot-Package=pst-utils

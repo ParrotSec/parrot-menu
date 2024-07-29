@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=unhide
+Comment=Forensic tool to find hidden processes
+Encoding=UTF-8
+Exec=parrot-exec "sudo unhide -h"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-forensics;
+X-Parrot-Package=unhide

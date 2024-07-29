@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=tlssled
+Comment=Evaluates the security of a target SSL/TLS (HTTPS) server
+Encoding=UTF-8
+Exec=parrot-exec "tlssled"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-13-ssl-analysis;
+X-Parrot-Package=tlssled

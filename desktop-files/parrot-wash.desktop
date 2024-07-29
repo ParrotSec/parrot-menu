@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=wash
+Comment=brute force attack tool against Wi-Fi Protected Setup PIN number
+Encoding=UTF-8
+Exec=parrot-exec "wash -h"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-01-wireless-tools;
+X-Parrot-Package=reaver

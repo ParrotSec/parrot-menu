@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=sipsak
+Comment=A utility for various tests on sip servers and user agents
+Encoding=UTF-8
+Exec=parrot-exec "sipsak -h"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-03-voip-tools;
+X-Parrot-Package=sipsak

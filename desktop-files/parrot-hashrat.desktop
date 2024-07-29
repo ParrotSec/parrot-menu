@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=hashrat
+Comment=Hashing tool supporting several hashes and recursivity
+Encoding=UTF-8
+Exec=parrot-exec "hashrat --help"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=04-exploitation-tools;
+X-Parrot-Package=hashrat

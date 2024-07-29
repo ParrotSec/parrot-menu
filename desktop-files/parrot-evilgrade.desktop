@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=evilgrade
+Comment=Evilgrade framework
+Encoding=UTF-8
+Exec=parrot-exec "evilgrade"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-02-network-spoofing;
+X-Parrot-Package=isr-evilgrade

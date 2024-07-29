@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=spooftooph
+Comment=Automates spoofing or cloning Bluetooth devices
+Encoding=UTF-8
+Exec=parrot-exec "spooftooph -h"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-02-bluetooth-tools;
+X-Parrot-Package=spooftooph

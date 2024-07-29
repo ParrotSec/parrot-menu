@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=faraday
+Comment=Kali script to start and stop faraday-server and faraday-client
+Encoding=UTF-8
+Exec=parrot-exec "faraday"
+Icon=parrot-faraday
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=12-reporting;
+X-Parrot-Package=faraday

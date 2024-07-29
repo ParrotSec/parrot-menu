@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=freeradius
+Comment=Authentication, Authorization and Accounting server
+Encoding=UTF-8
+Exec=parrot-exec "freeradius -h"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+X-Parrot-Package=freeradius
+Categories=06-01-wireless-tools;

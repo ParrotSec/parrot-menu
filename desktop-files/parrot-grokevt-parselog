@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=grokevt-parselog
+Comment=Parse a windows event log and generate human-readable output based on message resources stored in a database
+Encoding=UTF-8
+Exec=parrot-exec "grokevt-parselog"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-08-forensic-suites;
+X-Parrot-Package=grokevt
