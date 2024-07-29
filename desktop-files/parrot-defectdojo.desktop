@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=defectdojo-stop
+Comment=DevSecOps, ASPM and vulnerability management tool
+Encoding=UTF-8
+Exec=parrot-exec "defectdojo-stop"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-vulnerability-analysis;
+X-Parrot-Package=defectdojo

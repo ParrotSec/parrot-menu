@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=clamscan
+Comment=Scan files and directories for viruses
+Encoding=UTF-8
+Exec=parrot-exec "clamscan -h"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-info-gathering;
+X-Parrot-Package=clamav

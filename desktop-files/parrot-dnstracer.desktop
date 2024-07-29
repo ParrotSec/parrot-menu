@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=dnstracer
+Comment=Trace a chain of DNS servers to the source
+Encoding=UTF-8
+Exec=parrot-exec "dnstracer"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-01-dns-analysis;
+X-Parrot-Package=dnstracer

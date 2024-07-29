@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=cisco-torch
+Comment=Cisco device scanner
+Encoding=UTF-8
+Exec=parrot-exec "cisco-torch --help"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-01-cisco-attacks;02-01-cisco-tools;
+X-Parrot-Package=cisco-torch

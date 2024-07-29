@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=jsql
+Comment=jSQL Injection is a lightweight application used to find database information from a server
+Encoding=UTF-8
+Exec=parrot-exec "jsql"
+Icon=xterm
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=04-06-db-exploit;03-05-web-vulnerability-scanners;
+X-Parrot-Package=jsql-injection
+StartupWMClass=com-jsql-MainApplication

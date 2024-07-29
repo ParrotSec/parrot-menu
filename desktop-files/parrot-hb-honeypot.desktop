@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=hb-honeypot
+Comment=Heartbleed Honeypot Script
+Encoding=UTF-8
+Exec=parrot-exec "hb-honeypot"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-vulnerability-analysis;04-exploitation-tools;
+X-Parrot-Package=hb-honeypot

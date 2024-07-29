@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=dns-rebind
+Comment=DNS rebinding tool
+Encoding=UTF-8
+Exec=parrot-exec "dns-rebind"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-02-network-spoofing;
+X-Parrot-Package=rebind

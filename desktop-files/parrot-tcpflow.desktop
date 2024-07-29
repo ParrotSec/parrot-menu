@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=tcpflow
+Comment=TCP flow recorder
+Encoding=UTF-8
+Exec=parrot-exec "tcpflow -h"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-01-network-sniffers;
+X-Parrot-Package=tcpflow

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=backdoor-factory
+Comment=Inject predefined or user-defined shellcode in binaries
+Encoding=UTF-8
+Exec=parrot-exec "backdoor-factory -h"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-maintaining-access;04-02-social-engineering;
+X-Parrot-Package=backdoor-factory

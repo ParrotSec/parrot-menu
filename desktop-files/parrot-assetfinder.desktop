@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=assetfinder
+Comment=Find domains and subdomains related to a given domain
+Encoding=UTF-8
+Exec=parrot-exec "assetfinder -h"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-07-osint-analysis;
+X-Parrot-Package=assetfinder

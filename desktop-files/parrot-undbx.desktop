@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=undbx
+Comment=Tool to extract, recover and undelete e-mail messages from Outlook Express .dbx files
+Encoding=UTF-8
+Exec=parrot-exec "undbx -h"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-03-digital-forensics;
+X-Parrot-Package=undbx

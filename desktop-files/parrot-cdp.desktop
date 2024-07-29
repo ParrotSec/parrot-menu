@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=cdp
+Comment=Cisco discovery protocol packet sender
+Encoding=UTF-8
+Exec=parrot-exec "cdp"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-08-route-analysis;
+X-Parrot-Package=irpas

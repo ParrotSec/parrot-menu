@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=nipper
+Comment=Network Infrastructure Parser. Produces reports based of network device configuration file settings
+Encoding=UTF-8
+Exec=parrot-exec "nipper --help"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-01-cisco-tools;
+X-Parrot-Package=nipper-ng

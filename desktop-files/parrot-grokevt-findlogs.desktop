@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=grokevt-findlogs
+Comment=Attempts to find log file fragments in raw binary files, such as memory dumps and disk images.
+Encoding=UTF-8
+Exec=parrot-exec "grokevt-findlogs"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-08-forensic-suites;
+X-Parrot-Package=grokevt

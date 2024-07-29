@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=paros
+Comment=Java-based web proxy for assessing web application vulnerability
+Encoding=UTF-8
+Exec=parrot-exec "paros"
+Icon=xterm
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=03-webapp-analysis;03-06-web-application-proxies;
+X-Parrot-Package=paros
+StartupWMClass=org-parosproxy-paros-Paros
