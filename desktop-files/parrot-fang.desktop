@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=fang
+Comment=Locates non-discoverable bluetooth devices
+Encoding=UTF-8
+Exec=parrot-exec "fang -h"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-02-bluetooth-tools;
+X-Parrot-Package=redfang

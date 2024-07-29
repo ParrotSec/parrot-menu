@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=grokevt-ripdll
+Comment=A tool for extracting message resources from a PE-formatted file
+Encoding=UTF-8
+Exec=parrot-exec "grokevt-ripdll"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-08-forensic-suites;
+X-Parrot-Package=grokevt

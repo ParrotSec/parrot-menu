@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=bulk_extractor
+Comment=Scans a disk image for regular expressions and other content.
+Encoding=UTF-8
+Exec=parrot-exec "bulk_extractor -h"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-forensics;
+X-Parrot-Package=bulk-extractor

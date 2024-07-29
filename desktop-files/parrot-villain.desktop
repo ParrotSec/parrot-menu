@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=villain
+Comment=High level C2 framework
+Encoding=UTF-8
+Exec=parrot-exec "villain"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-maintaining-access;
+X-Parrot-Package=villain

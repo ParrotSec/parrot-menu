@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=rcracki_mt
+Comment=Version of rcrack that supports hybrid and indexed tables
+Encoding=UTF-8
+Exec=parrot-exec "rcracki_mt"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-02-offline-attacks;05-password-attacks;
+X-Parrot-Package=rcracki-mt

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=sqldict
+Comment=Dictionary attack tool for SQL Server
+Encoding=UTF-8
+Exec=parrot-exec "sqldict"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=02-vulnerability-analysis;
+X-Parrot-Package=sqldict

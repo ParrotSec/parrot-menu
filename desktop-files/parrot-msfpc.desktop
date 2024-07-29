@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=msfpc
+Comment=MSFvenom Payload Creator (MSFPC)
+Encoding=UTF-8
+Exec=parrot-exec "msfpc"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=04-exploitation-tools;04-02-social-engineering;
+X-Parrot-Package=msfpc

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=dnswalk
+Comment=A DNS database debugger
+Encoding=UTF-8
+Exec=parrot-exec "dnswalk --help"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-01-dns-analysis;
+X-Parrot-Package=dnswalk

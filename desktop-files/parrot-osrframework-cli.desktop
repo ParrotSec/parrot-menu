@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=osrframework-cli
+Comment=Open Sources Research Framework
+Encoding=UTF-8
+Exec=parrot-exec "osrframework-cli -h"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-07-osint-analysis;
+X-Parrot-Package=osrframework
