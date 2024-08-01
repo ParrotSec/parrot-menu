@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=Firefox Profile Manager
+Name=Firefox ESR Profile Manager
 Comment=Browse the World Wide Web
 GenericName=Web Browser (profile manager)
-X-GNOME-FullName=Firefox Profile Manager
+X-GNOME-FullName=Firefox ESR Profile Manager
 Exec=firefox-esr -ProfileManager %u
 Terminal=false
 X-MultipleArgs=false
