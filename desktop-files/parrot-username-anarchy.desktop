@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=username-anarchy
+Comment=Tools for generating usernames when penetration testing
+Encoding=UTF-8
+Exec=parrot-exec "username-anarchy"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-05-profile;
+X-Parrot-Package=username-anarchy
