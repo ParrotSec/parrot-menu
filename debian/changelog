@@ -1,3 +1,21 @@
+parrot-menu (2:2024.08.06) lory; urgency=medium
+
+  [ danterolle ]
+  * feat: add generate_icons.py for icon generation from .png file and netexec desktop entry
+  * fix(netexec): correct exec command and category
+  * add new desktop entries (kismet, cutycapt, above, urlcrazy, ext3grep and more)
+  * add more desktop entries (defectdojo, nipper, jsql...)
+  * add more entries (bloodhound, faraday, evilgrade, etc...)
+  * add more desktop entries (dnswalk, fang, rcrack, setoolkit...)
+  * add desktop entries (starkiller, proxychains4, dnsrecon and more)
+  * remove duplicate setoolkit desktop entry
+  * add username-anarchy desktop entry
+
+  [ Lorenzo "Palinuro" Faletra ]
+  * update firefox-esr profile manager launcher
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 06 Aug 2024 18:30:41 +0200
+
 parrot-menu (2:2024.02.29) lory-updates; urgency=medium
 
   [ Nong Hoang Tu ]
