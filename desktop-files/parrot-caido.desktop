@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Caido
+Comment=lightweight web security auditing toolkit
+Encoding=UTF-8
+Exec=/usr/bin/caido
+Icon=parrot-caido.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=03-06-web-application-proxies;top10
+X-Parrot-Package=caido

@@ -1,3 +1,9 @@
+parrot-menu (2:2024.12.05) lory-updates; urgency=medium
+
+  * Add Caido launcher and icon.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 05 Dec 2024 18:49:08 +0100
+
 parrot-menu (2:2024.08.06) lory; urgency=medium
 
   [ danterolle ]
