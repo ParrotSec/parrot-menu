@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Convo C2
+Comment=Command and Control infrastructure through Microsoft Teams
+Encoding=UTF-8
+Exec=parrot-exec convoc2
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-01-os-backdoors;10-maintaining-access;04-02-social-engineering;
+X-Parrot-Package=convoc2

@@ -1,11 +1,11 @@
 [Desktop Entry]
-Name=dbd
-Comment=netcat clone with encryption
+Name=netcat
+Comment=Network swiss army knife
 Encoding=UTF-8
-Exec=parrot-exec 'dbd -h'
+Exec=parrot-exec 'nc'
 Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application
 Categories=01-04-network-scanners;
-X-Parrot-Package=dbd
+X-Parrot-Package=netcat-openbsd

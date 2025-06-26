@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Gosh
+Comment=lightweight web server written in go
+Encoding=UTF-8
+Exec=parrot-exec /usr/bin/gosh
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-06-web-application-proxies
+X-Parrot-Package=gosh

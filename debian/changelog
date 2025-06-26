@@ -1,3 +1,12 @@
+parrot-menu (2:2025.06.26) lory-updates; urgency=medium
+
+  * Update Caido icon.
+  * Merge backdoor-factory launchers.
+  * Add missing netcat launcher.
+  * Update sbd and dbd launchers.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 26 Jun 2025 16:31:25 +0200
+
 parrot-menu (2:2024.12.05) lory-updates; urgency=medium
 
   * Add Caido launcher and icon.

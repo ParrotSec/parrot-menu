@@ -7,5 +7,5 @@ Icon=parrot-caido.png
 StartupNotify=false
 Terminal=false
 Type=Application
-Categories=03-06-web-application-proxies;top10
+Categories=03-06-web-application-proxies;03-webapp-analysis;top10
 X-Parrot-Package=caido
