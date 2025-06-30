@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=Sliver C2
+Name=Sliver C2 (client)
 Comment=Cross-platform C&C framework
 Encoding=UTF-8
-Exec=sliver-server
+Exec=sliver-client --help
 Icon=xterm
 StartupNotify=false
 Terminal=true
