@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=evil-winrm-py
+Comment=Executing commands on remote Windows machines using the WinRM
+Encoding=UTF-8
+Exec=menuexec "evil-winrm-py"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=08-post-exploit;03-05-web-vulnerability-scanners;
+X-Parrot-Package=evil-winrm-py
