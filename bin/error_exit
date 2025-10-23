@@ -15,7 +15,7 @@ error_exit() {
     local code="${2:-1}"
     echo -e "${RED}ERROR:${NC} ${message}" >&2
     echo -e "Please report this bug to ${CYAN}team@parrotsec.org${NC}\n"
-    return "$code"
+    exit "$code"
 }
 
 notify() {
