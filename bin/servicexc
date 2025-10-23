@@ -8,10 +8,18 @@
 
 # Excepted usage: servicexc <name> <start / stop / restart>
 
+source "$(dirname "$0")/error_exit"
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH
+
+[[ $# -ne 2 ]] && error_exit "Usage: servicexc <name> <start|stop|restart>" $E_INVALID_ARGS
 
 service_name="$1"
 service_action="$2"
+
+# Validate if service exist
+systemctl list-units --type=service --all | grep -q "$service_name" || \
+    error_exit "Service '$service_name' not found" $E_COMMAND_NOT_FOUND
+
 service_status="$(systemctl is-active $1)"
 service_title="$service_name $service_action"
 # Check status of current service
@@ -28,7 +36,10 @@ if ([ "$service_action" = "stop" ] || [ "$service_action" == "restart" ]) && [ "
   exit
 fi
 
-"/usr/sbin/service" "$service_name" "$service_action"
+if ! "/usr/sbin/service" "$service_name" "$service_action"; then
+    error_exit "Failed to $service_action service $service_name" $E_SERVICE_ERROR
+fi
+
 service_status="$(systemctl is-active $1)"
 # This is the command to show notification without icon
-/usr/bin/notify-send "$service_name $service_status" "Command \"$service_name $service_action\" executed"
+notify "$service_name $service_status" "Command \"$service_name $service_action\" executed"
