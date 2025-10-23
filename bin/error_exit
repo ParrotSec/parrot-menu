@@ -1,0 +1,25 @@
+#!/bin/bash
+
+readonly E_COMMAND_NOT_FOUND=1
+readonly E_INVALID_ARGS=2
+readonly E_SERVICE_ERROR=3
+readonly E_PERMISSION_DENIED=4
+
+readonly RED='\033[0;31m'
+readonly MAGENTA='\033[1;95m'
+readonly CYAN='\033[1;96m'
+readonly NC='\033[0m'
+
+error_exit() {
+    local message="$1"
+    local code="${2:-1}"
+    echo -e "${RED}ERROR:${NC} ${message}" >&2
+    echo -e "Please report this bug to ${CYAN}team@parrotsec.org${NC}\n"
+    return "$code"
+}
+
+notify() {
+    local title="$1"
+    local message="$2"
+    /usr/bin/notify-send "$title" "$message"
+}
