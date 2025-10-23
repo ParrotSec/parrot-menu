@@ -19,7 +19,12 @@ error_exit() {
 }
 
 notify() {
+    if ! command -v notify-send &> /dev/null; then
+        echo "'notify-send' command not found. Cannot send notification." >&2
+        return 1
+    fi
+
     local title="$1"
     local message="$2"
-    /usr/bin/notify-send "$title" "$message"
+    notify-send "$title" "$message"
 }
