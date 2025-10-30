@@ -6,11 +6,11 @@ Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>,
            Nong Hoang "Dmknght" Tu <dmknght@parrotsec.org>
 Build-Depends: debhelper-compat (=12),
                nim,
-Standards-Version: 4.5.0
+Standards-Version: 4.7.0
 
 Package: parrot-menu
 Architecture: any
-Depends: ${misc:Depends}, policykit-1, xdg-utils, libc6
+Depends: ${misc:Depends}, polkitd, xdg-utils, libc6
 Breaks: dradis (<< 3.1.0~rc2)
 Replaces: mate-menus, libgarcon-common
 Description: Parrot GNU/Linux custom menu

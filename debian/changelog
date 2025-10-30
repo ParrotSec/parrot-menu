@@ -1,3 +1,10 @@
+parrot-menu (2:2025.10.30) echo-updates; urgency=medium
+
+  * Update Standard-Version.
+  * Add polkitd instead of policykit-1
+
+ -- Dario "danterolle" Camonita <danterolle@parrotsec.org>  Thu, 30 Oct 2025 12:13:35 +0100
+
 parrot-menu (2:2025.06.31) lory-updates; urgency=medium
 
   * Add evil-winrm-py desktop launcher.
