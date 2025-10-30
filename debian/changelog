@@ -1,5 +1,11 @@
 parrot-menu (2:2025.10.30) echo-updates; urgency=medium
 
+  * Add pkexec dependency.
+
+ -- Dario "danterolle" Camonita <danterolle@parrotsec.org>  Thu, 30 Oct 2025 12:36:44 +0100
+
+parrot-menu (2:2025.10.30) echo-updates; urgency=medium
+
   * Update Standard-Version.
   * Add polkitd instead of policykit-1
 
