@@ -1,5 +1,12 @@
 package main
 
+// launcher-updater is a maintenance tool for .desktop files on Parrot OS systems.
+
+// It synchronizes launchers from a Parrot-specific source directory
+// to the standard system directory (/usr/share/applications), handling the removal
+// of obsolete files, fixing problematic launchers, and ensuring that only launchers
+// for actually installed applications are present.
+
 import (
 	"bufio"
 	"fmt"
@@ -19,6 +26,7 @@ const (
 )
 
 func checkValidBinary(path string) {
+	// Set a standard PATH environment variable to ensure the executable lookup happens in the **correct** directories.
 	err := os.Setenv("PATH", "/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/local/sbin:/usr/sbin:/sbin")
 	if err != nil {
 		return
@@ -55,6 +63,8 @@ func checkValidBinary(path string) {
 	}
 }
 
+// A launcher is considered obsolete if its name starts with "parrot-" or "serv-"
+// but it no longer exists in the source directory.
 func removeOldLaunchers() {
 	err := filepath.WalkDir(dirLauncherDest, func(path string, d os.DirEntry, err error) error {
 		if err != nil {
@@ -67,7 +77,10 @@ func removeOldLaunchers() {
 		shouldCheckBinary := true
 		currentLauncher := d.Name()
 
-		if (strings.HasPrefix(currentLauncher, "parrot-") || strings.HasPrefix(currentLauncher, "serv-")) && strings.HasSuffix(currentLauncher, ".desktop") {
+		if (strings.HasPrefix(currentLauncher, "parrot-") ||
+			strings.HasPrefix(currentLauncher, "serv-")) &&
+			strings.HasSuffix(currentLauncher, ".desktop") {
+			// Build the path to the corresponding file in the source directory.
 			srcToCheck := filepath.Join(dirLauncherSource, currentLauncher)
 			if _, err := os.Stat(srcToCheck); os.IsNotExist(err) {
 				shouldCheckBinary = false
@@ -103,6 +116,7 @@ func fixDebLaunchers() {
 
 	for _, fileName := range blacklistLauncherName {
 		finalPath := filepath.Join(dirLauncherDest, fileName)
+		// If a file from the blacklist exists, remove it.
 		if _, err := os.Stat(finalPath); err == nil {
 			if err := os.Remove(finalPath); err != nil {
 				log.Printf("Error while removing %s: %v", finalPath, err)
@@ -166,6 +180,9 @@ func queryInstalled() (map[string]struct{}, error) {
 	return installed, nil
 }
 
+// If a new launcher (e.g., "serv-tool.desktop") is installed, this function
+// ensures that the older version (e.g., "parrot-toolname.desktop") is removed
+// to avoid duplicates in the application menu.
 func fixOldLaunchers(fileName string) {
 	newNamePrefixes := []string{"serv-"}
 	for _, checkName := range newNamePrefixes {
@@ -182,6 +199,12 @@ func fixOldLaunchers(fileName string) {
 	}
 }
 
+// updateLaunchers is the main function that synchronizes launchers.
+// 1. Gets the list of installed packages.
+// 2. Scans the Parrot source directory for launchers.
+// 3. For each launcher, it determines the associated Debian package via the "X-Parrot-" field.
+// 4. If the package is installed, it copies/updates the launcher to the destination directory.
+// 5. If the package is not installed, it removes the launcher from the destination.
 func updateLaunchers() {
 	installed, err := queryInstalled()
 	if err != nil {
@@ -267,6 +290,8 @@ func copyFile(src, dst string) error {
 }
 
 func main() {
+	// It starts the update and cleanup operations in parallel.
+	// We are using goroutines to improve performance.
 	var wg sync.WaitGroup
 
 	fmt.Println("Scanning application launchers")
