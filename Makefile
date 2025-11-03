@@ -1,8 +1,11 @@
-.PHONY: icons
+.PHONY: install icons
+
+BINARY_NAME := update-launchers
+BUILD_DIR := build
 
 install:
-	mkdir -p build
-	nim c --nimcache:/tmp -d:release -o:build/update-launchers launcher-updater/update_launchers.nim
+	mkdir -p $(BUILD_DIR)
+	go build -ldflags="-s -w" -o $(BUILD_DIR)/$(BINARY_NAME) ./launcher-updater/main.go
 
 icons:
 	@read -p "Enter path image: " IMAGE_PATH; \

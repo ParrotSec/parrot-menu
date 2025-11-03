@@ -3,14 +3,13 @@ Section: tasks
 Priority: optional
 Maintainer: Parrot Dev Team <team@parrotsec.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>,
-           Nong Hoang "Dmknght" Tu <dmknght@parrotsec.org>
-Build-Depends: debhelper-compat (=12),
-               nim,
-Standards-Version: 4.5.0
+           Dario "danterolle" Camonita <danterolle@parrotsec.org>
+Build-Depends: debhelper-compat (=12), golang
+Standards-Version: 4.7.0
 
 Package: parrot-menu
 Architecture: any
-Depends: ${misc:Depends}, policykit-1, xdg-utils, libc6
+Depends: ${misc:Depends}, pkexec, xdg-utils, libc6
 Breaks: dradis (<< 3.1.0~rc2)
 Replaces: mate-menus, libgarcon-common
 Description: Parrot GNU/Linux custom menu

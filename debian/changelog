@@ -1,3 +1,24 @@
+parrot-menu (7.0.0) echo-updates; urgency=medium
+
+  * Add golang dependency
+  * Fix control file
+  * Rebuild for Parrot 7.0
+
+ -- Dario "danterolle" Camonita <danterolle@parrotsec.org>  Mon, 03 Nov 2025 11:59:16 +0100
+
+parrot-menu (2:2025.10.30) echo-updates; urgency=medium
+
+  * Add pkexec dependency.
+
+ -- Dario "danterolle" Camonita <danterolle@parrotsec.org>  Thu, 30 Oct 2025 12:36:44 +0100
+
+parrot-menu (2:2025.10.30) echo-updates; urgency=medium
+
+  * Update Standard-Version.
+  * Add polkitd instead of policykit-1
+
+ -- Dario "danterolle" Camonita <danterolle@parrotsec.org>  Thu, 30 Oct 2025 12:13:35 +0100
+
 parrot-menu (2:2025.06.31) lory-updates; urgency=medium
 
   * Add evil-winrm-py desktop launcher.

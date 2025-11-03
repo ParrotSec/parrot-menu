@@ -1,6 +1,6 @@
 #!/bin/bash
 
-readonly E_COMMAND_NOT_FOUND=1
+readonly E_COMMAND_NOT_FOUND=1 # or 127
 readonly E_INVALID_ARGS=2
 readonly E_SERVICE_ERROR=3
 readonly E_PERMISSION_DENIED=4
@@ -26,5 +26,5 @@ notify() {
 
     local title="$1"
     local message="$2"
-    notify-send "$title" "$message"
+    /usr/bin/notify-send "$title" "$message"
 }
