@@ -1,3 +1,11 @@
+parrot-menu (7.0.0) echo-updates; urgency=medium
+
+  * Add golang dependency
+  * Fix control file
+  * Rebuild for Parrot 7.0
+
+ -- Dario "danterolle" Camonita <danterolle@parrotsec.org>  Mon, 03 Nov 2025 11:59:16 +0100
+
 parrot-menu (2:2025.10.30) echo-updates; urgency=medium
 
   * Add pkexec dependency.
