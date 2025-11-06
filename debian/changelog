@@ -1,3 +1,9 @@
+parrot-menu (7.0.1) echo-updates; urgency=medium
+
+  * Fix golang build system.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 06 Nov 2025 02:49:17 +0100
+
 parrot-menu (7.0.0) echo-updates; urgency=medium
 
   * Add golang dependency

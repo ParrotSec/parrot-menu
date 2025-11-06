@@ -1,9 +1,10 @@
-.PHONY: install icons
+.PHONY: binary icons
 
-BINARY_NAME := update-launchers
-BUILD_DIR := build
+export BINARY_NAME := update-launchers
+export BUILD_DIR := build
+export HOME = $(CURDIR)
 
-install:
+binary:
 	mkdir -p $(BUILD_DIR)
 	go build -ldflags="-s -w" -o $(BUILD_DIR)/$(BINARY_NAME) ./launcher-updater/main.go
 
