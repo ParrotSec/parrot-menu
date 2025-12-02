@@ -1,3 +1,11 @@
+parrot-menu (3:7.0.3) echo; urgency=medium
+
+  * Import new menu icons.
+  * Add new categories.
+  * Update launchers.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 02 Dec 2025 15:00:06 +0100
+
 parrot-menu (3:7.0.2) echo-updates; urgency=medium
 
   * Bump debian version.
