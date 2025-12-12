@@ -285,8 +285,30 @@ func copyFile(src, dst string) error {
 			log.Printf("Error closing file %s: %v", dst, err)
 		}
 	}(destination)
-	_, err = io.Copy(destination, source)
-	return err
+
+	scanner := bufio.NewScanner(source)
+	writer := bufio.NewWriter(destination)
+
+	for scanner.Scan() {
+		line := scanner.Text()
+
+        // Desktop entries usually prefer icon names without extensions.
+        // If the Icon field explicitly specifies .png, remove it.
+		if strings.HasPrefix(line, "Icon=") && strings.HasSuffix(line, ".png") {
+			line = strings.TrimSuffix(line, ".png")
+		}
+
+		_, err := writer.WriteString(line + "\n")
+		if err != nil {
+			return err
+		}
+	}
+
+	if err := scanner.Err(); err != nil {
+		return err
+	}
+
+	return writer.Flush()
 }
 
 func main() {
