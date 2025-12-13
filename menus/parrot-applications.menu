@@ -26,6 +26,8 @@
     <Menuname>Reverse Engineering</Menuname>
     <Separator> </Separator>
     <Menuname>Reporting Tools</Menuname>
+    <Separator> </Separator>
+    <Menuname>AI Tools</Menuname>
 		<Merge type="all"/>
 	</Layout>
 
@@ -692,6 +694,15 @@
         </And>
       </Include>
     </Menu>
+  </Menu>
+    <Menu>
+    <Name>AI Tools</Name>
+    <Directory>14-ai-tools.directory</Directory>
+    <Include>
+      <And>
+        <Category>14-ai-tools</Category>
+      </And>
+    </Include>
   </Menu>
   </Menu>
 </Menu>

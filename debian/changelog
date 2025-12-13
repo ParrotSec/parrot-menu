@@ -1,3 +1,9 @@
+parrot-menu (3:7.0.8) echo; urgency=medium
+
+  * Enable AI Tools category.
+
+ -- Dario "danterolle" Camonita <danterolle@parrotsec.org>  Sat, 13 Dec 2025 19:20:11 +0000
+
 parrot-menu (3:7.0.7) echo; urgency=medium
 
   * Update GNU Radio icons. 
