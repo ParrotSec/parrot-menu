@@ -2,7 +2,7 @@
 Name=recon-ng
 Encoding=UTF-8
 Exec=menuexec "recon-ng"
-Icon=parrot_Recon_NG
+Icon=parrot-Recon-NG
 StartupNotify=false
 Terminal=true
 Type=Application

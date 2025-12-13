@@ -1,3 +1,9 @@
+parrot-menu (3:7.0.5) echo; urgency=medium
+
+  * Update icons: kismet, backdoorfactory, ike-scan, and many more.
+
+ -- Dario "danterolle" Camonita <danterolle@parrotsec.org>  Sat, 13 Dec 2025 18:31:34 +0000
+
 parrot-menu (3:7.0.4) echo; urgency=medium
 
   * Generate both 1x and HiDPI icon sets.
