@@ -1,3 +1,9 @@
+parrot-menu (3:7.0.7) echo; urgency=medium
+
+  * Update GNU Radio icons. 
+
+ -- Dario "danterolle" Camonita <user@parrot>  Sat, 13 Dec 2025 19:01:31 +0000
+
 parrot-menu (3:7.0.6) echo; urgency=medium
 
   * Update more icons.
