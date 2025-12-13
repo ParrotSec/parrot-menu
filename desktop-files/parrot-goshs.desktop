@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Gosh
+Name=goshs
 Comment=lightweight web server written in go
 Encoding=UTF-8
 Exec=parrot-exec /usr/bin/gosh
@@ -8,4 +8,4 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=03-06-web-application-proxies
-X-Parrot-Package=gosh
+X-Parrot-Package=goshs

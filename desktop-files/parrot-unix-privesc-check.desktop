@@ -2,7 +2,7 @@
 Name=unix-privesc-check
 Encoding=UTF-8
 Exec=menuexec "unix-privesc-check"
-Icon=parrot_unix_privesc_check
+Icon=parrot_unix-privesc-check
 StartupNotify=false
 Terminal=true
 Type=Application

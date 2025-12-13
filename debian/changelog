@@ -1,3 +1,9 @@
+parrot-menu (3:7.0.6) echo; urgency=medium
+
+  * Update more icons.
+
+ -- Dario "danterolle" Camonita <user@parrot>  Sat, 13 Dec 2025 18:48:21 +0000
+
 parrot-menu (3:7.0.5) echo; urgency=medium
 
   * Update icons: kismet, backdoorfactory, ike-scan, and many more.
