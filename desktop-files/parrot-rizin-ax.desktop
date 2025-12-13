@@ -2,7 +2,7 @@
 Name=rz-ax — rizin base converter
 Encoding=UTF-8
 Exec=parrot-exec "rz-ax -h"
-Icon=parrot-rizin.png
+Icon=parrot_rizin
 StartupNotify=false
 Terminal=true
 Type=Application

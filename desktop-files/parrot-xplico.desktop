@@ -2,7 +2,7 @@
 Name=xplico
 Encoding=UTF-8
 Exec=xdg-open http://localhost:9876
-Icon=parrot-xplico.png
+Icon=parrot_xplico
 StartupNotify=false
 Terminal=false
 Type=Application

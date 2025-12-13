@@ -2,7 +2,7 @@
 Name=rz_bin — Binary program info extractor
 Encoding=UTF-8
 Exec=parrot-exec "rz-bin -h"
-Icon=parrot-rizin.png
+Icon=parrot_rizin
 StartupNotify=false
 Terminal=true
 Type=Application

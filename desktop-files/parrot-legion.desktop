@@ -2,7 +2,7 @@
 Name=legion
 Encoding=UTF-8
 Exec=menuexec "legion"
-Icon=parrot-sparta.png
+Icon=parrot_sparta
 StartupNotify=false
 Terminal=true
 Type=Application

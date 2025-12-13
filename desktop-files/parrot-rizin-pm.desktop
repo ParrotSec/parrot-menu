@@ -2,7 +2,7 @@
 Name=rz-pm — rizin package manager
 Encoding=UTF-8
 Exec=parrot-exec "rz-pm -h"
-Icon=parrot-rizin.png
+Icon=parrot_rizin
 StartupNotify=false
 Terminal=true
 Type=Application

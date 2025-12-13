@@ -2,7 +2,7 @@
 Name=wifite
 Encoding=UTF-8
 Exec=menuexec "wifite --help"
-Icon=parrot-wifite.png
+Icon=parrot_wifite
 StartupNotify=false
 Terminal=true
 Type=Application

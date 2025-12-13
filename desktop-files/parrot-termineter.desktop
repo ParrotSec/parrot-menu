@@ -2,7 +2,7 @@
 Name=termineter
 Encoding=UTF-8
 Exec=menuexec "termineter -h"
-Icon=parrot-termineter.png
+Icon=parrot_termineter
 StartupNotify=false
 Terminal=true
 Type=Application

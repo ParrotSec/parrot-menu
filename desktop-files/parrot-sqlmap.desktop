@@ -2,7 +2,7 @@
 Name=sqlmap - automatic SQL Injection tool
 Encoding=UTF-8
 Exec=parrot-exec "sqlmap -hh"
-Icon=parrot-sqlmap.png
+Icon=parrot_sqlmap
 StartupNotify=false
 Terminal=true
 Type=Application

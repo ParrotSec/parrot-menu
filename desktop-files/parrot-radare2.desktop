@@ -2,7 +2,7 @@
 Name=radare2
 Encoding=UTF-8
 Exec=parrot-exec "radare2 -h"
-Icon=parrot-radare2.png
+Icon=parrot_radare2
 StartupNotify=false
 Terminal=true
 Type=Application

@@ -2,7 +2,7 @@
 Name=veil
 Encoding=UTF-8
 Exec=parrot-exec "veil -h"
-Icon=parrot-veil-catapult-evasion.png
+Icon=parrot_veil_catapult_evasion
 StartupNotify=false
 Terminal=true
 Type=Application

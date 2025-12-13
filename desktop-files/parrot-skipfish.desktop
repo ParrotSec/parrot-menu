@@ -2,7 +2,7 @@
 Name=skipfish
 Encoding=UTF-8
 Exec=menuexec "skipfish -h"
-Icon=parrot-skipfish.png
+Icon=parrot_skipfish
 StartupNotify=false
 Terminal=true
 Type=Application

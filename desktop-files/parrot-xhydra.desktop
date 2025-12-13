@@ -2,7 +2,7 @@
 Name=xhydra
 Encoding=UTF-8
 Exec=menuexecg xhydra
-Icon=parrot-hydra.png
+Icon=parrot_hydra
 StartupNotify=false
 Terminal=true
 Type=Application

@@ -2,7 +2,7 @@
 Name=rcracki_mt
 Encoding=UTF-8
 Exec=menuexec "rcracki_mt"
-Icon=parrot-rcracki_mt.png
+Icon=parrot_rcracki_mt
 StartupNotify=false
 Terminal=true
 Type=Application

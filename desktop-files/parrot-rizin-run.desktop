@@ -2,7 +2,7 @@
 Name=rz-run — rizin utility to run programs in exotic environments
 Encoding=UTF-8
 Exec=parrot-exec "rz-run -h"
-Icon=parrot-rizin.png
+Icon=parrot_rizin
 StartupNotify=false
 Terminal=true
 Type=Application

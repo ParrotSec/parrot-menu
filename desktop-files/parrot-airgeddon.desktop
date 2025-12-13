@@ -1,11 +1,17 @@
 [Desktop Entry]
-Name=airgeddon
+Categories=06-01-wireless-tools;06-wireless-attacks;top10;
 Comment=Audit wireless network toolkit
 Encoding=UTF-8
-Exec=menuexec "/usr/bin/airgeddon"
-Icon=parrot-airgeddon.png
+Exec=menuexec /usr/bin/airgeddon
+GenericName=
+Icon=parrot_airgeddon
+MimeType=
+Name=airgeddon
+Path=
 StartupNotify=false
 Terminal=true
+TerminalOptions=
 Type=Application
-Categories=06-01-wireless-tools;06-wireless-attacks;top10;
+X-KDE-SubstituteUID=false
+X-KDE-Username=
 X-Parrot-Package=airgeddon

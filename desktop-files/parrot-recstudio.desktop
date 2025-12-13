@@ -2,7 +2,7 @@
 Name=recstudio
 Encoding=UTF-8
 Exec=menuexecg "recstudio"
-Icon=parrot-recstudio.png
+Icon=parrot_recstudio
 StartupNotify=false
 Terminal=false
 Type=Application

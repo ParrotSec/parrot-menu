@@ -2,7 +2,7 @@
 Name=reaver
 Encoding=UTF-8
 Exec=menuexec "reaver -h"
-Icon=parrot-reaver.png
+Icon=parrot_reaver
 StartupNotify=false
 Terminal=true
 Type=Application

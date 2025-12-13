@@ -2,7 +2,7 @@
 Name=shellter
 Encoding=UTF-8
 Exec=menuexec "shellter"
-Icon=shellter.png
+Icon=shellter
 StartupNotify=false
 Terminal=true
 Type=Application

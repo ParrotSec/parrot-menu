@@ -2,7 +2,7 @@
 Name=weevely
 Encoding=UTF-8
 Exec=parrot-exec "weevely"
-Icon=parrot-weevely.png
+Icon=parrot_weevely
 StartupNotify=false
 Terminal=true
 Type=Application

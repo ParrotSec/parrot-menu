@@ -2,7 +2,7 @@
 Name=owasp-zap
 Encoding=UTF-8
 Exec=zaproxy
-Icon=parrot-zaproxy.png
+Icon=parrot_zaproxy
 StartupNotify=false
 Terminal=false
 Type=Application

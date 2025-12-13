@@ -2,7 +2,7 @@
 Name=WPScan - Wordpress Security Scanner
 Encoding=UTF-8
 Exec=parrot-exec "wpscan --help"
-Icon=parrot-wpscan.png
+Icon=parrot_wpscan
 StartupNotify=false
 Terminal=true
 Type=Application

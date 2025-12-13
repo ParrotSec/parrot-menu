@@ -6,6 +6,6 @@ Type=Application
 Exec=pwsh
 Terminal=true
 Categories=Development
-Icon=parrot-powersploit
+Icon=parrot_powersploit
 Categories=top10;Development
 X-Parrot-Package=powershell

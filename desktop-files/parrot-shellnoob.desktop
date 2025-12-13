@@ -2,7 +2,7 @@
 Name=shellnoob
 Encoding=UTF-8
 Exec=menuexec "shellnoob"
-Icon=parrot-shellnoob.png
+Icon=parrot_shellnoob
 StartupNotify=false
 Terminal=true
 Type=Application

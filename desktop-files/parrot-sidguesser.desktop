@@ -2,7 +2,7 @@
 Name=sidguesser
 Encoding=UTF-8
 Exec=menuexec "sidguess"
-Icon=parrot-sidguesser.png
+Icon=parrot_sidguesser
 StartupNotify=false
 Terminal=true
 Type=Application

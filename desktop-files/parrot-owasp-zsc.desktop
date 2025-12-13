@@ -6,6 +6,6 @@ Exec=menuexec "owasp-zsc"
 StartupNotify=false
 Terminal=true
 Type=Application
-Icon=parrot-owasp-zsc.png
+Icon=parrot_owasp_zsc
 Categories=04-04-payload-generator;
 X-Parrot-Package=owasp-zsc

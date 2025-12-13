@@ -2,7 +2,7 @@
 Name=rkhunter
 Encoding=UTF-8
 Exec=menuexec "rkhunter -h"
-Icon=parrot-rkhunter.png
+Icon=parrot_rkhunter
 StartupNotify=false
 Terminal=true
 Type=Application

@@ -2,7 +2,7 @@
 Name=emailfinder
 Encoding=UTF-8
 Exec=parrot-exec "emailfinder -h"
-Icon=parrot-menu.png
+Icon=parrot_menu
 StartupNotify=false
 Terminal=true
 Type=Application

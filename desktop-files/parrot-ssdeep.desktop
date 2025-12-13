@@ -2,7 +2,7 @@
 Name=ssdeep
 Encoding=UTF-8
 Exec=menuexec "ssdeep -h"
-Icon=parrot-ssdeep.png
+Icon=parrot_ssdeep
 StartupNotify=false
 Terminal=true
 Type=Application

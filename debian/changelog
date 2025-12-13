@@ -1,3 +1,13 @@
+parrot-menu (3:7.0.4) echo; urgency=medium
+
+  * Generate both 1x and HiDPI icon sets.
+  * Strip `.png` extension from Icon field in desktop entries.
+  * Rename parrot- to parrot_ icons to avoid conflicts with the main icon
+    theme.
+  * Fix parrot_xspy invalid escape sequence.
+
+ -- Dario "danterolle" Camonita <danterolle@parrotsec.org>  Sat, 13 Dec 2025 17:49:07 +0000
+
 parrot-menu (3:7.0.3) echo; urgency=medium
 
   * Import new menu icons.

@@ -2,7 +2,7 @@
 Name=responder
 Encoding=UTF-8
 Exec=menuexec "responder -h"
-Icon=parrot-responder.png
+Icon=parrot_responder
 StartupNotify=false
 Terminal=true
 Type=Application

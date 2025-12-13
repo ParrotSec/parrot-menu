@@ -2,7 +2,7 @@
 Name=searchsploit
 Encoding=UTF-8
 Exec=menuexec "searchsploit"
-Icon=parrot-searchsploit.png
+Icon=parrot_searchsploit
 StartupNotify=false
 Terminal=true
 Type=Application

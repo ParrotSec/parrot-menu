@@ -2,7 +2,7 @@
 Name=BashFuscator
 Encoding=UTF-8
 Exec=parrot-exec "bashfuscator -h"
-Icon=parrot-menu.png
+Icon=parrot_menu
 StartupNotify=false
 Terminal=true
 Type=Application

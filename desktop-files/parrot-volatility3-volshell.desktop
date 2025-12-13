@@ -2,7 +2,7 @@
 Name=volatility - volshell
 Encoding=UTF-8
 Exec=parrot-exec "volshell -h"
-Icon=parrot-volatility.png
+Icon=parrot_volatility
 StartupNotify=false
 Terminal=true
 Type=Application

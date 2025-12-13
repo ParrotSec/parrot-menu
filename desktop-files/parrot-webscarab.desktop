@@ -2,7 +2,7 @@
 Name=webscarab
 Encoding=UTF-8
 Exec=menuexecg "webscarab"
-Icon=parrot-webscarab.png
+Icon=parrot_webscarab
 StartupNotify=false
 Terminal=false
 Type=Application

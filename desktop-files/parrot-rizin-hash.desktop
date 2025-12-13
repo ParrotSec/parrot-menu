@@ -2,7 +2,7 @@
 Name=rz-hash — block based hashing utility
 Encoding=UTF-8
 Exec=parrot-exec "rz-hash -h"
-Icon=parrot-rizin.png
+Icon=parrot_rizin
 StartupNotify=false
 Terminal=true
 Type=Application

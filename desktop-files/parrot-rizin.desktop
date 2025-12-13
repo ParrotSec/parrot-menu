@@ -2,7 +2,7 @@
 Name=rizin — Advanced commandline hexadecimal editor, disassembler and debugger
 Encoding=UTF-8
 Exec=parrot-exec "rizin -h"
-Icon=parrot-rizin.png
+Icon=parrot_rizin
 StartupNotify=false
 Terminal=true
 Type=Application
