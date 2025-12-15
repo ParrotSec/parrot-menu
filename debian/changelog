@@ -1,3 +1,9 @@
+parrot-menu (3:7.0.14) echo; urgency=medium
+
+  * Add blacklist for checkValidBinary in launcher-updater.
+
+ -- Dario "danterolle" Camonita <danterolle@parrotsec.org>  Mon, 15 Dec 2025 16:19:28 +0000
+
 parrot-menu (3:7.0.13) echo; urgency=medium
 
   * Add goshs icons.

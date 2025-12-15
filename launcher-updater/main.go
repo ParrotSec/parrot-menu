@@ -30,6 +30,11 @@ func checkValidBinary(path string) {
 	if err != nil {
 		return
 	}
+	
+    skipExecCheck := map[string]struct{}{
+        "kdesu": {},
+        "kiod6": {},
+    }
 
 	file, err := os.Open(path)
 	if err != nil {
@@ -42,24 +47,29 @@ func checkValidBinary(path string) {
 		}
 	}(file)
 
-	scanner := bufio.NewScanner(file)
-	for scanner.Scan() {
-		line := scanner.Text()
-		if strings.HasPrefix(line, "Exec=") {
-			parts := strings.SplitN(line, "=", 2)
-			if len(parts) < 2 {
-				continue
-			}
-			execLine := strings.TrimSpace(parts[1])
-			execFile := strings.Split(execLine, " ")[0]
-			execFile = strings.Trim(execFile, "\"'")
+    scanner := bufio.NewScanner(file)
+    for scanner.Scan() {
+        line := scanner.Text()
+        if strings.HasPrefix(line, "Exec=") {
+            parts := strings.SplitN(line, "=", 2)
+            if len(parts) < 2 {
+                continue
+            }
 
-			if _, err := exec.LookPath(execFile); err != nil {
-				fmt.Printf(" [WARNING] Missing executable file %s at launcher %s\n", execFile, path)
-			}
-			return
-		}
-	}
+            execLine := strings.TrimSpace(parts[1])
+            execFile := strings.Split(execLine, " ")[0]
+            execFile = strings.Trim(execFile, "\"'")
+
+            if _, skip := skipExecCheck[execFile]; skip {
+                return
+            }
+
+            if _, err := exec.LookPath(execFile); err != nil {
+                fmt.Printf(" [WARNING] Missing executable file %s at launcher %s\n", execFile, path)
+            }
+            return
+        }
+    }
 }
 
 // A launcher is considered obsolete if its name starts with "parrot-" or "serv-"
