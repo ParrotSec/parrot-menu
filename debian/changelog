@@ -1,3 +1,9 @@
+parrot-menu (3:7.0.13) echo; urgency=medium
+
+  * Add goshs icons.
+
+ -- Dario "danterolle" Camonita <danterolle@parrotsec.org>  Mon, 15 Dec 2025 15:32:07 +0000
+
 parrot-menu (3:7.0.12) echo; urgency=medium
 
   * Improve warning messages for launcher updater app.
