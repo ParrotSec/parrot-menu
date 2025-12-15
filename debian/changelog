@@ -1,3 +1,10 @@
+parrot-menu (3:7.0.15) echo; urgency=medium
+
+  * Fix goshs icon path.
+  * Fix postgresql icon.
+
+ -- Dario "danterolle" Camonita <danterolle@parrotsec.org>  Mon, 15 Dec 2025 16:28:03 +0000
+
 parrot-menu (3:7.0.14) echo; urgency=medium
 
   * Add blacklist for checkValidBinary in launcher-updater.
