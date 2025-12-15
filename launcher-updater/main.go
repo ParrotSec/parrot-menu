@@ -12,7 +12,6 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"os/exec"
 	"path/filepath"
 	"strings"
 	"sync"
@@ -24,54 +23,6 @@ const (
 	dpkgStatusPath    = "/var/lib/dpkg/status"
 )
 
-func checkValidBinary(path string) {
-	// Set a standard PATH environment variable to ensure the executable lookup happens in the **correct** directories.
-	err := os.Setenv("PATH", "/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/local/sbin:/usr/sbin:/sbin")
-	if err != nil {
-		return
-	}
-	
-    skipExecCheck := map[string]struct{}{
-        "kdesu": {},
-        "kiod6": {},
-    }
-
-	file, err := os.Open(path)
-	if err != nil {
-		return
-	}
-	defer func(file *os.File) {
-		err := file.Close()
-		if err != nil {
-			log.Printf("Error closing file %s: %v", path, err)
-		}
-	}(file)
-
-    scanner := bufio.NewScanner(file)
-    for scanner.Scan() {
-        line := scanner.Text()
-        if strings.HasPrefix(line, "Exec=") {
-            parts := strings.SplitN(line, "=", 2)
-            if len(parts) < 2 {
-                continue
-            }
-
-            execLine := strings.TrimSpace(parts[1])
-            execFile := strings.Split(execLine, " ")[0]
-            execFile = strings.Trim(execFile, "\"'")
-
-            if _, skip := skipExecCheck[execFile]; skip {
-                return
-            }
-
-            if _, err := exec.LookPath(execFile); err != nil {
-                fmt.Printf(" [WARNING] Missing executable file %s at launcher %s\n", execFile, path)
-            }
-            return
-        }
-    }
-}
-
 // A launcher is considered obsolete if its name starts with "parrot-" or "serv-"
 // but it no longer exists in the source directory.
 func removeOldLaunchers() {
@@ -82,29 +33,23 @@ func removeOldLaunchers() {
 		if d.IsDir() {
 			return nil
 		}
-
-		shouldCheckBinary := true
+		
 		currentLauncher := d.Name()
-
+		
 		if (strings.HasPrefix(currentLauncher, "parrot-") ||
 			strings.HasPrefix(currentLauncher, "serv-")) &&
 			strings.HasSuffix(currentLauncher, ".desktop") {
-			// Build the path to the corresponding file in the source directory.
-			srcToCheck := filepath.Join(dirLauncherSource, currentLauncher)
-			if _, err := os.Stat(srcToCheck); os.IsNotExist(err) {
-				shouldCheckBinary = false
-				if err := os.Remove(path); err != nil {
-					log.Printf("Failed to remove %s: %v", path, err)
+				// Build the path to the corresponding file in the source directory.
+				srcToCheck := filepath.Join(dirLauncherSource, currentLauncher)
+				if _, err := os.Stat(srcToCheck); os.IsNotExist(err) {
+					if err := os.Remove(path); err != nil {
+						log.Printf("Failed to remove %s: %v", path, err)
+					}
 				}
 			}
-		}
-
-		if shouldCheckBinary {
-			checkValidBinary(path)
-		}
-		return nil
+			return nil
 	})
-
+	
 	if err != nil {
 		log.Printf("Error walking directory %s: %v", dirLauncherDest, err)
 	}
@@ -122,7 +67,7 @@ func fixDebLaunchers() {
 		"spectool_gtk.desktop", "gksu.desktop", "re.rizin.cutter.desktop",
 		"openjdk-8-policytool.desktop", "org.keepassxc.KeePassXC.desktop",
 	}
-
+	
 	for _, fileName := range blacklistLauncherName {
 		finalPath := filepath.Join(dirLauncherDest, fileName)
 		// If a file from the blacklist exists, remove it.
@@ -145,7 +90,7 @@ func getXPackageName(path string) (string, error) {
 			log.Printf("Error closing file %s: %v", path, err)
 		}
 	}(file)
-
+	
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
 		line := scanner.Text()
@@ -170,7 +115,7 @@ func queryInstalled() (map[string]struct{}, error) {
 			log.Printf("Error closing file %s: %v", dpkgStatusPath, err)
 		}
 	}(file)
-
+	
 	scanner := bufio.NewScanner(file)
 	var pkgName string
 	for scanner.Scan() {
@@ -182,7 +127,7 @@ func queryInstalled() (map[string]struct{}, error) {
 			pkgName = ""
 		}
 	}
-
+	
 	if err := scanner.Err(); err != nil {
 		return nil, fmt.Errorf("Error reading dpkg status file: %w", err)
 	}
@@ -219,7 +164,7 @@ func updateLaunchers() {
 	if err != nil {
 		log.Fatalf("Fatal error querying installed packages: %v", err)
 	}
-
+	
 	err = filepath.WalkDir(dirLauncherSource, func(path string, d os.DirEntry, err error) error {
 		if err != nil {
 			return err
@@ -231,7 +176,7 @@ func updateLaunchers() {
 		if !strings.HasPrefix(fileName, "parrot-") && !strings.HasPrefix(fileName, "serv-") {
 			return nil
 		}
-
+		
 		aptParrotPackage, err := getXPackageName(path)
 		if err != nil {
 			log.Printf("Error reading package name from %s: %v", path, err)
@@ -240,10 +185,10 @@ func updateLaunchers() {
 		if aptParrotPackage == "" {
 			return nil
 		}
-
+		
 		finalDestPath := filepath.Join(dirLauncherDest, fileName)
 		_, isInstalled := installed[aptParrotPackage]
-
+		
 		if isInstalled {
 			srcInfo, err := d.Info()
 			if err != nil {
@@ -266,7 +211,7 @@ func updateLaunchers() {
 		fixOldLaunchers(fileName)
 		return nil
 	})
-
+	
 	if err != nil {
 		log.Printf("Error walking source directory %s: %v", dirLauncherSource, err)
 	}
@@ -283,7 +228,7 @@ func copyFile(src, dst string) error {
 			log.Printf("Error closing file %s: %v", src, err)
 		}
 	}(source)
-
+	
 	destination, err := os.Create(dst)
 	if err != nil {
 		return err
@@ -294,29 +239,29 @@ func copyFile(src, dst string) error {
 			log.Printf("Error closing file %s: %v", dst, err)
 		}
 	}(destination)
-
+	
 	scanner := bufio.NewScanner(source)
 	writer := bufio.NewWriter(destination)
-
+	
 	for scanner.Scan() {
 		line := scanner.Text()
-
-        // Desktop entries usually prefer icon names without extensions.
-        // If the Icon field explicitly specifies .png, remove it.
+		
+		// Desktop entries usually prefer icon names without extensions.
+		// If the Icon field explicitly specifies .png, remove it.
 		if strings.HasPrefix(line, "Icon=") && strings.HasSuffix(line, ".png") {
 			line = strings.TrimSuffix(line, ".png")
 		}
-
+		
 		_, err := writer.WriteString(line + "\n")
 		if err != nil {
 			return err
 		}
 	}
-
+	
 	if err := scanner.Err(); err != nil {
 		return err
 	}
-
+	
 	return writer.Flush()
 }
 
@@ -324,7 +269,7 @@ func main() {
 	// It starts the update and cleanup operations in parallel.
 	// We are using goroutines to improve performance.
 	var wg sync.WaitGroup
-
+	
 	fmt.Println("--------------------------------------------------")
 	fmt.Println("[!] Scanning application launchers")
 	wg.Add(1)
@@ -332,7 +277,7 @@ func main() {
 		defer wg.Done()
 		updateLaunchers()
 	}()
-
+	
 	fmt.Println("Removing duplicate or broken launchers...")
 	wg.Add(2)
 	go func() {
@@ -343,9 +288,9 @@ func main() {
 		defer wg.Done()
 		fixDebLaunchers()
 	}()
-
+	
 	wg.Wait()
-
+	
 	fmt.Println("[!] Launchers have been successfully updated!")
 	fmt.Println("--------------------------------------------------")
 }

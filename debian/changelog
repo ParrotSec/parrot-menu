@@ -1,3 +1,9 @@
+parrot-menu (3:7.0.16) echo; urgency=medium
+
+  * Remove checkValidBinary from launcher-updater.
+
+ -- Dario "danterolle" Camonita <danterolle@parrotsec.org>  Mon, 15 Dec 2025 17:10:16 +0000
+
 parrot-menu (3:7.0.15) echo; urgency=medium
 
   * Fix goshs icon path.
