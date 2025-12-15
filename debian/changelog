@@ -1,3 +1,10 @@
+parrot-menu (3:7.0.12) echo; urgency=medium
+
+  * Improve warning messages for launcher updater app.
+  * Add recon-ng icon.
+
+ -- Dario "danterolle" Camonita <danterolle@parrotsec.org>  Mon, 15 Dec 2025 15:24:29 +0000
+
 parrot-menu (3:7.0.11) echo; urgency=medium
 
   * Add kerberoast and hexstrike-ai desktop entry.

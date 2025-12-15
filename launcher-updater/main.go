@@ -55,7 +55,7 @@ func checkValidBinary(path string) {
 			execFile = strings.Trim(execFile, "\"'")
 
 			if _, err := exec.LookPath(execFile); err != nil {
-				fmt.Printf(" [-] Missing executable file %s at launcher %s\n", execFile, path)
+				fmt.Printf(" [WARNING] Missing executable file %s at launcher %s\n", execFile, path)
 			}
 			return
 		}
@@ -152,7 +152,7 @@ func queryInstalled() (map[string]struct{}, error) {
 	installed := make(map[string]struct{})
 	file, err := os.Open(dpkgStatusPath)
 	if err != nil {
-		return nil, fmt.Errorf("could not open dpkg status file: %w", err)
+		return nil, fmt.Errorf("Could not open dpkg status file: %w", err)
 	}
 	defer func(file *os.File) {
 		err := file.Close()
@@ -174,7 +174,7 @@ func queryInstalled() (map[string]struct{}, error) {
 	}
 
 	if err := scanner.Err(); err != nil {
-		return nil, fmt.Errorf("error reading dpkg status file: %w", err)
+		return nil, fmt.Errorf("Error reading dpkg status file: %w", err)
 	}
 	return installed, nil
 }
@@ -315,14 +315,15 @@ func main() {
 	// We are using goroutines to improve performance.
 	var wg sync.WaitGroup
 
-	fmt.Println("Scanning application launchers")
+	fmt.Println("--------------------------------------------------")
+	fmt.Println("[!] Scanning application launchers")
 	wg.Add(1)
 	go func() {
 		defer wg.Done()
 		updateLaunchers()
 	}()
 
-	fmt.Println("Removing duplicate or broken launchers")
+	fmt.Println("Removing duplicate or broken launchers...")
 	wg.Add(2)
 	go func() {
 		defer wg.Done()
@@ -335,5 +336,6 @@ func main() {
 
 	wg.Wait()
 
-	fmt.Println("Launchers are updated")
+	fmt.Println("[!] Launchers have been successfully updated!")
+	fmt.Println("--------------------------------------------------")
 }
