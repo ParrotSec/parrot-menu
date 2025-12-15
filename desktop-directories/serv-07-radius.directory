@@ -9,4 +9,4 @@ Name[zh_CN]=Radius
 Name[zh_HK]=Radius
 Name[zh_TW]=Radius
 Type=Directory
-Icon=/usr/share/icons/parrot-common/parrot-radius.png
+Icon=xterm

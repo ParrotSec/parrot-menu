@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=hexstrike server
+Comment=AI-powered offensive security framework
+Encoding=UTF-8
+Exec=/usr/bin/hexstrike_server
+Icon=parrot_hexstrike
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=14-ai-tools;
+X-Parrot-Package=hexstrike-ai

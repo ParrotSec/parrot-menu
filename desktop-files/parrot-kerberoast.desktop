@@ -1,11 +1,11 @@
 [Desktop Entry]
 Name=kerberoast
-Comment=
+Comment=Kerberoast is a series of tools for attacking MS Kerberos implementations
 Encoding=UTF-8
 Exec=menuexec kerberoast -h
 Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=
+Categories=01-info-gathering;08-post-exploit;
 X-Parrot-Package=kerberoast
