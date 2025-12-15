@@ -7,4 +7,4 @@ Type=Application
 Version=1.0
 Categories=privacy;
 X-Parrot-Package=coreutils
-Icon=edit_delete
+Icon=edit-delete

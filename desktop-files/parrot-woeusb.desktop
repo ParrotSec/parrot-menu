@@ -2,7 +2,7 @@
 Name=WoeUSB
 Comment=Create Windows bootable USB
 Exec=menuexecg woeusbgui
-Icon=/usr/share/woeusb_ng/icon.ico
+Icon=windows
 Terminal=false
 Type=Application
 StartupNotify=true

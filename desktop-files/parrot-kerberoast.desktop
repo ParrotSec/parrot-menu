@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=kerberoast
+Comment=
+Encoding=UTF-8
+Exec=menuexec kerberoast -h
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=
+X-Parrot-Package=kerberoast
