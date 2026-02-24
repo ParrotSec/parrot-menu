@@ -3,22 +3,23 @@ package dpkg
 import (
 	"bufio"
 	"fmt"
-	"launcher-updater/internal"
 	"log"
 	"os"
 	"strings"
 )
 
+const dpkgStatusPath = "/var/lib/dpkg/status"
+
 func QueryInstalled() (map[string]struct{}, error) {
 	installed := make(map[string]struct{})
-	file, err := os.Open(internal.DpkgStatusPath)
+	file, err := os.Open(dpkgStatusPath)
 	if err != nil {
 		return nil, fmt.Errorf("could not open dpkg status file: %w", err)
 	}
 	defer func(file *os.File) {
 		err := file.Close()
 		if err != nil {
-			log.Printf("Error closing file %s: %v", internal.DpkgStatusPath, err)
+			log.Printf("Error closing file %s: %v", dpkgStatusPath, err)
 		}
 	}(file)
 
