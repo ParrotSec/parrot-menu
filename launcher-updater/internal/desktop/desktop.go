@@ -2,12 +2,13 @@ package desktop
 
 import (
 	"bufio"
-	"launcher-updater/internal"
 	"log"
 	"os"
 	"path/filepath"
 	"strings"
 )
+
+const DirLauncherDest = "/usr/share/applications/"
 
 func GetXPackageName(path string) (string, error) {
 	file, err := os.Open(path)
@@ -42,7 +43,7 @@ func FixOldLaunchers(fileName string) {
 	for _, checkName := range newNamePrefixes {
 		if strings.HasPrefix(fileName, checkName) {
 			oldFileName := "parrot-" + strings.TrimPrefix(fileName, checkName)
-			destPath := filepath.Join(internal.DirLauncherDest, oldFileName)
+			destPath := filepath.Join(DirLauncherDest, oldFileName)
 			if _, err := os.Stat(destPath); err == nil {
 				if err := os.Remove(destPath); err != nil {
 					log.Printf("Error while removing duplicate launcher %s: %v", destPath, err)

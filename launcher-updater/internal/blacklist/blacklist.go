@@ -1,7 +1,7 @@
 package blacklist
 
 import (
-	"launcher-updater/internal"
+	"launcher-updater/internal/desktop"
 	"log"
 	"os"
 	"path/filepath"
@@ -21,7 +21,7 @@ func FixDebLaunchers() {
 	}
 
 	for _, fileName := range blacklistLauncherName {
-		finalPath := filepath.Join(internal.DirLauncherDest, fileName)
+		finalPath := filepath.Join(desktop.DirLauncherDest, fileName)
 		// If a file from the blacklist exists, remove it.
 		if _, err := os.Stat(finalPath); err == nil {
 			if err := os.Remove(finalPath); err != nil {

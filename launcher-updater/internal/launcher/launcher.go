@@ -1,7 +1,6 @@
 package launcher
 
 import (
-	"launcher-updater/internal"
 	"launcher-updater/internal/desktop"
 	"log"
 	"os"
@@ -12,7 +11,7 @@ import (
 const dirLauncherSource = "/usr/share/parrot-menu/applications/"
 
 func RemoveOldLaunchers() {
-	err := filepath.WalkDir(internal.DirLauncherDest, func(path string, d os.DirEntry, err error) error {
+	err := filepath.WalkDir(desktop.DirLauncherDest, func(path string, d os.DirEntry, err error) error {
 		if err != nil {
 			return err
 		}
@@ -37,7 +36,7 @@ func RemoveOldLaunchers() {
 	})
 
 	if err != nil {
-		log.Printf("Error walking directory %s: %v", internal.DirLauncherDest, err)
+		log.Printf("Error walking directory %s: %v", desktop.DirLauncherDest, err)
 	}
 }
 
@@ -73,7 +72,7 @@ func syncSingleLauncher(srcPath string, d os.DirEntry, installed map[string]stru
 	}
 
 	fileName := d.Name()
-	destPath := filepath.Join(internal.DirLauncherDest, fileName)
+	destPath := filepath.Join(desktop.DirLauncherDest, fileName)
 
 	if _, ok := installed[pkgName]; ok {
 		ensureLauncherUpdated(srcPath, destPath, d)
