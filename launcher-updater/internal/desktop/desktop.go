@@ -85,8 +85,10 @@ func CopyFile(src, dst string) error {
 
 		// Desktop entries usually prefer icon names without extensions.
 		// If the Icon field explicitly specifies .png, remove it.
-		if strings.HasPrefix(line, "Icon=") && strings.HasSuffix(line, ".png") {
-			line = strings.TrimSuffix(line, ".png")
+		if strings.HasPrefix(line, "Icon=") {
+			if newLine, found := strings.CutSuffix(line, ".png"); found {
+				line = newLine
+			}
 		}
 
 		_, err := writer.WriteString(line + "\n")
