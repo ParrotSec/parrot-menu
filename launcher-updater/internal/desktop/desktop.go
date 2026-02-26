@@ -41,8 +41,8 @@ func FixOldLaunchers(fileName string) {
 
 	newNamePrefixes := []string{"serv-"}
 	for _, checkName := range newNamePrefixes {
-		if strings.HasPrefix(fileName, checkName) {
-			oldFileName := "parrot-" + strings.TrimPrefix(fileName, checkName)
+		if suffix, found := strings.CutPrefix(fileName, checkName); found {
+			oldFileName := "parrot-" + suffix
 			destPath := filepath.Join(DirLauncherDest, oldFileName)
 			if _, err := os.Stat(destPath); err == nil {
 				if err := os.Remove(destPath); err != nil {
