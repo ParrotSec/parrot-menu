@@ -3,7 +3,7 @@ package dpkg
 import (
 	"bufio"
 	"fmt"
-	"log"
+	"log/slog"
 	"os"
 	"strings"
 )
@@ -22,7 +22,7 @@ func QueryInstalled() (map[string]struct{}, error) {
 	defer func(file *os.File) {
 		err := file.Close()
 		if err != nil {
-			log.Printf("Error closing file %s: %v", statusPath, err)
+			slog.Error("failed to close file", "statusPath", statusPath, "err", err)
 		}
 	}(file)
 

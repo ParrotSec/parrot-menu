@@ -5,7 +5,8 @@ import (
 	"launcher-updater/internal/blacklist"
 	"launcher-updater/internal/dpkg"
 	"launcher-updater/internal/launcher"
-	"log"
+	"log/slog"
+	"os"
 	"sync"
 )
 
@@ -17,7 +18,8 @@ func main() {
 
 	installed, err := dpkg.QueryInstalled()
 	if err != nil {
-		log.Fatalf("Fatal error querying installed packages: %v", err)
+		slog.Error("error querying installed packages", "err", err)
+		os.Exit(1)
 	}
 
 	launcher.SyncLaunchers(installed)

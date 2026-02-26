@@ -2,7 +2,7 @@ package launcher
 
 import (
 	"launcher-updater/internal/desktop"
-	"log"
+	"log/slog"
 	"os"
 	"path/filepath"
 	"strings"
@@ -26,7 +26,7 @@ func RemoveOldLaunchers() {
 			srcToCheck := filepath.Join(dirLauncherSource, currentLauncher)
 			if _, err := os.Stat(srcToCheck); os.IsNotExist(err) {
 				if err := os.Remove(path); err != nil {
-					log.Printf("Failed to remove %s: %v", path, err)
+					slog.Error("failed to remove", "path", path, "err", err)
 				}
 			}
 		}
@@ -34,7 +34,7 @@ func RemoveOldLaunchers() {
 	})
 
 	if err != nil {
-		log.Printf("Error walking directory %s: %v", desktop.DirLauncherDest, err)
+		slog.Error("failed to walk source directory", "DirLauncherDest", desktop.DirLauncherDest, "err", err)
 	}
 }
 
@@ -53,7 +53,8 @@ func SyncLaunchers(installed map[string]struct{}) {
 	})
 
 	if err != nil {
-		log.Printf("Error walking source directory %s: %v", dirLauncherSource, err)
+		slog.Error("failed to walk source directory",
+			"dirLauncherSource", dirLauncherSource, "err", err)
 	}
 }
 
@@ -100,7 +101,8 @@ func ensureLauncherUpdated(srcPath, destPath string, d os.DirEntry) {
 	// Update if it doesn't exist or metadata differs
 	if err != nil || srcInfo.Size() != destInfo.Size() || srcInfo.ModTime() != destInfo.ModTime() {
 		if err := desktop.CopyFile(srcPath, destPath); err != nil {
-			log.Printf("Error copying %s -> %s: %v", srcPath, destPath, err)
+			slog.Error("failed to copy source path to destination path",
+				"srcPath", srcPath, "destPath", destPath, "err", err)
 		}
 	}
 }
@@ -108,7 +110,7 @@ func ensureLauncherUpdated(srcPath, destPath string, d os.DirEntry) {
 func ensureLauncherRemoved(destPath string) {
 	if _, err := os.Stat(destPath); err == nil {
 		if err := os.Remove(destPath); err != nil {
-			log.Printf("Error removing old launcher %s: %v", destPath, err)
+			slog.Error("failed to remove old launcher", "destPath", destPath, "err", err)
 		}
 	}
 }

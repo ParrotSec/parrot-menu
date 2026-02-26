@@ -2,7 +2,7 @@ package desktop
 
 import (
 	"bufio"
-	"log"
+	"log/slog"
 	"os"
 	"path/filepath"
 	"strings"
@@ -18,7 +18,7 @@ func GetXPackageName(path string) (string, error) {
 	defer func(file *os.File) {
 		err := file.Close()
 		if err != nil {
-			log.Printf("Error closing file %s: %v", path, err)
+			slog.Error("failed to close file", "path", path, "err", err)
 		}
 	}(file)
 
@@ -29,6 +29,10 @@ func GetXPackageName(path string) (string, error) {
 			if parts := strings.SplitN(line, "=", 2); len(parts) == 2 {
 				return strings.TrimSpace(parts[1]), nil
 			}
+		}
+		if err := scanner.Err(); err != nil {
+			slog.Error("failed to read desktop file", "path", path, "err", err)
+			return "", err
 		}
 	}
 	return "", nil
@@ -46,7 +50,7 @@ func FixOldLaunchers(fileName string) {
 			destPath := filepath.Join(DirLauncherDest, oldFileName)
 			if _, err := os.Stat(destPath); err == nil {
 				if err := os.Remove(destPath); err != nil {
-					log.Printf("Error while removing duplicate launcher %s: %v", destPath, err)
+					slog.Error("could not remove duplicate launcher", "destPath", destPath, "err", err)
 				}
 			}
 			break
@@ -62,7 +66,7 @@ func CopyFile(src, dst string) error {
 	defer func(source *os.File) {
 		err := source.Close()
 		if err != nil {
-			log.Printf("Error closing file %s: %v", src, err)
+			slog.Error("failed to close file", "src", src, "err", err)
 		}
 	}(source)
 
@@ -73,7 +77,7 @@ func CopyFile(src, dst string) error {
 	defer func(destination *os.File) {
 		err := destination.Close()
 		if err != nil {
-			log.Printf("Error closing file %s: %v", dst, err)
+			slog.Error("failed to close file", "dst", dst, "err", err)
 		}
 	}(destination)
 
@@ -98,6 +102,7 @@ func CopyFile(src, dst string) error {
 	}
 
 	if err := scanner.Err(); err != nil {
+		slog.Error("error reading file", "src", src, "err", err)
 		return err
 	}
 
