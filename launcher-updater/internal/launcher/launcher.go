@@ -21,9 +21,7 @@ func RemoveOldLaunchers() {
 
 		currentLauncher := d.Name()
 
-		if (strings.HasPrefix(currentLauncher, "parrot-") ||
-			strings.HasPrefix(currentLauncher, "serv-")) &&
-			strings.HasSuffix(currentLauncher, ".desktop") {
+		if isManaged(currentLauncher) {
 			// Build the path to the corresponding file in the source directory.
 			srcToCheck := filepath.Join(dirLauncherSource, currentLauncher)
 			if _, err := os.Stat(srcToCheck); os.IsNotExist(err) {

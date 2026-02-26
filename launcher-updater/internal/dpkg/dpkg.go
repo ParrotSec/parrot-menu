@@ -8,18 +8,18 @@ import (
 	"strings"
 )
 
-const dpkgStatusPath = "/var/lib/dpkg/status"
+const statusPath = "/var/lib/dpkg/status"
 
 func QueryInstalled() (map[string]struct{}, error) {
 	installed := make(map[string]struct{})
-	file, err := os.Open(dpkgStatusPath)
+	file, err := os.Open(statusPath)
 	if err != nil {
 		return nil, fmt.Errorf("could not open dpkg status file: %w", err)
 	}
 	defer func(file *os.File) {
 		err := file.Close()
 		if err != nil {
-			log.Printf("Error closing file %s: %v", dpkgStatusPath, err)
+			log.Printf("Error closing file %s: %v", statusPath, err)
 		}
 	}(file)
 
