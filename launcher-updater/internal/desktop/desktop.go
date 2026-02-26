@@ -30,10 +30,11 @@ func GetXPackageName(path string) (string, error) {
 				return strings.TrimSpace(parts[1]), nil
 			}
 		}
-		if err := scanner.Err(); err != nil {
-			slog.Error("failed to read desktop file", "path", path, "err", err)
-			return "", err
-		}
+	}
+
+	if err := scanner.Err(); err != nil {
+		slog.Error("failed to read desktop file", "path", path, "err", err)
+		return "", err
 	}
 	return "", nil
 }
