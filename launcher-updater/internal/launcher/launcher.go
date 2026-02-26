@@ -57,10 +57,19 @@ func SyncLaunchers(installed map[string]struct{}) {
 	}
 }
 
+var managedPrefixes = []string{"parrot-", "serv-"}
+
 func isManaged(name string) bool {
-	return (strings.HasPrefix(name, "parrot-") ||
-		strings.HasPrefix(name, "serv-")) &&
-		strings.HasSuffix(name, ".desktop")
+	if !strings.HasSuffix(name, ".desktop") {
+		return false
+	}
+
+	for _, prefix := range managedPrefixes {
+		if strings.HasPrefix(name, prefix) {
+			return true
+		}
+	}
+	return false
 }
 
 func syncSingleLauncher(srcPath string, d os.DirEntry, installed map[string]struct{}) {
