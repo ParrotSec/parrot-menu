@@ -8,6 +8,11 @@ import (
 	"strings"
 )
 
+type RemovedTool struct {
+	Name    string
+	Package string
+}
+
 const dirLauncherSource = "/usr/share/parrot-menu/applications/"
 
 func RemoveOldLaunchers() {
@@ -38,7 +43,9 @@ func RemoveOldLaunchers() {
 	}
 }
 
-func SyncLaunchers(installed map[string]struct{}) {
+func SyncLaunchers(installed map[string]struct{}) []RemovedTool {
+	var removed []RemovedTool
+
 	err := filepath.WalkDir(dirLauncherSource, func(path string, d os.DirEntry, err error) error {
 		if err != nil || d.IsDir() {
 			return err
@@ -48,7 +55,9 @@ func SyncLaunchers(installed map[string]struct{}) {
 			return nil
 		}
 
-		syncSingleLauncher(path, d, installed)
+		if rt := syncSingleLauncher(path, d, installed); rt != nil {
+			removed = append(removed, *rt)
+		}
 		return nil
 	})
 
@@ -56,6 +65,8 @@ func SyncLaunchers(installed map[string]struct{}) {
 		slog.Error("failed to walk source directory",
 			"dirLauncherSource", dirLauncherSource, "err", err)
 	}
+
+	return removed
 }
 
 var managedPrefixes = []string{"parrot-", "serv-"}
@@ -73,22 +84,30 @@ func isManaged(name string) bool {
 	return false
 }
 
-func syncSingleLauncher(srcPath string, d os.DirEntry, installed map[string]struct{}) {
+func syncSingleLauncher(srcPath string, d os.DirEntry, installed map[string]struct{}) *RemovedTool {
 	pkgName, err := desktop.GetXPackageName(srcPath)
 	if err != nil || pkgName == "" {
-		return
+		return nil
 	}
 
 	fileName := d.Name()
 	destPath := filepath.Join(desktop.DirLauncherDest, fileName)
 
+	var removed *RemovedTool
+
 	if _, ok := installed[pkgName]; ok {
 		ensureLauncherUpdated(srcPath, destPath, d)
 	} else {
+		// Report only if the launcher was previously present (i.e. the tool
+		// was installed before but its package has since been removed).
+		if _, err := os.Stat(destPath); err == nil {
+			removed = &RemovedTool{Name: fileName, Package: pkgName}
+		}
 		ensureLauncherRemoved(destPath)
 	}
 
 	desktop.FixOldLaunchers(fileName)
+	return removed
 }
 
 func ensureLauncherUpdated(srcPath, destPath string, d os.DirEntry) {
