@@ -1,0 +1,154 @@
+package main
+
+import (
+	"flag"
+	"fmt"
+	"os"
+	"os/exec"
+	"strings"
+)
+
+const (
+	banner = `
+▄▖        ▗ ▄▖    
+▙▌▀▌▛▘▛▘▛▌▜▘▚ █▌▛▘
+▌ █▌▌ ▌ ▙▌▐▖▄▌▙▖▙▖
+`
+	colorReset   = "\033[0m"
+	colorRed     = "\033[0;31m"
+	colorMagenta = "\033[1;95m"
+	colorCyan    = "\033[1;96m"
+	parrotEmail  = "team@parrotsec.org"
+)
+
+func main() {
+	isSudo := flag.Bool("sudo", false, "Run with sudo")
+	isGui := flag.Bool("gui", false, "Run with pkexec and show notifications")
+	isLs := flag.Bool("ls", false, "Run as directory lister")
+	noBanner := flag.Bool("no-banner", false, "Do not show banner")
+	keepOpen := flag.Bool("keep", true, "Keep shell open after execution")
+
+	flag.Parse()
+	args := flag.Args()
+
+	if len(args) == 0 {
+		fmt.Println("Usage: parrot-exec [flags] <command>")
+		os.Exit(1)
+	}
+
+	if !*noBanner && !*isGui {
+		fmt.Print(banner)
+	}
+
+	commandStr := strings.Join(args, " ")
+	execName := args[0]
+
+	if !*isLs {
+		if _, err := exec.LookPath(execName); err != nil {
+			handleError(execName, *isGui)
+			return
+		}
+	}
+
+	if *isGui {
+		runGui(commandStr, args)
+	} else if *isLs {
+		runLs(commandStr, *keepOpen)
+	} else if *isSudo {
+		runTerminal(args, true, *keepOpen)
+	} else {
+		runTerminal(args, false, *keepOpen)
+	}
+}
+
+func handleError(name string, gui bool) {
+	msg := fmt.Sprintf("Command '%s' cannot be found.\nPlease report this bug to %s%s%s", name, colorCyan, parrotEmail, colorReset)
+	if gui {
+		exec.Command("notify-send", "-i", "security-low", "Execution Failed", msg).Run()
+	} else {
+		fmt.Printf("%sERROR:%s %s\n\n", colorRed, colorReset, msg)
+		runShell()
+	}
+}
+
+func runGui(commandStr string, args []string) {
+	exec.Command("notify-send", "ParrotSec", "Starting "+commandStr).Run()
+
+	fullArgs := append([]string{"env", "DISPLAY=" + os.Getenv("DISPLAY"), "XAUTHORITY=" + os.Getenv("XAUTHORITY")}, args...)
+	cmd := exec.Command("pkexec", fullArgs...)
+	cmd.Stdout = os.Stdout
+	cmd.Stderr = os.Stderr
+	if err := cmd.Run(); err != nil {
+		handleError(commandStr, true)
+	}
+}
+
+func runTerminal(args []string, sudo bool, keep bool) {
+	fmt.Printf("Executing %s%s%s\n", colorMagenta, strings.Join(args, " "), colorReset)
+
+	var cmd *exec.Cmd
+	if sudo {
+		cmd = exec.Command("sudo", args...)
+	} else {
+		cmd = exec.Command(args[0], args[1:]...)
+	}
+
+	cmd.Stdout = os.Stdout
+	cmd.Stderr = os.Stderr
+	cmd.Stdin = os.Stdin
+	if err := cmd.Run(); err != nil {
+		handleError(strings.Join(args, " "), false)
+	}
+
+	if keep {
+		runShell()
+	}
+}
+
+func runLs(path string, keep bool) {
+	if info, err := os.Stat(path); err != nil || !info.IsDir() {
+		fmt.Printf("%sPath '%s' doesn't exist.%s\nPlease report this bug to %s%s%s\n", colorMagenta, path, colorReset, colorCyan, parrotEmail, colorReset)
+		return
+	}
+
+	fmt.Printf("Listing %s%s%s\n", colorMagenta, path, colorReset)
+	cmd := exec.Command("ls", "-laH", "--color=auto", "--", path)
+	cmd.Stdout = os.Stdout
+	cmd.Stderr = os.Stderr
+	if err := cmd.Run(); err != nil {
+		fmt.Printf("%sERROR:%s Failed to list directory: %v\n", colorRed, colorReset, err)
+	}
+
+	if keep {
+		runShell()
+	}
+}
+
+var allowedShells = map[string]bool{
+	"/bin/bash":     true,
+	"/bin/zsh":      true,
+	"/bin/sh":       true,
+	"/bin/fish":     true,
+	"/usr/bin/bash": true,
+	"/usr/bin/zsh":  true,
+	"/usr/bin/fish": true,
+}
+
+func runShell() {
+	shell := os.Getenv("SHELL")
+	if shell == "" {
+		shell = "/bin/bash"
+	}
+	if !allowedShells[shell] {
+		fmt.Printf("%sWARNING:%s SHELL '%s' is not recognized, falling back to /bin/bash\n", colorRed, colorReset, shell)
+		shell = "/bin/bash"
+	}
+	cmd := exec.Command(shell, "-i")
+	cmd.Stdout = os.Stdout
+	cmd.Stderr = os.Stderr
+	cmd.Stdin = os.Stdin
+	if err := cmd.Run(); err != nil {
+		fmt.Printf("%sERROR:%s Could not start shell %s: %v\n", colorRed, colorReset, shell, err)
+		os.Exit(1)
+	}
+}
