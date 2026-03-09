@@ -2,7 +2,7 @@
 Name=img_stat
 Comment=Display details of an image file
 Encoding=UTF-8
-Exec=menuexec "img_stat"
+Exec=parrot-exec --sudo "img_stat"
 Icon=xterm
 StartupNotify=false
 Terminal=true

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=rtpflood
 Encoding=UTF-8
-Exec=menuexec "rtpflood"
+Exec=parrot-exec --sudo "rtpflood"
 Icon=xterm
 StartupNotify=false
 Terminal=true

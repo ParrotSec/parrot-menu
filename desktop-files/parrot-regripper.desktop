@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=regripper
 Encoding=UTF-8
-Exec=menuexecg "regripper"
+Exec=parrot-exec --gui "regripper"
 Icon=xterm
 StartupNotify=false
 Terminal=false

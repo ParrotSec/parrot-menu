@@ -2,7 +2,7 @@
 Name=brutespray
 Comment=Takes nmap GNMAP/XML output and automatically brute-forces with default credentials using Medusa
 Encoding=UTF-8
-Exec=menuexec "brutespray"
+Exec=parrot-exec --sudo "brutespray"
 Icon=xterm
 StartupNotify=false
 Terminal=true

@@ -2,7 +2,7 @@
 Name=changeme
 Comment=Default credential scanner supports the http/https, MSSQL, MySQL, Postgres, ssh and ssh w/key protocols
 Encoding=UTF-8
-Exec=menuexec "changeme"
+Exec=parrot-exec --sudo "changeme"
 Icon=xterm
 StartupNotify=false
 Terminal=true

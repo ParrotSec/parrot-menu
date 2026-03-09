@@ -2,7 +2,7 @@
 Name=bluelog
 Comment=Linux Bluetooth scanner with optional daemon mode and web front-end
 Encoding=UTF-8
-Exec=menuexec bluelog -h
+Exec=parrot-exec --sudo bluelog -h
 Icon=xterm
 StartupNotify=false
 Terminal=true

@@ -2,7 +2,7 @@
 Name=cansend
 Comment=Send a single frame
 Encoding=UTF-8
-Exec=menuexec cansend
+Exec=parrot-exec --sudo cansend
 Icon=xterm
 StartupNotify=false
 Terminal=true

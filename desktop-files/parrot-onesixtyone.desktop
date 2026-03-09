@@ -2,7 +2,7 @@
 Name=onesixtyone
 Comment=SNMP scanner
 Encoding=UTF-8
-Exec=menuexec "onesixtyone"
+Exec=parrot-exec --sudo "onesixtyone"
 Icon=xterm
 StartupNotify=false
 Terminal=true

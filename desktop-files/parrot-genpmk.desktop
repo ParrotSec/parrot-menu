@@ -2,7 +2,7 @@
 Name=genpmk
 Comment=WPA-PSK precomputation attack
 Encoding=UTF-8
-Exec=menuexec genpmk 
+Exec=parrot-exec --sudo genpmk 
 Icon=xterm
 StartupNotify=false
 Terminal=true

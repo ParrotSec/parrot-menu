@@ -2,7 +2,7 @@
 Name=unicornscan
 Comment=Port scanner with superior interface for measuring TCP/IP response
 Encoding=UTF-8
-Exec=menuexec "us -h"
+Exec=parrot-exec --sudo "us -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

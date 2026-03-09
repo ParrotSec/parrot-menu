@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=udptunnel
 Encoding=UTF-8
-Exec=menuexec "udptunnel -h"
+Exec=parrot-exec --sudo "udptunnel -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

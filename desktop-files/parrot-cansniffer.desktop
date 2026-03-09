@@ -2,7 +2,7 @@
 Name=cansniffer
 Comment=Display CAN data content differences (just 11bit CAN IDs)
 Encoding=UTF-8
-Exec=menuexec cansniffer
+Exec=parrot-exec --sudo cansniffer
 Icon=xterm
 StartupNotify=false
 Terminal=true

@@ -2,7 +2,7 @@
 Name=blkstat
 Comment=Displays the allocation status of the given data unit
 Encoding=UTF-8
-Exec=menuexec blkstat
+Exec=parrot-exec --sudo blkstat
 Icon=xterm
 StartupNotify=false
 Terminal=true

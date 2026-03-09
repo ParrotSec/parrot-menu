@@ -2,7 +2,7 @@
 Name=braa
 Comment=Mass snmp scanner
 Encoding=UTF-8
-Exec=menuexec "braa -h"
+Exec=parrot-exec --sudo "braa -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

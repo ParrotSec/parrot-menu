@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=rfcat
 Encoding=UTF-8
-Exec=menuexec "rfcat -h"
+Exec=parrot-exec --sudo "rfcat -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

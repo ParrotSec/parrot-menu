@@ -2,7 +2,7 @@
 Name=afl
 Comment=Application fuzzer
 Encoding=UTF-8
-Exec=menuexec afl-fuzz -h
+Exec=parrot-exec --sudo afl-fuzz -h
 Icon=parrot_afl
 StartupNotify=false
 Terminal=true

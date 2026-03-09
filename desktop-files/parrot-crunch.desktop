@@ -2,7 +2,7 @@
 Name=crunch
 Comment=Password generator from charsets
 Encoding=UTF-8
-Exec=menuexec "crunch"
+Exec=parrot-exec --sudo "crunch"
 Icon=parrot_crunch
 StartupNotify=false
 Terminal=true

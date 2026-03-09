@@ -2,7 +2,7 @@
 Name=mimipenguin
 Comment=Uses root permission on Linux to display passwords in plaintext
 Encoding=UTF-8
-Exec=parrot-ls /usr/share/mimipenguin
+Exec=parrot-exec --ls /usr/share/mimipenguin
 Icon=xterm
 StartupNotify=false
 Terminal=true

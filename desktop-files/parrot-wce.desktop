@@ -2,7 +2,7 @@
 Name=wce
 Comment=Obtain NT/LM hashes from memory, pass-the-hash on Windows natively, play with logon sessions and associated credentials
 Encoding=UTF-8
-Exec=parrot-ls "/usr/share/windows-resources/wce/"
+Exec=parrot-exec --ls "/usr/share/windows-resources/wce/"
 Icon=xterm
 StartupNotify=false
 Terminal=true

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=pth-xfreerdp
 Encoding=UTF-8
-Exec=menuexec "xfreerdp"
+Exec=parrot-exec --sudo "xfreerdp"
 Icon=xterm
 StartupNotify=false
 Terminal=true

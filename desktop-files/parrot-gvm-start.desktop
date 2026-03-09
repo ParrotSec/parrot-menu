@@ -2,7 +2,7 @@
 Name=Start GVM Service
 Comment=Start Greenbone Vulnerability Manager (OpenVas)
 Encoding=UTF-8
-Exec=menuexec "gvm-start"
+Exec=parrot-exec --sudo "gvm-start"
 Icon=parrot_OpenVas
 StartupNotify=false
 Terminal=true

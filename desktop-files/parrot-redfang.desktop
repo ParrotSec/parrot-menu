@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=redfang
 Encoding=UTF-8
-Exec=menuexec "fang -h"
+Exec=parrot-exec --sudo "fang -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

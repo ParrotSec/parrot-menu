@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=wafw00f
 Encoding=UTF-8
-Exec=menuexec "wafw00f -h"
+Exec=parrot-exec --sudo "wafw00f -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

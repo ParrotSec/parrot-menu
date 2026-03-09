@@ -2,7 +2,7 @@
 Name=odat
 Comment=Oracle Database Attacking Tool
 Encoding=UTF-8
-Exec=menuexec "odat"
+Exec=parrot-exec --sudo "odat"
 Icon=xterm
 StartupNotify=false
 Terminal=true

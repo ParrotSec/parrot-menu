@@ -2,7 +2,7 @@
 Name=airdecap-ng
 Comment=Decrypt WEP/WPA/WPA2 capture files
 Encoding=UTF-8
-Exec=menuexec "airdecap-ng --help"
+Exec=parrot-exec --sudo "airdecap-ng --help"
 Icon=parrot_aircrack
 StartupNotify=false
 Terminal=true

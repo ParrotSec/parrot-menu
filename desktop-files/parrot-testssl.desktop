@@ -2,7 +2,7 @@
 Name=testssl
 Comment=Testing TLS/SSL encryption anywhere on any port
 Encoding=UTF-8
-Exec=menuexec "testssl -b"
+Exec=parrot-exec --sudo "testssl -b"
 Icon=xterm
 StartupNotify=false
 Terminal=true

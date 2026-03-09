@@ -2,7 +2,7 @@
 Name=httrack
 Comment=Copy websites to your computer (Offline browser)
 Encoding=UTF-8
-Exec=menuexec "httrack -h"
+Exec=parrot-exec --sudo "httrack -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

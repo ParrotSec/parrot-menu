@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=rainbowcrack
 Encoding=UTF-8
-Exec=menuexec "rcrack"
+Exec=parrot-exec --sudo "rcrack"
 Icon=parrot_rainbowcrack
 StartupNotify=false
 Terminal=true

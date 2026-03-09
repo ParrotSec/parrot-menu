@@ -2,7 +2,7 @@
 Name=genkeys
 Comment=Generate lookup file for asleap
 Encoding=UTF-8
-Exec=menuexec genkeys 
+Exec=parrot-exec --sudo genkeys 
 Icon=xterm
 StartupNotify=false
 Terminal=true

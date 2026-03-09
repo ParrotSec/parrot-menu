@@ -2,7 +2,7 @@
 Name=Start Apache Webserver
 Comment=Start Apache2 web service
 Encoding=UTF-8
-Exec=servicexc apache2 start 
+Exec=parrot-exec --gui systemctl start apache2 
 Icon=xterm
 StartupNotify=false
 Terminal=false

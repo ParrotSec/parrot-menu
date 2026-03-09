@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=shellter
 Encoding=UTF-8
-Exec=menuexec "shellter"
+Exec=parrot-exec --sudo "shellter"
 Icon=shellter
 StartupNotify=false
 Terminal=true

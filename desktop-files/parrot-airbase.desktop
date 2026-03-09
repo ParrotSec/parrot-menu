@@ -2,7 +2,7 @@
 Name=airbase-ng
 Comment=Multi-purpose tool aimed at attacking clients as opposed to the Access Point itself.
 Encoding=UTF-8
-Exec=menuexec "airbase-ng --help"
+Exec=parrot-exec --sudo "airbase-ng --help"
 Icon=parrot_aircrack
 StartupNotify=false
 Terminal=true

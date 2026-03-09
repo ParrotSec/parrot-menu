@@ -2,7 +2,7 @@
 Name=darkstat
 Comment=Network traffic analyzer
 Encoding=UTF-8
-Exec=menuexec "darkstat"
+Exec=parrot-exec --sudo "darkstat"
 Icon=xterm
 StartupNotify=false
 Terminal=true

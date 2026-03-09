@@ -2,7 +2,7 @@
 Name=asleap
 Comment=Cisco LEAP and Generic MS-CHAPv2 Dictionary Attack
 Encoding=UTF-8
-Exec=menuexec asleap -h
+Exec=parrot-exec --sudo asleap -h
 Icon=xterm
 StartupNotify=false
 Terminal=true

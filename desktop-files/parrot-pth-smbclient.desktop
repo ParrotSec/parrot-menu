@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=pth-smbclient
 Encoding=UTF-8
-Exec=menuexec "pth-smbclient -h"
+Exec=parrot-exec --sudo "pth-smbclient -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

@@ -2,7 +2,7 @@
 Categories=06-01-wireless-tools;06-wireless-attacks;top10;
 Comment=Audit wireless network toolkit
 Encoding=UTF-8
-Exec=menuexec /usr/bin/airgeddon
+Exec=parrot-exec --sudo /usr/bin/airgeddon
 GenericName=
 Icon=parrot_airgeddon
 MimeType=

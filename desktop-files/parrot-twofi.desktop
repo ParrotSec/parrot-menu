@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=twofi
 Encoding=UTF-8
-Exec=menuexec "twofi -h"
+Exec=parrot-exec --sudo "twofi -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=reglookup
 Encoding=UTF-8
-Exec=menuexec "reglookup"
+Exec=parrot-exec --sudo "reglookup"
 Icon=xterm
 StartupNotify=false
 Terminal=true

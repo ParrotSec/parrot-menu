@@ -2,7 +2,7 @@
 Name=passive_discovery6
 Comment=Passively sniffs the network and dump all client’s IPv6 addresses
 Encoding=UTF-8
-Exec=menuexec atk6-passive_discovery6 
+Exec=parrot-exec --sudo atk6-passive_discovery6 
 Icon=xterm
 StartupNotify=false
 Terminal=true

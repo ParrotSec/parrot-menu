@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=sslsniff
 Encoding=UTF-8
-Exec=menuexec "sslsniff"
+Exec=parrot-exec --sudo "sslsniff"
 Icon=xterm
 StartupNotify=false
 Terminal=true

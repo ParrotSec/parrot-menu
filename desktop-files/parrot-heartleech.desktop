@@ -2,7 +2,7 @@
 Name=heartleech
 Comment=Scan for heartbleed and download data
 Encoding=UTF-8
-Exec=menuexec "heartleech"
+Exec=parrot-exec --sudo "heartleech"
 Icon=xterm
 StartupNotify=false
 Terminal=true

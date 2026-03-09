@@ -2,7 +2,7 @@
 Name=nishang
 Comment=collection of scripts and payloads which enables usage of PowerShell for offensive security and post exploitation
 Encoding=UTF-8
-Exec=parrot-ls /usr/share/nishang
+Exec=parrot-exec --ls /usr/share/nishang
 Icon=parrot_nishang
 StartupNotify=false
 Terminal=true

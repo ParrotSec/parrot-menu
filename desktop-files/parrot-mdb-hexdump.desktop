@@ -2,7 +2,7 @@
 Name=mdb-hexdump
 Comment=Hexdump utility from MDB Tools
 Encoding=UTF-8
-Exec=menuexec mdb-hexdump 
+Exec=parrot-exec --sudo mdb-hexdump 
 Icon=xterm
 StartupNotify=false
 Terminal=true

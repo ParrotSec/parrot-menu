@@ -2,7 +2,7 @@
 Name=Stop Nessus
 Comment=Stop Nessus vulnerability scanner service
 Encoding=UTF-8
-Exec=servicexc nessusd stop
+Exec=parrot-exec --gui systemctl stop nessusd
 Icon=parrot_nessus
 StartupNotify=false
 Terminal=true

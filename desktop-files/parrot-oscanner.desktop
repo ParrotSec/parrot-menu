@@ -2,7 +2,7 @@
 Name=oscanner
 Comment=Oracle assessment framework developed in Java
 Encoding=UTF-8
-Exec=menuexec "oscanner"
+Exec=parrot-exec --sudo "oscanner"
 Icon=parrot_oscanner
 StartupNotify=false
 Terminal=true

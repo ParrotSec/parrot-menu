@@ -2,7 +2,7 @@
 Name=macchanger
 Comment=Change MAC address
 Encoding=UTF-8
-Exec=menuexec "macchanger -h"
+Exec=parrot-exec --sudo "macchanger -h"
 Icon=parrot_macchanger
 StartupNotify=false
 Terminal=true

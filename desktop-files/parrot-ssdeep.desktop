@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=ssdeep
 Encoding=UTF-8
-Exec=menuexec "ssdeep -h"
+Exec=parrot-exec --sudo "ssdeep -h"
 Icon=parrot_ssdeep
 StartupNotify=false
 Terminal=true

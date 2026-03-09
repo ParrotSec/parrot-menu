@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=websploit
 Encoding=UTF-8
-Exec=menuexec websploit 
+Exec=parrot-exec --sudo websploit 
 Icon=xterm
 StartupNotify=false
 Terminal=true

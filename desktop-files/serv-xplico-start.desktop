@@ -2,7 +2,7 @@
 Name=Start Xplico service
 Comment=Start the network forensics analysis tool
 Encoding=UTF-8
-Exec=servicexc xplico start
+Exec=parrot-exec --gui systemctl start xplico
 Icon=parrot_xplico
 StartupNotify=false
 Terminal=false

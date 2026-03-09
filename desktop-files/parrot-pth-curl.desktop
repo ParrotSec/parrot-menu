@@ -2,7 +2,7 @@
 Name=pth-curl
 Comment=Access curl comment using NTLM hash
 Encoding=UTF-8
-Exec=menuexec "pth-curl -h"
+Exec=parrot-exec --sudo "pth-curl -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

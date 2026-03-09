@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=searchsploit
 Encoding=UTF-8
-Exec=menuexec "searchsploit"
+Exec=parrot-exec --sudo "searchsploit"
 Icon=parrot_searchsploit
 StartupNotify=false
 Terminal=true

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=ssldump
 Encoding=UTF-8
-Exec=menuexec "ssldump -h"
+Exec=parrot-exec --sudo "ssldump -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

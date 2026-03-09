@@ -2,7 +2,7 @@
 Name=mfoc
 Comment=MIFARE Classic offline cracker
 Encoding=UTF-8
-Exec=menuexec "mfoc -h"
+Exec=parrot-exec --sudo "mfoc -h"
 Icon=parrot_mfoc
 StartupNotify=false
 Terminal=true

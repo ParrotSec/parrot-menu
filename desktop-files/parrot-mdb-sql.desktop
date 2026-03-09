@@ -2,7 +2,7 @@
 Name=mdb-sql
 Comment=SQL interface to MDB Tools
 Encoding=UTF-8
-Exec=menuexec "mdb-sql -h"
+Exec=parrot-exec --sudo "mdb-sql -h"
 Icon=parrot_mdb-sql
 StartupNotify=false
 Terminal=true

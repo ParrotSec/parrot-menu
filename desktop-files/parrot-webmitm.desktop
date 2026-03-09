@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=webmitm
 Encoding=UTF-8
-Exec=menuexec webmitm -h 
+Exec=parrot-exec --sudo webmitm -h 
 Icon=xterm
 StartupNotify=false
 Terminal=true

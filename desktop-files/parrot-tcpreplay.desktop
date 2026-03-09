@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=tcpreplay
 Encoding=UTF-8
-Exec=menuexec "tcpreplay -h"
+Exec=parrot-exec --sudo "tcpreplay -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

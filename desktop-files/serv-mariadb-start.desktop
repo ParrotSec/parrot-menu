@@ -2,7 +2,7 @@
 Name=Start MySQL/MariaDB
 Comment=Start mariadb database service
 Encoding=UTF-8
-Exec=servicexc mariadb start
+Exec=parrot-exec --gui systemctl start mariadb
 Icon=mysql
 StartupNotify=false
 Terminal=false

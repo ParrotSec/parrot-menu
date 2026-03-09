@@ -2,7 +2,7 @@
 Name=hashdeep
 Comment=Compute MD5, SHA1, SHA256, tiger and whirlpool hashsums of arbitrary number of files recursively
 Encoding=UTF-8
-Exec=menuexec "hashdeep -h"
+Exec=parrot-exec --sudo "hashdeep -h"
 Icon=parrot_hashdeep
 StartupNotify=false
 Terminal=true

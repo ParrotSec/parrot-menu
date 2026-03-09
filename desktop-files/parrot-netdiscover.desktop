@@ -2,7 +2,7 @@
 Name=netdiscover
 Comment=Active/passive network address scanner using ARP requests
 Encoding=UTF-8
-Exec=menuexec "/usr/sbin/netdiscover -h"
+Exec=parrot-exec --sudo "/usr/sbin/netdiscover -h"
 Icon=parrot_netdiscover
 StartupNotify=false
 Terminal=true

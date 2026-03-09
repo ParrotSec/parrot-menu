@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=recon-ng
 Encoding=UTF-8
-Exec=menuexec "recon-ng"
+Exec=parrot-exec --sudo "recon-ng"
 Icon=xterm
 StartupNotify=false
 Terminal=true

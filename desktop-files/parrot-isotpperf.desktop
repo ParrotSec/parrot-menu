@@ -2,7 +2,7 @@
 Name=isotpperf
 Comment=ISO15765-2 protocol performance visualisation
 Encoding=UTF-8
-Exec=menuexec isotpperf
+Exec=parrot-exec --sudo isotpperf
 Icon=xterm
 StartupNotify=false
 Terminal=true

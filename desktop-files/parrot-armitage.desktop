@@ -2,7 +2,7 @@
 Name=armitage
 Comment=Java GUI for metasploit-framework
 Encoding=UTF-8
-Exec=menuexecg armitage
+Exec=parrot-exec --gui armitage
 Icon=parrot_armitage
 StartupNotify=false
 Terminal=false

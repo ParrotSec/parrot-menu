@@ -2,7 +2,7 @@
 Name=cewl
 Comment=Get keywords from website, generate wordlist
 Encoding=UTF-8
-Exec=menuexec "cewl --help"
+Exec=parrot-exec --sudo "cewl --help"
 Icon=parrot_cewl
 StartupNotify=false
 Terminal=true

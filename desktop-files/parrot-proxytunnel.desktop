@@ -2,7 +2,7 @@
 Name=proxytunnel
 Comment=Program to tunnel a connection through a standard HTTPS proxy
 Encoding=UTF-8
-Exec=menuexec "proxytunnel -h"
+Exec=parrot-exec --sudo "proxytunnel -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

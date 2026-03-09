@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=pth-winexe
 Encoding=UTF-8
-Exec=menuexec "pth-winexe -h"
+Exec=parrot-exec --sudo "pth-winexe -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

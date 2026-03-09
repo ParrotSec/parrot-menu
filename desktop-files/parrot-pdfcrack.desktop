@@ -2,7 +2,7 @@
 Name=pdfcrack
 Comment=Recovering passwords from pdf-documents
 Encoding=UTF-8
-Exec=menuexec "pdfcrack"
+Exec=parrot-exec --sudo "pdfcrack"
 Icon=xterm
 StartupNotify=false
 Terminal=true

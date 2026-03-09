@@ -2,7 +2,7 @@
 Name=dnsdict6
 Comment=Enumerates a domain for DNS entries
 Encoding=UTF-8
-Exec=menuexec atk6-dnsdict6 
+Exec=parrot-exec --sudo atk6-dnsdict6 
 Icon=xterm
 StartupNotify=false
 Terminal=true

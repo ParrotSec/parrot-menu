@@ -2,7 +2,7 @@
 Name=commix
 Comment=Command injection scanner and exploitation tool
 Encoding=UTF-8
-Exec=menuexec "commix"
+Exec=parrot-exec --sudo "commix"
 Icon=parrot_commix
 StartupNotify=false
 Terminal=true

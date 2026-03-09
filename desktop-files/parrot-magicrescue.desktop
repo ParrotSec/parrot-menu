@@ -2,7 +2,7 @@
 Name=magicrescue
 Comment=Recover files by looking for magic bytes
 Encoding=UTF-8
-Exec=menuexec "magicrescue"
+Exec=parrot-exec --sudo "magicrescue"
 Icon=xterm
 StartupNotify=false
 Terminal=true

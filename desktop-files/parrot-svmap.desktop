@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=svmap
 Encoding=UTF-8
-Exec=menuexec "svmap -h"
+Exec=parrot-exec --sudo "svmap -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

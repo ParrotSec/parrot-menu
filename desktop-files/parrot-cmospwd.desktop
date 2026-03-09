@@ -2,7 +2,7 @@
 Name=cmospwd
 Comment=Decrypts password stored in cmos used to access BIOS SETUP.
 Encoding=UTF-8
-Exec=menuexec "cmospwd"
+Exec=parrot-exec --sudo "cmospwd"
 Icon=xterm
 StartupNotify=false
 Terminal=true

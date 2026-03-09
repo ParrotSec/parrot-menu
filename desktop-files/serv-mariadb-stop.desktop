@@ -2,7 +2,7 @@
 Name=Stop MySQL/MariaDB
 Comment=Stop mariadb database service
 Encoding=UTF-8
-Exec=servicexc mariadb stop
+Exec=parrot-exec --gui systemctl stop mariadb
 Icon=mysql
 StartupNotify=false
 Terminal=false

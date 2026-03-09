@@ -2,7 +2,7 @@
 Name=etherape
 Comment=Graphical network monitor
 Encoding=UTF-8
-Exec=menuexecg "etherape"
+Exec=parrot-exec --gui "etherape"
 Icon=etherape
 StartupNotify=false
 Terminal=false

@@ -2,7 +2,7 @@
 Name=autopsy
 Comment=Digital forensics platform and graphical interface to The Sleuth Kit and other digital forensics tools
 Encoding=UTF-8
-Exec=menuexec autopsy
+Exec=parrot-exec --sudo autopsy
 Icon=parrot_autopsy
 StartupNotify=false
 Terminal=true

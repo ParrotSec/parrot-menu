@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=rtpbreak
 Encoding=UTF-8
-Exec=menuexec "rtpbreak -h"
+Exec=parrot-exec --sudo "rtpbreak -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

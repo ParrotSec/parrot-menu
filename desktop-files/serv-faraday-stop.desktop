@@ -2,7 +2,7 @@
 Name=Stop Faraday service
 Comment=Stop the Faraday Pentest reporting service
 Encoding=UTF-8
-Exec=servicexc faraday stop
+Exec=parrot-exec --gui systemctl stop faraday
 Icon=faraday
 StartupNotify=false
 Terminal=false

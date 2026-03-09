@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=wireshark
 Encoding=UTF-8
-Exec=menuexecg "wireshark"
+Exec=parrot-exec --gui "wireshark"
 Icon=wireshark
 StartupNotify=false
 Terminal=false

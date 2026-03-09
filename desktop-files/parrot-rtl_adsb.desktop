@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=rtl_adsb
 Encoding=UTF-8
-Exec=menuexec "rtl_adsb -h"
+Exec=parrot-exec --sudo "rtl_adsb -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=sipp
 Encoding=UTF-8
-Exec=menuexec "sipp -h"
+Exec=parrot-exec --sudo "sipp -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

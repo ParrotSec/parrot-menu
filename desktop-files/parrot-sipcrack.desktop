@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=sipcrack
 Encoding=UTF-8
-Exec=menuexec "sipcrack -h"
+Exec=parrot-exec --sudo "sipcrack -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

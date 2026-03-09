@@ -2,7 +2,7 @@
 Name=miredo
 Comment=IPv6 tunneling protocol encapsulates IPv6 packets into UDP/IPv4 datagrams, to allow hosts behind NAT devices to access the IPv6 Internet.
 Encoding=UTF-8
-Exec=menuexec "miredo -h"
+Exec=parrot-exec --sudo "miredo -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

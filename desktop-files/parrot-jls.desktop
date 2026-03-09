@@ -2,7 +2,7 @@
 Name=jls
 Comment=List the contents of a file system journal
 Encoding=UTF-8
-Exec=menuexec "jls"
+Exec=parrot-exec --sudo "jls"
 Icon=xterm
 StartupNotify=false
 Terminal=true

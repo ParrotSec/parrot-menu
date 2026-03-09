@@ -2,7 +2,7 @@
 Name=mmls
 Comment=Display the partition layout of a volume system (partition ta‐bles)
 Encoding=UTF-8
-Exec=menuexec "mmls"
+Exec=parrot-exec --sudo "mmls"
 Icon=xterm
 StartupNotify=false
 Terminal=true

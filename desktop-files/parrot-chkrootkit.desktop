@@ -2,7 +2,7 @@
 Name=chkrootkit
 Comment=Check for rootkits on your system
 Encoding=UTF-8
-Exec=menuexec "chkrootkit -h"
+Exec=parrot-exec --sudo "chkrootkit -h"
 Icon=parrot_chkrootkit
 StartupNotify=false
 Terminal=true

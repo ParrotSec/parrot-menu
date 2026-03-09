@@ -2,7 +2,7 @@
 Name=ohrwurm
 Comment=A small and simple RTP
 Encoding=UTF-8
-Exec=menuexec "ohrwurm"
+Exec=parrot-exec --sudo "ohrwurm"
 Icon=xterm
 StartupNotify=false
 Terminal=true

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=webacoo
 Encoding=UTF-8
-Exec=menuexec "webacoo -h"
+Exec=parrot-exec --sudo "webacoo -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

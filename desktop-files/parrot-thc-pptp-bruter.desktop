@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=thc-pptp-bruter
 Encoding=UTF-8
-Exec=menuexec "thc-pptp-bruter"
+Exec=parrot-exec --sudo "thc-pptp-bruter"
 Icon=xterm
 StartupNotify=false
 Terminal=true

@@ -2,7 +2,7 @@
 Name=Start Metasploit Service
 Comment=Start metasploit framework and back-end services
 Encoding=UTF-8
-Exec=menuexec msfstart
+Exec=parrot-exec --sudo msfstart
 Icon=parrot_metasploit
 StartupNotify=false
 Terminal=true

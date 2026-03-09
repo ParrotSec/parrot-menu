@@ -2,7 +2,7 @@
 Name=masscan
 Comment=Provide fastest Internet port scanner
 Encoding=UTF-8
-Exec=menuexec "masscan --help"
+Exec=parrot-exec --sudo "masscan --help"
 Icon=xterm
 StartupNotify=false
 Terminal=true

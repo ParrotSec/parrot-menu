@@ -2,7 +2,7 @@
 Name=metagoofil
 Comment=Extracting metadata of public documents (pdf,doc,xls,ppt,docx,pptx,xlsx) belonging to a target company.
 Encoding=UTF-8
-Exec=menuexec "metagoofil"
+Exec=parrot-exec --sudo "metagoofil"
 Icon=parrot_metagoofil
 StartupNotify=false
 Terminal=true

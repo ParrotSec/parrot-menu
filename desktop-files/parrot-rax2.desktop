@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=rax2
 Encoding=UTF-8
-Exec=menuexec rax2 -h 
+Exec=parrot-exec --sudo rax2 -h 
 Icon=xterm
 StartupNotify=false
 Terminal=true

@@ -2,7 +2,7 @@
 Name=mmstat
 Comment=Display details about the volume system (partition tables)
 Encoding=UTF-8
-Exec=menuexec "mmstat"
+Exec=parrot-exec --sudo "mmstat"
 Icon=xterm
 StartupNotify=false
 Terminal=true

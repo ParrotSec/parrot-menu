@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=ptunnel
 Encoding=UTF-8
-Exec=menuexec "ptunnel -h"
+Exec=parrot-exec --sudo "ptunnel -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

@@ -2,7 +2,7 @@
 Name=mdb-export
 Comment=Export data in an MDB database table to CSV format.
 Encoding=UTF-8
-Exec=menuexec mdb-export 
+Exec=parrot-exec --sudo mdb-export 
 Icon=parrot_mdb-sql
 StartupNotify=false
 Terminal=true

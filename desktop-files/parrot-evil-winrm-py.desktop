@@ -2,7 +2,7 @@
 Name=evil-winrm-py
 Comment=Executing commands on remote Windows machines using the WinRM
 Encoding=UTF-8
-Exec=menuexec "evil-winrm-py"
+Exec=parrot-exec --sudo "evil-winrm-py"
 Icon=xterm
 StartupNotify=false
 Terminal=true

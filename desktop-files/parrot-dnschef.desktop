@@ -2,7 +2,7 @@
 Name=dnschef
 Comment=Configurable DNS proxy for Penetration Testers and Malware Analysts
 Encoding=UTF-8
-Exec=menuexec "dnschef -h"
+Exec=parrot-exec --sudo "dnschef -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

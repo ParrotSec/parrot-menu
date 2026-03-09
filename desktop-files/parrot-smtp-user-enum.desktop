@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=smtp-user-enum
 Encoding=UTF-8
-Exec=menuexec "smtp-user-enum -h"
+Exec=parrot-exec --sudo "smtp-user-enum -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

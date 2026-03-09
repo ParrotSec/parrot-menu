@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=rtlsdr-scanner
 Encoding=UTF-8
-Exec=menuexecg "rtlsdr-scanner"
+Exec=parrot-exec --gui "rtlsdr-scanner"
 Icon=xterm
 StartupNotify=false
 Terminal=false

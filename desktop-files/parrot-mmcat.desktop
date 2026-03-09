@@ -2,7 +2,7 @@
 Name=mmcat
 Comment=Output the contents of a partition to stdout
 Encoding=UTF-8
-Exec=menuexec "mmcat"
+Exec=parrot-exec --sudo "mmcat"
 Icon=xterm
 StartupNotify=false
 Terminal=true

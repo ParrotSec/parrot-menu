@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=rebind
 Encoding=UTF-8
-Exec=menuexec "dns-rebind"
+Exec=parrot-exec --sudo "dns-rebind"
 Icon=xterm
 StartupNotify=false
 Terminal=true

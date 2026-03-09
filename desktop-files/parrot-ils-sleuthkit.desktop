@@ -2,7 +2,7 @@
 Name=ils-sleuthkit
 Comment=List inode information
 Encoding=UTF-8
-Exec=menuexec "ils"
+Exec=parrot-exec --sudo "ils"
 Icon=xterm
 StartupNotify=false
 Terminal=true

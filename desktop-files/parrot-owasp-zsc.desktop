@@ -2,7 +2,7 @@
 Name=owasp-zsc
 Comment=Shellcode/Obfuscate Code Generator
 Encoding=UTF-8
-Exec=menuexec "owasp-zsc"
+Exec=parrot-exec --sudo "owasp-zsc"
 StartupNotify=false
 Terminal=true
 Type=Application

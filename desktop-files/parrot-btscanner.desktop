@@ -2,7 +2,7 @@
 Name=btscanner
 Comment=Bluetooth data sniffer
 Encoding=UTF-8
-Exec=menuexec "btscanner -h"
+Exec=parrot-exec --sudo "btscanner -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=wig-ng
 Encoding=UTF-8
-Exec=menuexec "wig-ng -h"
+Exec=parrot-exec --sudo "wig-ng -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

@@ -2,7 +2,7 @@
 Name=ettercap-graphical
 Comment=Network sniffing tool (GUI)
 Encoding=UTF-8
-Exec=menuexecg "ettercap -G"
+Exec=parrot-exec --gui "ettercap -G"
 Icon=parrot_ettercap
 StartupNotify=false
 Terminal=false

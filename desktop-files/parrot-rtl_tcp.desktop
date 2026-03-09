@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=rtl_tcp
 Encoding=UTF-8
-Exec=menuexec "rtl_tcp -h"
+Exec=parrot-exec --sudo "rtl_tcp -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

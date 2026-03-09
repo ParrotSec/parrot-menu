@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=spike-generic_chunked
 Encoding=UTF-8
-Exec=menuexec "generic_chunked"
+Exec=parrot-exec --sudo "generic_chunked"
 Icon=xterm
 StartupNotify=false
 Terminal=true

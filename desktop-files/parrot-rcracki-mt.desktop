@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=rcracki_mt
 Encoding=UTF-8
-Exec=menuexec "rcracki_mt"
+Exec=parrot-exec --sudo "rcracki_mt"
 Icon=parrot_rcracki_mt
 StartupNotify=false
 Terminal=true

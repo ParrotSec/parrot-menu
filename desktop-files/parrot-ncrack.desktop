@@ -2,7 +2,7 @@
 Name=ncrack
 Comment=Network authentication cracking tool from Nmap project
 Encoding=UTF-8
-Exec=menuexec "ncrack -h"
+Exec=parrot-exec --sudo "ncrack -h"
 Icon=parrot_ncrack
 StartupNotify=false
 Terminal=true

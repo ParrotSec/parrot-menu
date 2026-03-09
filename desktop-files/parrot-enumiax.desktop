@@ -2,7 +2,7 @@
 Name=enumiax
 Comment=Asterisk Exchange Protocol username brute-force enumerator
 Encoding=UTF-8
-Exec=menuexec "enumiax -h"
+Exec=parrot-exec --sudo "enumiax -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

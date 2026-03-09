@@ -2,7 +2,7 @@
 Name=Stop Xplico service
 Comment=Stop the network forensics analysis tool
 Encoding=UTF-8
-Exec=servicexc xplico stop
+Exec=parrot-exec --gui systemctl stop xplico
 Icon=parrot_xplico
 StartupNotify=false
 Terminal=false

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=yara
 Encoding=UTF-8
-Exec=menuexec "yara"
+Exec=parrot-exec --sudo "yara"
 Icon=xterm
 StartupNotify=false
 Terminal=true

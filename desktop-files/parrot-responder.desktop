@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=responder
 Encoding=UTF-8
-Exec=menuexec "responder -h"
+Exec=parrot-exec --sudo "responder -h"
 Icon=parrot_responder
 StartupNotify=false
 Terminal=true

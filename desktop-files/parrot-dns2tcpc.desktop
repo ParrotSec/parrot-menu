@@ -2,7 +2,7 @@
 Name=dns2tcpc
 Comment=Relay TCP connections through DNS traffic (CLIENT)
 Encoding=UTF-8
-Exec=menuexec "dns2tcpc"
+Exec=parrot-exec --sudo "dns2tcpc"
 Icon=xterm
 StartupNotify=false
 Terminal=true

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=trace6
 Encoding=UTF-8
-Exec=menuexec atk6-trace6 
+Exec=parrot-exec --sudo atk6-trace6 
 Icon=xterm
 StartupNotify=false
 Terminal=true

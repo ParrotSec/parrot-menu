@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=slcanpty
 Encoding=UTF-8
-Exec=menuexec slcanpty
+Exec=parrot-exec --sudo slcanpty
 Icon=xterm
 StartupNotify=false
 Terminal=true

@@ -2,7 +2,7 @@
 Name=mitmproxy
 Comment=Allows traffic flows to be inspected and edited on the fly
 Encoding=UTF-8
-Exec=menuexec "mitmproxy -h"
+Exec=parrot-exec --sudo "mitmproxy -h"
 Icon=parrot_mitmproxy
 StartupNotify=false
 Terminal=true

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=t50
 Encoding=UTF-8
-Exec=menuexec "t50 --help"
+Exec=parrot-exec --sudo "t50 --help"
 Icon=xterm
 StartupNotify=false
 Terminal=true

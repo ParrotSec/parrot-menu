@@ -2,7 +2,7 @@
 Name=nbtscan
 Comment=Scan networks searching for NetBIOS information
 Encoding=UTF-8
-Exec=menuexec "nbtscan -h"
+Exec=parrot-exec --sudo "nbtscan -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

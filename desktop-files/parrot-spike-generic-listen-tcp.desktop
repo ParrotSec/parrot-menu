@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=spike-generic_listen_tcp
 Encoding=UTF-8
-Exec=menuexec "generic_listen_tcp"
+Exec=parrot-exec --sudo "generic_listen_tcp"
 Icon=xterm
 StartupNotify=false
 Terminal=true
