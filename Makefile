@@ -2,6 +2,8 @@
 
 export BUILD_DIR := build
 export HOME = $(CURDIR)
+export GO111MODULE = on
+export GOFLAGS = -mod=mod
 
 binary:
 	mkdir -p $(BUILD_DIR)
