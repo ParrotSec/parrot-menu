@@ -1,12 +1,12 @@
 .PHONY: binary icons
 
-export BINARY_NAME := update-launchers
 export BUILD_DIR := build
 export HOME = $(CURDIR)
 
 binary:
 	mkdir -p $(BUILD_DIR)
-	go build -ldflags="-s -w" -o $(BUILD_DIR)/$(BINARY_NAME) ./launcher-updater/main.go
+	cd launcher-updater && go build -ldflags="-s -w" -o ../$(BUILD_DIR)/update-launchers ./cmd/launcher-updater
+	cd parrot-exec && go build -ldflags="-s -w" -o ../$(BUILD_DIR)/parrot-exec .
 
 icons:
 	@read -p "Enter path image: " IMAGE_PATH; \
