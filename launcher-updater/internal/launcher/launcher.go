@@ -93,21 +93,15 @@ func syncSingleLauncher(srcPath string, d os.DirEntry, installed map[string]stru
 	fileName := d.Name()
 	destPath := filepath.Join(desktop.DirLauncherDest, fileName)
 
-	var removed *RemovedTool
-
 	if _, ok := installed[pkgName]; ok {
 		ensureLauncherUpdated(srcPath, destPath, d)
 	} else {
-		// Report only if the launcher was previously present (i.e. the tool
-		// was installed before but its package has since been removed).
-		if _, err := os.Stat(destPath); err == nil {
-			removed = &RemovedTool{Name: fileName, Package: pkgName}
-		}
-		ensureLauncherRemoved(destPath)
+		// Ensure the template launcher is in place for uninstalled tools.
+		ensureLauncherTemplate(srcPath, destPath, pkgName, d)
 	}
 
 	desktop.FixOldLaunchers(fileName)
-	return removed
+	return nil
 }
 
 func ensureLauncherUpdated(srcPath, destPath string, d os.DirEntry) {
@@ -126,10 +120,17 @@ func ensureLauncherUpdated(srcPath, destPath string, d os.DirEntry) {
 	}
 }
 
-func ensureLauncherRemoved(destPath string) {
-	if _, err := os.Stat(destPath); err == nil {
-		if err := os.Remove(destPath); err != nil {
-			slog.Error("failed to remove old launcher", "destPath", destPath, "err", err)
+func ensureLauncherTemplate(srcPath, destPath, pkgName string, d os.DirEntry) {
+	srcInfo, err := d.Info()
+	if err != nil {
+		return
+	}
+
+	destInfo, err := os.Stat(destPath)
+	// Create template if it doesn't exist or logic needs update
+	if err != nil || destInfo.ModTime().Before(srcInfo.ModTime()) {
+		if err := desktop.CopyTemplateLauncher(srcPath, destPath, pkgName); err != nil {
+			slog.Error("failed to create template launcher", "destPath", destPath, "err", err)
 		}
 	}
 }

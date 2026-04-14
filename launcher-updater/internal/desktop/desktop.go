@@ -109,3 +109,58 @@ func CopyFile(src, dst string) error {
 
 	return writer.Flush()
 }
+
+func CopyTemplateLauncher(src, dst, pkgName string) error {
+	source, err := os.Open(src)
+	if err != nil {
+		return err
+	}
+	defer func() {
+		_ = source.Close()
+	}()
+
+	destination, err := os.Create(dst)
+	if err != nil {
+		return err
+	}
+	defer func() {
+		_ = destination.Close()
+	}()
+
+	scanner := bufio.NewScanner(source)
+	writer := bufio.NewWriter(destination)
+
+	hasTerminal := false
+
+	for scanner.Scan() {
+		line := scanner.Text()
+
+		if strings.HasPrefix(line, "Icon=") {
+			line = "Icon=xterm"
+		} else if strings.HasPrefix(line, "Exec=") {
+			line = "Exec=parrot-exec --install " + pkgName
+		} else if strings.HasPrefix(line, "Terminal=") {
+			line = "Terminal=true"
+			hasTerminal = true
+		}
+
+		_, err := writer.WriteString(line + "\n")
+		if err != nil {
+			return err
+		}
+	}
+
+	if err := scanner.Err(); err != nil {
+		slog.Error("error reading file", "src", src, "err", err)
+		return err
+	}
+
+	if !hasTerminal {
+		_, err = writer.WriteString("Terminal=true\n")
+		if err != nil {
+			return err
+		}
+	}
+
+	return writer.Flush()
+}

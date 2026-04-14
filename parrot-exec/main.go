@@ -26,6 +26,7 @@ func main() {
 	isSudo := flag.Bool("sudo", false, "Run with sudo")
 	isGui := flag.Bool("gui", false, "Run with pkexec and show notifications")
 	isLs := flag.Bool("ls", false, "Run as directory lister")
+	isInstall := flag.Bool("install", false, "Install the specified package")
 	noBanner := flag.Bool("no-banner", false, "Do not show banner")
 	keepOpen := flag.Bool("keep", true, "Keep shell open after execution")
 
@@ -55,10 +56,41 @@ func main() {
 		runGui(commandStr, args)
 	} else if *isLs {
 		runLs(commandStr, *keepOpen)
+	} else if *isInstall {
+		runInstall(execName, *keepOpen)
 	} else if *isSudo {
 		runTerminal(args, true, *keepOpen)
 	} else {
 		runTerminal(args, false, *keepOpen)
+	}
+}
+
+func runInstall(pkgName string, keep bool) {
+	fmt.Printf("%sInstalling package %s...%s\n\n", colorCyan, pkgName, colorReset)
+
+	cmd := exec.Command("sudo", "apt", "update")
+	cmd.Stdout = os.Stdout
+	cmd.Stderr = os.Stderr
+	cmd.Stdin = os.Stdin
+	_ = cmd.Run()
+
+	cmd = exec.Command("sudo", "apt", "install", "-y", pkgName)
+	cmd.Stdout = os.Stdout
+	cmd.Stderr = os.Stderr
+	cmd.Stdin = os.Stdin
+
+	if err := cmd.Run(); err != nil {
+		fmt.Printf("\n%sERROR:%s Failed to install '%s': %v\n\n", colorRed, colorReset, pkgName, err)
+	} else {
+		fmt.Printf("\n%sSUCCESS:%s '%s' installed correctly. The menu will now be updated.\n\n", colorCyan, colorReset, pkgName)
+		updateCmd := exec.Command("sudo", "launcher-updater")
+		updateCmd.Stdout = os.Stdout
+		updateCmd.Stderr = os.Stderr
+		updateCmd.Run()
+	}
+
+	if keep {
+		runShell()
 	}
 }
 
