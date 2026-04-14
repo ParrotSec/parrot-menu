@@ -1,3 +1,24 @@
+parrot-menu (3:7.0.17) echo; urgency=medium
+
+  [ Dario Camonita ]
+  * refactor: split main.go into internal modules
+  * refactor: modularize launcher synchronization
+  * refactor: remove internal/consts.go
+  * refactor: use isManaged helper in RemoveOldLaunchers
+  * refactor: optimize isManaged by moving prefixes to package level
+  * perf: increase scanner buffer
+  * refactor: use strings.CutPrefix in FixOldLaunchers
+  * refactor: use strings.CutSuffix in CopyFile()
+  * refactor: migrate to structured logging with slog
+  * fix: move scanner error check outside of loop
+  * chore: add mcpwn desktop entry
+  * fix: update Go modules source paths
+
+  [ Royce Davis ]
+  * Edit parrot-goshs.desktop "gosh" typo
+
+ -- Dario "danterolle" Camonita <danterolle@parrotsec.org>  Tue, 14 Apr 2026 12:43:46 +0000
+
 parrot-menu (3:7.0.16) echo; urgency=medium
 
   * Remove checkValidBinary from launcher-updater.
