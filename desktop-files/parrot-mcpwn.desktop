@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=mcpwn
+Comment=Allow LLMs to execute security tools on your local machine
+Encoding=UTF-8
+Exec=/usr/bin/mcpwn
+Icon=parrot_mcpwn
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=14-ai-tools;
+X-Parrot-Package=mcpwn
