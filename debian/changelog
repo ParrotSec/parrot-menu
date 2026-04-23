@@ -1,3 +1,10 @@
+parrot-menu (3:7.2.1) echo; urgency=medium
+
+  [ Dario Camonita ]
+  * fix: replace kali-treecd with parrot-ls and update xfreerdp entry
+
+ -- Dario "danterolle" Camonita <danterolle@parrotsec.org>  Thu, 23 Apr 2026 15:10:55 +0000
+
 parrot-menu (3:7.2.0) echo; urgency=medium
 
   * Bump version for parrot 7.2 release.
