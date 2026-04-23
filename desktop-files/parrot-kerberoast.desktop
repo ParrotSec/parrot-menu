@@ -2,7 +2,7 @@
 Name=kerberoast
 Comment=Kerberoast is a series of tools for attacking MS Kerberos implementations
 Encoding=UTF-8
-Exec=menuexec kerberoast -h
+Exec=parrot-ls /usr/share/kerberoast
 Icon=xterm
 StartupNotify=false
 Terminal=true
