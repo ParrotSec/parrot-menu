@@ -112,7 +112,7 @@ func runInstall(pkgName string, keep bool) {
 		fmt.Printf("\n%sERROR:%s Failed to install '%s': %v\n\n", colorRed, colorReset, pkgName, err)
 	} else {
 		fmt.Printf("\n%sSUCCESS:%s '%s' installed correctly. The menu will now be updated.\n\n", colorCyan, colorReset, pkgName)
-		updateCmd := exec.Command("sudo", "launcher-updater")
+		updateCmd := exec.Command("sudo", "/usr/share/parrot-menu/update-launchers")
 		updateCmd.Stdout = os.Stdout
 		updateCmd.Stderr = os.Stderr
 		if err := updateCmd.Run(); err != nil {
