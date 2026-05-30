@@ -95,13 +95,13 @@ func syncSingleLauncher(srcPath string, d os.DirEntry, installed map[string]stru
 
 	if _, ok := installed[pkgName]; ok {
 		ensureLauncherUpdated(srcPath, destPath, d)
-	} else {
-		// Ensure the template launcher is in place for uninstalled tools.
-		ensureLauncherTemplate(srcPath, destPath, pkgName, d)
+		desktop.FixOldLaunchers(fileName)
+		return nil
 	}
 
+	ensureLauncherTemplate(srcPath, destPath, pkgName, d)
 	desktop.FixOldLaunchers(fileName)
-	return nil
+	return &RemovedTool{Name: fileName, Package: pkgName}
 }
 
 func ensureLauncherUpdated(srcPath, destPath string, d os.DirEntry) {
