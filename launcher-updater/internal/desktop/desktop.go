@@ -115,17 +115,21 @@ func CopyTemplateLauncher(src, dst, pkgName string) error {
 	if err != nil {
 		return err
 	}
-	defer func() {
-		_ = source.Close()
-	}()
+	defer func(source *os.File) {
+		if err := source.Close(); err != nil {
+			slog.Error("failed to close file", "src", src, "err", err)
+		}
+	}(source)
 
 	destination, err := os.Create(dst)
 	if err != nil {
 		return err
 	}
-	defer func() {
-		_ = destination.Close()
-	}()
+	defer func(destination *os.File) {
+		if err := destination.Close(); err != nil {
+			slog.Error("failed to close file", "dst", dst, "err", err)
+		}
+	}(destination)
 
 	scanner := bufio.NewScanner(source)
 	writer := bufio.NewWriter(destination)
