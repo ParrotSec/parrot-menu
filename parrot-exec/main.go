@@ -112,7 +112,9 @@ func runInstall(pkgName string, keep bool) {
 		updateCmd := exec.Command("sudo", "launcher-updater")
 		updateCmd.Stdout = os.Stdout
 		updateCmd.Stderr = os.Stderr
-		updateCmd.Run()
+		if err := updateCmd.Run(); err != nil {
+			fmt.Printf("\n%sWARNING:%s Menu update failed: %v\n", colorRed, colorReset, err)
+		}
 	}
 
 	if keep {
