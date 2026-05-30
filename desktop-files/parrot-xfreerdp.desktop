@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=xfreerdp
 Encoding=UTF-8
-Exec=menuexec "xfreerdp3"
+Exec=parrot-exec --sudo xfreerdp3
 Icon=xterm
 StartupNotify=false
 Terminal=true
