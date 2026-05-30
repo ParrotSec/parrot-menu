@@ -1,3 +1,25 @@
+/*
+parrot-exec is the execution gateway for ParrotOS desktop entries.
+
+It dispatches into four modes:
+
+  - `--sudo`: runs a command inside the terminal the DE has already
+    opened (Terminal=true in the .desktop file).
+
+  - `--ls`: delegates to ls rather than os.ReadDir for visual consistency
+    with terminal output.
+
+  - `--gui`: runs via pkexec while preserving DISPLAY and XAUTHORITY, which
+    pkexec strips for security reasons by default.
+
+  - `--install`: runs apt update + apt install, then triggers launcher-updater
+    so the template desktop entry is replaced with the real one.
+
+The `--keep` flag (default set to **true**) calls runShell() after execution so
+the terminal stays open otherwise a Terminal=true entry would close before the
+user can read output or errors. runShell() whitelists known shells to prevent
+executing untrusted binaries injected via $SHELL.
+*/
 package main
 
 import (
