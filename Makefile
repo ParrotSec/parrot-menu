@@ -7,8 +7,8 @@ export GOFLAGS = -mod=mod
 
 binary:
 	mkdir -p $(BUILD_DIR)
-	cd launcher-updater && go build -ldflags="-s -w" -o ../$(BUILD_DIR)/update-launchers ./cmd/launcher-updater
-	cd parrot-exec && go build -ldflags="-s -w" -o ../$(BUILD_DIR)/parrot-exec .
+	cd launcher-updater && go build -ldflags="-s -w" -o $(CURDIR)/$(BUILD_DIR)/update-launchers ./cmd/launcher-updater
+	cd parrot-exec && go build -ldflags="-s -w" -o $(CURDIR)/$(BUILD_DIR)/parrot-exec .
 
 icons:
 	@read -p "Enter path image: " IMAGE_PATH; \
