@@ -145,6 +145,9 @@ func runCommand(args []string, sudo bool, keep bool) {
 func runLs(path string, keep bool) {
 	if info, err := os.Stat(path); err != nil || !info.IsDir() {
 		fmt.Printf("%sPath '%s' doesn't exist.%s\nPlease report this bug to %s%s%s\n", colorMagenta, path, colorReset, colorCyan, parrotEmail, colorReset)
+		if keep {
+			runShell()
+		}
 		return
 	}
 
