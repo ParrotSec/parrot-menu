@@ -90,14 +90,17 @@ func main() {
 func runInstall(pkgName string, keep bool) {
 	fmt.Printf("%sInstalling package %s...%s\n\n", colorCyan, pkgName, colorReset)
 
-	cmd := exec.Command("sudo", "apt", "update")
-	cmd.Stdout = os.Stdout
-	cmd.Stderr = os.Stderr
-	cmd.Stdin = os.Stdin
-	if err := cmd.Run(); err != nil {
-		fmt.Printf("\n%sERROR:%s Failed to update package list: %v\n\n", colorRed, colorReset, err)
-		if keep { runShell() }
-		return
+	cmd := exec.Command("apt-cache", "show", pkgName)
+	if cmd.Run() != nil {
+		cmd = exec.Command("sudo", "apt", "update")
+		cmd.Stdout = os.Stdout
+		cmd.Stderr = os.Stderr
+		cmd.Stdin = os.Stdin
+		if err := cmd.Run(); err != nil {
+			fmt.Printf("\n%sERROR:%s Failed to update package list: %v\n\n", colorRed, colorReset, err)
+			if keep { runShell() }
+			return
+		}
 	}
 
 	cmd = exec.Command("sudo", "apt", "install", "-y", pkgName)
