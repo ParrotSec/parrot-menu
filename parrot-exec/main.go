@@ -97,7 +97,8 @@ func runInstall(pkgName string, keep bool) {
 		cmd.Stderr = os.Stderr
 		cmd.Stdin = os.Stdin
 		if err := cmd.Run(); err != nil {
-			fmt.Printf("\n%sERROR:%s Failed to update package list: %v\n\n", colorRed, colorReset, err)
+			fmt.Printf("\n%sERROR:%s Failed to update package list: %v\n\n",
+				colorRed, colorReset, err)
 			if keep { runShell() }
 			return
 		}
@@ -109,14 +110,18 @@ func runInstall(pkgName string, keep bool) {
 	cmd.Stdin = os.Stdin
 
 	if err := cmd.Run(); err != nil {
-		fmt.Printf("\n%sERROR:%s Failed to install '%s': %v\n\n", colorRed, colorReset, pkgName, err)
+		fmt.Printf("\n%sERROR:%s Failed to install '%s': %v\n\n",
+			colorRed, colorReset, pkgName, err)
 	} else {
-		fmt.Printf("\n%sSUCCESS:%s '%s' installed correctly. The menu will now be updated.\n\n", colorCyan, colorReset, pkgName)
+		fmt.Printf("\n%sSUCCESS:%s '%s' installed correctly. "+
+				"The menu will now be updated.\n\n",
+			colorCyan, colorReset, pkgName)
 		updateCmd := exec.Command("sudo", "/usr/share/parrot-menu/update-launchers")
 		updateCmd.Stdout = os.Stdout
 		updateCmd.Stderr = os.Stderr
 		if err := updateCmd.Run(); err != nil {
-			fmt.Printf("\n%sWARNING:%s Menu update failed: %v\n", colorRed, colorReset, err)
+			fmt.Printf("\n%sWARNING:%s Menu update failed: %v\n",
+				colorRed, colorReset, err)
 		}
 	}
 
@@ -126,9 +131,12 @@ func runInstall(pkgName string, keep bool) {
 }
 
 func handleError(name string, gui bool) {
-	msg := fmt.Sprintf("Command '%s' cannot be found.\nPlease report this bug to %s%s%s", name, colorCyan, parrotEmail, colorReset)
+	msg := fmt.Sprintf("Command '%s' cannot be found.\n"+
+		"Please report this bug to %s%s%s",
+		name, colorCyan, parrotEmail, colorReset)
 	if gui {
-		exec.Command("notify-send", "-i", "security-low", "Execution Failed", msg).Run()
+		exec.Command("notify-send", "-i", "security-low",
+			"Execution Failed", msg).Run()
 	} else {
 		fmt.Printf("%sERROR:%s %s\n\n", colorRed, colorReset, msg)
 		runShell()
@@ -138,7 +146,14 @@ func handleError(name string, gui bool) {
 func runGui(commandStr string, args []string) {
 	exec.Command("notify-send", "ParrotSec", "Starting "+commandStr).Run()
 
-	fullArgs := append([]string{"env", "DISPLAY=" + os.Getenv("DISPLAY"), "XAUTHORITY=" + os.Getenv("XAUTHORITY")}, args...)
+	fullArgs := append(
+		[]string{
+			"env",
+			"DISPLAY=" + os.Getenv("DISPLAY"),
+			"XAUTHORITY=" + os.Getenv("XAUTHORITY"),
+		},
+		args...,
+	)
 	cmd := exec.Command("pkexec", fullArgs...)
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
@@ -148,7 +163,8 @@ func runGui(commandStr string, args []string) {
 }
 
 func runCommand(args []string, sudo bool, keep bool) {
-	fmt.Printf("Executing %s%s%s\n", colorMagenta, strings.Join(args, " "), colorReset)
+	fmt.Printf("Executing %s%s%s\n",
+		colorMagenta, strings.Join(args, " "), colorReset)
 
 	var cmd *exec.Cmd
 	if sudo {
@@ -171,7 +187,8 @@ func runCommand(args []string, sudo bool, keep bool) {
 
 func runLs(path string, keep bool) {
 	if info, err := os.Stat(path); err != nil || !info.IsDir() {
-		fmt.Printf("%sPath '%s' doesn't exist.%s\nPlease report this bug to %s%s%s\n", colorMagenta, path, colorReset, colorCyan, parrotEmail, colorReset)
+		fmt.Printf("%sPath '%s' doesn't exist.%s\nPlease report this bug to %s%s%s\n",
+			colorMagenta, path, colorReset, colorCyan, parrotEmail, colorReset)
 		if keep {
 			runShell()
 		}
@@ -183,7 +200,8 @@ func runLs(path string, keep bool) {
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
 	if err := cmd.Run(); err != nil {
-		fmt.Printf("%sERROR:%s Failed to list directory: %v\n", colorRed, colorReset, err)
+		fmt.Printf("%sERROR:%s Failed to list directory: %v\n",
+			colorRed, colorReset, err)
 	}
 
 	if keep {
@@ -207,7 +225,9 @@ func runShell() {
 		shell = "/bin/bash"
 	}
 	if !allowedShells[shell] {
-		fmt.Printf("%sWARNING:%s SHELL '%s' is not recognized, falling back to /bin/bash\n", colorRed, colorReset, shell)
+		fmt.Printf("%sWARNING:%s SHELL '%s' is not recognized, "+
+				"falling back to /bin/bash\n",
+			colorRed, colorReset, shell)
 		shell = "/bin/bash"
 	}
 	cmd := exec.Command(shell, "-i")
@@ -215,7 +235,8 @@ func runShell() {
 	cmd.Stderr = os.Stderr
 	cmd.Stdin = os.Stdin
 	if err := cmd.Run(); err != nil {
-		fmt.Printf("%sERROR:%s Could not start shell %s: %v\n", colorRed, colorReset, shell, err)
+		fmt.Printf("%sERROR:%s Could not start shell %s: %v\n",
+			colorRed, colorReset, shell, err)
 		os.Exit(1)
 	}
 }
