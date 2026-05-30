@@ -59,9 +59,9 @@ func main() {
 	} else if *isInstall {
 		runInstall(execName, *keepOpen)
 	} else if *isSudo {
-		runTerminal(args, true, *keepOpen)
+		runCommand(args, true, *keepOpen)
 	} else {
-		runTerminal(args, false, *keepOpen)
+		runCommand(args, false, *keepOpen)
 	}
 }
 
@@ -116,7 +116,7 @@ func runGui(commandStr string, args []string) {
 	}
 }
 
-func runTerminal(args []string, sudo bool, keep bool) {
+func runCommand(args []string, sudo bool, keep bool) {
 	fmt.Printf("Executing %s%s%s\n", colorMagenta, strings.Join(args, " "), colorReset)
 
 	var cmd *exec.Cmd
