@@ -87,15 +87,19 @@ func main() {
 	}
 }
 
+func attachStdio(cmd *exec.Cmd) {
+	cmd.Stdout = os.Stdout
+	cmd.Stderr = os.Stderr
+	cmd.Stdin = os.Stdin
+}
+
 func runInstall(pkgName string, keep bool) {
 	fmt.Printf("%sInstalling package %s...%s\n\n", colorCyan, pkgName, colorReset)
 
 	cmd := exec.Command("apt-cache", "show", pkgName)
 	if cmd.Run() != nil {
 		cmd = exec.Command("sudo", "apt", "update")
-		cmd.Stdout = os.Stdout
-		cmd.Stderr = os.Stderr
-		cmd.Stdin = os.Stdin
+		attachStdio(cmd)
 		if err := cmd.Run(); err != nil {
 			fmt.Printf("\n%sERROR:%s Failed to update package list: %v\n\n",
 				colorRed, colorReset, err)
@@ -105,9 +109,7 @@ func runInstall(pkgName string, keep bool) {
 	}
 
 	cmd = exec.Command("sudo", "apt", "install", "-y", pkgName)
-	cmd.Stdout = os.Stdout
-	cmd.Stderr = os.Stderr
-	cmd.Stdin = os.Stdin
+	attachStdio(cmd)
 
 	if err := cmd.Run(); err != nil {
 		fmt.Printf("\n%sERROR:%s Failed to install '%s': %v\n\n",
@@ -117,8 +119,7 @@ func runInstall(pkgName string, keep bool) {
 				"The menu will now be updated.\n\n",
 			colorCyan, colorReset, pkgName)
 		updateCmd := exec.Command("sudo", "/usr/share/parrot-menu/update-launchers")
-		updateCmd.Stdout = os.Stdout
-		updateCmd.Stderr = os.Stderr
+		attachStdio(updateCmd)
 		if err := updateCmd.Run(); err != nil {
 			fmt.Printf("\n%sWARNING:%s Menu update failed: %v\n",
 				colorRed, colorReset, err)
@@ -155,8 +156,7 @@ func runGui(commandStr string, args []string) {
 		args...,
 	)
 	cmd := exec.Command("pkexec", fullArgs...)
-	cmd.Stdout = os.Stdout
-	cmd.Stderr = os.Stderr
+	attachStdio(cmd)
 	if err := cmd.Run(); err != nil {
 		handleError(commandStr, true)
 	}
@@ -173,9 +173,7 @@ func runCommand(args []string, sudo bool, keep bool) {
 		cmd = exec.Command(args[0], args[1:]...)
 	}
 
-	cmd.Stdout = os.Stdout
-	cmd.Stderr = os.Stderr
-	cmd.Stdin = os.Stdin
+	attachStdio(cmd)
 	if err := cmd.Run(); err != nil {
 		handleError(strings.Join(args, " "), false)
 	}
@@ -197,8 +195,7 @@ func runLs(path string, keep bool) {
 
 	fmt.Printf("Listing %s%s%s\n", colorMagenta, path, colorReset)
 	cmd := exec.Command("ls", "-laH", "--color=auto", "--", path)
-	cmd.Stdout = os.Stdout
-	cmd.Stderr = os.Stderr
+	attachStdio(cmd)
 	if err := cmd.Run(); err != nil {
 		fmt.Printf("%sERROR:%s Failed to list directory: %v\n",
 			colorRed, colorReset, err)
@@ -231,9 +228,7 @@ func runShell() {
 		shell = "/bin/bash"
 	}
 	cmd := exec.Command(shell, "-i")
-	cmd.Stdout = os.Stdout
-	cmd.Stderr = os.Stderr
-	cmd.Stdin = os.Stdin
+	attachStdio(cmd)
 	if err := cmd.Run(); err != nil {
 		fmt.Printf("%sERROR:%s Could not start shell %s: %v\n",
 			colorRed, colorReset, shell, err)
