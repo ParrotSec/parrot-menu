@@ -4,8 +4,8 @@ Priority: optional
 Maintainer: Parrot Dev Team <team@parrotsec.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>,
            Dario "danterolle" Camonita <danterolle@parrotsec.org>
-Build-Depends: debhelper-compat (=12), dh-golang, golang
-Standards-Version: 4.7.0
+Build-Depends: debhelper-compat (=13), dh-golang, golang
+Standards-Version: 4.7.2
 
 Package: parrot-menu
 Architecture: any
