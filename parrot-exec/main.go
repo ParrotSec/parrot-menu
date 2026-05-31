@@ -67,23 +67,22 @@ func main() {
 	commandStr := strings.Join(args, " ")
 	execName := args[0]
 
-	if !*isLs {
+	switch {
+	case *isGui:
+		runGui(commandStr, args)
+
+	case *isLs:
+		runLs(commandStr, *keepOpen)
+
+	case *isInstall:
+		runInstall(execName, *keepOpen)
+
+	default:
 		if _, err := exec.LookPath(execName); err != nil {
 			handleError(execName, *isGui)
 			return
 		}
-	}
-
-	if *isGui {
-		runGui(commandStr, args)
-	} else if *isLs {
-		runLs(commandStr, *keepOpen)
-	} else if *isInstall {
-		runInstall(execName, *keepOpen)
-	} else if *isSudo {
-		runCommand(args, true, *keepOpen)
-	} else {
-		runCommand(args, false, *keepOpen)
+		runCommand(args, *isSudo, *keepOpen)
 	}
 }
 
