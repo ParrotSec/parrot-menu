@@ -72,14 +72,14 @@ func main() {
 		runGui(commandStr, args)
 
 	case *isLs:
-		runLs(commandStr, *keepOpen)
+		runLs(args[0], *keepOpen)
 
 	case *isInstall:
 		runInstall(execName, *keepOpen)
 
 	default:
 		if _, err := exec.LookPath(execName); err != nil {
-			handleError(execName, *isGui)
+			handleError(execName, *isGui, *keepOpen)
 			return
 		}
 		runCommand(args, *isSudo, *keepOpen)
@@ -97,12 +97,13 @@ func runInstall(pkgName string, keep bool) {
 
 	cmd := exec.Command("apt-cache", "show", pkgName)
 	if cmd.Run() != nil {
+		// apt update only if the package is **not** already in the cache.
 		cmd = exec.Command("sudo", "apt", "update")
 		attachStdio(cmd)
 		if err := cmd.Run(); err != nil {
 			fmt.Printf("\n%sERROR:%s Failed to update package list: %v\n\n",
 				colorRed, colorReset, err)
-			if keep { runShell() }
+			runShellIf(keep)
 			return
 		}
 	}
@@ -125,12 +126,10 @@ func runInstall(pkgName string, keep bool) {
 		}
 	}
 
-	if keep {
-		runShell()
-	}
+	runShellIf(keep)
 }
 
-func handleError(name string, gui bool) {
+func handleError(name string, gui bool, keep bool) {
 	msg := fmt.Sprintf("Command '%s' cannot be found.\n"+
 		"Please report this bug to %s%s%s",
 		name, colorCyan, parrotEmail, colorReset)
@@ -139,13 +138,11 @@ func handleError(name string, gui bool) {
 			"Execution Failed", msg).Run()
 	} else {
 		fmt.Printf("%sERROR:%s %s\n\n", colorRed, colorReset, msg)
-		runShell()
+		runShellIf(keep)
 	}
 }
 
 func runGui(commandStr string, args []string) {
-	exec.Command("notify-send", "ParrotSec", "Starting "+commandStr).Run()
-
 	fullArgs := append(
 		[]string{
 			"env",
@@ -157,7 +154,7 @@ func runGui(commandStr string, args []string) {
 	cmd := exec.Command("pkexec", fullArgs...)
 	attachStdio(cmd)
 	if err := cmd.Run(); err != nil {
-		handleError(commandStr, true)
+		handleError(commandStr, true, false)
 	}
 }
 
@@ -174,21 +171,18 @@ func runCommand(args []string, sudo bool, keep bool) {
 
 	attachStdio(cmd)
 	if err := cmd.Run(); err != nil {
-		handleError(strings.Join(args, " "), false)
+		handleError(strings.Join(args, " "), false, keep)
+		return
 	}
 
-	if keep {
-		runShell()
-	}
+	runShellIf(keep)
 }
 
 func runLs(path string, keep bool) {
 	if info, err := os.Stat(path); err != nil || !info.IsDir() {
 		fmt.Printf("%sPath '%s' doesn't exist.%s\nPlease report this bug to %s%s%s\n",
 			colorMagenta, path, colorReset, colorCyan, parrotEmail, colorReset)
-		if keep {
-			runShell()
-		}
+		runShellIf(keep)
 		return
 	}
 
@@ -200,9 +194,7 @@ func runLs(path string, keep bool) {
 			colorRed, colorReset, err)
 	}
 
-	if keep {
-		runShell()
-	}
+	runShellIf(keep)
 }
 
 var allowedShells = map[string]bool{
@@ -213,6 +205,12 @@ var allowedShells = map[string]bool{
 	"/usr/bin/bash": true,
 	"/usr/bin/zsh":  true,
 	"/usr/bin/fish": true,
+}
+
+func runShellIf(keep bool) {
+	if keep {
+		runShell()
+	}
 }
 
 func runShell() {
