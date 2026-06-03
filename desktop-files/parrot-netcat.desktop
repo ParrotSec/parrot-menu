@@ -2,7 +2,7 @@
 Name=netcat
 Comment=Network swiss army knife
 Encoding=UTF-8
-Exec=parrot-exec 'nc'
+Exec=parrot-exec nc
 Icon=xterm
 StartupNotify=false
 Terminal=true

@@ -2,7 +2,7 @@
 Name=dbd
 Comment=netcat clone with encryption
 Encoding=UTF-8
-Exec=parrot-exec 'dbd -h'
+Exec=parrot-exec "dbd -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true
