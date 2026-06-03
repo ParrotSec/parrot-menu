@@ -60,6 +60,10 @@ func main() {
 		os.Exit(1)
 	}
 
+	if len(args) == 1 && strings.Contains(args[0], " ") {
+		args = strings.Fields(args[0])
+	}
+
 	if !*noBanner && !*isGui {
 		fmt.Print(banner)
 	}
@@ -118,6 +122,7 @@ func runInstall(pkgName string, keep bool) {
 		fmt.Printf("\n%sSUCCESS:%s '%s' installed correctly. "+
 				"The menu will now be updated.\n\n",
 			colorCyan, colorReset, pkgName)
+
 		updateCmd := exec.Command("sudo", "/usr/share/parrot-menu/update-launchers")
 		attachStdio(updateCmd)
 		if err := updateCmd.Run(); err != nil {
@@ -133,6 +138,7 @@ func handleError(name string, gui bool, keep bool, reason string) {
 	msg := fmt.Sprintf("Command '%s': %s.\n"+
 		"Please report this bug to %s%s%s",
 		name, reason, colorCyan, parrotEmail, colorReset)
+
 	if gui {
 		exec.Command("notify-send", "-i", "security-low",
 			"Execution Failed", msg).Run()
@@ -195,6 +201,7 @@ func runLs(path string, keep bool) {
 	}
 
 	fmt.Printf("Listing %s%s%s\n", colorMagenta, path, colorReset)
+
 	cmd := exec.Command("ls", "-laH", "--color=auto", "--", path)
 	attachStdio(cmd)
 	if err := cmd.Run(); err != nil {
@@ -226,12 +233,14 @@ func runShell() {
 	if shell == "" {
 		shell = "/bin/bash"
 	}
+
 	if !allowedShells[shell] {
 		fmt.Printf("%sWARNING:%s SHELL '%s' is not recognized, "+
 				"falling back to /bin/bash\n",
 			colorRed, colorReset, shell)
 		shell = "/bin/bash"
 	}
+	
 	cmd := exec.Command(shell, "-i")
 	attachStdio(cmd)
 	if err := cmd.Run(); err != nil {
