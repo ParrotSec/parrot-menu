@@ -79,7 +79,7 @@ func main() {
 
 	default:
 		if _, err := exec.LookPath(execName); err != nil {
-			handleError(execName, *isGui, *keepOpen)
+			handleError(execName, *isGui, *keepOpen, "not found on the system")
 			return
 		}
 		runCommand(args, *isSudo, *keepOpen)
@@ -129,10 +129,10 @@ func runInstall(pkgName string, keep bool) {
 	runShellIf(keep)
 }
 
-func handleError(name string, gui bool, keep bool) {
-	msg := fmt.Sprintf("Command '%s' cannot be found.\n"+
+func handleError(name string, gui bool, keep bool, reason string) {
+	msg := fmt.Sprintf("Command '%s': %s.\n"+
 		"Please report this bug to %s%s%s",
-		name, colorCyan, parrotEmail, colorReset)
+		name, reason, colorCyan, parrotEmail, colorReset)
 	if gui {
 		exec.Command("notify-send", "-i", "security-low",
 			"Execution Failed", msg).Run()
@@ -154,7 +154,7 @@ func runGui(commandStr string, args []string) {
 	cmd := exec.Command("pkexec", fullArgs...)
 	attachStdio(cmd)
 	if err := cmd.Run(); err != nil {
-		handleError(commandStr, true, false)
+		handleError(commandStr, true, false, "execution failed")
 	}
 }
 
@@ -171,7 +171,7 @@ func runCommand(args []string, sudo bool, keep bool) {
 
 	attachStdio(cmd)
 	if err := cmd.Run(); err != nil {
-		handleError(strings.Join(args, " "), false, keep)
+		handleError(strings.Join(args, " "), false, keep, "execution failed")
 		return
 	}
 
