@@ -143,14 +143,14 @@ func handleError(name string, gui bool, keep bool, reason string) {
 }
 
 func runGui(commandStr string, args []string) {
-	fullArgs := append(
-		[]string{
-			"env",
-			"DISPLAY=" + os.Getenv("DISPLAY"),
-			"XAUTHORITY=" + os.Getenv("XAUTHORITY"),
-		},
-		args...,
-	)
+	envArgs := []string{"env"}
+	if d := os.Getenv("DISPLAY"); d != "" {
+		envArgs = append(envArgs, "DISPLAY="+d)
+	}
+	if x := os.Getenv("XAUTHORITY"); x != "" {
+		envArgs = append(envArgs, "XAUTHORITY="+x)
+	}
+	fullArgs := append(envArgs, args...)
 	cmd := exec.Command("pkexec", fullArgs...)
 	attachStdio(cmd)
 	if err := cmd.Run(); err != nil {
