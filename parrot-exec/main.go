@@ -168,7 +168,9 @@ func runGui(commandStr string, args []string) {
 	cmd := exec.Command("pkexec", fullArgs...)
 	attachStdio(cmd)
 	if err := cmd.Run(); err != nil {
-		handleError(commandStr, true, false, "execution failed")
+		if _, ok := err.(*exec.ExitError); !ok {
+			handleError(commandStr, true, false, "execution failed")
+		}
 	}
 }
 
@@ -185,8 +187,10 @@ func runCommand(args []string, sudo bool, keep bool) {
 
 	attachStdio(cmd)
 	if err := cmd.Run(); err != nil {
-		handleError(strings.Join(args, " "), false, keep, "execution failed")
-		return
+		if _, ok := err.(*exec.ExitError); !ok {
+			handleError(strings.Join(args, " "), false, keep, "execution failed")
+			return
+		}
 	}
 
 	runShellIf(keep)
