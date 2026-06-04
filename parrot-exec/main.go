@@ -90,6 +90,8 @@ func main() {
 	}
 }
 
+// attachStdio wires the command's standard streams to the parent process
+// so the user sees output and can provide input interactively.
 func attachStdio(cmd *exec.Cmd) {
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
@@ -101,7 +103,8 @@ func runInstall(pkgName string, keep bool) {
 
 	cmd := exec.Command("apt-cache", "show", pkgName)
 	if cmd.Run() != nil {
-		// apt update only if the package is **not** already in the cache.
+		// Runs apt update only when the package is not already in
+		// the local cache, then installs it.
 		cmd = exec.Command("sudo", "apt", "update")
 		attachStdio(cmd)
 		if err := cmd.Run(); err != nil {
@@ -123,6 +126,8 @@ func runInstall(pkgName string, keep bool) {
 				"The menu will now be updated.\n\n",
 			colorCyan, colorReset, pkgName)
 
+		// After a successful installation it triggers 
+		// the launcher-updater to replace the template desktop entry.
 		updateCmd := exec.Command("sudo", "/usr/share/parrot-menu/update-launchers")
 		attachStdio(updateCmd)
 		if err := updateCmd.Run(); err != nil {
@@ -149,6 +154,10 @@ func handleError(name string, gui bool, keep bool, reason string) {
 }
 
 func runGui(commandStr string, args []string) {
+	// explicitly forwarding DISPLAY and XAUTHORITY.
+	//
+	// Environment variables that pkexec normally strips
+	// for security reasons but are essential for graphical applications.
 	var envPrefix []string
 	if d := os.Getenv("DISPLAY"); d != "" {
 		envPrefix = append(envPrefix, "DISPLAY="+d)
@@ -233,6 +242,10 @@ func runShellIf(keep bool) {
 }
 
 func runShell() {
+	// Spawns an interactive shell so the terminal stays open after
+	// execution. Only binaries in the allowedShells whitelist are accepted;
+	// unrecognised shells fall back to /bin/bash.
+
 	shell := os.Getenv("SHELL")
 	if shell == "" {
 		shell = "/bin/bash"
