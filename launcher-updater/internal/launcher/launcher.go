@@ -112,10 +112,12 @@ func ensureLauncherUpdated(srcPath, destPath string, d os.DirEntry) {
 
 	destInfo, err := os.Stat(destPath)
 	// Update if it doesn't exist or metadata differs
-	if err != nil || srcInfo.Size() != destInfo.Size() || srcInfo.ModTime() != destInfo.ModTime() {
+	if err != nil || srcInfo.ModTime() != destInfo.ModTime() {
 		if err := desktop.CopyFile(srcPath, destPath); err != nil {
 			slog.Error("failed to copy source path to destination path",
 				"srcPath", srcPath, "destPath", destPath, "err", err)
+		} else {
+			_ = os.Chtimes(destPath, srcInfo.ModTime(), srcInfo.ModTime())
 		}
 	}
 }
@@ -127,10 +129,12 @@ func ensureLauncherTemplate(srcPath, destPath, pkgName string, d os.DirEntry) {
 	}
 
 	destInfo, err := os.Stat(destPath)
-	// Create template if it doesn't exist or logic needs update
-	if err != nil || destInfo.ModTime().Before(srcInfo.ModTime()) {
+	// Create template if it doesn't exist or source changed
+	if err != nil || srcInfo.ModTime() != destInfo.ModTime() {
 		if err := desktop.CopyTemplateLauncher(srcPath, destPath, pkgName); err != nil {
 			slog.Error("failed to create template launcher", "destPath", destPath, "err", err)
+		} else {
+			_ = os.Chtimes(destPath, srcInfo.ModTime(), srcInfo.ModTime())
 		}
 	}
 }
