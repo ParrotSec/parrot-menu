@@ -7,12 +7,9 @@ import (
 	"launcher-updater/internal/launcher"
 	"log/slog"
 	"os"
-	"sync"
 )
 
 func main() {
-	var wg sync.WaitGroup
-
 	fmt.Println("--------------------------------------------------")
 	fmt.Println("[!] Scanning application launchers")
 
@@ -25,17 +22,8 @@ func main() {
 	removed := launcher.SyncLaunchers(installed)
 
 	fmt.Println("Removing duplicate or broken launchers...")
-	wg.Add(2)
-	go func() {
-		defer wg.Done()
-		launcher.RemoveOldLaunchers()
-	}()
-	go func() {
-		defer wg.Done()
-		blacklist.FixDebLaunchers()
-	}()
-
-	wg.Wait()
+	launcher.RemoveOldLaunchers()
+	blacklist.FixDebLaunchers()
 
 	if len(removed) > 0 {
 		fmt.Println()
