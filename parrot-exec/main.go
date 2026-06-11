@@ -123,10 +123,10 @@ func runInstall(pkgName string, keep bool) {
 			colorRed, colorReset, pkgName, err)
 	} else {
 		fmt.Printf("\n%sSUCCESS:%s '%s' installed correctly. "+
-				"The menu will now be updated.\n\n",
+			"The menu will now be updated.\n\n",
 			colorCyan, colorReset, pkgName)
 
-		// After a successful installation it triggers 
+		// After a successful installation it triggers
 		// the launcher-updater to replace the template desktop entry.
 		updateCmd := exec.Command("sudo", "/usr/share/parrot-menu/update-launchers")
 		attachStdio(updateCmd)
@@ -253,11 +253,11 @@ func runShell() {
 
 	if !allowedShells[shell] {
 		fmt.Printf("%sWARNING:%s SHELL '%s' is not recognized, "+
-				"falling back to /bin/bash\n",
+			"falling back to /bin/bash\n",
 			colorRed, colorReset, shell)
 		shell = "/bin/bash"
 	}
-	
+
 	cmd := exec.Command(shell, "-i")
 	attachStdio(cmd)
 	if err := cmd.Run(); err != nil {
