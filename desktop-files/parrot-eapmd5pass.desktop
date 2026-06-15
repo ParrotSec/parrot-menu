@@ -2,7 +2,7 @@
 Name=eapmd5pass
 Comment=Read from network interface in monitor-mode, or from a stored capture file, and extracts the portions of the EAP-MD5 authentication exchange
 Encoding=UTF-8
-Exec=menuexec "eapmd5pass -h"
+Exec=parrot-exec --sudo "eapmd5pass -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

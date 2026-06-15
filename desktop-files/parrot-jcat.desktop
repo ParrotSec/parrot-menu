@@ -2,7 +2,7 @@
 Name=jcat
 Comment=Show the contents of a block in the file system journal
 Encoding=UTF-8
-Exec=menuexec "jcat"
+Exec=parrot-exec --sudo "jcat"
 Icon=xterm
 StartupNotify=false
 Terminal=true

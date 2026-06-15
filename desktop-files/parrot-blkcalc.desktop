@@ -2,7 +2,7 @@
 Name=blkcalc
 Comment=Map between the output of blkls and the original file system data units
 Encoding=UTF-8
-Exec=menuexec blkcalc
+Exec=parrot-exec --sudo blkcalc
 Icon=xterm
 StartupNotify=false
 Terminal=true

@@ -2,7 +2,7 @@
 Name=mimikatz
 Comment=Uses admin rights on Windows to display passwords of currently logged in users in plaintext
 Encoding=UTF-8
-Exec=parrot-ls /usr/share/mimikatz
+Exec=parrot-exec --ls /usr/share/mimikatz
 Icon=parrot_mimikatz
 StartupNotify=false
 Terminal=true

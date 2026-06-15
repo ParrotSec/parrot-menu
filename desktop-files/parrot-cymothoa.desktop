@@ -2,7 +2,7 @@
 Name=cymothoa
 Comment=Inject backdoor’s shellcode into an existing process
 Encoding=UTF-8
-Exec=menuexec "cymothoa -h"
+Exec=parrot-exec --sudo "cymothoa -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

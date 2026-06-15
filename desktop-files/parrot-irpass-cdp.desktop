@@ -2,7 +2,7 @@
 Name=irpass-cdp
 Comment=A cdp packet generator
 Encoding=UTF-8
-Exec=menuexec "cdp"
+Exec=parrot-exec --sudo "cdp"
 Icon=xterm
 StartupNotify=false
 Terminal=true

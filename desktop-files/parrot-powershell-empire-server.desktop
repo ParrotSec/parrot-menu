@@ -2,7 +2,7 @@
 Name=Powershell-empire Server
 Comment=PowerShell and Python post-exploitation tool
 Encoding=UTF-8
-Exec=menuexec powershell-empire server
+Exec=parrot-exec --sudo powershell-empire server
 Icon=xterm
 StartupNotify=false
 Terminal=true

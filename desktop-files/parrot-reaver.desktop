@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=reaver
 Encoding=UTF-8
-Exec=menuexec "reaver -h"
+Exec=parrot-exec --sudo "reaver -h"
 Icon=parrot_reaver
 StartupNotify=false
 Terminal=true

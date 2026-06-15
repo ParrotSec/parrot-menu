@@ -2,7 +2,7 @@
 Name=chntpw
 Comment=Resetting or blanking local passwords used by Windows NT, 2000, XP, Vista, 7, 8, 8.1 and 10
 Encoding=UTF-8
-Exec=menuexec "chntpw -h"
+Exec=parrot-exec --sudo "chntpw -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Bruteforce LUKS
 Encoding=UTF-8
-Exec=menuexec "bruteforce-luks -h"
+Exec=parrot-exec --sudo "bruteforce-luks -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

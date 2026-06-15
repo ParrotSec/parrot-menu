@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=rtpmixsound
 Encoding=UTF-8
-Exec=menuexec "rtpmixsound -h"
+Exec=parrot-exec --sudo "rtpmixsound -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

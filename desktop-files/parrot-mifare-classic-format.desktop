@@ -2,7 +2,7 @@
 Name=mifare-classic-format
 Comment=A convenient API for MIFARE card manipulations.
 Encoding=UTF-8
-Exec=menuexec "mifare-classic-format -h"
+Exec=parrot-exec --sudo "mifare-classic-format -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

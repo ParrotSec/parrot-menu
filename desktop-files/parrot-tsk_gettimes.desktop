@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=tsk_gettimes
 Encoding=UTF-8
-Exec=menuexec "tsk_gettimes -h"
+Exec=parrot-exec --sudo "tsk_gettimes -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

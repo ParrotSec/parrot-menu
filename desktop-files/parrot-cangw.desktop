@@ -2,7 +2,7 @@
 Name=cangw
 Comment=CAN gateway userpace tool for netlink configuration
 Encoding=UTF-8
-Exec=menuexec cangw
+Exec=parrot-exec --sudo cangw
 Icon=xterm
 StartupNotify=false
 Terminal=true

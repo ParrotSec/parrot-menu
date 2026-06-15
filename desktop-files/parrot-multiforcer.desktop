@@ -2,7 +2,7 @@
 Name=multiforcer
 Comment=GPU accelerated offline password cracking tool
 Encoding=UTF-8
-Exec=menuexec "multiforcer --help"
+Exec=parrot-exec --sudo "multiforcer --help"
 Icon=xterm
 StartupNotify=false
 Terminal=true

@@ -2,7 +2,7 @@
 Name=ewfinfo
 Comment=Determine information about Expert Witness Compression Format files
 Encoding=UTF-8
-Exec=menuexec ewfinfo -h 
+Exec=parrot-exec --sudo ewfinfo -h 
 Icon=xterm
 StartupNotify=false
 Terminal=true

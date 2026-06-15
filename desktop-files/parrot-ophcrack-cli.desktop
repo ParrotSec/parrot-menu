@@ -2,7 +2,7 @@
 Name=ophcrack-cli
 Comment=Windows password cracker based on a time-memory trade-off using rainbow tables (CLI)
 Encoding=UTF-8
-Exec=menuexec "ophcrack-cli"
+Exec=parrot-exec --sudo "ophcrack-cli"
 Icon=parrot_ophcrack
 StartupNotify=false
 Terminal=true

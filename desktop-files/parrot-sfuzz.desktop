@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=sfuzz
 Encoding=UTF-8
-Exec=menuexec "sfuzz -h"
+Exec=parrot-exec --sudo "sfuzz -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

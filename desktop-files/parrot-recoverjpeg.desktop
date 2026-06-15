@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=recoverjpeg
 Encoding=UTF-8
-Exec=menuexec "recoverjpeg -h"
+Exec=parrot-exec --sudo "recoverjpeg -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

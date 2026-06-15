@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=webscarab
 Encoding=UTF-8
-Exec=menuexecg "webscarab"
+Exec=parrot-exec --gui "webscarab"
 Icon=parrot_webscarab
 StartupNotify=false
 Terminal=false

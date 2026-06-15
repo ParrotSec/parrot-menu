@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=termineter
 Encoding=UTF-8
-Exec=menuexec "termineter -h"
+Exec=parrot-exec --sudo "termineter -h"
 Icon=parrot_termineter
 StartupNotify=false
 Terminal=true

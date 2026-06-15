@@ -2,7 +2,7 @@
 Name=crackle
 Comment=Cracks Bluetooth Low Energy encryption (AKA Bluetooth Smart)
 Encoding=UTF-8
-Exec=menuexec "crackle"
+Exec=parrot-exec --sudo "crackle"
 Icon=xterm
 StartupNotify=false
 Terminal=true

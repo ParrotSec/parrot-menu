@@ -2,7 +2,7 @@
 Name=macof
 Comment=Flood the local network with random MAC addresses
 Encoding=UTF-8
-Exec=menuexec macof -h 
+Exec=parrot-exec --sudo macof -h 
 Icon=xterm
 StartupNotify=false
 Terminal=true

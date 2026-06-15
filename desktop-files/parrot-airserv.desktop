@@ -2,7 +2,7 @@
 Name=airserv-ng
 Comment=Allows multiple wireless application programs to independently use a wireless card via a client-server TCP network connection
 Encoding=UTF-8
-Exec=menuexec "airserv-ng"
+Exec=parrot-exec --sudo "airserv-ng"
 Icon=parrot_aircrack
 StartupNotify=false
 Terminal=true

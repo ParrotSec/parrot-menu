@@ -2,7 +2,7 @@
 Name=msgsnarf
 Comment=Record selected messages from sniffed AOL Instant Messenger,	ICQ 2000, IRC, and Yahoo! Messenger chat sessions
 Encoding=UTF-8
-Exec=menuexec msgsnarf -h 
+Exec=parrot-exec --sudo msgsnarf -h 
 Icon=xterm
 StartupNotify=false
 Terminal=true

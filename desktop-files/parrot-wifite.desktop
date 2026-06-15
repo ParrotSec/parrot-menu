@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=wifite
 Encoding=UTF-8
-Exec=menuexec "wifite --help"
+Exec=parrot-exec --sudo "wifite --help"
 Icon=parrot_wifite
 StartupNotify=false
 Terminal=true

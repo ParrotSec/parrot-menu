@@ -2,7 +2,7 @@
 Name=guymager
 Comment=Forensic imager for media acquisition
 Encoding=UTF-8
-Exec=menuexecg "guymager"
+Exec=parrot-exec --gui "guymager"
 Icon=xterm
 StartupNotify=false
 Terminal=false

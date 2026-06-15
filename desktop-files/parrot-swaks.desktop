@@ -2,7 +2,7 @@
 Name=swaks
 Comment=SMTP command-line test tool
 Encoding=UTF-8
-Exec=menuexec "swaks --help"
+Exec=parrot-exec --sudo "swaks --help"
 Icon=xterm
 StartupNotify=false
 Terminal=true

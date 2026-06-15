@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=htshells
 Encoding=UTF-8
-Exec=parrot-ls "/usr/share/htshells"
+Exec=parrot-exec --ls "/usr/share/htshells"
 Icon=xterm
 StartupNotify=false
 Terminal=true

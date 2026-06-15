@@ -2,7 +2,7 @@
 Name=hping3
 Comment=Command-line oriented TCP/IP packet assembler/analyzer
 Encoding=UTF-8
-Exec=menuexec "hping3 -h"
+Exec=parrot-exec --sudo "hping3 -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

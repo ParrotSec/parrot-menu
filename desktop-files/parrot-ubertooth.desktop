@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=ubertooth util
 Encoding=UTF-8
-Exec=menuexec "ubertooth-util -h"
+Exec=parrot-exec --sudo "ubertooth-util -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

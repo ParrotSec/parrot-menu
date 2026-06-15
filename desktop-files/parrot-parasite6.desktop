@@ -2,7 +2,7 @@
 Name=parasite6
 Comment=ARP spoofer for IPv6
 Encoding=UTF-8
-Exec=menuexec atk6-parasite6 
+Exec=parrot-exec --sudo atk6-parasite6 
 Icon=xterm
 StartupNotify=false
 Terminal=true

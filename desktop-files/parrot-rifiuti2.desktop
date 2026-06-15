@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=rifiuti2
 Encoding=UTF-8
-Exec=menuexec "rifiuti2 -h"
+Exec=parrot-exec --sudo "rifiuti2 -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

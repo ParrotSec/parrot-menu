@@ -2,7 +2,7 @@
 Name=ophcrack
 Comment=Windows password cracker based on a time-memory trade-off using rainbow tables (GUI)
 Encoding=UTF-8
-Exec=menuexecg "ophcrack"
+Exec=parrot-exec --gui "ophcrack"
 Icon=parrot_ophcrack
 StartupNotify=false
 Terminal=false

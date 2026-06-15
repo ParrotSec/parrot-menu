@@ -2,7 +2,7 @@
 Name=isotptun
 Comment=Create a bi-directional IP tunnel on CAN via ISO-TP
 Encoding=UTF-8
-Exec=menuexec isotptun
+Exec=parrot-exec --sudo isotptun
 Icon=xterm
 StartupNotify=false
 Terminal=true

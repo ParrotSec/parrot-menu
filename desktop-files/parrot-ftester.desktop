@@ -2,7 +2,7 @@
 Name=ftest
 Comment=Testing firewall filtering policies and Intrusion Detection System (IDS) capabilities
 Encoding=UTF-8
-Exec=menuexec "ftest"
+Exec=parrot-exec --sudo "ftest"
 Icon=xterm
 StartupNotify=false
 Terminal=true

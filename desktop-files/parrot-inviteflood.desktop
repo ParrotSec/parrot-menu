@@ -2,7 +2,7 @@
 Name=inviteflood
 Comment=Perform SIP/SDP INVITE message flooding over UDP/IP.
 Encoding=UTF-8
-Exec=menuexec "inviteflood -h"
+Exec=parrot-exec --sudo "inviteflood -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

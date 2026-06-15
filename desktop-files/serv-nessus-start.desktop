@@ -2,7 +2,7 @@
 Name=Start Nessus
 Comment=Start Nessus vulnerability scanner service
 Encoding=UTF-8
-Exec=servicexc nessusd start
+Exec=parrot-exec --gui systemctl start nessusd
 Icon=parrot_nessus
 StartupNotify=false
 Terminal=true

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=tsk_recover
 Encoding=UTF-8
-Exec=menuexec "tsk_recover"
+Exec=parrot-exec --sudo "tsk_recover"
 Icon=xterm
 StartupNotify=false
 Terminal=true

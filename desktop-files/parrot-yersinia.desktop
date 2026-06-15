@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=yersinia
 Encoding=UTF-8
-Exec=menuexec "yersinia --help"
+Exec=parrot-exec --sudo "yersinia --help"
 Icon=xterm
 StartupNotify=false
 Terminal=true

@@ -2,7 +2,7 @@
 Name=hfind
 Comment=Lookup a hash value in a hash database
 Encoding=UTF-8
-Exec=menuexec "hfind"
+Exec=parrot-exec --sudo "hfind"
 Icon=xterm
 StartupNotify=false
 Terminal=true

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=pth-wmic
 Encoding=UTF-8
-Exec=menuexec "pth-wmic -h"
+Exec=parrot-exec --sudo "pth-wmic -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

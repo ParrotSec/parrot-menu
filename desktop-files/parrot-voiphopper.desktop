@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=voiphopper
 Encoding=UTF-8
-Exec=menuexec "voiphopper"
+Exec=parrot-exec --sudo "voiphopper"
 Icon=xterm
 StartupNotify=false
 Terminal=true

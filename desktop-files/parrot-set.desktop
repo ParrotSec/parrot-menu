@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=social engineering toolkit
 Encoding=UTF-8
-Exec=menuexec "setoolkit"
+Exec=parrot-exec --sudo "setoolkit"
 Icon=parrot_set
 StartupNotify=false
 Terminal=true

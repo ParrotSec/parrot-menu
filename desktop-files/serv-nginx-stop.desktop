@@ -2,7 +2,7 @@
 Name=Stop nginx server
 Comment=Stop nginx httpd service
 Encoding=UTF-8
-Exec=servicexc nginx stop 
+Exec=parrot-exec --gui systemctl stop nginx 
 Icon=xterm
 StartupNotify=false
 Terminal=false

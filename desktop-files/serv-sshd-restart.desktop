@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Restart SSH server
 Encoding=UTF-8
-Exec=servicexc ssh restart 
+Exec=parrot-exec --gui systemctl restart ssh 
 Icon=xterm
 StartupNotify=false
 Terminal=false

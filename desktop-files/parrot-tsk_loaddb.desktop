@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=tsk_loaddb
 Encoding=UTF-8
-Exec=menuexec "tsk_loaddb"
+Exec=parrot-exec --sudo "tsk_loaddb"
 Icon=xterm
 StartupNotify=false
 Terminal=true

@@ -2,7 +2,7 @@
 Name=cadaver
 Comment=WebDAV client
 Encoding=UTF-8
-Exec=menuexec "cadaver"
+Exec=parrot-exec --sudo "cadaver"
 Icon=xterm
 StartupNotify=false
 Terminal=true

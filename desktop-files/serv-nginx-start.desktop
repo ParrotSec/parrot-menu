@@ -2,7 +2,7 @@
 Name=Start nginx server
 Comment=Start nginx httpd service
 Encoding=UTF-8
-Exec=servicexc nginx start 
+Exec=parrot-exec --gui systemctl start nginx 
 Icon=xterm
 StartupNotify=false
 Terminal=false

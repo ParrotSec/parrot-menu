@@ -2,7 +2,7 @@
 Name=Metasploit Console
 Comment=Start Metasploit's interpreter
 Encoding=UTF-8
-Exec=menuexec msfconsole-start
+Exec=parrot-exec --sudo msfconsole-start
 Icon=parrot_metasploit
 StartupNotify=false
 Terminal=true

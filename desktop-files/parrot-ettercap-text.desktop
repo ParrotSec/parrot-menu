@@ -2,7 +2,7 @@
 Name=ettercap-text
 Comment=Network sniffing tool
 Encoding=UTF-8
-Exec=menuexec "ettercap -h"
+Exec=parrot-exec --sudo "ettercap -h"
 Icon=parrot_ettercap
 StartupNotify=false
 Terminal=true

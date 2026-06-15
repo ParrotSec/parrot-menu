@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=rtl_test
 Encoding=UTF-8
-Exec=menuexec "rtl_test -h"
+Exec=parrot-exec --sudo "rtl_test -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

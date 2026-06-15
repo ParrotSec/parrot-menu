@@ -1,31 +1,9 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: parrot-menu
-Source: https://nest.parrot.sh/packages/parrot/parrot-menu
+Source: https://gitlab.com/parrotsec/packages/parrot-menu
 
 Files: *
-Copyright: 2012-2020, Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
-License: GPL-3+
-
-Files:
- parrot-common/privacy.png
- parrot-common/pentesting.png
- parrot-common/sandbox.png
-
-Copyright: 2020, Nguyen Tung Duong <d.nguyen0013@gmail.com>
-License: GPL-3+
-
-Files: desktop-files/*
-Copyright: 2019, Kilian "KileXt" Lauener <kilext@protonmail.com>
-License: GPL-3+
-
-Files:
- update_launchers.nim
- menus/*
- desktop-directories/*
- desktop-files/*
- debian/*
- Makefile
-Copyright: 2020, Nong Hoang "DmKnght" Tu
+Copyright: 2012-2026, Parrot Dev Team <team@parrotsec.org>
 License: GPL-3+
 
 License: GPL-3+

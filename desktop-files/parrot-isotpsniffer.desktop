@@ -2,7 +2,7 @@
 Name=isotpsniffer
 Comment=wiretap ISO-TP PDU(s)
 Encoding=UTF-8
-Exec=menuexec isotpsniffer
+Exec=parrot-exec --sudo isotpsniffer
 Icon=xterm
 StartupNotify=false
 Terminal=true

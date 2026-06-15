@@ -2,7 +2,7 @@
 Name=foremost
 Comment=Recover lost files based on their headers, footers, and internal data structures
 Encoding=UTF-8
-Exec=menuexec "foremost -h"
+Exec=parrot-exec --sudo "foremost -h"
 Icon=parrot_foremost
 StartupNotify=false
 Terminal=true

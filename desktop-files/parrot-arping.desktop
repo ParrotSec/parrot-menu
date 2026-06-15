@@ -2,7 +2,7 @@
 Name=arping
 Comment=Use ARP request method addressed to a host identified by its MAC address
 Encoding=UTF-8
-Exec=menuexec arping
+Exec=parrot-exec --sudo arping
 Icon=xterm
 StartupNotify=false
 Terminal=true

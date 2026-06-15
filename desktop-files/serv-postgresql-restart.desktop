@@ -2,7 +2,7 @@
 Name=Restart PostgreSQL server
 Comment=Restart postgresql database service
 Encoding=UTF-8
-Exec=servicexc postgresql restart
+Exec=parrot-exec --gui systemctl restart postgresql
 Icon=parrot_postgresql
 StartupNotify=false
 Terminal=false

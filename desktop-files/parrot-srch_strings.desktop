@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=srch_strings
 Encoding=UTF-8
-Exec=menuexec "srch_strings -h"
+Exec=parrot-exec --sudo "srch_strings -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

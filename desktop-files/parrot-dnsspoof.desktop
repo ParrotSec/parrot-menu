@@ -2,7 +2,7 @@
 Name=dnsspoof
 Comment=Replace DNS responses with spoofed DNS response
 Encoding=UTF-8
-Exec=menuexec dnsspoof -h 
+Exec=parrot-exec --sudo dnsspoof -h 
 Icon=xterm
 StartupNotify=false
 Terminal=true

@@ -2,7 +2,7 @@
 Name=cryptcat
 Comment=Standard netcat enhanced with twofish encryption
 Encoding=UTF-8
-Exec=menuexec cryptcat -h 
+Exec=parrot-exec --sudo cryptcat -h 
 Icon=xterm
 StartupNotify=false
 Terminal=true

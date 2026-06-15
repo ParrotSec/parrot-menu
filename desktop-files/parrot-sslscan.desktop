@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=sslscan
 Encoding=UTF-8
-Exec=menuexec "sslscan"
+Exec=parrot-exec --sudo "sslscan"
 Icon=xterm
 StartupNotify=false
 Terminal=true

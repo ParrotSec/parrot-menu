@@ -2,7 +2,7 @@
 Name=blkls
 Comment=Opens the named image(s) and copies file system data units (blocks)
 Encoding=UTF-8
-Exec=menuexec blkls
+Exec=parrot-exec --sudo blkls
 Icon=xterm
 StartupNotify=false
 Terminal=true

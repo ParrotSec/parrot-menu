@@ -2,7 +2,7 @@
 Name=nikto
 Comment=Web server and CGI scanner
 Encoding=UTF-8
-Exec=menuexec "nikto -h"
+Exec=parrot-exec --sudo "nikto -h"
 Icon=parrot_nikto
 StartupNotify=false
 Terminal=true

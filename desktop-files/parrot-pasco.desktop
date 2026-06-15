@@ -2,7 +2,7 @@
 Name=pasco
 Comment=Forensic tool that examines the content of cache files (index.dat)
 Encoding=UTF-8
-Exec=menuexec "pasco"
+Exec=parrot-exec --sudo "pasco"
 Icon=xterm
 StartupNotify=false
 Terminal=true

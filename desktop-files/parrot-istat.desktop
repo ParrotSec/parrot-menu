@@ -2,7 +2,7 @@
 Name=istat
 Comment=Display details of a meta-data structure (i.e. inode)
 Encoding=UTF-8
-Exec=menuexec "istat"
+Exec=parrot-exec --sudo "istat"
 Icon=xterm
 StartupNotify=false
 Terminal=true

@@ -2,7 +2,7 @@
 Name=cangen
 Comment=generate (random) CAN traffic
 Encoding=UTF-8
-Exec=menuexec cangen -h
+Exec=parrot-exec --sudo cangen -h
 Icon=xterm
 StartupNotify=false
 Terminal=true

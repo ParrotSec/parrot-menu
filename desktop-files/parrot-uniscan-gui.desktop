@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=uniscan-gui
 Encoding=UTF-8
-Exec=menuexecg "uniscan-gui"
+Exec=parrot-exec --gui "uniscan-gui"
 Icon=xterm
 StartupNotify=false
 Terminal=false

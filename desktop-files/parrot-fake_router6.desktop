@@ -2,7 +2,7 @@
 Name=fake_router6
 Comment=Announce yourself as a router and try to become the default router.
 Encoding=UTF-8
-Exec=menuexec atk6-fake_router6 
+Exec=parrot-exec --sudo atk6-fake_router6 
 Icon=xterm
 StartupNotify=false
 Terminal=true

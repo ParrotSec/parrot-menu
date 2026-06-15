@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=randicmp6
 Encoding=UTF-8
-Exec=menuexec atk6-randicmp6 
+Exec=parrot-exec --sudo atk6-randicmp6 
 Icon=xterm
 StartupNotify=false
 Terminal=true

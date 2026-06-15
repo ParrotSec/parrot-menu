@@ -2,7 +2,7 @@
 Name=GVM Check Setup
 Comment=Verify installation of Greenbone Vulnerability Manager (OpenVas)
 Encoding=UTF-8
-Exec=menuexec "gvm-check-setup"
+Exec=parrot-exec --sudo "gvm-check-setup"
 Icon=parrot_OpenVas
 StartupNotify=false
 Terminal=true

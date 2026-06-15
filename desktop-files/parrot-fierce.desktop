@@ -2,7 +2,7 @@
 Name=fierce
 Comment=Locate non-contiguous IP space and hostnames against specified domains
 Encoding=UTF-8
-Exec=menuexec "fierce -h"
+Exec=parrot-exec --sudo "fierce -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

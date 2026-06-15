@@ -2,7 +2,7 @@
 Name=bully
 Comment=WPS brute force attack
 Encoding=UTF-8
-Exec=menuexec "bully"
+Exec=parrot-exec --sudo "bully"
 Icon=xterm
 StartupNotify=false
 Terminal=true

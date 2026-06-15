@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=wapiti
 Encoding=UTF-8
-Exec=menuexec "wapiti -h"
+Exec=parrot-exec --sudo "wapiti -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

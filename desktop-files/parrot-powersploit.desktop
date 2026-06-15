@@ -2,7 +2,7 @@
 Name=powersploit
 Comment=Collection of Antivirus Bypass, Persistence, Exfiltration, Recon scripts in Powershell
 Encoding=UTF-8
-Exec=menuexec powersploit
+Exec=parrot-exec --sudo powersploit
 Icon=parrot_powersploit
 StartupNotify=false
 Terminal=true

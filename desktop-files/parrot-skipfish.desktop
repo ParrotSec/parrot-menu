@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=skipfish
 Encoding=UTF-8
-Exec=menuexec "skipfish -h"
+Exec=parrot-exec --sudo "skipfish -h"
 Icon=parrot_skipfish
 StartupNotify=false
 Terminal=true

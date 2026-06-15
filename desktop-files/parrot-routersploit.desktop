@@ -2,7 +2,7 @@
 Name=routersploit
 Comment=Exploitation framework dedicated to embedded devices
 Encoding=UTF-8
-Exec=menuexec routersploit
+Exec=parrot-exec --sudo routersploit
 Icon=xterm
 StartupNotify=false
 Terminal=true

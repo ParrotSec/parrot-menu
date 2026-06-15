@@ -2,7 +2,7 @@
 Name=inetsim
 Comment=Simulating common internet services
 Encoding=UTF-8
-Exec=menuexec "inetsim -h"
+Exec=parrot-exec --sudo "inetsim -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=wifi-honey
 Encoding=UTF-8
-Exec=menuexec "wifi-honey -h"
+Exec=parrot-exec --sudo "wifi-honey -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

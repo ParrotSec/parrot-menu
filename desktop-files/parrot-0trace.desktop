@@ -2,7 +2,7 @@
 Name=0trace
 Comment=Network hops tracer
 Encoding=UTF-8
-Exec=menuexec 0trace.sh
+Exec=parrot-exec --sudo 0trace.sh
 Icon=xterm
 StartupNotify=false
 Terminal=true

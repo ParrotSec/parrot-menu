@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=WoeUSB
 Comment=Create Windows bootable USB
-Exec=menuexecg woeusbgui
+Exec=parrot-exec --gui woeusbgui
 Icon=windows
 Terminal=false
 Type=Application

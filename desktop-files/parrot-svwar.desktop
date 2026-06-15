@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=svwar
 Encoding=UTF-8
-Exec=menuexec "svwar -h"
+Exec=parrot-exec --sudo "svwar -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

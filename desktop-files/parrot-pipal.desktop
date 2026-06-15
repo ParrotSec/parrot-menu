@@ -2,7 +2,7 @@
 Name=pipal
 Comment=Statistical analysis on password dumps: password length, charset
 Encoding=UTF-8
-Exec=menuexec "pipal -h"
+Exec=parrot-exec --sudo "pipal -h"
 Icon=parrot_pipal
 StartupNotify=false
 Terminal=true

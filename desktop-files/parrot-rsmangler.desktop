@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=rsmangler
 Encoding=UTF-8
-Exec=menuexec "rsmangler -h"
+Exec=parrot-exec --sudo "rsmangler -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

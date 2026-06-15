@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=recstudio-cli
 Encoding=UTF-8
-Exec=menuexec "recstudio-cli"
+Exec=parrot-exec --sudo "recstudio-cli"
 Icon=parrot_recstudio
 StartupNotify=false
 Terminal=true

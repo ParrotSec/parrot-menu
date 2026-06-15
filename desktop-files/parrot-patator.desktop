@@ -2,7 +2,7 @@
 Name=patator
 Comment=Multi-purpose brute-forcer
 Encoding=UTF-8
-Exec=menuexec "patator -h"
+Exec=parrot-exec --sudo "patator -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

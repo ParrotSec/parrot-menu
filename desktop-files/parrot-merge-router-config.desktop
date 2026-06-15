@@ -2,7 +2,7 @@
 Name=merge-router-config
 Comment=Copies configuration files from Cisco devices running SNMP.
 Encoding=UTF-8
-Exec=menuexec "merge-router-config.pl"
+Exec=parrot-exec --sudo "merge-router-config.pl"
 Icon=xterm
 StartupNotify=false
 Terminal=true

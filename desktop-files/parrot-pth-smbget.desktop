@@ -2,7 +2,7 @@
 Name=pth-smbget
 Comment=Download file via SMB protocol using NTLM hash
 Encoding=UTF-8
-Exec=menuexec "pth-smbget --help"
+Exec=parrot-exec --sudo "pth-smbget --help"
 Icon=xterm
 StartupNotify=false
 Terminal=true

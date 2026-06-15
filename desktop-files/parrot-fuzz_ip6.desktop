@@ -2,7 +2,7 @@
 Name=fuzz_ip6
 Comment=Fuzze an icmp6 packet
 Encoding=UTF-8
-Exec=menuexec atk6-fuzz_ip6 
+Exec=parrot-exec --sudo atk6-fuzz_ip6 
 Icon=xterm
 StartupNotify=false
 Terminal=true

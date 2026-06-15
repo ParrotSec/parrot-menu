@@ -2,7 +2,7 @@
 Name=mfterm
 Comment=Terminal for working with Mifare Classic 1-4k Tags
 Encoding=UTF-8
-Exec=menuexec "mfterm -h"
+Exec=parrot-exec --sudo "mfterm -h"
 Icon=parrot_mfterm
 StartupNotify=false
 Terminal=true

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=evil-ssdp
 Encoding=UTF-8
-Exec=menuexec "evil-ssdp -h"
+Exec=parrot-exec --sudo "evil-ssdp -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

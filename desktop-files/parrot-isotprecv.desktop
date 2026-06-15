@@ -2,7 +2,7 @@
 Name=isotprecv
 Comment=Receive ISO-TP PDU(s)
 Encoding=UTF-8
-Exec=menuexec isotprecv
+Exec=parrot-exec --sudo isotprecv
 Icon=xterm
 StartupNotify=false
 Terminal=true

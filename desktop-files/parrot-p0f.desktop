@@ -2,7 +2,7 @@
 Name=p0f
 Comment=Passive OS detection based on SYN packets
 Encoding=UTF-8
-Exec=menuexec "p0f -h"
+Exec=parrot-exec --sudo "p0f -h"
 Icon=parrot_p0f
 StartupNotify=false
 Terminal=true

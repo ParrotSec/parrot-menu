@@ -2,7 +2,7 @@
 Name=apache-users
 Comment=Enumerate the usernames on Apache systems with the UserDir module
 Encoding=UTF-8
-Exec=menuexec apache-users
+Exec=parrot-exec --sudo apache-users
 Icon=xterm
 StartupNotify=false
 Terminal=true

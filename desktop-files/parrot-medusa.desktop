@@ -2,7 +2,7 @@
 Name=medusa
 Comment=Speedy, massively parallel, modular, login brute-forcer
 Encoding=UTF-8
-Exec=menuexec "medusa -h"
+Exec=parrot-exec --sudo "medusa -h"
 Icon=parrot_medusa
 StartupNotify=false
 Terminal=true

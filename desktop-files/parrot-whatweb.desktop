@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=whatweb
 Encoding=UTF-8
-Exec=menuexec "whatweb -h"
+Exec=parrot-exec --sudo "whatweb -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

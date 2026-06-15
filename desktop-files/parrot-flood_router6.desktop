@@ -2,7 +2,7 @@
 Name=flood_router6
 Comment=Flood the local network with router advertisements
 Encoding=UTF-8
-Exec=menuexec atk6-flood_router6 
+Exec=parrot-exec --sudo atk6-flood_router6 
 Icon=xterm
 StartupNotify=false
 Terminal=true

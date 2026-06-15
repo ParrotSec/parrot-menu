@@ -2,7 +2,7 @@
 Name=netsniff-ng
 Comment=Linux network sniffer for packet inspection
 Encoding=UTF-8
-Exec=menuexec "netsniff-ng -h"
+Exec=parrot-exec --sudo "netsniff-ng -h"
 Icon=parrot_netsniff-ng
 StartupNotify=false
 Terminal=true

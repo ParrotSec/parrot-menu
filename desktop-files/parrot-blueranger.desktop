@@ -2,7 +2,7 @@
 Name=blueranger
 Comment=Locate Bluetooth device radios
 Encoding=UTF-8
-Exec=menuexec blueranger.sh
+Exec=parrot-exec --sudo blueranger.sh
 Icon=xterm
 StartupNotify=false
 Terminal=true

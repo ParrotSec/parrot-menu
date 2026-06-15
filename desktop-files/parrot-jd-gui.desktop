@@ -2,7 +2,7 @@
 Name=jd-gui
 Comment=Java decompiler (GUI)
 Encoding=UTF-8
-Exec=menuexecg "jd-gui"
+Exec=parrot-exec --gui "jd-gui"
 Icon=parrot_jd-gui
 StartupNotify=false
 Terminal=false

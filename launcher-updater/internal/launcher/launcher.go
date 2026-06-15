@@ -8,6 +8,11 @@ import (
 	"strings"
 )
 
+type RemovedTool struct {
+	Name    string
+	Package string
+}
+
 const dirLauncherSource = "/usr/share/parrot-menu/applications/"
 
 func RemoveOldLaunchers() {
@@ -38,7 +43,9 @@ func RemoveOldLaunchers() {
 	}
 }
 
-func SyncLaunchers(installed map[string]struct{}) {
+func SyncLaunchers(installed map[string]struct{}) []RemovedTool {
+	var removed []RemovedTool
+
 	err := filepath.WalkDir(dirLauncherSource, func(path string, d os.DirEntry, err error) error {
 		if err != nil || d.IsDir() {
 			return err
@@ -48,7 +55,9 @@ func SyncLaunchers(installed map[string]struct{}) {
 			return nil
 		}
 
-		syncSingleLauncher(path, d, installed)
+		if rt := syncSingleLauncher(path, d, installed); rt != nil {
+			removed = append(removed, *rt)
+		}
 		return nil
 	})
 
@@ -56,6 +65,8 @@ func SyncLaunchers(installed map[string]struct{}) {
 		slog.Error("failed to walk source directory",
 			"dirLauncherSource", dirLauncherSource, "err", err)
 	}
+
+	return removed
 }
 
 var managedPrefixes = []string{"parrot-", "serv-"}
@@ -73,10 +84,10 @@ func isManaged(name string) bool {
 	return false
 }
 
-func syncSingleLauncher(srcPath string, d os.DirEntry, installed map[string]struct{}) {
+func syncSingleLauncher(srcPath string, d os.DirEntry, installed map[string]struct{}) *RemovedTool {
 	pkgName, err := desktop.GetXPackageName(srcPath)
 	if err != nil || pkgName == "" {
-		return
+		return nil
 	}
 
 	fileName := d.Name()
@@ -84,11 +95,13 @@ func syncSingleLauncher(srcPath string, d os.DirEntry, installed map[string]stru
 
 	if _, ok := installed[pkgName]; ok {
 		ensureLauncherUpdated(srcPath, destPath, d)
-	} else {
-		ensureLauncherRemoved(destPath)
+		desktop.FixOldLaunchers(fileName)
+		return nil
 	}
 
+	ensureLauncherTemplate(srcPath, destPath, pkgName, d)
 	desktop.FixOldLaunchers(fileName)
+	return &RemovedTool{Name: fileName, Package: pkgName}
 }
 
 func ensureLauncherUpdated(srcPath, destPath string, d os.DirEntry) {
@@ -99,18 +112,29 @@ func ensureLauncherUpdated(srcPath, destPath string, d os.DirEntry) {
 
 	destInfo, err := os.Stat(destPath)
 	// Update if it doesn't exist or metadata differs
-	if err != nil || srcInfo.Size() != destInfo.Size() || srcInfo.ModTime() != destInfo.ModTime() {
+	if err != nil || srcInfo.ModTime() != destInfo.ModTime() {
 		if err := desktop.CopyFile(srcPath, destPath); err != nil {
 			slog.Error("failed to copy source path to destination path",
 				"srcPath", srcPath, "destPath", destPath, "err", err)
+		} else {
+			_ = os.Chtimes(destPath, srcInfo.ModTime(), srcInfo.ModTime())
 		}
 	}
 }
 
-func ensureLauncherRemoved(destPath string) {
-	if _, err := os.Stat(destPath); err == nil {
-		if err := os.Remove(destPath); err != nil {
-			slog.Error("failed to remove old launcher", "destPath", destPath, "err", err)
+func ensureLauncherTemplate(srcPath, destPath, pkgName string, d os.DirEntry) {
+	srcInfo, err := d.Info()
+	if err != nil {
+		return
+	}
+
+	destInfo, err := os.Stat(destPath)
+	// Create template if it doesn't exist or source changed
+	if err != nil || srcInfo.ModTime() != destInfo.ModTime() {
+		if err := desktop.CopyTemplateLauncher(srcPath, destPath, pkgName); err != nil {
+			slog.Error("failed to create template launcher", "destPath", destPath, "err", err)
+		} else {
+			_ = os.Chtimes(destPath, srcInfo.ModTime(), srcInfo.ModTime())
 		}
 	}
 }

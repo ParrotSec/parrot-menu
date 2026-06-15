@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=pth-rpcclient
 Encoding=UTF-8
-Exec=menuexec "pth-rpcclient -h"
+Exec=parrot-exec --sudo "pth-rpcclient -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

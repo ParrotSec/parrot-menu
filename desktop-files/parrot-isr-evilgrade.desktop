@@ -2,7 +2,7 @@
 Name=evilgrade
 Comment=Injecting payload to upgrade implementations to create fake updates.
 Encoding=UTF-8
-Exec=menuexec "evilgrade"
+Exec=parrot-exec --sudo "evilgrade"
 Icon=xterm
 StartupNotify=false
 Terminal=true

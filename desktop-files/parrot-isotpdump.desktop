@@ -2,7 +2,7 @@
 Name=isotpdump
 Comment=wiretap and interpret CAN messages (CAN_RAW)
 Encoding=UTF-8
-Exec=menuexec isotpdump
+Exec=parrot-exec --sudo isotpdump
 Icon=xterm
 StartupNotify=false
 Terminal=true

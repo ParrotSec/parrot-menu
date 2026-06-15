@@ -2,7 +2,7 @@
 Name=Nmapsi4 - QT GUI for Nmap (run as root)
 Comment=Network exploration or security auditing with QT GUI as root user
 Encoding=UTF-8
-Exec=menuexec nmapsi4
+Exec=parrot-exec --sudo nmapsi4
 Icon=nmapsi4
 StartupNotify=false
 Terminal=true

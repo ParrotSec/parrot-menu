@@ -35,7 +35,9 @@ func QueryInstalled() (map[string]struct{}, error) {
 	var pkgName string
 	for scanner.Scan() {
 		line := scanner.Text()
-		if strings.HasPrefix(line, "Package: ") {
+		if line == "" {
+			pkgName = ""
+		} else if strings.HasPrefix(line, "Package: ") {
 			pkgName = strings.TrimPrefix(line, "Package: ")
 		} else if line == "Status: install ok installed" && pkgName != "" {
 			installed[pkgName] = struct{}{}

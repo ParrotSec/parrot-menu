@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Driftnet
 Comment=Picks out and displays images from network traffic
-Exec=menuexec "driftnet -h"
+Exec=parrot-exec --sudo "driftnet -h"
 Icon=xterm
 Terminal=true
 Type=Application

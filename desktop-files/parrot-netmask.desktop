@@ -2,7 +2,7 @@
 Name=netmask
 Comment=Determine network masks to specify a range of hosts
 Encoding=UTF-8
-Exec=menuexec "netmask -h"
+Exec=parrot-exec --sudo "netmask -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

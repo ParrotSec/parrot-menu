@@ -2,7 +2,7 @@
 Name=Start Faraday service
 Comment=Start the Faraday Pentest reporting service
 Encoding=UTF-8
-Exec=menuexecg "faraday"
+Exec=parrot-exec --gui "faraday"
 Icon=faraday
 StartupNotify=false
 Terminal=true

@@ -2,7 +2,7 @@
 Name=pdfid
 Comment=Scans PDF files for certain PDF keywords
 Encoding=UTF-8
-Exec=menuexec "pdfid -h"
+Exec=parrot-exec --sudo "pdfid -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

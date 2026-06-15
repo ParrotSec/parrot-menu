@@ -2,7 +2,7 @@
 Name=candump
 Comment=Display, filter and log CAN data to files
 Encoding=UTF-8
-Exec=menuexec candump -h
+Exec=parrot-exec --sudo candump -h
 Icon=xterm
 StartupNotify=false
 Terminal=true

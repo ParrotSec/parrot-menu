@@ -2,7 +2,7 @@
 Name=joomscan
 Comment=Detect Joomla CMS vulnerabilities
 Encoding=UTF-8
-Exec=menuexec "joomscan"
+Exec=parrot-exec --sudo "joomscan"
 Icon=xterm
 StartupNotify=false
 Terminal=true

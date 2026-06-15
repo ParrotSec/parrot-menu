@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=sslyze
 Encoding=UTF-8
-Exec=menuexec "sslyze -h"
+Exec=parrot-exec --sudo "sslyze -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

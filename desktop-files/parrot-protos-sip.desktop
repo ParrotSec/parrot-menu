@@ -2,7 +2,7 @@
 Name=protos-sip
 Comment=evaluate implementation level security and robustness of Session Initiation Protocol (SIP) implementations
 Encoding=UTF-8
-Exec=menuexec "protos-sip -help"
+Exec=parrot-exec --sudo "protos-sip -help"
 Icon=xterm
 StartupNotify=false
 Terminal=true

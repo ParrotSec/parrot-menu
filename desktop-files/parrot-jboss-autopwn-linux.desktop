@@ -2,7 +2,7 @@
 Name=jboss-autopwn-linux
 Comment=JBoss script for obtaining remote shell access (targets Linux system)
 Encoding=UTF-8
-Exec=menuexec "jboss-linux"
+Exec=parrot-exec --sudo "jboss-linux"
 Icon=parrot_jboss-autopwn
 StartupNotify=false
 Terminal=true

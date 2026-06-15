@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=sslh
 Encoding=UTF-8
-Exec=menuexec "sslh -h"
+Exec=parrot-exec --sudo "sslh -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

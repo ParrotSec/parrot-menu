@@ -5,12 +5,12 @@ menus/anon-surf.menu etc/xdg/menus/applications-merged/
 menus/cryptography.menu etc/xdg/menus/applications-merged/
 menus/mate-applications.menu etc/xdg/menus/
 menus/xfce-applications.menu etc/xdg/menus/
-bin/* usr/bin/
 desktop-directories/*.directory usr/share/desktop-directories/
 desktop-files/*.desktop usr/share/parrot-menu/applications/
 desktop-files/*.desktop usr/share/applications/
 apt.conf.d/99parrot-menu etc/apt/apt.conf.d/
 build/update-launchers usr/share/parrot-menu/
+build/parrot-exec usr/bin/
 menu-icons/* usr/share/icons/
 parrot-common usr/share/icons/
 dconf/parrot-menu etc/dconf/db/local.d/

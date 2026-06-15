@@ -2,7 +2,7 @@
 Name=ffind
 Comment=Finds the name of the file or directory using a given inode
 Encoding=UTF-8
-Exec=menuexec "ffind"
+Exec=parrot-exec --sudo "ffind"
 Icon=xterm
 StartupNotify=false
 Terminal=true

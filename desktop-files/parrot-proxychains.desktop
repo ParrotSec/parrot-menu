@@ -2,7 +2,7 @@
 Name=proxychains
 Comment=Redirect connections through proxy servers
 Encoding=UTF-8
-Exec=menuexec "proxychains"
+Exec=parrot-exec --sudo "proxychains"
 Icon=parrot_proxychains
 StartupNotify=false
 Terminal=true

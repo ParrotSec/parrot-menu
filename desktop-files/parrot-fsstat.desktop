@@ -2,7 +2,7 @@
 Name=fsstat
 Comment=Display general details of a file system 
 Encoding=UTF-8
-Exec=menuexec "fsstat"
+Exec=parrot-exec --sudo "fsstat"
 Icon=xterm
 StartupNotify=false
 Terminal=true

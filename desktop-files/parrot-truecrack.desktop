@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=truecrack
 Encoding=UTF-8
-Exec=menuexec "truecrack -h"
+Exec=parrot-exec --sudo "truecrack -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

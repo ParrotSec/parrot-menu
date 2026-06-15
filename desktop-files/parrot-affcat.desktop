@@ -2,7 +2,7 @@
 Name=affcat
 Comment=Get outputs the contents of an image file
 Encoding=UTF-8
-Exec=menuexec affcat -h
+Exec=parrot-exec --sudo affcat -h
 Icon=xterm
 StartupNotify=false
 Terminal=true

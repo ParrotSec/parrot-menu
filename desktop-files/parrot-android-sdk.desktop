@@ -2,7 +2,7 @@
 Name=android-sdk
 Comment=Android software development
 Encoding=UTF-8
-Exec=menuexec android
+Exec=parrot-exec --sudo android
 Icon=xterm
 StartupNotify=false
 Terminal=false

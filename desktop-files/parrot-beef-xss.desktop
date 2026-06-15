@@ -2,7 +2,7 @@
 Name=BeEf XSS Web Panel
 Comment=Client-side attack based on XSS from vulnerable web applications
 Encoding=UTF-8
-Exec=menuexec beef-xss
+Exec=parrot-exec --sudo beef-xss
 Icon=parrot_beef
 StartupNotify=false
 Terminal=true

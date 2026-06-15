@@ -2,7 +2,7 @@
 Name=plecost
 Comment=Wordpress fingerprinting tool
 Encoding=UTF-8
-Exec=menuexec "plecost -h"
+Exec=parrot-exec --sudo "plecost -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

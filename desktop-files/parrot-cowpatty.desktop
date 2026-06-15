@@ -2,7 +2,7 @@
 Name=cowpatty
 Comment=Offline dictionary attack against WPA/WPA2 networks using PSK-based authentication
 Encoding=UTF-8
-Exec=menuexec "cowpatty"
+Exec=parrot-exec --sudo "cowpatty"
 Icon=parrot_cowpatty
 StartupNotify=false
 Terminal=true

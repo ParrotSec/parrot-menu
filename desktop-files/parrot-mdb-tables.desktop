@@ -2,7 +2,7 @@
 Name=mdb-tables
 Comment=Get listing of tables in an MDB database
 Encoding=UTF-8
-Exec=menuexec mdb-tables 
+Exec=parrot-exec --sudo mdb-tables 
 Icon=parrot_mdb-sql
 StartupNotify=false
 Terminal=true

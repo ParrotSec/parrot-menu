@@ -2,7 +2,7 @@
 Name=Restart Apache Webserver
 Comment=Restart Apache2 web service
 Encoding=UTF-8
-Exec=servicexc apache2 restart 
+Exec=parrot-exec --gui systemctl restart apache2 
 Icon=xterm
 StartupNotify=false
 Terminal=false

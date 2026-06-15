@@ -2,7 +2,7 @@
 Name=mdk3
 Comment=Wireless attack tool for IEEE 802.11 networks
 Encoding=UTF-8
-Exec=menuexec "mdk3 --help"
+Exec=parrot-exec --sudo "mdk3 --help"
 Icon=parrot_mdk3
 StartupNotify=false
 Terminal=true

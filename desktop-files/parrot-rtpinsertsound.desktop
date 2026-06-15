@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=rtpinsertsound
 Encoding=UTF-8
-Exec=menuexec "rtpinsertsound -h"
+Exec=parrot-exec --sudo "rtpinsertsound -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

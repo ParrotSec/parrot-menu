@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=urlsnarf
 Encoding=UTF-8
-Exec=menuexec urlsnarf -h 
+Exec=parrot-exec --sudo urlsnarf -h 
 Icon=xterm
 StartupNotify=false
 Terminal=true

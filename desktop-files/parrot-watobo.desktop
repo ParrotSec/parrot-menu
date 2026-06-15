@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=watobo
 Encoding=UTF-8
-Exec=menuexecg "watobo"
+Exec=parrot-exec --gui "watobo"
 Icon=xterm
 StartupNotify=false
 Terminal=false

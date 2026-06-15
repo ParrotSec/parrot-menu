@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=safecopy
 Encoding=UTF-8
-Exec=menuexec "safecopy -h"
+Exec=parrot-exec --sudo "safecopy -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

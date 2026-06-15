@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=rasm2
 Encoding=UTF-8
-Exec=menuexec rasm2 
+Exec=parrot-exec --sudo rasm2 
 Icon=xterm
 StartupNotify=false
 Terminal=true

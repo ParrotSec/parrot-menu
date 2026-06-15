@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=stunnel4
 Encoding=UTF-8
-Exec=menuexec "stunnel4 -h"
+Exec=parrot-exec --sudo "stunnel4 -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true

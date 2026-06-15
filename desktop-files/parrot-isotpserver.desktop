@@ -2,7 +2,7 @@
 Name=isotpserver
 Comment=IP server for simple TCP/IP <-> ISO 15765-2 bridging (ASCII HEX)
 Encoding=UTF-8
-Exec=menuexec isotpserver
+Exec=parrot-exec --sudo isotpserver
 Icon=xterm
 StartupNotify=false
 Terminal=true

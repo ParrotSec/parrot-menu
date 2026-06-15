@@ -2,7 +2,7 @@
 Name=neo4j
 Comment=Graph database Neo4j Community Edition
 Encoding=UTF-8
-Exec=menuexec "neo4j console"
+Exec=parrot-exec --sudo "neo4j console"
 Icon=xterm
 StartupNotify=false
 Terminal=true
