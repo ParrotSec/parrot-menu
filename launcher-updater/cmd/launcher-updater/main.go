@@ -11,6 +11,8 @@ import (
 )
 
 func main() {
+	skipKsycoca := len(os.Args) > 1 && os.Args[1] == "wait_dpkg"
+
 	fmt.Println("--------------------------------------------------")
 	fmt.Println("[!] Scanning application launchers")
 
@@ -38,10 +40,12 @@ func main() {
 	fmt.Println("[!] Launchers have been successfully updated!")
 	fmt.Println("--------------------------------------------------")
 
-	if _, err := exec.LookPath("kbuildsycoca6"); err == nil {
-		user := os.Getenv("SUDO_USER")
-		if user != "" {
-			_ = exec.Command("sudo", "-u", user, "kbuildsycoca6").Run()
+	if !skipKsycoca {
+		if _, err := exec.LookPath("kbuildsycoca6"); err == nil {
+			user := os.Getenv("SUDO_USER")
+			if user != "" {
+				_ = exec.Command("sudo", "-u", user, "kbuildsycoca6").Run()
+			}
 		}
 	}
 }

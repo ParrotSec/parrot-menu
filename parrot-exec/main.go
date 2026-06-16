@@ -126,6 +126,15 @@ func runInstall(pkgName string, keep bool) {
 			"The menu will now be updated.\n\n",
 			colorCyan, colorReset, pkgName)
 
+		// After a successful installation it triggers
+		// the launcher-updater to replace the template desktop entry.
+		updateCmd := exec.Command("sudo", "/usr/share/parrot-menu/update-launchers")
+		attachStdio(updateCmd)
+		if err := updateCmd.Run(); err != nil {
+			fmt.Printf("\n%sWARNING:%s Menu update failed: %v\n",
+				colorRed, colorReset, err)
+		}
+
 
 	}
 
