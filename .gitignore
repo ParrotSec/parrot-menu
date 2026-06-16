@@ -1,4 +1,5 @@
 build/
+launcher-updater/launcher-updater
 parrot-exec/parrot-exec
 env/
 .DS_Store

@@ -8,6 +8,7 @@ import (
 	"log/slog"
 	"os"
 	"os/exec"
+	"strings"
 )
 
 func main() {
@@ -43,9 +44,28 @@ func main() {
 	if !skipKsycoca {
 		if _, err := exec.LookPath("kbuildsycoca6"); err == nil {
 			user := os.Getenv("SUDO_USER")
+			if user == "" {
+				user = findUser()
+			}
 			if user != "" {
 				_ = exec.Command("sudo", "-u", user, "kbuildsycoca6").Run()
 			}
 		}
 	}
+}
+
+func findUser() string {
+	out, err := exec.Command("logname").Output()
+	if err == nil {
+		user := strings.TrimSpace(string(out))
+		if user != "" && user != "root" {
+			return user
+		}
+	}
+	for _, candidate := range []string{"USER", "USERNAME"} {
+		if user := os.Getenv(candidate); user != "" && user != "root" {
+			return user
+		}
+	}
+	return ""
 }
