@@ -134,6 +134,15 @@ func runInstall(pkgName string, keep bool) {
 			fmt.Printf("\n%sWARNING:%s Menu update failed: %v\n",
 				colorRed, colorReset, err)
 		}
+
+		// Refresh the KDE menu cache so the user sees
+		// the updated launcher immediately.
+		if _, err := exec.LookPath("kbuildsycoca6"); err == nil {
+			user := os.Getenv("SUDO_USER")
+			if user != "" {
+				_ = exec.Command("sudo", "-u", user, "kbuildsycoca6").Run()
+			}
+		}
 	}
 
 	runShellIf(keep)
