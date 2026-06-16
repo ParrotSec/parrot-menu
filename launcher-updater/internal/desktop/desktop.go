@@ -139,7 +139,9 @@ func CopyTemplateLauncher(src, dst, pkgName string) error {
 	for scanner.Scan() {
 		line := scanner.Text()
 
-		if strings.HasPrefix(line, "Icon=") {
+		if strings.HasPrefix(line, "Name=") {
+			line = line + " [not installed]"
+		} else if strings.HasPrefix(line, "Icon=") {
 			line = "Icon=xterm"
 		} else if strings.HasPrefix(line, "Exec=") {
 			line = "Exec=parrot-exec --install " + pkgName
