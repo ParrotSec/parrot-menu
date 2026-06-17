@@ -105,7 +105,7 @@ func runInstall(pkgName string, keep bool) {
 	if cmd.Run() != nil {
 		// Runs apt update only when the package is not already in
 		// the local cache, then installs it.
-		cmd = exec.Command("sudo", "apt", "update")
+		cmd = exec.Command("sudo", "apt-get", "update")
 		attachStdio(cmd)
 		if err := cmd.Run(); err != nil {
 			fmt.Printf("\n%sERROR:%s Failed to update package list: %v\n\n",
@@ -115,7 +115,7 @@ func runInstall(pkgName string, keep bool) {
 		}
 	}
 
-	cmd = exec.Command("sudo", "apt", "install", "-y", pkgName)
+	cmd = exec.Command("sudo", "apt-get", "install", "-y", pkgName)
 	attachStdio(cmd)
 
 	if err := cmd.Run(); err != nil {

@@ -8,11 +8,6 @@ import (
 	"strings"
 )
 
-type RemovedTool struct {
-	Name    string
-	Package string
-}
-
 const dirLauncherSource = "/usr/share/parrot-menu/applications/"
 
 func RemoveOldLaunchers() {
@@ -43,8 +38,8 @@ func RemoveOldLaunchers() {
 	}
 }
 
-func SyncLaunchers(installed map[string]struct{}) []RemovedTool {
-	var removed []RemovedTool
+func SyncLaunchers(installed map[string]struct{}) (int, int) {
+	var total, notInstalled int
 
 	err := filepath.WalkDir(dirLauncherSource, func(path string, d os.DirEntry, err error) error {
 		if err != nil || d.IsDir() {
@@ -55,8 +50,9 @@ func SyncLaunchers(installed map[string]struct{}) []RemovedTool {
 			return nil
 		}
 
-		if rt := syncSingleLauncher(path, d, installed); rt != nil {
-			removed = append(removed, *rt)
+		total++
+		if !syncSingleLauncher(path, d, installed) {
+			notInstalled++
 		}
 		return nil
 	})
@@ -66,7 +62,7 @@ func SyncLaunchers(installed map[string]struct{}) []RemovedTool {
 			"dirLauncherSource", dirLauncherSource, "err", err)
 	}
 
-	return removed
+	return total, notInstalled
 }
 
 var managedPrefixes = []string{"parrot-", "serv-"}
@@ -84,10 +80,10 @@ func isManaged(name string) bool {
 	return false
 }
 
-func syncSingleLauncher(srcPath string, d os.DirEntry, installed map[string]struct{}) *RemovedTool {
+func syncSingleLauncher(srcPath string, d os.DirEntry, installed map[string]struct{}) bool {
 	pkgName, err := desktop.GetXPackageName(srcPath)
 	if err != nil || pkgName == "" {
-		return nil
+		return true
 	}
 
 	fileName := d.Name()
@@ -96,12 +92,12 @@ func syncSingleLauncher(srcPath string, d os.DirEntry, installed map[string]stru
 	if _, ok := installed[pkgName]; ok {
 		ensureLauncherUpdated(srcPath, destPath, d)
 		desktop.FixOldLaunchers(fileName)
-		return nil
+		return true
 	}
 
 	ensureLauncherTemplate(srcPath, destPath, pkgName, d)
 	desktop.FixOldLaunchers(fileName)
-	return &RemovedTool{Name: fileName, Package: pkgName}
+	return false
 }
 
 func ensureLauncherUpdated(srcPath, destPath string, d os.DirEntry) {
