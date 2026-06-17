@@ -1,3 +1,65 @@
+parrot-menu (3:7.3.1) echo; urgency=medium
+
+  * Integrate new updates
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 17 Jun 2026 02:58:08 +0200
+
+parrot-menu (3:7.3.0) echo; urgency=medium
+
+  [ Dario Camonita ]
+  * feat: report uninstalled packages
+  * feat: extract parrot-exec into a standalone component
+  * refactor: replace servicexc and sudo with parrot-exec wrapper
+  * fix: use correct Go module paths for launcher-updater and parrot-exec
+  * build: remove useless .idea stuff
+  * fix: force Go modules mode
+  * style: improve banner spacing
+  * feat: ad on-demand installation for uninstalled apps
+  * refactor: rename runTerminal to runCommand for clarity
+  * fix: update legacy Exec lines to use parrot-exec
+  * style: replace abstract banner with clean figlet 'ParrotSec' ASCII art
+  * fix: abort early when apt update fails instead of ignoring error
+  * style: replace abstract banner with clean figlet 'ParrotSec' ASCII art
+  * fix: respect keep flag in runLs when path is invalid
+  * docs: add package-level design comment
+  * fix: check error from launcher-updater invocation
+  * perf: skip apt update if package is already in cache
+  * fix: use correct path for update-launchers binary
+  * fix: return RemovedTool from syncSingleLauncher when package is not installed
+  * fix: log errors in CopyTemplateLauncher
+  * refactor(generate_icons): improve script with logging and cli args
+  * chore: add new 22x22 icons
+  * style(parrot-exec): wrap lines to comply with 80-column limit
+  * style: wrap lines to comply with 80-column limit
+  * refactor: extract attachStdio helper to reduce repetition
+  * chore: remove tracked binary and add .gitignore
+  * chore: clean up debian package metadata
+  * chore: remove obsolete postinst migration hook
+  * refactor: replace if-else chain with a more cleaner switch
+  * fix: correct double shell, keep flag handling and more bugs
+  * fix: add `reason` parameter to `handleError` to improve error description
+  * fix: only prepend DISPLAY/XAUTHORITY to pkexec when non-empty
+  * refactor: make env prefix conditional
+  * fix: unfold desktop entry Exec tokens containing spaces
+  * fix: handle some desktop entry Exec quoting
+  * fix: do not treat non-zero exit as execution failure
+  * docs: add explanatory comments for some key functions
+  * fix: reset pkgName on block boundary in status parser
+  * fix: sync ModTime to prevent endless recopies
+  * fix: correct invalid file extensions
+  * fix: replace concurrent cleanup with sequential calls
+  * fix: always write launcher template when tool is not installed
+  * feat: run kbuildsycoca6 after installation to refresh the KDE menu cache
+  * feat: use software-manager icon and [not installed] prefix for uninstalled launchers
+  * feat: skip kbuildsycoca6 when called with wait_dpkg
+  * fix(postinst): run update-launchers to trigger kbuildsycoca6
+  * fix: fallback to logname/user env when SUDO_USER is unset
+
+  [ Lorenzo "Palinuro" Faletra ]
+  * Prepare for release.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 17 Jun 2026 02:57:46 +0200
+
 parrot-menu (3:7.2.1) echo; urgency=medium
 
   [ Dario Camonita ]
