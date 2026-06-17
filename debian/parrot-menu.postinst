@@ -6,5 +6,9 @@ if which dconf >/dev/null 2>&1; then
     dconf update || true
 fi
 
+if [ -x /usr/share/parrot-menu/update-launchers ]; then
+    /usr/share/parrot-menu/update-launchers || true
+fi
+
 #DEBHELPER#
 

@@ -1,3 +1,9 @@
+parrot-menu (3:7.3.1) echo; urgency=medium
+
+  * Integrate new updates
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 17 Jun 2026 02:58:08 +0200
+
 parrot-menu (3:7.3.0) echo; urgency=medium
 
   [ Dario Camonita ]
@@ -42,11 +48,17 @@ parrot-menu (3:7.3.0) echo; urgency=medium
   * fix: sync ModTime to prevent endless recopies
   * fix: correct invalid file extensions
   * fix: replace concurrent cleanup with sequential calls
+  * fix: always write launcher template when tool is not installed
+  * feat: run kbuildsycoca6 after installation to refresh the KDE menu cache
+  * feat: use software-manager icon and [not installed] prefix for uninstalled launchers
+  * feat: skip kbuildsycoca6 when called with wait_dpkg
+  * fix(postinst): run update-launchers to trigger kbuildsycoca6
+  * fix: fallback to logname/user env when SUDO_USER is unset
 
   [ Lorenzo "Palinuro" Faletra ]
   * Prepare for release.
 
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 15 Jun 2026 16:40:38 +0200
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 17 Jun 2026 02:57:46 +0200
 
 parrot-menu (3:7.2.1) echo; urgency=medium
 

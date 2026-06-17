@@ -134,6 +134,8 @@ func runInstall(pkgName string, keep bool) {
 			fmt.Printf("\n%sWARNING:%s Menu update failed: %v\n",
 				colorRed, colorReset, err)
 		}
+
+
 	}
 
 	runShellIf(keep)
