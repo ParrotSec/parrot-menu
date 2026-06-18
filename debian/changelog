@@ -1,3 +1,9 @@
+parrot-menu (3:7.3.4) echo; urgency=medium
+
+  * Cleanup some launchers.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 18 Jun 2026 13:20:41 +0200
+
 parrot-menu (3:7.3.3) echo; urgency=medium
 
   [ Dario Camonita ]
