@@ -39,6 +39,11 @@ func GetXPackageName(path string) (string, error) {
 	return "", nil
 }
 
+func IsManaged(path string) bool {
+	pkg, err := GetXPackageName(path)
+	return err == nil && pkg != ""
+}
+
 func FixOldLaunchers(fileName string) {
 	// If a new launcher (e.g., "serv-tool.desktop") is installed, this function
 	// ensures that the older version (e.g., "parrot-toolname.desktop") is removed

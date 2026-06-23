@@ -19,15 +19,18 @@ func RemoveOldLaunchers() {
 			return nil
 		}
 
-		currentLauncher := d.Name()
+		if !isManaged(d.Name()) {
+			return nil
+		}
 
-		if isManaged(currentLauncher) {
-			// Build the path to the corresponding file in the source directory.
-			srcToCheck := filepath.Join(dirLauncherSource, currentLauncher)
-			if _, err := os.Stat(srcToCheck); os.IsNotExist(err) {
-				if err := os.Remove(path); err != nil {
-					slog.Error("failed to remove", "path", path, "err", err)
-				}
+		if !desktop.IsManaged(path) {
+			return nil
+		}
+
+		srcToCheck := filepath.Join(dirLauncherSource, d.Name())
+		if _, err := os.Stat(srcToCheck); os.IsNotExist(err) {
+			if err := os.Remove(path); err != nil {
+				slog.Error("failed to remove", "path", path, "err", err)
 			}
 		}
 		return nil
@@ -35,6 +38,46 @@ func RemoveOldLaunchers() {
 
 	if err != nil {
 		slog.Error("failed to walk source directory", "DirLauncherDest", desktop.DirLauncherDest, "err", err)
+	}
+}
+
+func FixDebLaunchers() {
+	blacklist := map[string]string{
+		"wireshark.desktop":               "parrot-wireshark.desktop",
+		"org.wireshark.Wireshark.desktop": "parrot-wireshark.desktop",
+		"ettercap.desktop":                "parrot-ettercap-graphical.desktop",
+		"chirp.desktop":                   "parrot-chirp.desktop",
+		"driftnet.desktop":                "parrot-driftnet.desktop",
+		"lynis.desktop":                   "parrot-lynis.desktop",
+		"xsser.desktop":                   "parrot-xsser.desktop",
+		"etherape.desktop":                "parrot-etherape.desktop",
+		"ophcrack.desktop":                "parrot-ophcrack.desktop",
+		"gqrx.desktop":                    "parrot-gqrx.desktop",
+		"gpa.desktop":                     "parrot-gpa.desktop",
+		"arduino.desktop":                 "parrot-arduino.desktop",
+		"rtlsdr-scanner.desktop":          "parrot-rtlsdr-scanner.desktop",
+		"org.radare.Cutter.desktop":       "parrot-rizin-cutter.desktop",
+		"re.rizin.cutter.desktop":         "parrot-rizin-cutter.desktop",
+	}
+
+	for origName, wrapperName := range blacklist {
+		origPath := filepath.Join(desktop.DirLauncherDest, origName)
+		if _, err := os.Stat(origPath); os.IsNotExist(err) {
+			continue
+		}
+
+		if desktop.IsManaged(origPath) {
+			continue
+		}
+
+		wrapperPath := filepath.Join(desktop.DirLauncherDest, wrapperName)
+		if _, err := os.Stat(wrapperPath); os.IsNotExist(err) {
+			continue
+		}
+
+		if err := os.Remove(origPath); err != nil {
+			slog.Error("failed to remove blacklisted launcher", "path", origPath, "err", err)
+		}
 	}
 }
 
@@ -83,6 +126,10 @@ func isManaged(name string) bool {
 func syncSingleLauncher(srcPath string, d os.DirEntry, installed map[string]struct{}) bool {
 	pkgName, err := desktop.GetXPackageName(srcPath)
 	if err != nil || pkgName == "" {
+		fileName := d.Name()
+		destPath := filepath.Join(desktop.DirLauncherDest, fileName)
+		ensureLauncherUpdated(srcPath, destPath, d)
+		desktop.FixOldLaunchers(fileName)
 		return true
 	}
 

@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"launcher-updater/internal/blacklist"
 	"launcher-updater/internal/desktop"
 	"launcher-updater/internal/dpkg"
 	"launcher-updater/internal/launcher"
@@ -30,7 +29,7 @@ func main() {
 
 	fmt.Println("Removing duplicate or broken launchers...")
 	launcher.RemoveOldLaunchers()
-	blacklist.FixDebLaunchers()
+	launcher.FixDebLaunchers()
 
 	fmt.Printf("[i] %d launcher(s) processed, %d package(s) not installed\n", total, notInstalled)
 
