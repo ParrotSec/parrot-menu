@@ -3,12 +3,15 @@ package main
 import (
 	"fmt"
 	"launcher-updater/internal/blacklist"
+	"launcher-updater/internal/desktop"
 	"launcher-updater/internal/dpkg"
 	"launcher-updater/internal/launcher"
 	"log/slog"
 	"os"
 	"os/exec"
+	"os/user"
 	"strings"
+	"time"
 )
 
 func main() {
@@ -35,14 +38,40 @@ func main() {
 	fmt.Println("--------------------------------------------------")
 
 	if !skipKsycoca {
+		// Touch the dest directory so kbuildsycoca detects the mtime change.
+		_ = os.Chtimes(desktop.DirLauncherDest, time.Now(), time.Now())
+
 		if _, err := exec.LookPath("kbuildsycoca6"); err == nil {
-			user := os.Getenv("SUDO_USER")
-			if user == "" {
-				user = findUser()
+			userName := os.Getenv("SUDO_USER")
+			if userName == "" {
+				userName = findUser()
 			}
-			if user != "" {
-				_ = exec.Command("sudo", "-u", user, "kbuildsycoca6").Run()
+			if userName != "" {
+				uid := os.Getenv("SUDO_UID")
+				if uid == "" {
+					if u, err := user.Lookup(userName); err == nil {
+						uid = u.Uid
+					}
+				}
+
+				// Pass the user's D-Bus session address so kbuildsycoca6
+				// can notify Kicker that the cache was rebuilt.
+				var args []string
+				if uid != "" {
+					args = append(args,
+						fmt.Sprintf("DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/%s/bus", uid))
+				}
+				args = append(args, "kbuildsycoca6")
+
+				out, err := exec.Command("sudo", append([]string{"-u", userName}, args...)...).CombinedOutput()
+				if err != nil {
+					fmt.Printf("[!] kbuildsycoca6 error: %v\n%s\n", err, string(out))
+				}
+			} else {
+				fmt.Println("[!] Could not determine user to run kbuildsycoca6")
 			}
+		} else {
+			fmt.Println("[!] kbuildsycoca6 not found on the system")
 		}
 	}
 }

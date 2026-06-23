@@ -79,7 +79,7 @@ func main() {
 		runLs(args[0], *keepOpen)
 
 	case *isInstall:
-		runInstall(execName)
+		runInstall(execName, *keepOpen)
 
 	default:
 		if _, err := exec.LookPath(execName); err != nil {
@@ -98,7 +98,7 @@ func attachStdio(cmd *exec.Cmd) {
 	cmd.Stdin = os.Stdin
 }
 
-func runInstall(pkgName string) {
+func runInstall(pkgName string, keep bool) {
 	fmt.Printf("%sInstalling package %s...%s\n\n", colorCyan, pkgName, colorReset)
 
 	cmd := exec.Command("apt-cache", "show", pkgName)
@@ -134,8 +134,9 @@ func runInstall(pkgName string) {
 				colorRed, colorReset, err)
 		}
 
-
 	}
+
+	runShellIf(keep)
 
 }
 

@@ -101,28 +101,14 @@ func syncSingleLauncher(srcPath string, d os.DirEntry, installed map[string]stru
 }
 
 func ensureLauncherUpdated(srcPath, destPath string, d os.DirEntry) {
-	srcInfo, err := d.Info()
-	if err != nil {
-		return
-	}
-
 	if err := desktop.CopyFile(srcPath, destPath); err != nil {
 		slog.Error("failed to copy source path to destination path",
 			"srcPath", srcPath, "destPath", destPath, "err", err)
-	} else {
-		_ = os.Chtimes(destPath, srcInfo.ModTime(), srcInfo.ModTime())
 	}
 }
 
 func ensureLauncherTemplate(srcPath, destPath, pkgName string, d os.DirEntry) {
-	srcInfo, err := d.Info()
-	if err != nil {
-		return
-	}
-
 	if err := desktop.CopyTemplateLauncher(srcPath, destPath, pkgName); err != nil {
 		slog.Error("failed to create template launcher", "destPath", destPath, "err", err)
-	} else {
-		_ = os.Chtimes(destPath, srcInfo.ModTime(), srcInfo.ModTime())
 	}
 }
