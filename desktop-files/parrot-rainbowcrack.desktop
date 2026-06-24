@@ -1,10 +1,11 @@
 [Desktop Entry]
 Name=rainbowcrack
 Encoding=UTF-8
-Exec=parrot-exec --hint "see github.com/rainbowcrack/rainbowcrack" --sudo "rcrack"
+Exec=parrot-exec --sudo "rcrack"
 Icon=parrot_rainbowcrack
 StartupNotify=false
 Terminal=true
 Type=Application
 Categories=05-02-offline-attacks;
 Comment=Generate rainbow table and crack dumped hashes
+X-Parrot-Package=rainbowcrack

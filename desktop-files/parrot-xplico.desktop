@@ -8,3 +8,4 @@ Terminal=false
 Type=Application
 Categories=11-forensics;
 Comment=A network forensics analysis tool
+X-Parrot-Package=xplico

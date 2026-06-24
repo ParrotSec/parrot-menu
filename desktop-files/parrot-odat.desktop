@@ -2,9 +2,10 @@
 Name=odat
 Comment=Oracle Database Attacking Tool
 Encoding=UTF-8
-Exec=parrot-exec --hint "pipx install odat" --sudo "odat"
+Exec=parrot-exec --sudo "odat"
 Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application
 Categories=04-06-db-exploit;
+X-Parrot-Package=odat

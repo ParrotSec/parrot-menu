@@ -8,3 +8,4 @@ StartupNotify=false
 Terminal=false
 Type=Application
 Categories=serv-12-xplico-service
+X-Parrot-Package=xplico

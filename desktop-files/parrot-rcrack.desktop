@@ -2,9 +2,10 @@
 Name=rcrack
 Comment=Rainbow table password cracker
 Encoding=UTF-8
-Exec=parrot-exec --hint "see github.com/rainbowcrack/rainbowcrack" "rcrack"
+Exec=parrot-exec "rcrack"
 Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application
 Categories=05-02-offline-attacks;05-password-attacks;
+X-Parrot-Package=rainbowcrack

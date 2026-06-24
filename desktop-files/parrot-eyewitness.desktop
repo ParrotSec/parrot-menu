@@ -2,9 +2,10 @@
 Name=eyewitness
 Comment=Take screenshots of websites
 Encoding=UTF-8
-Exec=parrot-exec --hint "pipx install eyewitness" --sudo "eyewitness -h"
+Exec=parrot-exec --sudo "eyewitness -h"
 Icon=parrot_eyewitness
 StartupNotify=false
 Terminal=true
 Type=Application
 Categories=12-reporting;
+X-Parrot-Package=eyewitness
