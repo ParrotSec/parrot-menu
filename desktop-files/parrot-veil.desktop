@@ -8,4 +8,4 @@ Terminal=true
 Type=Application
 Categories=10-04-av-bypass;
 Comment=Generate metasploit payloads that bypass common anti-virus solutions.
-X-Parrot-Package=veil
+X-Parrot-Package=veil-evasion

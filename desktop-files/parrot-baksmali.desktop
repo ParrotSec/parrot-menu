@@ -8,4 +8,4 @@ Terminal=true
 Type=Application
 Categories=07-01-disassemblers;
 Comment=An disassembler tool for the dex format used by dalvik
-X-Parrot-Package=smali
+X-Parrot-Package=libsmali-java

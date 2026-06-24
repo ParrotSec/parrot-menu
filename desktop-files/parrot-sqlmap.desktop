@@ -8,4 +8,4 @@ Terminal=true
 Type=Application
 Categories=04-05-web-exploit
 Comment=Automatic SQL Injection and database takeover tool
-X-Parrot-Packages=sqlmap
+X-Parrot-Package=sqlmap
