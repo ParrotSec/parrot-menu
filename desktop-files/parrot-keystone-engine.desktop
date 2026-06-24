@@ -2,10 +2,9 @@
 Name=Keystone Engine
 Comment=Commandline tool of Keystone Assembler Framework
 Encoding=UTF-8
-Exec=parrot-exec kstool
+Exec=parrot-exec --hint "see github.com/keystone-engine/keystone" kstool
 Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application
 Categories=Development
-X-Parrot-Package=keystone-engine

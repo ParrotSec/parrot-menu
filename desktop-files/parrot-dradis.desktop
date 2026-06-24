@@ -8,4 +8,3 @@ StartupNotify=false
 Terminal=false
 Type=Application
 Categories=12-reporting;
-X-Parrot-Package=dradis

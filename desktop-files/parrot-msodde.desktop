@@ -2,10 +2,9 @@
 Name=msodde
 Comment=Detect and extract DDE/DDEAUTO links from MS Office documents, RTF and CSV
 Encoding=UTF-8
-Exec=parrot-exec "msodde -h"
+Exec=parrot-exec --hint "pipx install oletools" "msodde -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application
 Categories=07-06-oletools;
-X-Parrot-Package=oletools

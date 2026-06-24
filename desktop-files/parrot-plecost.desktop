@@ -2,10 +2,9 @@
 Name=plecost
 Comment=Wordpress fingerprinting tool
 Encoding=UTF-8
-Exec=parrot-exec --sudo "plecost -h"
+Exec=parrot-exec --hint "pipx install plecost" --sudo "plecost -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application
 Categories=03-01-cms-identification;
-X-Parrot-Package=plecost

@@ -2,10 +2,9 @@
 Name=maskgen
 Comment=Generate hashcat masks
 Encoding=UTF-8
-Exec=parrot-exec "maskgen -h"
+Exec=parrot-exec --hint "pipx install oletools" "maskgen -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application
 Categories=05-05-profile;
-X-Parrot-Package=pack

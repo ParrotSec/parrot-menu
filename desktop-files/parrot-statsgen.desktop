@@ -2,10 +2,9 @@
 Name=statsgen
 Comment=Generate dictionary file statistics
 Encoding=UTF-8
-Exec=parrot-exec "statsgen -h"
+Exec=parrot-exec --hint "pipx install oletools" "statsgen -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application
 Categories=05-05-profile;
-X-Parrot-Package=pack

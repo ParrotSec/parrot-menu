@@ -2,10 +2,9 @@
 Name=owasp-mantra-ff
 Comment=Web application security testing framework built on top of Firefox
 Encoding=UTF-8
-Exec=parrot-exec "owasp-mantra-ff"
+Exec=parrot-exec --hint "see github.com/OWASP/Mantra" "owasp-mantra-ff"
 Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application
 Categories=03-05-web-vulnerability-scanners;
-X-Parrot-Package=owasp-mantra-ff

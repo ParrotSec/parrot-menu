@@ -2,10 +2,9 @@
 Name=oledir
 Comment=Display all the directory entries of an OLE file, including free and orphaned entries
 Encoding=UTF-8
-Exec=parrot-exec "oledir -h"
+Exec=parrot-exec --hint "pipx install oletools" "oledir -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application
 Categories=07-06-oletools;
-X-Parrot-Package=oletools

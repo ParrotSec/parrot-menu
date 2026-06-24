@@ -2,10 +2,9 @@
 Name=above
 Comment=Invisible protocol sniffer for finding vulnerabilities in the network
 Encoding=UTF-8
-Exec=parrot-exec "above -h"
+Exec=parrot-exec --hint "pipx install above" "above -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application
 Categories=09-sniffing-spoofing;
-X-Parrot-Package=above

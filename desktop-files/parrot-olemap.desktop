@@ -2,10 +2,9 @@
 Name=olemap
 Comment=Display a map of all the sectors in an OLE file
 Encoding=UTF-8
-Exec=parrot-exec "olemap -h"
+Exec=parrot-exec --hint "pipx install oletools" "olemap -h"
 Icon=xterm.png
 StartupNotify=false
 Terminal=true
 Type=Application
 Categories=07-06-oletools;
-X-Parrot-Package=oletools

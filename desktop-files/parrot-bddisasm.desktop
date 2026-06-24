@@ -2,10 +2,9 @@
 Name=bddisasm - x86/64 disassembler
 Comment=x86/x64 disassembler and emulator toolkit by BitDefender
 Encoding=UTF-8
-Exec=parrot-exec disasmtool -h
+Exec=parrot-exec --hint "pipx install bddisasm" disasmtool -h
 Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application
 Categories=07-01-disassemblers;
-X-Parrot-Package=bddisasm

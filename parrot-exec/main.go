@@ -15,6 +15,9 @@ It dispatches into four modes:
   - `--install`: runs apt update + apt install, then triggers launcher-updater
     so the template desktop entry is replaced with the real one.
 
+  - `--hint`: provides an installation hint displayed when the tool is not
+    found on the system (used for launchers whose package is not in apt).
+
 The `--keep` flag (default set to **true**) calls runShell() after execution so
 the terminal stays open otherwise a Terminal=true entry would close before the
 user can read output or errors. runShell() whitelists known shells to prevent
@@ -50,6 +53,7 @@ func main() {
 	isLs := flag.Bool("ls", false, "Run as directory lister")
 	isInstall := flag.Bool("install", false, "Install the specified package")
 	noBanner := flag.Bool("no-banner", false, "Do not show banner")
+	hint := flag.String("hint", "", "Installation hint shown when tool is not found")
 	keepOpen := flag.Bool("keep", true, "Keep shell open after execution")
 
 	flag.Parse()
@@ -83,7 +87,7 @@ func main() {
 
 	default:
 		if _, err := exec.LookPath(execName); err != nil {
-			handleError(execName, *isGui, *keepOpen, "not found on the system")
+			handleError(execName, *hint, *isGui, *keepOpen, "not found on the system")
 			return
 		}
 		runCommand(args, *isSudo, *keepOpen)
@@ -140,10 +144,22 @@ func runInstall(pkgName string, keep bool) {
 
 }
 
-func handleError(name string, gui bool, keep bool, reason string) {
-	msg := fmt.Sprintf("Command '%s': %s.\n"+
-		"Please report this bug to %s%s%s",
-		name, reason, colorCyan, parrotEmail, colorReset)
+func handleError(name string, hint string, gui bool, keep bool, reason string) {
+	var msg string
+	if reason == "not found on the system" {
+		if hint == "" {
+			hint = fmt.Sprintf("pipx install %s", name)
+		}
+		msg = fmt.Sprintf(
+			"The tool '%s' is not installed on this system.\n"+
+				"It is not available in Parrot's repositories.\n"+
+				"Install it manually, e.g.: %s",
+			name, hint)
+	} else {
+		msg = fmt.Sprintf("Command '%s': %s.\n"+
+			"Please report this bug to %s%s%s",
+			name, reason, colorCyan, parrotEmail, colorReset)
+	}
 
 	if gui {
 		exec.Command("notify-send", "-i", "security-low",
@@ -179,7 +195,7 @@ func runGui(commandStr string, args []string) {
 	attachStdio(cmd)
 	if err := cmd.Run(); err != nil {
 		if _, ok := err.(*exec.ExitError); !ok {
-			handleError(commandStr, true, false, "execution failed")
+			handleError(commandStr, "", true, false, "execution failed")
 		}
 	}
 }
@@ -198,7 +214,7 @@ func runCommand(args []string, sudo bool, keep bool) {
 	attachStdio(cmd)
 	if err := cmd.Run(); err != nil {
 		if _, ok := err.(*exec.ExitError); !ok {
-			handleError(strings.Join(args, " "), false, keep, "execution failed")
+			handleError(strings.Join(args, " "), "", false, keep, "execution failed")
 			return
 		}
 	}

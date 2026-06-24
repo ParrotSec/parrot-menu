@@ -2,10 +2,9 @@
 Name=rtfobj
 Comment=Extract embedded objects from RTF files
 Encoding=UTF-8
-Exec=parrot-exec "rtfobj -h"
+Exec=parrot-exec --hint "pipx install oletools" "rtfobj -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application
 Categories=07-06-oletools;
-X-Parrot-Package=oletools

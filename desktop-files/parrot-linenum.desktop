@@ -8,4 +8,3 @@ StartupNotify=false
 Terminal=true
 Type=Application
 Categories=08-01-priv-esc
-X-Parrot-Package=linenum

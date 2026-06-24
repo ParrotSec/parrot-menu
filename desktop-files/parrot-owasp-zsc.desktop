@@ -2,10 +2,9 @@
 Name=owasp-zsc
 Comment=Shellcode/Obfuscate Code Generator
 Encoding=UTF-8
-Exec=parrot-exec --sudo "owasp-zsc"
+Exec=parrot-exec --hint "pipx install owasp-zsc" --sudo "owasp-zsc"
 StartupNotify=false
 Terminal=true
 Type=Application
 Icon=parrot_owasp-zsc
 Categories=04-04-payload-generator;
-X-Parrot-Package=owasp-zsc

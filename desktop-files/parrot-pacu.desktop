@@ -8,4 +8,3 @@ Terminal=true
 Type=Application
 Categories=04-exploitation-tools
 Comment=Framework for AWS Exploitation
-X-Parrot-Package=pacu

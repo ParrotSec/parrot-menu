@@ -2,10 +2,9 @@
 Name=pyinstxtractor
 Comment=Extract contents of compiled Python files
 Encoding=UTF-8
-Exec=parrot-exec pyinstxtractor
+Exec=parrot-exec --hint "pipx install pyinstxtractor" pyinstxtractor
 Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application
 Categories=11-forensics;
-X-Parrot-Package=pyinstxtractor

@@ -8,4 +8,3 @@ Terminal=true
 Type=Application
 Categories=10-03-web-backdoors
 Comment=Prebuild of Merlin's C&C agents on platforms
-X-Parrot-Package=merlin-agent

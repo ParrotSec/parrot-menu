@@ -2,10 +2,9 @@
 Name=blueranger
 Comment=Locate Bluetooth device radios
 Encoding=UTF-8
-Exec=parrot-exec --sudo blueranger.sh
+Exec=parrot-exec --hint "see github.com/hassanshah/kismet-blueranger" --sudo blueranger.sh
 Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application
 Categories=06-02-bluetooth-tools;
-X-Parrot-Package=blueranger

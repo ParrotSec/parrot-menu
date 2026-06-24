@@ -2,10 +2,9 @@
 Name=pyxswf
 Comment=Detect, extract and analysis Flash objects in MS Office files 
 Encoding=UTF-8
-Exec=parrot-exec "pyxswf -h"
+Exec=parrot-exec --hint "pipx install pyxswf" "pyxswf -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application
 Categories=07-06-oletools;
-X-Parrot-Package=oletools

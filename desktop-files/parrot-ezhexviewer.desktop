@@ -8,4 +8,3 @@ StartupNotify=false
 Terminal=false
 Type=Application
 Categories=07-06-oletools;
-X-Parrot-Package=oletools

@@ -1,11 +1,10 @@
 [Desktop Entry]
 Name=shellnoob
 Encoding=UTF-8
-Exec=parrot-exec --sudo "shellnoob"
+Exec=parrot-exec --hint "pipx install shellnoob" --sudo "shellnoob"
 Icon=parrot_shellnoob
 StartupNotify=false
 Terminal=true
 Type=Application
 Categories=04-04-payload-generator;
 Comment=A shellcode writing toolkit
-X-Parrot-Package=shellnoob

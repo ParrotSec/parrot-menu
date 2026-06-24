@@ -2,10 +2,9 @@
 Name=ivy-optiv
 Comment=Generate VBA shellcode executor
 Encoding=UTF-8
-Exec=parrot-exec "ivy-optiv -h"
+Exec=parrot-exec --hint "pipx install ivy-optiv" "ivy-optiv -h"
 Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application
 Categories=04-04-payload-generator;
-X-Parrot-Package=ivy-optiv

@@ -2,10 +2,9 @@
 Name=findmyhash
 Comment=Crack hashes with online services
 Encoding=UTF-8
-Exec=parrot-exec "findmyhash"
+Exec=parrot-exec --hint "pipx install findmyhash" "findmyhash"
 Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application
 Categories=05-password-attacks;
-X-Parrot-Package=findmyhash
