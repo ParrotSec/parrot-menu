@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=spiderfoot-cli
+Encoding=UTF-8
+Exec=parrot-exec "spiderfoot-cli -h"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-07-osint-analysis;
+Comment=Automate OSINT tool that gathers intelligence about a given target (CLI)
+X-Parrot-Package=spiderfoot

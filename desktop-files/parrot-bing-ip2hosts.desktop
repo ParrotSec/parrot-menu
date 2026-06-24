@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=bing-ip2hosts
+Encoding=UTF-8
+Exec=parrot-exec "bing-ip2hosts"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-07-osint-analysis;
+Comment=Enumerate hostnames for an IP using bing.com
+X-Parrot-Package=bing-ip2hosts

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=spiderfoot
+Encoding=UTF-8
+Exec=parrot-exec "spiderfoot -l 127.0.0.1:8099"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-07-osint-analysis;
+Comment=Automate OSINT tool that gathers intelligence about a given target (Web Interface)
+X-Parrot-Package=spiderfoot
