@@ -23,6 +23,7 @@ executing untrusted binaries injected via $SHELL.
 package main
 
 import (
+	"bytes"
 	"flag"
 	"fmt"
 	"os"
@@ -99,45 +100,39 @@ func attachStdio(cmd *exec.Cmd) {
 }
 
 func runInstall(pkgName string, keep bool) {
-	fmt.Printf("%sInstalling package %s...%s\n\n", colorCyan, pkgName, colorReset)
-
-	cmd := exec.Command("apt-cache", "show", pkgName)
-	if cmd.Run() != nil {
-		// Runs apt update only when the package is not already in
-		// the local cache, then installs it.
-		cmd = exec.Command("sudo", "apt-get", "update")
-		attachStdio(cmd)
-		if err := cmd.Run(); err != nil {
-			fmt.Printf("\n%sERROR:%s Failed to update package list: %v\n\n",
-				colorRed, colorReset, err)
-			return
-		}
+	out, _ := exec.Command("apt-cache", "policy", pkgName).Output()
+	if !bytes.Contains(out, []byte("Candidate:")) {
+		fmt.Printf("\n%sERROR:%s The tool '%s' is not installed on this system.\n"+
+			"It is not available in Parrot's repositories.\n\n",
+			colorRed, colorReset, pkgName)
+		runShellIf(keep)
+		return
 	}
 
-	cmd = exec.Command("sudo", "apt-get", "install", "-y", pkgName)
+	fmt.Printf("%sInstalling package %s...%s\n\n", colorCyan, pkgName, colorReset)
+
+	cmd := exec.Command("sudo", "apt-get", "install", "-y", pkgName)
 	attachStdio(cmd)
 
 	if err := cmd.Run(); err != nil {
 		fmt.Printf("\n%sERROR:%s Failed to install '%s': %v\n\n",
 			colorRed, colorReset, pkgName, err)
-	} else {
-		fmt.Printf("\n%sSUCCESS:%s '%s' installed correctly. "+
-			"The menu will now be updated.\n\n",
-			colorCyan, colorReset, pkgName)
+		runShellIf(keep)
+		return
+	}
 
-		// After a successful installation it triggers
-		// the launcher-updater to replace the template desktop entry.
-		updateCmd := exec.Command("sudo", "/usr/share/parrot-menu/update-launchers")
-		attachStdio(updateCmd)
-		if err := updateCmd.Run(); err != nil {
-			fmt.Printf("\n%sWARNING:%s Menu update failed: %v\n",
-				colorRed, colorReset, err)
-		}
+	fmt.Printf("\n%sSUCCESS:%s '%s' installed correctly. "+
+		"The menu will now be updated.\n\n",
+		colorCyan, colorReset, pkgName)
 
+	updateCmd := exec.Command("sudo", "/usr/share/parrot-menu/update-launchers")
+	attachStdio(updateCmd)
+	if err := updateCmd.Run(); err != nil {
+		fmt.Printf("\n%sWARNING:%s Menu update failed: %v\n",
+			colorRed, colorReset, err)
 	}
 
 	runShellIf(keep)
-
 }
 
 func handleError(name string, gui bool, keep bool, reason string) {
