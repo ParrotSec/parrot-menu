@@ -25,7 +25,7 @@ func GetXPackageName(path string) (string, error) {
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
 		line := scanner.Text()
-		if strings.HasPrefix(line, "X-Parrot-") {
+		if strings.HasPrefix(line, "X-Parrot-Package") {
 			if parts := strings.SplitN(line, "=", 2); len(parts) == 2 {
 				return strings.TrimSpace(parts[1]), nil
 			}
@@ -92,14 +92,6 @@ func CopyFile(src, dst string) error {
 
 	for scanner.Scan() {
 		line := scanner.Text()
-
-		// Desktop entries usually prefer icon names without extensions.
-		// If the Icon field explicitly specifies .png, remove it.
-		if strings.HasPrefix(line, "Icon=") {
-			if newLine, found := strings.CutSuffix(line, ".png"); found {
-				line = newLine
-			}
-		}
 
 		_, err := writer.WriteString(line + "\n")
 		if err != nil {
