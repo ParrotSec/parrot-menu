@@ -1,3 +1,22 @@
+parrot-menu (3:7.3.5) echo; urgency=medium
+
+  [ Dario Camonita ]
+  * fix: refresh KDE menu after package install and keep terminal open
+  * fix: check ownership via X-Parrot-Package before removing launchers
+  * fix: correct X-Parrot-Package names for 12 desktop entries
+  * fix: correct X-Parrot-Package from pth-curl to passing-the-hash
+  * fix: remove X-Parrot-Package from 76 launchers, add per-tool install hints
+  * fix: add hint for powershell installation
+  * fix: remove launchers for tools not available via apt
+  * fix: restore 13 .desktop available on gitlab
+  * fix: check package availability before install attempt
+  * fix: tighten X-Parrot-Package match and remove icon normalization
+
+  [ Lorenzo "Palinuro" Faletra ]
+  * Release package.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 25 Jun 2026 18:49:21 +0200
+
 parrot-menu (3:7.3.4) echo; urgency=medium
 
   * Cleanup some launchers.
