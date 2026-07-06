@@ -1,3 +1,13 @@
+parrot-menu (3:7.3.6) echo; urgency=medium
+
+  [ Dario Camonita ]
+  * feat: add parrot-ls backward-compatibility symlink for external packages
+
+  [ Lorenzo "Palinuro" Faletra ]
+  * Upload package
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 06 Jul 2026 22:27:54 +0200
+
 parrot-menu (3:7.3.5) echo; urgency=medium
 
   [ Dario Camonita ]
