@@ -9,6 +9,7 @@ binary:
 	mkdir -p $(BUILD_DIR)
 	cd launcher-updater && go build -ldflags="-s -w" -o $(CURDIR)/$(BUILD_DIR)/update-launchers ./cmd/launcher-updater
 	cd parrot-exec && go build -ldflags="-s -w" -o $(CURDIR)/$(BUILD_DIR)/parrot-exec .
+	ln -sf parrot-exec $(BUILD_DIR)/parrot-ls
 
 icons:
 	@read -p "Enter path image: " IMAGE_PATH; \

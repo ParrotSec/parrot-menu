@@ -28,6 +28,7 @@ import (
 	"fmt"
 	"os"
 	"os/exec"
+	"path/filepath"
 	"strings"
 )
 
@@ -67,6 +68,19 @@ func main() {
 
 	if !*noBanner && !*isGui {
 		fmt.Print(banner)
+	}
+
+	// Backward compatibility: when the binary is invoked as "parrot-ls"
+	// (via symlink), automatically enter --ls mode so that .desktop files
+	// from external packages that still reference the old parrot-ls command
+	// continue to work.
+	if filepath.Base(os.Args[0]) == "parrot-ls" {
+		if len(args) == 0 {
+			fmt.Println("Usage: parrot-ls <path>")
+			os.Exit(1)
+		}
+		runLs(args[0], *keepOpen)
+		return
 	}
 
 	commandStr := strings.Join(args, " ")

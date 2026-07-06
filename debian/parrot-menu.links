@@ -1,2 +1,3 @@
 etc/xdg/menus/applications-merged etc/xdg/menus/gnome-applications-merged
 etc/xdg/menus/applications-merged etc/xdg/menus/kf5-applications-merged
+usr/bin/parrot-exec usr/bin/parrot-ls
