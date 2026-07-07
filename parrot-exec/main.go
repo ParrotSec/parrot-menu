@@ -79,7 +79,7 @@ func main() {
 			fmt.Println("Usage: parrot-ls <path>")
 			os.Exit(1)
 		}
-		runLs(args[0], *keepOpen)
+		runLs(args[0], false)
 		return
 	}
 
