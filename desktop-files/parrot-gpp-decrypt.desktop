@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=gpp-decrypt
+Comment=Decrypt Group Policy Preferences passwords
+Encoding=UTF-8
+Exec=parrot-exec "gpp-decrypt --help"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-01-online-attacks;
+X-Parrot-Package=gpp-decrypt

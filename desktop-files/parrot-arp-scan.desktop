@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=arp-scan
+Comment=ARP scanner and fingerprinting tool
+Encoding=UTF-8
+Exec=parrot-exec --sudo "arp-scan --help"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-info-gathering;09-sniffing-spoofing;
+X-Parrot-Package=arp-scan

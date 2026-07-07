@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=hcidump
+Comment=Bluetooth packet analyzer
+Encoding=UTF-8
+Exec=parrot-exec --sudo "hcidump --help"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=06-02-bluetooth-tools;
+X-Parrot-Package=bluez-hcidump

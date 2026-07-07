@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=trufflehog
+Comment=Find credentials in Git repositories
+Encoding=UTF-8
+Exec=parrot-exec "trufflehog --help"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-info-gathering;
+X-Parrot-Package=trufflehog

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=enum4linux-ng
+Comment=Next-gen enumeration tool for Windows/Samba hosts
+Encoding=UTF-8
+Exec=parrot-exec "enum4linux-ng --help"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-10-smb-analysis;
+X-Parrot-Package=enum4linux-ng
