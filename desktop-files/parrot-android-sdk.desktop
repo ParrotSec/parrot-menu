@@ -2,10 +2,10 @@
 Name=android-sdk
 Comment=Android software development
 Encoding=UTF-8
-Exec=parrot-exec --sudo android
+Exec=parrot-exec --sudo sdkmanager --list
 Icon=xterm
 StartupNotify=false
 Terminal=false
 Type=Application
-Categories=11-01-android-tools;
+Categories=07-reverseengineer;
 X-Parrot-Package=android-sdk

@@ -5,7 +5,7 @@ Encoding=UTF-8
 Type=Application
 Exec=parrot-exec pwsh
 Terminal=true
-Categories=Development
 Icon=parrot_powersploit
 Categories=top10;Development
+X-Parrot-Package=powershell
 
