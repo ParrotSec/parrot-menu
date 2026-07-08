@@ -2,7 +2,7 @@
 Name=dial_tone
 Comment=Play a Dial Tone on the sound card output device.
 Encoding=UTF-8
-Exec=dial-tone
+Exec=parrot-exec dial-tone
 Icon=gnuradio-grc
 StartupNotify=false
 Terminal=false
