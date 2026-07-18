@@ -1,12 +1,5 @@
-menus/parrot-applications.menu etc/xdg/menus/applications-merged/
-menus/privacy.menu etc/xdg/menus/applications-merged/
-menus/services.menu etc/xdg/menus/applications-merged/
-
 menus/mate-applications.menu etc/xdg/menus/
 menus/xfce-applications.menu etc/xdg/menus/
-desktop-directories/*.directory usr/share/desktop-directories/
-desktop-files/*.desktop usr/share/parrot-menu/applications/
-desktop-files/*.desktop usr/share/applications/
 apt.conf.d/99parrot-menu etc/apt/apt.conf.d/
 build/update-launchers usr/share/parrot-menu/
 build/parrot-exec usr/bin/

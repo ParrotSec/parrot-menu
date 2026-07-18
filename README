@@ -11,7 +11,7 @@ packages in the X-Parrot-Package field.
 
 Those desktop files will be installed in /usr/share/applications
 by update-Parrot-menu as soon as the corresponding package is installed. And
-they will be removed afer the corresponding package has been removed.
+they will be removed after the corresponding package has been removed.
 
 If you want to override an existing desktop file instead of adding a new
 one, make sure to reuse the same filename. When Parrot-menu detects the
@@ -20,3 +20,20 @@ desktop file and put the Parrot one in place.
 
 It's possible to remove/hide an existing desktop file, by overriding it and
 adding "NoDisplay=true" to the overridden desktop file.
+
+Edition split
+-------------
+
+The source package builds two binary packages:
+
+- `parrot-menu` provides the common menu infrastructure, `parrot-exec`,
+  `update-launchers`, desktop integration files, and the apt hook. It must be
+  installed on every Parrot edition.
+- `parrot-menu-security` provides the Parrot Security menu, security desktop
+  directories, and launcher templates for security tools.
+
+Parrot Home Edition should install only `parrot-menu` by default, so users do
+not see installable security tool launchers unless they explicitly opt in.
+Parrot Security Edition should install both packages through its metapackage.
+An opt-in button on Home Edition should install `parrot-menu-security`; it
+should not install all security tools automatically.
