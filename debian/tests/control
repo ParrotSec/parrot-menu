@@ -1,0 +1,3 @@
+Tests: edition-split
+Depends: parrot-menu, apt, dpkg
+Restrictions: needs-root
