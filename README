@@ -37,3 +37,5 @@ not see installable security tool launchers unless they explicitly opt in.
 Parrot Security Edition should install both packages through its metapackage.
 An opt-in button on Home Edition should install `parrot-menu-security`; it
 should not install all security tools automatically.
+An opt-out action should purge `parrot-menu-security`, not just remove it, so
+the security menu conffiles are removed from `/etc/xdg/menus/applications-merged`.
