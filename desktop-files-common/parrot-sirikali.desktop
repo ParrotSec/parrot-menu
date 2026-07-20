@@ -8,6 +8,6 @@ Icon=sirikali
 Exec=/usr/bin/sirikali -d %U
 Terminal=false
 StartupNotify=true
-Categories=cryptography
+Categories=Utility;Security;
 Keywords=volumes;encrypting;encrypt;security;cryfs;gocryptfs;securefs;encfs
 X-Parrot-Package=sirikali

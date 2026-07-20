@@ -7,5 +7,5 @@ Icon=gnuradio-grc
 StartupNotify=false
 Terminal=false
 Type=Application
-Categories=06-05-radio-tools;
+Categories=Development;HamRadio;Science;
 X-Parrot-Package=gnuradio

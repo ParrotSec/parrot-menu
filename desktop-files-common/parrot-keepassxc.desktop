@@ -13,6 +13,6 @@ StartupWMClass=keepassxc
 Terminal=false
 Type=Application
 Version=1.0
-Categories=cryptography
+Categories=Utility;Security;
 MimeType=application/x-keepass2;
 X-Parrot-Package=keepassxc

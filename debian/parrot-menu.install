@@ -8,4 +8,3 @@ parrot-common usr/share/icons/
 dconf/parrot-menu etc/dconf/db/local.d/
 desktop-files-common/*.desktop usr/share/parrot-menu/applications/
 desktop-files-common/*.desktop usr/share/applications/
-desktop-directories-common/*.directory usr/share/desktop-directories/

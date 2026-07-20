@@ -46,6 +46,13 @@ assert_path_absent() {
     [ ! -e "$1" ] || fail "$1 should not exist"
 }
 
+assert_home_categories() {
+    if grep -RE '^Categories=([^;]+;)*(top10|privacy|cryptography|[0-9][0-9]-)' \
+        /usr/share/parrot-menu/applications/*.desktop; then
+        fail "common launchers should use standard desktop categories"
+    fi
+}
+
 assert_home_state() {
     assert_installed parrot-menu
     assert_not_installed "$security_package"
@@ -53,6 +60,8 @@ assert_home_state() {
     for path in $common_launchers; do
         assert_file_present "$path"
     done
+
+    assert_home_categories
 
     for path in $security_menus $security_launchers; do
         assert_path_absent "$path"

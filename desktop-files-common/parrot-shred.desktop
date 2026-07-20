@@ -5,6 +5,6 @@ Exec=parrot-exec "man shred"
 Terminal=true
 Type=Application
 Version=1.0
-Categories=privacy;
+Categories=Utility;Security;
 X-Parrot-Package=coreutils
 Icon=edit-delete

@@ -6,6 +6,5 @@ Type=Application
 Exec=parrot-exec pwsh
 Terminal=true
 Icon=parrot_powersploit
-Categories=top10;Development
+Categories=Development;System;TerminalEmulator;
 X-Parrot-Package=powershell
-

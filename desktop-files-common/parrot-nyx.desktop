@@ -7,5 +7,5 @@ Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=privacy;
+Categories=Network;Monitor;
 X-Parrot-Package=nyx
