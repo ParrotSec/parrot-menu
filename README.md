@@ -1,16 +1,53 @@
 # Parrot menu
 
-This package provides Parrot-specific menu definitions, desktop entries, and
-launcher integration.
+Parrot menu provides the Parrot-specific desktop menu integration used by
+Parrot GNU/Linux editions.
 
-## Desktop launchers
+It ships Freedesktop menu definitions, desktop directory metadata, managed
+desktop entries, icon assets, and two helper binaries:
 
-Desktop entries live in two source directories:
+- `update-launchers`, which keeps managed launchers in
+  `/usr/share/applications` aligned with installed packages.
+- `parrot-exec`, which is the execution wrapper used by Parrot desktop entries.
 
-- `desktop-files-common/` contains launchers that are suitable for every
-  Parrot edition.
-- `desktop-files/` contains Parrot Security launchers and is shipped by
-  `parrot-menu-security`.
+## Package split
+
+The source package builds two binary packages:
+
+- `parrot-menu` provides the common menu infrastructure, `parrot-exec`,
+  `update-launchers`, common launchers, desktop integration files, and the apt
+  hook. It is suitable for every Parrot edition.
+- `parrot-menu-security` provides the Parrot Security menu, security desktop
+  directories, and launcher templates for security tools.
+
+Parrot Home Edition should install only `parrot-menu` by default. Users can opt
+in to security launchers by installing `parrot-menu-security`; this must not
+install the full security toolset automatically. Opting out should purge
+`parrot-menu-security` so its menu conffiles are removed from
+`/etc/xdg/menus/applications-merged`.
+
+Parrot Security Edition should install both packages through its metapackage.
+
+## Repository layout
+
+| Path | Purpose |
+| --- | --- |
+| `apt.conf.d/` | apt hook that refreshes managed launchers after dpkg runs. |
+| `dconf/` | GNOME application folder defaults. |
+| `debian/` | Debian packaging metadata and autopkgtests. |
+| `desktop-directories/` | Freedesktop `.directory` files for menu categories. |
+| `desktop-files-common/` | Launchers shipped by `parrot-menu`. |
+| `desktop-files/` | Security launchers shipped by `parrot-menu-security`. |
+| `launcher-updater/` | Go source for `update-launchers`. |
+| `menu-icons/` | Source and generated menu icons. |
+| `menus/` | Freedesktop menu XML files. |
+| `parrot-exec/` | Go source for the desktop entry execution wrapper. |
+
+## Managed desktop launchers
+
+Desktop entries managed by `update-launchers` must be stored in either
+`desktop-files-common/` or `desktop-files/`, and their filenames must start with
+`parrot-` or `serv-`.
 
 Each managed desktop entry must define:
 
@@ -21,48 +58,85 @@ X-Parrot-Package=foo
 `foo` is the binary package that provides the primary command launched by that
 desktop entry. The field supports a single binary package only.
 
-`update-launchers` copies managed desktop entries to `/usr/share/applications`
-when the related package is installed. If the package is not installed, it
-creates a `[not installed]` launcher template that runs `parrot-exec --install
-foo`.
+During launcher refreshes, `update-launchers` reads
+`/var/lib/dpkg/status` directly:
 
-If you want to override an existing desktop file instead of adding a new one,
-reuse the same filename. When Parrot Menu detects the conflict, it uses
-`dpkg-divert` to move the original desktop file away and place the Parrot one
-there.
+- if `foo` is installed, the real desktop file is copied to
+  `/usr/share/applications`;
+- if `foo` is not installed, a `[not installed]` launcher is generated instead
+  and points to `parrot-exec --install foo`.
 
-To hide an existing desktop file, override it and add `NoDisplay=true`.
+Common launchers should use standard Freedesktop categories. Security launchers
+can use Parrot-specific categories defined by the menu files.
+
+To hide a launcher, ship a managed desktop file with `NoDisplay=true`.
 
 ## Icon generation
 
-`make icons` regenerates scaled app icons from
-`menu-icons/hicolor/256x256/apps`.
+`menu-icons/hicolor/256x256/apps` is the source directory for app icons.
 
-To import one or more PNG files and generate only their derived sizes, run:
+Regenerate all derived icon sizes from the 256x256 sources:
+
+```sh
+make icons
+```
+
+Import one or more PNG files and generate only their derived sizes:
 
 ```sh
 make icons IMAGES="/path/to/icon.png /path/to/another-icon.png"
 ```
 
+For compatibility, `IMAGE=/path/to/icon.png` also works for a single icon.
+
 Imported icons are copied to the 256x256 source directory, resized to 256x256
 when needed, then emitted as 16, 22, 24, 32, and 48 pixel variants, including
 their `@2` HiDPI versions.
 
-## Edition split
+Preview the generated files without modifying the tree:
 
-The source package builds two binary packages:
+```sh
+python3 generate_icons.py --dry-run
+python3 generate_icons.py --dry-run /path/to/icon.png
+```
 
-- `parrot-menu` provides the common menu infrastructure, `parrot-exec`,
-  `update-launchers`, common desktop launchers, desktop integration files, and
-  the apt hook. It must be installed on every Parrot edition.
-- `parrot-menu-security` provides the Parrot Security menu, security desktop
-  directories, and launcher templates for security tools.
+`generate_icons.py` requires Pillow (`python3-pil` on Debian).
 
-Parrot Home Edition should install only `parrot-menu` by default, so users do
-not see installable security tool launchers unless they explicitly opt in.
-Parrot Security Edition should install both packages through its metapackage.
+## Building
 
-An opt-in action on Home Edition should install `parrot-menu-security`; it
-should not install all security tools automatically. An opt-out action should
-purge `parrot-menu-security`, not just remove it, so the security menu
-conffiles are removed from `/etc/xdg/menus/applications-merged`.
+Build the helper binaries:
+
+```sh
+make binary
+```
+
+This creates:
+
+- `build/update-launchers`
+- `build/parrot-exec`
+- `build/parrot-ls`, a compatibility symlink to `parrot-exec`
+
+Build the Debian package with the standard packaging workflow:
+
+```sh
+dpkg-buildpackage -us -uc
+```
+
+## Testing
+
+Run Go checks:
+
+```sh
+(cd launcher-updater && go test ./...)
+(cd parrot-exec && go test ./...)
+```
+
+Run the edition split autopkgtest in a root-capable Debian test environment:
+
+```sh
+autopkgtest . -- null
+```
+
+The autopkgtest verifies that `parrot-menu` can be installed without security
+launchers, that installing `parrot-menu-security` exposes them, and that purging
+it restores the Home Edition state.
