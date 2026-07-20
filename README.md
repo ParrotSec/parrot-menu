@@ -33,6 +33,21 @@ there.
 
 To hide an existing desktop file, override it and add `NoDisplay=true`.
 
+## Icon generation
+
+`make icons` regenerates scaled app icons from
+`menu-icons/hicolor/256x256/apps`.
+
+To import one or more PNG files and generate only their derived sizes, run:
+
+```sh
+make icons IMAGES="/path/to/icon.png /path/to/another-icon.png"
+```
+
+Imported icons are copied to the 256x256 source directory, resized to 256x256
+when needed, then emitted as 16, 22, 24, 32, and 48 pixel variants, including
+their `@2` HiDPI versions.
+
 ## Edition split
 
 The source package builds two binary packages:
