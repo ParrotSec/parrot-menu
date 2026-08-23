@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=feroxbuster
+Comment=A fast, simple, recursive content discovery tool
+Encoding=UTF-8
+Exec=parrot-exec "feroxbuster --help"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=03-04-web-crawlers;
+X-Parrot-Package=feroxbuster

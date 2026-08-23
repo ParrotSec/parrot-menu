@@ -10,10 +10,24 @@ Standards-Version: 4.7.2
 Package: parrot-menu
 Architecture: any
 Depends: ${misc:Depends}, pkexec, xdg-utils, libc6
+Suggests: parrot-menu-security
 Breaks: dradis (<< 3.1.0~rc2)
 Replaces: mate-menus, libgarcon-common
 Description: Parrot GNU/Linux custom menu
- This package provides a custom menu for Parrot GNU/Linux.
+ This package provides the common menu infrastructure for Parrot GNU/Linux.
  .
- It is used by any destkop that complies with the Freedesktop menu
+ It is used by any desktop that complies with the Freedesktop menu
  specification at http://standards.freedesktop.org/menu-spec/menu-spec-1.0.html
+
+Package: parrot-menu-security
+Architecture: all
+Depends: ${misc:Depends}, parrot-menu (>= ${source:Version})
+Breaks: parrot-menu (<< ${source:Version})
+Replaces: parrot-menu (<< ${source:Version})
+Description: Parrot GNU/Linux security menu entries
+ This package provides the Parrot Security menu, desktop directories, and
+ launcher templates for security tools.
+ .
+ Install this package on Parrot Security Edition, or as an explicit opt-in on
+ Parrot Home Edition, to expose security tool launchers without installing the
+ tools themselves.

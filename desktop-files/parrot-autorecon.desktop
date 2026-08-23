@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=autorecon
+Comment=Multi-threaded reconnaissance tool
+Encoding=UTF-8
+Exec=parrot-exec "autorecon --help"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-info-gathering;01-04-network-scanners;
+X-Parrot-Package=autorecon

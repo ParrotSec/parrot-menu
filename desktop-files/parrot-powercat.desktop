@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=powercat
+Comment=PowerShell TCP/IP swiss army knife
+Encoding=UTF-8
+Exec=parrot-exec "powercat"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=08-post-exploit;
+X-Parrot-Package=powercat

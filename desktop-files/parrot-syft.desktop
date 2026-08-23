@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=syft
+Comment=Generate Software Bill of Materials (SBOM)
+Encoding=UTF-8
+Exec=parrot-exec "syft --help"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-info-gathering;
+X-Parrot-Package=syft

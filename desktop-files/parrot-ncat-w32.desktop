@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=ncat-w32
+Comment=Ncat for Windows targets
+Encoding=UTF-8
+Exec=parrot-exec "/usr/bin/ncat-w32"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=08-post-exploit;
+X-Parrot-Package=ncat-w32

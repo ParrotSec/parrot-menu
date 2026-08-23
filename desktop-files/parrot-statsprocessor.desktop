@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=statsprocessor
+Comment=Word generator based on Markov chains
+Encoding=UTF-8
+Exec=parrot-exec "sp64 -h"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-01-online-attacks;
+X-Parrot-Package=statsprocessor

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=nyx
+Comment=Terminal-based Tor status monitor
+Encoding=UTF-8
+Exec=parrot-exec "nyx --help"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=Network;Monitor;
+X-Parrot-Package=nyx

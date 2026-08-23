@@ -62,7 +62,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	if len(args) == 1 && strings.Contains(args[0], " ") {
+	if len(args) == 1 && strings.Contains(args[0], " ") && !strings.HasPrefix(args[0], "/") {
 		args = strings.Fields(args[0])
 	}
 
@@ -79,7 +79,7 @@ func main() {
 			fmt.Println("Usage: parrot-ls <path>")
 			os.Exit(1)
 		}
-		runLs(args[0], *keepOpen)
+		runLs(args[0], false)
 		return
 	}
 

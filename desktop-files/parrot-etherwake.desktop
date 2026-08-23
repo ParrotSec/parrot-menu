@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=etherwake
+Comment=Wake-on-LAN tool
+Encoding=UTF-8
+Exec=parrot-exec --sudo "etherwake --help"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=09-sniffing-spoofing;
+X-Parrot-Package=etherwake

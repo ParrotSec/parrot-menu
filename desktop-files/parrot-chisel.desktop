@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=chisel
+Comment=Fast TCP/UDP tunnel over HTTP
+Encoding=UTF-8
+Exec=parrot-exec "chisel --help"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=08-post-exploit;
+X-Parrot-Package=chisel

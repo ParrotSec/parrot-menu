@@ -4,6 +4,7 @@ export BUILD_DIR := build
 export HOME = $(CURDIR)
 export GO111MODULE = on
 export GOFLAGS = -mod=mod
+IMAGES ?= $(IMAGE)
 
 binary:
 	mkdir -p $(BUILD_DIR)
@@ -12,9 +13,4 @@ binary:
 	ln -sf parrot-exec $(BUILD_DIR)/parrot-ls
 
 icons:
-	@read -p "Enter path image: " IMAGE_PATH; \
-	if [ -z "$$IMAGE_PATH" ]; then \
-		echo "No image path provided"; \
-		exit 1; \
-	fi; \
-	python3 generate_icons.py $$IMAGE_PATH
+	python3 generate_icons.py $(IMAGES)

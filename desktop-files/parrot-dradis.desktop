@@ -2,7 +2,7 @@
 Name=dradis
 Comment=Web interface reporting tool for security assessments
 Encoding=UTF-8
-Exec=bash -c "service dradis start; xdg-open https://127.0.0.1:3004"
+Exec=parrot-exec --gui sh -c "systemctl start dradis 2>/dev/null; xdg-open https://127.0.0.1:3004"
 Icon=parrot_dradis
 StartupNotify=false
 Terminal=false

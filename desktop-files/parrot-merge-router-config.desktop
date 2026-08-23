@@ -7,5 +7,5 @@ Icon=xterm
 StartupNotify=false
 Terminal=true
 Type=Application
-Categories=02-01-cisco-tools;06-01-cisco-attacks;
+Categories=02-01-cisco-tools;
 X-Parrot-Package=copy-router-config

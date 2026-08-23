@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=maskprocessor
+Comment=High-performance word generator with per-position charset
+Encoding=UTF-8
+Exec=parrot-exec "mp64 -h"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-01-online-attacks;
+X-Parrot-Package=maskprocessor

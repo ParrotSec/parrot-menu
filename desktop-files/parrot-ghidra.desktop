@@ -3,6 +3,7 @@ Type=Application
 Name=Ghidra
 Exec=ghidra
 Icon=ghidra
+Terminal=false
 Comment=Advanced Reverse Engineering framework
 Categories=07-reverseengineer;
 X-Parrot-Package=ghidra

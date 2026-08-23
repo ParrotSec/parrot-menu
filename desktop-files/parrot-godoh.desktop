@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=godoh
+Comment=DNS-over-HTTPS tunneling tool
+Encoding=UTF-8
+Exec=parrot-exec "godoh --help"
+Icon=xterm
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-02-tunneling;
+X-Parrot-Package=godoh
