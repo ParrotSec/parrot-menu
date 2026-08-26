@@ -8,7 +8,7 @@ config/10-default.conf usr/share/parrot-menu/config.d/
 build/update-launchers usr/share/parrot-menu/
 build/parrot-exec usr/bin/
 menu-icons/* usr/share/icons/
-parrot-common usr/share/icons/
+parrot-common/* usr/share/icons/parrot-common/
 dconf/parrot-menu etc/dconf/db/local.d/
 desktop-directories/*.directory usr/share/desktop-directories/
 desktop-files-common/*.desktop usr/share/parrot-menu/applications/
