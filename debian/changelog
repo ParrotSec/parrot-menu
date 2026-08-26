@@ -1,3 +1,11 @@
+parrot-menu (3:7.4.1) echo; urgency=medium
+
+  [ Dario Camonita ]
+  * feat: make installable launchers configurable
+  * fix: mark root terminal as always available
+
+ -- Dario "danterolle" Camonita <danterolle@parrotsec.org>  Wed, 26 Aug 2026 12:06:41 +0200
+
 parrot-menu (3:7.4.0) echo; urgency=medium
 
   [ Dario Camonita ]
