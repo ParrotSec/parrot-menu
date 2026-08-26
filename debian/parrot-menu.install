@@ -1,10 +1,17 @@
 menus/mate-applications.menu etc/xdg/menus/
 menus/xfce-applications.menu etc/xdg/menus/
+menus/parrot-applications.menu etc/xdg/menus/applications-merged/
+menus/privacy.menu etc/xdg/menus/applications-merged/
+menus/services.menu etc/xdg/menus/applications-merged/
 apt.conf.d/99parrot-menu etc/apt/apt.conf.d/
+config/10-default.conf usr/share/parrot-menu/config.d/
 build/update-launchers usr/share/parrot-menu/
 build/parrot-exec usr/bin/
 menu-icons/* usr/share/icons/
 parrot-common usr/share/icons/
 dconf/parrot-menu etc/dconf/db/local.d/
+desktop-directories/*.directory usr/share/desktop-directories/
 desktop-files-common/*.desktop usr/share/parrot-menu/applications/
 desktop-files-common/*.desktop usr/share/applications/
+desktop-files/*.desktop usr/share/parrot-menu/applications/
+desktop-files/*.desktop usr/share/applications/

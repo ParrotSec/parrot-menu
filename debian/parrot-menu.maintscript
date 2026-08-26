@@ -1,3 +1,2 @@
-rm_conffile /etc/xdg/menus/applications-merged/parrot-applications.menu 3:7.3.6~
-rm_conffile /etc/xdg/menus/applications-merged/privacy.menu 3:7.3.6~
-rm_conffile /etc/xdg/menus/applications-merged/services.menu 3:7.3.6~
+rm_conffile /etc/xdg/menus/applications-merged/anon-surf.menu 3:7.4.1~
+rm_conffile /etc/xdg/menus/applications-merged/cryptography.menu 3:7.4.1~
