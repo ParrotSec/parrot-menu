@@ -12,6 +12,4 @@ parrot-common usr/share/icons/
 dconf/parrot-menu etc/dconf/db/local.d/
 desktop-directories/*.directory usr/share/desktop-directories/
 desktop-files-common/*.desktop usr/share/parrot-menu/applications/
-desktop-files-common/*.desktop usr/share/applications/
 desktop-files/*.desktop usr/share/parrot-menu/applications/
-desktop-files/*.desktop usr/share/applications/
