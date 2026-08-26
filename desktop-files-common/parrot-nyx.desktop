@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=nyx
+Name=Nyx TOR Monitor
 Comment=Terminal-based Tor status monitor
 Encoding=UTF-8
 Exec=parrot-exec "nyx --help"
