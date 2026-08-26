@@ -8,7 +8,13 @@ import (
 	"strings"
 )
 
-const DirLauncherDest = "/usr/share/applications/"
+const (
+	DirLauncherDest         = "/usr/share/applications/"
+	installableNamePrefix   = "[not installed] "
+	maxInstallableNameRunes = 40
+)
+
+var installableNameSeparators = []string{" — ", " - "}
 
 func GetXPackageName(path string) (string, error) {
 	return getDesktopValue(path, "X-Parrot-Package")
@@ -147,7 +153,8 @@ func CopyTemplateLauncher(src, dst, pkgName string) error {
 		line := scanner.Text()
 
 		if strings.HasPrefix(line, "Name=") {
-			line = "Name=[not installed] " + strings.TrimPrefix(line, "Name=")
+			name := strings.TrimPrefix(line, "Name=")
+			line = "Name=" + compactInstallableName(name)
 		} else if strings.HasPrefix(line, "Icon=") {
 			line = "Icon=software-manager"
 		} else if strings.HasPrefix(line, "Exec=") {
@@ -176,4 +183,26 @@ func CopyTemplateLauncher(src, dst, pkgName string) error {
 	}
 
 	return writer.Flush()
+}
+
+func compactInstallableName(name string) string {
+	name = strings.TrimSpace(name)
+	for _, separator := range installableNameSeparators {
+		if shortName, _, found := strings.Cut(name, separator); found {
+			name = shortName
+			break
+		}
+	}
+
+	maxNameRunes := maxInstallableNameRunes - len([]rune(installableNamePrefix))
+	nameRunes := []rune(name)
+	if len(nameRunes) > maxNameRunes {
+		const suffix = "..."
+		nameRunes = append(
+			nameRunes[:maxNameRunes-len([]rune(suffix))],
+			[]rune(suffix)...,
+		)
+	}
+
+	return installableNamePrefix + string(nameRunes)
 }
