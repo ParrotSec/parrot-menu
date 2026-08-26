@@ -20,28 +20,10 @@ The source package builds two binary packages:
 - `parrot-menu-security` provides a policy preset that exposes install-on-demand
   launchers for security tools that are not installed.
 
-Parrot Home Edition should install only `parrot-menu` by default. Users can opt
-in to installable security launchers by installing `parrot-menu-security`; this
-must not install the security toolset automatically. Removing the package hides
-only launchers for tools that are not installed.
-
-Parrot Security Edition should install both packages through its metapackage.
-
-## Repository layout
-
-| Path | Purpose |
-| --- | --- |
-| `apt.conf.d/` | apt hook that refreshes managed launchers after dpkg runs. |
-| `config/` | Package-provided launcher policy presets. |
-| `dconf/` | GNOME application folder defaults. |
-| `debian/` | Debian packaging metadata. |
-| `desktop-directories/` | Freedesktop `.directory` files for menu categories. |
-| `desktop-files-common/` | Common launchers shipped by `parrot-menu`. |
-| `desktop-files/` | Security launcher templates shipped by `parrot-menu`. |
-| `launcher-updater/` | Go source for `update-launchers`. |
-| `menu-icons/` | Source and generated menu icons. |
-| `menus/` | Freedesktop menu XML files. |
-| `parrot-exec/` | Go source for the desktop entry execution wrapper. |
+Parrot Home Edition installs only `parrot-menu` by default, while the Security
+Edition adds `parrot-menu-security` through its metapackage. The policy package
+does not install security tools: it only shows or hides launchers for tools that
+are not installed.
 
 ## Managed desktop launchers
 
@@ -70,26 +52,61 @@ During launcher refreshes, `update-launchers` reads
 - if `foo` is installed, the real desktop file is always copied to
   `/usr/share/applications`;
 - if `foo` is not installed and installable launchers are enabled, a
-  `[not installed]` launcher points to `parrot-exec --install foo`;
+  `[not installed]` launcher points to `parrot-exec --install foo`; generated
+  labels discard descriptive suffixes and are limited to 40 characters;
 - if `foo` is not installed and installable launchers are disabled, its managed
   launcher is removed from `/usr/share/applications`.
 
 Package presets are loaded in filename order from
-`/usr/share/parrot-menu/config.d/*.conf`. An administrator can override them in
-`/etc/parrot-menu/launcher.conf`:
+`/usr/share/parrot-menu/config.d/*.conf`. The base preset disables installable
+launchers and the security preset enables them. An administrator can override
+both in `/etc/parrot-menu/launcher.conf`:
 
 ```ini
 ShowInstallableLaunchers=false
 ```
 
 Run `sudo /usr/share/parrot-menu/update-launchers` after changing the local
-configuration. `parrot-menu-security` supplies a preset that sets the option to
-`true`; `parrot-menu` supplies the default preset set to `false`.
+configuration.
 
 Common launchers should use standard Freedesktop categories. Security launchers
 can use Parrot-specific categories defined by the menu files.
 
 To hide a launcher, ship a managed desktop file with `NoDisplay=true`.
+
+## Troubleshooting
+
+### Reset KDE Plasma menu size
+
+Plasma's classic Application Menu (`org.kde.plasma.kicker`) can retain an
+enlarged popup after displaying long labels. Current generated launchers are
+bounded, but older versions or other desktop entries can still trigger this.
+`update-launchers` reloads the KDE application cache but never edits Plasma
+geometry.
+
+The Parrot default Kicker geometry is 300 by 439 pixels. Find the Kicker applet
+IDs before resetting it:
+
+```sh
+grep -B2 -A8 'plugin=org.kde.plasma.kicker' \
+    ~/.config/plasma-org.kde.plasma.desktop-appletsrc
+```
+
+The stock Parrot layout uses containment `73` and applet `101`. If the IDs in
+the output differ, substitute them in these commands:
+
+```sh
+config=plasma-org.kde.plasma.desktop-appletsrc
+cp "$HOME/.config/$config" "$HOME/.config/$config.bak"
+systemctl --user stop plasma-plasmashell.service
+kwriteconfig6 --file "$config" \
+    --group Containments --group 73 --group Applets --group 101 \
+    --group Configuration --key popupWidth 300
+kwriteconfig6 --file "$config" \
+    --group Containments --group 73 --group Applets --group 101 \
+    --group Configuration --key popupHeight 439
+systemctl --user start plasma-plasmashell.service
+```
 
 ## Icon generation
 
@@ -140,13 +157,4 @@ Build the Debian package with the standard packaging workflow:
 
 ```sh
 dpkg-buildpackage -us -uc
-```
-
-## Testing
-
-Run Go checks:
-
-```sh
-(cd launcher-updater && go test ./...)
-(cd parrot-exec && go test ./...)
 ```

@@ -1,3 +1,16 @@
+parrot-menu (3:7.4.2) echo; urgency=medium
+
+  [ Dario "danterolle" Camonita ]
+  * Import Debian version 7.4.1
+  * fix: prevent installable launchers from widening menus
+  * fix: generate application launchers at runtime
+
+  [ Lorenzo Faletra ]
+  * relocate generic launchers to the proper categories
+  * try to change folder icons path
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 26 Aug 2026 20:55:25 +0200
+
 parrot-menu (3:7.4.1) echo; urgency=medium
 
   [ Dario Camonita ]
