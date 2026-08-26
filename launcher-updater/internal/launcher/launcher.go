@@ -1,8 +1,8 @@
 package launcher
 
 import (
+	"fmt"
 	"launcher-updater/internal/desktop"
-	"log/slog"
 	"os"
 	"path/filepath"
 	"strings"
@@ -10,8 +10,27 @@ import (
 
 const dirLauncherSource = "/usr/share/parrot-menu/applications/"
 
-func RemoveOldLaunchers() {
-	err := filepath.WalkDir(desktop.DirLauncherDest, func(path string, d os.DirEntry, err error) error {
+func SyncLaunchers(
+	installed map[string]struct{},
+	showInstallable bool,
+) (int, int, error) {
+	return syncLaunchers(
+		dirLauncherSource,
+		desktop.DirLauncherDest,
+		installed,
+		showInstallable,
+	)
+}
+
+func syncLaunchers(
+	sourceDir string,
+	destDir string,
+	installed map[string]struct{},
+	showInstallable bool,
+) (int, int, error) {
+	var total, notInstalled int
+
+	err := filepath.WalkDir(sourceDir, func(path string, d os.DirEntry, err error) error {
 		if err != nil {
 			return err
 		}
@@ -23,89 +42,29 @@ func RemoveOldLaunchers() {
 			return nil
 		}
 
-		if !desktop.IsManaged(path) {
-			return nil
-		}
-
-		srcToCheck := filepath.Join(dirLauncherSource, d.Name())
-		if _, err := os.Stat(srcToCheck); os.IsNotExist(err) {
-			if err := os.Remove(path); err != nil {
-				slog.Error("failed to remove", "path", path, "err", err)
-			}
-		}
-		return nil
-	})
-
-	if err != nil {
-		slog.Error("failed to walk source directory", "DirLauncherDest", desktop.DirLauncherDest, "err", err)
-	}
-}
-
-func FixDebLaunchers() {
-	blacklist := map[string]string{
-		"wireshark.desktop":               "parrot-wireshark.desktop",
-		"org.wireshark.Wireshark.desktop": "parrot-wireshark.desktop",
-		"ettercap.desktop":                "parrot-ettercap-graphical.desktop",
-		"chirp.desktop":                   "parrot-chirp.desktop",
-		"driftnet.desktop":                "parrot-driftnet.desktop",
-		"lynis.desktop":                   "parrot-lynis.desktop",
-		"xsser.desktop":                   "parrot-xsser.desktop",
-		"etherape.desktop":                "parrot-etherape.desktop",
-		"ophcrack.desktop":                "parrot-ophcrack.desktop",
-		"gqrx.desktop":                    "parrot-gqrx.desktop",
-		"gpa.desktop":                     "parrot-gpa.desktop",
-		"arduino.desktop":                 "parrot-arduino.desktop",
-		"rtlsdr-scanner.desktop":          "parrot-rtlsdr-scanner.desktop",
-		"org.radare.Cutter.desktop":       "parrot-rizin-cutter.desktop",
-		"re.rizin.cutter.desktop":         "parrot-rizin-cutter.desktop",
-	}
-
-	for origName, wrapperName := range blacklist {
-		origPath := filepath.Join(desktop.DirLauncherDest, origName)
-		if _, err := os.Stat(origPath); os.IsNotExist(err) {
-			continue
-		}
-
-		if desktop.IsManaged(origPath) {
-			continue
-		}
-
-		wrapperPath := filepath.Join(desktop.DirLauncherDest, wrapperName)
-		if _, err := os.Stat(wrapperPath); os.IsNotExist(err) {
-			continue
-		}
-
-		if err := os.Remove(origPath); err != nil {
-			slog.Error("failed to remove blacklisted launcher", "path", origPath, "err", err)
-		}
-	}
-}
-
-func SyncLaunchers(installed map[string]struct{}) (int, int) {
-	var total, notInstalled int
-
-	err := filepath.WalkDir(dirLauncherSource, func(path string, d os.DirEntry, err error) error {
-		if err != nil || d.IsDir() {
+		total++
+		isInstalled, err := syncSingleLauncher(
+			path,
+			d.Name(),
+			destDir,
+			installed,
+			showInstallable,
+		)
+		if err != nil {
 			return err
 		}
-
-		if !isManaged(d.Name()) {
-			return nil
-		}
-
-		total++
-		if !syncSingleLauncher(path, d, installed) {
+		if !isInstalled {
 			notInstalled++
 		}
 		return nil
 	})
 
 	if err != nil {
-		slog.Error("failed to walk source directory",
-			"dirLauncherSource", dirLauncherSource, "err", err)
+		return total, notInstalled, fmt.Errorf(
+			"sync launchers from %s: %w", sourceDir, err)
 	}
 
-	return total, notInstalled
+	return total, notInstalled, nil
 }
 
 var managedPrefixes = []string{"parrot-", "serv-"}
@@ -123,39 +82,75 @@ func isManaged(name string) bool {
 	return false
 }
 
-func syncSingleLauncher(srcPath string, d os.DirEntry, installed map[string]struct{}) bool {
+func syncSingleLauncher(
+	srcPath string,
+	fileName string,
+	destDir string,
+	installed map[string]struct{},
+	showInstallable bool,
+) (bool, error) {
 	pkgName, err := desktop.GetXPackageName(srcPath)
-	if err != nil || pkgName == "" {
-		fileName := d.Name()
-		destPath := filepath.Join(desktop.DirLauncherDest, fileName)
-		ensureLauncherUpdated(srcPath, destPath, d)
-		desktop.FixOldLaunchers(fileName)
-		return true
+	if err != nil {
+		return false, fmt.Errorf("read package metadata from %s: %w", srcPath, err)
 	}
 
-	fileName := d.Name()
-	destPath := filepath.Join(desktop.DirLauncherDest, fileName)
+	destPath := filepath.Join(destDir, fileName)
+	if pkgName == "" {
+		if err := ensureLauncherUpdated(srcPath, destPath); err != nil {
+			return false, err
+		}
+		desktop.FixOldLaunchers(fileName)
+		return true, nil
+	}
 
 	if _, ok := installed[pkgName]; ok {
-		ensureLauncherUpdated(srcPath, destPath, d)
+		if err := ensureLauncherUpdated(srcPath, destPath); err != nil {
+			return false, err
+		}
 		desktop.FixOldLaunchers(fileName)
-		return true
+		return true, nil
 	}
 
-	ensureLauncherTemplate(srcPath, destPath, pkgName, d)
+	if showInstallable {
+		err = ensureLauncherTemplate(srcPath, destPath, pkgName)
+	} else {
+		err = removeManagedLauncher(destPath)
+	}
+	if err != nil {
+		return false, err
+	}
+
 	desktop.FixOldLaunchers(fileName)
-	return false
+	return false, nil
 }
 
-func ensureLauncherUpdated(srcPath, destPath string, d os.DirEntry) {
+func ensureLauncherUpdated(srcPath, destPath string) error {
 	if err := desktop.CopyFile(srcPath, destPath); err != nil {
-		slog.Error("failed to copy source path to destination path",
-			"srcPath", srcPath, "destPath", destPath, "err", err)
+		return fmt.Errorf("copy launcher %s to %s: %w", srcPath, destPath, err)
 	}
+	return nil
 }
 
-func ensureLauncherTemplate(srcPath, destPath, pkgName string, d os.DirEntry) {
+func ensureLauncherTemplate(srcPath, destPath, pkgName string) error {
 	if err := desktop.CopyTemplateLauncher(srcPath, destPath, pkgName); err != nil {
-		slog.Error("failed to create template launcher", "destPath", destPath, "err", err)
+		return fmt.Errorf("create installable launcher %s: %w", destPath, err)
 	}
+	return nil
+}
+
+func removeManagedLauncher(path string) error {
+	if _, err := os.Stat(path); err != nil {
+		if os.IsNotExist(err) {
+			return nil
+		}
+		return fmt.Errorf("inspect launcher %s: %w", path, err)
+	}
+
+	if !desktop.IsManaged(path) {
+		return nil
+	}
+	if err := os.Remove(path); err != nil {
+		return fmt.Errorf("remove hidden launcher %s: %w", path, err)
+	}
+	return nil
 }

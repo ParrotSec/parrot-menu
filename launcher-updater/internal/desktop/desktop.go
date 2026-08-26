@@ -11,6 +11,10 @@ import (
 const DirLauncherDest = "/usr/share/applications/"
 
 func GetXPackageName(path string) (string, error) {
+	return getDesktopValue(path, "X-Parrot-Package")
+}
+
+func getDesktopValue(path, key string) (string, error) {
 	file, err := os.Open(path)
 	if err != nil {
 		return "", err
@@ -21,14 +25,12 @@ func GetXPackageName(path string) (string, error) {
 			slog.Error("failed to close file", "path", path, "err", err)
 		}
 	}(file)
-
 	scanner := bufio.NewScanner(file)
+	prefix := key + "="
 	for scanner.Scan() {
 		line := scanner.Text()
-		if strings.HasPrefix(line, "X-Parrot-Package") {
-			if parts := strings.SplitN(line, "=", 2); len(parts) == 2 {
-				return strings.TrimSpace(parts[1]), nil
-			}
+		if strings.HasPrefix(line, prefix) {
+			return strings.TrimSpace(strings.TrimPrefix(line, prefix)), nil
 		}
 	}
 
@@ -41,7 +43,15 @@ func GetXPackageName(path string) (string, error) {
 
 func IsManaged(path string) bool {
 	pkg, err := GetXPackageName(path)
-	return err == nil && pkg != ""
+	if err != nil {
+		return false
+	}
+	if pkg != "" {
+		return true
+	}
+
+	managed, err := getDesktopValue(path, "X-Parrot-Managed")
+	return err == nil && strings.EqualFold(managed, "true")
 }
 
 func FixOldLaunchers(fileName string) {

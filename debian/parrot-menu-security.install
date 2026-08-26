@@ -1,6 +1,1 @@
-menus/parrot-applications.menu etc/xdg/menus/applications-merged/
-menus/privacy.menu etc/xdg/menus/applications-merged/
-menus/services.menu etc/xdg/menus/applications-merged/
-desktop-directories/*.directory usr/share/desktop-directories/
-desktop-files/*.desktop usr/share/parrot-menu/applications/
-desktop-files/*.desktop usr/share/applications/
+config/50-security.conf usr/share/parrot-menu/config.d/

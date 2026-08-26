@@ -15,16 +15,15 @@ desktop entries, icon assets, and two helper binaries:
 The source package builds two binary packages:
 
 - `parrot-menu` provides the common menu infrastructure, `parrot-exec`,
-  `update-launchers`, common launchers, desktop integration files, and the apt
-  hook. It is suitable for every Parrot edition.
-- `parrot-menu-security` provides the Parrot Security menu, security desktop
-  directories, and launcher templates for security tools.
+  `update-launchers`, the complete launcher catalog, menu definitions, desktop
+  integration files, and the apt hook. It is suitable for every Parrot edition.
+- `parrot-menu-security` provides a policy preset that exposes install-on-demand
+  launchers for security tools that are not installed.
 
 Parrot Home Edition should install only `parrot-menu` by default. Users can opt
-in to security launchers by installing `parrot-menu-security`; this must not
-install the full security toolset automatically. Opting out should purge
-`parrot-menu-security` so its menu conffiles are removed from
-`/etc/xdg/menus/applications-merged`.
+in to installable security launchers by installing `parrot-menu-security`; this
+must not install the security toolset automatically. Removing the package hides
+only launchers for tools that are not installed.
 
 Parrot Security Edition should install both packages through its metapackage.
 
@@ -33,11 +32,12 @@ Parrot Security Edition should install both packages through its metapackage.
 | Path | Purpose |
 | --- | --- |
 | `apt.conf.d/` | apt hook that refreshes managed launchers after dpkg runs. |
+| `config/` | Package-provided launcher policy presets. |
 | `dconf/` | GNOME application folder defaults. |
-| `debian/` | Debian packaging metadata and autopkgtests. |
+| `debian/` | Debian packaging metadata. |
 | `desktop-directories/` | Freedesktop `.directory` files for menu categories. |
-| `desktop-files-common/` | Launchers shipped by `parrot-menu`. |
-| `desktop-files/` | Security launchers shipped by `parrot-menu-security`. |
+| `desktop-files-common/` | Common launchers shipped by `parrot-menu`. |
+| `desktop-files/` | Security launcher templates shipped by `parrot-menu`. |
 | `launcher-updater/` | Go source for `update-launchers`. |
 | `menu-icons/` | Source and generated menu icons. |
 | `menus/` | Freedesktop menu XML files. |
@@ -49,7 +49,7 @@ Desktop entries managed by `update-launchers` must be stored in either
 `desktop-files-common/` or `desktop-files/`, and their filenames must start with
 `parrot-` or `serv-`.
 
-Each managed desktop entry must define:
+Desktop entries tied to an installable package must define:
 
 ```ini
 X-Parrot-Package=foo
@@ -58,13 +58,33 @@ X-Parrot-Package=foo
 `foo` is the binary package that provides the primary command launched by that
 desktop entry. The field supports a single binary package only.
 
+Launchers that are always available must omit `X-Parrot-Package` and define:
+
+```ini
+X-Parrot-Managed=true
+```
+
 During launcher refreshes, `update-launchers` reads
 `/var/lib/dpkg/status` directly:
 
-- if `foo` is installed, the real desktop file is copied to
+- if `foo` is installed, the real desktop file is always copied to
   `/usr/share/applications`;
-- if `foo` is not installed, a `[not installed]` launcher is generated instead
-  and points to `parrot-exec --install foo`.
+- if `foo` is not installed and installable launchers are enabled, a
+  `[not installed]` launcher points to `parrot-exec --install foo`;
+- if `foo` is not installed and installable launchers are disabled, its managed
+  launcher is removed from `/usr/share/applications`.
+
+Package presets are loaded in filename order from
+`/usr/share/parrot-menu/config.d/*.conf`. An administrator can override them in
+`/etc/parrot-menu/launcher.conf`:
+
+```ini
+ShowInstallableLaunchers=false
+```
+
+Run `sudo /usr/share/parrot-menu/update-launchers` after changing the local
+configuration. `parrot-menu-security` supplies a preset that sets the option to
+`true`; `parrot-menu` supplies the default preset set to `false`.
 
 Common launchers should use standard Freedesktop categories. Security launchers
 can use Parrot-specific categories defined by the menu files.
@@ -130,13 +150,3 @@ Run Go checks:
 (cd launcher-updater && go test ./...)
 (cd parrot-exec && go test ./...)
 ```
-
-Run the edition split autopkgtest in a root-capable Debian test environment:
-
-```sh
-autopkgtest . -- null
-```
-
-The autopkgtest verifies that `parrot-menu` can be installed without security
-launchers, that installing `parrot-menu-security` exposes them, and that purging
-it restores the Home Edition state.

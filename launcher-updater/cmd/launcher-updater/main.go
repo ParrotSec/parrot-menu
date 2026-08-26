@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"launcher-updater/internal/config"
 	"launcher-updater/internal/desktop"
 	"launcher-updater/internal/dpkg"
 	"launcher-updater/internal/launcher"
@@ -25,7 +26,20 @@ func main() {
 		os.Exit(1)
 	}
 
-	total, notInstalled := launcher.SyncLaunchers(installed)
+	options, err := config.Load()
+	if err != nil {
+		slog.Error("error loading launcher configuration", "err", err)
+		os.Exit(1)
+	}
+
+	total, notInstalled, err := launcher.SyncLaunchers(
+		installed,
+		options.ShowInstallableLaunchers,
+	)
+	if err != nil {
+		slog.Error("error synchronizing launchers", "err", err)
+		os.Exit(1)
+	}
 
 	fmt.Println("Removing duplicate or broken launchers...")
 	launcher.RemoveOldLaunchers()
