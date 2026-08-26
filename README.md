@@ -49,7 +49,7 @@ Desktop entries managed by `update-launchers` must be stored in either
 `desktop-files-common/` or `desktop-files/`, and their filenames must start with
 `parrot-` or `serv-`.
 
-Each managed desktop entry must define:
+Desktop entries tied to an installable package must define:
 
 ```ini
 X-Parrot-Package=foo
@@ -57,6 +57,12 @@ X-Parrot-Package=foo
 
 `foo` is the binary package that provides the primary command launched by that
 desktop entry. The field supports a single binary package only.
+
+Launchers that are always available must omit `X-Parrot-Package` and define:
+
+```ini
+X-Parrot-Managed=true
+```
 
 During launcher refreshes, `update-launchers` reads
 `/var/lib/dpkg/status` directly:
