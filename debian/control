@@ -9,7 +9,7 @@ Standards-Version: 4.7.2
 
 Package: parrot-menu
 Architecture: any
-Depends: ${misc:Depends}, pkexec, xdg-utils, libc6
+Depends: ${misc:Depends}, apt, sudo, pkexec, xdg-utils, libc6
 Suggests: parrot-menu-security
 Breaks: dradis (<< 3.1.0~rc2),
         parrot-menu-security (<< ${source:Version})

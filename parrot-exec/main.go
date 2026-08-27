@@ -12,8 +12,8 @@ It dispatches into four modes:
   - `--gui`: runs via pkexec while preserving DISPLAY and XAUTHORITY, which
     pkexec strips for security reasons by default.
 
-  - `--install`: runs apt update + apt install, then triggers launcher-updater
-    so the template desktop entry is replaced with the real one.
+  - `--install`: installs the package, then triggers launcher-updater so the
+    template desktop entry is replaced with the real one.
 
 The `--keep` flag (default set to **true**) calls runShell() after execution so
 the terminal stays open otherwise a Terminal=true entry would close before the
@@ -23,12 +23,12 @@ executing untrusted binaries injected via $SHELL.
 package main
 
 import (
-	"bytes"
 	"flag"
 	"fmt"
 	"os"
 	"os/exec"
 	"path/filepath"
+	"regexp"
 	"strings"
 )
 
@@ -113,11 +113,11 @@ func attachStdio(cmd *exec.Cmd) {
 	cmd.Stdin = os.Stdin
 }
 
+var validPackageName = regexp.MustCompile(`^[a-z0-9][a-z0-9+.-]*$`)
+
 func runInstall(pkgName string, keep bool) {
-	out, _ := exec.Command("apt-cache", "policy", pkgName).Output()
-	if !bytes.Contains(out, []byte("Candidate:")) {
-		fmt.Printf("\n%sERROR:%s The tool '%s' is not installed on this system.\n"+
-			"It is not available in Parrot's repositories.\n\n",
+	if !validPackageName.MatchString(pkgName) {
+		fmt.Printf("\n%sERROR:%s Invalid package name '%s'.\n\n",
 			colorRed, colorReset, pkgName)
 		runShellIf(keep)
 		return
@@ -125,7 +125,7 @@ func runInstall(pkgName string, keep bool) {
 
 	fmt.Printf("%sInstalling package %s...%s\n\n", colorCyan, pkgName, colorReset)
 
-	cmd := exec.Command("sudo", "apt-get", "install", "-y", pkgName)
+	cmd := exec.Command("sudo", "apt-get", "install", "-y", "--", pkgName)
 	attachStdio(cmd)
 
 	if err := cmd.Run(); err != nil {

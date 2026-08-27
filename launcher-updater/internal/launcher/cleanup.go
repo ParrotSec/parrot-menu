@@ -1,11 +1,34 @@
 package launcher
 
 import (
+	"fmt"
 	"launcher-updater/internal/desktop"
 	"log/slog"
 	"os"
 	"path/filepath"
 )
+
+func RemoveAllManagedLaunchers() error {
+	err := filepath.WalkDir(
+		desktop.DirLauncherDest,
+		func(path string, d os.DirEntry, err error) error {
+			if err != nil {
+				return err
+			}
+			if d.IsDir() || !isManaged(d.Name()) || !desktop.IsManaged(path) {
+				return nil
+			}
+			if err := os.Remove(path); err != nil {
+				return fmt.Errorf("remove managed launcher %s: %w", path, err)
+			}
+			return nil
+		},
+	)
+	if err != nil {
+		return fmt.Errorf("remove managed launchers: %w", err)
+	}
+	return nil
+}
 
 func RemoveOldLaunchers() {
 	err := filepath.WalkDir(

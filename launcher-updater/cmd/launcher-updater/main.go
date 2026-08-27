@@ -3,21 +3,46 @@ package main
 import (
 	"fmt"
 	"launcher-updater/internal/config"
-	"launcher-updater/internal/desktop"
 	"launcher-updater/internal/dpkg"
 	"launcher-updater/internal/launcher"
+	"launcher-updater/internal/runlock"
 	"log/slog"
 	"os"
 	"os/exec"
 	"os/user"
 	"strings"
-	"time"
 )
 
 func main() {
-	skipKsycoca := len(os.Args) > 1 && os.Args[1] == "wait_dpkg"
+	mode := ""
+	if len(os.Args) > 1 {
+		mode = os.Args[1]
+	}
+	skipKsycoca := mode == "wait_dpkg" || mode == "remove_all"
+
+	lock, err := runlock.Acquire()
+	if err != nil {
+		slog.Error("error acquiring launcher updater lock", "err", err)
+		os.Exit(1)
+	}
+	defer func() {
+		if err := lock.Release(); err != nil {
+			slog.Error("error releasing launcher updater lock", "err", err)
+		}
+	}()
 
 	fmt.Println("--------------------------------------------------")
+	if mode == "remove_all" {
+		fmt.Println("[!] Removing Parrot application launchers")
+		if err := launcher.RemoveAllManagedLaunchers(); err != nil {
+			slog.Error("error removing managed launchers", "err", err)
+			os.Exit(1)
+		}
+		fmt.Println("[!] Launchers have been successfully removed!")
+		fmt.Println("--------------------------------------------------")
+		return
+	}
+
 	fmt.Println("[!] Scanning application launchers")
 
 	installed, err := dpkg.QueryInstalled()
@@ -29,6 +54,11 @@ func main() {
 	options, err := config.Load()
 	if err != nil {
 		slog.Error("error loading launcher configuration", "err", err)
+		os.Exit(1)
+	}
+
+	if _, err := launcher.CatalogPackageNames(); err != nil {
+		slog.Error("error validating launcher catalog", "err", err)
 		os.Exit(1)
 	}
 
@@ -45,15 +75,12 @@ func main() {
 	launcher.RemoveOldLaunchers()
 	launcher.FixDebLaunchers()
 
-	fmt.Printf("[i] %d launcher(s) processed, %d package(s) not installed\n", total, notInstalled)
+	fmt.Printf("[i] %d launcher(s) processed, %d launcher(s) for uninstalled packages\n", total, notInstalled)
 
 	fmt.Println("[!] Launchers have been successfully updated!")
 	fmt.Println("--------------------------------------------------")
 
 	if !skipKsycoca {
-		// Touch the dest directory so kbuildsycoca detects the mtime change.
-		_ = os.Chtimes(desktop.DirLauncherDest, time.Now(), time.Now())
-
 		if _, err := exec.LookPath("kbuildsycoca6"); err == nil {
 			userName := os.Getenv("SUDO_USER")
 			if userName == "" {

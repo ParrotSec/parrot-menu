@@ -5,10 +5,58 @@ import (
 	"launcher-updater/internal/desktop"
 	"os"
 	"path/filepath"
+	"regexp"
+	"sort"
 	"strings"
 )
 
 const dirLauncherSource = "/usr/share/parrot-menu/applications/"
+
+var validPackageName = regexp.MustCompile(`^[a-z0-9][a-z0-9+.-]*$`)
+
+func CatalogPackageNames() ([]string, error) {
+	packageSet := make(map[string]struct{})
+	err := filepath.WalkDir(
+		dirLauncherSource,
+		func(path string, d os.DirEntry, err error) error {
+			if err != nil {
+				return err
+			}
+			if d.IsDir() || !isManaged(d.Name()) {
+				return nil
+			}
+
+			pkgName, err := desktop.GetXPackageName(path)
+			if err != nil {
+				return fmt.Errorf("read package metadata from %s: %w", path, err)
+			}
+			if pkgName == "" {
+				if !desktop.IsManaged(path) {
+					return fmt.Errorf(
+						"%s must define X-Parrot-Package or X-Parrot-Managed=true",
+						path,
+					)
+				}
+				return nil
+			}
+			if !validPackageName.MatchString(pkgName) {
+				return fmt.Errorf("invalid package name %q in %s", pkgName, path)
+			}
+			packageSet[pkgName] = struct{}{}
+			return nil
+		},
+	)
+	if err != nil {
+		return nil, fmt.Errorf("validate launcher catalog: %w", err)
+	}
+
+	packageNames := make([]string, 0, len(packageSet))
+	for pkgName := range packageSet {
+		packageNames = append(packageNames, pkgName)
+	}
+	sort.Strings(packageNames)
+	return packageNames, nil
+}
 
 func SyncLaunchers(
 	installed map[string]struct{},

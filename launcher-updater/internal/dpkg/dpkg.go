@@ -2,51 +2,55 @@ package dpkg
 
 import (
 	"bufio"
+	"bytes"
 	"fmt"
-	"log/slog"
 	"os"
+	"os/exec"
 	"strings"
 )
 
-const statusPath = "/var/lib/dpkg/status"
+const queryFormat = `${Package}\t${db:Status-Status}\n`
 
 func QueryInstalled() (map[string]struct{}, error) {
-	// Instead of launching `dpkg -l`, let's open and read `/var/lib/dpkg/status`.
-	// If we find "install ok installed" for each package, we add it to a map[string]struct{} for O(1) lookups.
-	installed := make(map[string]struct{})
+	cmd := exec.Command(
+		"dpkg-query",
+		"--show",
+		"--showformat="+queryFormat,
+	)
+	cmd.Env = append(os.Environ(), "LC_ALL=C", "LANG=C")
 
-	file, err := os.Open(statusPath)
+	output, err := cmd.Output()
 	if err != nil {
-		return nil, fmt.Errorf("could not open dpkg status file: %w", err)
-	}
-	defer func(file *os.File) {
-		err := file.Close()
-		if err != nil {
-			slog.Error("failed to close file", "statusPath", statusPath, "err", err)
+		if exitErr, ok := err.(*exec.ExitError); ok {
+			return nil, fmt.Errorf(
+				"dpkg-query failed: %w: %s",
+				err,
+				strings.TrimSpace(string(exitErr.Stderr)),
+			)
 		}
-	}(file)
+		return nil, fmt.Errorf("run dpkg-query: %w", err)
+	}
 
-	scanner := bufio.NewScanner(file)
+	return parseInstalled(output)
+}
 
-	const maxCapacity = 1024 * 1024
-	buf := make([]byte, maxCapacity)
-	scanner.Buffer(buf, maxCapacity)
+func parseInstalled(output []byte) (map[string]struct{}, error) {
+	installed := make(map[string]struct{})
+	scanner := bufio.NewScanner(bytes.NewReader(output))
 
-	var pkgName string
 	for scanner.Scan() {
 		line := scanner.Text()
-		if line == "" {
-			pkgName = ""
-		} else if strings.HasPrefix(line, "Package: ") {
-			pkgName = strings.TrimPrefix(line, "Package: ")
-		} else if line == "Status: install ok installed" && pkgName != "" {
+		pkgName, status, found := strings.Cut(line, "\t")
+		if !found || pkgName == "" || status == "" {
+			return nil, fmt.Errorf("unexpected dpkg-query output %q", line)
+		}
+		if status == "installed" {
 			installed[pkgName] = struct{}{}
-			pkgName = ""
 		}
 	}
 
 	if err := scanner.Err(); err != nil {
-		return nil, fmt.Errorf("error reading dpkg status file: %w", err)
+		return nil, fmt.Errorf("read dpkg-query output: %w", err)
 	}
 	return installed, nil
 }

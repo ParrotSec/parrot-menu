@@ -1,3 +1,9 @@
+parrot-menu (3:7.4.3) echo; urgency=medium
+
+  * Clean the code.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 27 Aug 2026 10:41:05 +0200
+
 parrot-menu (3:7.4.2) echo; urgency=medium
 
   [ Dario "danterolle" Camonita ]
