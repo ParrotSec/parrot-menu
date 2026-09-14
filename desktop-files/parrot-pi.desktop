@@ -2,7 +2,7 @@
 Name=Pi
 Comment=Interactive AI coding agent from pi.dev
 Exec=/usr/bin/pi
-Icon=/usr/share/icons/parrot-common/ai-tools.png
+Icon=parrot_pi
 StartupNotify=false
 Terminal=true
 Type=Application

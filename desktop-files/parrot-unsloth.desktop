@@ -2,7 +2,7 @@
 Name=Unsloth
 Comment=Fine-tune and run language models with Unsloth Studio
 Exec=/usr/bin/unsloth-studio
-Icon=unsloth-studio
+Icon=parrot_unsloth
 StartupNotify=false
 StartupWMClass=unsloth-studio
 Terminal=false

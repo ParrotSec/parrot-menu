@@ -2,7 +2,7 @@
 Name=OpenCode
 Comment=Open source AI coding agent for the terminal
 Exec=/usr/bin/opencode
-Icon=/usr/share/icons/parrot-common/ai-tools.png
+Icon=parrot_opencode
 StartupNotify=false
 Terminal=true
 Type=Application
