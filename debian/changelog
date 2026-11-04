@@ -21,7 +21,7 @@ parrot-menu (3:7.4.4) echo; urgency=medium
   [ danterolle ]
   * feat: add Unsloth, OpenCode and pi.dev entries
 
- -- Dario Camonita <danterolle@parrotsec.org>  Wed, 04 Nov 2026 14:31:49 +0000
+ -- Dario "danterolle" Camonita <danterolle@parrotsec.org>  Wed, 04 Nov 2026 14:31:49 +0000
 
 parrot-menu (3:7.4.3) echo; urgency=medium
 
