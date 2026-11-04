@@ -1,3 +1,28 @@
+parrot-menu (3:7.4.4) echo; urgency=medium
+
+  [ Dario "danterolle" Camonita ]
+  * fix: prevent installable launchers from widening menus
+
+  [ Dario Camonita ]
+  * fix: generate application launchers at runtime
+  * feat: add naabu launcher
+  * feat: add official naabu launcher icon
+  * feat: add official icons for Unsloth, OpenCode and pi.dev launchers
+  * feat: add launchers for new tools
+  * feat: add icons for new launchers
+
+  [ Lorenzo Faletra ]
+  * relocate generic launchers to the proper categories
+  * try to change folder icons path
+
+  [ Lorenzo Palinuro Faletra ]
+  * Import Debian version 7.4.3
+
+  [ danterolle ]
+  * feat: add Unsloth, OpenCode and pi.dev entries
+
+ -- Dario Camonita <danterolle@parrotsec.org>  Wed, 04 Nov 2026 14:31:49 +0000
+
 parrot-menu (3:7.4.3) echo; urgency=medium
 
   * Clean the code.
