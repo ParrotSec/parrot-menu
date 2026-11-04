@@ -46,16 +46,19 @@ Launchers that are always available must omit `X-Parrot-Package` and define:
 X-Parrot-Managed=true
 ```
 
-During launcher refreshes, `update-launchers` reads
-`/var/lib/dpkg/status` directly:
+During launcher refreshes, `update-launchers` queries dpkg's current package
+state with `dpkg-query`:
 
-- if `foo` is installed, the real desktop file is always copied to
+- if `foo` is installed, the real desktop file is copied atomically to
   `/usr/share/applications`;
 - if `foo` is not installed and installable launchers are enabled, a
   `[not installed]` launcher points to `parrot-exec --install foo`; generated
   labels discard descriptive suffixes and are limited to 40 characters;
 - if `foo` is not installed and installable launchers are disabled, its managed
   launcher is removed from `/usr/share/applications`.
+
+Launcher writes are skipped when the generated content is unchanged and are
+performed with a temporary file plus atomic rename when an update is needed.
 
 Package presets are loaded in filename order from
 `/usr/share/parrot-menu/config.d/*.conf`. The base preset disables installable
