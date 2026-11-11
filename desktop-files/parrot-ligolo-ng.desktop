@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=ligolo-ng
+Comment=Lightweight tunneling and pivoting tool using a TUN interface
+Encoding=UTF-8
+Exec=parrot-exec "ligolo-proxy -h"
+Icon=parrot_ligolo-ng
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=10-02-tunneling;
+X-Parrot-Package=ligolo-ng

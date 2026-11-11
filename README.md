@@ -115,6 +115,11 @@ systemctl --user start plasma-plasmashell.service
 
 `menu-icons/hicolor/256x256/apps` is the source directory for app icons.
 
+Name bundled launcher icons `parrot_<tool>.png` and reference them with
+`Icon=parrot_<tool>` (without the extension) in the desktop entry. Packaging
+installs these icons into `/usr/share/icons/hicolor`, so they are available
+even before the corresponding tool is installed.
+
 Regenerate all derived icon sizes from the 256x256 sources:
 
 ```sh

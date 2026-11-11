@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=OpenCode
+Comment=Open source AI coding agent for the terminal
+Exec=/usr/bin/opencode
+Icon=parrot_opencode
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=14-ai-tools;
+X-Parrot-Package=opencode

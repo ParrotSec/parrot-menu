@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=kerbrute
+Comment=Kerberos pre-authentication enumeration and brute-force tool
+Encoding=UTF-8
+Exec=parrot-exec "kerbrute --help"
+Icon=parrot_kerbrute
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=05-01-online-attacks;
+X-Parrot-Package=kerbrute

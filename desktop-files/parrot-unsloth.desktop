@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Unsloth
+Comment=Fine-tune and run language models with Unsloth Studio
+Exec=/usr/bin/unsloth-studio
+Icon=parrot_unsloth
+StartupNotify=false
+StartupWMClass=unsloth-studio
+Terminal=false
+Type=Application
+Categories=14-ai-tools;
+X-Parrot-Package=unsloth

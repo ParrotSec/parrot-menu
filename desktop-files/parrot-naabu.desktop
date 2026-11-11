@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=naabu
+Comment=Fast and reliable port scanner
+Encoding=UTF-8
+Exec=parrot-exec "naabu -h"
+Icon=parrot_naabu
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-info-gathering;01-04-network-scanners;
+X-Parrot-Package=naabu

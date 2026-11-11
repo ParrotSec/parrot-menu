@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Pi
+Comment=Interactive AI coding agent from pi.dev
+Exec=/usr/bin/pi
+Icon=parrot_pi
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=14-ai-tools;
+X-Parrot-Package=pi-dev
